@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سافر Discounts | تذاكر طيران، فنادق، وفعاليات بأسعار أقل</title>
+<meta name="description" content="سافر Discounts - احجز تذاكر طيران وفنادق وتذاكر فعاليات ومتاحف بأسعار تنافسية عبر واتساب">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand-blue:#0365A3;
+    --brand-blue-dark:#023152;
+    --brand-orange:#F1560B;
+    --brand-orange-dark:#C7430A;
+    --ink:#0B2036;
+    --paper:#FFF9F1;
+    --paper-card:#FFFFFF;
+    --line:#E4D9C8;
+    --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Cairo',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  /* ===== NAV ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,249,241,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
+  .brand img{height:44px;width:auto;}
+  .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
+  .nav-links a{opacity:0.85;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-cta{
+    display:flex;align-items:center;gap:8px;
+    background:var(--brand-orange);color:#fff;
+    padding:10px 20px;border-radius:999px;
+    font-weight:700;font-size:14px;
+    box-shadow:0 4px 14px rgba(241,86,11,0.35);
+    transition:transform .15s, box-shadow .15s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
+  .burger{display:none;font-size:26px;background:none;border:none;color:var(--ink);cursor:pointer;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%);
+    color:#fff;
+    padding:90px 0 120px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 85% 20%, rgba(255,255,255,0.10) 0, transparent 40%),
+      radial-gradient(circle at 10% 85%, rgba(241,86,11,0.25) 0, transparent 45%);
+  }
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
+    background:rgba(255,255,255,0.12);
+    border:1px dashed rgba(255,255,255,0.5);
+    padding:6px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:44px;font-weight:900;line-height:1.35;margin-bottom:20px;}
+  .hero h1 span{color:#FFD9B0;}
+  .hero p{font-size:17px;opacity:0.92;max-width:520px;margin-bottom:34px;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
+
+  /* Ticket-style CTA button (signature element) */
+  .ticket-btn{
+    position:relative;
+    display:flex;align-items:center;gap:12px;
+    background:var(--brand-orange);
+    color:#fff;font-weight:800;font-size:16px;
+    padding:16px 26px;border-radius:12px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.25);
+    transition:transform .15s;
+  }
+  .ticket-btn:hover{transform:translateY(-3px);}
+  .ticket-btn::after{
+    content:"";position:absolute;left:-10px;top:50%;transform:translateY(-50%);
+    width:20px;height:20px;background:var(--brand-blue-dark);border-radius:50%;
+  }
+  .ticket-btn.outline{
+    background:transparent;border:2px solid rgba(255,255,255,0.6);
+    box-shadow:none;
+  }
+  .ticket-btn.outline::after{display:none;}
+
+  .boarding-strip{
+    margin-top:46px;
+    background:rgba(255,255,255,0.08);
+    border:1px dashed rgba(255,255,255,0.4);
+    border-radius:14px;
+    padding:18px 20px;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+  .boarding-strip div{text-align:center;flex:1;min-width:90px;}
+  .boarding-strip .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:#FFD9B0;}
+  .boarding-strip .lbl{font-size:12px;opacity:0.85;margin-top:4px;}
+
+  .hero-visual{
+    position:relative;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:34px 26px;
+    color:var(--ink);
+    box-shadow:0 30px 60px rgba(0,0,0,0.3);
+  }
+  .hero-visual img{width:170px;margin:0 auto 14px;}
+  .hero-visual .code{
+    font-family:'IBM Plex Mono',monospace;text-align:center;font-size:13px;color:var(--brand-blue);
+    letter-spacing:3px;margin-bottom:10px;
+  }
+  .hero-visual .barcode{
+    height:34px;
+    background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 7px, transparent 7px 11px, var(--ink) 11px 12px, transparent 12px 16px);
+    margin-top:16px;opacity:0.85;
+  }
+  .perf{
+    position:absolute;top:-12px;right:36px;width:24px;height:24px;background:var(--paper);border-radius:50%;
+  }
+  .perf.two{top:auto;bottom:-12px;left:36px;right:auto;}
+
+  /* ===== SECTIONS ===== */
+  section{padding:88px 0;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
+    font-weight:600;display:block;margin-bottom:12px;
+  }
+  .section-head h2{font-size:32px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .section-head p{font-size:16px;color:#4B5A66;}
+
+  /* Services - ticket stub cards */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .ticket-card{
+    position:relative;
+    background:var(--paper-card);
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(11,32,54,0.08);
+    overflow:hidden;
+  }
+  .ticket-card .top{
+    padding:30px 26px 24px;
+    border-bottom:2px dashed var(--line);
+    position:relative;
+  }
+  .ticket-card .top::before,.ticket-card .top::after{
+    content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:var(--paper);border-radius:50%;
+  }
+  .ticket-card .top::before{right:-12px;}
+  .ticket-card .top::after{left:-12px;}
+  .icon-badge{
+    width:52px;height:52px;border-radius:14px;
+    background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;margin-bottom:18px;
+  }
+  .ticket-card h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .ticket-card p{font-size:14.5px;color:#4B5A66;}
+  .ticket-card .bottom{
+    padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
+  }
+  .ticket-card .bottom b{color:var(--brand-blue);}
+
+  /* How it works */
+  .how{background:var(--brand-blue-dark);color:#fff;}
+  .how .section-head h2{color:#fff;}
+  .how .section-head p{color:#C9DCE8;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .step{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:16px;padding:30px 24px;position:relative;
+  }
+  .step .n{
+    font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:600;color:var(--brand-orange);
+    opacity:0.9;margin-bottom:14px;
+  }
+  .step h4{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14px;color:#C9DCE8;}
+  .step-arrow{position:absolute;top:36px;left:-20px;font-size:20px;color:rgba(255,255,255,0.4);}
+
+  /* Why us */
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+  .why-list{display:flex;flex-direction:column;gap:22px;}
+  .why-item{display:flex;gap:16px;align-items:flex-start;}
+  .why-item .mark{
+    flex-shrink:0;width:36px;height:36px;border-radius:10px;
+    background:var(--brand-blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;
+  }
+  .why-item h4{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin-bottom:4px;}
+  .why-item p{font-size:14px;color:#4B5A66;}
+  .why-card{
+    background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));
+    border-radius:20px;color:#fff;padding:40px;
+    box-shadow:0 20px 40px rgba(241,86,11,0.25);
+  }
+  .why-card .quote{font-size:20px;font-weight:800;line-height:1.6;margin-bottom:18px;}
+  .why-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:0.85;letter-spacing:1px;}
+
+  /* Contact */
+  .contact{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .contact-inner{
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;
+  }
+  .contact-inner h2{font-size:28px;font-weight:800;color:var(--brand-blue-dark);max-width:420px;}
+  .contact-inner p{color:#4B5A66;margin-top:10px;max-width:420px;font-size:15px;}
+  .contact-btns{display:flex;flex-wrap:wrap;gap:14px;}
+  .cbtn{
+    display:flex;align-items:center;gap:10px;
+    padding:14px 22px;border-radius:12px;font-weight:700;font-size:14.5px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.1);
+    transition:transform .15s;
+  }
+  .cbtn:hover{transform:translateY(-3px);}
+  .cbtn.wa{background:var(--whatsapp);color:#fff;}
+  .cbtn.fb{background:#1877F2;color:#fff;}
+  .cbtn.ph{background:var(--brand-blue);color:#fff;}
+  .cbtn.em{background:var(--ink);color:#fff;}
+
+  /* Footer */
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
+  .footer-brand img{height:38px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
+
+  /* Floating WhatsApp */
+  .floating-wa{
+    position:fixed;bottom:22px;left:22px;z-index:60;
+    background:var(--whatsapp);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 8px 24px rgba(37,211,102,0.5);
+  }
+
+  @media (max-width:900px){
+    .nav-links{display:none;}
+    .burger{display:block;}
+    .hero-inner{grid-template-columns:1fr;}
+    .hero h1{font-size:32px;}
+    .services{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .why{grid-template-columns:1fr;}
+    section{padding:60px 0;}
+    .contact-inner{flex-direction:column;align-items:flex-start;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="#" class="brand"><img src="logo.png" alt="سافر Discounts"></a>
+    <div class="nav-links">
+      <a href="#services">خدماتنا</a>
+      <a href="#how">إزاي بتحجز</a>
+      <a href="#why">ليه احنا</a>
+      <a href="#contact">تواصل معانا</a>
+    </div>
+    <a class="nav-cta" href="https://wa.me/201116666306?text=مرحباً، حابب أعرف أكتر عن الحجز" target="_blank">
+      💬 احجز واتساب
+    </a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">✦ TICKET · HOTEL · EVENT — أسعار أقل</span>
+      <h1>سافر بأقل سعر،<br>من غير ما <span>تدوّر تاني</span></h1>
+      <p>بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية — والحجز كله بيتم على واتساب في دقايق.</p>
+      <div class="hero-actions">
+        <a class="ticket-btn" href="https://wa.me/201116666306?text=مرحباً، عايز أحجز" target="_blank">💬 احجز عبر واتساب</a>
+        <a class="ticket-btn outline" href="https://www.facebook.com/saferdiscounts/" target="_blank">تابعنا على فيسبوك</a>
+      </div>
+      <div class="boarding-strip">
+        <div><div class="num">✈</div><div class="lbl">طيران</div></div>
+        <div><div class="num">🏨</div><div class="lbl">فنادق</div></div>
+        <div><div class="num">🎟</div><div class="lbl">فعاليات ومتاحف</div></div>
+        <div><div class="num">⚡</div><div class="lbl">رد سريع</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="perf"></div><div class="perf two"></div>
+      <img src="logo.png" alt="سافر Discounts">
+      <div class="code">BOOK · SAVE · FLY</div>
+      <div class="barcode"></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">خدماتنا</span>
+      <h2>كل حجوزات سفرك في مكان واحد</h2>
+      <p>من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي.</p>
+    </div>
+    <div class="services">
+      <div class="ticket-card">
+        <div class="top">
+          <div class="icon-badge">✈️</div>
+          <h3>تذاكر طيران</h3>
+          <p>حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة الحجز من الأول للآخر.</p>
+        </div>
+        <div class="bottom"><span>CLASS: <b>ECONOMY / BUSINESS</b></span><span>✓</span></div>
+      </div>
+      <div class="ticket-card">
+        <div class="top">
+          <div class="icon-badge">🏨</div>
+          <h3>إقامات وفنادق</h3>
+          <p>حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية وتأكيد فوري للحجز.</p>
+        </div>
+        <div class="bottom"><span>STAY: <b>ANY DESTINATION</b></span><span>✓</span></div>
+      </div>
+      <div class="ticket-card">
+        <div class="top">
+          <div class="icon-badge">🎟️</div>
+          <h3>فعاليات ومتاحف</h3>
+          <p>تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة وتسليم رقمي سريع.</p>
+        </div>
+        <div class="bottom"><span>ENTRY: <b>INSTANT DELIVERY</b></span><span>✓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">إزاي بتحجز</span>
+      <h2>ثلاث خطوات وتذكرتك في إيدك</h2>
+      <p>مفيش فورمات معقدة ولا انتظار طويل — كل حاجة بتتم على واتساب.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h4>ابعتلنا تفاصيل رحلتك</h4><p>الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك.</p></div>
+      <div class="step"><div class="n">02</div><h4>هنبعتلك أفضل سعر</h4><p>بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.</p></div>
+      <div class="step"><div class="n">03</div><h4>تأكيد واستلام التذاكر</h4><p>بعد التأكيد، هتستلم تذكرتك أو حجزك فورًا.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why">
+    <div>
+      <span class="tag">ليه سافر Discounts</span>
+      <h2 style="font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;">تحجز بثقة، وتوفر في نفس الوقت</h2>
+      <div class="why-list">
+        <div class="why-item"><div class="mark">$</div><div><h4>أسعار أقل من المواقع الرسمية</h4><p>بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل.</p></div></div>
+        <div class="why-item"><div class="mark">⚡</div><div><h4>رد سريع وحجز مباشر</h4><p>تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.</p></div></div>
+        <div class="why-item"><div class="mark">🤝</div><div><h4>متابعة شخصية لحجزك</h4><p>حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.</p></div></div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="quote">"هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة."</div>
+      <div class="who">— فريق سافر Discounts</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div>
+      <h2>جاهز تحجز؟ كلمنا دلوقتي</h2>
+      <p>احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز.</p>
+    </div>
+    <div class="contact-btns">
+      <a class="cbtn wa" href="https://wa.me/201116666306" target="_blank">💬 واتساب</a>
+      <a class="cbtn fb" href="https://www.facebook.com/saferdiscounts/" target="_blank">📘 فيسبوك</a>
+      <a class="cbtn ph" href="tel:+201101576669">📞 اتصال</a>
+      <a class="cbtn em" href="mailto:info@saferdiscounts.com">✉️ إيميل</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="logo.png" alt="سافر Discounts"> سافر Discounts</div>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/saferdiscounts/" target="_blank">فيسبوك</a>
+        <a href="https://wa.me/201116666306" target="_blank">واتساب</a>
+        <a href="mailto:info@saferdiscounts.com">info@saferdiscounts.com</a>
+        <a href="tel:+201101576669">01101576669</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 سافر Discounts. جميع الحقوق محفوظة.</span>
+      <span class="mono">SAFERDISCOUNTS.COM</span>
+    </div>
+  </div>
+</footer>
+
+<a class="floating-wa" href="https://wa.me/201116666306" target="_blank" aria-label="تواصل عبر واتساب">💬</a>
+
+</body>
+</html>
