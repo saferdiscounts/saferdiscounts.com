@@ -58,7 +58,6 @@
     white-space:nowrap;
   }
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
-  .burger{display:none;font-size:26px;background:none;border:none;color:var(--ink);cursor:pointer;}
 
   /* ===== HERO ===== */
   .hero{
@@ -87,7 +86,6 @@
   .hero p{font-size:17px;opacity:0.92;max-width:520px;margin-bottom:34px;}
   .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
 
-  /* Ticket-style CTA button (signature element) */
   .ticket-btn{
     position:relative;
     display:flex;align-items:center;gap:12px;
@@ -184,7 +182,28 @@
     padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
     font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
   }
-  .ticket-card .bottom b{color:var(--brand-blue);}
+
+  /* Destinations - small image cards */
+  .destinations-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+  .dest-card{
+    border-radius:14px;overflow:hidden;
+    box-shadow:0 8px 20px rgba(11,32,54,0.08);
+    background:var(--paper-card);
+  }
+  .dest-img{position:relative;width:100%;height:110px;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
+  .dest-img img{width:100%;height:100%;object-fit:cover;}
+  .dest-img.no-img img{display:none;}
+  .dest-img.no-img::after{
+    content:"🖼";
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:0.6;color:#fff;
+  }
+  .dest-badge{
+    position:absolute;top:8px;right:8px;
+    background:rgba(11,32,54,0.75);color:#fff;
+    font-size:10px;font-family:'IBM Plex Mono',monospace;
+    padding:3px 8px;border-radius:999px;letter-spacing:0.5px;
+  }
+  .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
 
   /* How it works */
   .how{background:var(--brand-blue-dark);color:#fff;}
@@ -202,7 +221,6 @@
   }
   .step h4{font-size:17px;font-weight:700;margin-bottom:8px;}
   .step p{font-size:14px;color:#C9DCE8;}
-  .step-arrow{position:absolute;top:36px;left:-20px;font-size:20px;color:rgba(255,255,255,0.4);}
 
   /* Why us */
   .why{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
@@ -248,7 +266,7 @@
   .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
   .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
   .footer-brand img{height:38px;}
-  .footer-socials{display:flex;gap:16px;font-size:14px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
   .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
 
   /* Floating WhatsApp */
@@ -262,49 +280,117 @@
 
   @media (max-width:900px){
     .nav-links{display:none;}
-    .burger{display:block;}
     .hero-inner{grid-template-columns:1fr;}
     .hero h1{font-size:32px;}
     .services{grid-template-columns:1fr;}
+    .destinations-grid{grid-template-columns:repeat(3,1fr);}
     .steps{grid-template-columns:1fr;}
     .why{grid-template-columns:1fr;}
     section{padding:60px 0;}
     .contact-inner{flex-direction:column;align-items:flex-start;}
   }
+  @media (max-width:520px){
+    .destinations-grid{grid-template-columns:repeat(2,1fr);}
+  }
 </style>
 </head>
 <body>
+
+<!-- ============================================================================
+     ⚙️ عدّل بياناتك هنا فقط — ده المكان الوحيد اللي محتاج تدخله عشان تغير أي حاجة
+     (رقم الواتساب، التليفون، الإيميل، الفيسبوك، النصوص، الوجهات والصور، الخ)
+     بعد ما تعدل، احفظ الملف وارفعه على GitHub بنفس الطريقة اللي عملتها قبل كده.
+     ============================================================================ -->
+<script>
+window.SITE_CONFIG = {
+
+  // بيانات التواصل — أي تعديل هنا بيتحدث تلقائيًا في كل أماكن الموقع (الزرار العلوي، الفوتر، قسم التواصل، الزرار العائم)
+  contact: {
+    whatsappNumber: "201116666306",              // رقم الواتساب بصيغة دولية من غير + وبدون مسافات
+    whatsappDefaultMessage: "مرحباً، عايز أحجز",
+    phoneDisplay: "01101576669",                 // الرقم اللي هيظهر للزوار
+    phoneDial: "+201101576669",                   // نفس الرقم بصيغة دولية (للاتصال المباشر من الموبايل)
+    email: "info@saferdiscounts.com",
+    facebook: "https://www.facebook.com/saferdiscounts/"
+  },
+
+  // نصوص الصفحة الرئيسية
+  hero: {
+    eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
+    titleLine1: "سافر بأقل سعر،",
+    titleHighlight: "من غير ما تدوّر تاني",
+    subtitle: "بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية، والحجز كله بيتم بسهولة على واتساب."
+  },
+
+  // خدماتنا — تقدر تعدل أي نص، أو تضيف بلوك جديد بنفس الشكل { icon, title, desc, tag }
+  services: [
+    { icon: "✈️", title: "تذاكر طيران",     desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.", tag: "CLASS: ECONOMY / BUSINESS" },
+    { icon: "🏨", title: "إقامات وفنادق",   desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",                                    tag: "STAY: ANY DESTINATION" },
+    { icon: "🎟️", title: "فعاليات ومتاحف", desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",                              tag: "ENTRY: EVENTS & MUSEUMS" }
+  ],
+
+  // الوجهات السياحية (صور صغيرة) — عشان تضيف صورك:
+  // 1) اعمل فولدر اسمه "images" جنب index.html في نفس الريبو (Add file → Create new file → اكتب images/dubai.jpg مثلاً وارفع الصورة)
+  // 2) أو ارفع صورك بأي اسم وغيّر قيمة "image" هنا تحت بنفس الاسم بالظبط
+  // 3) لحد ما ترفع الصورة، هيظهر مكانها شكل بديل بسيط مش هيبوظ تصميم الموقع
+  // 4) لإضافة وجهة جديدة، انسخ سطر كامل وغيّر البيانات
+  destinations: [
+    { name: "دبي",            group: "خارج مصر", image: "images/dubai.jpg" },
+    { name: "باريس",           group: "خارج مصر", image: "images/paris.jpg" },
+    { name: "إسطنبول",         group: "خارج مصر", image: "images/istanbul.jpg" },
+    { name: "أهرامات الجيزة",  group: "داخل مصر", image: "images/giza.jpg" },
+    { name: "شرم الشيخ",       group: "داخل مصر", image: "images/sharm.jpg" },
+    { name: "الأقصر",          group: "داخل مصر", image: "images/luxor.jpg" }
+  ],
+
+  // ليه سافر Discounts
+  why: [
+    { mark: "$", title: "أسعار أقل من المواقع الرسمية", desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل." },
+    { mark: "💬", title: "تواصل مباشر وسهل",             desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة." },
+    { mark: "🤝", title: "متابعة شخصية لحجزك",           desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر." }
+  ],
+
+  // خطوات الحجز
+  steps: [
+    { n: "01", title: "ابعتلنا تفاصيل رحلتك",  desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك." },
+    { n: "02", title: "هنبعتلك أفضل سعر متاح", desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد." },
+    { n: "03", title: "تأكيد الحجز",           desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك." }
+  ]
+};
+</script>
+<!-- ============================================================================
+     🚫 من هنا لتحت، ده تصميم الموقع نفسه — من الأفضل متلمسوش إلا لو حابب تغيّر
+     حاجة في الشكل أو الترتيب. كل بيانات النصوص والصور موجودة فوق في القسم اللي فاتح.
+     ============================================================================ -->
 
 <header>
   <nav class="wrap">
     <a href="#" class="brand"><img src="logo.png" alt="سافر Discounts"></a>
     <div class="nav-links">
       <a href="#services">خدماتنا</a>
+      <a href="#destinations">وجهاتنا</a>
       <a href="#how">إزاي بتحجز</a>
-      <a href="#why">ليه احنا</a>
       <a href="#contact">تواصل معانا</a>
     </div>
-    <a class="nav-cta" href="https://wa.me/201116666306?text=مرحباً، حابب أعرف أكتر عن الحجز" target="_blank">
-      💬 احجز واتساب
-    </a>
+    <a class="nav-cta" data-wa href="#">💬 احجز واتساب</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="wrap hero-inner">
     <div>
-      <span class="eyebrow">✦ TICKET · HOTEL · EVENT — أسعار أقل</span>
-      <h1>سافر بأقل سعر،<br>من غير ما <span>تدوّر تاني</span></h1>
-      <p>بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية — والحجز كله بيتم على واتساب في دقايق.</p>
+      <span class="eyebrow" id="hero-eyebrow"></span>
+      <h1><span id="hero-title-1"></span><br><span id="hero-title-2"></span></h1>
+      <p id="hero-subtitle"></p>
       <div class="hero-actions">
-        <a class="ticket-btn" href="https://wa.me/201116666306?text=مرحباً، عايز أحجز" target="_blank">💬 احجز عبر واتساب</a>
-        <a class="ticket-btn outline" href="https://www.facebook.com/saferdiscounts/" target="_blank">تابعنا على فيسبوك</a>
+        <a class="ticket-btn" data-wa href="#">💬 احجز عبر واتساب</a>
+        <a class="ticket-btn outline" data-fb href="#" target="_blank">تابعنا على فيسبوك</a>
       </div>
       <div class="boarding-strip">
         <div><div class="num">✈</div><div class="lbl">طيران</div></div>
         <div><div class="num">🏨</div><div class="lbl">فنادق</div></div>
         <div><div class="num">🎟</div><div class="lbl">فعاليات ومتاحف</div></div>
-        <div><div class="num">⚡</div><div class="lbl">رد سريع</div></div>
+        <div><div class="num">🤝</div><div class="lbl">دعم شخصي</div></div>
       </div>
     </div>
     <div class="hero-visual">
@@ -323,32 +409,18 @@
       <h2>كل حجوزات سفرك في مكان واحد</h2>
       <p>من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي.</p>
     </div>
-    <div class="services">
-      <div class="ticket-card">
-        <div class="top">
-          <div class="icon-badge">✈️</div>
-          <h3>تذاكر طيران</h3>
-          <p>حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة الحجز من الأول للآخر.</p>
-        </div>
-        <div class="bottom"><span>CLASS: <b>ECONOMY / BUSINESS</b></span><span>✓</span></div>
-      </div>
-      <div class="ticket-card">
-        <div class="top">
-          <div class="icon-badge">🏨</div>
-          <h3>إقامات وفنادق</h3>
-          <p>حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية وتأكيد فوري للحجز.</p>
-        </div>
-        <div class="bottom"><span>STAY: <b>ANY DESTINATION</b></span><span>✓</span></div>
-      </div>
-      <div class="ticket-card">
-        <div class="top">
-          <div class="icon-badge">🎟️</div>
-          <h3>فعاليات ومتاحف</h3>
-          <p>تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة وتسليم رقمي سريع.</p>
-        </div>
-        <div class="bottom"><span>ENTRY: <b>INSTANT DELIVERY</b></span><span>✓</span></div>
-      </div>
+    <div class="services" id="services-grid"></div>
+  </div>
+</section>
+
+<section id="destinations" style="background:var(--paper-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">وجهاتنا</span>
+      <h2>جوة مصر وبرة مصر</h2>
+      <p>نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه.</p>
     </div>
+    <div class="destinations-grid" id="destinations-grid"></div>
   </div>
 </section>
 
@@ -356,14 +428,10 @@
   <div class="wrap">
     <div class="section-head">
       <span class="tag">إزاي بتحجز</span>
-      <h2>ثلاث خطوات وتذكرتك في إيدك</h2>
-      <p>مفيش فورمات معقدة ولا انتظار طويل — كل حاجة بتتم على واتساب.</p>
+      <h2>خطوات بسيطة وواضحة</h2>
+      <p>كل حاجة بتتم على واتساب من غير تعقيد.</p>
     </div>
-    <div class="steps">
-      <div class="step"><div class="n">01</div><h4>ابعتلنا تفاصيل رحلتك</h4><p>الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك.</p></div>
-      <div class="step"><div class="n">02</div><h4>هنبعتلك أفضل سعر</h4><p>بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.</p></div>
-      <div class="step"><div class="n">03</div><h4>تأكيد واستلام التذاكر</h4><p>بعد التأكيد، هتستلم تذكرتك أو حجزك فورًا.</p></div>
-    </div>
+    <div class="steps" id="steps-grid"></div>
   </div>
 </section>
 
@@ -372,11 +440,7 @@
     <div>
       <span class="tag">ليه سافر Discounts</span>
       <h2 style="font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;">تحجز بثقة، وتوفر في نفس الوقت</h2>
-      <div class="why-list">
-        <div class="why-item"><div class="mark">$</div><div><h4>أسعار أقل من المواقع الرسمية</h4><p>بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل.</p></div></div>
-        <div class="why-item"><div class="mark">⚡</div><div><h4>رد سريع وحجز مباشر</h4><p>تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.</p></div></div>
-        <div class="why-item"><div class="mark">🤝</div><div><h4>متابعة شخصية لحجزك</h4><p>حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.</p></div></div>
-      </div>
+      <div class="why-list" id="why-list"></div>
     </div>
     <div class="why-card">
       <div class="quote">"هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة."</div>
@@ -392,10 +456,10 @@
       <p>احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز.</p>
     </div>
     <div class="contact-btns">
-      <a class="cbtn wa" href="https://wa.me/201116666306" target="_blank">💬 واتساب</a>
-      <a class="cbtn fb" href="https://www.facebook.com/saferdiscounts/" target="_blank">📘 فيسبوك</a>
-      <a class="cbtn ph" href="tel:+201101576669">📞 اتصال</a>
-      <a class="cbtn em" href="mailto:info@saferdiscounts.com">✉️ إيميل</a>
+      <a class="cbtn wa" data-wa href="#">💬 واتساب</a>
+      <a class="cbtn fb" data-fb href="#" target="_blank">📘 فيسبوك</a>
+      <a class="cbtn ph" data-phone href="#">📞 اتصال</a>
+      <a class="cbtn em" data-email href="#">✉️ إيميل</a>
     </div>
   </div>
 </section>
@@ -405,10 +469,10 @@
     <div class="footer-top">
       <div class="footer-brand"><img src="logo.png" alt="سافر Discounts"> سافر Discounts</div>
       <div class="footer-socials">
-        <a href="https://www.facebook.com/saferdiscounts/" target="_blank">فيسبوك</a>
-        <a href="https://wa.me/201116666306" target="_blank">واتساب</a>
-        <a href="mailto:info@saferdiscounts.com">info@saferdiscounts.com</a>
-        <a href="tel:+201101576669">01101576669</a>
+        <a data-fb href="#" target="_blank">فيسبوك</a>
+        <a data-wa href="#">واتساب</a>
+        <a data-email href="#" id="footer-email-text"></a>
+        <a data-phone href="#" id="footer-phone-text"></a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -418,7 +482,58 @@
   </div>
 </footer>
 
-<a class="floating-wa" href="https://wa.me/201116666306" target="_blank" aria-label="تواصل عبر واتساب">💬</a>
+<a class="floating-wa" data-wa href="#" aria-label="تواصل عبر واتساب">💬</a>
+
+<script>
+(function(){
+  var cfg = window.SITE_CONFIG;
+
+  function waLink(){
+    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(cfg.contact.whatsappDefaultMessage);
+  }
+
+  document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(); });
+  document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
+  document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
+  document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+
+  var footerEmail = document.getElementById('footer-email-text');
+  if (footerEmail) footerEmail.textContent = cfg.contact.email;
+  var footerPhone = document.getElementById('footer-phone-text');
+  if (footerPhone) footerPhone.textContent = cfg.contact.phoneDisplay;
+
+  document.getElementById('hero-eyebrow').textContent = cfg.hero.eyebrow;
+  document.getElementById('hero-title-1').textContent = cfg.hero.titleLine1;
+  document.getElementById('hero-title-2').textContent = cfg.hero.titleHighlight;
+  document.getElementById('hero-subtitle').textContent = cfg.hero.subtitle;
+
+  document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
+    return '<div class="ticket-card"><div class="top">' +
+           '<div class="icon-badge">' + s.icon + '</div>' +
+           '<h3>' + s.title + '</h3><p>' + s.desc + '</p></div>' +
+           '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
+  }).join('');
+
+  document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
+    return '<div class="dest-card">' +
+             '<div class="dest-img">' +
+               '<img src="' + d.image + '" alt="' + d.name + '" onerror="this.parentElement.classList.add(\'no-img\')">' +
+               '<span class="dest-badge">' + d.group + '</span>' +
+             '</div>' +
+             '<div class="dest-name">' + d.name + '</div>' +
+           '</div>';
+  }).join('');
+
+  document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
+    return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
+           '<div><h4>' + w.title + '</h4><p>' + w.desc + '</p></div></div>';
+  }).join('');
+
+  document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
+    return '<div class="step"><div class="n">' + s.n + '</div><h4>' + s.title + '</h4><p>' + s.desc + '</p></div>';
+  }).join('');
+})();
+</script>
 
 </body>
 </html>
