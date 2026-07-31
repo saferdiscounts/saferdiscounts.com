@@ -240,6 +240,42 @@
   }
   .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
 
+  /* Reviews / testimonials */
+  .reviews-stats{
+    display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:44px;
+  }
+  .reviews-stats div{text-align:center;}
+  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
+  .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
+  .reviews-scroll{
+    display:flex;gap:20px;overflow-x:auto;padding:8px 4px 24px;
+    scroll-snap-type:x proximity;
+    -webkit-overflow-scrolling:touch;
+  }
+  .reviews-scroll::-webkit-scrollbar{height:6px;}
+  .reviews-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px;}
+  .review-card{
+    scroll-snap-align:start;
+    flex:0 0 300px;
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.06);
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .review-top{display:flex;align-items:center;gap:12px;}
+  .review-avatar{
+    width:40px;height:40px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
+    color:#fff;font-weight:800;font-size:16px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .review-name{font-weight:700;font-size:14.5px;color:var(--brand-blue-dark);}
+  .review-quote-mark{font-size:28px;color:var(--brand-orange);opacity:0.35;line-height:0.6;font-family:Georgia,serif;}
+  .review-text{font-size:13.5px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
+  .reviews-cta{text-align:center;margin-top:8px;}
+
   /* How it works */
   .how{background:var(--brand-blue-dark);color:#fff;}
   .how .section-head h2{color:#fff;}
@@ -326,6 +362,8 @@
   }
   @media (max-width:520px){
     .destinations-grid{grid-template-columns:repeat(2,1fr);}
+    .review-card{flex-basis:260px;}
+    .reviews-stats{gap:28px;}
   }
 </style>
 </head>
@@ -378,6 +416,51 @@ window.SITE_CONFIG = {
     { name: "الأقصر",          group: "داخل مصر", image: "images/luxor.jpg" }
   ],
 
+  // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
+  social: {
+    followers: "15K+",
+    totalReviews: "32",
+    recommendPercent: "100%",
+    facebookReviewsUrl: "https://www.facebook.com/saferdiscounts/reviews"
+  },
+
+  // آراء العملاء (منسوخة من توصيات صفحة الفيسبوك)
+  // لإضافة رأي جديد: انسخ سطر كامل { name: ..., text: ... } وغيّر الاسم والنص
+  // النص ممكن يكون عربي أو إنجليزي براحتك، هيتظبط تلقائيًا في الاتجاه الصح
+  reviews: [
+    { name: "Yasser Ossama",        text: "Excellent experience 😍😍 totally recommended" },
+    { name: "Mahmood Farouk",       text: "❤️❤️❤️❤️ Very good experience" },
+    { name: "احمد السيد",           text: "في الأول كنت مش مطمن الصراحة بس طريقة وتوقعه للأسئلة خلى الموضوع ماشي باطمئنان، واخدت سعر فندق نهائي مش هلاقيه في أي مكان تاني. الف شكر على الصبر والأسلوب الجميل 🙏" },
+    { name: "Mena Ashraf",          text: "تعامل محترم جدًا من أستاذ محمد، كان ذوق جدًا وجابلنا سعر أقل من أي مكان في مصر، وشغله بروفيشنال جدًا. Highly recommended" },
+    { name: "Mohamed Ahmed",        text: "It's my second time to deal with them, I can recommend their services for all my friends and colleagues! Thanks for the great and real discounts I got 🌹" },
+    { name: "Mohammed Saber",       text: "Highly recommended, real discount and timely delivery! Thanks Mr Mohammed for your cooperation 🌹" },
+    { name: "Ahmed Hany",           text: "الناس محترمين جدًا ومن أحسن الشركات اللي تعاملت معاها من حيث العروض والمصداقية والسرعة" },
+    { name: "Lucky Tango",          text: "جربت سافر Discounts بعد ما سمعت إنهم بيجيبوا خصومات قوية على الفنادق والطيران، واتفاجئت إن الموضوع فعلاً حقيقي. حجزت فندق بخصم حوالي 25% من سعر Booking، وتذاكر طيران أقل من المواقع الرسمية بحوالي 20%!" },
+    { name: "Nadeen Esam",          text: "Excellent service and great prices. Everything went smoothly. I highly recommend Safer for travel and hotels bookings ✈️" },
+    { name: "محمد احمد علي",        text: "أول مرة أسافر، ومرسي علّم حجز وطيران كنت مستحيل أقدر أوصل للسعر ده لوحدي. بشكركم وبتمنى لكم أكثر نجاح" },
+    { name: "Mohamed Elsaeid",      text: "شكرًا، حجزت فندق للأسرة ومصيف الغردقة، وكان السعر أفضل كتير من كل العروض اللي قدرت أوصلها" },
+    { name: "Galal Gogo",           text: "شكرًا لرحلة الطيران، سعر عادل جدًا وسرعة في الحجز والمتابعة، وسعر أقل من بوكينج بصراحة" },
+    { name: "Mohamed El Dabaa",     text: "شركة محترمة، سافرت معاهم عمرة لمصر، وفروا عليّ في سعر الطيران وحجز الفندق. جزاكم الله كل خير" },
+    { name: "Taha Ahmed",           text: "أفضل شركة على الإطلاق، خصم حقيقي مستحيل كنت أحجز بالسعر ده. مصداقية وسرعة رد وتعامل ممتاز مع أي مشكلة" },
+    { name: "Sarah Tharwat Zidan",  text: "الحجز كان تمام، والخصم والتعامل كانوا كويسين جدًا وزوق. شكرًا" },
+    { name: "Ahmed Hlwany",         text: "ناس محترمة قوي، توفير غير متوقع بصراحة، وبيوجهوك لفرص حلوة سواء طيران أو إقامة ❤️" },
+    { name: "Ahmad Nagy",           text: "ناس محترمة جدًا، وأسعارهم وعروضهم ممتازة مقارنة بالـ Booking" },
+    { name: "زياد بن طارق",         text: "شركة محترمة جدًا، نظام وذوق في المعاملة، بيتابعوك من أول الحجز لحد ما تسافر وحتى بعد الرحلة" },
+    { name: "Sherif N. ELgammal",   text: "It is really a great thing to find a company with such quality and excellent service. It has really changed the concept of travel 😍" },
+    { name: "Kevin Kamel",          text: "الصراحة شيء لا يصدق، خصومات حقيقية وتبقى قاعد في الأوتيل واخد سعر أقل من باقي الناس كلها. حقيقي شكرًا أستاذ محمد، فاوفيت فرق يستاهل فعلًا" },
+    { name: "Sahar Magd",           text: "بجد من أكتر الناس اللي عندهم مصداقية وخصومات فعلًا تستحق التجربة والمغامرة. بجد أرشحكم لأي حد حابب يسافر. مكان كويس ومدة بادجت قليلة لأن الديسكاونت بيكون كبير، رحلة جميلة واستمتعنا جدًا ❤️" },
+    { name: "Omar Moaath",          text: "طلعت دهب مع سافر Discounts في فندق Dahab Lagoon، والصراحة قمة في البروفيشناليتي والذوق. تعبتهم معايا جدًا عشان اختار أفضل باكيج ليا لأني كنت طالع honeymoon، وساعدوني كتير آخد قراري" },
+    { name: "Fatima Abouelela",     text: "بصراحة من أحسن التجارب اللي عشتها في مرسى علم. اخترت فندق بيكاليتروس، والخدمة كانت ممتازة وكل التفاصيل مريحة. الحجز عملته عن طريق Safer Discounts، وكان فيه خصم حلو يوفر مبلغ محترم، والتعامل في منتهى الذوق والاحترام" },
+    { name: "Ahmed Farid",          text: "100% Recommended, Excellent experience, I do recommend this page and especially Mr Mohamed to anyone wants to have a real discount.. شكرًا يا باشمهندس محمد 🙏❤️" },
+    { name: "Ahmed A'rafat",        text: "حجزت معاهم فندق الباتروس مكادي، الموضوع مأخدش وقت خالص في اهتمام وكان سرعة في التعامل، وذوق جدًا. كملت معاهم في حجز تاني ولقيت نفس الاحترام والسرعة ❤️" },
+    { name: "Mark Moheb",           text: "بجد مستر محمد محترم وشاطر جدًا وأحسن أسعار في مكان هتروحوا. هو وتعبناه جدًا وهو متعاون خالص وبيرد بسرعة على أي حاجة" },
+    { name: "Mahmoud Sobhi Helal",  text: "البيدج دي ناس أمينة، وحجزت معاهم كان ممتاز جدًا وأنصح أي حد لو هيسافر يبقى يسافر مع سافر" },
+    { name: "Ahmed El Khadrawy",    text: "شكرًا لحضراتكم على الرحلة الجميلة والممتعة والتسهيلات اللي قدمتوها، وبجد أحسن ناس سافرت معاهم بدون مشاكل ولا معوقات، ومش هتبقى آخر مرة أتعامل مع حضراتكم" },
+    { name: "Mohamed Atef",         text: "شركة محترمة جدًا في التعامل والحجز، حجزت معاهم والحجز تمام، شكرًا جدًا" },
+    { name: "Renad Rnoda",          text: "Highly recommend Safer page! 🌍 I got a better discount than big sites like Booking, with amazing service, fast replies, and honest follow-up. Truly grateful for the respectful and trustworthy man behind it. 🙏✈️❤️" },
+    { name: "Kamel Eshak",          text: "Honestly, one of the best travel platforms I've ever dealt with! They offered me a 30% discount compared to Booking.com, and the price difference was significant. Highly recommended for anyone looking for great value and top-notch service. Will definitely use them again! ⭐⭐⭐⭐⭐" }
+  ],
+
   // ليه سافر Discounts
   why: [
     { mark: "$", title: "أسعار أقل من المواقع الرسمية", desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل." },
@@ -404,6 +487,7 @@ window.SITE_CONFIG = {
     <div class="nav-links">
       <a href="#services">خدماتنا</a>
       <a href="#destinations">وجهاتنا</a>
+      <a href="#reviews">آراء العملاء</a>
       <a href="#how">إزاي بتحجز</a>
       <a href="#contact">تواصل معانا</a>
     </div>
@@ -456,6 +540,21 @@ window.SITE_CONFIG = {
       <p>نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه.</p>
     </div>
     <div class="destinations-grid" id="destinations-grid"></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">آراء عملائنا</span>
+      <h2>عملاؤنا بيقولوا ايه</h2>
+      <p>آراء حقيقية من صفحتنا الرسمية على فيسبوك.</p>
+    </div>
+    <div class="reviews-stats" id="reviews-stats"></div>
+    <div class="reviews-scroll" id="reviews-grid"></div>
+    <div class="reviews-cta">
+      <a class="ticket-btn outline" style="color:var(--brand-blue-dark);border-color:var(--brand-blue-dark);display:inline-flex;" href="#" id="reviews-fb-link" target="_blank">📘 شوف كل التقييمات على فيسبوك</a>
+    </div>
   </div>
 </section>
 
@@ -556,6 +655,25 @@ window.SITE_CONFIG = {
                '<span class="dest-badge">' + d.group + '</span>' +
              '</div>' +
              '<div class="dest-name">' + d.name + '</div>' +
+           '</div>';
+  }).join('');
+
+  document.getElementById('reviews-stats').innerHTML =
+    '<div><div class="stat-num">' + cfg.social.followers + '</div><div class="stat-lbl">متابع</div></div>' +
+    '<div><div class="stat-num">' + cfg.social.totalReviews + '</div><div class="stat-lbl">توصية</div></div>' +
+    '<div><div class="stat-num">' + cfg.social.recommendPercent + '</div><div class="stat-lbl">نسبة التوصية</div></div>';
+
+  document.getElementById('reviews-fb-link').href = cfg.social.facebookReviewsUrl;
+
+  document.getElementById('reviews-grid').innerHTML = cfg.reviews.map(function(r){
+    var initial = r.name.trim().charAt(0).toUpperCase();
+    return '<div class="review-card">' +
+             '<div class="review-top">' +
+               '<div class="review-avatar">' + initial + '</div>' +
+               '<div class="review-name">' + r.name + '</div>' +
+             '</div>' +
+             '<div class="review-quote-mark">❝</div>' +
+             '<div class="review-text" dir="auto">' + r.text + '</div>' +
            '</div>';
   }).join('');
 
