@@ -312,6 +312,26 @@
   .why-card .quote{font-size:20px;font-weight:800;line-height:1.6;margin-bottom:18px;}
   .why-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:0.85;letter-spacing:1px;}
 
+  /* FAQ */
+  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+  .faq-item{
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .faq-item summary{
+    padding:18px 22px;font-weight:700;font-size:15px;color:var(--brand-blue-dark);
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";font-size:22px;color:var(--brand-orange);flex-shrink:0;font-weight:400;
+    transition:transform .2s;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .faq-a{padding:0 22px 20px;font-size:14px;color:#4B5A66;line-height:1.8;}
+
   /* Contact */
   .contact{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
   .contact-inner{
@@ -468,6 +488,21 @@ window.SITE_CONFIG = {
     { mark: "🤝", title: "متابعة شخصية لحجزك",           desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر." }
   ],
 
+  // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
+  founderNote: {
+    quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.",
+    attribution: "فريق سافر Discounts"
+  },
+
+  // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر { q: ..., a: ... } وغيّر البيانات
+  faq: [
+    { q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط." },
+    { q: "الدفع بيتم إزاي؟", a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة." },
+    { q: "الحجز هيبقى باسمي أنا؟", a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه." },
+    { q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده." },
+    { q: "قد إيه المفروض أحجز قبل السفر؟", a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها." }
+  ],
+
   // خطوات الحجز
   steps: [
     { n: "01", title: "ابعتلنا تفاصيل رحلتك",  desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك." },
@@ -489,6 +524,7 @@ window.SITE_CONFIG = {
       <a href="#destinations">وجهاتنا</a>
       <a href="#reviews">آراء العملاء</a>
       <a href="#how">إزاي بتحجز</a>
+      <a href="#faq">أسئلة شائعة</a>
       <a href="#contact">تواصل معانا</a>
     </div>
     <a class="nav-cta" data-wa href="#">💬 احجز واتساب</a>
@@ -577,9 +613,20 @@ window.SITE_CONFIG = {
       <div class="why-list" id="why-list"></div>
     </div>
     <div class="why-card">
-      <div class="quote">"هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة."</div>
-      <div class="who">— فريق سافر Discounts</div>
+      <div class="quote" id="founder-quote"></div>
+      <div class="who" id="founder-who"></div>
     </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--paper-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">أسئلة شائعة</span>
+      <h2>أسئلة بتيجي في بالك؟ اتفضل</h2>
+      <p>لو سؤالك مش موجود هنا، ابعتلنا على واتساب وهنرد عليك على طول.</p>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
   </div>
 </section>
 
@@ -684,6 +731,13 @@ window.SITE_CONFIG = {
 
   document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
     return '<div class="step"><div class="n">' + s.n + '</div><h4>' + s.title + '</h4><p>' + s.desc + '</p></div>';
+  }).join('');
+
+  document.getElementById('founder-quote').textContent = '"' + cfg.founderNote.quote + '"';
+  document.getElementById('founder-who').textContent = '— ' + cfg.founderNote.attribution;
+
+  document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
+    return '<details class="faq-item"><summary>' + item.q + '</summary><div class="faq-a">' + item.a + '</div></details>';
   }).join('');
 })();
 </script>
