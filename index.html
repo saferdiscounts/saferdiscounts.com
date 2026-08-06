@@ -77,12 +77,20 @@
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
   }
-  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
   .brand img{height:44px;width:auto;}
   .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
   .nav-links a{opacity:0.85;transition:opacity .2s;}
   .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-right{display:flex;align-items:center;gap:12px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
+    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
+    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
+    transition:background .2s, color .2s;
+  }
+  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
   .nav-cta{
     display:flex;align-items:center;gap:8px;
     background:var(--brand-orange);color:#fff;
@@ -103,14 +111,39 @@
     overflow:hidden;
   }
   .hero::before{
-    content:"";position:absolute;inset:0;
+    content:"";position:absolute;inset:0;z-index:1;
     background-image:
       radial-gradient(circle at 85% 20%, rgba(255,255,255,0.10) 0, transparent 40%),
       radial-gradient(circle at 10% 85%, rgba(241,86,11,0.25) 0, transparent 45%);
   }
-  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+  .hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+
+  /* خلفية متحركة بتلف بين خدماتنا: طيران، فنادق، نايل كروز، سي كروز */
+  .hero-scenes{position:absolute;inset:0;z-index:0;overflow:hidden;}
+  .hero-scene{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;transition:opacity 1.8s ease;
+  }
+  .hero-scene.active{opacity:1;}
+  .hero-scene .scene-tint{position:absolute;inset:0;}
+  .hero-scene .scene-icon{
+    position:relative;font-size:200px;line-height:1;opacity:0.12;
+    transform:scale(1);transition:transform 7s ease;
+  }
+  .hero-scene.active .scene-icon{transform:scale(1.1);}
+  .hero-scene img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transition:opacity 1s ease;
+  }
+  .hero-scene img.loaded{opacity:0.3;}
+  @media (prefers-reduced-motion: reduce){
+    .hero-scene{transition:none;}
+    .hero-scene .scene-icon{transition:none;}
+  }
+
   .floating-plane{
-    position:absolute;z-index:1;font-size:26px;opacity:0.18;pointer-events:none;
+    position:absolute;z-index:2;font-size:26px;opacity:0.18;pointer-events:none;
     animation:fly-across 22s linear infinite;
     filter:drop-shadow(0 0 6px rgba(255,255,255,0.3));
   }
@@ -152,15 +185,10 @@
     transition:transform .15s;
   }
   .ticket-btn:hover{transform:translateY(-3px);}
-  .ticket-btn::after{
-    content:"";position:absolute;left:-10px;top:50%;transform:translateY(-50%);
-    width:20px;height:20px;background:var(--brand-blue-dark);border-radius:50%;
-  }
   .ticket-btn.outline{
     background:transparent;border:2px solid rgba(255,255,255,0.6);
     box-shadow:none;
   }
-  .ticket-btn.outline::after{display:none;}
 
   .boarding-strip{
     margin-top:46px;
@@ -221,11 +249,6 @@
     border-bottom:2px dashed var(--line);
     position:relative;
   }
-  .ticket-card .top::before,.ticket-card .top::after{
-    content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:var(--paper);border-radius:50%;
-  }
-  .ticket-card .top::before{right:-12px;}
-  .ticket-card .top::after{left:-12px;}
   .icon-badge{
     width:52px;height:52px;border-radius:14px;
     background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
@@ -257,7 +280,7 @@
     position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:0.6;color:#fff;
   }
   .dest-badge{
-    position:absolute;top:8px;right:8px;
+    position:absolute;top:8px;inset-inline-end:8px;
     background:rgba(11,32,54,0.75);color:#fff;
     font-size:10px;font-family:'IBM Plex Mono',monospace;
     padding:3px 8px;border-radius:999px;letter-spacing:0.5px;
@@ -340,6 +363,7 @@
   }
   .why-item h4{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin-bottom:4px;}
   .why-item p{font-size:14px;color:#4B5A66;}
+  .why-head-title{font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;}
   .why-card{
     background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));
     border-radius:20px;color:#fff;padding:40px;
@@ -398,7 +422,7 @@
 
   /* Floating WhatsApp */
   .floating-wa{
-    position:fixed;bottom:22px;left:22px;z-index:60;
+    position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;
     background:var(--whatsapp);color:#fff;
     width:58px;height:58px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;font-size:28px;
@@ -427,49 +451,114 @@
 
 <!-- ============================================================================
      ⚙️ عدّل بياناتك هنا فقط — ده المكان الوحيد اللي محتاج تدخله عشان تغير أي حاجة
-     (رقم الواتساب، التليفون، الإيميل، الفيسبوك، النصوص، الوجهات والصور، الخ)
+     الموقع بقى ثنائي اللغة (عربي/إنجليزي)، فكل عنصر فيه نسخة "ar" ونسخة "en"
+     بجنب بعض — عدّل الاتنين مع بعض عشان الموقع يفضل متسق باللغتين.
      بعد ما تعدل، احفظ الملف وارفعه على GitHub بنفس الطريقة اللي عملتها قبل كده.
      ============================================================================ -->
 <script>
 window.SITE_CONFIG = {
 
-  // بيانات التواصل — أي تعديل هنا بيتحدث تلقائيًا في كل أماكن الموقع (الزرار العلوي، الفوتر، قسم التواصل، الزرار العائم)
+  // بيانات التواصل — أي تعديل هنا بيتحدث تلقائيًا في كل أماكن الموقع، باللغتين
   contact: {
-    whatsappNumber: "201116666306",              // رقم الواتساب بصيغة دولية من غير + وبدون مسافات
-    whatsappDefaultMessage: "مرحباً، عايز أحجز",
-    phoneDisplay: "01101576669",                 // الرقم اللي هيظهر للزوار
-    phoneDial: "+201101576669",                   // نفس الرقم بصيغة دولية (للاتصال المباشر من الموبايل)
+    whatsappNumber: "201116666306",
+    whatsappDefaultMessage: { ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book" },
+    phoneDisplay: "01101576669",
+    phoneDial: "+201101576669",
     email: "info@saferdiscounts.com",
     facebook: "https://www.facebook.com/saferdiscounts/"
   },
 
-  // نصوص الصفحة الرئيسية
-  hero: {
-    eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
-    titleLine1: "سافر بأقل سعر،",
-    titleHighlight: "من غير ما تدوّر تاني",
-    subtitle: "بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية، والحجز كله بيتم بسهولة على واتساب."
+  // نصوص الواجهة الثابتة (المنيو، الأزرار، عناوين الأقسام) بكل لغة
+  i18n: {
+    ar: {
+      brand: "سافر Discounts",
+      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", cta: "احجز واتساب" },
+      hero: {
+        eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
+        titleLine1: "سافر بأقل سعر،",
+        titleHighlight: "من غير ما تدوّر تاني",
+        subtitle: "بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية، والحجز كله بيتم بسهولة على واتساب.",
+        ctaWa: "احجز عبر واتساب",
+        ctaFb: "تابعنا على فيسبوك",
+        strip: ["طيران", "فنادق", "فعاليات ومتاحف", "دعم شخصي"]
+      },
+      servicesHead: { tag: "خدماتنا", h2: "كل حجوزات سفرك في مكان واحد", p: "من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي." },
+      destinationsHead: { tag: "وجهاتنا", h2: "جوة مصر وبرة مصر", p: "نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه." },
+      destinationGroups: { "in": "داخل مصر", out: "خارج مصر" },
+      reviewsHead: { tag: "آراء عملائنا", h2: "عملاؤنا بيقولوا ايه", p: "آراء حقيقية من صفحتنا الرسمية على فيسبوك." },
+      statsLabels: { followers: "متابع", reviews: "توصية", recommend: "نسبة التوصية" },
+      reviewsCta: "شوف كل التقييمات على فيسبوك",
+      howHead: { tag: "إزاي بتحجز", h2: "خطوات بسيطة وواضحة", p: "كل حاجة بتتم على واتساب من غير تعقيد." },
+      whyHead: { tag: "ليه سافر Discounts", h2: "تحجز بثقة، وتوفر في نفس الوقت" },
+      faqHead: { tag: "أسئلة شائعة", h2: "أسئلة بتيجي في بالك؟ اتفضل", p: "لو سؤالك مش موجود هنا، ابعتلنا على واتساب وهنرد عليك على طول." },
+      contactHead: { h2: "جاهز تحجز؟ كلمنا دلوقتي", p: "احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز." },
+      contactBtns: { wa: "واتساب", fb: "فيسبوك", ph: "اتصال", em: "إيميل" },
+      footerCopyright: "© 2026 سافر Discounts. جميع الحقوق محفوظة."
+    },
+    en: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", cta: "Book on WhatsApp" },
+      hero: {
+        eyebrow: "✦ TICKET · HOTEL · EVENT — Lower Prices",
+        titleLine1: "Travel for less,",
+        titleHighlight: "without the hassle",
+        subtitle: "We book flight tickets, hotel stays, and tickets for events and museums at competitive prices below official sites — all handled easily over WhatsApp.",
+        ctaWa: "Book on WhatsApp",
+        ctaFb: "Follow us on Facebook",
+        strip: ["Flights", "Hotels", "Events & Museums", "Personal Support"]
+      },
+      servicesHead: { tag: "Our Services", h2: "Everything for your trip, in one place", p: "From the ticket, to the hotel, to the event you're going to — we handle the booking and the competitive price." },
+      destinationsHead: { tag: "Our Destinations", h2: "Inside Egypt & Beyond", p: "A sample of the destinations we book for you, in Egypt and abroad." },
+      destinationGroups: { "in": "Inside Egypt", out: "Outside Egypt" },
+      reviewsHead: { tag: "Customer Reviews", h2: "What our customers say", p: "Real reviews from our official Facebook page." },
+      statsLabels: { followers: "Followers", reviews: "Recommendations", recommend: "Recommend Rate" },
+      reviewsCta: "See all reviews on Facebook",
+      howHead: { tag: "How to Book", h2: "Simple, clear steps", p: "Everything happens over WhatsApp, no complications." },
+      whyHead: { tag: "Why Safer Discounts", h2: "Book with confidence, and save at the same time" },
+      faqHead: { tag: "FAQ", h2: "Got questions? We've got answers", p: "If your question isn't here, message us on WhatsApp and we'll reply right away." },
+      contactHead: { h2: "Ready to book? Message us now", p: "We're on WhatsApp, Facebook, and phone all the time for any question or booking." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Call", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. All rights reserved."
+    }
   },
 
-  // خدماتنا — تقدر تعدل أي نص، أو تضيف بلوك جديد بنفس الشكل { icon, title, desc, tag }
-  services: [
-    { icon: "✈️", title: "تذاكر طيران",     desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.", tag: "CLASS: ECONOMY / BUSINESS" },
-    { icon: "🏨", title: "إقامات وفنادق",   desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",                                    tag: "STAY: ANY DESTINATION" },
-    { icon: "🎟️", title: "فعاليات ومتاحف", desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",                              tag: "ENTRY: EVENTS & MUSEUMS" }
+  // خلفية الـHero المتحركة — بتلف على 4 مشاهد ترمز لخدماتك (نفس الشكل بكل اللغات)
+  // دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
+  // لاستبدالها بصورك: ارفع صورتك في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
+  heroScenes: [
+    { icon: "✈️", image: "https://images.pexels.com/photos/3646733/pexels-photo-3646733.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      gradient: "linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%)" },
+    { icon: "🏨", image: "https://images.pexels.com/photos/5563469/pexels-photo-5563469.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      gradient: "linear-gradient(160deg, var(--brand-orange-dark) 0%, var(--brand-blue-dark) 60%, var(--brand-blue) 100%)" },
+    { icon: "🛳️", image: "https://images.pexels.com/photos/20506675/pexels-photo-20506675.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      gradient: "linear-gradient(160deg, var(--brand-blue-dark) 0%, #046b5e 50%, var(--brand-blue) 100%)" },
+    { icon: "🚢", image: "https://images.pexels.com/photos/13486900/pexels-photo-13486900.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      gradient: "linear-gradient(160deg, #012a45 0%, var(--brand-blue) 60%, #0483C9 100%)" }
   ],
 
-  // الوجهات السياحية (صور صغيرة) — عشان تضيف صورك:
-  // 1) اعمل فولدر اسمه "images" جنب index.html في نفس الريبو (Add file → Create new file → اكتب images/dubai.jpg مثلاً وارفع الصورة)
-  // 2) أو ارفع صورك بأي اسم وغيّر قيمة "image" هنا تحت بنفس الاسم بالظبط
-  // 3) لحد ما ترفع الصورة، هيظهر مكانها شكل بديل بسيط مش هيبوظ تصميم الموقع
-  // 4) لإضافة وجهة جديدة، انسخ سطر كامل وغيّر البيانات
+  // خدماتنا — الأيقونة والـtag مشتركين، بس العنوان والوصف بكل لغة على حدة
+  services: [
+    { icon: "✈️", tag: "CLASS: ECONOMY / BUSINESS",
+      ar_title: "تذاكر طيران", ar_desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.",
+      en_title: "Flight Tickets", en_desc: "Book domestic and international flights at prices lower than official sites, with step-by-step support." },
+    { icon: "🏨", tag: "STAY: ANY DESTINATION",
+      ar_title: "إقامات وفنادق", ar_desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",
+      en_title: "Hotels & Stays", en_desc: "Book hotels and serviced apartments at any destination you choose, at competitive prices." },
+    { icon: "🎟️", tag: "ENTRY: EVENTS & MUSEUMS",
+      ar_title: "فعاليات ومتاحف", ar_desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",
+      en_title: "Events & Museums", en_desc: "Tickets for concerts, museums, and local & international events at discounted prices." }
+  ],
+
+  // الوجهات السياحية (صور صغيرة) — دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
+  // لاستبدال أي صورة بصورتك انت: ارفعها في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
+  // group لازم تكون "in" (داخل مصر) أو "out" (خارج مصر) بالظبط
   destinations: [
-    { name: "دبي",            group: "خارج مصر", image: "images/dubai.jpg" },
-    { name: "باريس",           group: "خارج مصر", image: "images/paris.jpg" },
-    { name: "إسطنبول",         group: "خارج مصر", image: "images/istanbul.jpg" },
-    { name: "أهرامات الجيزة",  group: "داخل مصر", image: "images/giza.jpg" },
-    { name: "شرم الشيخ",       group: "داخل مصر", image: "images/sharm.jpg" },
-    { name: "الأقصر",          group: "داخل مصر", image: "images/luxor.jpg" }
+    { ar_name: "دبي",           en_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "باريس",          en_name: "Paris",              group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "إسطنبول",        en_name: "Istanbul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "الأقصر",         en_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
   ],
 
   // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
@@ -480,9 +569,8 @@ window.SITE_CONFIG = {
     facebookReviewsUrl: "https://www.facebook.com/saferdiscounts/reviews"
   },
 
-  // آراء العملاء (منسوخة من توصيات صفحة الفيسبوك)
-  // لإضافة رأي جديد: انسخ سطر كامل { name: ..., text: ... } وغيّر الاسم والنص
-  // النص ممكن يكون عربي أو إنجليزي براحتك، هيتظبط تلقائيًا في الاتجاه الصح
+  // آراء العملاء — بتفضل زي ما العميل كتبها بالظبط (عربي أو إنجليزي) مهما كانت لغة الموقع،
+  // عشان دي كلام العملاء الحقيقي ومش لازم يتترجم. لإضافة رأي جديد انسخ سطر وغيّر البيانات
   reviews: [
     { name: "Yasser Ossama",        text: "Excellent experience 😍😍 totally recommended" },
     { name: "Mahmood Farouk",       text: "❤️❤️❤️❤️ Very good experience" },
@@ -519,31 +607,45 @@ window.SITE_CONFIG = {
 
   // ليه سافر Discounts
   why: [
-    { mark: "$", title: "أسعار أقل من المواقع الرسمية", desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل." },
-    { mark: "💬", title: "تواصل مباشر وسهل",             desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة." },
-    { mark: "🤝", title: "متابعة شخصية لحجزك",           desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر." }
+    { mark: "$",
+      ar_title: "أسعار أقل من المواقع الرسمية", ar_desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل.",
+      en_title: "Lower prices than official sites", en_desc: "We benefit from agreements with global suppliers to get you a better price." },
+    { mark: "💬",
+      ar_title: "تواصل مباشر وسهل", ar_desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.",
+      en_title: "Direct, easy communication", en_desc: "Direct contact via WhatsApp or Facebook, no complicated steps." },
+    { mark: "🤝",
+      ar_title: "متابعة شخصية لحجزك", ar_desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.",
+      en_title: "Personal follow-up on your booking", en_desc: "Someone follows up with you from the moment you ask until you travel." }
   ],
 
   // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
   founderNote: {
-    quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.",
-    attribution: "فريق سافر Discounts"
+    ar_quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.", ar_attribution: "فريق سافر Discounts",
+    en_quote: "Our goal is to make travel accessible to everyone, without paying extra.", en_attribution: "The Safer Discounts Team"
   },
 
-  // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر { q: ..., a: ... } وغيّر البيانات
+  // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر وغيّر البيانات باللغتين
   faq: [
-    { q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط." },
-    { q: "الدفع بيتم إزاي؟", a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة." },
-    { q: "الحجز هيبقى باسمي أنا؟", a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه." },
-    { q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده." },
-    { q: "قد إيه المفروض أحجز قبل السفر؟", a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها." }
+    { ar_q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", ar_a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط.",
+      en_q: "How are your prices lower than official sites?", en_a: "We work with suppliers, airlines and hotels on special wholesale agreements, and pass part of that difference on to you." },
+    { ar_q: "الدفع بيتم إزاي؟", ar_a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة.",
+      en_q: "How do I pay?", en_a: "Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all booking details with you before you pay anything." },
+    { ar_q: "الحجز هيبقى باسمي أنا؟", ar_a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه.",
+      en_q: "Will the booking be in my own name?", en_a: "Yes, the ticket or hotel booking is made in your exact name and details, and you receive the official confirmation from the airline or hotel itself." },
+    { ar_q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", ar_a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
+      en_q: "If I change my mind after booking, can I cancel?", en_a: "Cancellation follows the airline's or hotel's own policy (some bookings are refundable, others aren't), and we explain this before you confirm, not after." },
+    { ar_q: "قد إيه المفروض أحجز قبل السفر؟", ar_a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها.",
+      en_q: "How far in advance should I book?", en_a: "The earlier you book, the better the prices — but reach out even for a last-minute trip and we'll find the best price available then." }
   ],
 
   // خطوات الحجز
   steps: [
-    { n: "01", title: "ابعتلنا تفاصيل رحلتك",  desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك." },
-    { n: "02", title: "هنبعتلك أفضل سعر متاح", desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد." },
-    { n: "03", title: "تأكيد الحجز",           desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك." }
+    { n: "01", ar_title: "ابعتلنا تفاصيل رحلتك",  ar_desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك.",
+      en_title: "Send us your trip details", en_desc: "Destination, date, and number of travelers — via WhatsApp or Facebook." },
+    { n: "02", ar_title: "هنبعتلك أفضل سعر متاح", ar_desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.",
+      en_title: "We'll send you the best price", en_desc: "We compare available options and recommend the best price and timing." },
+    { n: "03", ar_title: "تأكيد الحجز",           ar_desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك.",
+      en_title: "Confirm your booking", en_desc: "Once you're happy with the price and details, we confirm your booking and send your ticket." }
   ]
 };
 </script>
@@ -554,20 +656,23 @@ window.SITE_CONFIG = {
 
 <header>
   <nav class="wrap">
-    <a href="#" class="brand"><img src="logo.png" alt="سافر Discounts"></a>
-    <div class="nav-links">
-      <a href="#services">خدماتنا</a>
-      <a href="#destinations">وجهاتنا</a>
-      <a href="#reviews">آراء العملاء</a>
-      <a href="#how">إزاي بتحجز</a>
-      <a href="#faq">أسئلة شائعة</a>
-      <a href="#contact">تواصل معانا</a>
+    <a href="#" class="brand"><img src="logo.png" alt="Safer Discounts"></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#services" data-nav="services"></a>
+      <a href="#destinations" data-nav="destinations"></a>
+      <a href="#reviews" data-nav="reviews"></a>
+      <a href="#how" data-nav="how"></a>
+      <a href="#faq" data-nav="faq"></a>
     </div>
-    <a class="nav-cta" data-wa href="#">💬 احجز واتساب</a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
+    </div>
   </nav>
 </header>
 
 <section class="hero">
+  <div class="hero-scenes" id="hero-scenes"></div>
   <span class="floating-plane">✈️</span>
   <span class="floating-plane p2">✈️</span>
   <div class="wrap hero-inner">
@@ -576,19 +681,14 @@ window.SITE_CONFIG = {
       <h1><span id="hero-title-1"></span><br><span id="hero-title-2"></span></h1>
       <p id="hero-subtitle"></p>
       <div class="hero-actions">
-        <a class="ticket-btn" data-wa href="#">💬 احجز عبر واتساب</a>
-        <a class="ticket-btn outline" data-fb href="#" target="_blank">تابعنا على فيسبوك</a>
+        <a class="ticket-btn" data-wa href="#" id="hero-cta-wa">💬</a>
+        <a class="ticket-btn outline" data-fb href="#" target="_blank" id="hero-cta-fb"></a>
       </div>
-      <div class="boarding-strip">
-        <div><div class="num">✈</div><div class="lbl">طيران</div></div>
-        <div><div class="num">🏨</div><div class="lbl">فنادق</div></div>
-        <div><div class="num">🎟</div><div class="lbl">فعاليات ومتاحف</div></div>
-        <div><div class="num">🤝</div><div class="lbl">دعم شخصي</div></div>
-      </div>
+      <div class="boarding-strip" id="hero-strip"></div>
     </div>
     <div class="hero-visual">
       <div class="perf"></div><div class="perf two"></div>
-      <img src="logo.png" alt="سافر Discounts">
+      <img src="logo.png" alt="Safer Discounts">
       <div class="code">BOOK · SAVE · FLY</div>
       <div class="barcode"></div>
     </div>
@@ -598,9 +698,9 @@ window.SITE_CONFIG = {
 <section id="services">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">خدماتنا</span>
-      <h2>كل حجوزات سفرك في مكان واحد</h2>
-      <p>من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي.</p>
+      <span class="tag" id="services-tag"></span>
+      <h2 id="services-h2"></h2>
+      <p id="services-p"></p>
     </div>
     <div class="services" id="services-grid"></div>
   </div>
@@ -609,9 +709,9 @@ window.SITE_CONFIG = {
 <section id="destinations" style="background:var(--paper-card);">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">وجهاتنا</span>
-      <h2>جوة مصر وبرة مصر</h2>
-      <p>نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه.</p>
+      <span class="tag" id="destinations-tag"></span>
+      <h2 id="destinations-h2"></h2>
+      <p id="destinations-p"></p>
     </div>
     <div class="destinations-grid" id="destinations-grid"></div>
   </div>
@@ -620,14 +720,14 @@ window.SITE_CONFIG = {
 <section id="reviews">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">آراء عملائنا</span>
-      <h2>عملاؤنا بيقولوا ايه</h2>
-      <p>آراء حقيقية من صفحتنا الرسمية على فيسبوك.</p>
+      <span class="tag" id="reviews-tag"></span>
+      <h2 id="reviews-h2"></h2>
+      <p id="reviews-p"></p>
     </div>
     <div class="reviews-stats" id="reviews-stats"></div>
     <div class="reviews-viewport"><div class="reviews-scroll" id="reviews-grid"></div></div>
     <div class="reviews-cta">
-      <a class="ticket-btn outline" style="color:var(--brand-blue-dark);border-color:var(--brand-blue-dark);display:inline-flex;" href="#" id="reviews-fb-link" target="_blank">📘 شوف كل التقييمات على فيسبوك</a>
+      <a class="ticket-btn outline" style="color:var(--brand-blue-dark);border-color:var(--brand-blue-dark);display:inline-flex;" href="#" id="reviews-fb-link" target="_blank">📘 <span id="reviews-cta-text"></span></a>
     </div>
   </div>
 </section>
@@ -635,9 +735,9 @@ window.SITE_CONFIG = {
 <section class="how" id="how">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">إزاي بتحجز</span>
-      <h2>خطوات بسيطة وواضحة</h2>
-      <p>كل حاجة بتتم على واتساب من غير تعقيد.</p>
+      <span class="tag" id="how-tag"></span>
+      <h2 id="how-h2"></h2>
+      <p id="how-p"></p>
     </div>
     <div class="steps" id="steps-grid"></div>
   </div>
@@ -646,8 +746,8 @@ window.SITE_CONFIG = {
 <section id="why">
   <div class="wrap why">
     <div>
-      <span class="tag">ليه سافر Discounts</span>
-      <h2 style="font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;">تحجز بثقة، وتوفر في نفس الوقت</h2>
+      <span class="tag" id="why-tag"></span>
+      <h2 class="why-head-title" id="why-h2"></h2>
       <div class="why-list" id="why-list"></div>
     </div>
     <div class="why-card">
@@ -660,9 +760,9 @@ window.SITE_CONFIG = {
 <section id="faq" style="background:var(--paper-card);">
   <div class="wrap">
     <div class="section-head">
-      <span class="tag">أسئلة شائعة</span>
-      <h2>أسئلة بتيجي في بالك؟ اتفضل</h2>
-      <p>لو سؤالك مش موجود هنا، ابعتلنا على واتساب وهنرد عليك على طول.</p>
+      <span class="tag" id="faq-tag"></span>
+      <h2 id="faq-h2"></h2>
+      <p id="faq-p"></p>
     </div>
     <div class="faq-list" id="faq-list"></div>
   </div>
@@ -671,14 +771,14 @@ window.SITE_CONFIG = {
 <section class="contact" id="contact">
   <div class="wrap contact-inner">
     <div>
-      <h2>جاهز تحجز؟ كلمنا دلوقتي</h2>
-      <p>احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز.</p>
+      <h2 id="contact-h2"></h2>
+      <p id="contact-p"></p>
     </div>
     <div class="contact-btns">
-      <a class="cbtn wa" data-wa href="#">💬 واتساب</a>
-      <a class="cbtn fb" data-fb href="#" target="_blank">📘 فيسبوك</a>
-      <a class="cbtn ph" data-phone href="#">📞 اتصال</a>
-      <a class="cbtn em" data-email href="#">✉️ إيميل</a>
+      <a class="cbtn wa" data-wa href="#">💬 <span id="cbtn-wa"></span></a>
+      <a class="cbtn fb" data-fb href="#" target="_blank">📘 <span id="cbtn-fb"></span></a>
+      <a class="cbtn ph" data-phone href="#">📞 <span id="cbtn-ph"></span></a>
+      <a class="cbtn em" data-email href="#">✉️ <span id="cbtn-em"></span></a>
     </div>
   </div>
 </section>
@@ -686,132 +786,38 @@ window.SITE_CONFIG = {
 <footer>
   <div class="wrap">
     <div class="footer-top">
-      <div class="footer-brand"><img src="logo.png" alt="سافر Discounts"> سافر Discounts</div>
+      <div class="footer-brand"><img src="logo.png" alt="Safer Discounts"> <span id="footer-brand-text"></span></div>
       <div class="footer-socials">
-        <a data-fb href="#" target="_blank">فيسبوك</a>
-        <a data-wa href="#">واتساب</a>
+        <a data-fb href="#" target="_blank" id="footer-fb-text"></a>
+        <a data-wa href="#" id="footer-wa-text"></a>
         <a data-email href="#" id="footer-email-text"></a>
         <a data-phone href="#" id="footer-phone-text"></a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 سافر Discounts. جميع الحقوق محفوظة.</span>
+      <span id="footer-copyright"></span>
       <span class="mono">SAFERDISCOUNTS.COM</span>
     </div>
   </div>
 </footer>
 
-<a class="floating-wa" data-wa href="#" aria-label="تواصل عبر واتساب">💬</a>
+<a class="floating-wa" data-wa href="#" aria-label="WhatsApp">💬</a>
 
 <script>
 (function(){
   var cfg = window.SITE_CONFIG;
+  var currentLang = 'ar';
 
-  function waLink(){
-    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(cfg.contact.whatsappDefaultMessage);
+  function waLink(lang){
+    var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
+    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
   }
-
-  document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(); });
-  document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
-  document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
-  document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
-
-  var footerEmail = document.getElementById('footer-email-text');
-  if (footerEmail) footerEmail.textContent = cfg.contact.email;
-  var footerPhone = document.getElementById('footer-phone-text');
-  if (footerPhone) footerPhone.textContent = cfg.contact.phoneDisplay;
-
-  document.getElementById('hero-eyebrow').textContent = cfg.hero.eyebrow;
-  document.getElementById('hero-title-1').textContent = cfg.hero.titleLine1;
-  document.getElementById('hero-title-2').textContent = cfg.hero.titleHighlight;
-  document.getElementById('hero-subtitle').textContent = cfg.hero.subtitle;
-
-  document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
-    return '<div class="ticket-card"><div class="top">' +
-           '<div class="icon-badge">' + s.icon + '</div>' +
-           '<h3>' + s.title + '</h3><p>' + s.desc + '</p></div>' +
-           '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
-  }).join('');
-
-  document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
-    return '<div class="dest-card">' +
-             '<div class="dest-img">' +
-               '<img src="' + d.image + '" alt="' + d.name + '" onerror="this.parentElement.classList.add(\'no-img\')">' +
-               '<span class="dest-badge">' + d.group + '</span>' +
-             '</div>' +
-             '<div class="dest-name">' + d.name + '</div>' +
-           '</div>';
-  }).join('');
 
   function parseStat(str){
     var m = String(str).match(/^(\d+)(.*)$/);
     return m ? { num: parseInt(m[1], 10), suffix: m[2] } : { num: 0, suffix: str };
   }
-  var statsData = [
-    { value: cfg.social.followers, label: "متابع" },
-    { value: cfg.social.totalReviews, label: "توصية" },
-    { value: cfg.social.recommendPercent, label: "نسبة التوصية" }
-  ];
-  document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
-    var p = parseStat(s.value);
-    return '<div><div class="stat-num stat-count" data-target="' + p.num + '" data-suffix="' + p.suffix + '">0' + p.suffix + '</div><div class="stat-lbl">' + s.label + '</div></div>';
-  }).join('');
 
-  document.getElementById('reviews-fb-link').href = cfg.social.facebookReviewsUrl;
-
-  var reviewsHtml = cfg.reviews.map(function(r){
-    var initial = r.name.trim().charAt(0).toUpperCase();
-    return '<div class="review-card">' +
-             '<div class="review-top">' +
-               '<div class="review-avatar">' + initial + '</div>' +
-               '<div class="review-name">' + r.name + '</div>' +
-             '</div>' +
-             '<div class="review-quote-mark">❝</div>' +
-             '<div class="review-text" dir="auto">' + r.text + '</div>' +
-           '</div>';
-  }).join('');
-  var reviewsGridEl = document.getElementById('reviews-grid');
-  reviewsGridEl.innerHTML = reviewsHtml + reviewsHtml; // مكرر مرتين عشان الحركة تلف من غير قطع
-  reviewsGridEl.style.animationDuration = Math.max(30, cfg.reviews.length * 4) + 's';
-
-  document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
-    return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
-           '<div><h4>' + w.title + '</h4><p>' + w.desc + '</p></div></div>';
-  }).join('');
-
-  document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
-    return '<div class="step"><div class="n">' + s.n + '</div><h4>' + s.title + '</h4><p>' + s.desc + '</p></div>';
-  }).join('');
-
-  document.getElementById('founder-quote').textContent = '"' + cfg.founderNote.quote + '"';
-  document.getElementById('founder-who').textContent = '— ' + cfg.founderNote.attribution;
-
-  document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
-    return '<details class="faq-item"><summary>' + item.q + '</summary><div class="faq-a">' + item.a + '</div></details>';
-  }).join('');
-
-  // ===== الأقسام تظهر بتدرّج لما تنزل في الصفحة =====
-  var revealTargets = document.querySelectorAll(
-    '.section-head, .ticket-card, .dest-card, .step, .why-item, .why-card, .faq-item, .review-card'
-  );
-  revealTargets.forEach(function(el){ el.classList.add('reveal'); });
-
-  if ('IntersectionObserver' in window) {
-    var revealObserver = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-    revealTargets.forEach(function(el){ revealObserver.observe(el); });
-  } else {
-    revealTargets.forEach(function(el){ el.classList.add('revealed'); });
-  }
-
-  // ===== الأرقام تعد لوحدها لما تظهر في الشاشة =====
-  var countEls = document.querySelectorAll('.stat-count');
   function animateCount(el){
     var target = parseInt(el.getAttribute('data-target'), 10) || 0;
     var suffix = el.getAttribute('data-suffix') || '';
@@ -819,24 +825,224 @@ window.SITE_CONFIG = {
     function step(ts){
       if (!start) start = ts;
       var progress = Math.min((ts - start) / duration, 1);
-      var current = Math.floor(progress * target);
-      el.textContent = current + suffix;
+      el.textContent = Math.floor(progress * target) + suffix;
       if (progress < 1) requestAnimationFrame(step);
       else el.textContent = target + suffix;
     }
     requestAnimationFrame(step);
   }
-  if ('IntersectionObserver' in window && countEls.length) {
-    var countObserver = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          animateCount(entry.target);
-          countObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    countEls.forEach(function(el){ countObserver.observe(el); });
+
+  function setupRevealAndCounters(){
+    var revealTargets = document.querySelectorAll(
+      '.section-head, .ticket-card, .dest-card, .step, .why-item, .why-card, .faq-item, .review-card'
+    );
+    revealTargets.forEach(function(el){ el.classList.add('reveal'); });
+    if ('IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      revealTargets.forEach(function(el){ revealObserver.observe(el); });
+
+      var countEls = document.querySelectorAll('.stat-count');
+      var countObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            countObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      countEls.forEach(function(el){ countObserver.observe(el); });
+    } else {
+      revealTargets.forEach(function(el){ el.classList.add('revealed'); });
+    }
   }
+
+  function render(lang){
+    currentLang = lang;
+    var t = cfg.i18n[lang];
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+
+    // روابط التواصل (بتتحدث برسالة واتساب باللغة الحالية)
+    document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
+    document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
+    document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
+    document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+
+    // Nav
+    document.querySelector('[data-nav="services"]').textContent = t.nav.services;
+    document.querySelector('[data-nav="destinations"]').textContent = t.nav.destinations;
+    document.querySelector('[data-nav="reviews"]').textContent = t.nav.reviews;
+    document.querySelector('[data-nav="how"]').textContent = t.nav.how;
+    document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
+    document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
+
+    // Hero
+    document.getElementById('hero-eyebrow').textContent = t.hero.eyebrow;
+    document.getElementById('hero-title-1').textContent = t.hero.titleLine1;
+    document.getElementById('hero-title-2').textContent = t.hero.titleHighlight;
+    document.getElementById('hero-subtitle').textContent = t.hero.subtitle;
+    document.getElementById('hero-cta-wa').innerHTML = '💬 ' + t.hero.ctaWa;
+    document.getElementById('hero-cta-fb').textContent = t.hero.ctaFb;
+    var stripIcons = ['✈', '🏨', '🎟', '🤝'];
+    document.getElementById('hero-strip').innerHTML = t.hero.strip.map(function(label, i){
+      return '<div><div class="num">' + stripIcons[i] + '</div><div class="lbl">' + label + '</div></div>';
+    }).join('');
+
+    // خلفية الـHero المتحركة (تتبنى مرة واحدة بس، مش لازم تتكرر مع تبديل اللغة)
+    var scenesEl = document.getElementById('hero-scenes');
+    if (!scenesEl.dataset.built) {
+      scenesEl.innerHTML = cfg.heroScenes.map(function(s, i){
+        return '<div class="hero-scene' + (i === 0 ? ' active' : '') + '">' +
+                 '<div class="scene-tint" style="background:' + s.gradient + '"></div>' +
+                 '<img src="' + s.image + '" alt="" ' +
+                   'onload="this.classList.add(\'loaded\')" onerror="this.remove()">' +
+                 '<span class="scene-icon">' + s.icon + '</span>' +
+               '</div>';
+      }).join('');
+      scenesEl.dataset.built = '1';
+      var sceneEls = scenesEl.querySelectorAll('.hero-scene');
+      var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (sceneEls.length > 1 && !reducedMotion) {
+        var currentScene = 0;
+        setInterval(function(){
+          sceneEls[currentScene].classList.remove('active');
+          currentScene = (currentScene + 1) % sceneEls.length;
+          sceneEls[currentScene].classList.add('active');
+        }, 5000);
+      }
+    }
+
+    // Services
+    document.getElementById('services-tag').textContent = t.servicesHead.tag;
+    document.getElementById('services-h2').textContent = t.servicesHead.h2;
+    document.getElementById('services-p').textContent = t.servicesHead.p;
+    document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
+      var title = lang === 'ar' ? s.ar_title : s.en_title;
+      var desc = lang === 'ar' ? s.ar_desc : s.en_desc;
+      return '<div class="ticket-card"><div class="top">' +
+             '<div class="icon-badge">' + s.icon + '</div>' +
+             '<h3>' + title + '</h3><p>' + desc + '</p></div>' +
+             '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
+    }).join('');
+
+    // Destinations
+    document.getElementById('destinations-tag').textContent = t.destinationsHead.tag;
+    document.getElementById('destinations-h2').textContent = t.destinationsHead.h2;
+    document.getElementById('destinations-p').textContent = t.destinationsHead.p;
+    document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
+      var name = lang === 'ar' ? d.ar_name : d.en_name;
+      var groupLabel = t.destinationGroups[d.group];
+      return '<div class="dest-card">' +
+               '<div class="dest-img">' +
+                 '<img src="' + d.image + '" alt="' + name + '" onerror="this.parentElement.classList.add(\'no-img\')">' +
+                 '<span class="dest-badge">' + groupLabel + '</span>' +
+               '</div>' +
+               '<div class="dest-name">' + name + '</div>' +
+             '</div>';
+    }).join('');
+
+    // Reviews
+    document.getElementById('reviews-tag').textContent = t.reviewsHead.tag;
+    document.getElementById('reviews-h2').textContent = t.reviewsHead.h2;
+    document.getElementById('reviews-p').textContent = t.reviewsHead.p;
+    document.getElementById('reviews-cta-text').textContent = t.reviewsCta;
+    document.getElementById('reviews-fb-link').href = cfg.social.facebookReviewsUrl;
+
+    var statsData = [
+      { value: cfg.social.followers, label: t.statsLabels.followers },
+      { value: cfg.social.totalReviews, label: t.statsLabels.reviews },
+      { value: cfg.social.recommendPercent, label: t.statsLabels.recommend }
+    ];
+    document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
+      var p = parseStat(s.value);
+      return '<div><div class="stat-num stat-count" data-target="' + p.num + '" data-suffix="' + p.suffix + '">0' + p.suffix + '</div><div class="stat-lbl">' + s.label + '</div></div>';
+    }).join('');
+
+    var reviewsGridEl = document.getElementById('reviews-grid');
+    if (!reviewsGridEl.dataset.built) {
+      var reviewsHtml = cfg.reviews.map(function(r){
+        var initial = r.name.trim().charAt(0).toUpperCase();
+        return '<div class="review-card">' +
+                 '<div class="review-top">' +
+                   '<div class="review-avatar">' + initial + '</div>' +
+                   '<div class="review-name">' + r.name + '</div>' +
+                 '</div>' +
+                 '<div class="review-quote-mark">❝</div>' +
+                 '<div class="review-text" dir="auto">' + r.text + '</div>' +
+               '</div>';
+      }).join('');
+      reviewsGridEl.innerHTML = reviewsHtml + reviewsHtml;
+      reviewsGridEl.style.animationDuration = Math.max(30, cfg.reviews.length * 4) + 's';
+      reviewsGridEl.dataset.built = '1';
+    }
+
+    // How it works
+    document.getElementById('how-tag').textContent = t.howHead.tag;
+    document.getElementById('how-h2').textContent = t.howHead.h2;
+    document.getElementById('how-p').textContent = t.howHead.p;
+    document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
+      var title = lang === 'ar' ? s.ar_title : s.en_title;
+      var desc = lang === 'ar' ? s.ar_desc : s.en_desc;
+      return '<div class="step"><div class="n">' + s.n + '</div><h4>' + title + '</h4><p>' + desc + '</p></div>';
+    }).join('');
+
+    // Why us
+    document.getElementById('why-tag').textContent = t.whyHead.tag;
+    document.getElementById('why-h2').textContent = t.whyHead.h2;
+    document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
+      var title = lang === 'ar' ? w.ar_title : w.en_title;
+      var desc = lang === 'ar' ? w.ar_desc : w.en_desc;
+      return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
+             '<div><h4>' + title + '</h4><p>' + desc + '</p></div></div>';
+    }).join('');
+    var fq = lang === 'ar' ? cfg.founderNote.ar_quote : cfg.founderNote.en_quote;
+    var fa = lang === 'ar' ? cfg.founderNote.ar_attribution : cfg.founderNote.en_attribution;
+    document.getElementById('founder-quote').textContent = '"' + fq + '"';
+    document.getElementById('founder-who').textContent = '— ' + fa;
+
+    // FAQ
+    document.getElementById('faq-tag').textContent = t.faqHead.tag;
+    document.getElementById('faq-h2').textContent = t.faqHead.h2;
+    document.getElementById('faq-p').textContent = t.faqHead.p;
+    document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
+      var q = lang === 'ar' ? item.ar_q : item.en_q;
+      var a = lang === 'ar' ? item.ar_a : item.en_a;
+      return '<details class="faq-item"><summary>' + q + '</summary><div class="faq-a">' + a + '</div></details>';
+    }).join('');
+
+    // Contact
+    document.getElementById('contact-h2').textContent = t.contactHead.h2;
+    document.getElementById('contact-p').textContent = t.contactHead.p;
+    document.getElementById('cbtn-wa').textContent = t.contactBtns.wa;
+    document.getElementById('cbtn-fb').textContent = t.contactBtns.fb;
+    document.getElementById('cbtn-ph').textContent = t.contactBtns.ph;
+    document.getElementById('cbtn-em').textContent = t.contactBtns.em;
+
+    // Footer
+    document.getElementById('footer-brand-text').textContent = t.brand;
+    document.getElementById('footer-fb-text').textContent = t.contactBtns.fb;
+    document.getElementById('footer-wa-text').textContent = t.contactBtns.wa;
+    document.getElementById('footer-email-text').textContent = cfg.contact.email;
+    document.getElementById('footer-phone-text').textContent = cfg.contact.phoneDisplay;
+    document.getElementById('footer-copyright').textContent = t.footerCopyright;
+
+    // إعادة تفعيل تأثير الظهور التدريجي على أي عناصر اتبنت جديد
+    setupRevealAndCounters();
+  }
+
+  document.getElementById('lang-toggle').addEventListener('click', function(){
+    render(currentLang === 'ar' ? 'en' : 'ar');
+  });
+
+  render('ar');
 })();
 </script>
 
