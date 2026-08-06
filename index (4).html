@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سافر Discounts | حجز تذاكر طيران وفنادق وفعاليات بأسعار أقل</title>
+<meta name="description" content="سافر Discounts - احجز تذاكر طيران، فنادق، وتذاكر فعاليات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية. تواصل مباشر عبر واتساب.">
+<meta name="keywords" content="سافر Discounts, Safer Discounts, حجز طيران رخيص, حجز فنادق مصر, تذاكر فعاليات ومتاحف, حجز تذاكر بأسعار مخفضة">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Safer Discounts">
+<link rel="canonical" href="https://saferdiscounts.com/">
+
+<!-- Open Graph (مهم لما يتشارك الرابط على فيسبوك وواتساب) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saferdiscounts.com/">
+<meta property="og:title" content="سافر Discounts | حجز تذاكر طيران وفنادق وفعاليات بأسعار أقل">
+<meta property="og:description" content="احجز تذاكر طيران، فنادق، وتذاكر فعاليات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية.">
+<meta property="og:image" content="https://saferdiscounts.com/logo.png">
+<meta property="og:locale" content="ar_EG">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- بيانات منظمة (Structured Data) عشان جوجل يفهم إن الموقع ده لشركة سياحة -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Safer Discounts",
+  "alternateName": "سافر Discounts",
+  "url": "https://saferdiscounts.com/",
+  "logo": "https://saferdiscounts.com/logo.png",
+  "image": "https://saferdiscounts.com/logo.png",
+  "description": "حجز تذاكر طيران، فنادق، وتذاكر فعاليات ومتاحف بأسعار تنافسية.",
+  "sameAs": ["https://www.facebook.com/saferdiscounts/"],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+201101576669",
+    "contactType": "customer service",
+    "areaServed": "EG",
+    "availableLanguage": ["Arabic", "English"]
+  }
+}
+</script>
+<style>
+  :root{
+    --brand-blue:#0365A3;
+    --brand-blue-dark:#023152;
+    --brand-orange:#F1560B;
+    --brand-orange-dark:#C7430A;
+    --ink:#0B2036;
+    --paper:#FFF9F1;
+    --paper-card:#FFFFFF;
+    --line:#E4D9C8;
+    --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Cairo',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  /* ===== NAV ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,249,241,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
+  .brand img{height:44px;width:auto;}
+  .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
+  .nav-links a{opacity:0.85;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-cta{
+    display:flex;align-items:center;gap:8px;
+    background:var(--brand-orange);color:#fff;
+    padding:10px 20px;border-radius:999px;
+    font-weight:700;font-size:14px;
+    box-shadow:0 4px 14px rgba(241,86,11,0.35);
+    transition:transform .15s, box-shadow .15s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%);
+    color:#fff;
+    padding:90px 0 120px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:
+      radial-gradient(circle at 85% 20%, rgba(255,255,255,0.10) 0, transparent 40%),
+      radial-gradient(circle at 10% 85%, rgba(241,86,11,0.25) 0, transparent 45%);
+  }
+  .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+  .floating-plane{
+    position:absolute;z-index:1;font-size:26px;opacity:0.18;pointer-events:none;
+    animation:fly-across 22s linear infinite;
+    filter:drop-shadow(0 0 6px rgba(255,255,255,0.3));
+  }
+  .floating-plane.p2{font-size:16px;opacity:0.12;animation-duration:30s;animation-delay:-10s;top:65%;}
+  @keyframes fly-across{
+    0%{transform:translate(-10%,20%) rotate(8deg);}
+    50%{transform:translate(60%,-5%) rotate(4deg);}
+    100%{transform:translate(120%,15%) rotate(8deg);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .floating-plane{animation:none;display:none;}
+  }
+
+  /* ظهور تدريجي للعناصر لما تنزل الصفحة */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.revealed{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
+    background:rgba(255,255,255,0.12);
+    border:1px dashed rgba(255,255,255,0.5);
+    padding:6px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:44px;font-weight:900;line-height:1.35;margin-bottom:20px;}
+  .hero h1 span{color:#FFD9B0;}
+  .hero p{font-size:17px;opacity:0.92;max-width:520px;margin-bottom:34px;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
+
+  .ticket-btn{
+    position:relative;
+    display:flex;align-items:center;gap:12px;
+    background:var(--brand-orange);
+    color:#fff;font-weight:800;font-size:16px;
+    padding:16px 26px;border-radius:12px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.25);
+    transition:transform .15s;
+  }
+  .ticket-btn:hover{transform:translateY(-3px);}
+  .ticket-btn::after{
+    content:"";position:absolute;left:-10px;top:50%;transform:translateY(-50%);
+    width:20px;height:20px;background:var(--brand-blue-dark);border-radius:50%;
+  }
+  .ticket-btn.outline{
+    background:transparent;border:2px solid rgba(255,255,255,0.6);
+    box-shadow:none;
+  }
+  .ticket-btn.outline::after{display:none;}
+
+  .boarding-strip{
+    margin-top:46px;
+    background:rgba(255,255,255,0.08);
+    border:1px dashed rgba(255,255,255,0.4);
+    border-radius:14px;
+    padding:18px 20px;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+  .boarding-strip div{text-align:center;flex:1;min-width:90px;}
+  .boarding-strip .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:#FFD9B0;}
+  .boarding-strip .lbl{font-size:12px;opacity:0.85;margin-top:4px;}
+
+  .hero-visual{
+    position:relative;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:34px 26px;
+    color:var(--ink);
+    box-shadow:0 30px 60px rgba(0,0,0,0.3);
+  }
+  .hero-visual img{width:170px;margin:0 auto 14px;}
+  .hero-visual .code{
+    font-family:'IBM Plex Mono',monospace;text-align:center;font-size:13px;color:var(--brand-blue);
+    letter-spacing:3px;margin-bottom:10px;
+  }
+  .hero-visual .barcode{
+    height:34px;
+    background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 7px, transparent 7px 11px, var(--ink) 11px 12px, transparent 12px 16px);
+    margin-top:16px;opacity:0.85;
+  }
+  .perf{
+    position:absolute;top:-12px;right:36px;width:24px;height:24px;background:var(--paper);border-radius:50%;
+  }
+  .perf.two{top:auto;bottom:-12px;left:36px;right:auto;}
+
+  /* ===== SECTIONS ===== */
+  section{padding:88px 0;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
+    font-weight:600;display:block;margin-bottom:12px;
+  }
+  .section-head h2{font-size:32px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .section-head p{font-size:16px;color:#4B5A66;}
+
+  /* Services - ticket stub cards */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .ticket-card{
+    position:relative;
+    background:var(--paper-card);
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(11,32,54,0.08);
+    overflow:hidden;
+  }
+  .ticket-card .top{
+    padding:30px 26px 24px;
+    border-bottom:2px dashed var(--line);
+    position:relative;
+  }
+  .ticket-card .top::before,.ticket-card .top::after{
+    content:"";position:absolute;bottom:-12px;width:24px;height:24px;background:var(--paper);border-radius:50%;
+  }
+  .ticket-card .top::before{right:-12px;}
+  .ticket-card .top::after{left:-12px;}
+  .icon-badge{
+    width:52px;height:52px;border-radius:14px;
+    background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;margin-bottom:18px;
+  }
+  .ticket-card h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .ticket-card p{font-size:14.5px;color:#4B5A66;}
+  .ticket-card .bottom{
+    padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
+  }
+
+  /* Destinations - small image cards */
+  .destinations-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+  .dest-card{
+    border-radius:14px;overflow:hidden;
+    box-shadow:0 8px 20px rgba(11,32,54,0.08);
+    background:var(--paper-card);
+    transition:transform .3s, box-shadow .3s;
+  }
+  .dest-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,0.16);}
+  .dest-img{position:relative;width:100%;height:110px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
+  .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .dest-card:hover .dest-img img{transform:scale(1.12);}
+  .dest-img.no-img img{display:none;}
+  .dest-img.no-img::after{
+    content:"🖼";
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:0.6;color:#fff;
+  }
+  .dest-badge{
+    position:absolute;top:8px;right:8px;
+    background:rgba(11,32,54,0.75);color:#fff;
+    font-size:10px;font-family:'IBM Plex Mono',monospace;
+    padding:3px 8px;border-radius:999px;letter-spacing:0.5px;
+  }
+  .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
+
+  /* Reviews / testimonials */
+  .reviews-stats{
+    display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:44px;
+  }
+  .reviews-stats div{text-align:center;}
+  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
+  .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
+  .reviews-viewport{
+    overflow:hidden;padding:8px 0 24px;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+  }
+  .reviews-scroll{
+    display:flex;gap:20px;width:max-content;
+    animation:reviews-marquee linear infinite;
+  }
+  .reviews-viewport:hover .reviews-scroll,
+  .reviews-viewport:focus-within .reviews-scroll{
+    animation-play-state:paused;
+  }
+  @keyframes reviews-marquee{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reviews-scroll{animation:none;}
+  }
+  .review-card{
+    flex:0 0 300px;
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.06);
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .review-top{display:flex;align-items:center;gap:12px;}
+  .review-avatar{
+    width:40px;height:40px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
+    color:#fff;font-weight:800;font-size:16px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .review-name{font-weight:700;font-size:14.5px;color:var(--brand-blue-dark);}
+  .review-quote-mark{font-size:28px;color:var(--brand-orange);opacity:0.35;line-height:0.6;font-family:Georgia,serif;}
+  .review-text{font-size:13.5px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
+  .reviews-cta{text-align:center;margin-top:8px;}
+
+  /* How it works */
+  .how{background:var(--brand-blue-dark);color:#fff;}
+  .how .section-head h2{color:#fff;}
+  .how .section-head p{color:#C9DCE8;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .step{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:16px;padding:30px 24px;position:relative;
+  }
+  .step .n{
+    font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:600;color:var(--brand-orange);
+    opacity:0.9;margin-bottom:14px;
+  }
+  .step h4{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14px;color:#C9DCE8;}
+
+  /* Why us */
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+  .why-list{display:flex;flex-direction:column;gap:22px;}
+  .why-item{display:flex;gap:16px;align-items:flex-start;}
+  .why-item .mark{
+    flex-shrink:0;width:36px;height:36px;border-radius:10px;
+    background:var(--brand-blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;
+  }
+  .why-item h4{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin-bottom:4px;}
+  .why-item p{font-size:14px;color:#4B5A66;}
+  .why-card{
+    background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));
+    border-radius:20px;color:#fff;padding:40px;
+    box-shadow:0 20px 40px rgba(241,86,11,0.25);
+  }
+  .why-card .quote{font-size:20px;font-weight:800;line-height:1.6;margin-bottom:18px;}
+  .why-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:0.85;letter-spacing:1px;}
+
+  /* FAQ */
+  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+  .faq-item{
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .faq-item summary{
+    padding:18px 22px;font-weight:700;font-size:15px;color:var(--brand-blue-dark);
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";font-size:22px;color:var(--brand-orange);flex-shrink:0;font-weight:400;
+    transition:transform .2s;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .faq-a{padding:0 22px 20px;font-size:14px;color:#4B5A66;line-height:1.8;}
+
+  /* Contact */
+  .contact{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .contact-inner{
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;
+  }
+  .contact-inner h2{font-size:28px;font-weight:800;color:var(--brand-blue-dark);max-width:420px;}
+  .contact-inner p{color:#4B5A66;margin-top:10px;max-width:420px;font-size:15px;}
+  .contact-btns{display:flex;flex-wrap:wrap;gap:14px;}
+  .cbtn{
+    display:flex;align-items:center;gap:10px;
+    padding:14px 22px;border-radius:12px;font-weight:700;font-size:14.5px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.1);
+    transition:transform .15s;
+  }
+  .cbtn:hover{transform:translateY(-3px);}
+  .cbtn.wa{background:var(--whatsapp);color:#fff;}
+  .cbtn.fb{background:#1877F2;color:#fff;}
+  .cbtn.ph{background:var(--brand-blue);color:#fff;}
+  .cbtn.em{background:var(--ink);color:#fff;}
+
+  /* Footer */
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
+  .footer-brand img{height:38px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
+
+  /* Floating WhatsApp */
+  .floating-wa{
+    position:fixed;bottom:22px;left:22px;z-index:60;
+    background:var(--whatsapp);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 8px 24px rgba(37,211,102,0.5);
+  }
+
+  @media (max-width:900px){
+    .nav-links{display:none;}
+    .hero-inner{grid-template-columns:1fr;}
+    .hero h1{font-size:32px;}
+    .services{grid-template-columns:1fr;}
+    .destinations-grid{grid-template-columns:repeat(3,1fr);}
+    .steps{grid-template-columns:1fr;}
+    .why{grid-template-columns:1fr;}
+    section{padding:60px 0;}
+    .contact-inner{flex-direction:column;align-items:flex-start;}
+  }
+  @media (max-width:520px){
+    .destinations-grid{grid-template-columns:repeat(2,1fr);}
+    .review-card{flex-basis:260px;}
+    .reviews-stats{gap:28px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================================
+     ⚙️ عدّل بياناتك هنا فقط — ده المكان الوحيد اللي محتاج تدخله عشان تغير أي حاجة
+     (رقم الواتساب، التليفون، الإيميل، الفيسبوك، النصوص، الوجهات والصور، الخ)
+     بعد ما تعدل، احفظ الملف وارفعه على GitHub بنفس الطريقة اللي عملتها قبل كده.
+     ============================================================================ -->
+<script>
+window.SITE_CONFIG = {
+
+  // بيانات التواصل — أي تعديل هنا بيتحدث تلقائيًا في كل أماكن الموقع (الزرار العلوي، الفوتر، قسم التواصل، الزرار العائم)
+  contact: {
+    whatsappNumber: "201116666306",              // رقم الواتساب بصيغة دولية من غير + وبدون مسافات
+    whatsappDefaultMessage: "مرحباً، عايز أحجز",
+    phoneDisplay: "01101576669",                 // الرقم اللي هيظهر للزوار
+    phoneDial: "+201101576669",                   // نفس الرقم بصيغة دولية (للاتصال المباشر من الموبايل)
+    email: "info@saferdiscounts.com",
+    facebook: "https://www.facebook.com/saferdiscounts/"
+  },
+
+  // نصوص الصفحة الرئيسية
+  hero: {
+    eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
+    titleLine1: "سافر بأقل سعر،",
+    titleHighlight: "من غير ما تدوّر تاني",
+    subtitle: "بنحجزلك تذاكر طيران، إقامات فنادق، وتذاكر حفلات ومتاحف بأسعار تنافسية أقل من المواقع الرسمية، والحجز كله بيتم بسهولة على واتساب."
+  },
+
+  // خدماتنا — تقدر تعدل أي نص، أو تضيف بلوك جديد بنفس الشكل { icon, title, desc, tag }
+  services: [
+    { icon: "✈️", title: "تذاكر طيران",     desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.", tag: "CLASS: ECONOMY / BUSINESS" },
+    { icon: "🏨", title: "إقامات وفنادق",   desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",                                    tag: "STAY: ANY DESTINATION" },
+    { icon: "🎟️", title: "فعاليات ومتاحف", desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",                              tag: "ENTRY: EVENTS & MUSEUMS" }
+  ],
+
+  // الوجهات السياحية (صور صغيرة) — عشان تضيف صورك:
+  // 1) اعمل فولدر اسمه "images" جنب index.html في نفس الريبو (Add file → Create new file → اكتب images/dubai.jpg مثلاً وارفع الصورة)
+  // 2) أو ارفع صورك بأي اسم وغيّر قيمة "image" هنا تحت بنفس الاسم بالظبط
+  // 3) لحد ما ترفع الصورة، هيظهر مكانها شكل بديل بسيط مش هيبوظ تصميم الموقع
+  // 4) لإضافة وجهة جديدة، انسخ سطر كامل وغيّر البيانات
+  destinations: [
+    { name: "دبي",            group: "خارج مصر", image: "images/dubai.jpg" },
+    { name: "باريس",           group: "خارج مصر", image: "images/paris.jpg" },
+    { name: "إسطنبول",         group: "خارج مصر", image: "images/istanbul.jpg" },
+    { name: "أهرامات الجيزة",  group: "داخل مصر", image: "images/giza.jpg" },
+    { name: "شرم الشيخ",       group: "داخل مصر", image: "images/sharm.jpg" },
+    { name: "الأقصر",          group: "داخل مصر", image: "images/luxor.jpg" }
+  ],
+
+  // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
+  social: {
+    followers: "15K+",
+    totalReviews: "32",
+    recommendPercent: "100%",
+    facebookReviewsUrl: "https://www.facebook.com/saferdiscounts/reviews"
+  },
+
+  // آراء العملاء (منسوخة من توصيات صفحة الفيسبوك)
+  // لإضافة رأي جديد: انسخ سطر كامل { name: ..., text: ... } وغيّر الاسم والنص
+  // النص ممكن يكون عربي أو إنجليزي براحتك، هيتظبط تلقائيًا في الاتجاه الصح
+  reviews: [
+    { name: "Yasser Ossama",        text: "Excellent experience 😍😍 totally recommended" },
+    { name: "Mahmood Farouk",       text: "❤️❤️❤️❤️ Very good experience" },
+    { name: "احمد السيد",           text: "في الأول كنت مش مطمن الصراحة بس طريقة وتوقعه للأسئلة خلى الموضوع ماشي باطمئنان، واخدت سعر فندق نهائي مش هلاقيه في أي مكان تاني. الف شكر على الصبر والأسلوب الجميل 🙏" },
+    { name: "Mena Ashraf",          text: "تعامل محترم جدًا من أستاذ محمد، كان ذوق جدًا وجابلنا سعر أقل من أي مكان في مصر، وشغله بروفيشنال جدًا. Highly recommended" },
+    { name: "Mohamed Ahmed",        text: "It's my second time to deal with them, I can recommend their services for all my friends and colleagues! Thanks for the great and real discounts I got 🌹" },
+    { name: "Mohammed Saber",       text: "Highly recommended, real discount and timely delivery! Thanks Mr Mohammed for your cooperation 🌹" },
+    { name: "Ahmed Hany",           text: "الناس محترمين جدًا ومن أحسن الشركات اللي تعاملت معاها من حيث العروض والمصداقية والسرعة" },
+    { name: "Lucky Tango",          text: "جربت سافر Discounts بعد ما سمعت إنهم بيجيبوا خصومات قوية على الفنادق والطيران، واتفاجئت إن الموضوع فعلاً حقيقي. حجزت فندق بخصم حوالي 25% من سعر Booking، وتذاكر طيران أقل من المواقع الرسمية بحوالي 20%!" },
+    { name: "Nadeen Esam",          text: "Excellent service and great prices. Everything went smoothly. I highly recommend Safer for travel and hotels bookings ✈️" },
+    { name: "محمد احمد علي",        text: "أول مرة أسافر، ومرسي علّم حجز وطيران كنت مستحيل أقدر أوصل للسعر ده لوحدي. بشكركم وبتمنى لكم أكثر نجاح" },
+    { name: "Mohamed Elsaeid",      text: "شكرًا، حجزت فندق للأسرة ومصيف الغردقة، وكان السعر أفضل كتير من كل العروض اللي قدرت أوصلها" },
+    { name: "Galal Gogo",           text: "شكرًا لرحلة الطيران، سعر عادل جدًا وسرعة في الحجز والمتابعة، وسعر أقل من بوكينج بصراحة" },
+    { name: "Mohamed El Dabaa",     text: "شركة محترمة، سافرت معاهم عمرة لمصر، وفروا عليّ في سعر الطيران وحجز الفندق. جزاكم الله كل خير" },
+    { name: "Taha Ahmed",           text: "أفضل شركة على الإطلاق، خصم حقيقي مستحيل كنت أحجز بالسعر ده. مصداقية وسرعة رد وتعامل ممتاز مع أي مشكلة" },
+    { name: "Sarah Tharwat Zidan",  text: "الحجز كان تمام، والخصم والتعامل كانوا كويسين جدًا وزوق. شكرًا" },
+    { name: "Ahmed Hlwany",         text: "ناس محترمة قوي، توفير غير متوقع بصراحة، وبيوجهوك لفرص حلوة سواء طيران أو إقامة ❤️" },
+    { name: "Ahmad Nagy",           text: "ناس محترمة جدًا، وأسعارهم وعروضهم ممتازة مقارنة بالـ Booking" },
+    { name: "زياد بن طارق",         text: "شركة محترمة جدًا، نظام وذوق في المعاملة، بيتابعوك من أول الحجز لحد ما تسافر وحتى بعد الرحلة" },
+    { name: "Sherif N. ELgammal",   text: "It is really a great thing to find a company with such quality and excellent service. It has really changed the concept of travel 😍" },
+    { name: "Kevin Kamel",          text: "الصراحة شيء لا يصدق، خصومات حقيقية وتبقى قاعد في الأوتيل واخد سعر أقل من باقي الناس كلها. حقيقي شكرًا أستاذ محمد، فاوفيت فرق يستاهل فعلًا" },
+    { name: "Sahar Magd",           text: "بجد من أكتر الناس اللي عندهم مصداقية وخصومات فعلًا تستحق التجربة والمغامرة. بجد أرشحكم لأي حد حابب يسافر. مكان كويس ومدة بادجت قليلة لأن الديسكاونت بيكون كبير، رحلة جميلة واستمتعنا جدًا ❤️" },
+    { name: "Omar Moaath",          text: "طلعت دهب مع سافر Discounts في فندق Dahab Lagoon، والصراحة قمة في البروفيشناليتي والذوق. تعبتهم معايا جدًا عشان اختار أفضل باكيج ليا لأني كنت طالع honeymoon، وساعدوني كتير آخد قراري" },
+    { name: "Fatima Abouelela",     text: "بصراحة من أحسن التجارب اللي عشتها في مرسى علم. اخترت فندق بيكاليتروس، والخدمة كانت ممتازة وكل التفاصيل مريحة. الحجز عملته عن طريق Safer Discounts، وكان فيه خصم حلو يوفر مبلغ محترم، والتعامل في منتهى الذوق والاحترام" },
+    { name: "Ahmed Farid",          text: "100% Recommended, Excellent experience, I do recommend this page and especially Mr Mohamed to anyone wants to have a real discount.. شكرًا يا باشمهندس محمد 🙏❤️" },
+    { name: "Ahmed A'rafat",        text: "حجزت معاهم فندق الباتروس مكادي، الموضوع مأخدش وقت خالص في اهتمام وكان سرعة في التعامل، وذوق جدًا. كملت معاهم في حجز تاني ولقيت نفس الاحترام والسرعة ❤️" },
+    { name: "Mark Moheb",           text: "بجد مستر محمد محترم وشاطر جدًا وأحسن أسعار في مكان هتروحوا. هو وتعبناه جدًا وهو متعاون خالص وبيرد بسرعة على أي حاجة" },
+    { name: "Mahmoud Sobhi Helal",  text: "البيدج دي ناس أمينة، وحجزت معاهم كان ممتاز جدًا وأنصح أي حد لو هيسافر يبقى يسافر مع سافر" },
+    { name: "Ahmed El Khadrawy",    text: "شكرًا لحضراتكم على الرحلة الجميلة والممتعة والتسهيلات اللي قدمتوها، وبجد أحسن ناس سافرت معاهم بدون مشاكل ولا معوقات، ومش هتبقى آخر مرة أتعامل مع حضراتكم" },
+    { name: "Mohamed Atef",         text: "شركة محترمة جدًا في التعامل والحجز، حجزت معاهم والحجز تمام، شكرًا جدًا" },
+    { name: "Renad Rnoda",          text: "Highly recommend Safer page! 🌍 I got a better discount than big sites like Booking, with amazing service, fast replies, and honest follow-up. Truly grateful for the respectful and trustworthy man behind it. 🙏✈️❤️" },
+    { name: "Kamel Eshak",          text: "Honestly, one of the best travel platforms I've ever dealt with! They offered me a 30% discount compared to Booking.com, and the price difference was significant. Highly recommended for anyone looking for great value and top-notch service. Will definitely use them again! ⭐⭐⭐⭐⭐" }
+  ],
+
+  // ليه سافر Discounts
+  why: [
+    { mark: "$", title: "أسعار أقل من المواقع الرسمية", desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل." },
+    { mark: "💬", title: "تواصل مباشر وسهل",             desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة." },
+    { mark: "🤝", title: "متابعة شخصية لحجزك",           desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر." }
+  ],
+
+  // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
+  founderNote: {
+    quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.",
+    attribution: "فريق سافر Discounts"
+  },
+
+  // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر { q: ..., a: ... } وغيّر البيانات
+  faq: [
+    { q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط." },
+    { q: "الدفع بيتم إزاي؟", a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة." },
+    { q: "الحجز هيبقى باسمي أنا؟", a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه." },
+    { q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده." },
+    { q: "قد إيه المفروض أحجز قبل السفر؟", a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها." }
+  ],
+
+  // خطوات الحجز
+  steps: [
+    { n: "01", title: "ابعتلنا تفاصيل رحلتك",  desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك." },
+    { n: "02", title: "هنبعتلك أفضل سعر متاح", desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد." },
+    { n: "03", title: "تأكيد الحجز",           desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك." }
+  ]
+};
+</script>
+<!-- ============================================================================
+     🚫 من هنا لتحت، ده تصميم الموقع نفسه — من الأفضل متلمسوش إلا لو حابب تغيّر
+     حاجة في الشكل أو الترتيب. كل بيانات النصوص والصور موجودة فوق في القسم اللي فاتح.
+     ============================================================================ -->
+
+<header>
+  <nav class="wrap">
+    <a href="#" class="brand"><img src="logo.png" alt="سافر Discounts"></a>
+    <div class="nav-links">
+      <a href="#services">خدماتنا</a>
+      <a href="#destinations">وجهاتنا</a>
+      <a href="#reviews">آراء العملاء</a>
+      <a href="#how">إزاي بتحجز</a>
+      <a href="#faq">أسئلة شائعة</a>
+      <a href="#contact">تواصل معانا</a>
+    </div>
+    <a class="nav-cta" data-wa href="#">💬 احجز واتساب</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="floating-plane">✈️</span>
+  <span class="floating-plane p2">✈️</span>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow" id="hero-eyebrow"></span>
+      <h1><span id="hero-title-1"></span><br><span id="hero-title-2"></span></h1>
+      <p id="hero-subtitle"></p>
+      <div class="hero-actions">
+        <a class="ticket-btn" data-wa href="#">💬 احجز عبر واتساب</a>
+        <a class="ticket-btn outline" data-fb href="#" target="_blank">تابعنا على فيسبوك</a>
+      </div>
+      <div class="boarding-strip">
+        <div><div class="num">✈</div><div class="lbl">طيران</div></div>
+        <div><div class="num">🏨</div><div class="lbl">فنادق</div></div>
+        <div><div class="num">🎟</div><div class="lbl">فعاليات ومتاحف</div></div>
+        <div><div class="num">🤝</div><div class="lbl">دعم شخصي</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="perf"></div><div class="perf two"></div>
+      <img src="logo.png" alt="سافر Discounts">
+      <div class="code">BOOK · SAVE · FLY</div>
+      <div class="barcode"></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">خدماتنا</span>
+      <h2>كل حجوزات سفرك في مكان واحد</h2>
+      <p>من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي.</p>
+    </div>
+    <div class="services" id="services-grid"></div>
+  </div>
+</section>
+
+<section id="destinations" style="background:var(--paper-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">وجهاتنا</span>
+      <h2>جوة مصر وبرة مصر</h2>
+      <p>نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه.</p>
+    </div>
+    <div class="destinations-grid" id="destinations-grid"></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">آراء عملائنا</span>
+      <h2>عملاؤنا بيقولوا ايه</h2>
+      <p>آراء حقيقية من صفحتنا الرسمية على فيسبوك.</p>
+    </div>
+    <div class="reviews-stats" id="reviews-stats"></div>
+    <div class="reviews-viewport"><div class="reviews-scroll" id="reviews-grid"></div></div>
+    <div class="reviews-cta">
+      <a class="ticket-btn outline" style="color:var(--brand-blue-dark);border-color:var(--brand-blue-dark);display:inline-flex;" href="#" id="reviews-fb-link" target="_blank">📘 شوف كل التقييمات على فيسبوك</a>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">إزاي بتحجز</span>
+      <h2>خطوات بسيطة وواضحة</h2>
+      <p>كل حاجة بتتم على واتساب من غير تعقيد.</p>
+    </div>
+    <div class="steps" id="steps-grid"></div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why">
+    <div>
+      <span class="tag">ليه سافر Discounts</span>
+      <h2 style="font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;">تحجز بثقة، وتوفر في نفس الوقت</h2>
+      <div class="why-list" id="why-list"></div>
+    </div>
+    <div class="why-card">
+      <div class="quote" id="founder-quote"></div>
+      <div class="who" id="founder-who"></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--paper-card);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">أسئلة شائعة</span>
+      <h2>أسئلة بتيجي في بالك؟ اتفضل</h2>
+      <p>لو سؤالك مش موجود هنا، ابعتلنا على واتساب وهنرد عليك على طول.</p>
+    </div>
+    <div class="faq-list" id="faq-list"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div>
+      <h2>جاهز تحجز؟ كلمنا دلوقتي</h2>
+      <p>احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز.</p>
+    </div>
+    <div class="contact-btns">
+      <a class="cbtn wa" data-wa href="#">💬 واتساب</a>
+      <a class="cbtn fb" data-fb href="#" target="_blank">📘 فيسبوك</a>
+      <a class="cbtn ph" data-phone href="#">📞 اتصال</a>
+      <a class="cbtn em" data-email href="#">✉️ إيميل</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="logo.png" alt="سافر Discounts"> سافر Discounts</div>
+      <div class="footer-socials">
+        <a data-fb href="#" target="_blank">فيسبوك</a>
+        <a data-wa href="#">واتساب</a>
+        <a data-email href="#" id="footer-email-text"></a>
+        <a data-phone href="#" id="footer-phone-text"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 سافر Discounts. جميع الحقوق محفوظة.</span>
+      <span class="mono">SAFERDISCOUNTS.COM</span>
+    </div>
+  </div>
+</footer>
+
+<a class="floating-wa" data-wa href="#" aria-label="تواصل عبر واتساب">💬</a>
+
+<script>
+(function(){
+  var cfg = window.SITE_CONFIG;
+
+  function waLink(){
+    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(cfg.contact.whatsappDefaultMessage);
+  }
+
+  document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(); });
+  document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
+  document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
+  document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+
+  var footerEmail = document.getElementById('footer-email-text');
+  if (footerEmail) footerEmail.textContent = cfg.contact.email;
+  var footerPhone = document.getElementById('footer-phone-text');
+  if (footerPhone) footerPhone.textContent = cfg.contact.phoneDisplay;
+
+  document.getElementById('hero-eyebrow').textContent = cfg.hero.eyebrow;
+  document.getElementById('hero-title-1').textContent = cfg.hero.titleLine1;
+  document.getElementById('hero-title-2').textContent = cfg.hero.titleHighlight;
+  document.getElementById('hero-subtitle').textContent = cfg.hero.subtitle;
+
+  document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
+    return '<div class="ticket-card"><div class="top">' +
+           '<div class="icon-badge">' + s.icon + '</div>' +
+           '<h3>' + s.title + '</h3><p>' + s.desc + '</p></div>' +
+           '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
+  }).join('');
+
+  document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
+    return '<div class="dest-card">' +
+             '<div class="dest-img">' +
+               '<img src="' + d.image + '" alt="' + d.name + '" onerror="this.parentElement.classList.add(\'no-img\')">' +
+               '<span class="dest-badge">' + d.group + '</span>' +
+             '</div>' +
+             '<div class="dest-name">' + d.name + '</div>' +
+           '</div>';
+  }).join('');
+
+  function parseStat(str){
+    var m = String(str).match(/^(\d+)(.*)$/);
+    return m ? { num: parseInt(m[1], 10), suffix: m[2] } : { num: 0, suffix: str };
+  }
+  var statsData = [
+    { value: cfg.social.followers, label: "متابع" },
+    { value: cfg.social.totalReviews, label: "توصية" },
+    { value: cfg.social.recommendPercent, label: "نسبة التوصية" }
+  ];
+  document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
+    var p = parseStat(s.value);
+    return '<div><div class="stat-num stat-count" data-target="' + p.num + '" data-suffix="' + p.suffix + '">0' + p.suffix + '</div><div class="stat-lbl">' + s.label + '</div></div>';
+  }).join('');
+
+  document.getElementById('reviews-fb-link').href = cfg.social.facebookReviewsUrl;
+
+  var reviewsHtml = cfg.reviews.map(function(r){
+    var initial = r.name.trim().charAt(0).toUpperCase();
+    return '<div class="review-card">' +
+             '<div class="review-top">' +
+               '<div class="review-avatar">' + initial + '</div>' +
+               '<div class="review-name">' + r.name + '</div>' +
+             '</div>' +
+             '<div class="review-quote-mark">❝</div>' +
+             '<div class="review-text" dir="auto">' + r.text + '</div>' +
+           '</div>';
+  }).join('');
+  var reviewsGridEl = document.getElementById('reviews-grid');
+  reviewsGridEl.innerHTML = reviewsHtml + reviewsHtml; // مكرر مرتين عشان الحركة تلف من غير قطع
+  reviewsGridEl.style.animationDuration = Math.max(30, cfg.reviews.length * 4) + 's';
+
+  document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
+    return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
+           '<div><h4>' + w.title + '</h4><p>' + w.desc + '</p></div></div>';
+  }).join('');
+
+  document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
+    return '<div class="step"><div class="n">' + s.n + '</div><h4>' + s.title + '</h4><p>' + s.desc + '</p></div>';
+  }).join('');
+
+  document.getElementById('founder-quote').textContent = '"' + cfg.founderNote.quote + '"';
+  document.getElementById('founder-who').textContent = '— ' + cfg.founderNote.attribution;
+
+  document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
+    return '<details class="faq-item"><summary>' + item.q + '</summary><div class="faq-a">' + item.a + '</div></details>';
+  }).join('');
+
+  // ===== الأقسام تظهر بتدرّج لما تنزل في الصفحة =====
+  var revealTargets = document.querySelectorAll(
+    '.section-head, .ticket-card, .dest-card, .step, .why-item, .why-card, .faq-item, .review-card'
+  );
+  revealTargets.forEach(function(el){ el.classList.add('reveal'); });
+
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function(el){ revealObserver.observe(el); });
+  } else {
+    revealTargets.forEach(function(el){ el.classList.add('revealed'); });
+  }
+
+  // ===== الأرقام تعد لوحدها لما تظهر في الشاشة =====
+  var countEls = document.querySelectorAll('.stat-count');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = 1200, start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var current = Math.floor(progress * target);
+      el.textContent = current + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && countEls.length) {
+    var countObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    countEls.forEach(function(el){ countObserver.observe(el); });
+  }
+})();
+</script>
+
+</body>
+</html>
