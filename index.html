@@ -109,6 +109,27 @@
       radial-gradient(circle at 10% 85%, rgba(241,86,11,0.25) 0, transparent 45%);
   }
   .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+  .floating-plane{
+    position:absolute;z-index:1;font-size:26px;opacity:0.18;pointer-events:none;
+    animation:fly-across 22s linear infinite;
+    filter:drop-shadow(0 0 6px rgba(255,255,255,0.3));
+  }
+  .floating-plane.p2{font-size:16px;opacity:0.12;animation-duration:30s;animation-delay:-10s;top:65%;}
+  @keyframes fly-across{
+    0%{transform:translate(-10%,20%) rotate(8deg);}
+    50%{transform:translate(60%,-5%) rotate(4deg);}
+    100%{transform:translate(120%,15%) rotate(8deg);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .floating-plane{animation:none;display:none;}
+  }
+
+  /* ظهور تدريجي للعناصر لما تنزل الصفحة */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.revealed{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+  }
   .eyebrow{
     display:inline-flex;align-items:center;gap:8px;
     font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
@@ -224,9 +245,12 @@
     border-radius:14px;overflow:hidden;
     box-shadow:0 8px 20px rgba(11,32,54,0.08);
     background:var(--paper-card);
+    transition:transform .3s, box-shadow .3s;
   }
-  .dest-img{position:relative;width:100%;height:110px;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
-  .dest-img img{width:100%;height:100%;object-fit:cover;}
+  .dest-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,0.16);}
+  .dest-img{position:relative;width:100%;height:110px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
+  .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .dest-card:hover .dest-img img{transform:scale(1.12);}
   .dest-img.no-img img{display:none;}
   .dest-img.no-img::after{
     content:"🖼";
@@ -247,15 +271,27 @@
   .reviews-stats div{text-align:center;}
   .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
   .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
-  .reviews-scroll{
-    display:flex;gap:20px;overflow-x:auto;padding:8px 4px 24px;
-    scroll-snap-type:x proximity;
-    -webkit-overflow-scrolling:touch;
+  .reviews-viewport{
+    overflow:hidden;padding:8px 0 24px;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
   }
-  .reviews-scroll::-webkit-scrollbar{height:6px;}
-  .reviews-scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px;}
+  .reviews-scroll{
+    display:flex;gap:20px;width:max-content;
+    animation:reviews-marquee linear infinite;
+  }
+  .reviews-viewport:hover .reviews-scroll,
+  .reviews-viewport:focus-within .reviews-scroll{
+    animation-play-state:paused;
+  }
+  @keyframes reviews-marquee{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reviews-scroll{animation:none;}
+  }
   .review-card{
-    scroll-snap-align:start;
     flex:0 0 300px;
     background:var(--paper-card);
     border:1px solid var(--line);
@@ -532,6 +568,8 @@ window.SITE_CONFIG = {
 </header>
 
 <section class="hero">
+  <span class="floating-plane">✈️</span>
+  <span class="floating-plane p2">✈️</span>
   <div class="wrap hero-inner">
     <div>
       <span class="eyebrow" id="hero-eyebrow"></span>
@@ -587,7 +625,7 @@ window.SITE_CONFIG = {
       <p>آراء حقيقية من صفحتنا الرسمية على فيسبوك.</p>
     </div>
     <div class="reviews-stats" id="reviews-stats"></div>
-    <div class="reviews-scroll" id="reviews-grid"></div>
+    <div class="reviews-viewport"><div class="reviews-scroll" id="reviews-grid"></div></div>
     <div class="reviews-cta">
       <a class="ticket-btn outline" style="color:var(--brand-blue-dark);border-color:var(--brand-blue-dark);display:inline-flex;" href="#" id="reviews-fb-link" target="_blank">📘 شوف كل التقييمات على فيسبوك</a>
     </div>
@@ -705,14 +743,23 @@ window.SITE_CONFIG = {
            '</div>';
   }).join('');
 
-  document.getElementById('reviews-stats').innerHTML =
-    '<div><div class="stat-num">' + cfg.social.followers + '</div><div class="stat-lbl">متابع</div></div>' +
-    '<div><div class="stat-num">' + cfg.social.totalReviews + '</div><div class="stat-lbl">توصية</div></div>' +
-    '<div><div class="stat-num">' + cfg.social.recommendPercent + '</div><div class="stat-lbl">نسبة التوصية</div></div>';
+  function parseStat(str){
+    var m = String(str).match(/^(\d+)(.*)$/);
+    return m ? { num: parseInt(m[1], 10), suffix: m[2] } : { num: 0, suffix: str };
+  }
+  var statsData = [
+    { value: cfg.social.followers, label: "متابع" },
+    { value: cfg.social.totalReviews, label: "توصية" },
+    { value: cfg.social.recommendPercent, label: "نسبة التوصية" }
+  ];
+  document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
+    var p = parseStat(s.value);
+    return '<div><div class="stat-num stat-count" data-target="' + p.num + '" data-suffix="' + p.suffix + '">0' + p.suffix + '</div><div class="stat-lbl">' + s.label + '</div></div>';
+  }).join('');
 
   document.getElementById('reviews-fb-link').href = cfg.social.facebookReviewsUrl;
 
-  document.getElementById('reviews-grid').innerHTML = cfg.reviews.map(function(r){
+  var reviewsHtml = cfg.reviews.map(function(r){
     var initial = r.name.trim().charAt(0).toUpperCase();
     return '<div class="review-card">' +
              '<div class="review-top">' +
@@ -723,6 +770,9 @@ window.SITE_CONFIG = {
              '<div class="review-text" dir="auto">' + r.text + '</div>' +
            '</div>';
   }).join('');
+  var reviewsGridEl = document.getElementById('reviews-grid');
+  reviewsGridEl.innerHTML = reviewsHtml + reviewsHtml; // مكرر مرتين عشان الحركة تلف من غير قطع
+  reviewsGridEl.style.animationDuration = Math.max(30, cfg.reviews.length * 4) + 's';
 
   document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
     return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
@@ -739,6 +789,54 @@ window.SITE_CONFIG = {
   document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
     return '<details class="faq-item"><summary>' + item.q + '</summary><div class="faq-a">' + item.a + '</div></details>';
   }).join('');
+
+  // ===== الأقسام تظهر بتدرّج لما تنزل في الصفحة =====
+  var revealTargets = document.querySelectorAll(
+    '.section-head, .ticket-card, .dest-card, .step, .why-item, .why-card, .faq-item, .review-card'
+  );
+  revealTargets.forEach(function(el){ el.classList.add('reveal'); });
+
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function(el){ revealObserver.observe(el); });
+  } else {
+    revealTargets.forEach(function(el){ el.classList.add('revealed'); });
+  }
+
+  // ===== الأرقام تعد لوحدها لما تظهر في الشاشة =====
+  var countEls = document.querySelectorAll('.stat-count');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var duration = 1200, start = null;
+    function step(ts){
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var current = Math.floor(progress * target);
+      el.textContent = current + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && countEls.length) {
+    var countObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    countEls.forEach(function(el){ countObserver.observe(el); });
+  }
 })();
 </script>
 
