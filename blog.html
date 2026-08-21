@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بلوج سارة | سافر Discounts</title>
+<meta name="description" content="بلوج سارة على سافر Discounts — دليل الحجز، مقالات عن أشهر المعالم السياحية، وتعلم عبارات من لغات مختلفة قبل سفرك.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Safer Discounts">
+<link rel="canonical" href="https://saferdiscounts.com/blog.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saferdiscounts.com/blog.html">
+<meta property="og:title" content="بلوج سارة | سافر Discounts">
+<meta property="og:description" content="دليل الحجز، مقالات عن أشهر المعالم السياحية، وتعلم عبارات من لغات مختلفة قبل سفرك — مع سارة.">
+<meta property="og:image" content="https://saferdiscounts.com/images/sara.jpg">
+<meta property="og:locale" content="ar_EG">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand-blue:#0365A3;
+    --brand-blue-dark:#023152;
+    --brand-orange:#F1560B;
+    --brand-orange-dark:#C7430A;
+    --ink:#0B2036;
+    --paper:#FFF9F1;
+    --paper-card:#FFFFFF;
+    --line:#E4D9C8;
+    --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Cairo',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  /* ===== NAV ===== */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,249,241,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
+  .brand img{height:44px;width:auto;}
+  .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
+  .nav-links a{opacity:0.85;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-right{display:flex;align-items:center;gap:12px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
+    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
+    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
+    transition:background .2s, color .2s;
+  }
+  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .nav-cta{
+    display:flex;align-items:center;gap:8px;
+    background:var(--brand-orange);color:#fff;
+    padding:10px 20px;border-radius:999px;
+    font-weight:700;font-size:14px;
+    box-shadow:0 4px 14px rgba(241,86,11,0.35);
+    transition:transform .15s, box-shadow .15s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%);
+    color:#fff;
+    padding:90px 0 120px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:1;
+    background-image:
+      radial-gradient(circle at 85% 20%, rgba(255,255,255,0.10) 0, transparent 40%),
+      radial-gradient(circle at 10% 85%, rgba(241,86,11,0.22) 0, transparent 45%),
+      linear-gradient(160deg, rgba(2,49,82,0.55) 0%, rgba(3,101,163,0.42) 55%, rgba(4,131,201,0.32) 100%);
+  }
+  .hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
+
+  /* خلفية متحركة بتلف بين خدماتنا: طيران، فنادق، نايل كروز، سي كروز */
+  .hero-scenes{position:absolute;inset:0;z-index:0;overflow:hidden;}
+  .hero-scene{
+    position:absolute;inset:0;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;transition:opacity 1.8s ease;
+  }
+  .hero-scene.active{opacity:1;}
+  .hero-scene img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    opacity:0;transform:scale(1.06);
+    transition:opacity 1.4s ease, transform 8s ease;
+  }
+  .hero-scene.active img{transform:scale(1.14);}
+  .hero-scene img.loaded{opacity:0.62;}
+  .hero-scene .scene-tint{position:absolute;inset:0;opacity:0.78;mix-blend-mode:multiply;}
+  .hero-scene.has-photo .scene-tint{opacity:0.42;mix-blend-mode:normal;}
+  .hero-scene .scene-icon{
+    position:relative;font-size:200px;line-height:1;opacity:0.12;
+    transform:scale(1);transition:opacity .6s ease, transform 7s ease;
+  }
+  .hero-scene.active .scene-icon{transform:scale(1.1);}
+  .hero-scene.has-photo .scene-icon{opacity:0;}
+  @media (prefers-reduced-motion: reduce){
+    .hero-scene{transition:none;}
+    .hero-scene img{transition:none;transform:none;}
+    .hero-scene.active img{transform:none;}
+    .hero-scene .scene-icon{transition:none;}
+  }
+
+  .floating-plane{
+    position:absolute;z-index:2;font-size:26px;opacity:0.18;pointer-events:none;
+    animation:fly-across 22s linear infinite;
+    filter:drop-shadow(0 0 6px rgba(255,255,255,0.3));
+  }
+  .floating-plane.p2{font-size:16px;opacity:0.12;animation-duration:30s;animation-delay:-10s;top:65%;}
+  @keyframes fly-across{
+    0%{transform:translate(-10%,20%) rotate(8deg);}
+    50%{transform:translate(60%,-5%) rotate(4deg);}
+    100%{transform:translate(120%,15%) rotate(8deg);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .floating-plane{animation:none;display:none;}
+  }
+
+  /* ظهور تدريجي للعناصر لما تنزل الصفحة */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+  .reveal.revealed{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
+    background:rgba(255,255,255,0.12);
+    border:1px dashed rgba(255,255,255,0.5);
+    padding:6px 14px;border-radius:999px;margin-bottom:22px;
+  }
+  .hero h1{font-size:44px;font-weight:900;line-height:1.35;margin-bottom:20px;}
+  .hero h1 span{color:#FFD9B0;}
+  .hero p{font-size:17px;opacity:0.92;max-width:520px;margin-bottom:34px;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
+
+  .ticket-btn{
+    position:relative;
+    display:flex;align-items:center;gap:12px;
+    background:var(--brand-orange);
+    color:#fff;font-weight:800;font-size:16px;
+    padding:16px 26px;border-radius:12px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.25);
+    transition:transform .15s;
+  }
+  .ticket-btn:hover{transform:translateY(-3px);}
+  .ticket-btn.outline{
+    background:transparent;border:2px solid rgba(255,255,255,0.6);
+    box-shadow:none;
+  }
+
+  .boarding-strip{
+    margin-top:46px;
+    background:rgba(255,255,255,0.08);
+    border:1px dashed rgba(255,255,255,0.4);
+    border-radius:14px;
+    padding:18px 20px;
+    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  }
+  .boarding-strip div{text-align:center;flex:1;min-width:90px;}
+  .boarding-strip .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:#FFD9B0;}
+  .boarding-strip .lbl{font-size:12px;opacity:0.85;margin-top:4px;}
+
+  .hero-visual{
+    position:relative;
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:34px 26px;
+    color:var(--ink);
+    box-shadow:0 30px 60px rgba(0,0,0,0.3);
+  }
+  .hero-visual img{width:170px;margin:0 auto 14px;}
+  .hero-visual .code{
+    font-family:'IBM Plex Mono',monospace;text-align:center;font-size:13px;color:var(--brand-blue);
+    letter-spacing:3px;margin-bottom:10px;
+  }
+  .hero-visual .barcode{
+    height:34px;
+    background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 7px, transparent 7px 11px, var(--ink) 11px 12px, transparent 12px 16px);
+    margin-top:16px;opacity:0.85;
+  }
+  .perf{
+    position:absolute;top:-12px;right:36px;width:24px;height:24px;background:var(--paper);border-radius:50%;
+  }
+  .perf.two{top:auto;bottom:-12px;left:36px;right:auto;}
+
+  /* ===== SECTIONS ===== */
+  section{padding:88px 0;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
+    font-weight:600;display:block;margin-bottom:12px;
+  }
+  .section-head h2{font-size:32px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .section-head p{font-size:16px;color:#4B5A66;}
+
+  /* رحلة العميل المتحركة (طيران → فندق → باص → حفلة → كروز) */
+  .journey{background:var(--paper);padding:70px 0 30px;}
+  .journey-svg{width:100%;height:auto;display:block;}
+  .journey-icon-emoji{font-size:34px;}
+  .journey-label{font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;fill:var(--brand-blue-dark);}
+  .journey-traveler{font-size:30px;}
+  @media (max-width:700px){
+    .journey{padding:44px 0 10px;}
+    .journey-icon-emoji{font-size:24px;}
+    .journey-label{font-size:11px;}
+    .journey-traveler{font-size:22px;}
+  }
+
+  /* Services - ticket stub cards */
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .ticket-card{
+    position:relative;
+    background:var(--paper-card);
+    border-radius:16px;
+    box-shadow:0 12px 30px rgba(11,32,54,0.08);
+    overflow:hidden;
+  }
+  .ticket-card .top{
+    padding:30px 26px 24px;
+    border-bottom:2px dashed var(--line);
+    position:relative;
+  }
+  .icon-badge{
+    width:52px;height:52px;border-radius:14px;
+    background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;margin-bottom:18px;
+  }
+  .ticket-card h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .ticket-card p{font-size:14.5px;color:#4B5A66;}
+  .ticket-card .bottom{
+    padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
+  }
+
+  /* Destinations - small image cards */
+  .destinations-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
+  .dest-card{
+    border-radius:14px;overflow:hidden;
+    box-shadow:0 8px 20px rgba(11,32,54,0.08);
+    background:var(--paper-card);
+    transition:transform .3s, box-shadow .3s;
+  }
+  .dest-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,0.16);}
+  .dest-img{position:relative;width:100%;height:170px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
+  .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .dest-card:hover .dest-img img{transform:scale(1.12);}
+  .dest-img.no-img img{display:none;}
+  .dest-img.no-img::after{
+    content:"🖼";
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:0.6;color:#fff;
+  }
+  .dest-badge{
+    position:absolute;top:8px;inset-inline-end:8px;
+    background:rgba(11,32,54,0.75);color:#fff;
+    font-size:10px;font-family:'IBM Plex Mono',monospace;
+    padding:3px 8px;border-radius:999px;letter-spacing:0.5px;
+  }
+  .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
+
+  /* Reviews / testimonials */
+  .reviews-stats{
+    display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:44px;
+  }
+  .reviews-stats div{text-align:center;}
+  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
+  .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
+  .reviews-viewport{
+    overflow:hidden;padding:8px 0 24px;
+    direction:ltr;
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+    mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
+  }
+  .reviews-scroll{
+    display:flex;gap:20px;width:max-content;
+    direction:ltr;
+    animation:reviews-marquee linear infinite;
+  }
+  .reviews-viewport:hover .reviews-scroll,
+  .reviews-viewport:focus-within .reviews-scroll{
+    animation-play-state:paused;
+  }
+  @keyframes reviews-marquee{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reviews-scroll{animation:none;}
+  }
+  .review-card{
+    flex:0 0 300px;
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:24px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.06);
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .review-top{display:flex;align-items:center;gap:12px;}
+  .review-avatar{
+    width:40px;height:40px;border-radius:50%;flex-shrink:0;
+    background:linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
+    color:#fff;font-weight:800;font-size:16px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .review-name{font-weight:700;font-size:14.5px;color:var(--brand-blue-dark);}
+  .review-quote-mark{font-size:28px;color:var(--brand-orange);opacity:0.35;line-height:0.6;font-family:Georgia,serif;}
+  .review-text{font-size:13.5px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
+  .reviews-cta{text-align:center;margin-top:8px;}
+
+  /* How it works */
+  .how{background:var(--brand-blue-dark);color:#fff;}
+  .how .section-head h2{color:#fff;}
+  .how .section-head p{color:#C9DCE8;}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .step{
+    background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:16px;padding:30px 24px;position:relative;
+  }
+  .step .n{
+    font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:600;color:var(--brand-orange);
+    opacity:0.9;margin-bottom:14px;
+  }
+  .step h4{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .step p{font-size:14px;color:#C9DCE8;}
+
+  /* Why us */
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+  .why-list{display:flex;flex-direction:column;gap:22px;}
+  .why-item{display:flex;gap:16px;align-items:flex-start;}
+  .why-item .mark{
+    flex-shrink:0;width:36px;height:36px;border-radius:10px;
+    background:var(--brand-blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;
+  }
+  .why-item h4{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin-bottom:4px;}
+  .why-item p{font-size:14px;color:#4B5A66;}
+  .why-head-title{font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;}
+  .why-card{
+    background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));
+    border-radius:20px;color:#fff;padding:40px;
+    box-shadow:0 20px 40px rgba(241,86,11,0.25);
+  }
+  .why-card .quote{font-size:20px;font-weight:800;line-height:1.6;margin-bottom:18px;}
+  .why-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:0.85;letter-spacing:1px;}
+
+  /* FAQ */
+  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+  .faq-item{
+    background:var(--paper-card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    overflow:hidden;
+  }
+  .faq-item summary{
+    padding:18px 22px;font-weight:700;font-size:15px;color:var(--brand-blue-dark);
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";font-size:22px;color:var(--brand-orange);flex-shrink:0;font-weight:400;
+    transition:transform .2s;
+  }
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item .faq-a{padding:0 22px 20px;font-size:14px;color:#4B5A66;line-height:1.8;}
+
+  /* Contact */
+  .contact{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .contact-inner{
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;
+  }
+  .contact-inner h2{font-size:28px;font-weight:800;color:var(--brand-blue-dark);max-width:420px;}
+  .contact-inner p{color:#4B5A66;margin-top:10px;max-width:420px;font-size:15px;}
+  .contact-btns{display:flex;flex-wrap:wrap;gap:14px;}
+  .cbtn{
+    display:flex;align-items:center;gap:10px;
+    padding:14px 22px;border-radius:12px;font-weight:700;font-size:14.5px;
+    box-shadow:0 8px 20px rgba(11,32,54,0.1);
+    transition:transform .15s;
+  }
+  .cbtn:hover{transform:translateY(-3px);}
+  .cbtn.wa{background:var(--whatsapp);color:#fff;}
+  .cbtn.fb{background:#1877F2;color:#fff;}
+  .cbtn.ph{background:var(--brand-blue);color:#fff;}
+  .cbtn.em{background:var(--ink);color:#fff;}
+
+  /* Footer */
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
+  .footer-brand img{height:38px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
+
+  /* Floating WhatsApp */
+  .floating-wa{
+    position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;
+    background:var(--whatsapp);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 8px 24px rgba(37,211,102,0.5);
+  }
+
+  @media (max-width:900px){
+    .nav-links{display:none;}
+    .hero-inner{grid-template-columns:1fr;}
+    .hero h1{font-size:32px;}
+    .services{grid-template-columns:1fr;}
+    .destinations-grid{grid-template-columns:repeat(3,1fr);}
+    .steps{grid-template-columns:1fr;}
+    .why{grid-template-columns:1fr;}
+    section{padding:60px 0;}
+    .contact-inner{flex-direction:column;align-items:flex-start;}
+  }
+  @media (max-width:520px){
+    .destinations-grid{grid-template-columns:repeat(2,1fr);}
+    .review-card{flex-basis:260px;}
+    .reviews-stats{gap:28px;}
+  }
+
+  /* ===== MEET SARA — guide pass card ===== */
+  .sara-card{
+    position:relative;
+    display:grid;grid-template-columns:300px 1fr;
+    background:var(--paper-card);
+    border-radius:20px;
+    box-shadow:0 26px 54px rgba(11,32,54,0.14);
+  }
+  .sara-photo{position:relative;border-radius:20px;overflow:hidden;}
+  .sara-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:top center;display:block;}
+  .sara-photo::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(0deg, rgba(2,49,82,0.55) 0%, transparent 45%);
+  }
+  .sara-photo .sara-photo-tag{
+    position:absolute;bottom:14px;inset-inline-start:14px;inset-inline-end:14px;z-index:2;
+    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;
+    color:#fff;opacity:0.9;
+  }
+  .sara-info{
+    padding:40px 44px;
+    display:flex;flex-direction:column;justify-content:center;
+    border-inline-start:2px dashed var(--line);
+  }
+  .sara-eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
+    color:var(--brand-orange);font-weight:700;margin-bottom:12px;
+  }
+  .sara-name{font-size:28px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:4px;}
+  .sara-role{font-size:14.5px;color:#4B5A66;margin-bottom:18px;font-weight:600;}
+  .sara-bio{font-size:15px;color:#3E4C58;max-width:560px;margin-bottom:24px;}
+  .sara-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+  .sara-tag{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.5px;
+    border:1px dashed var(--brand-blue);color:var(--brand-blue);
+    border-radius:8px;padding:6px 13px;background:rgba(3,101,163,0.05);
+  }
+  .sara-card::before,.sara-card::after{
+    content:"";position:absolute;width:26px;height:26px;background:var(--paper);
+    border-radius:50%;inset-inline-start:300px;margin-inline-start:-13px;z-index:2;
+  }
+  .sara-card::before{top:-13px;}
+  .sara-card::after{bottom:-13px;}
+  @media (max-width:900px){
+    .sara-card{grid-template-columns:1fr;}
+    .sara-photo img{min-height:260px;}
+    .sara-info{border-inline-start:none;border-top:2px dashed var(--line);padding:30px 26px;}
+    .sara-card::before,.sara-card::after{display:none;}
+  }
+
+  /* ===== BLOG ===== */
+  .blog-hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 60%, #0483C9 100%);
+    color:#fff;padding:64px 0 56px;overflow:hidden;
+  }
+  .blog-hero::before{
+    content:"";position:absolute;inset:0;
+    background-image:radial-gradient(circle at 88% 15%, rgba(255,255,255,0.10) 0, transparent 40%),
+      radial-gradient(circle at 8% 90%, rgba(241,86,11,0.22) 0, transparent 45%);
+  }
+  .blog-hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:center;}
+  .blog-hero-photo{width:150px;height:150px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.85);box-shadow:0 14px 30px rgba(0,0,0,0.3);}
+  .blog-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+  .blog-hero h1{font-size:32px;font-weight:900;margin-bottom:10px;}
+  .blog-hero p{font-size:15.5px;opacity:0.92;max-width:600px;}
+
+  .blog-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 auto 46px;justify-content:center;}
+  .blog-filter{
+    font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.5px;
+    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
+    padding:8px 16px;border-radius:999px;background:transparent;
+  }
+
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .blog-card{
+    display:flex;flex-direction:column;
+    background:var(--paper-card);border-radius:16px;overflow:hidden;
+    box-shadow:0 12px 28px rgba(11,32,54,0.08);
+    transition:transform .25s, box-shadow .25s;
+  }
+  .blog-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(11,32,54,0.15);}
+  .blog-card.soon{opacity:0.65;}
+  .blog-card-img{position:relative;height:180px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
+  .blog-card-img.img-fallback::after{
+    content:"🖼";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:26px;opacity:0.6;color:#fff;
+  }
+  .blog-card-img img{width:100%;height:100%;object-fit:cover;}
+  .blog-card-cat{
+    position:absolute;top:12px;inset-inline-start:12px;
+    background:rgba(11,32,54,0.78);color:#fff;
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.5px;
+    padding:5px 11px;border-radius:999px;
+  }
+  .blog-card-soon-badge{
+    position:absolute;top:12px;inset-inline-end:12px;
+    background:var(--brand-orange);color:#fff;
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.5px;
+    padding:5px 11px;border-radius:999px;
+  }
+  .blog-card-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1;}
+  .blog-card-body h3{font-size:16.5px;font-weight:800;color:var(--brand-blue-dark);line-height:1.5;}
+  .blog-card-body p{font-size:13.5px;color:#4B5A66;flex:1;}
+  .blog-card-author{display:flex;align-items:center;gap:8px;margin-top:6px;}
+  .blog-card-author img{width:26px;height:26px;border-radius:50%;object-fit:cover;}
+  .blog-card-author span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;}
+  .blog-card-link{
+    margin-top:8px;font-weight:700;font-size:13.5px;color:var(--brand-orange);
+    display:inline-flex;align-items:center;gap:6px;
+  }
+
+  @media (max-width:900px){
+    .blog-grid{grid-template-columns:1fr 1fr;}
+    .blog-hero-inner{grid-template-columns:1fr;text-align:center;}
+    .blog-hero-photo{margin:0 auto;}
+  }
+  @media (max-width:600px){
+    .blog-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================================
+     ⚙️ عدّل مقالات البلوج من هنا — كل مقال ليه سطر واحد بكل بياناته.
+     "status: published" = المقال جاهز وله صفحة فعلية (حط رابطها في url).
+     "status: soon" = بطاقة "قريبًا" بدون رابط فعلي لحد ما تكتب المقال.
+     ============================================================================ -->
+<script>
+window.BLOG_CONFIG = {
+  contact: {
+    whatsappNumber: "201116666306",
+    whatsappDefaultMessage: { ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book" },
+    phoneDisplay: "01101576669",
+    phoneDial: "+201101576669",
+    email: "info@saferdiscounts.com",
+    facebook: "https://www.facebook.com/saferdiscounts/"
+  },
+  sara: {
+    photo: "images/sara.jpg",
+    languages: ["العربية", "English", "Italiano", "Español", "Português"]
+  },
+  i18n: {
+    ar: {
+      brand: "سافر Discounts",
+      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", blog: "بلوج سارة", cta: "احجز واتساب" },
+      contactBtns: { wa: "واتساب", fb: "فيسبوك", ph: "اتصال", em: "إيميل" },
+      footerCopyright: "© 2026 سافر Discounts. جميع الحقوق محفوظة.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · سارة",
+        h1: "بلوج سارة",
+        p: "هنا هتلاقي كل حاجة سارة عايزة تشاركها معاك: طريقة الحجز خطوة بخطوة، جولات في أشهر المعالم، دروس سريعة في اللغات، ووصفات أكل صحي للمسافرين."
+      },
+      categories: { booking: "دليل الحجز", destinations: "السياحة والمعالم", languages: "تعلم اللغات", diet: "وصفات دايت" },
+      readMore: "اقرأ المقال",
+      comingSoon: "قريبًا",
+      byline: "بقلم سارة"
+    },
+    en: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", blog: "Sara's Blog", cta: "Book on WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Call", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. All rights reserved.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Sara's Blog",
+        p: "Here's everything Sara wants to share with you: a step-by-step booking guide, tours of top landmarks, quick language lessons, and healthy recipes for travelers."
+      },
+      categories: { booking: "Booking Guide", destinations: "Destinations & Landmarks", languages: "Language Learning", diet: "Diet Recipes" },
+      readMore: "Read the article",
+      comingSoon: "Coming soon",
+      byline: "By Sara"
+    }
+  },
+  posts: [
+    {
+      category: "languages", status: "published", url: "blog-italian-phrases.html",
+      image: "images/blog-italian.jpg",
+      ar_title: "10 عبارات إيطالية هتحتاجها قبل ما تسافر",
+      en_title: "10 Italian Phrases You'll Need Before You Travel",
+      ar_excerpt: "من التحية لحد الحساب في المطعم — سارة بتاخدك في أول درس سريع بالإيطالي قبل رحلتك.",
+      en_excerpt: "From saying hello to asking for the bill — Sara walks you through a quick first Italian lesson before your trip."
+    },
+    {
+      category: "booking", status: "soon", url: "#",
+      image: "images/blog-booking.jpg",
+      ar_title: "إزاي تحجز فندقك في 3 خطوات على واتساب",
+      en_title: "How to Book Your Hotel in 3 Steps on WhatsApp",
+      ar_excerpt: "سارة بتشرحلك طريقة الحجز كاملة، من أول رسالة لحد ما تستلم تذكرتك.",
+      en_excerpt: "Sara walks you through the full booking process, from the first message to receiving your ticket."
+    },
+    {
+      category: "destinations", status: "soon", url: "#",
+      image: "images/blog-giza.jpg",
+      ar_title: "أهرامات الجيزة: دليلك الكامل قبل الزيارة",
+      en_title: "Giza Pyramids: Your Complete Guide Before You Visit",
+      ar_excerpt: "أحسن وقت للزيارة، وإيه اللي لازم تعرفه قبل ما توصل، من كواليس سارة.",
+      en_excerpt: "The best time to visit, and everything to know before you arrive — from Sara's own notes."
+    },
+    {
+      category: "diet", status: "soon", url: "#",
+      image: "images/blog-diet.jpg",
+      ar_title: "طبق باستا صحي وسريع في 20 دقيقة",
+      en_title: "A Healthy, Quick Pasta Dish in 20 Minutes",
+      ar_excerpt: "وصفة سهلة من مطبخ سارة، مناسبة ليلة قبل رحلة أو بعد يوم سفر طويل.",
+      en_excerpt: "An easy recipe from Sara's kitchen — perfect the night before a trip or after a long travel day."
+    },
+    {
+      category: "languages", status: "soon", url: "#",
+      image: "images/blog-spanish.jpg",
+      ar_title: "10 عبارات إسبانية أساسية للمسافرين",
+      en_title: "10 Essential Spanish Phrases for Travelers",
+      ar_excerpt: "درس سريع من سارة قبل ما تسافر إسبانيا — من غير تعقيد.",
+      en_excerpt: "A quick lesson from Sara before you travel to Spain — no complications."
+    },
+    {
+      category: "destinations", status: "soon", url: "#",
+      image: "images/blog-istanbul.jpg",
+      ar_title: "إسطنبول: أهم الأماكن اللي لازم تزورها",
+      en_title: "Istanbul: The Top Places You Need to Visit",
+      ar_excerpt: "جولة سارة في إسطنبول، من الأسواق القديمة لحد أجمل الإطلالات.",
+      en_excerpt: "Sara's tour of Istanbul, from the old bazaars to the best views in the city."
+    }
+  ]
+};
+</script>
+<!-- ============================================================================
+     🚫 من هنا لتحت، ده تصميم صفحة البلوج نفسها — عدّل المحتوى من فوق بس.
+     ============================================================================ -->
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Safer Discounts"></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#services" data-nav="services"></a>
+      <a href="index.html#destinations" data-nav="destinations"></a>
+      <a href="index.html#reviews" data-nav="reviews"></a>
+      <a href="index.html#how" data-nav="how"></a>
+      <a href="index.html#faq" data-nav="faq"></a>
+      <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
+    </div>
+  </nav>
+</header>
+
+<section class="blog-hero">
+  <div class="wrap blog-hero-inner">
+    <div class="blog-hero-photo"><img src="images/sara.jpg" alt="Sara"></div>
+    <div>
+      <span class="eyebrow" id="blog-eyebrow"></span>
+      <h1 id="blog-h1"></h1>
+      <p id="blog-p"></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="blog-filters" id="blog-filters"></div>
+    <div class="blog-grid" id="blog-grid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="logo.png" alt="Safer Discounts"> <span id="footer-brand-text"></span></div>
+      <div class="footer-socials">
+        <a href="index.html" id="footer-home-text"></a>
+        <a data-fb href="#" target="_blank" id="footer-fb-text"></a>
+        <a data-wa href="#" id="footer-wa-text"></a>
+        <a data-email href="#" id="footer-email-text"></a>
+        <a data-phone href="#" id="footer-phone-text"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span id="footer-copyright"></span>
+      <span class="mono">SAFERDISCOUNTS.COM</span>
+    </div>
+  </div>
+</footer>
+
+<a class="floating-wa" data-wa href="#" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+  var cfg = window.BLOG_CONFIG;
+  var currentLang = 'ar';
+  var activeFilter = 'all';
+
+  function waLink(lang){
+    var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
+    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
+  }
+
+  function cardHtml(post, lang, t){
+    var title = lang === 'ar' ? post.ar_title : post.en_title;
+    var excerpt = lang === 'ar' ? post.ar_excerpt : post.en_excerpt;
+    var catLabel = t.categories[post.category];
+    var isSoon = post.status === 'soon';
+    var linkLabel = isSoon ? t.comingSoon : t.readMore;
+    var href = isSoon ? 'javascript:void(0)' : post.url;
+    return '<div class="blog-card' + (isSoon ? ' soon' : '') + '" data-cat="' + post.category + '">' +
+             '<div class="blog-card-img">' +
+               '<img src="' + post.image + '" alt="' + title + '" onerror="this.onerror=null;this.remove();this.parentElement.classList.add(\'img-fallback\')">' +
+               '<span class="blog-card-cat">' + catLabel + '</span>' +
+               (isSoon ? '<span class="blog-card-soon-badge">' + t.comingSoon + '</span>' : '') +
+             '</div>' +
+             '<div class="blog-card-body">' +
+               '<h3>' + title + '</h3>' +
+               '<p>' + excerpt + '</p>' +
+               '<div class="blog-card-author"><img src="' + cfg.sara.photo + '" alt="Sara"><span>' + t.byline + '</span></div>' +
+               '<a class="blog-card-link" href="' + href + '">' + linkLabel + (isSoon ? '' : ' ←') + '</a>' +
+             '</div>' +
+           '</div>';
+  }
+
+  function renderGrid(lang, t){
+    var grid = document.getElementById('blog-grid');
+    var posts = cfg.posts.filter(function(p){ return activeFilter === 'all' || p.category === activeFilter; });
+    grid.innerHTML = posts.map(function(p){ return cardHtml(p, lang, t); }).join('');
+  }
+
+  function renderFilters(lang, t){
+    var cats = ['all'].concat(Object.keys(t.categories));
+    document.getElementById('blog-filters').innerHTML = cats.map(function(c){
+      var label = c === 'all' ? (lang === 'ar' ? 'الكل' : 'All') : t.categories[c];
+      var active = c === activeFilter;
+      return '<button type="button" class="blog-filter" data-cat="' + c + '" style="' +
+             (active ? 'background:var(--brand-blue);color:#fff;' : '') + '">' + label + '</button>';
+    }).join('');
+    document.querySelectorAll('.blog-filter').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        activeFilter = btn.getAttribute('data-cat');
+        render(currentLang);
+      });
+    });
+  }
+
+  function render(lang){
+    currentLang = lang;
+    var t = cfg.i18n[lang];
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+
+    document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
+    document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
+    document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
+    document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+
+    document.querySelector('[data-nav="services"]').textContent = t.nav.services;
+    document.querySelector('[data-nav="destinations"]').textContent = t.nav.destinations;
+    document.querySelector('[data-nav="reviews"]').textContent = t.nav.reviews;
+    document.querySelector('[data-nav="how"]').textContent = t.nav.how;
+    document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
+    document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
+    document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
+
+    document.getElementById('blog-eyebrow').textContent = t.blogHero.eyebrow;
+    document.getElementById('blog-h1').textContent = t.blogHero.h1;
+    document.getElementById('blog-p').textContent = t.blogHero.p;
+
+    renderFilters(lang, t);
+    renderGrid(lang, t);
+
+    document.getElementById('footer-brand-text').textContent = t.brand;
+    document.getElementById('footer-home-text').textContent = lang === 'ar' ? 'الرئيسية' : 'Home';
+    document.getElementById('footer-fb-text').textContent = t.contactBtns.fb;
+    document.getElementById('footer-wa-text').textContent = t.contactBtns.wa;
+    document.getElementById('footer-email-text').textContent = cfg.contact.email;
+    document.getElementById('footer-phone-text').textContent = cfg.contact.phoneDisplay;
+    document.getElementById('footer-copyright').textContent = t.footerCopyright;
+  }
+
+  document.getElementById('lang-toggle').addEventListener('click', function(){
+    render(currentLang === 'ar' ? 'en' : 'ar');
+  });
+
+  render('ar');
+})();
+</script>
+
+</body>
+</html>
