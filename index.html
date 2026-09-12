@@ -84,13 +84,14 @@
   .nav-links a{opacity:0.85;transition:opacity .2s;}
   .nav-links a:hover{opacity:1;color:var(--brand-blue);}
   .nav-right{display:flex;align-items:center;gap:12px;}
-  .lang-toggle{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
-    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
-    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
-    transition:background .2s, color .2s;
+  .lang-switch{display:flex;gap:4px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;}
+  .lang-btn{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;
+    border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
+    padding:6px 11px;cursor:pointer;transition:background .2s, color .2s;
   }
-  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .lang-btn.active{background:var(--brand-blue);color:#fff;}
+  .lang-btn:not(.active):hover{background:rgba(3,101,163,0.15);}
   .nav-cta{
     display:flex;align-items:center;gap:8px;
     background:var(--brand-orange);color:#fff;
@@ -467,56 +468,6 @@
     .review-card{flex-basis:260px;}
     .reviews-stats{gap:28px;}
   }
-
-  /* ===== MEET SARA — guide pass card ===== */
-  .sara-card{
-    position:relative;
-    display:grid;grid-template-columns:300px 1fr;
-    background:var(--paper-card);
-    border-radius:20px;
-    box-shadow:0 26px 54px rgba(11,32,54,0.14);
-  }
-  .sara-photo{position:relative;border-radius:20px;overflow:hidden;}
-  .sara-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:top center;display:block;}
-  .sara-photo::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(0deg, rgba(2,49,82,0.55) 0%, transparent 45%);
-  }
-  .sara-photo .sara-photo-tag{
-    position:absolute;bottom:14px;inset-inline-start:14px;inset-inline-end:14px;z-index:2;
-    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;
-    color:#fff;opacity:0.9;
-  }
-  .sara-info{
-    padding:40px 44px;
-    display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
-    border-inline-start:2px dashed var(--line);
-  }
-  .sara-eyebrow{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
-    color:var(--brand-orange);font-weight:700;margin-bottom:12px;
-  }
-  .sara-name{font-size:28px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:4px;}
-  .sara-role{font-size:14.5px;color:#4B5A66;margin-bottom:18px;font-weight:600;}
-  .sara-bio{font-size:15px;color:#3E4C58;max-width:560px;margin-bottom:24px;}
-  .sara-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
-  .sara-tag{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.5px;
-    border:1px dashed var(--brand-blue);color:var(--brand-blue);
-    border-radius:8px;padding:6px 13px;background:rgba(3,101,163,0.05);
-  }
-  .sara-card::before,.sara-card::after{
-    content:"";position:absolute;width:26px;height:26px;background:var(--paper);
-    border-radius:50%;inset-inline-start:300px;margin-inline-start:-13px;z-index:2;
-  }
-  .sara-card::before{top:-13px;}
-  .sara-card::after{bottom:-13px;}
-  @media (max-width:900px){
-    .sara-card{grid-template-columns:1fr;}
-    .sara-photo img{min-height:260px;}
-    .sara-info{border-inline-start:none;border-top:2px dashed var(--line);padding:30px 26px;}
-    .sara-card::before,.sara-card::after{display:none;}
-  }
 </style>
 </head>
 <body>
@@ -531,9 +482,18 @@
 window.SITE_CONFIG = {
 
   // بيانات التواصل — أي تعديل هنا بيتحدث تلقائيًا في كل أماكن الموقع، باللغتين
+  // رقم الواتساب بقى مرتبط باللغة: لو العميل مختار الإيطالي، هيشوف الرقم الإيطالي تلقائيًا
   contact: {
-    whatsappNumber: "201116666306",
-    whatsappDefaultMessage: { ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book" },
+    whatsappNumberByLang: {
+      ar: "201116666306",
+      en: "201116666306",
+      it: "393801991992"
+    },
+    whatsappDefaultMessage: {
+      ar: "مرحباً، عايز أحجز",
+      en: "Hello, I'd like to book",
+      it: "Ciao, vorrei prenotare"
+    },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
     email: "info@saferdiscounts.com",
@@ -544,7 +504,7 @@ window.SITE_CONFIG = {
   i18n: {
     ar: {
       brand: "سافر Discounts",
-      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", blog: "بلوج سارة", cta: "احجز واتساب" },
+      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", cta: "احجز واتساب" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
         titleLine1: "سافر بأقل سعر،",
@@ -563,14 +523,6 @@ window.SITE_CONFIG = {
       reviewsCta: "شوف كل التقييمات على فيسبوك",
       howHead: { tag: "إزاي بتحجز", h2: "خطوات بسيطة وواضحة", p: "كل حاجة بتتم على واتساب من غير تعقيد." },
       whyHead: { tag: "ليه سافر Discounts", h2: "تحجز بثقة، وتوفر في نفس الوقت" },
-      saraHead: { tag: "تعرف على مرشدتك", h2: "سافر معاك... سارة", p: "قبل ما تحجز، خلي سارة تاخدك في جولة — هي اللي هتشرحلك الموقع، وهتدلّك على أحسن الأماكن، وكمان هتعلمك عبارات من لغة البلد اللي رايحله." },
-      sara: {
-        eyebrow: "✦ GUIDE PASS · MULTILINGUAL",
-        name: "سارة",
-        role: "مرشدتك السياحية ومساعدتك على الموقع",
-        bio: "بتتكلم عربي وإنجليزي وإيطالي وإسباني وبرتغالي (البرازيلية والأوروبية)، وبتحب تطبخ أكل صحي في وقت فراغها. هتلاقيها في البلوج بتشرحلك طريقة الحجز، بتاخدك في جولة على أشهر المعالم، وبتعلمك عبارات مفيدة قبل ما تسافر.",
-        cta: "اقرأ مقالات سارة"
-      },
       faqHead: { tag: "أسئلة شائعة", h2: "أسئلة بتيجي في بالك؟ اتفضل", p: "لو سؤالك مش موجود هنا، ابعتلنا على واتساب وهنرد عليك على طول." },
       contactHead: { h2: "جاهز تحجز؟ كلمنا دلوقتي", p: "احنا موجودين على واتساب وفيسبوك وتليفون طول الوقت لأي استفسار أو حجز." },
       contactBtns: { wa: "واتساب", fb: "فيسبوك", ph: "اتصال", em: "إيميل" },
@@ -578,7 +530,7 @@ window.SITE_CONFIG = {
     },
     en: {
       brand: "Safer Discounts",
-      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", blog: "Sara's Blog", cta: "Book on WhatsApp" },
+      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", cta: "Book on WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — Lower Prices",
         titleLine1: "Travel for less,",
@@ -597,18 +549,36 @@ window.SITE_CONFIG = {
       reviewsCta: "See all reviews on Facebook",
       howHead: { tag: "How to Book", h2: "Simple, clear steps", p: "Everything happens over WhatsApp, no complications." },
       whyHead: { tag: "Why Safer Discounts", h2: "Book with confidence, and save at the same time" },
-      saraHead: { tag: "Meet your guide", h2: "Traveling with... Sara", p: "Before you book, let Sara show you around — she'll walk you through the site, point you to the best spots, and teach you a few phrases in the language of wherever you're headed." },
-      sara: {
-        eyebrow: "✦ GUIDE PASS · MULTILINGUAL",
-        name: "Sara",
-        role: "Your travel guide & site assistant",
-        bio: "She speaks Arabic, English, Italian, Spanish, and Portuguese (Brazilian & European), and loves cooking healthy food in her spare time. On the blog, she'll walk you through how to book, take you on a tour of top landmarks, and teach you useful phrases before you fly.",
-        cta: "Read Sara's articles"
-      },
       faqHead: { tag: "FAQ", h2: "Got questions? We've got answers", p: "If your question isn't here, message us on WhatsApp and we'll reply right away." },
       contactHead: { h2: "Ready to book? Message us now", p: "We're on WhatsApp, Facebook, and phone all the time for any question or booking." },
       contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Call", em: "Email" },
       footerCopyright: "© 2026 Safer Discounts. All rights reserved."
+    },
+    it: {
+      brand: "Safer Discounts",
+      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", cta: "Prenota su WhatsApp" },
+      hero: {
+        eyebrow: "✦ TICKET · HOTEL · EVENT — Prezzi più bassi",
+        titleLine1: "Viaggia spendendo meno,",
+        titleHighlight: "senza pensieri",
+        subtitle: "Prenotiamo biglietti aerei, soggiorni in hotel, ed eventi e musei a prezzi competitivi rispetto ai siti ufficiali — tutto gestito facilmente su WhatsApp.",
+        ctaWa: "Prenota su WhatsApp",
+        ctaFb: "Seguici su Facebook",
+        strip: ["Voli", "Hotel", "Eventi e Musei", "Assistenza Personale"]
+      },
+      journeyStops: ["Volo", "Hotel", "Transfer", "Evento", "Crociera"],
+      servicesHead: { tag: "I Nostri Servizi", h2: "Tutto per il tuo viaggio, in un unico posto", p: "Dal biglietto, all'hotel, all'evento a cui parteciperai — ci occupiamo noi della prenotazione e del prezzo migliore." },
+      destinationsHead: { tag: "Le Nostre Destinazioni", h2: "Dentro e fuori l'Egitto", p: "Un esempio delle destinazioni che prenotiamo per te, in Egitto e all'estero." },
+      destinationGroups: { "in": "In Egitto", out: "Fuori Egitto" },
+      reviewsHead: { tag: "Recensioni dei Clienti", h2: "Cosa dicono i nostri clienti", p: "Recensioni reali dalla nostra pagina Facebook ufficiale." },
+      statsLabels: { followers: "Follower", reviews: "Recensioni", recommend: "Tasso di Consiglio" },
+      reviewsCta: "Vedi tutte le recensioni su Facebook",
+      howHead: { tag: "Come Prenotare", h2: "Passaggi semplici e chiari", p: "Tutto avviene su WhatsApp, senza complicazioni." },
+      whyHead: { tag: "Perché Safer Discounts", h2: "Prenota con fiducia, e risparmia allo stesso tempo" },
+      faqHead: { tag: "Domande Frequenti", h2: "Hai delle domande? Eccoti le risposte", p: "Se la tua domanda non è qui, scrivici su WhatsApp e ti risponderemo subito." },
+      contactHead: { h2: "Pronto a prenotare? Scrivici ora", p: "Siamo su WhatsApp, Facebook e telefono in ogni momento per qualsiasi domanda o prenotazione." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Chiama", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tutti i diritti riservati."
     }
   },
 
@@ -630,25 +600,28 @@ window.SITE_CONFIG = {
   services: [
     { icon: "✈️", tag: "CLASS: ECONOMY / BUSINESS",
       ar_title: "تذاكر طيران", ar_desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.",
-      en_title: "Flight Tickets", en_desc: "Book domestic and international flights at prices lower than official sites, with step-by-step support." },
+      en_title: "Flight Tickets", en_desc: "Book domestic and international flights at prices lower than official sites, with step-by-step support.",
+      it_title: "Biglietti Aerei", it_desc: "Prenotazione di voli nazionali e internazionali a prezzi inferiori rispetto ai siti ufficiali, con assistenza passo dopo passo." },
     { icon: "🏨", tag: "STAY: ANY DESTINATION",
       ar_title: "إقامات وفنادق", ar_desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",
-      en_title: "Hotels & Stays", en_desc: "Book hotels and serviced apartments at any destination you choose, at competitive prices." },
+      en_title: "Hotels & Stays", en_desc: "Book hotels and serviced apartments at any destination you choose, at competitive prices.",
+      it_title: "Hotel e Soggiorni", it_desc: "Prenotazione di hotel e appartamenti in qualsiasi destinazione tu scelga, a prezzi competitivi." },
     { icon: "🎟️", tag: "ENTRY: EVENTS & MUSEUMS",
       ar_title: "فعاليات ومتاحف", ar_desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",
-      en_title: "Events & Museums", en_desc: "Tickets for concerts, museums, and local & international events at discounted prices." }
+      en_title: "Events & Museums", en_desc: "Tickets for concerts, museums, and local & international events at discounted prices.",
+      it_title: "Eventi e Musei", it_desc: "Biglietti per concerti, musei ed eventi locali e internazionali a prezzi scontati." }
   ],
 
   // الوجهات السياحية (صور صغيرة) — دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
   // لاستبدال أي صورة بصورتك انت: ارفعها في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
   // group لازم تكون "in" (داخل مصر) أو "out" (خارج مصر) بالظبط
   destinations: [
-    { ar_name: "دبي",           en_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "باريس",          en_name: "Paris",              group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "إسطنبول",        en_name: "Istanbul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "الأقصر",         en_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
+    { ar_name: "دبي",           en_name: "Dubai",              it_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "باريس",          en_name: "Paris",              it_name: "Parigi",             group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "إسطنبول",        en_name: "Istanbul",           it_name: "Istanbul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      it_name: "Piramidi di Giza",   group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    it_name: "Sharm el-Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "الأقصر",         en_name: "Luxor",              it_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
   ],
 
   // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
@@ -699,49 +672,55 @@ window.SITE_CONFIG = {
   why: [
     { mark: "$",
       ar_title: "أسعار أقل من المواقع الرسمية", ar_desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل.",
-      en_title: "Lower prices than official sites", en_desc: "We benefit from agreements with global suppliers to get you a better price." },
+      en_title: "Lower prices than official sites", en_desc: "We benefit from agreements with global suppliers to get you a better price.",
+      it_title: "Prezzi più bassi dei siti ufficiali", it_desc: "Grazie ad accordi con fornitori globali, ti garantiamo il prezzo migliore." },
     { mark: "💬",
       ar_title: "تواصل مباشر وسهل", ar_desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.",
-      en_title: "Direct, easy communication", en_desc: "Direct contact via WhatsApp or Facebook, no complicated steps." },
+      en_title: "Direct, easy communication", en_desc: "Direct contact via WhatsApp or Facebook, no complicated steps.",
+      it_title: "Comunicazione diretta e semplice", it_desc: "Contatto diretto su WhatsApp o Facebook, senza passaggi complicati." },
     { mark: "🤝",
       ar_title: "متابعة شخصية لحجزك", ar_desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.",
-      en_title: "Personal follow-up on your booking", en_desc: "Someone follows up with you from the moment you ask until you travel." }
+      en_title: "Personal follow-up on your booking", en_desc: "Someone follows up with you from the moment you ask until you travel.",
+      it_title: "Assistenza personale per la tua prenotazione", it_desc: "Qualcuno segue la tua prenotazione dal momento in cui chiedi fino alla partenza." }
   ],
 
   // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
   founderNote: {
     ar_quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.", ar_attribution: "فريق سافر Discounts",
-    en_quote: "Our goal is to make travel accessible to everyone, without paying extra.", en_attribution: "The Safer Discounts Team"
+    en_quote: "Our goal is to make travel accessible to everyone, without paying extra.", en_attribution: "The Safer Discounts Team",
+    it_quote: "Il nostro obiettivo è rendere i viaggi accessibili a tutti, senza costi aggiuntivi.", it_attribution: "Il Team di Safer Discounts"
   },
 
   // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر وغيّر البيانات باللغتين
   faq: [
     { ar_q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", ar_a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط.",
-      en_q: "How are your prices lower than official sites?", en_a: "We work with suppliers, airlines and hotels on special wholesale agreements, and pass part of that difference on to you." },
+      en_q: "How are your prices lower than official sites?", en_a: "We work with suppliers, airlines and hotels on special wholesale agreements, and pass part of that difference on to you.",
+      it_q: "Perché i vostri prezzi sono più bassi dei siti ufficiali?", it_a: "Lavoriamo con fornitori, compagnie aeree e hotel con accordi speciali all'ingrosso, e trasferiamo parte di quella differenza a te invece che a un intermediario." },
     { ar_q: "الدفع بيتم إزاي؟", ar_a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة.",
-      en_q: "How do I pay?", en_a: "Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all booking details with you before you pay anything." },
+      en_q: "How do I pay?", en_a: "Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all booking details with you before you pay anything.",
+      it_q: "Come posso pagare?", it_a: "Il pagamento avviene tramite bonifico bancario, Vodafone Cash o InstaPay, e confermiamo tutti i dettagli della prenotazione prima che tu paghi qualsiasi cosa." },
     { ar_q: "الحجز هيبقى باسمي أنا؟", ar_a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه.",
-      en_q: "Will the booking be in my own name?", en_a: "Yes, the ticket or hotel booking is made in your exact name and details, and you receive the official confirmation from the airline or hotel itself." },
+      en_q: "Will the booking be in my own name?", en_a: "Yes, the ticket or hotel booking is made in your exact name and details, and you receive the official confirmation from the airline or hotel itself.",
+      it_q: "La prenotazione sarà a mio nome?", it_a: "Sì, il biglietto o la prenotazione dell'hotel viene effettuata esattamente a tuo nome e con i tuoi dati, e ricevi la conferma ufficiale direttamente dalla compagnia aerea o dall'hotel." },
     { ar_q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", ar_a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
-      en_q: "If I change my mind after booking, can I cancel?", en_a: "Cancellation follows the airline's or hotel's own policy (some bookings are refundable, others aren't), and we explain this before you confirm, not after." },
+      en_q: "If I change my mind after booking, can I cancel?", en_a: "Cancellation follows the airline's or hotel's own policy (some bookings are refundable, others aren't), and we explain this before you confirm, not after.",
+      it_q: "Se cambio idea dopo aver prenotato, posso cancellare?", it_a: "La cancellazione segue la politica della compagnia aerea o dell'hotel stesso (alcune prenotazioni sono rimborsabili, altre no), e te lo spieghiamo prima della conferma, non dopo." },
     { ar_q: "قد إيه المفروض أحجز قبل السفر؟", ar_a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها.",
-      en_q: "How far in advance should I book?", en_a: "The earlier you book, the better the prices — but reach out even for a last-minute trip and we'll find the best price available then." }
+      en_q: "How far in advance should I book?", en_a: "The earlier you book, the better the prices — but reach out even for a last-minute trip and we'll find the best price available then.",
+      it_q: "Con quanto anticipo dovrei prenotare?", it_a: "Prima prenoti, migliori sono i prezzi — ma puoi contattarci anche per un viaggio last-minute e troveremo il miglior prezzo disponibile in quel momento." }
   ],
-
-  // بيانات سارة (المرشدة/المساعدة) — صورتها ولغاتها. غيّر صورتها بسهولة من هنا
-  sara: {
-    photo: "images/sara.jpg",
-    languages: ["العربية", "English", "Italiano", "Español", "Português"]
-  },
 
   // خطوات الحجز
   steps: [
     { n: "01", ar_title: "ابعتلنا تفاصيل رحلتك",  ar_desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك.",
-      en_title: "Send us your trip details", en_desc: "Destination, date, and number of travelers — via WhatsApp or Facebook." },
+      en_title: "Send us your trip details", en_desc: "Destination, date, and number of travelers — via WhatsApp or Facebook.",
+      it_title: "Inviaci i dettagli del tuo viaggio", it_desc: "Destinazione, data e numero di viaggiatori — via WhatsApp o Facebook." },
     { n: "02", ar_title: "هنبعتلك أفضل سعر متاح", ar_desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.",
-      en_title: "We'll send you the best price", en_desc: "We compare available options and recommend the best price and timing." },
+      en_title: "We'll send you the best price", en_desc: "We compare available options and recommend the best price and timing.",
+      it_title: "Ti invieremo il prezzo migliore", it_desc: "Confrontiamo le opzioni disponibili e ti consigliamo il prezzo e l'orario più adatti." },
     { n: "03", ar_title: "تأكيد الحجز",           ar_desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك.",
-      en_title: "Confirm your booking", en_desc: "Once you're happy with the price and details, we confirm your booking and send your ticket." }
+      en_title: "Confirm your booking", en_desc: "Once you're happy with the price and details, we confirm your booking and send your ticket.",
+      it_title: "Conferma la prenotazione", it_desc: "Una volta soddisfatto del prezzo e dei dettagli, confermiamo la tua prenotazione e ti inviamo il biglietto." }
   ]
 };
 </script>
@@ -759,10 +738,13 @@ window.SITE_CONFIG = {
       <a href="#reviews" data-nav="reviews"></a>
       <a href="#how" data-nav="how"></a>
       <a href="#faq" data-nav="faq"></a>
-      <a href="blog.html" data-nav="blog"></a>
     </div>
     <div class="nav-right">
-      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="ar" type="button">AR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="it" type="button">IT</button>
+      </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
   </nav>
@@ -884,30 +866,6 @@ window.SITE_CONFIG = {
   </div>
 </section>
 
-<section id="sara">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="tag" id="sara-tag"></span>
-      <h2 id="sara-h2"></h2>
-      <p id="sara-p"></p>
-    </div>
-    <div class="sara-card">
-      <div class="sara-photo">
-        <img id="sara-photo-img" src="" alt="Sara">
-        <span class="sara-photo-tag" id="sara-photo-tag"></span>
-      </div>
-      <div class="sara-info">
-        <span class="sara-eyebrow" id="sara-eyebrow"></span>
-        <h3 class="sara-name" id="sara-name"></h3>
-        <p class="sara-role" id="sara-role"></p>
-        <p class="sara-bio" id="sara-bio"></p>
-        <div class="sara-tags" id="sara-lang-tags"></div>
-        <a class="ticket-btn" href="blog.html" id="sara-cta"></a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="faq" style="background:var(--paper-card);">
   <div class="wrap">
     <div class="section-head">
@@ -939,7 +897,6 @@ window.SITE_CONFIG = {
     <div class="footer-top">
       <div class="footer-brand"><img src="logo.png" alt="Safer Discounts"> <span id="footer-brand-text"></span></div>
       <div class="footer-socials">
-        <a href="blog.html" id="footer-blog-text"></a>
         <a data-fb href="#" target="_blank" id="footer-fb-text"></a>
         <a data-wa href="#" id="footer-wa-text"></a>
         <a data-email href="#" id="footer-email-text"></a>
@@ -961,8 +918,14 @@ window.SITE_CONFIG = {
   var currentLang = 'ar';
 
   function waLink(lang){
+    var num = cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumberByLang.ar;
     var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
-    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
+    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+  }
+
+  // بيدور على النص بلغة الصفحة، ولو مش موجود يرجع للإنجليزي وبعدين العربي
+  function pick(obj, field, lang){
+    return obj[lang + '_' + field] || obj['en_' + field] || obj['ar_' + field] || '';
   }
 
   function parseStat(str){
@@ -1020,7 +983,9 @@ window.SITE_CONFIG = {
     var t = cfg.i18n[lang];
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
 
     // روابط التواصل (بتتحدث برسالة واتساب باللغة الحالية)
     document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
@@ -1082,8 +1047,8 @@ window.SITE_CONFIG = {
     document.getElementById('services-h2').textContent = t.servicesHead.h2;
     document.getElementById('services-p').textContent = t.servicesHead.p;
     document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
-      var title = lang === 'ar' ? s.ar_title : s.en_title;
-      var desc = lang === 'ar' ? s.ar_desc : s.en_desc;
+      var title = pick(s, 'title', lang);
+      var desc = pick(s, 'desc', lang);
       return '<div class="ticket-card"><div class="top">' +
              '<div class="icon-badge">' + s.icon + '</div>' +
              '<h3>' + title + '</h3><p>' + desc + '</p></div>' +
@@ -1095,7 +1060,7 @@ window.SITE_CONFIG = {
     document.getElementById('destinations-h2').textContent = t.destinationsHead.h2;
     document.getElementById('destinations-p').textContent = t.destinationsHead.p;
     document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
-      var name = lang === 'ar' ? d.ar_name : d.en_name;
+      var name = pick(d, 'name', lang);
       var groupLabel = t.destinationGroups[d.group];
       return '<div class="dest-card">' +
                '<div class="dest-img">' +
@@ -1146,8 +1111,8 @@ window.SITE_CONFIG = {
     document.getElementById('how-h2').textContent = t.howHead.h2;
     document.getElementById('how-p').textContent = t.howHead.p;
     document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
-      var title = lang === 'ar' ? s.ar_title : s.en_title;
-      var desc = lang === 'ar' ? s.ar_desc : s.en_desc;
+      var title = pick(s, 'title', lang);
+      var desc = pick(s, 'desc', lang);
       return '<div class="step"><div class="n">' + s.n + '</div><h4>' + title + '</h4><p>' + desc + '</p></div>';
     }).join('');
 
@@ -1155,40 +1120,23 @@ window.SITE_CONFIG = {
     document.getElementById('why-tag').textContent = t.whyHead.tag;
     document.getElementById('why-h2').textContent = t.whyHead.h2;
     document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
-      var title = lang === 'ar' ? w.ar_title : w.en_title;
-      var desc = lang === 'ar' ? w.ar_desc : w.en_desc;
+      var title = pick(w, 'title', lang);
+      var desc = pick(w, 'desc', lang);
       return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
              '<div><h4>' + title + '</h4><p>' + desc + '</p></div></div>';
     }).join('');
-    var fq = lang === 'ar' ? cfg.founderNote.ar_quote : cfg.founderNote.en_quote;
-    var fa = lang === 'ar' ? cfg.founderNote.ar_attribution : cfg.founderNote.en_attribution;
+    var fq = pick(cfg.founderNote, 'quote', lang);
+    var fa = pick(cfg.founderNote, 'attribution', lang);
     document.getElementById('founder-quote').textContent = '"' + fq + '"';
     document.getElementById('founder-who').textContent = '— ' + fa;
-
-    // Meet Sara
-    document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
-    document.getElementById('sara-tag').textContent = t.saraHead.tag;
-    document.getElementById('sara-h2').textContent = t.saraHead.h2;
-    document.getElementById('sara-p').textContent = t.saraHead.p;
-    document.getElementById('sara-eyebrow').textContent = t.sara.eyebrow;
-    document.getElementById('sara-name').textContent = t.sara.name;
-    document.getElementById('sara-role').textContent = t.sara.role;
-    document.getElementById('sara-bio').textContent = t.sara.bio;
-    document.getElementById('sara-cta').textContent = t.sara.cta;
-    document.getElementById('sara-photo-tag').textContent = 'GUIDE · ' + cfg.sara.languages.join(' · ');
-    var saraImg = document.getElementById('sara-photo-img');
-    if (saraImg.getAttribute('src') !== cfg.sara.photo) saraImg.src = cfg.sara.photo;
-    document.getElementById('sara-lang-tags').innerHTML = cfg.sara.languages.map(function(l){
-      return '<span class="sara-tag">' + l + '</span>';
-    }).join('');
 
     // FAQ
     document.getElementById('faq-tag').textContent = t.faqHead.tag;
     document.getElementById('faq-h2').textContent = t.faqHead.h2;
     document.getElementById('faq-p').textContent = t.faqHead.p;
     document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
-      var q = lang === 'ar' ? item.ar_q : item.en_q;
-      var a = lang === 'ar' ? item.ar_a : item.en_a;
+      var q = pick(item, 'q', lang);
+      var a = pick(item, 'a', lang);
       return '<details class="faq-item"><summary>' + q + '</summary><div class="faq-a">' + a + '</div></details>';
     }).join('');
 
@@ -1202,7 +1150,6 @@ window.SITE_CONFIG = {
 
     // Footer
     document.getElementById('footer-brand-text').textContent = t.brand;
-    document.getElementById('footer-blog-text').textContent = t.nav.blog;
     document.getElementById('footer-fb-text').textContent = t.contactBtns.fb;
     document.getElementById('footer-wa-text').textContent = t.contactBtns.wa;
     document.getElementById('footer-email-text').textContent = cfg.contact.email;
@@ -1213,8 +1160,10 @@ window.SITE_CONFIG = {
     setupRevealAndCounters();
   }
 
-  document.getElementById('lang-toggle').addEventListener('click', function(){
-    render(currentLang === 'ar' ? 'en' : 'ar');
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      render(btn.getAttribute('data-lang'));
+    });
   });
 
   render('ar');
