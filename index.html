@@ -324,19 +324,10 @@
   .reviews-scroll{
     display:flex;gap:20px;width:max-content;
     direction:ltr;
-    animation:reviews-marquee linear infinite;
+    cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;
+    will-change:transform;
   }
-  .reviews-viewport:hover .reviews-scroll,
-  .reviews-viewport:focus-within .reviews-scroll{
-    animation-play-state:paused;
-  }
-  @keyframes reviews-marquee{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .reviews-scroll{animation:none;}
-  }
+  .reviews-scroll.dragging{cursor:grabbing;}
   .review-card{
     flex:0 0 300px;
     background:var(--paper-card);
@@ -627,7 +618,7 @@ window.SITE_CONFIG = {
   // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
   social: {
     followers: "15K+",
-    totalReviews: "32",
+    totalReviews: "37",
     recommendPercent: "100%",
     facebookReviewsUrl: "https://www.facebook.com/saferdiscounts/reviews"
   },
@@ -953,6 +944,60 @@ window.SITE_CONFIG = {
     requestAnimationFrame(step);
   }
 
+  // كاروسيل التوصيات: بيتحرك لوحده، وبرضو تقدر تسحبه بإيدك (بالماوس أو باللمس على الموبايل)
+  function setupReviewsCarousel(track, reviewCount){
+    var offset = 0;
+    var isDragging = false;
+    var isHovering = false;
+    var startX = 0;
+    var startOffset = 0;
+    var lastTs = null;
+    var duration = Math.max(30, reviewCount * 4); // ثواني للفة كاملة، زي القديم بالظبط
+    var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function frame(ts){
+      var halfWidth = track.scrollWidth / 2;
+      if (!isDragging && !isHovering && !reducedMotion && halfWidth > 0) {
+        if (lastTs !== null) {
+          var dt = (ts - lastTs) / 1000;
+          offset -= (halfWidth / duration) * dt;
+        }
+      }
+      lastTs = ts;
+      if (halfWidth > 0) {
+        if (offset <= -halfWidth) offset += halfWidth;
+        if (offset > 0) offset -= halfWidth;
+      }
+      track.style.transform = 'translateX(' + offset + 'px)';
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+
+    track.addEventListener('pointerdown', function(e){
+      isDragging = true;
+      track.classList.add('dragging');
+      startX = e.clientX;
+      startOffset = offset;
+      try { track.setPointerCapture(e.pointerId); } catch(err){}
+    });
+    track.addEventListener('pointermove', function(e){
+      if (!isDragging) return;
+      offset = startOffset + (e.clientX - startX);
+    });
+    function endDrag(){
+      isDragging = false;
+      track.classList.remove('dragging');
+    }
+    track.addEventListener('pointerup', endDrag);
+    track.addEventListener('pointercancel', endDrag);
+
+    var viewport = track.closest('.reviews-viewport');
+    if (viewport) {
+      viewport.addEventListener('mouseenter', function(){ isHovering = true; });
+      viewport.addEventListener('mouseleave', function(){ isHovering = false; });
+    }
+  }
+
   function setupRevealAndCounters(){
     var revealTargets = document.querySelectorAll(
       '.section-head, .ticket-card, .dest-card, .step, .why-item, .why-card, .faq-item, .review-card'
@@ -1108,8 +1153,8 @@ window.SITE_CONFIG = {
                '</div>';
       }).join('');
       reviewsGridEl.innerHTML = reviewsHtml + reviewsHtml;
-      reviewsGridEl.style.animationDuration = Math.max(30, cfg.reviews.length * 4) + 's';
       reviewsGridEl.dataset.built = '1';
+      setupReviewsCarousel(reviewsGridEl, cfg.reviews.length);
     }
 
     // How it works
