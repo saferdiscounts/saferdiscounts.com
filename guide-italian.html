@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعلم الإيطالي مع سارة | بلوج سافر Discounts</title>
+<meta name="description" content="دليل كامل لتعلم أساسيات ومستوى متقدم من اللغة الإيطالية — نطق، قواعد، مفردات سفر، وحوارات عملية، مع سارة.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sara — Safer Discounts">
+<link rel="canonical" href="https://saferdiscounts.com/guide-italian.html">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand-blue:#0365A3; --brand-blue-dark:#023152;
+    --brand-orange:#F1560B; --brand-orange-dark:#C7430A;
+    --ink:#0B2036; --paper:#FFF9F1; --paper-card:#FFFFFF;
+    --line:#E4D9C8; --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Cairo',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,249,241,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  nav.navwrap{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;}
+  .brand img{height:40px;width:auto;}
+  .nav-right{display:flex;align-items:center;gap:12px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:13px;
+    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
+    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
+  }
+  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .nav-cta{
+    display:flex;align-items:center;gap:8px;background:var(--brand-orange);color:#fff;
+    padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;white-space:nowrap;
+  }
+
+  .guide-hero{
+    position:relative;background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 60%, #0483C9 100%);
+    color:#fff;padding:56px 0 48px;overflow:hidden;
+  }
+  .guide-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 88% 15%, rgba(255,255,255,0.10) 0, transparent 40%),radial-gradient(circle at 8% 90%, rgba(241,86,11,0.22) 0, transparent 45%);}
+  .guide-hero .wrap{position:relative;z-index:2;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#FFD9B0;margin-bottom:18px;}
+  .flag{font-size:38px;margin-bottom:14px;}
+  .guide-hero h1{font-size:30px;font-weight:900;margin-bottom:12px;max-width:640px;line-height:1.4;}
+  .guide-hero p{font-size:15.5px;opacity:0.92;max-width:600px;margin-bottom:20px;}
+  .byline{display:flex;align-items:center;gap:12px;}
+  .byline img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.7);}
+  .byline .name{font-weight:800;font-size:14px;}
+  .byline .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;opacity:0.8;}
+
+  .toc{background:var(--paper-card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin:-30px auto 40px;position:relative;z-index:3;box-shadow:0 14px 30px rgba(11,32,54,0.1);}
+  .toc h2{font-size:15px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;}
+  .toc-grid a{font-size:13.5px;color:var(--brand-blue);opacity:0.85;padding:3px 0;display:block;}
+  .toc-grid a:hover{opacity:1;text-decoration:underline;}
+  .toc-part{grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--brand-orange);font-weight:700;margin-top:10px;}
+
+  .chapter{padding:38px 0;border-bottom:1px dashed var(--line);}
+  .chapter:last-of-type{border-bottom:none;}
+  .chapter h2{font-size:21px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:16px;}
+  .chapter p{font-size:15.5px;color:#3E4C58;margin-bottom:14px;}
+  .chapter h3{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin:20px 0 10px;}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 22px;border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(11,32,54,0.06);}
+  th{background:var(--brand-blue-dark);color:#fff;font-size:11.5px;padding:10px 12px;text-align:start;font-family:'IBM Plex Mono',monospace;letter-spacing:0.5px;}
+  td{background:var(--paper-card);padding:10px 12px;font-size:14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .it-word{font-weight:800;color:var(--brand-blue);white-space:nowrap;}
+  .pron{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8A9BA8;white-space:nowrap;}
+
+  .goal-box, .tip-box{border-radius:14px;padding:20px 22px;margin:18px 0;}
+  .goal-box{background:#F3EEE3;border:1px dashed var(--line);}
+  .goal-box ul, .tip-box ul{margin-inline-start:20px;}
+  .goal-box li, .tip-box li{font-size:14px;margin-bottom:6px;color:#3E4C58;}
+  .tip-box{background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));color:#fff;}
+  .tip-box .tip-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;opacity:0.85;display:block;margin-bottom:8px;}
+  .tip-box li{color:#fff;}
+
+  .dialogue{background:var(--paper-card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;}
+  .dialogue .line{margin-bottom:12px;}
+  .dialogue .speaker{font-weight:800;color:var(--brand-blue-dark);font-size:13.5px;}
+  .dialogue .orig{font-style:italic;color:var(--ink);font-size:14.5px;}
+  .dialogue .trans{color:#4B5A66;font-size:13.5px;}
+
+  .part-divider{
+    background:var(--brand-blue-dark);color:#fff;text-align:center;
+    padding:34px 24px;border-radius:16px;margin:44px 0 10px;
+  }
+  .part-divider .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:#FFD9B0;display:block;margin-bottom:8px;}
+  .part-divider h2{font-size:24px;font-weight:900;margin:0;color:#fff;}
+
+  .article-cta{text-align:center;background:var(--paper-card);border:1px solid var(--line);border-radius:18px;padding:36px 26px;margin:44px 0;}
+  .article-cta h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .article-cta p{color:#4B5A66;margin-bottom:20px;font-size:14.5px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand-orange);color:#fff;font-weight:800;font-size:15px;padding:14px 24px;border-radius:12px;}
+
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:36px 0 22px;}
+  .footer-inner{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px;}
+
+  .floating-wa{position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;background:var(--whatsapp);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 8px 24px rgba(37,211,102,0.5);}
+
+  [data-lang-block="en"]{display:none;}
+  html[lang="en"] [data-lang-block="ar"]{display:none;}
+  html[lang="en"] [data-lang-block="en"]{display:block;}
+  html[lang="en"] table [data-lang-block="en"]{display:table-row;}
+  html[lang="en"] .dialogue [data-lang-block="en"]{display:block;}
+
+  @media (max-width:700px){
+    .guide-hero h1{font-size:23px;}
+    .toc-grid{grid-template-columns:1fr;}
+    table{font-size:12.5px;}
+    th,td{padding:8px 9px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="navwrap">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Safer Discounts"><span data-lang-block="ar">سافر Discounts</span><span data-lang-block="en">Safer Discounts</span></a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <a class="nav-cta" id="nav-cta" href="#">💬</a>
+    </div>
+  </nav>
+</header>
+
+<section class="guide-hero">
+  <div class="wrap">
+    <a class="back-link" href="blog.html">
+      <span data-lang-block="ar">→ رجوع لبلوج سارة</span>
+      <span data-lang-block="en">→ Back to Sara's Blog</span>
+    </a>
+    <div class="flag">🇮🇹</div>
+    <h1>
+      <span data-lang-block="ar">دليلك الكامل لتعلم الإيطالي — مع سارة</span>
+      <span data-lang-block="en">Your Complete Guide to Learning Italian — with Sara</span>
+    </h1>
+    <p>
+      <span data-lang-block="ar">من أول عبارة تحية لحد الحوارات المتقدمة في المطار والفندق والصيدلية — كتيب كامل يوصلك من الصفر لمستوى تقدر تعتمد عليه فعلًا في رحلتك لإيطاليا.</span>
+      <span data-lang-block="en">From your very first greeting to advanced conversations at the airport, hotel, and pharmacy — a complete guide that takes you from zero to a level you can actually rely on for your trip to Italy.</span>
+    </p>
+    <div class="byline">
+      <img src="images/sara.jpg" alt="Sara">
+      <div>
+        <div class="name"><span data-lang-block="ar">بقلم سارة</span><span data-lang-block="en">By Sara</span></div>
+        <div class="meta"><span data-lang-block="ar">دليل لغة كامل · أساسي ومتقدم</span><span data-lang-block="en">Full Language Guide · Basic & Advanced</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="toc">
+    <h2><span data-lang-block="ar">فهرس الكتيب</span><span data-lang-block="en">Table of Contents</span></h2>
+    <div class="toc-grid">
+      <span class="toc-part"><span data-lang-block="ar">الجزء الأول — الأساسيات</span><span data-lang-block="en">PART 1 — Basics</span></span>
+      <a href="#c1"><span data-lang-block="ar">١. ليه تتعلم الإيطالي؟</span><span data-lang-block="en">1. Why Learn Italian?</span></a>
+      <a href="#c2"><span data-lang-block="ar">٢. الأبجدية والنطق</span><span data-lang-block="en">2. Alphabet & Pronunciation</span></a>
+      <a href="#c3"><span data-lang-block="ar">٣. قواعد النطق الذهبية</span><span data-lang-block="en">3. Golden Pronunciation Rules</span></a>
+      <a href="#c4"><span data-lang-block="ar">٤. التحيات الأساسية</span><span data-lang-block="en">4. Essential Greetings</span></a>
+      <a href="#c5"><span data-lang-block="ar">٥. الضمائر وفعل "يكون"</span><span data-lang-block="en">5. Pronouns & "To Be"</span></a>
+      <a href="#c6"><span data-lang-block="ar">٦. الأفعال الشائعة</span><span data-lang-block="en">6. Common Verbs</span></a>
+      <a href="#c7"><span data-lang-block="ar">٧. الأرقام ٠-١٠٠</span><span data-lang-block="en">7. Numbers 0-100</span></a>
+      <a href="#c8"><span data-lang-block="ar">٨. الأيام والشهور</span><span data-lang-block="en">8. Days & Months</span></a>
+      <a href="#c9"><span data-lang-block="ar">٩. الألوان</span><span data-lang-block="en">9. Colors</span></a>
+      <a href="#c10"><span data-lang-block="ar">١٠. أفراد العائلة</span><span data-lang-block="en">10. Family Members</span></a>
+      <a href="#c11"><span data-lang-block="ar">١١. الأكل والشرب</span><span data-lang-block="en">11. Food & Drink</span></a>
+      <a href="#c12"><span data-lang-block="ar">١٢. عبارات السفر والفنادق</span><span data-lang-block="en">12. Travel & Hotel Phrases</span></a>
+      <a href="#c13"><span data-lang-block="ar">١٣. تعبيرات عامية أصيلة</span><span data-lang-block="en">13. Authentic Slang</span></a>
+      <a href="#c14"><span data-lang-block="ar">١٤. حوار تدريبي</span><span data-lang-block="en">14. Practice Dialogue</span></a>
+      <a href="#c15"><span data-lang-block="ar">١٥. خطة التعلم السريع</span><span data-lang-block="en">15. Fast-Learning Plan</span></a>
+
+      <span class="toc-part"><span data-lang-block="ar">الجزء الثاني — المستوى المتقدم</span><span data-lang-block="en">PART 2 — Advanced Level</span></span>
+      <a href="#c17"><span data-lang-block="ar">١٧. مراجعة سريعة</span><span data-lang-block="en">17. Quick Review</span></a>
+      <a href="#c18"><span data-lang-block="ar">١٨. الماضي القريب</span><span data-lang-block="en">18. Recent Past</span></a>
+      <a href="#c19"><span data-lang-block="ar">١٩. الماضي الناقص</span><span data-lang-block="en">19. Imperfect Past</span></a>
+      <a href="#c20"><span data-lang-block="ar">٢٠. المستقبل والشرطي</span><span data-lang-block="en">20. Future & Conditional</span></a>
+      <a href="#c21"><span data-lang-block="ar">٢١. صيغة الشرط (Congiuntivo)</span><span data-lang-block="en">21. Subjunctive (Congiuntivo)</span></a>
+      <a href="#c22"><span data-lang-block="ar">٢٢. الأفعال الانعكاسية</span><span data-lang-block="en">22. Reflexive Verbs</span></a>
+      <a href="#c23"><span data-lang-block="ar">٢٣. ضمائر المفعول به</span><span data-lang-block="en">23. Object Pronouns</span></a>
+      <a href="#c24"><span data-lang-block="ar">٢٤. حروف الجر والتعريف</span><span data-lang-block="en">24. Prepositions & Articles</span></a>
+      <a href="#c25"><span data-lang-block="ar">٢٥. المقارنة والتفضيل</span><span data-lang-block="en">25. Comparatives & Superlatives</span></a>
+      <a href="#c26"><span data-lang-block="ar">٢٦. مفردات: المطار والجمارك</span><span data-lang-block="en">26. Airport & Customs</span></a>
+      <a href="#c27"><span data-lang-block="ar">٢٧. مفردات: مشاكل الفندق</span><span data-lang-block="en">27. Hotel Problems</span></a>
+      <a href="#c28"><span data-lang-block="ar">٢٨. مفردات: الصحة والطوارئ</span><span data-lang-block="en">28. Health & Emergencies</span></a>
+      <a href="#c29"><span data-lang-block="ar">٢٩. مفردات: البنك والشرطة</span><span data-lang-block="en">29. Bank & Police</span></a>
+      <a href="#c30"><span data-lang-block="ar">٣٠. مفردات: المواصلات</span><span data-lang-block="en">30. Transportation</span></a>
+      <a href="#c31"><span data-lang-block="ar">٣١. مفردات: التسوق والعمل</span><span data-lang-block="en">31. Shopping & Business</span></a>
+      <a href="#c32"><span data-lang-block="ar">٣٢. آداب التعامل</span><span data-lang-block="en">32. Etiquette</span></a>
+      <a href="#c33"><span data-lang-block="ar">٣٣. تعبيرات اصطلاحية متقدمة</span><span data-lang-block="en">33. Advanced Idioms</span></a>
+      <a href="#c34"><span data-lang-block="ar">٣٤. حوارات واقعية</span><span data-lang-block="en">34. Real Dialogues</span></a>
+      <a href="#c35"><span data-lang-block="ar">٣٥. نص للتدريب</span><span data-lang-block="en">35. Reading Passage</span></a>
+      <a href="#c36"><span data-lang-block="ar">٣٦. الخطوة الجاية</span><span data-lang-block="en">36. Next Steps</span></a>
+    </div>
+  </div>
+
+  <!-- ===================== PART 1 — BASICS ===================== -->
+
+  <div class="chapter" id="c1">
+    <h2><span data-lang-block="ar">١. ليه تتعلم الإيطالي؟</span><span data-lang-block="en">1. Why Learn Italian?</span></h2>
+    <p data-lang-block="ar">الإيطالي هو اللغة الرسمية لإيطاليا وسويسرا وسان مارينو والفاتيكان، وبيتكلمها أكتر من 65 مليون شخص كلغة أم، ومعروفة عالميًا كلغة الفن والموسيقى والأكل. الخبر الحلو: الإيطالي زي الإسباني والبرتغالي، لغة لاتينية بقواعد منطقية ومنظمة، ونطقها من أسهل اللغات اللاتينية لأن كل حرف تقريبًا بينطق زي ما هو مكتوب بالظبط.</p>
+    <p data-lang-block="en">Italian is the official language of Italy, Switzerland, San Marino, and the Vatican, spoken by more than 65 million people as a native language, and recognized worldwide as the language of art, music, and food. The good news: Italian, like Spanish and Portuguese, is a Romance language with very logical, well-organized grammar — and its pronunciation is one of the easiest among Romance languages, because almost every letter is pronounced exactly as it's written.</p>
+    <div class="goal-box">
+      <div data-lang-block="ar">
+        <strong>أهداف الكتيب ده:</strong>
+        <ul>
+          <li>تدّيك أساس قوي من المفردات والقواعد الأساسية في أقصر وقت ممكن.</li>
+          <li>التركيز على النطق الصح عشان لكنتك تبقى إيطالي أصيل.</li>
+          <li>عبارات عملية تقدر تستخدمها من اليوم الأول في مواقف حقيقية.</li>
+        </ul>
+      </div>
+      <div data-lang-block="en">
+        <strong>Goals of this guide:</strong>
+        <ul>
+          <li>Give you a solid foundation of vocabulary and essential grammar in the shortest time possible.</li>
+          <li>Focus on correct pronunciation so your accent sounds authentically Italian.</li>
+          <li>Give you practical phrases you can use from day one in real situations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c2">
+    <h2><span data-lang-block="ar">٢. الأبجدية وأساسيات النطق</span><span data-lang-block="en">2. The Alphabet & Pronunciation Basics</span></h2>
+    <p data-lang-block="ar">الإيطالي بيستخدم الأبجدية اللاتينية، ومعظم الحروف بتتنطق زي ما هي مكتوبة بالظبط. الجدول ده بيوضح أهم الحروف والأصوات المميزة:</p>
+    <p data-lang-block="en">Italian uses the Latin alphabet, and most letters are pronounced exactly as they're written. This table introduces the letters and sounds that are most distinctive:</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">بالإيطالية</th><th data-lang-block="en">Italian</th><th>النطق / Pronunciation</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">casa</td><td class="pron">KAH-sah</td><td colspan="2" data-lang-block="ar">بيت — كل حرف بينطق بوضوح</td><td data-lang-block="en">house — every letter is clearly pronounced</td></tr>
+        <tr><td class="it-word">ciao</td><td class="pron">CHOW</td><td colspan="2" data-lang-block="ar">أهلًا/سلام (عامية) — "ci" قبل a/o بتتنطق "تش"</td><td data-lang-block="en">hi/bye (informal) — "ci" before a/o sounds like "ch"</td></tr>
+        <tr><td class="it-word">gelato</td><td class="pron">jeh-LAH-toh</td><td colspan="2" data-lang-block="ar">آيس كريم — "ge/gi" بتتنطق زي الـ"j"</td><td data-lang-block="en">ice cream — "ge/gi" sounds like the "j" in "jelly"</td></tr>
+        <tr><td class="it-word">gatto</td><td class="pron">GAHT-toh</td><td colspan="2" data-lang-block="ar">قطة — "ga/go/gu" حرف g قوي، والحرف المزدوج "tt" بيتمد شوية</td><td data-lang-block="en">cat — "ga/go/gu" is a hard g; double "tt" is held slightly longer</td></tr>
+        <tr><td class="it-word">famiglia</td><td class="pron">fah-MEE-lyah</td><td colspan="2" data-lang-block="ar">عائلة — "gli" بتتنطق زي "لي" في كلمة million بالإنجليزي</td><td data-lang-block="en">family — "gli" sounds like the "lli" in "million"</td></tr>
+        <tr><td class="it-word">gnocchi</td><td class="pron">NYOH-kee</td><td colspan="2" data-lang-block="ar">نوع مكرونة — "gn" بتتنطق زي "ني" في canyon</td><td data-lang-block="en">gnocchi (pasta) — "gn" sounds like the "ny" in "canyon"</td></tr>
+        <tr><td class="it-word">pesce</td><td class="pron">PEH-sheh</td><td colspan="2" data-lang-block="ar">سمك — "sce/sci" بتتنطق "ش"</td><td data-lang-block="en">fish — "sce/sci" sounds like "sh"</td></tr>
+        <tr><td class="it-word">pizza</td><td class="pron">PEET-sah</td><td colspan="2" data-lang-block="ar">بيتزا — "z/zz" بتتنطق "تس" أو "دز"</td><td data-lang-block="en">pizza — "z/zz" sounds like "ts" or "dz"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c3">
+    <h2><span data-lang-block="ar">٣. قواعد النطق الذهبية</span><span data-lang-block="en">3. Golden Rules for Authentic Pronunciation</span></h2>
+    <p data-lang-block="ar">الـ6 قواعد دي هتفرق معاك جدًا عشان تبان إيطالي أصيل:</p>
+    <p data-lang-block="en">These 6 golden rules will make the biggest difference in sounding truly Italian:</p>
+    <div class="goal-box">
+      <ul data-lang-block="ar">
+        <li>حروف العلة (a, e, i, o, u) دايمًا بتتنطق نطق قصير وواضح، من غير "تسحيب" زي الإنجليزي.</li>
+        <li>حرف c قبل e أو i بينطق "تش" (زي ciao)، وقبل a/o/u بينطق "ك" عادية (زي casa).</li>
+        <li>حرف g قبل e أو i بينطق "ج" (زي gelato)، وقبل a/o/u بينطق g قوية (زي gatto).</li>
+        <li>الحروف المزدوجة (زي tt, ll, nn, ss) بتتمد أطول من الحرف المفرد — وده ممكن يغير معنى الكلمة كله.</li>
+        <li>حرف r إيطالي خفيف "مرفرف" بطرف اللسان، مش زي الـr الإنجليزي — محتاج شوية تمرين.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Vowels (a, e, i, o, u) are always pronounced short and clear — Italian vowels stay crisp, unlike English which tends to "glide" them.</li>
+        <li>The letter c before e or i sounds like "ch" (as in ciao), and before a, o, or u sounds like a regular "k" (as in casa).</li>
+        <li>The letter g before e or i sounds like "j" (as in gelato), and before a, o, or u sounds like a hard g (as in gatto).</li>
+        <li>Double consonants (like tt, ll, nn, ss) are held noticeably longer than single ones — this can completely change a word's meaning.</li>
+        <li>The letter r is a light, flipped/rolled r made with the tip of the tongue — not the English r. It takes some practice.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chapter" id="c4">
+    <h2><span data-lang-block="ar">٤. التحيات والعبارات الأساسية</span><span data-lang-block="en">4. Essential Greetings & Phrases</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">بالإيطالية</th><th data-lang-block="en">Italian</th><th>النطق / Pronunciation</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Ciao</td><td class="pron">CHOW</td><td colspan="2" data-lang-block="ar">أهلًا / سلام (عامية جدًا)</td><td data-lang-block="en">Hi / Bye (very casual)</td></tr>
+        <tr><td class="it-word">Buongiorno</td><td class="pron">bwohn-JOR-noh</td><td colspan="2" data-lang-block="ar">صباح الخير</td><td data-lang-block="en">Good morning</td></tr>
+        <tr><td class="it-word">Buonasera</td><td class="pron">bwoh-nah-SEH-rah</td><td colspan="2" data-lang-block="ar">مساء الخير</td><td data-lang-block="en">Good afternoon/evening</td></tr>
+        <tr><td class="it-word">Buonanotte</td><td class="pron">bwoh-nah-NOT-teh</td><td colspan="2" data-lang-block="ar">تصبح على خير</td><td data-lang-block="en">Good night</td></tr>
+        <tr><td class="it-word">Come stai?</td><td class="pron">KOH-meh STY</td><td colspan="2" data-lang-block="ar">عامل إيه؟ (عامية)</td><td data-lang-block="en">How are you? (casual)</td></tr>
+        <tr><td class="it-word">Sto bene, grazie</td><td class="pron">stoh BEH-neh, GRAH-tsyeh</td><td colspan="2" data-lang-block="ar">أنا كويس، شكرًا</td><td data-lang-block="en">I'm well, thank you</td></tr>
+        <tr><td class="it-word">Piacere</td><td class="pron">pyah-CHEH-reh</td><td colspan="2" data-lang-block="ar">فرصة سعيدة</td><td data-lang-block="en">Nice to meet you</td></tr>
+        <tr><td class="it-word">Arrivederci</td><td class="pron">ah-ree-veh-DER-chee</td><td colspan="2" data-lang-block="ar">مع السلامة (رسمي/نهائي)</td><td data-lang-block="en">Goodbye (formal/final)</td></tr>
+        <tr><td class="it-word">Per favore</td><td class="pron">per fah-VOH-reh</td><td colspan="2" data-lang-block="ar">لو سمحت</td><td data-lang-block="en">Please</td></tr>
+        <tr><td class="it-word">Grazie</td><td class="pron">GRAH-tsyeh</td><td colspan="2" data-lang-block="ar">شكرًا</td><td data-lang-block="en">Thank you</td></tr>
+        <tr><td class="it-word">Prego</td><td class="pron">PREH-goh</td><td colspan="2" data-lang-block="ar">عفوًا (رد على شكرًا)</td><td data-lang-block="en">You're welcome</td></tr>
+        <tr><td class="it-word">Scusa</td><td class="pron">SKOO-zah</td><td colspan="2" data-lang-block="ar">آسف / معلش</td><td data-lang-block="en">Sorry / excuse me</td></tr>
+        <tr><td class="it-word">Sì / No</td><td class="pron">SEE / NOH</td><td colspan="2" data-lang-block="ar">أيوه / لأ</td><td data-lang-block="en">Yes / No</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c5">
+    <h2><span data-lang-block="ar">٥. الضمائر وفعل "يكون" (Essere / Stare)</span><span data-lang-block="en">5. Pronouns & the Verb "To Be" (Essere / Stare)</span></h2>
+    <p data-lang-block="ar">الإيطالي عنده فعلين معناهم "يكون": <strong>Essere</strong> للهوية والصفات الدائمة، و<strong>Stare</strong> للحالة المؤقتة والمكان.</p>
+    <p data-lang-block="en">Italian has two verbs meaning "to be": <strong>Essere</strong> for identity and permanent traits, and <strong>Stare</strong> for temporary state and location.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">الضمير</th><th data-lang-block="en">Pronoun</th><th>Essere</th><th>Stare</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" data-lang-block="ar">أنا (io)</td><td colspan="2" data-lang-block="en">I (io)</td><td>sono</td><td>sto</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">إنت (tu)</td><td colspan="2" data-lang-block="en">you (tu)</td><td>sei</td><td>stai</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">هو/هي (lui/lei)</td><td colspan="2" data-lang-block="en">he/she (lui/lei)</td><td>è</td><td>sta</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">إحنا (noi)</td><td colspan="2" data-lang-block="en">we (noi)</td><td>siamo</td><td>stiamo</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">هما (loro)</td><td colspan="2" data-lang-block="en">they (loro)</td><td>sono</td><td>stanno</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Io sono egiziano</em> — أنا مصري. / <em>Sto a Roma</em> — أنا (دلوقتي) في روما.</span><span data-lang-block="en">Example: <em>Io sono egiziano</em> — I am Egyptian. / <em>Sto a Roma</em> — I am (currently) in Rome.</span></p>
+  </div>
+
+  <div class="chapter" id="c6">
+    <h2><span data-lang-block="ar">٦. الأفعال الشائعة وتصريفها</span><span data-lang-block="en">6. Common Verbs & Their Conjugation</span></h2>
+    <p data-lang-block="ar">الأفعال المنتظمة بتنقسم لـ3 مجموعات حسب آخرها: -are، -ere، -ire.</p>
+    <p data-lang-block="en">Regular Italian verbs fall into 3 groups based on their ending: -are, -ere, -ire.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">الضمير</th><th data-lang-block="en">Pronoun</th><th>parlare <span data-lang-block="ar">(يتكلم)</span></th><th>scrivere <span data-lang-block="ar">(يكتب)</span></th><th>dormire <span data-lang-block="ar">(ينام)</span></th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" data-lang-block="ar">io</td><td colspan="2" data-lang-block="en">io</td><td>parlo</td><td>scrivo</td><td>dormo</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">tu</td><td colspan="2" data-lang-block="en">tu</td><td>parli</td><td>scrivi</td><td>dormi</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">lui/lei</td><td colspan="2" data-lang-block="en">lui/lei</td><td>parla</td><td>scrive</td><td>dorme</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">noi</td><td colspan="2" data-lang-block="en">noi</td><td>parliamo</td><td>scriviamo</td><td>dormiamo</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">loro</td><td colspan="2" data-lang-block="en">loro</td><td>parlano</td><td>scrivono</td><td>dormono</td></tr>
+      </tbody>
+    </table>
+    <h3><span data-lang-block="ar">أفعال شاذة مهمة (صيغة io / tu)</span><span data-lang-block="en">Key irregular verbs ("io" and "tu" forms)</span></h3>
+    <table>
+      <thead><tr><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th><th>io</th><th>tu</th><th data-lang-block="ar">الفعل</th><th data-lang-block="en">Verb</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">يمتلك</td><td data-lang-block="en">to have</td><td>ho</td><td>hai</td><td colspan="2">avere</td></tr>
+        <tr><td data-lang-block="ar">يروح</td><td data-lang-block="en">to go</td><td>vado</td><td>vai</td><td colspan="2">andare</td></tr>
+        <tr><td data-lang-block="ar">يعمل</td><td data-lang-block="en">to do/make</td><td>faccio</td><td>fai</td><td colspan="2">fare</td></tr>
+        <tr><td data-lang-block="ar">يقدر</td><td data-lang-block="en">to be able to</td><td>posso</td><td>puoi</td><td colspan="2">potere</td></tr>
+        <tr><td data-lang-block="ar">يريد</td><td data-lang-block="en">to want</td><td>voglio</td><td>vuoi</td><td colspan="2">volere</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c7">
+    <h2><span data-lang-block="ar">٧. الأرقام من ٠ لـ١٠٠</span><span data-lang-block="en">7. Numbers 0 to 100</span></h2>
+    <table>
+      <thead><tr><th>#</th><th>Italiano</th><th>#</th><th>Italiano</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>zero</td><td>10</td><td>dieci</td></tr>
+        <tr><td>1</td><td>uno</td><td>11</td><td>undici</td></tr>
+        <tr><td>2</td><td>due</td><td>12</td><td>dodici</td></tr>
+        <tr><td>3</td><td>tre</td><td>13</td><td>tredici</td></tr>
+        <tr><td>4</td><td>quattro</td><td>14</td><td>quattordici</td></tr>
+        <tr><td>5</td><td>cinque</td><td>15</td><td>quindici</td></tr>
+        <tr><td>6</td><td>sei</td><td>16</td><td>sedici</td></tr>
+        <tr><td>7</td><td>sette</td><td>17</td><td>diciassette</td></tr>
+        <tr><td>8</td><td>otto</td><td>18</td><td>diciotto</td></tr>
+        <tr><td>9</td><td>nove</td><td>19</td><td>diciannove</td></tr>
+        <tr><td>20</td><td>venti</td><td>60</td><td>sessanta</td></tr>
+        <tr><td>30</td><td>trenta</td><td>70</td><td>settanta</td></tr>
+        <tr><td>40</td><td>quaranta</td><td>80</td><td>ottanta</td></tr>
+        <tr><td>50</td><td>cinquanta</td><td>90</td><td>novanta</td></tr>
+        <tr><td colspan="2"></td><td>100</td><td>cento</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c8">
+    <h2><span data-lang-block="ar">٨. أيام الأسبوع والشهور</span><span data-lang-block="en">8. Days of the Week & Months</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">اليوم</th><th data-lang-block="en">Day</th><th>Italiano</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">الاتنين</td><td data-lang-block="en">Monday</td><td>lunedì</td></tr>
+        <tr><td data-lang-block="ar">التلات</td><td data-lang-block="en">Tuesday</td><td>martedì</td></tr>
+        <tr><td data-lang-block="ar">الأربع</td><td data-lang-block="en">Wednesday</td><td>mercoledì</td></tr>
+        <tr><td data-lang-block="ar">الخميس</td><td data-lang-block="en">Thursday</td><td>giovedì</td></tr>
+        <tr><td data-lang-block="ar">الجمعة</td><td data-lang-block="en">Friday</td><td>venerdì</td></tr>
+        <tr><td data-lang-block="ar">السبت</td><td data-lang-block="en">Saturday</td><td>sabato</td></tr>
+        <tr><td data-lang-block="ar">الحد</td><td data-lang-block="en">Sunday</td><td>domenica</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead><tr><th data-lang-block="ar">الشهر</th><th data-lang-block="en">Month</th><th>Italiano</th><th data-lang-block="ar">الشهر</th><th data-lang-block="en">Month</th><th>Italiano</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">يناير</td><td data-lang-block="en">January</td><td>gennaio</td><td data-lang-block="ar">يوليو</td><td data-lang-block="en">July</td><td>luglio</td></tr>
+        <tr><td data-lang-block="ar">فبراير</td><td data-lang-block="en">February</td><td>febbraio</td><td data-lang-block="ar">أغسطس</td><td data-lang-block="en">August</td><td>agosto</td></tr>
+        <tr><td data-lang-block="ar">مارس</td><td data-lang-block="en">March</td><td>marzo</td><td data-lang-block="ar">سبتمبر</td><td data-lang-block="en">September</td><td>settembre</td></tr>
+        <tr><td data-lang-block="ar">أبريل</td><td data-lang-block="en">April</td><td>aprile</td><td data-lang-block="ar">أكتوبر</td><td data-lang-block="en">October</td><td>ottobre</td></tr>
+        <tr><td data-lang-block="ar">مايو</td><td data-lang-block="en">May</td><td>maggio</td><td data-lang-block="ar">نوفمبر</td><td data-lang-block="en">November</td><td>novembre</td></tr>
+        <tr><td data-lang-block="ar">يونيو</td><td data-lang-block="en">June</td><td>giugno</td><td data-lang-block="ar">ديسمبر</td><td data-lang-block="en">December</td><td>dicembre</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c9">
+    <h2><span data-lang-block="ar">٩. الألوان</span><span data-lang-block="en">9. Colors</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">rosso</td><td class="pron">ROHS-soh</td><td data-lang-block="ar">أحمر</td><td data-lang-block="en">red</td></tr>
+        <tr><td class="it-word">blu</td><td class="pron">BLOO</td><td data-lang-block="ar">أزرق</td><td data-lang-block="en">blue</td></tr>
+        <tr><td class="it-word">verde</td><td class="pron">VER-deh</td><td data-lang-block="ar">أخضر</td><td data-lang-block="en">green</td></tr>
+        <tr><td class="it-word">giallo</td><td class="pron">JAHL-loh</td><td data-lang-block="ar">أصفر</td><td data-lang-block="en">yellow</td></tr>
+        <tr><td class="it-word">nero</td><td class="pron">NEH-roh</td><td data-lang-block="ar">أسود</td><td data-lang-block="en">black</td></tr>
+        <tr><td class="it-word">bianco</td><td class="pron">BYAHN-koh</td><td data-lang-block="ar">أبيض</td><td data-lang-block="en">white</td></tr>
+        <tr><td class="it-word">marrone</td><td class="pron">mahr-ROH-neh</td><td data-lang-block="ar">بني</td><td data-lang-block="en">brown</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c10">
+    <h2><span data-lang-block="ar">١٠. أفراد العائلة</span><span data-lang-block="en">10. Family Members</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">madre</td><td class="pron">MAH-dreh</td><td data-lang-block="ar">أم</td><td data-lang-block="en">mother</td></tr>
+        <tr><td class="it-word">padre</td><td class="pron">PAH-dreh</td><td data-lang-block="ar">أب</td><td data-lang-block="en">father</td></tr>
+        <tr><td class="it-word">fratello</td><td class="pron">frah-TEL-loh</td><td data-lang-block="ar">أخ</td><td data-lang-block="en">brother</td></tr>
+        <tr><td class="it-word">sorella</td><td class="pron">soh-REL-lah</td><td data-lang-block="ar">أخت</td><td data-lang-block="en">sister</td></tr>
+        <tr><td class="it-word">figlio / figlia</td><td class="pron">FEE-lyoh/ah</td><td data-lang-block="ar">ابن / بنت</td><td data-lang-block="en">son / daughter</td></tr>
+        <tr><td class="it-word">nonno / nonna</td><td class="pron">NOHN-noh/nah</td><td data-lang-block="ar">جد / جدة</td><td data-lang-block="en">grandfather / grandmother</td></tr>
+        <tr><td class="it-word">marito / moglie</td><td class="pron">mah-REE-toh / MOH-lyeh</td><td data-lang-block="ar">زوج / زوجة</td><td data-lang-block="en">husband / wife</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c11">
+    <h2><span data-lang-block="ar">١١. الأكل والشرب</span><span data-lang-block="en">11. Food & Drink</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">pane</td><td class="pron">PAH-neh</td><td data-lang-block="ar">عيش</td><td data-lang-block="en">bread</td></tr>
+        <tr><td class="it-word">acqua</td><td class="pron">AH-kwah</td><td data-lang-block="ar">مية</td><td data-lang-block="en">water</td></tr>
+        <tr><td class="it-word">caffè</td><td class="pron">kahf-FEH</td><td data-lang-block="ar">قهوة</td><td data-lang-block="en">coffee</td></tr>
+        <tr><td class="it-word">pollo</td><td class="pron">POHL-loh</td><td data-lang-block="ar">فراخ</td><td data-lang-block="en">chicken</td></tr>
+        <tr><td class="it-word">pesce</td><td class="pron">PEH-sheh</td><td data-lang-block="ar">سمك</td><td data-lang-block="en">fish</td></tr>
+        <tr><td class="it-word">formaggio</td><td class="pron">for-MAHJ-joh</td><td data-lang-block="ar">جبنة</td><td data-lang-block="en">cheese</td></tr>
+        <tr><td class="it-word">frutta / verdura</td><td class="pron">FROOT-tah / ver-DOO-rah</td><td data-lang-block="ar">فاكهة / خضار</td><td data-lang-block="en">fruit / vegetables</td></tr>
+        <tr><td class="it-word">colazione / pranzo / cena</td><td class="pron">koh-lah-TSYOH-neh / PRAHN-tsoh / CHEH-nah</td><td data-lang-block="ar">فطار / غدا / عشا</td><td data-lang-block="en">breakfast / lunch / dinner</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c12">
+    <h2><span data-lang-block="ar">١٢. عبارات لا غنى عنها للسفر والفنادق</span><span data-lang-block="en">12. Essential Travel & Hotel Phrases</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Dove si trova...?</td><td class="pron">DOH-veh see TROH-vah</td><td data-lang-block="ar">فين...؟</td><td data-lang-block="en">Where is...?</td></tr>
+        <tr><td class="it-word">Quanto costa questo?</td><td class="pron">KWAN-toh KOS-tah</td><td data-lang-block="ar">بكام ده؟</td><td data-lang-block="en">How much does this cost?</td></tr>
+        <tr><td class="it-word">Il conto, per favore</td><td class="pron">eel KOHN-toh</td><td data-lang-block="ar">الحساب لو سمحت</td><td data-lang-block="en">The bill, please</td></tr>
+        <tr><td class="it-word">Dov'è il bagno?</td><td class="pron">doh-VEH eel BAH-nyoh</td><td data-lang-block="ar">فين الحمام؟</td><td data-lang-block="en">Where is the bathroom?</td></tr>
+        <tr><td class="it-word">Non capisco</td><td class="pron">nohn kah-PEES-koh</td><td data-lang-block="ar">مش فاهم</td><td data-lang-block="en">I don't understand</td></tr>
+        <tr><td class="it-word">Parla inglese?</td><td class="pron">PAR-lah een-GLEH-zeh</td><td data-lang-block="ar">بتتكلم إنجليزي؟</td><td data-lang-block="en">Do you speak English?</td></tr>
+        <tr><td class="it-word">Vorrei prenotare una camera</td><td class="pron">vor-RAY preh-noh-TAH-reh</td><td data-lang-block="ar">عايز أحجز أوضة</td><td data-lang-block="en">I want to book a room</td></tr>
+        <tr><td class="it-word">Dove posso prendere un taxi?</td><td class="pron">DOH-veh POS-soh</td><td data-lang-block="ar">فين أقدر آخد تاكسي؟</td><td data-lang-block="en">Where can I catch a taxi?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c13">
+    <h2><span data-lang-block="ar">١٣. تعبيرات وعامية إيطالية أصيلة</span><span data-lang-block="en">13. Authentic Italian Slang & Expressions</span></h2>
+    <p data-lang-block="ar">دي العبارات اللي بتفرق بين حد بيتكلم إيطالي "صح" وحد بيبان إيطالي أصيل فعلًا:</p>
+    <p data-lang-block="en">These are the phrases that separate someone who speaks "correct" Italian from someone who sounds truly Italian:</p>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Dai!</td><td class="pron">DY</td><td data-lang-block="ar">يلا! / بجد؟ (تشجيع أو استغراب)</td><td data-lang-block="en">Come on! / Seriously?</td></tr>
+        <tr><td class="it-word">Magari!</td><td class="pron">mah-GAH-ree</td><td data-lang-block="ar">يا ريت!</td><td data-lang-block="en">If only! / I wish!</td></tr>
+        <tr><td class="it-word">Boh</td><td class="pron">BOH</td><td data-lang-block="ar">معرفش (تعبير شائع جدًا عن عدم اليقين)</td><td data-lang-block="en">No idea</td></tr>
+        <tr><td class="it-word">Figo</td><td class="pron">FEE-goh</td><td data-lang-block="ar">جامد / رائع</td><td data-lang-block="en">Cool / awesome</td></tr>
+        <tr><td class="it-word">In bocca al lupo</td><td class="pron">een BOHK-kah al LOO-poh</td><td data-lang-block="ar">بالتوفيق (حرفيًا: في فم الديب)</td><td data-lang-block="en">Good luck (literally "in the wolf's mouth")</td></tr>
+        <tr><td class="it-word">Andiamo!</td><td class="pron">an-DYAH-moh</td><td data-lang-block="ar">يلا بينا!</td><td data-lang-block="en">Let's go!</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c14">
+    <h2><span data-lang-block="ar">١٤. حوار تدريبي كامل</span><span data-lang-block="en">14. Full Practice Dialogue</span></h2>
+    <p data-lang-block="ar">حوار بسيط في كافيه — اقراه بصوت عالي كذا مرة وحاول تقلد النطق:</p>
+    <p data-lang-block="en">A simple café dialogue — read it out loud several times and try to imitate the pronunciation:</p>
+    <div class="dialogue">
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">Ciao! Benvenuto. Cosa desidera?</span><br><span class="trans" data-lang-block="ar">أهلًا! اتفضل. عايز إيه؟</span><span class="trans" data-lang-block="en">Hi! Welcome. What would you like?</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">العميل:</span><span class="speaker" data-lang-block="en">Customer:</span> <span class="orig">Ciao! Vorrei un caffè, per favore.</span><br><span class="trans" data-lang-block="ar">أهلًا! عايز قهوة لو سمحت.</span><span class="trans" data-lang-block="en">Hi! I'd like a coffee, please.</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">Solo questo?</span><br><span class="trans" data-lang-block="ar">بس كده؟</span><span class="trans" data-lang-block="en">Just that?</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">العميل:</span><span class="speaker" data-lang-block="en">Customer:</span> <span class="orig">Sì, e il conto, per favore.</span><br><span class="trans" data-lang-block="ar">أيوه، والحساب لو سمحت.</span><span class="trans" data-lang-block="en">Yes, and the bill, please.</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">Sono due euro. Grazie!</span><br><span class="trans" data-lang-block="ar">يوروهين. شكرًا!</span><span class="trans" data-lang-block="en">That's two euros. Thanks!</span></div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c15">
+    <h2><span data-lang-block="ar">١٥. خطة عملية: إزاي تتعلم بسرعة</span><span data-lang-block="en">15. Action Plan: How to Learn Fast</span></h2>
+    <div class="tip-box">
+      <span class="tip-label" data-lang-block="ar">نصيحة سارة</span><span class="tip-label" data-lang-block="en">Sara's Tip</span>
+      <ul data-lang-block="ar">
+        <li>اسمع أغاني ومسلسلات إيطالية كل يوم، حتى لو ١٠ دقايق بس.</li>
+        <li>جرّب "الظل الصوتي": اسمع جملة قصيرة وكررها فورًا بنفس الإيقاع.</li>
+        <li>ركّز على الحروف المزدوجة (زي tt و ll) وحاول تمدها شوية.</li>
+        <li>متترجمش في دماغك — حاول تفكر بالإيطالي مباشرة.</li>
+        <li>اتكلم من اليوم الأول حتى لو غلطت — الطلاقة بتيجي من التمرين مش الحفظ.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Listen to Italian songs and TV shows every day, even just 10 minutes.</li>
+        <li>Practice "shadowing": listen to a short sentence and repeat it immediately with the same rhythm.</li>
+        <li>Focus on double consonants (like tt and ll) and try to hold them slightly longer.</li>
+        <li>Don't translate in your head — try to think directly in Italian.</li>
+        <li>Speak from day one, even with mistakes — fluency comes from practice, not memorization.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="part-divider">
+    <span class="tag" data-lang-block="ar">الجزء الثاني</span><span class="tag" data-lang-block="en">PART 2</span>
+    <h2><span data-lang-block="ar">المستوى المتقدم</span><span data-lang-block="en">Advanced Level</span></h2>
+  </div>
+
+  <!-- ===================== PART 2 — ADVANCED ===================== -->
+
+  <div class="chapter" id="c17">
+    <h2><span data-lang-block="ar">١٧. مراجعة سريعة للأساسيات</span><span data-lang-block="en">17. Quick Review of the Basics</span></h2>
+    <p data-lang-block="ar">لو خلصت الجزء الأول، إنت عارف بالفعل: التحيات، الضمائر، فعل Essere/Stare، تصريف المضارع، والأرقام. الجزء ده هيديك أزمنة الماضي والمستقبل، مفردات عملية لمواقف حقيقية، وحوارات واقعية.</p>
+    <p data-lang-block="en">If you've finished Part 1, you already know: greetings, pronouns, Essere/Stare, present tense conjugation, and numbers. This part gives you the tenses you need for past and future, practical vocabulary for real situations, and realistic dialogues.</p>
+  </div>
+
+  <div class="chapter" id="c18">
+    <h2><span data-lang-block="ar">١٨. الماضي القريب (Passato Prossimo)</span><span data-lang-block="en">18. The Recent Past (Passato Prossimo)</span></h2>
+    <p data-lang-block="ar">ده زمن الماضي الأساسي في الإيطالي المحكي، بيتكوّن من فعل مساعد (Avere أو Essere) في المضارع + التصريف الماضي.</p>
+    <p data-lang-block="en">This is the basic past tense in spoken Italian, formed with an auxiliary verb (Avere or Essere) in the present tense + the past participle.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">مع Avere (لمعظم الأفعال)</th><th data-lang-block="en">With Avere (most verbs)</th><th data-lang-block="ar">مع Essere (أفعال الحركة)</th><th data-lang-block="en">With Essere (motion verbs)</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2">io ho parlato <span data-lang-block="ar">(اتكلمت)</span><span data-lang-block="en">(I spoke)</span></td><td colspan="2">io sono andato/a <span data-lang-block="ar">(روحت)</span><span data-lang-block="en">(I went)</span></td></tr>
+        <tr><td colspan="2">tu hai parlato</td><td colspan="2">tu sei andato/a</td></tr>
+        <tr><td colspan="2">lui/lei ha parlato</td><td colspan="2">lui è andato / lei è andata</td></tr>
+        <tr><td colspan="2">noi abbiamo parlato</td><td colspan="2">noi siamo andati/e</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">قاعدة سريعة: أفعال الحركة (andare, venire, partire) والأفعال الانعكاسية بتستخدم Essere؛ الباقي بيستخدم Avere. ومع Essere، لازم التصريف يتفق في الجنس والعدد مع الفاعل زي الصفة بالظبط.</span><span data-lang-block="en">Quick rule: motion verbs (andare, venire, partire) or reflexive verbs use Essere; everything else uses Avere. With Essere, the past participle must agree in gender and number with the subject, just like an adjective.</span></p>
+  </div>
+
+  <div class="chapter" id="c19">
+    <h2><span data-lang-block="ar">١٩. الماضي الناقص (Imperfetto)</span><span data-lang-block="en">19. The Imperfect Past (Imperfetto)</span></h2>
+    <p data-lang-block="ar">بيتستخدم لوصف حاجة كانت بتحصل بشكل متكرر أو مستمر في الماضي — مش حدث واحد منتهي، لكن عادة أو وصف حالة.</p>
+    <p data-lang-block="en">Used to describe something that happened repeatedly or continuously in the past — not a single completed event, but a habit or a description of a state.</p>
+    <table>
+      <thead><tr><th>io/tu/lui/noi/loro</th><th>parlare</th><th>dormire / scrivere</th></tr></thead>
+      <tbody>
+        <tr><td>io</td><td>parlavo</td><td>dormivo / scrivevo</td></tr>
+        <tr><td>tu</td><td>parlavi</td><td>dormivi / scrivevi</td></tr>
+        <tr><td>lui/lei</td><td>parlava</td><td>dormiva / scriveva</td></tr>
+        <tr><td>noi</td><td>parlavamo</td><td>dormivamo / scrivevamo</td></tr>
+        <tr><td>loro</td><td>parlavano</td><td>dormivano / scrivevano</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Quando ero bambino, vivevo al Cairo</em> — لما كنت طفل، كنت عايش في القاهرة.</span><span data-lang-block="en">Example: <em>Quando ero bambino, vivevo al Cairo</em> — When I was a child, I lived in Cairo.</span></p>
+  </div>
+
+  <div class="chapter" id="c20">
+    <h2><span data-lang-block="ar">٢٠. المستقبل والشرطي</span><span data-lang-block="en">20. The Future & the Conditional</span></h2>
+    <table>
+      <thead><tr><th>io/tu/lui/noi/loro</th><th data-lang-block="ar">المستقبل (parlare)</th><th data-lang-block="en">Future (parlare)</th><th data-lang-block="ar">الشرطي (vorrei = عايز لو سمحت)</th><th data-lang-block="en">Conditional (vorrei = I'd like)</th></tr></thead>
+      <tbody>
+        <tr><td>io</td><td colspan="2">parlerò</td><td colspan="2">vorrei</td></tr>
+        <tr><td>lui/lei</td><td colspan="2">parlerà</td><td colspan="2">vorrebbe</td></tr>
+        <tr><td>noi</td><td colspan="2">parleremo</td><td colspan="2">vorremmo</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">أمثلة عملية: <em>Vorrei prenotare un tavolo</em> — عايز أحجز ترابيزة. / <em>Potrebbe aiutarmi?</em> — ممكن تساعدني؟</span><span data-lang-block="en">Practical examples: <em>Vorrei prenotare un tavolo</em> — I'd like to book a table. / <em>Potrebbe aiutarmi?</em> — Could you help me?</span></p>
+  </div>
+
+  <div class="chapter" id="c21">
+    <h2><span data-lang-block="ar">٢١. صيغة الشرط — Congiuntivo (أساسيات)</span><span data-lang-block="en">21. The Subjunctive Mood — Congiuntivo (Basics)</span></h2>
+    <p data-lang-block="ar">بتتستخدم للشك أو التمني أو الافتراض، أو بعد أفعال زي "عايز إن" أو "متمني إن". غالبًا بتيجي بعد كلمة "che" (إن).</p>
+    <p data-lang-block="en">Used for doubt, wishes, hypotheticals, or after verbs like "to want that", "to hope that". It usually follows the word "che" (that).</p>
+    <div class="goal-box">
+      <p data-lang-block="ar"><em>Spero che tu stia bene</em> — أتمنى إنك تكون بخير. / <em>Penso che sia vero</em> — أعتقد إنه صحيح.</p>
+      <p data-lang-block="en"><em>Spero che tu stia bene</em> — I hope you're doing well. / <em>Penso che sia vero</em> — I think it's true.</p>
+    </div>
+  </div>
+
+  <div class="chapter" id="c22">
+    <h2><span data-lang-block="ar">٢٢. الأفعال الانعكاسية</span><span data-lang-block="en">22. Reflexive Verbs</span></h2>
+    <p data-lang-block="ar">الضمير دايمًا بيجي قبل الفعل المصرّف — ده الوضع الطبيعي في الإيطالي.</p>
+    <p data-lang-block="en">The pronoun always goes before the conjugated verb — this is the standard position in Italian.</p>
+    <p><span data-lang-block="ar">مثال شائع جدًا: <em>"Come ti chiami?"</em> (اسمك إيه؟) — الرد: <em>"Mi chiamo Ahmed."</em> (اسمي أحمد).</span><span data-lang-block="en">A very common example: <em>"Come ti chiami?"</em> (What's your name?) — The answer: <em>"Mi chiamo Ahmed."</em> (My name is Ahmed.)</span></p>
+  </div>
+
+  <div class="chapter" id="c23">
+    <h2><span data-lang-block="ar">٢٣. ضمائر المفعول به وموضعها</span><span data-lang-block="en">23. Object Pronouns & Their Placement</span></h2>
+    <p data-lang-block="ar">القاعدة العامة: الضمير بيجي قبل الفعل المصرّف: <em>Ti vedo domani</em> (هشوفك بكرة). وبيتلزق في آخر الفعل مع المصدر أو الأمر: <em>Dimmi!</em> (قولّي!).</p>
+    <p data-lang-block="en">General rule: the pronoun goes before the conjugated verb: <em>Ti vedo domani</em> (I'll see you tomorrow). It attaches to the end of the verb with the infinitive or imperative: <em>Dimmi!</em> (Tell me!).</p>
+  </div>
+
+  <div class="chapter" id="c24">
+    <h2><span data-lang-block="ar">٢٤. حروف الجر واندماجها مع أدوات التعريف</span><span data-lang-block="en">24. Prepositions & Their Fusion with Definite Articles</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">حرف الجر</th><th data-lang-block="en">Preposition</th><th>+ il</th><th>+ la</th><th>+ i</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2">di <span data-lang-block="ar">(بتاع)</span></td><td>del</td><td>della</td><td>dei</td></tr>
+        <tr><td colspan="2">a <span data-lang-block="ar">(لـ)</span></td><td>al</td><td>alla</td><td>ai</td></tr>
+        <tr><td colspan="2">in <span data-lang-block="ar">(في)</span></td><td>nel</td><td>nella</td><td>nei</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Vado al mercato</em> — رايح السوق.</span><span data-lang-block="en">Example: <em>Vado al mercato</em> — I'm going to the market.</span></p>
+  </div>
+
+  <div class="chapter" id="c25">
+    <h2><span data-lang-block="ar">٢٥. المقارنة والتفضيل وأدوات ربط متقدمة</span><span data-lang-block="en">25. Comparatives, Superlatives & Advanced Connectors</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">الاستخدام</th><th data-lang-block="en">Use</th><th data-lang-block="ar">التركيب</th><th data-lang-block="en">Structure</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">أكتر من</td><td data-lang-block="en">more than</td><td colspan="2">più... di</td></tr>
+        <tr><td data-lang-block="ar">الأكتر</td><td data-lang-block="en">the most</td><td colspan="2">il più / la più</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">أدوات ربط مفيدة: <strong>ma</strong> (بس)، <strong>quindi</strong> (يبقى)، <strong>perché</strong> (عشان)، <strong>sebbene</strong> (رغم إن)، <strong>nonostante</strong> (بالرغم من).</span><span data-lang-block="en">Useful connectors: <strong>ma</strong> (but), <strong>quindi</strong> (therefore), <strong>perché</strong> (because), <strong>sebbene</strong> (although), <strong>nonostante</strong> (despite).</span></p>
+  </div>
+
+  <div class="chapter" id="c26">
+    <h2><span data-lang-block="ar">٢٦. مفردات: المطار والجمارك</span><span data-lang-block="en">26. Vocabulary: Airport & Customs</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">passaporto</td><td class="pron">pahs-sah-POR-toh</td><td data-lang-block="ar">جواز سفر</td><td data-lang-block="en">passport</td></tr>
+        <tr><td class="it-word">bagagli</td><td class="pron">bah-GAH-lyee</td><td data-lang-block="ar">شنط</td><td data-lang-block="en">luggage</td></tr>
+        <tr><td class="it-word">volo / ritardo</td><td class="pron">VOH-loh / ree-TAR-doh</td><td data-lang-block="ar">رحلة / تأخير</td><td data-lang-block="en">flight / delay</td></tr>
+        <tr><td class="it-word">dogana</td><td class="pron">doh-GAH-nah</td><td data-lang-block="ar">جمارك</td><td data-lang-block="en">customs</td></tr>
+        <tr><td class="it-word">Ho qualcosa da dichiarare</td><td class="pron">oh kwahl-KOH-zah</td><td data-lang-block="ar">عندي حاجة أعلن عنها</td><td data-lang-block="en">I have something to declare</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c27">
+    <h2><span data-lang-block="ar">٢٧. مفردات: مشاكل الفندق</span><span data-lang-block="en">27. Vocabulary: Hotel Problems</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Il condizionatore non funziona</td><td data-lang-block="ar">التكييف مش شغال</td><td data-lang-block="en">The air conditioning isn't working</td></tr>
+        <tr><td class="it-word">Non c'è acqua calda</td><td data-lang-block="ar">مفيش مية سخنة</td><td data-lang-block="en">There's no hot water</td></tr>
+        <tr><td class="it-word">Vorrei cambiare camera</td><td data-lang-block="ar">عايز أغيّر الأوضة</td><td data-lang-block="en">I would like to change rooms</td></tr>
+        <tr><td class="it-word">A che ora è il check-out?</td><td data-lang-block="ar">الخروج الساعة كام؟</td><td data-lang-block="en">What time is check-out?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c28">
+    <h2><span data-lang-block="ar">٢٨. مفردات: الصحة والطوارئ والصيدلية</span><span data-lang-block="en">28. Vocabulary: Health, Emergencies & the Pharmacy</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Ho bisogno di un medico</td><td data-lang-block="ar">محتاج دكتور</td><td data-lang-block="en">I need a doctor</td></tr>
+        <tr><td class="it-word">Non mi sento bene</td><td data-lang-block="ar">مش حاسس إني كويس</td><td data-lang-block="en">I don't feel well</td></tr>
+        <tr><td class="it-word">febbre / mal di testa</td><td data-lang-block="ar">سخونية / صداع</td><td data-lang-block="en">fever / headache</td></tr>
+        <tr><td class="it-word">Chiama un'ambulanza!</td><td data-lang-block="ar">اتصل بإسعاف!</td><td data-lang-block="en">Call an ambulance!</td></tr>
+        <tr><td class="it-word">farmacia / medicina</td><td data-lang-block="ar">صيدلية / دوا</td><td data-lang-block="en">pharmacy / medication</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c29">
+    <h2><span data-lang-block="ar">٢٩. مفردات: البنك والشرطة والأوراق الرسمية</span><span data-lang-block="en">29. Vocabulary: Bank, Police & Official Matters</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">banca / bancomat</td><td data-lang-block="ar">بنك / ماكينة صراف</td><td data-lang-block="en">bank / ATM</td></tr>
+        <tr><td class="it-word">Sono stato derubato</td><td data-lang-block="ar">اتسرقت</td><td data-lang-block="en">I've been robbed</td></tr>
+        <tr><td class="it-word">Ho perduto il mio passaporto</td><td data-lang-block="ar">وديت جواز سفري</td><td data-lang-block="en">I've lost my passport</td></tr>
+        <tr><td class="it-word">ambasciata</td><td data-lang-block="ar">سفارة</td><td data-lang-block="en">embassy</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c30">
+    <h2><span data-lang-block="ar">٣٠. مفردات: المواصلات وتأجير العربيات والاتجاهات</span><span data-lang-block="en">30. Vocabulary: Transportation, Car Rental & Directions</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">noleggiare una macchina</td><td data-lang-block="ar">تأجير عربية</td><td data-lang-block="en">to rent a car</td></tr>
+        <tr><td class="it-word">Giri a destra/sinistra</td><td data-lang-block="ar">لف يمين/شمال</td><td data-lang-block="en">Turn right/left</td></tr>
+        <tr><td class="it-word">Vada sempre dritto</td><td data-lang-block="ar">كمّل على طول</td><td data-lang-block="en">Keep going straight</td></tr>
+        <tr><td class="it-word">metro / stazione</td><td data-lang-block="ar">مترو / محطة</td><td data-lang-block="en">subway / station</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c31">
+    <h2><span data-lang-block="ar">٣١. مفردات: التسوق والمساومة والعمل</span><span data-lang-block="en">31. Vocabulary: Shopping, Bargaining & Business</span></h2>
+    <table>
+      <thead><tr><th>Italiano</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="it-word">Può fare uno sconto?</td><td data-lang-block="ar">ممكن خصم؟</td><td data-lang-block="en">Can you give me a discount?</td></tr>
+        <tr><td class="it-word">È molto caro</td><td data-lang-block="ar">ده غالي أوي</td><td data-lang-block="en">It's very expensive</td></tr>
+        <tr><td class="it-word">contratto / cliente</td><td data-lang-block="ar">عقد / عميل</td><td data-lang-block="en">contract / client</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c32">
+    <h2><span data-lang-block="ar">٣٢. آداب التعامل: رسمي ولا غير رسمي؟</span><span data-lang-block="en">32. Etiquette: Formal or Informal?</span></h2>
+    <div class="goal-box">
+      <p data-lang-block="ar">استخدم "Lei" (الصيغة الرسمية) مع أي حد أكبر منك، في الشغل، أو أول مرة تقابل حد. استخدم "tu" مع الأصحاب والعيلة والناس في سنك. الإيطاليين بيحبوا ياخدوا وقتهم في الأكل — الغدا والعشا مناسبة اجتماعية مش أكل سريع.</p>
+      <p data-lang-block="en">Use "Lei" (the formal form) with anyone older than you, at work, or the first time you meet someone. Use "tu" with friends, family, or people your age. Italians like meals to take their time — lunch and dinner are social occasions, not just quick fuel stops.</p>
+    </div>
+  </div>
+
+  <div class="chapter" id="c33">
+    <h2><span data-lang-block="ar">٣٣. تعبيرات اصطلاحية متقدمة</span><span data-lang-block="en">33. Advanced Idioms & Expressions</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th><th>Italiano</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">حاجة غالية جدًا (حرفيًا: تكلف عين من الراس)</td><td data-lang-block="en">Very expensive (lit. "cost an eye of the head")</td><td>Costare un occhio della testa</td></tr>
+        <tr><td data-lang-block="ar">مش قادر أستنى (حرفيًا: مش شايف الساعة)</td><td data-lang-block="en">Can't wait (lit. "I don't see the hour")</td><td>Non vedo l'ora</td></tr>
+        <tr><td data-lang-block="ar">شخص شاطر/جامد (حرفيًا: يكون في رجل)</td><td data-lang-block="en">To be sharp/on the ball (lit. "to be in leg")</td><td>Essere in gamba</td></tr>
+        <tr><td data-lang-block="ar">يضحك على حد / يستهزئ (حرفيًا: ياخد للف)</td><td data-lang-block="en">To tease someone (lit. "take around")</td><td>Prendere in giro</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c34">
+    <h2><span data-lang-block="ar">٣٤. حوارات تدريبية متقدمة (مواقف حقيقية)</span><span data-lang-block="en">34. Advanced Practice Dialogues (Real Scenarios)</span></h2>
+    <h3><span data-lang-block="ar">١) في المطار — تأخير الرحلة</span><span data-lang-block="en">1) At the Airport — Flight Delay</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Buonasera, il mio volo per Roma è in ritardo?</span><br><span class="trans" data-lang-block="ar">مساء الخير، رحلتي لروما متأخرة؟</span><span class="trans" data-lang-block="en">Good evening, is my flight to Rome delayed?</span></div>
+      <div class="line"><span class="orig">Sì, purtroppo è in ritardo di un'ora.</span><br><span class="trans" data-lang-block="ar">أيوه، للأسف متأخرة ساعة.</span><span class="trans" data-lang-block="en">Yes, unfortunately it's an hour late.</span></div>
+    </div>
+    <h3><span data-lang-block="ar">٢) شكوى في الفندق</span><span data-lang-block="en">2) Hotel Complaint</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Mi scusi, il condizionatore della mia camera non funziona.</span><br><span class="trans" data-lang-block="ar">معلش، التكييف في أوضتي مش شغال.</span><span class="trans" data-lang-block="en">Excuse me, the air conditioning in my room isn't working.</span></div>
+      <div class="line"><span class="orig">Mi dispiace molto. Mando subito qualcuno.</span><br><span class="trans" data-lang-block="ar">آسفين جدًا. هبعتلك حد على طول.</span><span class="trans" data-lang-block="en">I'm so sorry. I'll send someone right away.</span></div>
+    </div>
+    <h3><span data-lang-block="ar">٣) في الصيدلية</span><span data-lang-block="en">3) At the Pharmacy</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Buonasera, non mi sento bene. Ho mal di testa e febbre.</span><br><span class="trans" data-lang-block="ar">مساء الخير، مش حاسس إني كويس. عندي صداع وسخونية.</span><span class="trans" data-lang-block="en">Good evening, I don't feel well. I have a headache and a fever.</span></div>
+      <div class="line"><span class="orig">Prenda questa medicina ogni otto ore.</span><br><span class="trans" data-lang-block="ar">خد الدوا ده كل ٨ ساعات.</span><span class="trans" data-lang-block="en">Take this medication every eight hours.</span></div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c35">
+    <h2><span data-lang-block="ar">٣٥. نص قرائي للتدريب</span><span data-lang-block="en">35. Reading Passage for Practice</span></h2>
+    <p data-lang-block="ar">اقرا النص ده بصوت عالي كذا مرة، وحاول تفهمه من غير ما تترجم كل كلمة:</p>
+    <p data-lang-block="en">Read this passage out loud a few times, and try to understand it without translating every single word:</p>
+    <div class="goal-box">
+      <p style="font-style:italic;">Ieri sono andato a Roma con la mia famiglia. Siamo arrivati all'aeroporto la mattina presto e abbiamo preso un taxi fino all'hotel. Nel pomeriggio, abbiamo visitato il Colosseo e abbiamo fatto molte foto. È stata una giornata indimenticabile!</p>
+    </div>
+    <p><span data-lang-block="ar">(النهاردة رحت روما مع عيلتي. وصلنا المطار بدري الصبح وأخدنا تاكسي للفندق. بعد الضهر زرنا الكولوسيوم وصورنا صور كتير. كان يوم ما يتنسيش!)</span><span data-lang-block="en">(Yesterday I went to Rome with my family. We arrived at the airport early in the morning and took a taxi to the hotel. In the afternoon, we visited the Colosseum and took lots of photos. It was an unforgettable day!)</span></p>
+  </div>
+
+  <div class="chapter" id="c36">
+    <h2><span data-lang-block="ar">٣٦. الخطوة الجاية نحو الطلاقة</span><span data-lang-block="en">36. Conclusion: Your Next Steps to Fluency</span></h2>
+    <div class="tip-box">
+      <span class="tip-label" data-lang-block="ar">نصيحة سارة الأخيرة</span><span class="tip-label" data-lang-block="en">Sara's Final Tip</span>
+      <ul data-lang-block="ar">
+        <li>اقرا أخبار أو مدونات إيطالية بسيطة يوميًا.</li>
+        <li>اتكلم مع متحدثين أصليين (أونلاين أو لما تسافر) — التمرين الحقيقي أهم حاجة دلوقتي.</li>
+        <li>اكتب مذكرات يومية قصيرة بالإيطالي — حتى ٣-٤ جمل بتفرق مع الوقت.</li>
+        <li>متخافش تغلط في الكلام — الإيطاليين بيقدّروا جدًا أي حد بيحاول يتكلم لغتهم.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Read simple Italian news articles or blogs daily.</li>
+        <li>Talk with native speakers (online, or in person if you travel) — real practice is the most valuable thing now.</li>
+        <li>Write a short daily journal in Italian — even 3-4 sentences a day makes a big difference.</li>
+        <li>Don't be afraid of making mistakes — Italians deeply appreciate anyone who tries to speak their language.</li>
+      </ul>
+    </div>
+    <p style="text-align:center;font-weight:800;color:var(--brand-blue-dark);margin-top:20px;">In bocca al lupo! 🇮🇹</p>
+  </div>
+
+  <div class="article-cta">
+    <h3><span data-lang-block="ar">جاهز تحجز رحلتك لإيطاليا؟</span><span data-lang-block="en">Ready to book your trip to Italy?</span></h3>
+    <p><span data-lang-block="ar">كلمينا على واتساب وهنبعتلك أفضل سعر لتذكرتك وفندقك.</span><span data-lang-block="en">Message us on WhatsApp and we'll send you the best price for your ticket and hotel.</span></p>
+    <a class="btn" id="cta-btn-bottom" href="#">💬 <span data-lang-block="ar">احجز عبر واتساب</span><span data-lang-block="en">Book on WhatsApp</span></a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span><span data-lang-block="ar">© 2026 سافر Discounts. جميع الحقوق محفوظة.</span><span data-lang-block="en">© 2026 Safer Discounts. All rights reserved.</span></span>
+    <a href="blog.html"><span data-lang-block="ar">رجوع للبلوج</span><span data-lang-block="en">Back to Blog</span></a>
+  </div>
+</footer>
+
+<a class="floating-wa" id="floating-wa" href="#" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+  var WA_NUMBER = "201116666306";
+  var WA_MSG = { ar: "مرحباً، عايز أحجز رحلة لإيطاليا", en: "Hello, I'd like to book a trip to Italy" };
+  function waLink(lang){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_MSG[lang] || WA_MSG.ar); }
+
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+    var link = waLink(lang);
+    document.getElementById('nav-cta').href = link;
+    document.getElementById('cta-btn-bottom').href = link;
+    document.getElementById('floating-wa').href = link;
+    document.getElementById('nav-cta').innerHTML = '💬 ' + (lang === 'ar' ? 'احجز واتساب' : 'Book on WhatsApp');
+  }
+  document.getElementById('lang-toggle').addEventListener('click', function(){
+    setLang(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+  });
+  setLang('ar');
+})();
+</script>
+
+</body>
+</html>

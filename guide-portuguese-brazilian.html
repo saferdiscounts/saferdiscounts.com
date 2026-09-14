@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تعلم البرتغالي البرازيلي مع سارة | بلوج سافر Discounts</title>
+<meta name="description" content="دليل كامل لتعلم أساسيات ومستوى متقدم من البرتغالي البرازيلي — نطق، قواعد، مفردات سفر، وحوارات عملية، مع سارة.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sara — Safer Discounts">
+<link rel="canonical" href="https://saferdiscounts.com/guide-portuguese-brazilian.html">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --brand-blue:#0365A3; --brand-blue-dark:#023152;
+    --brand-orange:#F1560B; --brand-orange-dark:#C7430A;
+    --ink:#0B2036; --paper:#FFF9F1; --paper-card:#FFFFFF;
+    --line:#E4D9C8; --whatsapp:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Cairo',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,249,241,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  nav.navwrap{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;}
+  .brand img{height:40px;width:auto;}
+  .nav-right{display:flex;align-items:center;gap:12px;}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:13px;
+    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
+    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
+  }
+  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .nav-cta{
+    display:flex;align-items:center;gap:8px;background:var(--brand-orange);color:#fff;
+    padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;white-space:nowrap;
+  }
+
+  .guide-hero{
+    position:relative;background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 60%, #0483C9 100%);
+    color:#fff;padding:56px 0 48px;overflow:hidden;
+  }
+  .guide-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 88% 15%, rgba(255,255,255,0.10) 0, transparent 40%),radial-gradient(circle at 8% 90%, rgba(241,86,11,0.22) 0, transparent 45%);}
+  .guide-hero .wrap{position:relative;z-index:2;}
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#FFD9B0;margin-bottom:18px;}
+  .flag{font-size:38px;margin-bottom:14px;}
+  .guide-hero h1{font-size:30px;font-weight:900;margin-bottom:12px;max-width:640px;line-height:1.4;}
+  .guide-hero p{font-size:15.5px;opacity:0.92;max-width:600px;margin-bottom:20px;}
+  .byline{display:flex;align-items:center;gap:12px;}
+  .byline img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.7);}
+  .byline .name{font-weight:800;font-size:14px;}
+  .byline .meta{font-family:'IBM Plex Mono',monospace;font-size:11px;opacity:0.8;}
+
+  .toc{background:var(--paper-card);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin:-30px auto 40px;position:relative;z-index:3;box-shadow:0 14px 30px rgba(11,32,54,0.1);}
+  .toc h2{font-size:15px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .toc-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;}
+  .toc-grid a{font-size:13.5px;color:var(--brand-blue);opacity:0.85;padding:3px 0;display:block;}
+  .toc-grid a:hover{opacity:1;text-decoration:underline;}
+  .toc-part{grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;color:var(--brand-orange);font-weight:700;margin-top:10px;}
+
+  .chapter{padding:38px 0;border-bottom:1px dashed var(--line);}
+  .chapter:last-of-type{border-bottom:none;}
+  .chapter h2{font-size:21px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:16px;}
+  .chapter p{font-size:15.5px;color:#3E4C58;margin-bottom:14px;}
+  .chapter h3{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin:20px 0 10px;}
+
+  table{width:100%;border-collapse:collapse;margin:14px 0 22px;border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(11,32,54,0.06);}
+  th{background:var(--brand-blue-dark);color:#fff;font-size:11.5px;padding:10px 12px;text-align:start;font-family:'IBM Plex Mono',monospace;letter-spacing:0.5px;}
+  td{background:var(--paper-card);padding:10px 12px;font-size:14px;border-bottom:1px solid var(--line);vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .pt-word{font-weight:800;color:var(--brand-blue);white-space:nowrap;}
+  .pron{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#8A9BA8;white-space:nowrap;}
+
+  .goal-box, .tip-box{border-radius:14px;padding:20px 22px;margin:18px 0;}
+  .goal-box{background:#F3EEE3;border:1px dashed var(--line);}
+  .goal-box ul, .tip-box ul{margin-inline-start:20px;}
+  .goal-box li, .tip-box li{font-size:14px;margin-bottom:6px;color:#3E4C58;}
+  .tip-box{background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));color:#fff;}
+  .tip-box .tip-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;opacity:0.85;display:block;margin-bottom:8px;}
+  .tip-box li{color:#fff;}
+
+  .dialogue{background:var(--paper-card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;}
+  .dialogue .line{margin-bottom:12px;}
+  .dialogue .speaker{font-weight:800;color:var(--brand-blue-dark);font-size:13.5px;}
+  .dialogue .orig{font-style:italic;color:var(--ink);font-size:14.5px;}
+  .dialogue .trans{color:#4B5A66;font-size:13.5px;}
+
+  .part-divider{
+    background:var(--brand-blue-dark);color:#fff;text-align:center;
+    padding:34px 24px;border-radius:16px;margin:44px 0 10px;
+  }
+  .part-divider .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:#FFD9B0;display:block;margin-bottom:8px;}
+  .part-divider h2{font-size:24px;font-weight:900;margin:0;color:#fff;}
+
+  .article-cta{text-align:center;background:var(--paper-card);border:1px solid var(--line);border-radius:18px;padding:36px 26px;margin:44px 0;}
+  .article-cta h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .article-cta p{color:#4B5A66;margin-bottom:20px;font-size:14.5px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand-orange);color:#fff;font-weight:800;font-size:15px;padding:14px 24px;border-radius:12px;}
+
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:36px 0 22px;}
+  .footer-inner{max-width:1140px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:13px;}
+
+  .floating-wa{position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;background:var(--whatsapp);color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 8px 24px rgba(37,211,102,0.5);}
+
+  [data-lang-block="en"]{display:none;}
+  html[lang="en"] [data-lang-block="ar"]{display:none;}
+  html[lang="en"] [data-lang-block="en"]{display:block;}
+  html[lang="en"] table [data-lang-block="en"]{display:table-row;}
+  html[lang="en"] .dialogue [data-lang-block="en"]{display:block;}
+
+  @media (max-width:700px){
+    .guide-hero h1{font-size:23px;}
+    .toc-grid{grid-template-columns:1fr;}
+    table{font-size:12.5px;}
+    th,td{padding:8px 9px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="navwrap">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Safer Discounts"><span data-lang-block="ar">سافر Discounts</span><span data-lang-block="en">Safer Discounts</span></a>
+    <div class="nav-right">
+      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <a class="nav-cta" id="nav-cta" href="#">💬</a>
+    </div>
+  </nav>
+</header>
+
+<section class="guide-hero">
+  <div class="wrap">
+    <a class="back-link" href="blog.html">
+      <span data-lang-block="ar">→ رجوع لبلوج سارة</span>
+      <span data-lang-block="en">→ Back to Sara's Blog</span>
+    </a>
+    <div class="flag">🇧🇷</div>
+    <h1>
+      <span data-lang-block="ar">دليلك الكامل لتعلم البرتغالي البرازيلي — مع سارة</span>
+      <span data-lang-block="en">Your Complete Guide to Learning Brazilian Portuguese — with Sara</span>
+    </h1>
+    <p>
+      <span data-lang-block="ar">من أول عبارة تحية لحد الحوارات المتقدمة في المطار والفندق والصيدلية — كتيب كامل يوصلك من الصفر لمستوى تقدر تعتمد عليه فعلًا في رحلتك للبرازيل.</span>
+      <span data-lang-block="en">From your very first greeting to advanced conversations at the airport, hotel, and pharmacy — a complete guide that takes you from zero to a level you can actually rely on for your trip to Brazil.</span>
+    </p>
+    <div class="byline">
+      <img src="images/sara.jpg" alt="Sara">
+      <div>
+        <div class="name"><span data-lang-block="ar">بقلم سارة</span><span data-lang-block="en">By Sara</span></div>
+        <div class="meta"><span data-lang-block="ar">دليل لغة كامل · أساسي ومتقدم</span><span data-lang-block="en">Full Language Guide · Basic & Advanced</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="toc">
+    <h2><span data-lang-block="ar">فهرس الكتيب</span><span data-lang-block="en">Table of Contents</span></h2>
+    <div class="toc-grid">
+      <span class="toc-part"><span data-lang-block="ar">الجزء الأول — الأساسيات</span><span data-lang-block="en">PART 1 — Basics</span></span>
+      <a href="#c1"><span data-lang-block="ar">١. ليه تتعلم البرتغالي البرازيلي؟</span><span data-lang-block="en">1. Why Learn Brazilian Portuguese?</span></a>
+      <a href="#c2"><span data-lang-block="ar">٢. الأبجدية والنطق</span><span data-lang-block="en">2. Alphabet & Pronunciation</span></a>
+      <a href="#c3"><span data-lang-block="ar">٣. قواعد النطق الذهبية</span><span data-lang-block="en">3. Golden Pronunciation Rules</span></a>
+      <a href="#c4"><span data-lang-block="ar">٤. التحيات الأساسية</span><span data-lang-block="en">4. Essential Greetings</span></a>
+      <a href="#c5"><span data-lang-block="ar">٥. الضمائر وفعل "يكون"</span><span data-lang-block="en">5. Pronouns & "To Be"</span></a>
+      <a href="#c6"><span data-lang-block="ar">٦. الأفعال الشائعة</span><span data-lang-block="en">6. Common Verbs</span></a>
+      <a href="#c7"><span data-lang-block="ar">٧. الأرقام ٠-١٠٠</span><span data-lang-block="en">7. Numbers 0-100</span></a>
+      <a href="#c8"><span data-lang-block="ar">٨. الأيام والشهور</span><span data-lang-block="en">8. Days & Months</span></a>
+      <a href="#c9"><span data-lang-block="ar">٩. الألوان</span><span data-lang-block="en">9. Colors</span></a>
+      <a href="#c10"><span data-lang-block="ar">١٠. أفراد العائلة</span><span data-lang-block="en">10. Family Members</span></a>
+      <a href="#c11"><span data-lang-block="ar">١١. الأكل والشرب</span><span data-lang-block="en">11. Food & Drink</span></a>
+      <a href="#c12"><span data-lang-block="ar">١٢. عبارات السفر والفنادق</span><span data-lang-block="en">12. Travel & Hotel Phrases</span></a>
+      <a href="#c13"><span data-lang-block="ar">١٣. تعبيرات عامية برازيلية أصيلة</span><span data-lang-block="en">13. Authentic Brazilian Slang</span></a>
+      <a href="#c14"><span data-lang-block="ar">١٤. حوار تدريبي</span><span data-lang-block="en">14. Practice Dialogue</span></a>
+      <a href="#c15"><span data-lang-block="ar">١٥. خطة التعلم السريع</span><span data-lang-block="en">15. Fast-Learning Plan</span></a>
+
+      <span class="toc-part"><span data-lang-block="ar">الجزء الثاني — المستوى المتقدم</span><span data-lang-block="en">PART 2 — Advanced Level</span></span>
+      <a href="#c17"><span data-lang-block="ar">١٧. مراجعة سريعة</span><span data-lang-block="en">17. Quick Review</span></a>
+      <a href="#c18"><span data-lang-block="ar">١٨. الماضي التام</span><span data-lang-block="en">18. The Preterite Past</span></a>
+      <a href="#c19"><span data-lang-block="ar">١٩. الماضي الناقص</span><span data-lang-block="en">19. The Imperfect Past</span></a>
+      <a href="#c20"><span data-lang-block="ar">٢٠. المستقبل والشرطي</span><span data-lang-block="en">20. Future & Conditional</span></a>
+      <a href="#c21"><span data-lang-block="ar">٢١. صيغة الشرط (Subjuntivo)</span><span data-lang-block="en">21. Subjunctive (Subjuntivo)</span></a>
+      <a href="#c22"><span data-lang-block="ar">٢٢. الأفعال الانعكاسية</span><span data-lang-block="en">22. Reflexive Verbs</span></a>
+      <a href="#c23"><span data-lang-block="ar">٢٣. ضمائر المفعول به</span><span data-lang-block="en">23. Object Pronouns</span></a>
+      <a href="#c24"><span data-lang-block="ar">٢٤. حروف الجر والتعريف</span><span data-lang-block="en">24. Prepositions & Articles</span></a>
+      <a href="#c25"><span data-lang-block="ar">٢٥. المقارنة والتفضيل</span><span data-lang-block="en">25. Comparatives & Superlatives</span></a>
+      <a href="#c26"><span data-lang-block="ar">٢٦. مفردات: المطار والجمارك</span><span data-lang-block="en">26. Airport & Customs</span></a>
+      <a href="#c27"><span data-lang-block="ar">٢٧. مفردات: مشاكل الفندق</span><span data-lang-block="en">27. Hotel Problems</span></a>
+      <a href="#c28"><span data-lang-block="ar">٢٨. مفردات: الصحة والطوارئ</span><span data-lang-block="en">28. Health & Emergencies</span></a>
+      <a href="#c29"><span data-lang-block="ar">٢٩. مفردات: البنك والشرطة</span><span data-lang-block="en">29. Bank & Police</span></a>
+      <a href="#c30"><span data-lang-block="ar">٣٠. مفردات: المواصلات</span><span data-lang-block="en">30. Transportation</span></a>
+      <a href="#c31"><span data-lang-block="ar">٣١. مفردات: التسوق والعمل</span><span data-lang-block="en">31. Shopping & Business</span></a>
+      <a href="#c32"><span data-lang-block="ar">٣٢. آداب التعامل</span><span data-lang-block="en">32. Etiquette</span></a>
+      <a href="#c33"><span data-lang-block="ar">٣٣. تعبيرات اصطلاحية متقدمة</span><span data-lang-block="en">33. Advanced Idioms</span></a>
+      <a href="#c34"><span data-lang-block="ar">٣٤. حوارات واقعية</span><span data-lang-block="en">34. Real Dialogues</span></a>
+      <a href="#c35"><span data-lang-block="ar">٣٥. نص للتدريب</span><span data-lang-block="en">35. Reading Passage</span></a>
+      <a href="#c36"><span data-lang-block="ar">٣٦. الخطوة الجاية</span><span data-lang-block="en">36. Next Steps</span></a>
+    </div>
+  </div>
+
+  <!-- ===================== PART 1 — BASICS ===================== -->
+
+  <div class="chapter" id="c1">
+    <h2><span data-lang-block="ar">١. ليه تتعلم البرتغالي البرازيلي؟</span><span data-lang-block="en">1. Why Learn Brazilian Portuguese?</span></h2>
+    <p data-lang-block="ar">البرتغالي هو اللغة الرسمية للبرازيل، وبيتكلمها أكتر من 210 مليون شخص هناك — أكبر دولة ناطقة بالبرتغالي في العالم بفارق كبير. النسخة البرازيلية من البرتغالي فيها فرق واضح عن النسخة الأوروبية في النطق والمفردات واللهجة، وهي أكتر انفتاحًا ودفئًا في أسلوبها. الخبر الحلو: البرتغالي البرازيلي لغة لاتينية بقواعد منطقية، ولو عندك خلفية إسبانية أو إيطالية هتلاقي مفردات كتير قريبة.</p>
+    <p data-lang-block="en">Portuguese is the official language of Brazil, spoken by more than 210 million people there — by far the largest Portuguese-speaking country in the world. Brazilian Portuguese differs noticeably from European Portuguese in pronunciation, vocabulary, and tone, and tends to be warmer and more open in style. The good news: Brazilian Portuguese is a Romance language with logical grammar, and if you have a Spanish or Italian background, you'll recognize plenty of familiar vocabulary.</p>
+    <div class="goal-box">
+      <div data-lang-block="ar">
+        <strong>أهداف الكتيب ده:</strong>
+        <ul>
+          <li>تدّيك أساس قوي من المفردات والقواعد الأساسية في أقصر وقت ممكن.</li>
+          <li>التركيز على النطق الصح واللهجة البرازيلية المميزة.</li>
+          <li>عبارات عملية تقدر تستخدمها من اليوم الأول في مواقف حقيقية.</li>
+        </ul>
+      </div>
+      <div data-lang-block="en">
+        <strong>Goals of this guide:</strong>
+        <ul>
+          <li>Give you a solid foundation of vocabulary and essential grammar in the shortest time possible.</li>
+          <li>Focus on correct pronunciation and the distinctive Brazilian accent.</li>
+          <li>Give you practical phrases you can use from day one in real situations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c2">
+    <h2><span data-lang-block="ar">٢. الأبجدية وأساسيات النطق</span><span data-lang-block="en">2. The Alphabet & Pronunciation Basics</span></h2>
+    <p data-lang-block="ar">البرتغالي البرازيلي بيستخدم الأبجدية اللاتينية، بس فيه أصوات مميزة (زي الحروف الأنفية والـ"ão") محتاجة شوية تمرين:</p>
+    <p data-lang-block="en">Brazilian Portuguese uses the Latin alphabet, but has a few distinctive sounds (like nasal vowels and "ão") that need some practice:</p>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">não</td><td class="pron">nah-OWN (nasal)</td><td data-lang-block="ar">لأ — صوت أنفي مميز</td><td data-lang-block="en">no — a distinctive nasal sound</td></tr>
+        <tr><td class="pt-word">pão</td><td class="pron">pah-OWN (nasal)</td><td data-lang-block="ar">عيش</td><td data-lang-block="en">bread</td></tr>
+        <tr><td class="pt-word">gente</td><td class="pron">JEN-chee</td><td data-lang-block="ar">ناس — "ge/gi" زي الـ"j"، والـ"te" في آخر الكلمة بتتنطق "تشي" في البرازيلي</td><td data-lang-block="en">people — "ge/gi" sounds like "j"; final "te" is pronounced "chee" in Brazilian Portuguese</td></tr>
+        <tr><td class="pt-word">dia</td><td class="pron">JEE-ah</td><td data-lang-block="ar">يوم — الـ"di" بتتنطق "جي" في البرازيلي (فرق كبير عن الأوروبي)</td><td data-lang-block="en">day — "di" is pronounced "jee" in Brazilian (a big difference from European Portuguese)</td></tr>
+        <tr><td class="pt-word">lh</td><td class="pron">LY</td><td data-lang-block="ar">زي "لي" في million (مثال: trabalho)</td><td data-lang-block="en">like the "lli" in "million" (e.g. trabalho)</td></tr>
+        <tr><td class="pt-word">nh</td><td class="pron">NY</td><td data-lang-block="ar">زي "ني" في canyon (مثال: amanhã)</td><td data-lang-block="en">like the "ny" in "canyon" (e.g. amanhã)</td></tr>
+        <tr><td class="pt-word">r / rr</td><td class="pron">H (خفيف)</td><td data-lang-block="ar">في أول الكلمة أو مزدوج، بتتنطق قريبة من الـ"h" الإنجليزي مش زي الـr العادي</td><td data-lang-block="en">at the start of a word or doubled, sounds close to an English "h", not a regular r</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c3">
+    <h2><span data-lang-block="ar">٣. قواعد النطق الذهبية</span><span data-lang-block="en">3. Golden Rules for Authentic Pronunciation</span></h2>
+    <div class="goal-box">
+      <ul data-lang-block="ar">
+        <li>الحروف الأنفية (ão, ãe, õe) بتتنطق من الأنف — جرب تقول الكلمة وانت ماسك أنفك تحس بالفرق.</li>
+        <li>حرف s في آخر الكلمة، خصوصًا في ريو دي جانيرو، بينطق "ش" (مثلًا mas).</li>
+        <li>الـ"te" و"de" في آخر الكلمة بينطقوا "تشي" و"جي" في البرازيلي (dia = جيا، gente = جينتشي).</li>
+        <li>حرف r في أول الكلمة أو مزدوج (rr) بينطق قريب من "h" إنجليزي خفيف، مش r عادية.</li>
+        <li>البرازيليين بيتكلموا بإيقاع موسيقي وحماس واضح في النغمة — حاول تحاكي ده مش بس الكلمات.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Nasal vowels (ão, ãe, õe) are pronounced through the nose — try holding your nose while saying the word to feel the difference.</li>
+        <li>The letter s at the end of a word, especially in Rio de Janeiro, is often pronounced "sh" (e.g. mas).</li>
+        <li>Final "te" and "de" are pronounced "chee" and "jee" in Brazilian Portuguese (dia = JEE-ah, gente = JEN-chee).</li>
+        <li>The letter r at the start of a word or doubled (rr) sounds close to a soft English "h", not a regular r.</li>
+        <li>Brazilians speak with a musical rhythm and clear enthusiasm in their tone — try to mimic that, not just the words.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chapter" id="c4">
+    <h2><span data-lang-block="ar">٤. التحيات والعبارات الأساسية</span><span data-lang-block="en">4. Essential Greetings & Phrases</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">Oi / Olá</td><td class="pron">OY / oh-LAH</td><td data-lang-block="ar">أهلًا (عامية / عامة)</td><td data-lang-block="en">Hi / Hello</td></tr>
+        <tr><td class="pt-word">Bom dia</td><td class="pron">bohn JEE-ah</td><td data-lang-block="ar">صباح الخير</td><td data-lang-block="en">Good morning</td></tr>
+        <tr><td class="pt-word">Boa tarde</td><td class="pron">BOH-ah TAR-jee</td><td data-lang-block="ar">مساء الخير (بعد الضهر)</td><td data-lang-block="en">Good afternoon</td></tr>
+        <tr><td class="pt-word">Boa noite</td><td class="pron">BOH-ah NOY-chee</td><td data-lang-block="ar">مساء الخير/تصبح على خير</td><td data-lang-block="en">Good evening/night</td></tr>
+        <tr><td class="pt-word">Tudo bem?</td><td class="pron">TOO-doh beng</td><td data-lang-block="ar">عامل إيه؟ / تمام؟</td><td data-lang-block="en">How are you? / All good?</td></tr>
+        <tr><td class="pt-word">Tudo bem, obrigado(a)</td><td class="pron">TOO-doh beng, oh-bree-GAH-doo/ah</td><td data-lang-block="ar">تمام، شكرًا</td><td data-lang-block="en">All good, thank you</td></tr>
+        <tr><td class="pt-word">Prazer</td><td class="pron">prah-ZEHR</td><td data-lang-block="ar">فرصة سعيدة</td><td data-lang-block="en">Nice to meet you</td></tr>
+        <tr><td class="pt-word">Tchau</td><td class="pron">CHOW</td><td data-lang-block="ar">سلام (عامية)</td><td data-lang-block="en">Bye (casual)</td></tr>
+        <tr><td class="pt-word">Por favor</td><td class="pron">por fah-VOR</td><td data-lang-block="ar">لو سمحت</td><td data-lang-block="en">Please</td></tr>
+        <tr><td class="pt-word">Obrigado / Obrigada</td><td class="pron">oh-bree-GAH-doo/dah</td><td data-lang-block="ar">شكرًا (رجالي/ستاتي)</td><td data-lang-block="en">Thank you (male/female speaker)</td></tr>
+        <tr><td class="pt-word">De nada</td><td class="pron">jee NAH-dah</td><td data-lang-block="ar">عفوًا</td><td data-lang-block="en">You're welcome</td></tr>
+        <tr><td class="pt-word">Desculpa</td><td class="pron">jees-KOOL-pah</td><td data-lang-block="ar">آسف / معلش</td><td data-lang-block="en">Sorry / excuse me</td></tr>
+        <tr><td class="pt-word">Sim / Não</td><td class="pron">SEENG / NAH-own</td><td data-lang-block="ar">أيوه / لأ</td><td data-lang-block="en">Yes / No</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c5">
+    <h2><span data-lang-block="ar">٥. الضمائر وفعل "يكون" (Ser / Estar)</span><span data-lang-block="en">5. Pronouns & the Verb "To Be" (Ser / Estar)</span></h2>
+    <p data-lang-block="ar">زي الإسباني بالظبط، البرتغالي عنده فعلين معناهم "يكون": <strong>Ser</strong> للهوية والصفات الدائمة، و<strong>Estar</strong> للحالة المؤقتة والمكان.</p>
+    <p data-lang-block="en">Just like Spanish, Portuguese has two verbs meaning "to be": <strong>Ser</strong> for identity and permanent traits, and <strong>Estar</strong> for temporary state and location.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">الضمير</th><th data-lang-block="en">Pronoun</th><th>Ser</th><th>Estar</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" data-lang-block="ar">أنا (eu)</td><td colspan="2" data-lang-block="en">I (eu)</td><td>sou</td><td>estou</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">إنت (você)</td><td colspan="2" data-lang-block="en">you (você)</td><td>é</td><td>está</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">هو/هي (ele/ela)</td><td colspan="2" data-lang-block="en">he/she (ele/ela)</td><td>é</td><td>está</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">إحنا (nós)</td><td colspan="2" data-lang-block="en">we (nós)</td><td>somos</td><td>estamos</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">هما (eles/elas)</td><td colspan="2" data-lang-block="en">they (eles/elas)</td><td>são</td><td>estão</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Eu sou egípcio</em> — أنا مصري. / <em>Estou no Rio</em> — أنا (دلوقتي) في ريو.</span><span data-lang-block="en">Example: <em>Eu sou egípcio</em> — I am Egyptian. / <em>Estou no Rio</em> — I am (currently) in Rio.</span></p>
+  </div>
+
+  <div class="chapter" id="c6">
+    <h2><span data-lang-block="ar">٦. الأفعال الشائعة وتصريفها</span><span data-lang-block="en">6. Common Verbs & Their Conjugation</span></h2>
+    <p data-lang-block="ar">الأفعال المنتظمة بتنقسم لـ3 مجموعات حسب آخرها: -ar، -er، -ir.</p>
+    <p data-lang-block="en">Regular verbs fall into 3 groups based on their ending: -ar, -er, -ir.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">الضمير</th><th data-lang-block="en">Pronoun</th><th>falar <span data-lang-block="ar">(يتكلم)</span></th><th>comer <span data-lang-block="ar">(ياكل)</span></th><th>abrir <span data-lang-block="ar">(يفتح)</span></th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" data-lang-block="ar">eu</td><td colspan="2" data-lang-block="en">eu</td><td>falo</td><td>como</td><td>abro</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">você</td><td colspan="2" data-lang-block="en">você</td><td>fala</td><td>come</td><td>abre</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">ele/ela</td><td colspan="2" data-lang-block="en">ele/ela</td><td>fala</td><td>come</td><td>abre</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">nós</td><td colspan="2" data-lang-block="en">nós</td><td>falamos</td><td>comemos</td><td>abrimos</td></tr>
+        <tr><td colspan="2" data-lang-block="ar">eles/elas</td><td colspan="2" data-lang-block="en">eles/elas</td><td>falam</td><td>comem</td><td>abrem</td></tr>
+      </tbody>
+    </table>
+    <h3><span data-lang-block="ar">أفعال شاذة مهمة (صيغة eu / você)</span><span data-lang-block="en">Key irregular verbs ("eu" and "você" forms)</span></h3>
+    <table>
+      <thead><tr><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th><th>eu</th><th>você</th><th data-lang-block="ar">الفعل</th><th data-lang-block="en">Verb</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">يمتلك</td><td data-lang-block="en">to have</td><td>tenho</td><td>tem</td><td colspan="2">ter</td></tr>
+        <tr><td data-lang-block="ar">يروح</td><td data-lang-block="en">to go</td><td>vou</td><td>vai</td><td colspan="2">ir</td></tr>
+        <tr><td data-lang-block="ar">يعمل</td><td data-lang-block="en">to do/make</td><td>faço</td><td>faz</td><td colspan="2">fazer</td></tr>
+        <tr><td data-lang-block="ar">يقدر</td><td data-lang-block="en">to be able to</td><td>posso</td><td>pode</td><td colspan="2">poder</td></tr>
+        <tr><td data-lang-block="ar">يريد</td><td data-lang-block="en">to want</td><td>quero</td><td>quer</td><td colspan="2">querer</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c7">
+    <h2><span data-lang-block="ar">٧. الأرقام من ٠ لـ١٠٠</span><span data-lang-block="en">7. Numbers 0 to 100</span></h2>
+    <table>
+      <thead><tr><th>#</th><th>Português</th><th>#</th><th>Português</th></tr></thead>
+      <tbody>
+        <tr><td>0</td><td>zero</td><td>10</td><td>dez</td></tr>
+        <tr><td>1</td><td>um</td><td>11</td><td>onze</td></tr>
+        <tr><td>2</td><td>dois</td><td>12</td><td>doze</td></tr>
+        <tr><td>3</td><td>três</td><td>13</td><td>treze</td></tr>
+        <tr><td>4</td><td>quatro</td><td>14</td><td>quatorze</td></tr>
+        <tr><td>5</td><td>cinco</td><td>15</td><td>quinze</td></tr>
+        <tr><td>6</td><td>seis</td><td>16</td><td>dezesseis</td></tr>
+        <tr><td>7</td><td>sete</td><td>17</td><td>dezessete</td></tr>
+        <tr><td>8</td><td>oito</td><td>18</td><td>dezoito</td></tr>
+        <tr><td>9</td><td>nove</td><td>19</td><td>dezenove</td></tr>
+        <tr><td>20</td><td>vinte</td><td>60</td><td>sessenta</td></tr>
+        <tr><td>30</td><td>trinta</td><td>70</td><td>setenta</td></tr>
+        <tr><td>40</td><td>quarenta</td><td>80</td><td>oitenta</td></tr>
+        <tr><td>50</td><td>cinquenta</td><td>90</td><td>noventa</td></tr>
+        <tr><td colspan="2"></td><td>100</td><td>cem</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c8">
+    <h2><span data-lang-block="ar">٨. أيام الأسبوع والشهور</span><span data-lang-block="en">8. Days of the Week & Months</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">اليوم</th><th data-lang-block="en">Day</th><th>Português</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">الاتنين</td><td data-lang-block="en">Monday</td><td>segunda-feira</td></tr>
+        <tr><td data-lang-block="ar">التلات</td><td data-lang-block="en">Tuesday</td><td>terça-feira</td></tr>
+        <tr><td data-lang-block="ar">الأربع</td><td data-lang-block="en">Wednesday</td><td>quarta-feira</td></tr>
+        <tr><td data-lang-block="ar">الخميس</td><td data-lang-block="en">Thursday</td><td>quinta-feira</td></tr>
+        <tr><td data-lang-block="ar">الجمعة</td><td data-lang-block="en">Friday</td><td>sexta-feira</td></tr>
+        <tr><td data-lang-block="ar">السبت</td><td data-lang-block="en">Saturday</td><td>sábado</td></tr>
+        <tr><td data-lang-block="ar">الحد</td><td data-lang-block="en">Sunday</td><td>domingo</td></tr>
+      </tbody>
+    </table>
+    <table>
+      <thead><tr><th data-lang-block="ar">الشهر</th><th data-lang-block="en">Month</th><th>Português</th><th data-lang-block="ar">الشهر</th><th data-lang-block="en">Month</th><th>Português</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">يناير</td><td data-lang-block="en">January</td><td>janeiro</td><td data-lang-block="ar">يوليو</td><td data-lang-block="en">July</td><td>julho</td></tr>
+        <tr><td data-lang-block="ar">فبراير</td><td data-lang-block="en">February</td><td>fevereiro</td><td data-lang-block="ar">أغسطس</td><td data-lang-block="en">August</td><td>agosto</td></tr>
+        <tr><td data-lang-block="ar">مارس</td><td data-lang-block="en">March</td><td>março</td><td data-lang-block="ar">سبتمبر</td><td data-lang-block="en">September</td><td>setembro</td></tr>
+        <tr><td data-lang-block="ar">أبريل</td><td data-lang-block="en">April</td><td>abril</td><td data-lang-block="ar">أكتوبر</td><td data-lang-block="en">October</td><td>outubro</td></tr>
+        <tr><td data-lang-block="ar">مايو</td><td data-lang-block="en">May</td><td>maio</td><td data-lang-block="ar">نوفمبر</td><td data-lang-block="en">November</td><td>novembro</td></tr>
+        <tr><td data-lang-block="ar">يونيو</td><td data-lang-block="en">June</td><td>junho</td><td data-lang-block="ar">ديسمبر</td><td data-lang-block="en">December</td><td>dezembro</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c9">
+    <h2><span data-lang-block="ar">٩. الألوان</span><span data-lang-block="en">9. Colors</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">vermelho</td><td class="pron">ver-MEH-lyoh</td><td data-lang-block="ar">أحمر</td><td data-lang-block="en">red</td></tr>
+        <tr><td class="pt-word">azul</td><td class="pron">ah-ZOOL</td><td data-lang-block="ar">أزرق</td><td data-lang-block="en">blue</td></tr>
+        <tr><td class="pt-word">verde</td><td class="pron">VER-jee</td><td data-lang-block="ar">أخضر</td><td data-lang-block="en">green</td></tr>
+        <tr><td class="pt-word">amarelo</td><td class="pron">ah-mah-REH-loh</td><td data-lang-block="ar">أصفر</td><td data-lang-block="en">yellow</td></tr>
+        <tr><td class="pt-word">preto</td><td class="pron">PREH-too</td><td data-lang-block="ar">أسود</td><td data-lang-block="en">black</td></tr>
+        <tr><td class="pt-word">branco</td><td class="pron">BRAHN-koo</td><td data-lang-block="ar">أبيض</td><td data-lang-block="en">white</td></tr>
+        <tr><td class="pt-word">marrom</td><td class="pron">mah-HOHNG</td><td data-lang-block="ar">بني</td><td data-lang-block="en">brown</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c10">
+    <h2><span data-lang-block="ar">١٠. أفراد العائلة</span><span data-lang-block="en">10. Family Members</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">mãe</td><td class="pron">MY-ee (nasal)</td><td data-lang-block="ar">أم</td><td data-lang-block="en">mother</td></tr>
+        <tr><td class="pt-word">pai</td><td class="pron">PY</td><td data-lang-block="ar">أب</td><td data-lang-block="en">father</td></tr>
+        <tr><td class="pt-word">irmão / irmã</td><td class="pron">eer-MOWN / eer-MAH</td><td data-lang-block="ar">أخ / أخت</td><td data-lang-block="en">brother / sister</td></tr>
+        <tr><td class="pt-word">filho / filha</td><td class="pron">FEE-lyoh/ah</td><td data-lang-block="ar">ابن / بنت</td><td data-lang-block="en">son / daughter</td></tr>
+        <tr><td class="pt-word">avô / avó</td><td class="pron">ah-VOH / ah-VAW</td><td data-lang-block="ar">جد / جدة</td><td data-lang-block="en">grandfather / grandmother</td></tr>
+        <tr><td class="pt-word">marido / esposa</td><td class="pron">mah-REE-doo / es-POH-zah</td><td data-lang-block="ar">زوج / زوجة</td><td data-lang-block="en">husband / wife</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c11">
+    <h2><span data-lang-block="ar">١١. الأكل والشرب</span><span data-lang-block="en">11. Food & Drink</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">pão</td><td class="pron">pah-OWN</td><td data-lang-block="ar">عيش</td><td data-lang-block="en">bread</td></tr>
+        <tr><td class="pt-word">água</td><td class="pron">AH-gwah</td><td data-lang-block="ar">مية</td><td data-lang-block="en">water</td></tr>
+        <tr><td class="pt-word">café</td><td class="pron">kah-FEH</td><td data-lang-block="ar">قهوة</td><td data-lang-block="en">coffee</td></tr>
+        <tr><td class="pt-word">frango</td><td class="pron">FRAHN-goo</td><td data-lang-block="ar">فراخ</td><td data-lang-block="en">chicken</td></tr>
+        <tr><td class="pt-word">peixe</td><td class="pron">PAY-sheh</td><td data-lang-block="ar">سمك</td><td data-lang-block="en">fish</td></tr>
+        <tr><td class="pt-word">queijo</td><td class="pron">KAY-joh</td><td data-lang-block="ar">جبنة</td><td data-lang-block="en">cheese</td></tr>
+        <tr><td class="pt-word">fruta / legumes</td><td class="pron">FROO-tah / leh-GOO-mees</td><td data-lang-block="ar">فاكهة / خضار</td><td data-lang-block="en">fruit / vegetables</td></tr>
+        <tr><td class="pt-word">café da manhã / almoço / jantar</td><td class="pron">kah-FEH dah man-YAH / al-MOH-soo / jahn-TAR</td><td data-lang-block="ar">فطار / غدا / عشا</td><td data-lang-block="en">breakfast / lunch / dinner</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c12">
+    <h2><span data-lang-block="ar">١٢. عبارات لا غنى عنها للسفر والفنادق</span><span data-lang-block="en">12. Essential Travel & Hotel Phrases</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">Onde fica...?</td><td class="pron">OHN-jee FEE-kah</td><td data-lang-block="ar">فين...؟</td><td data-lang-block="en">Where is...?</td></tr>
+        <tr><td class="pt-word">Quanto custa isso?</td><td class="pron">KWAHN-too KOOS-tah EE-soo</td><td data-lang-block="ar">بكام ده؟</td><td data-lang-block="en">How much does this cost?</td></tr>
+        <tr><td class="pt-word">A conta, por favor</td><td class="pron">ah KOHN-tah</td><td data-lang-block="ar">الحساب لو سمحت</td><td data-lang-block="en">The bill, please</td></tr>
+        <tr><td class="pt-word">Onde é o banheiro?</td><td class="pron">OHN-jee eh oo bahn-YAY-roo</td><td data-lang-block="ar">فين الحمام؟</td><td data-lang-block="en">Where is the bathroom?</td></tr>
+        <tr><td class="pt-word">Não entendo</td><td class="pron">nah-own en-TEN-doo</td><td data-lang-block="ar">مش فاهم</td><td data-lang-block="en">I don't understand</td></tr>
+        <tr><td class="pt-word">Você fala inglês?</td><td class="pron">voh-SEH FAH-lah een-GLESS</td><td data-lang-block="ar">بتتكلم إنجليزي؟</td><td data-lang-block="en">Do you speak English?</td></tr>
+        <tr><td class="pt-word">Eu gostaria de reservar um quarto</td><td class="pron">EH-oo gohs-tah-REE-ah</td><td data-lang-block="ar">عايز أحجز أوضة</td><td data-lang-block="en">I would like to book a room</td></tr>
+        <tr><td class="pt-word">Onde posso pegar um táxi?</td><td class="pron">OHN-jee POH-soh peh-GAR</td><td data-lang-block="ar">فين أقدر آخد تاكسي؟</td><td data-lang-block="en">Where can I catch a taxi?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c13">
+    <h2><span data-lang-block="ar">١٣. تعبيرات وعامية برازيلية أصيلة</span><span data-lang-block="en">13. Authentic Brazilian Slang & Expressions</span></h2>
+    <p data-lang-block="ar">البرازيليين معروفين بالدفء والعامية اللي بتضفي حياة على أي محادثة. دي أشهر التعبيرات:</p>
+    <p data-lang-block="en">Brazilians are known for their warmth and the slang that brings any conversation to life. Here are the most common expressions:</p>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">Beleza?</td><td class="pron">beh-LEH-zah</td><td data-lang-block="ar">تمام؟ / عامل إيه؟ (حرفيًا: "جمال؟")</td><td data-lang-block="en">All good? (lit. "beauty?")</td></tr>
+        <tr><td class="pt-word">Legal!</td><td class="pron">leh-GOW</td><td data-lang-block="ar">جامد! / حلو!</td><td data-lang-block="en">Cool! / Nice!</td></tr>
+        <tr><td class="pt-word">Nossa!</td><td class="pron">NOH-sah</td><td data-lang-block="ar">يا سلام! / بجد؟! (تعجب)</td><td data-lang-block="en">Wow! / No way! (exclamation)</td></tr>
+        <tr><td class="pt-word">Cara</td><td class="pron">KAH-rah</td><td data-lang-block="ar">يا صاحبي / يا زول (عامية جدًا)</td><td data-lang-block="en">Dude / man (very casual)</td></tr>
+        <tr><td class="pt-word">Valeu!</td><td class="pron">vah-LEH-oo</td><td data-lang-block="ar">تسلم! (عامية لـ"شكرًا")</td><td data-lang-block="en">Thanks! (casual)</td></tr>
+        <tr><td class="pt-word">Vamos nessa!</td><td class="pron">VAH-mohs NEH-sah</td><td data-lang-block="ar">يلا بينا!</td><td data-lang-block="en">Let's go!</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c14">
+    <h2><span data-lang-block="ar">١٤. حوار تدريبي كامل</span><span data-lang-block="en">14. Full Practice Dialogue</span></h2>
+    <p data-lang-block="ar">حوار بسيط في كافيه — اقراه بصوت عالي كذا مرة وحاول تقلد النطق:</p>
+    <p data-lang-block="en">A simple café dialogue — read it out loud several times and try to imitate the pronunciation:</p>
+    <div class="dialogue">
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">Oi! Bem-vindo. O que você gostaria?</span><br><span class="trans" data-lang-block="ar">أهلًا! اتفضل. عايز إيه؟</span><span class="trans" data-lang-block="en">Hi! Welcome. What would you like?</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">العميل:</span><span class="speaker" data-lang-block="en">Customer:</span> <span class="orig">Oi! Eu queria um café, por favor.</span><br><span class="trans" data-lang-block="ar">أهلًا! عايز قهوة لو سمحت.</span><span class="trans" data-lang-block="en">Hi! I'd like a coffee, please.</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">Só isso?</span><br><span class="trans" data-lang-block="ar">بس كده؟</span><span class="trans" data-lang-block="en">Just that?</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">العميل:</span><span class="speaker" data-lang-block="en">Customer:</span> <span class="orig">Sim, e a conta, por favor.</span><br><span class="trans" data-lang-block="ar">أيوه، والحساب لو سمحت.</span><span class="trans" data-lang-block="en">Yes, and the bill, please.</span></div>
+      <div class="line"><span class="speaker" data-lang-block="ar">النادل:</span><span class="speaker" data-lang-block="en">Waiter:</span> <span class="orig">São dois reais. Valeu!</span><br><span class="trans" data-lang-block="ar">اتنين ريال. تسلم!</span><span class="trans" data-lang-block="en">That's two reais. Thanks!</span></div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c15">
+    <h2><span data-lang-block="ar">١٥. خطة عملية: إزاي تتعلم بسرعة</span><span data-lang-block="en">15. Action Plan: How to Learn Fast</span></h2>
+    <div class="tip-box">
+      <span class="tip-label" data-lang-block="ar">نصيحة سارة</span><span class="tip-label" data-lang-block="en">Sara's Tip</span>
+      <ul data-lang-block="ar">
+        <li>اسمع موسيقى برازيلية (بوسا نوفا أو سامبا) وحاول تفهم الكلمات.</li>
+        <li>جرّب "الظل الصوتي": اسمع جملة قصيرة وكررها فورًا بنفس الإيقاع.</li>
+        <li>ركّز على الحروف الأنفية (ão) — دي أكتر حاجة بتفرّق اللكنة البرازيلية.</li>
+        <li>متترجمش في دماغك — حاول تفكر بالبرتغالي مباشرة.</li>
+        <li>اتكلم من اليوم الأول حتى لو غلطت — البرازيليين متفهمين جدًا وبيشجعوا أي حد بيحاول.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Listen to Brazilian music (bossa nova or samba) and try to understand the lyrics.</li>
+        <li>Practice "shadowing": listen to a short sentence and repeat it immediately with the same rhythm.</li>
+        <li>Focus on nasal vowels (ão) — this is what most distinguishes the Brazilian accent.</li>
+        <li>Don't translate in your head — try to think directly in Portuguese.</li>
+        <li>Speak from day one, even with mistakes — Brazilians are very understanding and encouraging toward anyone trying.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="part-divider">
+    <span class="tag" data-lang-block="ar">الجزء الثاني</span><span class="tag" data-lang-block="en">PART 2</span>
+    <h2><span data-lang-block="ar">المستوى المتقدم</span><span data-lang-block="en">Advanced Level</span></h2>
+  </div>
+
+  <!-- ===================== PART 2 — ADVANCED ===================== -->
+
+  <div class="chapter" id="c17">
+    <h2><span data-lang-block="ar">١٧. مراجعة سريعة للأساسيات</span><span data-lang-block="en">17. Quick Review of the Basics</span></h2>
+    <p data-lang-block="ar">لو خلصت الجزء الأول، إنت عارف بالفعل: التحيات، الضمائر، فعل Ser/Estar، تصريف المضارع، والأرقام. الجزء ده هيديك أزمنة الماضي والمستقبل، مفردات عملية لمواقف حقيقية، وحوارات واقعية.</p>
+    <p data-lang-block="en">If you've finished Part 1, you already know: greetings, pronouns, Ser/Estar, present tense conjugation, and numbers. This part gives you the tenses you need for past and future, practical vocabulary for real situations, and realistic dialogues.</p>
+  </div>
+
+  <div class="chapter" id="c18">
+    <h2><span data-lang-block="ar">١٨. الماضي التام (Pretérito Perfeito)</span><span data-lang-block="en">18. The Preterite Past (Pretérito Perfeito)</span></h2>
+    <p data-lang-block="ar">ده الزمن الأساسي لوصف حدث كامل حصل في الماضي في وقت محدد.</p>
+    <p data-lang-block="en">This is the main tense for describing a completed event that happened at a specific point in the past.</p>
+    <table>
+      <thead><tr><th data-lang-block="ar">الضمير</th><th data-lang-block="en">Pronoun</th><th>falar</th><th>comer</th><th>abrir</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2">eu</td><td>falei</td><td>comi</td><td>abri</td></tr>
+        <tr><td colspan="2">você</td><td>falou</td><td>comeu</td><td>abriu</td></tr>
+        <tr><td colspan="2">nós</td><td>falamos</td><td>comemos</td><td>abrimos</td></tr>
+        <tr><td colspan="2">eles</td><td>falaram</td><td>comeram</td><td>abriram</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Ontem eu fui ao mercado</em> — إمبارح رحت السوق.</span><span data-lang-block="en">Example: <em>Ontem eu fui ao mercado</em> — Yesterday I went to the market.</span></p>
+  </div>
+
+  <div class="chapter" id="c19">
+    <h2><span data-lang-block="ar">١٩. الماضي الناقص (Pretérito Imperfeito)</span><span data-lang-block="en">19. The Imperfect Past (Pretérito Imperfeito)</span></h2>
+    <p data-lang-block="ar">بيتستخدم لوصف حاجة كانت بتحصل بشكل متكرر أو مستمر في الماضي — عادة أو وصف حالة، مش حدث واحد منتهي.</p>
+    <p data-lang-block="en">Used to describe something that happened repeatedly or continuously in the past — a habit or a description of a state, not a single completed event.</p>
+    <table>
+      <thead><tr><th>eu/você/nós/eles</th><th>falar</th><th>comer / abrir</th></tr></thead>
+      <tbody>
+        <tr><td>eu</td><td>falava</td><td>comia / abria</td></tr>
+        <tr><td>você</td><td>falava</td><td>comia / abria</td></tr>
+        <tr><td>nós</td><td>falávamos</td><td>comíamos / abríamos</td></tr>
+        <tr><td>eles</td><td>falavam</td><td>comiam / abriam</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Quando eu era criança, morava no Cairo</em> — لما كنت طفل، كنت عايش في القاهرة.</span><span data-lang-block="en">Example: <em>Quando eu era criança, morava no Cairo</em> — When I was a child, I lived in Cairo.</span></p>
+  </div>
+
+  <div class="chapter" id="c20">
+    <h2><span data-lang-block="ar">٢٠. المستقبل والشرطي</span><span data-lang-block="en">20. The Future & the Conditional</span></h2>
+    <table>
+      <thead><tr><th>eu/você/nós</th><th data-lang-block="ar">المستقبل (falar)</th><th data-lang-block="en">Future (falar)</th><th data-lang-block="ar">الشرطي (gostaria = عايز لو سمحت)</th><th data-lang-block="en">Conditional (gostaria = I'd like)</th></tr></thead>
+      <tbody>
+        <tr><td>eu</td><td colspan="2">falarei</td><td colspan="2">gostaria</td></tr>
+        <tr><td>você</td><td colspan="2">falará</td><td colspan="2">gostaria</td></tr>
+        <tr><td>nós</td><td colspan="2">falaremos</td><td colspan="2">gostaríamos</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">في البرازيل، أكتر تركيب شائع للمستقبل في الكلام اليومي هو "ir + مصدر": <em>Vou viajar amanhã</em> — هسافر بكرة.</span><span data-lang-block="en">In everyday spoken Brazilian Portuguese, the most common way to express the future is "ir + infinitive": <em>Vou viajar amanhã</em> — I'm going to travel tomorrow.</span></p>
+  </div>
+
+  <div class="chapter" id="c21">
+    <h2><span data-lang-block="ar">٢١. صيغة الشرط — Subjuntivo (أساسيات)</span><span data-lang-block="en">21. The Subjunctive Mood — Subjuntivo (Basics)</span></h2>
+    <p data-lang-block="ar">بتتستخدم للشك أو التمني أو الافتراض، أو بعد أفعال زي "عايز إن" أو "متمني إن". غالبًا بتيجي بعد كلمة "que" (إن).</p>
+    <p data-lang-block="en">Used for doubt, wishes, hypotheticals, or after verbs like "to want that", "to hope that". It usually follows the word "que" (that).</p>
+    <div class="goal-box">
+      <p data-lang-block="ar"><em>Espero que você esteja bem</em> — أتمنى إنك تكون بخير. / <em>Acho que é verdade</em> — أعتقد إنه صحيح.</p>
+      <p data-lang-block="en"><em>Espero que você esteja bem</em> — I hope you're doing well. / <em>Acho que é verdade</em> — I think it's true.</p>
+    </div>
+  </div>
+
+  <div class="chapter" id="c22">
+    <h2><span data-lang-block="ar">٢٢. الأفعال الانعكاسية</span><span data-lang-block="en">22. Reflexive Verbs</span></h2>
+    <p data-lang-block="ar">في البرتغالي البرازيلي المحكي، الضمير غالبًا بييجي قبل الفعل المصرّف (عكس البرتغالي الأوروبي اللي بيميل يحطه بعد الفعل).</p>
+    <p data-lang-block="en">In spoken Brazilian Portuguese, the pronoun usually comes before the conjugated verb (unlike European Portuguese, which tends to place it after the verb).</p>
+    <p><span data-lang-block="ar">مثال شائع جدًا: <em>"Qual é o seu nome?"</em> (اسمك إيه؟) — الرد: <em>"Meu nome é Ahmed"</em> أو <em>"Me chamo Ahmed"</em> (اسمي أحمد).</span><span data-lang-block="en">A very common example: <em>"Qual é o seu nome?"</em> (What's your name?) — The answer: <em>"Meu nome é Ahmed"</em> or <em>"Me chamo Ahmed"</em> (My name is Ahmed).</span></p>
+  </div>
+
+  <div class="chapter" id="c23">
+    <h2><span data-lang-block="ar">٢٣. ضمائر المفعول به وموضعها</span><span data-lang-block="en">23. Object Pronouns & Their Placement</span></h2>
+    <p data-lang-block="ar">في البرازيلي المحكي، الضمير بيجي غالبًا قبل الفعل: <em>Eu te vejo amanhã</em> (هشوفك بكرة). ده أسهل بكتير من قواعد البرتغالي الأوروبي الرسمية.</p>
+    <p data-lang-block="en">In spoken Brazilian usage, the pronoun usually goes before the verb: <em>Eu te vejo amanhã</em> (I'll see you tomorrow). This is much simpler than the formal European Portuguese rules.</p>
+  </div>
+
+  <div class="chapter" id="c24">
+    <h2><span data-lang-block="ar">٢٤. حروف الجر واندماجها مع أدوات التعريف</span><span data-lang-block="en">24. Prepositions & Their Fusion with Definite Articles</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">حرف الجر</th><th data-lang-block="en">Preposition</th><th>+ o</th><th>+ a</th><th>+ os</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2">de <span data-lang-block="ar">(بتاع/من)</span></td><td>do</td><td>da</td><td>dos</td></tr>
+        <tr><td colspan="2">a <span data-lang-block="ar">(لـ)</span></td><td>ao</td><td>à</td><td>aos</td></tr>
+        <tr><td colspan="2">em <span data-lang-block="ar">(في)</span></td><td>no</td><td>na</td><td>nos</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">مثال: <em>Vou ao mercado</em> — رايح السوق.</span><span data-lang-block="en">Example: <em>Vou ao mercado</em> — I'm going to the market.</span></p>
+  </div>
+
+  <div class="chapter" id="c25">
+    <h2><span data-lang-block="ar">٢٥. المقارنة والتفضيل وأدوات ربط متقدمة</span><span data-lang-block="en">25. Comparatives, Superlatives & Advanced Connectors</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">الاستخدام</th><th data-lang-block="en">Use</th><th data-lang-block="ar">التركيب</th><th data-lang-block="en">Structure</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">أكتر من</td><td data-lang-block="en">more than</td><td colspan="2">mais... do que</td></tr>
+        <tr><td data-lang-block="ar">الأكتر</td><td data-lang-block="en">the most</td><td colspan="2">o mais / a mais</td></tr>
+      </tbody>
+    </table>
+    <p><span data-lang-block="ar">أدوات ربط مفيدة: <strong>mas</strong> (بس)، <strong>então</strong> (يبقى)، <strong>porque</strong> (عشان)، <strong>embora</strong> (رغم إن)، <strong>apesar de</strong> (بالرغم من).</span><span data-lang-block="en">Useful connectors: <strong>mas</strong> (but), <strong>então</strong> (therefore), <strong>porque</strong> (because), <strong>embora</strong> (although), <strong>apesar de</strong> (despite).</span></p>
+  </div>
+
+  <div class="chapter" id="c26">
+    <h2><span data-lang-block="ar">٢٦. مفردات: المطار والجمارك</span><span data-lang-block="en">26. Vocabulary: Airport & Customs</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th class="pron">Pron.</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">passaporte</td><td class="pron">pah-sah-POR-chee</td><td data-lang-block="ar">جواز سفر</td><td data-lang-block="en">passport</td></tr>
+        <tr><td class="pt-word">bagagem</td><td class="pron">bah-GAH-zheng</td><td data-lang-block="ar">شنط</td><td data-lang-block="en">luggage</td></tr>
+        <tr><td class="pt-word">voo / atraso</td><td class="pron">VOH-oo / ah-TRAH-zoo</td><td data-lang-block="ar">رحلة / تأخير</td><td data-lang-block="en">flight / delay</td></tr>
+        <tr><td class="pt-word">alfândega</td><td class="pron">ahl-FAHN-deh-gah</td><td data-lang-block="ar">جمارك</td><td data-lang-block="en">customs</td></tr>
+        <tr><td class="pt-word">Tenho algo a declarar</td><td class="pron">TEN-yoo AHL-goo</td><td data-lang-block="ar">عندي حاجة أعلن عنها</td><td data-lang-block="en">I have something to declare</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c27">
+    <h2><span data-lang-block="ar">٢٧. مفردات: مشاكل الفندق</span><span data-lang-block="en">27. Vocabulary: Hotel Problems</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">O ar-condicionado não funciona</td><td data-lang-block="ar">التكييف مش شغال</td><td data-lang-block="en">The air conditioning isn't working</td></tr>
+        <tr><td class="pt-word">Não tem água quente</td><td data-lang-block="ar">مفيش مية سخنة</td><td data-lang-block="en">There's no hot water</td></tr>
+        <tr><td class="pt-word">Eu gostaria de trocar de quarto</td><td data-lang-block="ar">عايز أغيّر الأوضة</td><td data-lang-block="en">I would like to change rooms</td></tr>
+        <tr><td class="pt-word">A que horas é o check-out?</td><td data-lang-block="ar">الخروج الساعة كام؟</td><td data-lang-block="en">What time is check-out?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c28">
+    <h2><span data-lang-block="ar">٢٨. مفردات: الصحة والطوارئ والصيدلية</span><span data-lang-block="en">28. Vocabulary: Health, Emergencies & the Pharmacy</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">Eu preciso de um médico</td><td data-lang-block="ar">محتاج دكتور</td><td data-lang-block="en">I need a doctor</td></tr>
+        <tr><td class="pt-word">Não estou me sentindo bem</td><td data-lang-block="ar">مش حاسس إني كويس</td><td data-lang-block="en">I don't feel well</td></tr>
+        <tr><td class="pt-word">febre / dor de cabeça</td><td data-lang-block="ar">سخونية / صداع</td><td data-lang-block="en">fever / headache</td></tr>
+        <tr><td class="pt-word">Chame uma ambulância!</td><td data-lang-block="ar">اتصل بإسعاف!</td><td data-lang-block="en">Call an ambulance!</td></tr>
+        <tr><td class="pt-word">farmácia / remédio</td><td data-lang-block="ar">صيدلية / دوا</td><td data-lang-block="en">pharmacy / medication</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c29">
+    <h2><span data-lang-block="ar">٢٩. مفردات: البنك والشرطة والأوراق الرسمية</span><span data-lang-block="en">29. Vocabulary: Bank, Police & Official Matters</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">banco / caixa eletrônico</td><td data-lang-block="ar">بنك / ماكينة صراف</td><td data-lang-block="en">bank / ATM</td></tr>
+        <tr><td class="pt-word">Eu fui roubado</td><td data-lang-block="ar">اتسرقت</td><td data-lang-block="en">I've been robbed</td></tr>
+        <tr><td class="pt-word">Perdi meu passaporte</td><td data-lang-block="ar">وديت جواز سفري</td><td data-lang-block="en">I've lost my passport</td></tr>
+        <tr><td class="pt-word">embaixada</td><td data-lang-block="ar">سفارة</td><td data-lang-block="en">embassy</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c30">
+    <h2><span data-lang-block="ar">٣٠. مفردات: المواصلات وتأجير العربيات والاتجاهات</span><span data-lang-block="en">30. Vocabulary: Transportation, Car Rental & Directions</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">alugar um carro</td><td data-lang-block="ar">تأجير عربية</td><td data-lang-block="en">to rent a car</td></tr>
+        <tr><td class="pt-word">Vire à direita/esquerda</td><td data-lang-block="ar">لف يمين/شمال</td><td data-lang-block="en">Turn right/left</td></tr>
+        <tr><td class="pt-word">Continue em frente</td><td data-lang-block="ar">كمّل على طول</td><td data-lang-block="en">Keep going straight</td></tr>
+        <tr><td class="pt-word">metrô / estação</td><td data-lang-block="ar">مترو / محطة</td><td data-lang-block="en">subway / station</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c31">
+    <h2><span data-lang-block="ar">٣١. مفردات: التسوق والمساومة والعمل</span><span data-lang-block="en">31. Vocabulary: Shopping, Bargaining & Business</span></h2>
+    <table>
+      <thead><tr><th>Português</th><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-word">Você pode fazer um desconto?</td><td data-lang-block="ar">ممكن خصم؟</td><td data-lang-block="en">Can you give me a discount?</td></tr>
+        <tr><td class="pt-word">Está muito caro</td><td data-lang-block="ar">ده غالي أوي</td><td data-lang-block="en">It's very expensive</td></tr>
+        <tr><td class="pt-word">contrato / cliente</td><td data-lang-block="ar">عقد / عميل</td><td data-lang-block="en">contract / client</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c32">
+    <h2><span data-lang-block="ar">٣٢. آداب التعامل مع البرازيليين</span><span data-lang-block="en">32. Etiquette When Dealing with Brazilians</span></h2>
+    <div class="goal-box">
+      <p data-lang-block="ar">البرازيليين أقل رسمية من كتير من الثقافات — استخدام "você" مقبول في معظم المواقف اليومية حتى مع غرباء. القبلة على الخد (واحدة أو اتنين حسب المنطقة) بديل شائع للمصافحة بين المعارف. الوقت في البرازيل مرن أكتر — التأخر ربع ساعة عن الميعاد الاجتماعي أمر طبيعي.</p>
+      <p data-lang-block="en">Brazilians are less formal than many cultures — using "você" is acceptable in most everyday situations, even with strangers. A cheek kiss (one or two, depending on the region) is a common alternative to handshakes between acquaintances. Time in Brazil tends to be more flexible — being fifteen minutes late to a social gathering is completely normal.</p>
+    </div>
+  </div>
+
+  <div class="chapter" id="c33">
+    <h2><span data-lang-block="ar">٣٣. تعبيرات اصطلاحية متقدمة</span><span data-lang-block="en">33. Advanced Idioms & Expressions</span></h2>
+    <table>
+      <thead><tr><th data-lang-block="ar">المعنى</th><th data-lang-block="en">Meaning</th><th>Português</th></tr></thead>
+      <tbody>
+        <tr><td data-lang-block="ar">حاجة غالية جدًا (حرفيًا: تكلف عين من الوش)</td><td data-lang-block="en">Very expensive (lit. "cost an eye from the face")</td><td>Custar os olhos da cara</td></tr>
+        <tr><td data-lang-block="ar">حل مشكلة أو ابتكر (حرفيًا: يعمل قطعة)</td><td data-lang-block="en">To improvise a solution (lit. "make a piece")</td><td>Dar um jeitinho</td></tr>
+        <tr><td data-lang-block="ar">شخص شاطر/واعي (حرفيًا: عينه فاتحة)</td><td data-lang-block="en">To be sharp/street-smart (lit. "eye open")</td><td>Estar de olho</td></tr>
+        <tr><td data-lang-block="ar">يضحك على حد / يستهزئ (حرفيًا: يسحب الرجل)</td><td data-lang-block="en">To tease someone (lit. "pull the leg")</td><td>Puxar o saco / tirar sarro</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chapter" id="c34">
+    <h2><span data-lang-block="ar">٣٤. حوارات تدريبية متقدمة (مواقف حقيقية)</span><span data-lang-block="en">34. Advanced Practice Dialogues (Real Scenarios)</span></h2>
+    <h3><span data-lang-block="ar">١) في المطار — تأخير الرحلة</span><span data-lang-block="en">1) At the Airport — Flight Delay</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Boa noite, meu voo para o Rio está atrasado?</span><br><span class="trans" data-lang-block="ar">مساء الخير، رحلتي لريو متأخرة؟</span><span class="trans" data-lang-block="en">Good evening, is my flight to Rio delayed?</span></div>
+      <div class="line"><span class="orig">Sim, infelizmente está atrasado uma hora.</span><br><span class="trans" data-lang-block="ar">أيوه، للأسف متأخرة ساعة.</span><span class="trans" data-lang-block="en">Yes, unfortunately it's an hour late.</span></div>
+    </div>
+    <h3><span data-lang-block="ar">٢) شكوى في الفندق</span><span data-lang-block="en">2) Hotel Complaint</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Com licença, o ar-condicionado do meu quarto não funciona.</span><br><span class="trans" data-lang-block="ar">معلش، التكييف في أوضتي مش شغال.</span><span class="trans" data-lang-block="en">Excuse me, the air conditioning in my room isn't working.</span></div>
+      <div class="line"><span class="orig">Sinto muito. Vou mandar alguém agora mesmo.</span><br><span class="trans" data-lang-block="ar">آسفين جدًا. هبعتلك حد على طول.</span><span class="trans" data-lang-block="en">I'm so sorry. I'll send someone right away.</span></div>
+    </div>
+    <h3><span data-lang-block="ar">٣) في الصيدلية</span><span data-lang-block="en">3) At the Pharmacy</span></h3>
+    <div class="dialogue">
+      <div class="line"><span class="orig">Boa noite, não estou me sentindo bem. Estou com dor de cabeça e febre.</span><br><span class="trans" data-lang-block="ar">مساء الخير، مش حاسس إني كويس. عندي صداع وسخونية.</span><span class="trans" data-lang-block="en">Good evening, I don't feel well. I have a headache and a fever.</span></div>
+      <div class="line"><span class="orig">Tome este remédio a cada oito horas.</span><br><span class="trans" data-lang-block="ar">خد الدوا ده كل ٨ ساعات.</span><span class="trans" data-lang-block="en">Take this medication every eight hours.</span></div>
+    </div>
+  </div>
+
+  <div class="chapter" id="c35">
+    <h2><span data-lang-block="ar">٣٥. نص قرائي للتدريب</span><span data-lang-block="en">35. Reading Passage for Practice</span></h2>
+    <p data-lang-block="ar">اقرا النص ده بصوت عالي كذا مرة، وحاول تفهمه من غير ما تترجم كل كلمة:</p>
+    <p data-lang-block="en">Read this passage out loud a few times, and try to understand it without translating every single word:</p>
+    <div class="goal-box">
+      <p style="font-style:italic;">Ontem eu fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. À tarde, visitamos o Cristo Redentor e tiramos muitas fotos. Foi um dia inesquecível!</p>
+    </div>
+    <p><span data-lang-block="ar">(إمبارح رحت ريو دي جانيرو مع عيلتي. وصلنا المطار بدري الصبح وأخدنا تاكسي للفندق. بعد الضهر زرنا تمثال المسيح الفادي وصورنا صور كتير. كان يوم ما يتنسيش!)</span><span data-lang-block="en">(Yesterday I went to Rio de Janeiro with my family. We arrived at the airport early in the morning and took a taxi to the hotel. In the afternoon, we visited Christ the Redeemer and took lots of photos. It was an unforgettable day!)</span></p>
+  </div>
+
+  <div class="chapter" id="c36">
+    <h2><span data-lang-block="ar">٣٦. الخطوة الجاية نحو الطلاقة</span><span data-lang-block="en">36. Conclusion: Your Next Steps to Fluency</span></h2>
+    <div class="tip-box">
+      <span class="tip-label" data-lang-block="ar">نصيحة سارة الأخيرة</span><span class="tip-label" data-lang-block="en">Sara's Final Tip</span>
+      <ul data-lang-block="ar">
+        <li>اسمع بودكاست أو أخبار برازيلية بسيطة يوميًا.</li>
+        <li>اتكلم مع متحدثين أصليين (أونلاين أو لما تسافر) — التمرين الحقيقي أهم حاجة دلوقتي.</li>
+        <li>اكتب مذكرات يومية قصيرة بالبرتغالي — حتى ٣-٤ جمل بتفرق مع الوقت.</li>
+        <li>متخافش تغلط في الكلام — البرازيليين من أكتر الناس ترحيبًا وتشجيعًا لأي حد بيحاول يتكلم لغتهم.</li>
+      </ul>
+      <ul data-lang-block="en">
+        <li>Listen to simple Brazilian podcasts or news daily.</li>
+        <li>Talk with native speakers (online, or in person if you travel) — real practice is the most valuable thing now.</li>
+        <li>Write a short daily journal in Portuguese — even 3-4 sentences a day makes a big difference.</li>
+        <li>Don't be afraid of making mistakes — Brazilians are some of the most welcoming and encouraging people toward anyone trying to speak their language.</li>
+      </ul>
+    </div>
+    <p style="text-align:center;font-weight:800;color:var(--brand-blue-dark);margin-top:20px;">Vamos nessa! 🇧🇷</p>
+  </div>
+
+  <div class="article-cta">
+    <h3><span data-lang-block="ar">جاهز تحجز رحلتك للبرازيل؟</span><span data-lang-block="en">Ready to book your trip to Brazil?</span></h3>
+    <p><span data-lang-block="ar">كلمينا على واتساب وهنبعتلك أفضل سعر لتذكرتك وفندقك.</span><span data-lang-block="en">Message us on WhatsApp and we'll send you the best price for your ticket and hotel.</span></p>
+    <a class="btn" id="cta-btn-bottom" href="#">💬 <span data-lang-block="ar">احجز عبر واتساب</span><span data-lang-block="en">Book on WhatsApp</span></a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span><span data-lang-block="ar">© 2026 سافر Discounts. جميع الحقوق محفوظة.</span><span data-lang-block="en">© 2026 Safer Discounts. All rights reserved.</span></span>
+    <a href="blog.html"><span data-lang-block="ar">رجوع للبلوج</span><span data-lang-block="en">Back to Blog</span></a>
+  </div>
+</footer>
+
+<a class="floating-wa" id="floating-wa" href="#" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+  var WA_NUMBER = "201116666306";
+  var WA_MSG = { ar: "مرحباً، عايز أحجز رحلة للبرازيل", en: "Hello, I'd like to book a trip to Brazil" };
+  function waLink(lang){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_MSG[lang] || WA_MSG.ar); }
+
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+    var link = waLink(lang);
+    document.getElementById('nav-cta').href = link;
+    document.getElementById('cta-btn-bottom').href = link;
+    document.getElementById('floating-wa').href = link;
+    document.getElementById('nav-cta').innerHTML = '💬 ' + (lang === 'ar' ? 'احجز واتساب' : 'Book on WhatsApp');
+  }
+  document.getElementById('lang-toggle').addEventListener('click', function(){
+    setLang(document.documentElement.lang === 'ar' ? 'en' : 'ar');
+  });
+  setLang('ar');
+})();
+</script>
+
+</body>
+</html>
