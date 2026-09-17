@@ -84,11 +84,11 @@
   .nav-links a{opacity:0.85;transition:opacity .2s;}
   .nav-links a:hover{opacity:1;color:var(--brand-blue);}
   .nav-right{display:flex;align-items:center;gap:12px;}
-  .lang-switch{display:flex;gap:4px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;}
+  .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
   .lang-btn{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;
     border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
-    padding:6px 11px;cursor:pointer;transition:background .2s, color .2s;
+    padding:6px 8px;cursor:pointer;transition:background .2s, color .2s;white-space:nowrap;
   }
   .lang-btn.active{background:var(--brand-blue);color:#fff;}
   .lang-btn:not(.active):hover{background:rgba(3,101,163,0.15);}
@@ -478,12 +478,18 @@ window.SITE_CONFIG = {
     whatsappNumberByLang: {
       ar: "201116666306",
       en: "201116666306",
-      it: "393801991992"
+      fr: "201116666306",
+      it: "393801991992",
+      pt: "201116666306",
+      ptbr: "201116666306"
     },
     whatsappDefaultMessage: {
       ar: "مرحباً، عايز أحجز",
       en: "Hello, I'd like to book",
-      it: "Ciao, vorrei prenotare"
+      fr: "Bonjour, je voudrais réserver",
+      it: "Ciao, vorrei prenotare",
+      pt: "Olá, gostaria de reservar",
+      ptbr: "Oi, eu queria reservar"
     },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
@@ -495,7 +501,7 @@ window.SITE_CONFIG = {
   i18n: {
     ar: {
       brand: "سافر Discounts",
-      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", cta: "احجز واتساب" },
+      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", blog: "بلوج سارة", cta: "احجز واتساب" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
         titleLine1: "سافر بأقل سعر،",
@@ -521,7 +527,7 @@ window.SITE_CONFIG = {
     },
     en: {
       brand: "Safer Discounts",
-      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", cta: "Book on WhatsApp" },
+      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", blog: "Sara's Blog", cta: "Book on WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — Lower Prices",
         titleLine1: "Travel for less,",
@@ -547,7 +553,7 @@ window.SITE_CONFIG = {
     },
     it: {
       brand: "Safer Discounts",
-      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", cta: "Prenota su WhatsApp" },
+      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", cta: "Prenota su WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — Prezzi più bassi",
         titleLine1: "Viaggia spendendo meno,",
@@ -570,6 +576,84 @@ window.SITE_CONFIG = {
       contactHead: { h2: "Pronto a prenotare? Scrivici ora", p: "Siamo su WhatsApp, Facebook e telefono in ogni momento per qualsiasi domanda o prenotazione." },
       contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Chiama", em: "Email" },
       footerCopyright: "© 2026 Safer Discounts. Tutti i diritti riservati."
+    },
+    fr: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
+      hero: {
+        eyebrow: "✦ TICKET · HÔTEL · ÉVÉNEMENT — Prix plus bas",
+        titleLine1: "Voyagez pour moins cher,",
+        titleHighlight: "sans les tracas",
+        subtitle: "Nous réservons billets d'avion, séjours à l'hôtel, et billets pour événements et musées à des prix compétitifs par rapport aux sites officiels — tout est géré facilement sur WhatsApp.",
+        ctaWa: "Réserver sur WhatsApp",
+        ctaFb: "Suivez-nous sur Facebook",
+        strip: ["Vols", "Hôtels", "Événements & Musées", "Assistance Personnelle"]
+      },
+      journeyStops: ["Vol", "Hôtel", "Transfert", "Événement", "Croisière"],
+      servicesHead: { tag: "Nos Services", h2: "Tout pour votre voyage, en un seul endroit", p: "Du billet, à l'hôtel, à l'événement auquel vous assisterez — nous nous occupons de la réservation et du meilleur prix." },
+      destinationsHead: { tag: "Nos Destinations", h2: "En Égypte et au-delà", p: "Un échantillon des destinations que nous réservons pour vous, en Égypte et à l'étranger." },
+      destinationGroups: { "in": "En Égypte", out: "Hors d'Égypte" },
+      reviewsHead: { tag: "Avis Clients", h2: "Ce que disent nos clients", p: "Avis réels provenant de notre page Facebook officielle." },
+      statsLabels: { followers: "Abonnés", reviews: "Recommandations", recommend: "Taux de Recommandation" },
+      reviewsCta: "Voir tous les avis sur Facebook",
+      howHead: { tag: "Comment Réserver", h2: "Des étapes simples et claires", p: "Tout se passe sur WhatsApp, sans complications." },
+      whyHead: { tag: "Pourquoi Safer Discounts", h2: "Réservez en toute confiance, et économisez en même temps" },
+      faqHead: { tag: "FAQ", h2: "Des questions ? Nous avons les réponses", p: "Si votre question n'est pas ici, écrivez-nous sur WhatsApp et nous répondrons tout de suite." },
+      contactHead: { h2: "Prêt à réserver ? Écrivez-nous maintenant", p: "Nous sommes sur WhatsApp, Facebook et téléphone à tout moment pour toute question ou réservation." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Appeler", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tous droits réservés."
+    },
+    pt: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      hero: {
+        eyebrow: "✦ TICKET · HOTEL · EVENTO — Preços mais baixos",
+        titleLine1: "Viaje a gastar menos,",
+        titleHighlight: "sem complicações",
+        subtitle: "Reservamos bilhetes de avião, estadias em hotel, e bilhetes para eventos e museus a preços competitivos em relação aos sites oficiais — tudo tratado facilmente pelo WhatsApp.",
+        ctaWa: "Reservar no WhatsApp",
+        ctaFb: "Siga-nos no Facebook",
+        strip: ["Voos", "Hotéis", "Eventos e Museus", "Apoio Pessoal"]
+      },
+      journeyStops: ["Voo", "Hotel", "Transporte", "Evento", "Cruzeiro"],
+      servicesHead: { tag: "Os Nossos Serviços", h2: "Tudo para a sua viagem, num só lugar", p: "Do bilhete, ao hotel, ao evento a que vai assistir — tratamos da reserva e do melhor preço." },
+      destinationsHead: { tag: "Os Nossos Destinos", h2: "Dentro e fora do Egito", p: "Uma amostra dos destinos que reservamos para si, no Egito e no estrangeiro." },
+      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" },
+      reviewsHead: { tag: "Avaliações de Clientes", h2: "O que dizem os nossos clientes", p: "Avaliações reais da nossa página oficial no Facebook." },
+      statsLabels: { followers: "Seguidores", reviews: "Recomendações", recommend: "Taxa de Recomendação" },
+      reviewsCta: "Ver todas as avaliações no Facebook",
+      howHead: { tag: "Como Reservar", h2: "Passos simples e claros", p: "Tudo é feito pelo WhatsApp, sem complicações." },
+      whyHead: { tag: "Porquê a Safer Discounts", h2: "Reserve com confiança, e poupe ao mesmo tempo" },
+      faqHead: { tag: "Perguntas Frequentes", h2: "Tem dúvidas? Temos respostas", p: "Se a sua pergunta não estiver aqui, escreva-nos no WhatsApp e responderemos de imediato." },
+      contactHead: { h2: "Pronto para reservar? Contacte-nos agora", p: "Estamos no WhatsApp, Facebook e telefone a qualquer momento para qualquer questão ou reserva." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados."
+    },
+    ptbr: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      hero: {
+        eyebrow: "✦ TICKET · HOTEL · EVENTO — Preços mais baixos",
+        titleLine1: "Viaje gastando menos,",
+        titleHighlight: "sem complicação",
+        subtitle: "A gente reserva passagens aéreas, estadias em hotel, e ingressos para eventos e museus a preços competitivos em relação aos sites oficiais — tudo resolvido facilmente pelo WhatsApp.",
+        ctaWa: "Reservar pelo WhatsApp",
+        ctaFb: "Siga a gente no Facebook",
+        strip: ["Voos", "Hotéis", "Eventos e Museus", "Suporte Pessoal"]
+      },
+      journeyStops: ["Voo", "Hotel", "Traslado", "Evento", "Cruzeiro"],
+      servicesHead: { tag: "Nossos Serviços", h2: "Tudo para sua viagem, em um só lugar", p: "Da passagem, ao hotel, ao evento que você vai curtir — a gente cuida da reserva e do melhor preço." },
+      destinationsHead: { tag: "Nossos Destinos", h2: "Dentro e fora do Egito", p: "Uma amostra dos destinos que a gente reserva pra você, no Egito e no exterior." },
+      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" },
+      reviewsHead: { tag: "Avaliações de Clientes", h2: "O que nossos clientes dizem", p: "Avaliações reais da nossa página oficial no Facebook." },
+      statsLabels: { followers: "Seguidores", reviews: "Recomendações", recommend: "Taxa de Recomendação" },
+      reviewsCta: "Ver todas as avaliações no Facebook",
+      howHead: { tag: "Como Reservar", h2: "Passos simples e claros", p: "Tudo é feito pelo WhatsApp, sem complicação." },
+      whyHead: { tag: "Por que a Safer Discounts", h2: "Reserve com confiança, e economize ao mesmo tempo" },
+      faqHead: { tag: "Perguntas Frequentes", h2: "Tem dúvidas? A gente responde", p: "Se sua pergunta não estiver aqui, manda mensagem no WhatsApp que a gente responde na hora." },
+      contactHead: { h2: "Pronto pra reservar? Fala com a gente agora", p: "A gente tá no WhatsApp, Facebook e telefone o tempo todo pra qualquer dúvida ou reserva." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados."
     }
   },
 
@@ -592,27 +676,36 @@ window.SITE_CONFIG = {
     { icon: "✈️", tag: "CLASS: ECONOMY / BUSINESS",
       ar_title: "تذاكر طيران", ar_desc: "حجز تذاكر رحلات داخلية ودولية بأسعار أقل من المواقع الرسمية، مع متابعة حجزك خطوة بخطوة.",
       en_title: "Flight Tickets", en_desc: "Book domestic and international flights at prices lower than official sites, with step-by-step support.",
-      it_title: "Biglietti Aerei", it_desc: "Prenotazione di voli nazionali e internazionali a prezzi inferiori rispetto ai siti ufficiali, con assistenza passo dopo passo." },
+      it_title: "Biglietti Aerei", it_desc: "Prenotazione di voli nazionali e internazionali a prezzi inferiori rispetto ai siti ufficiali, con assistenza passo dopo passo.",
+      fr_title: "Billets d'Avion", fr_desc: "Réservation de vols nationaux et internationaux à des prix inférieurs aux sites officiels, avec un accompagnement étape par étape.",
+      pt_title: "Bilhetes de Avião", pt_desc: "Reserva de voos nacionais e internacionais a preços mais baixos do que os sites oficiais, com apoio passo a passo.",
+      ptbr_title: "Passagens Aéreas", ptbr_desc: "Reserva de voos nacionais e internacionais a preços mais baixos que os sites oficiais, com acompanhamento passo a passo." },
     { icon: "🏨", tag: "STAY: ANY DESTINATION",
       ar_title: "إقامات وفنادق", ar_desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",
       en_title: "Hotels & Stays", en_desc: "Book hotels and serviced apartments at any destination you choose, at competitive prices.",
-      it_title: "Hotel e Soggiorni", it_desc: "Prenotazione di hotel e appartamenti in qualsiasi destinazione tu scelga, a prezzi competitivi." },
+      it_title: "Hotel e Soggiorni", it_desc: "Prenotazione di hotel e appartamenti in qualsiasi destinazione tu scelga, a prezzi competitivi.",
+      fr_title: "Hôtels et Séjours", fr_desc: "Réservation d'hôtels et d'appartements dans la destination de votre choix, à des prix compétitifs.",
+      pt_title: "Hotéis e Estadias", pt_desc: "Reserva de hotéis e apartamentos no destino que escolher, a preços competitivos.",
+      ptbr_title: "Hotéis e Estadias", ptbr_desc: "Reserva de hotéis e apartamentos no destino que você escolher, a preços competitivos." },
     { icon: "🎟️", tag: "ENTRY: EVENTS & MUSEUMS",
       ar_title: "فعاليات ومتاحف", ar_desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",
       en_title: "Events & Museums", en_desc: "Tickets for concerts, museums, and local & international events at discounted prices.",
-      it_title: "Eventi e Musei", it_desc: "Biglietti per concerti, musei ed eventi locali e internazionali a prezzi scontati." }
+      it_title: "Eventi e Musei", it_desc: "Biglietti per concerti, musei ed eventi locali e internazionali a prezzi scontati.",
+      fr_title: "Événements et Musées", fr_desc: "Billets pour concerts, musées, et événements locaux et internationaux à prix réduits.",
+      pt_title: "Eventos e Museus", pt_desc: "Bilhetes para concertos, museus, e eventos locais e internacionais a preços reduzidos.",
+      ptbr_title: "Eventos e Museus", ptbr_desc: "Ingressos para shows, museus, e eventos locais e internacionais a preços reduzidos." }
   ],
 
   // الوجهات السياحية (صور صغيرة) — دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
   // لاستبدال أي صورة بصورتك انت: ارفعها في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
   // group لازم تكون "in" (داخل مصر) أو "out" (خارج مصر) بالظبط
   destinations: [
-    { ar_name: "دبي",           en_name: "Dubai",              it_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "باريس",          en_name: "Paris",              it_name: "Parigi",             group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "إسطنبول",        en_name: "Istanbul",           it_name: "Istanbul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      it_name: "Piramidi di Giza",   group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    it_name: "Sharm el-Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "الأقصر",         en_name: "Luxor",              it_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
+    { ar_name: "دبي",           en_name: "Dubai",              it_name: "Dubai",              fr_name: "Dubaï",              pt_name: "Dubai",              ptbr_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "باريس",          en_name: "Paris",              it_name: "Parigi",             fr_name: "Paris",              pt_name: "Paris",              ptbr_name: "Paris",              group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "إسطنبول",        en_name: "Istanbul",           it_name: "Istanbul",           fr_name: "Istanbul",           pt_name: "Istambul",           ptbr_name: "Istambul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      it_name: "Piramidi di Giza",   fr_name: "Pyramides de Gizeh", pt_name: "Pirâmides de Gizé",  ptbr_name: "Pirâmides de Gizé",  group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    it_name: "Sharm el-Sheikh",    fr_name: "Sharm el-Cheikh",    pt_name: "Sharm el-Sheikh",    ptbr_name: "Sharm el-Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
+    { ar_name: "الأقصر",         en_name: "Luxor",              it_name: "Luxor",              fr_name: "Louxor",             pt_name: "Luxor",              ptbr_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
   ],
 
   // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
@@ -670,54 +763,90 @@ window.SITE_CONFIG = {
     { mark: "$",
       ar_title: "أسعار أقل من المواقع الرسمية", ar_desc: "بنستفيد من اتفاقيات مع موردين عالميين عشان نوفرلك سعر أفضل.",
       en_title: "Lower prices than official sites", en_desc: "We benefit from agreements with global suppliers to get you a better price.",
-      it_title: "Prezzi più bassi dei siti ufficiali", it_desc: "Grazie ad accordi con fornitori globali, ti garantiamo il prezzo migliore." },
+      it_title: "Prezzi più bassi dei siti ufficiali", it_desc: "Grazie ad accordi con fornitori globali, ti garantiamo il prezzo migliore.",
+      fr_title: "Prix plus bas que les sites officiels", fr_desc: "Nous bénéficions d'accords avec des fournisseurs mondiaux pour vous obtenir un meilleur prix.",
+      pt_title: "Preços mais baixos do que os sites oficiais", pt_desc: "Beneficiamos de acordos com fornecedores globais para lhe garantir o melhor preço.",
+      ptbr_title: "Preços mais baixos que os sites oficiais", ptbr_desc: "A gente tem parcerias com fornecedores globais pra garantir o melhor preço pra você." },
     { mark: "💬",
       ar_title: "تواصل مباشر وسهل", ar_desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.",
       en_title: "Direct, easy communication", en_desc: "Direct contact via WhatsApp or Facebook, no complicated steps.",
-      it_title: "Comunicazione diretta e semplice", it_desc: "Contatto diretto su WhatsApp o Facebook, senza passaggi complicati." },
+      it_title: "Comunicazione diretta e semplice", it_desc: "Contatto diretto su WhatsApp o Facebook, senza passaggi complicati.",
+      fr_title: "Communication directe et facile", fr_desc: "Contact direct via WhatsApp ou Facebook, sans étapes compliquées.",
+      pt_title: "Comunicação direta e fácil", pt_desc: "Contacto direto via WhatsApp ou Facebook, sem passos complicados.",
+      ptbr_title: "Comunicação direta e fácil", ptbr_desc: "Contato direto pelo WhatsApp ou Facebook, sem burocracia." },
     { mark: "🤝",
       ar_title: "متابعة شخصية لحجزك", ar_desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.",
       en_title: "Personal follow-up on your booking", en_desc: "Someone follows up with you from the moment you ask until you travel.",
-      it_title: "Assistenza personale per la tua prenotazione", it_desc: "Qualcuno segue la tua prenotazione dal momento in cui chiedi fino alla partenza." }
+      it_title: "Assistenza personale per la tua prenotazione", it_desc: "Qualcuno segue la tua prenotazione dal momento in cui chiedi fino alla partenza.",
+      fr_title: "Suivi personnalisé de votre réservation", fr_desc: "Quelqu'un suit votre réservation du moment où vous demandez jusqu'à votre voyage.",
+      pt_title: "Acompanhamento pessoal da sua reserva", pt_desc: "Alguém acompanha a sua reserva desde o momento em que pergunta até à viagem.",
+      ptbr_title: "Acompanhamento pessoal da sua reserva", ptbr_desc: "Alguém acompanha sua reserva desde o momento que você pergunta até a viagem." }
   ],
 
   // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
   founderNote: {
     ar_quote: "هدفنا إننا نخلي السفر متاح للجميع، من غير ما تدفع زيادة.", ar_attribution: "فريق سافر Discounts",
     en_quote: "Our goal is to make travel accessible to everyone, without paying extra.", en_attribution: "The Safer Discounts Team",
-    it_quote: "Il nostro obiettivo è rendere i viaggi accessibili a tutti, senza costi aggiuntivi.", it_attribution: "Il Team di Safer Discounts"
+    it_quote: "Il nostro obiettivo è rendere i viaggi accessibili a tutti, senza costi aggiuntivi.", it_attribution: "Il Team di Safer Discounts",
+    fr_quote: "Notre objectif est de rendre le voyage accessible à tous, sans frais supplémentaires.", fr_attribution: "L'équipe Safer Discounts",
+    pt_quote: "O nosso objetivo é tornar a viagem acessível a todos, sem custos adicionais.", pt_attribution: "A Equipa Safer Discounts",
+    ptbr_quote: "Nosso objetivo é tornar a viagem acessível pra todo mundo, sem custo extra.", ptbr_attribution: "O Time Safer Discounts"
   },
 
   // أسئلة شائعة — لإضافة سؤال جديد انسخ سطر وغيّر البيانات باللغتين
   faq: [
     { ar_q: "الأسعار دي أقل من المواقع الرسمية إزاي؟", ar_a: "بنشتغل مع موردين وشركات طيران وفنادق باتفاقيات خاصة بتديلنا أسعار جملة، وبنقلك جزء من الفرق ده بدل ما ياخده الوسيط.",
       en_q: "How are your prices lower than official sites?", en_a: "We work with suppliers, airlines and hotels on special wholesale agreements, and pass part of that difference on to you.",
-      it_q: "Perché i vostri prezzi sono più bassi dei siti ufficiali?", it_a: "Lavoriamo con fornitori, compagnie aeree e hotel con accordi speciali all'ingrosso, e trasferiamo parte di quella differenza a te invece che a un intermediario." },
+      it_q: "Perché i vostri prezzi sono più bassi dei siti ufficiali?", it_a: "Lavoriamo con fornitori, compagnie aeree e hotel con accordi speciali all'ingrosso, e trasferiamo parte di quella differenza a te invece che a un intermediario.",
+      fr_q: "Pourquoi vos prix sont-ils inférieurs aux sites officiels?", fr_a: "Nous travaillons avec des fournisseurs, compagnies aériennes et hôtels sur des accords de gros spéciaux, et vous transférons une partie de cette différence.",
+      pt_q: "Porque são os vossos preços mais baixos do que os sites oficiais?", pt_a: "Trabalhamos com fornecedores, companhias aéreas e hotéis em acordos especiais por grosso, e transferimos parte dessa diferença para si.",
+      ptbr_q: "Por que os preços de vocês são mais baixos que os sites oficiais?", ptbr_a: "A gente trabalha com fornecedores, companhias aéreas e hotéis em acordos especiais de atacado, e passamos parte dessa diferença pra você." },
     { ar_q: "الدفع بيتم إزاي؟", ar_a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة.",
       en_q: "How do I pay?", en_a: "Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all booking details with you before you pay anything.",
-      it_q: "Come posso pagare?", it_a: "Il pagamento avviene tramite bonifico bancario, Vodafone Cash o InstaPay, e confermiamo tutti i dettagli della prenotazione prima che tu paghi qualsiasi cosa." },
+      it_q: "Come posso pagare?", it_a: "Il pagamento avviene tramite bonifico bancario, Vodafone Cash o InstaPay, e confermiamo tutti i dettagli della prenotazione prima che tu paghi qualsiasi cosa.",
+      fr_q: "Comment puis-je payer?", fr_a: "Le paiement se fait par virement bancaire, Vodafone Cash, ou InstaPay, et nous confirmons tous les détails de la réservation avant que vous ne payiez quoi que ce soit.",
+      pt_q: "Como posso pagar?", pt_a: "O pagamento é feito por transferência bancária, Vodafone Cash, ou InstaPay, e confirmamos todos os detalhes da reserva antes de pagar qualquer coisa.",
+      ptbr_q: "Como eu pago?", ptbr_a: "O pagamento é feito por transferência bancária, Vodafone Cash, ou InstaPay, e confirmamos todos os detalhes da reserva antes de você pagar qualquer coisa." },
     { ar_q: "الحجز هيبقى باسمي أنا؟", ar_a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه.",
       en_q: "Will the booking be in my own name?", en_a: "Yes, the ticket or hotel booking is made in your exact name and details, and you receive the official confirmation from the airline or hotel itself.",
-      it_q: "La prenotazione sarà a mio nome?", it_a: "Sì, il biglietto o la prenotazione dell'hotel viene effettuata esattamente a tuo nome e con i tuoi dati, e ricevi la conferma ufficiale direttamente dalla compagnia aerea o dall'hotel." },
+      it_q: "La prenotazione sarà a mio nome?", it_a: "Sì, il biglietto o la prenotazione dell'hotel viene effettuata esattamente a tuo nome e con i tuoi dati, e ricevi la conferma ufficiale direttamente dalla compagnia aerea o dall'hotel.",
+      fr_q: "La réservation sera-t-elle à mon nom?", fr_a: "Oui, le billet ou la réservation d'hôtel est fait exactement à votre nom et avec vos informations, et vous recevez la confirmation officielle directement de la compagnie aérienne ou de l'hôtel.",
+      pt_q: "A reserva será em meu nome?", pt_a: "Sim, o bilhete ou a reserva do hotel é feita exatamente em seu nome e com os seus dados, e recebe a confirmação oficial diretamente da companhia aérea ou do hotel.",
+      ptbr_q: "A reserva vai estar no meu nome?", ptbr_a: "Sim, a passagem ou reserva do hotel é feita exatamente no seu nome e com seus dados, e você recebe a confirmação oficial direto da companhia aérea ou do hotel." },
     { ar_q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", ar_a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
       en_q: "If I change my mind after booking, can I cancel?", en_a: "Cancellation follows the airline's or hotel's own policy (some bookings are refundable, others aren't), and we explain this before you confirm, not after.",
-      it_q: "Se cambio idea dopo aver prenotato, posso cancellare?", it_a: "La cancellazione segue la politica della compagnia aerea o dell'hotel stesso (alcune prenotazioni sono rimborsabili, altre no), e te lo spieghiamo prima della conferma, non dopo." },
+      it_q: "Se cambio idea dopo aver prenotato, posso cancellare?", it_a: "La cancellazione segue la politica della compagnia aerea o dell'hotel stesso (alcune prenotazioni sono rimborsabili, altre no), e te lo spieghiamo prima della conferma, non dopo.",
+      fr_q: "Si je change d'avis après avoir réservé, puis-je annuler?", fr_a: "L'annulation suit la politique de la compagnie aérienne ou de l'hôtel lui-même (certaines réservations sont remboursables, d'autres non), et nous vous l'expliquons avant la confirmation, pas après.",
+      pt_q: "Se mudar de ideias depois de reservar, posso cancelar?", pt_a: "O cancelamento segue a política da própria companhia aérea ou hotel (algumas reservas são reembolsáveis, outras não), e explicamos isto antes da confirmação, não depois.",
+      ptbr_q: "Se eu mudar de ideia depois de reservar, posso cancelar?", ptbr_a: "O cancelamento segue a política da própria companhia aérea ou hotel (algumas reservas têm reembolso, outras não), e a gente explica isso antes da confirmação, não depois." },
     { ar_q: "قد إيه المفروض أحجز قبل السفر؟", ar_a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها.",
       en_q: "How far in advance should I book?", en_a: "The earlier you book, the better the prices — but reach out even for a last-minute trip and we'll find the best price available then.",
-      it_q: "Con quanto anticipo dovrei prenotare?", it_a: "Prima prenoti, migliori sono i prezzi — ma puoi contattarci anche per un viaggio last-minute e troveremo il miglior prezzo disponibile in quel momento." }
+      it_q: "Con quanto anticipo dovrei prenotare?", it_a: "Prima prenoti, migliori sono i prezzi — ma puoi contattarci anche per un viaggio last-minute e troveremo il miglior prezzo disponibile in quel momento.",
+      fr_q: "Combien de temps à l'avance devrais-je réserver?", fr_a: "Plus tôt vous réservez, meilleurs sont les prix — mais contactez-nous même pour un voyage de dernière minute et nous trouverons le meilleur prix disponible à ce moment.",
+      pt_q: "Com quanto tempo de antecedência devo reservar?", pt_a: "Quanto mais cedo reservar, melhores são os preços — mas contacte-nos mesmo para uma viagem de última hora e encontraremos o melhor preço disponível nessa altura.",
+      ptbr_q: "Com quanto tempo de antecedência eu devo reservar?", ptbr_a: "Quanto mais cedo você reservar, melhores os preços — mas fala com a gente mesmo de última hora que a gente acha o melhor preço disponível na hora." }
   ],
 
   // خطوات الحجز
   steps: [
     { n: "01", ar_title: "ابعتلنا تفاصيل رحلتك",  ar_desc: "الوجهة، التاريخ، وعدد الأفراد — عبر واتساب أو فيسبوك.",
       en_title: "Send us your trip details", en_desc: "Destination, date, and number of travelers — via WhatsApp or Facebook.",
-      it_title: "Inviaci i dettagli del tuo viaggio", it_desc: "Destinazione, data e numero di viaggiatori — via WhatsApp o Facebook." },
+      it_title: "Inviaci i dettagli del tuo viaggio", it_desc: "Destinazione, data e numero di viaggiatori — via WhatsApp o Facebook.",
+      fr_title: "Envoyez-nous les détails de votre voyage", fr_desc: "Destination, date, et nombre de voyageurs — via WhatsApp ou Facebook.",
+      pt_title: "Envie-nos os detalhes da sua viagem", pt_desc: "Destino, data, e número de viajantes — via WhatsApp ou Facebook.",
+      ptbr_title: "Manda os detalhes da sua viagem", ptbr_desc: "Destino, data, e número de viajantes — pelo WhatsApp ou Facebook." },
     { n: "02", ar_title: "هنبعتلك أفضل سعر متاح", ar_desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.",
       en_title: "We'll send you the best price", en_desc: "We compare available options and recommend the best price and timing.",
-      it_title: "Ti invieremo il prezzo migliore", it_desc: "Confrontiamo le opzioni disponibili e ti consigliamo il prezzo e l'orario più adatti." },
+      it_title: "Ti invieremo il prezzo migliore", it_desc: "Confrontiamo le opzioni disponibili e ti consigliamo il prezzo e l'orario più adatti.",
+      fr_title: "Nous vous envoyons le meilleur prix", fr_desc: "Nous comparons les options disponibles et vous recommandons le meilleur prix et horaire.",
+      pt_title: "Enviamos-lhe o melhor preço", pt_desc: "Comparamos as opções disponíveis e recomendamos o melhor preço e horário.",
+      ptbr_title: "A gente manda o melhor preço", ptbr_desc: "Comparamos as opções disponíveis e recomendamos o melhor preço e horário." },
     { n: "03", ar_title: "تأكيد الحجز",           ar_desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك.",
       en_title: "Confirm your booking", en_desc: "Once you're happy with the price and details, we confirm your booking and send your ticket.",
-      it_title: "Conferma la prenotazione", it_desc: "Una volta soddisfatto del prezzo e dei dettagli, confermiamo la tua prenotazione e ti inviamo il biglietto." }
+      it_title: "Conferma la prenotazione", it_desc: "Una volta soddisfatto del prezzo e dei dettagli, confermiamo la tua prenotazione e ti inviamo il biglietto.",
+      fr_title: "Confirmez votre réservation", fr_desc: "Une fois satisfait du prix et des détails, nous confirmons votre réservation et vous envoyons votre billet.",
+      pt_title: "Confirme a sua reserva", pt_desc: "Depois de estar satisfeito com o preço e os detalhes, confirmamos a sua reserva e enviamos o seu bilhete.",
+      ptbr_title: "Confirme sua reserva", ptbr_desc: "Depois que você aprovar o preço e os detalhes, a gente confirma sua reserva e manda sua passagem." }
   ]
 };
 </script>
@@ -735,12 +864,16 @@ window.SITE_CONFIG = {
       <a href="#reviews" data-nav="reviews"></a>
       <a href="#how" data-nav="how"></a>
       <a href="#faq" data-nav="faq"></a>
+      <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
     </div>
     <div class="nav-right">
       <div class="lang-switch" id="lang-switch">
         <button class="lang-btn" data-lang="ar" type="button">AR</button>
         <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
         <button class="lang-btn" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
       </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
@@ -1050,6 +1183,7 @@ window.SITE_CONFIG = {
     document.querySelector('[data-nav="reviews"]').textContent = t.nav.reviews;
     document.querySelector('[data-nav="how"]').textContent = t.nav.how;
     document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
+    document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
     document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
 
     // Hero
