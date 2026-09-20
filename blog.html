@@ -59,13 +59,14 @@
   .nav-links a{opacity:0.85;transition:opacity .2s;}
   .nav-links a:hover{opacity:1;color:var(--brand-blue);}
   .nav-right{display:flex;align-items:center;gap:12px;}
-  .lang-toggle{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
-    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
-    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
-    transition:background .2s, color .2s;
+  .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
+  .lang-btn{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;
+    border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
+    padding:6px 8px;cursor:pointer;transition:background .2s, color .2s;white-space:nowrap;
   }
-  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .lang-btn.active{background:var(--brand-blue);color:#fff;}
+  .lang-btn:not(.active):hover{background:rgba(3,101,163,0.15);}
   .nav-cta{
     display:flex;align-items:center;gap:8px;
     background:var(--brand-orange);color:#fff;
@@ -218,8 +219,15 @@
 <script>
 window.BLOG_CONFIG = {
   contact: {
-    whatsappNumber: "201116666306",
-    whatsappDefaultMessage: { ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book" },
+    whatsappNumberByLang: {
+      ar: "201116666306", en: "201116666306", fr: "201116666306",
+      it: "393801991992", pt: "201116666306", ptbr: "201116666306"
+    },
+    whatsappDefaultMessage: {
+      ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book",
+      fr: "Bonjour, je voudrais réserver", it: "Ciao, vorrei prenotare",
+      pt: "Olá, gostaria de reservar", ptbr: "Oi, eu queria reservar"
+    },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
     email: "info@saferdiscounts.com",
@@ -263,6 +271,74 @@ window.BLOG_CONFIG = {
       comingSoon: "Coming soon",
       fullGuide: "Full Guide",
       byline: "By Sara"
+    },
+    fr: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Appeler", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tous droits réservés.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Blog de Sara",
+        p: "Voici tout ce que Sara veut partager avec vous : un guide de réservation étape par étape, des visites des meilleurs sites, des guides complets pour apprendre les langues, et des recettes saines pour voyageurs."
+      },
+      categories: { booking: "Guide de Réservation", destinations: "Destinations & Sites", languages: "Apprentissage des Langues", diet: "Recettes Diététiques" },
+      readMore: "Lire l'article",
+      readGuide: "Ouvrir le guide complet",
+      comingSoon: "Bientôt disponible",
+      fullGuide: "Guide Complet",
+      byline: "Par Sara"
+    },
+    it: {
+      brand: "Safer Discounts",
+      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", cta: "Prenota su WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Chiama", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tutti i diritti riservati.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Blog di Sara",
+        p: "Qui trovi tutto quello che Sara vuole condividere con te: una guida di prenotazione passo dopo passo, tour dei luoghi più famosi, guide complete per imparare le lingue, e ricette sane per viaggiatori."
+      },
+      categories: { booking: "Guida alla Prenotazione", destinations: "Destinazioni e Luoghi", languages: "Imparare le Lingue", diet: "Ricette Dietetiche" },
+      readMore: "Leggi l'articolo",
+      readGuide: "Apri la guida completa",
+      comingSoon: "Prossimamente",
+      fullGuide: "Guida Completa",
+      byline: "Di Sara"
+    },
+    pt: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Blog da Sara",
+        p: "Aqui encontra tudo o que a Sara quer partilhar consigo: um guia de reserva passo a passo, visitas aos principais locais, guias completos para aprender línguas, e receitas saudáveis para viajantes."
+      },
+      categories: { booking: "Guia de Reserva", destinations: "Destinos e Locais", languages: "Aprender Línguas", diet: "Receitas de Dieta" },
+      readMore: "Ler o artigo",
+      readGuide: "Abrir o guia completo",
+      comingSoon: "Brevemente",
+      fullGuide: "Guia Completo",
+      byline: "Por Sara"
+    },
+    ptbr: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Blog da Sara",
+        p: "Aqui você encontra tudo que a Sara quer compartilhar com você: um guia de reserva passo a passo, passeios pelos principais pontos turísticos, guias completos pra aprender idiomas, e receitas saudáveis pra viajantes."
+      },
+      categories: { booking: "Guia de Reserva", destinations: "Destinos e Pontos Turísticos", languages: "Aprender Idiomas", diet: "Receitas de Dieta" },
+      readMore: "Ler o artigo",
+      readGuide: "Abrir o guia completo",
+      comingSoon: "Em breve",
+      fullGuide: "Guia Completo",
+      byline: "Por Sara"
     }
   },
   posts: [
@@ -357,7 +433,14 @@ window.BLOG_CONFIG = {
       <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
     </div>
     <div class="nav-right">
-      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="ar" type="button">AR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        <button class="lang-btn" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+      </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
   </nav>
@@ -409,8 +492,9 @@ window.BLOG_CONFIG = {
   var activeFilter = 'all';
 
   function waLink(lang){
+    var num = cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumberByLang.ar;
     var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
-    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
+    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
   }
 
   function cardHtml(post, lang, t){
@@ -464,7 +548,9 @@ window.BLOG_CONFIG = {
     var t = cfg.i18n[lang];
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
 
     document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
     document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
@@ -495,8 +581,10 @@ window.BLOG_CONFIG = {
     document.getElementById('footer-copyright').textContent = t.footerCopyright;
   }
 
-  document.getElementById('lang-toggle').addEventListener('click', function(){
-    render(currentLang === 'ar' ? 'en' : 'ar');
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      render(btn.getAttribute('data-lang'));
+    });
   });
 
   render('ar');
