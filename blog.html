@@ -202,6 +202,7 @@
     .blog-grid{grid-template-columns:1fr 1fr;}
     .blog-hero-inner{grid-template-columns:1fr;text-align:center;}
     .blog-hero-photo{margin:0 auto;}
+    .nav-links{display:none;}
   }
   @media (max-width:600px){
     .blog-grid{grid-template-columns:1fr;}
@@ -219,14 +220,14 @@
 <script>
 window.BLOG_CONFIG = {
   contact: {
-    whatsappNumberByLang: {
-      ar: "201116666306", en: "201116666306", fr: "201116666306",
-      it: "393801991992", pt: "201116666306", ptbr: "201116666306"
-    },
+    whatsappNumber: "201116666306",
     whatsappDefaultMessage: {
-      ar: "مرحباً، عايز أحجز", en: "Hello, I'd like to book",
-      fr: "Bonjour, je voudrais réserver", it: "Ciao, vorrei prenotare",
-      pt: "Olá, gostaria de reservar", ptbr: "Oi, eu queria reservar"
+      ar: "مرحباً، عايز أحجز",
+      en: "Hello, I'd like to book",
+      it: "Ciao, vorrei prenotare",
+      fr: "Bonjour, je voudrais réserver",
+      pt: "Olá, gostaria de reservar",
+      ptbr: "Oi, eu queria reservar"
     },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
@@ -272,23 +273,6 @@ window.BLOG_CONFIG = {
       fullGuide: "Full Guide",
       byline: "By Sara"
     },
-    fr: {
-      brand: "Safer Discounts",
-      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
-      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Appeler", em: "Email" },
-      footerCopyright: "© 2026 Safer Discounts. Tous droits réservés.",
-      blogHero: {
-        eyebrow: "✦ BLOG PASS · Sara",
-        h1: "Blog de Sara",
-        p: "Voici tout ce que Sara veut partager avec vous : un guide de réservation étape par étape, des visites des meilleurs sites, des guides complets pour apprendre les langues, et des recettes saines pour voyageurs."
-      },
-      categories: { booking: "Guide de Réservation", destinations: "Destinations & Sites", languages: "Apprentissage des Langues", diet: "Recettes Diététiques" },
-      readMore: "Lire l'article",
-      readGuide: "Ouvrir le guide complet",
-      comingSoon: "Bientôt disponible",
-      fullGuide: "Guide Complet",
-      byline: "Par Sara"
-    },
     it: {
       brand: "Safer Discounts",
       nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", cta: "Prenota su WhatsApp" },
@@ -296,15 +280,32 @@ window.BLOG_CONFIG = {
       footerCopyright: "© 2026 Safer Discounts. Tutti i diritti riservati.",
       blogHero: {
         eyebrow: "✦ BLOG PASS · Sara",
-        h1: "Blog di Sara",
-        p: "Qui trovi tutto quello che Sara vuole condividere con te: una guida di prenotazione passo dopo passo, tour dei luoghi più famosi, guide complete per imparare le lingue, e ricette sane per viaggiatori."
+        h1: "Il Blog di Sara",
+        p: "Qui trovi tutto quello che Sara vuole condividere con te: come prenotare passo dopo passo, tour dei luoghi più famosi, guide linguistiche complete, e ricette sane per chi viaggia."
       },
-      categories: { booking: "Guida alla Prenotazione", destinations: "Destinazioni e Luoghi", languages: "Imparare le Lingue", diet: "Ricette Dietetiche" },
+      categories: { booking: "Guida alla Prenotazione", destinations: "Turismo e Luoghi", languages: "Imparare le Lingue", diet: "Ricette Dietetiche" },
       readMore: "Leggi l'articolo",
       readGuide: "Apri la guida completa",
       comingSoon: "Prossimamente",
       fullGuide: "Guida Completa",
-      byline: "Di Sara"
+      byline: "di Sara"
+    },
+    fr: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Appeler", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tous droits réservés.",
+      blogHero: {
+        eyebrow: "✦ BLOG PASS · Sara",
+        h1: "Le Blog de Sara",
+        p: "Vous trouverez ici tout ce que Sara veut partager avec vous : comment réserver étape par étape, des visites des plus beaux sites, des guides de langues complets, et des recettes saines pour les voyageurs."
+      },
+      categories: { booking: "Guide de Réservation", destinations: "Tourisme et Sites", languages: "Apprentissage des Langues", diet: "Recettes Diététiques" },
+      readMore: "Lire l'article",
+      readGuide: "Ouvrir le guide complet",
+      comingSoon: "Bientôt disponible",
+      fullGuide: "Guide Complet",
+      byline: "Par Sara"
     },
     pt: {
       brand: "Safer Discounts",
@@ -313,10 +314,10 @@ window.BLOG_CONFIG = {
       footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados.",
       blogHero: {
         eyebrow: "✦ BLOG PASS · Sara",
-        h1: "Blog da Sara",
-        p: "Aqui encontra tudo o que a Sara quer partilhar consigo: um guia de reserva passo a passo, visitas aos principais locais, guias completos para aprender línguas, e receitas saudáveis para viajantes."
+        h1: "O Blog da Sara",
+        p: "Aqui vai encontrar tudo o que a Sara quer partilhar consigo: como reservar passo a passo, visitas aos monumentos mais famosos, guias de línguas completos, e receitas saudáveis para viajantes."
       },
-      categories: { booking: "Guia de Reserva", destinations: "Destinos e Locais", languages: "Aprender Línguas", diet: "Receitas de Dieta" },
+      categories: { booking: "Guia de Reserva", destinations: "Turismo e Monumentos", languages: "Aprender Línguas", diet: "Receitas de Dieta" },
       readMore: "Ler o artigo",
       readGuide: "Abrir o guia completo",
       comingSoon: "Brevemente",
@@ -331,9 +332,9 @@ window.BLOG_CONFIG = {
       blogHero: {
         eyebrow: "✦ BLOG PASS · Sara",
         h1: "Blog da Sara",
-        p: "Aqui você encontra tudo que a Sara quer compartilhar com você: um guia de reserva passo a passo, passeios pelos principais pontos turísticos, guias completos pra aprender idiomas, e receitas saudáveis pra viajantes."
+        p: "Aqui você encontra tudo que a Sara quer compartilhar com você: como reservar passo a passo, passeios pelos pontos turísticos mais famosos, guias completos de idiomas, e receitas saudáveis pra quem viaja."
       },
-      categories: { booking: "Guia de Reserva", destinations: "Destinos e Pontos Turísticos", languages: "Aprender Idiomas", diet: "Receitas de Dieta" },
+      categories: { booking: "Guia de Reserva", destinations: "Turismo e Pontos Turísticos", languages: "Aprender Idiomas", diet: "Receitas Fit" },
       readMore: "Ler o artigo",
       readGuide: "Abrir o guia completo",
       comingSoon: "Em breve",
@@ -347,72 +348,144 @@ window.BLOG_CONFIG = {
       image: "images/blog-italian.jpg",
       ar_title: "دليلك الكامل لتعلم الإيطالي",
       en_title: "Your Complete Guide to Learning Italian",
+      it_title: "La Tua Guida Completa per Imparare l'Italiano",
+      fr_title: "Votre Guide Complet pour Apprendre l'Italien",
+      pt_title: "O Seu Guia Completo para Aprender Italiano",
+      ptbr_title: "Seu Guia Completo para Aprender Italiano",
       ar_excerpt: "كتيب كامل أساسي ومتقدم — نطق، قواعد، مفردات سفر، وحوارات عملية قبل رحلتك لإيطاليا.",
-      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to Italy."
+      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to Italy.",
+      it_excerpt: "Un manuale completo, base e avanzato — pronuncia, grammatica, vocabolario di viaggio e dialoghi pratici prima del tuo viaggio in Italia.",
+      fr_excerpt: "Un guide complet, niveau débutant et avancé — prononciation, grammaire, vocabulaire de voyage et dialogues pratiques avant votre voyage en Italie.",
+      pt_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem a Itália.",
+      ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra Itália."
     },
     {
       category: "languages", status: "published", isFullGuide: true, url: "guide-french.html",
       image: "images/blog-french.jpg",
       ar_title: "دليلك الكامل لتعلم الفرنساوي",
       en_title: "Your Complete Guide to Learning French",
+      it_title: "La Tua Guida Completa per Imparare il Francese",
+      fr_title: "Votre Guide Complet pour Apprendre le Français",
+      pt_title: "O Seu Guia Completo para Aprender Francês",
+      ptbr_title: "Seu Guia Completo para Aprender Francês",
       ar_excerpt: "كتيب كامل أساسي ومتقدم — نطق، قواعد، مفردات سفر، وحوارات عملية قبل رحلتك لفرنسا.",
-      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to France."
+      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to France.",
+      it_excerpt: "Un manuale completo, base e avanzato — pronuncia, grammatica, vocabolario di viaggio e dialoghi pratici prima del tuo viaggio in Francia.",
+      fr_excerpt: "Un guide complet, niveau débutant et avancé — prononciation, grammaire, vocabulaire de voyage et dialogues pratiques avant votre voyage en France.",
+      pt_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem a França.",
+      ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra França."
     },
     {
       category: "languages", status: "published", isFullGuide: true, url: "guide-portuguese-brazilian.html",
       image: "images/blog-portuguese.jpg",
       ar_title: "دليلك الكامل لتعلم البرتغالي البرازيلي",
       en_title: "Your Complete Guide to Learning Brazilian Portuguese",
+      it_title: "La Tua Guida Completa per Imparare il Portoghese Brasiliano",
+      fr_title: "Votre Guide Complet pour Apprendre le Portugais Brésilien",
+      pt_title: "O Seu Guia Completo para Aprender Português do Brasil",
+      ptbr_title: "Seu Guia Completo para Aprender Português do Brasil",
       ar_excerpt: "كتيب كامل أساسي ومتقدم — نطق، قواعد، مفردات سفر، وحوارات عملية قبل رحلتك للبرازيل.",
-      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to Brazil."
+      en_excerpt: "A complete basic + advanced guidebook — pronunciation, grammar, travel vocabulary, and practical dialogues before your trip to Brazil.",
+      it_excerpt: "Un manuale completo, base e avanzato — pronuncia, grammatica, vocabolario di viaggio e dialoghi pratici prima del tuo viaggio in Brasile.",
+      fr_excerpt: "Un guide complet, niveau débutant et avancé — prononciation, grammaire, vocabulaire de voyage et dialogues pratiques avant votre voyage au Brésil.",
+      pt_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem ao Brasil.",
+      ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pro Brasil."
     },
     {
       category: "languages", status: "published", url: "blog-italian-phrases.html",
       image: "images/blog-italian.jpg",
       ar_title: "10 عبارات إيطالية هتحتاجها قبل ما تسافر",
       en_title: "10 Italian Phrases You'll Need Before You Travel",
+      it_title: "10 Frasi Italiane di cui Avrai Bisogno Prima di Partire",
+      fr_title: "10 Expressions Italiennes Utiles Avant de Voyager",
+      pt_title: "10 Expressões Italianas que Vai Precisar Antes de Viajar",
+      ptbr_title: "10 Frases em Italiano que Você Vai Precisar Antes de Viajar",
       ar_excerpt: "من التحية لحد الحساب في المطعم — سارة بتاخدك في أول درس سريع بالإيطالي قبل رحلتك.",
-      en_excerpt: "From saying hello to asking for the bill — Sara walks you through a quick first Italian lesson before your trip."
+      en_excerpt: "From saying hello to asking for the bill — Sara walks you through a quick first Italian lesson before your trip.",
+      it_excerpt: "Dal saluto al conto al ristorante — Sara ti guida in una prima lezione veloce d'italiano prima del viaggio.",
+      fr_excerpt: "Du bonjour à l'addition au restaurant — Sara vous guide dans un premier cours d'italien express avant votre voyage.",
+      pt_excerpt: "Do cumprimento à conta no restaurante — a Sara acompanha-o numa primeira lição rápida de italiano antes da sua viagem.",
+      ptbr_excerpt: "Do cumprimento até a conta no restaurante — a Sara te leva numa primeira aula rápida de italiano antes da sua viagem."
     },
     {
       category: "booking", status: "soon", url: "#",
       image: "images/blog-booking.jpg",
       ar_title: "إزاي تحجز فندقك في 3 خطوات على واتساب",
       en_title: "How to Book Your Hotel in 3 Steps on WhatsApp",
+      it_title: "Come Prenotare il Tuo Hotel in 3 Passi su WhatsApp",
+      fr_title: "Comment Réserver Votre Hôtel en 3 Étapes sur WhatsApp",
+      pt_title: "Como Reservar o Seu Hotel em 3 Passos no WhatsApp",
+      ptbr_title: "Como Reservar Seu Hotel em 3 Passos no WhatsApp",
       ar_excerpt: "سارة بتشرحلك طريقة الحجز كاملة، من أول رسالة لحد ما تستلم تذكرتك.",
-      en_excerpt: "Sara walks you through the full booking process, from the first message to receiving your ticket."
+      en_excerpt: "Sara walks you through the full booking process, from the first message to receiving your ticket.",
+      it_excerpt: "Sara ti spiega tutto il processo di prenotazione, dal primo messaggio fino a ricevere il tuo biglietto.",
+      fr_excerpt: "Sara vous explique tout le processus de réservation, du premier message jusqu'à la réception de votre billet.",
+      pt_excerpt: "A Sara explica todo o processo de reserva, desde a primeira mensagem até receber o seu bilhete.",
+      ptbr_excerpt: "A Sara explica todo o processo de reserva, desde a primeira mensagem até você receber sua passagem."
     },
     {
       category: "destinations", status: "soon", url: "#",
       image: "images/blog-giza.jpg",
       ar_title: "أهرامات الجيزة: دليلك الكامل قبل الزيارة",
       en_title: "Giza Pyramids: Your Complete Guide Before You Visit",
+      it_title: "Piramidi di Giza: La Tua Guida Completa Prima della Visita",
+      fr_title: "Pyramides de Gizeh : Votre Guide Complet Avant la Visite",
+      pt_title: "Pirâmides de Gizé: O Seu Guia Completo Antes da Visita",
+      ptbr_title: "Pirâmides de Gizé: Seu Guia Completo Antes da Visita",
       ar_excerpt: "أحسن وقت للزيارة، وإيه اللي لازم تعرفه قبل ما توصل، من كواليس سارة.",
-      en_excerpt: "The best time to visit, and everything to know before you arrive — from Sara's own notes."
+      en_excerpt: "The best time to visit, and everything to know before you arrive — from Sara's own notes.",
+      it_excerpt: "Il momento migliore per visitarle, e tutto quello che devi sapere prima di arrivare — dagli appunti di Sara.",
+      fr_excerpt: "Le meilleur moment pour visiter, et tout ce qu'il faut savoir avant d'arriver — tiré des notes de Sara.",
+      pt_excerpt: "A melhor altura para visitar, e tudo o que precisa de saber antes de chegar — das notas da própria Sara.",
+      ptbr_excerpt: "A melhor época pra visitar, e tudo que você precisa saber antes de chegar — direto das anotações da Sara."
     },
     {
       category: "diet", status: "soon", url: "#",
       image: "images/blog-diet.jpg",
       ar_title: "طبق باستا صحي وسريع في 20 دقيقة",
       en_title: "A Healthy, Quick Pasta Dish in 20 Minutes",
+      it_title: "Un Piatto di Pasta Sano e Veloce in 20 Minuti",
+      fr_title: "Un Plat de Pâtes Sain et Rapide en 20 Minutes",
+      pt_title: "Um Prato de Massa Saudável e Rápido em 20 Minutos",
+      ptbr_title: "Um Prato de Massa Saudável e Rápido em 20 Minutos",
       ar_excerpt: "وصفة سهلة من مطبخ سارة، مناسبة ليلة قبل رحلة أو بعد يوم سفر طويل.",
-      en_excerpt: "An easy recipe from Sara's kitchen — perfect the night before a trip or after a long travel day."
+      en_excerpt: "An easy recipe from Sara's kitchen — perfect the night before a trip or after a long travel day.",
+      it_excerpt: "Una ricetta facile dalla cucina di Sara, perfetta la sera prima di un viaggio o dopo una lunga giornata di trasferte.",
+      fr_excerpt: "Une recette facile de la cuisine de Sara, parfaite la veille d'un voyage ou après une longue journée de trajet.",
+      pt_excerpt: "Uma receita fácil da cozinha da Sara, perfeita na véspera de uma viagem ou depois de um dia de viagem longo.",
+      ptbr_excerpt: "Uma receita fácil da cozinha da Sara, perfeita na véspera de uma viagem ou depois de um dia longo de viagem."
     },
     {
       category: "languages", status: "soon", url: "#",
       image: "images/blog-spanish.jpg",
       ar_title: "10 عبارات إسبانية أساسية للمسافرين",
       en_title: "10 Essential Spanish Phrases for Travelers",
+      it_title: "10 Frasi Spagnole Essenziali per Viaggiatori",
+      fr_title: "10 Expressions Espagnoles Essentielles pour les Voyageurs",
+      pt_title: "10 Expressões Essenciais em Espanhol para Viajantes",
+      ptbr_title: "10 Frases Essenciais em Espanhol para Viajantes",
       ar_excerpt: "درس سريع من سارة قبل ما تسافر إسبانيا — من غير تعقيد.",
-      en_excerpt: "A quick lesson from Sara before you travel to Spain — no complications."
+      en_excerpt: "A quick lesson from Sara before you travel to Spain — no complications.",
+      it_excerpt: "Una lezione veloce di Sara prima di viaggiare in Spagna — senza complicazioni.",
+      fr_excerpt: "Un cours express de Sara avant de voyager en Espagne — sans complications.",
+      pt_excerpt: "Uma lição rápida da Sara antes de viajar para Espanha — sem complicações.",
+      ptbr_excerpt: "Uma aula rápida da Sara antes de você viajar pra Espanha — sem complicação."
     },
     {
       category: "destinations", status: "soon", url: "#",
       image: "images/blog-istanbul.jpg",
       ar_title: "إسطنبول: أهم الأماكن اللي لازم تزورها",
       en_title: "Istanbul: The Top Places You Need to Visit",
+      it_title: "Istanbul: I Luoghi Più Importanti da Visitare",
+      fr_title: "Istanbul : Les Lieux Incontournables à Visiter",
+      pt_title: "Istambul: Os Lugares Mais Importantes para Visitar",
+      ptbr_title: "Istambul: Os Lugares Mais Importantes pra Visitar",
       ar_excerpt: "جولة سارة في إسطنبول، من الأسواق القديمة لحد أجمل الإطلالات.",
-      en_excerpt: "Sara's tour of Istanbul, from the old bazaars to the best views in the city."
+      en_excerpt: "Sara's tour of Istanbul, from the old bazaars to the best views in the city.",
+      it_excerpt: "Il tour di Sara a Istanbul, dai bazaar storici ai panorami più belli della città.",
+      fr_excerpt: "La visite d'Istanbul par Sara, des bazars historiques aux plus belles vues de la ville.",
+      pt_excerpt: "O passeio da Sara por Istambul, dos bazares antigos às melhores vistas da cidade.",
+      ptbr_excerpt: "O passeio da Sara por Istambul, dos bazares antigos até as melhores vistas da cidade."
     }
   ]
 };
@@ -436,8 +509,8 @@ window.BLOG_CONFIG = {
       <div class="lang-switch" id="lang-switch">
         <button class="lang-btn" data-lang="ar" type="button">AR</button>
         <button class="lang-btn" data-lang="en" type="button">EN</button>
-        <button class="lang-btn" data-lang="fr" type="button">FR</button>
         <button class="lang-btn" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
       </div>
@@ -492,14 +565,17 @@ window.BLOG_CONFIG = {
   var activeFilter = 'all';
 
   function waLink(lang){
-    var num = cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumberByLang.ar;
     var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
-    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
+  }
+
+  function pick(obj, field, lang){
+    return obj[lang + '_' + field] || obj['en_' + field] || obj['ar_' + field] || '';
   }
 
   function cardHtml(post, lang, t){
-    var title = lang === 'ar' ? post.ar_title : post.en_title;
-    var excerpt = lang === 'ar' ? post.ar_excerpt : post.en_excerpt;
+    var title = pick(post, 'title', lang);
+    var excerpt = pick(post, 'excerpt', lang);
     var catLabel = t.categories[post.category];
     var isSoon = post.status === 'soon';
     var isGuide = !!post.isFullGuide;
@@ -530,7 +606,7 @@ window.BLOG_CONFIG = {
   function renderFilters(lang, t){
     var cats = ['all'].concat(Object.keys(t.categories));
     document.getElementById('blog-filters').innerHTML = cats.map(function(c){
-      var label = c === 'all' ? (lang === 'ar' ? 'الكل' : 'All') : t.categories[c];
+      var label = c === 'all' ? (lang === 'ar' ? 'الكل' : (lang === 'it' ? 'Tutti' : (lang === 'fr' ? 'Tous' : (lang === 'pt' || lang === 'ptbr' ? 'Todos' : 'All')))) : t.categories[c];
       var active = c === activeFilter;
       return '<button type="button" class="blog-filter" data-cat="' + c + '" style="' +
              (active ? 'background:var(--brand-blue);color:#fff;' : '') + '">' + label + '</button>';
@@ -545,6 +621,7 @@ window.BLOG_CONFIG = {
 
   function render(lang){
     currentLang = lang;
+    try { localStorage.setItem('sd_lang', lang); } catch(e){}
     var t = cfg.i18n[lang];
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -573,7 +650,7 @@ window.BLOG_CONFIG = {
     renderGrid(lang, t);
 
     document.getElementById('footer-brand-text').textContent = t.brand;
-    document.getElementById('footer-home-text').textContent = lang === 'ar' ? 'الرئيسية' : 'Home';
+    document.getElementById('footer-home-text').textContent = lang === 'ar' ? 'الرئيسية' : (lang === 'it' ? 'Home' : (lang === 'fr' ? 'Accueil' : (lang === 'pt' || lang === 'ptbr' ? 'Início' : 'Home')));
     document.getElementById('footer-fb-text').textContent = t.contactBtns.fb;
     document.getElementById('footer-wa-text').textContent = t.contactBtns.wa;
     document.getElementById('footer-email-text').textContent = cfg.contact.email;
@@ -587,7 +664,9 @@ window.BLOG_CONFIG = {
     });
   });
 
-  render('ar');
+  var savedLang = null;
+  try { savedLang = localStorage.getItem('sd_lang'); } catch(e){}
+  render(cfg.i18n[savedLang] ? savedLang : 'ar');
 })();
 </script>
 
