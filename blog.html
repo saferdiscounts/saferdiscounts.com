@@ -344,7 +344,7 @@ window.BLOG_CONFIG = {
   },
   posts: [
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-italian.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-italian.html", targetLang: "it",
       image: "images/blog-italian.jpg",
       ar_title: "دليلك الكامل لتعلم الإيطالي",
       en_title: "Your Complete Guide to Learning Italian",
@@ -360,7 +360,7 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra Itália."
     },
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-french.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-french.html", targetLang: "fr",
       image: "images/blog-french.jpg",
       ar_title: "دليلك الكامل لتعلم الفرنساوي",
       en_title: "Your Complete Guide to Learning French",
@@ -376,7 +376,7 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra França."
     },
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-portuguese-brazilian.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-portuguese-brazilian.html", targetLang: "ptbr",
       image: "images/blog-portuguese.jpg",
       ar_title: "دليلك الكامل لتعلم البرتغالي البرازيلي",
       en_title: "Your Complete Guide to Learning Brazilian Portuguese",
@@ -456,7 +456,7 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Uma receita fácil da cozinha da Sara, perfeita na véspera de uma viagem ou depois de um dia longo de viagem."
     },
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-spanish.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-spanish.html", targetLang: "es",
       image: "images/blog-spanish.jpg",
       ar_title: "دليلك الكامل لتعلم الإسباني",
       en_title: "Your Complete Guide to Learning Spanish",
@@ -472,7 +472,7 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra Espanha."
     },
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-portuguese.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-portuguese.html", targetLang: "pt",
       image: "images/blog-portuguese-pt.jpg",
       ar_title: "دليلك الكامل لتعلم البرتغالي",
       en_title: "Your Complete Guide to Learning Portuguese",
@@ -488,7 +488,7 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos antes da sua viagem pra Portugal."
     },
     {
-      category: "languages", status: "published", isFullGuide: true, url: "guide-english.html",
+      category: "languages", status: "published", isFullGuide: true, url: "guide-english.html", targetLang: "en",
       image: "images/blog-english.jpg",
       ar_title: "دليلك الكامل لتعلم الإنجليزي",
       en_title: "Your Complete Guide to Learning English",
@@ -631,7 +631,10 @@ window.BLOG_CONFIG = {
 
   function renderGrid(lang, t){
     var grid = document.getElementById('blog-grid');
-    var posts = cfg.posts.filter(function(p){ return activeFilter === 'all' || p.category === activeFilter; });
+    var posts = cfg.posts.filter(function(p){
+      if (p.targetLang && p.targetLang === lang) return false;
+      return activeFilter === 'all' || p.category === activeFilter;
+    });
     grid.innerHTML = posts.map(function(p){ return cardHtml(p, lang, t); }).join('');
   }
 
