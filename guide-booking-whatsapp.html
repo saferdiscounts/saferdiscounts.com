@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إزاي تحجز فندقك في 3 خطوات على واتساب | بلوج سارة</title>
+<meta name="description" content="سارة بتشرحلك طريقة الحجز كاملة على سافر Discounts، من أول رسالة لحد ما تستلم تذكرتك.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Sara — Safer Discounts">
+<link rel="canonical" href="https://saferdiscounts.com/guide-booking-whatsapp.html">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--brand-blue:#0365A3;--brand-blue-dark:#023152;--brand-orange:#F1560B;--brand-orange-dark:#C7430A;--ink:#0B2036;--paper:#FFF9F1;--paper-card:#FFFFFF;--line:#E4D9C8;--whatsapp:#25D366;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Cairo',sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;overflow-x:hidden;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+  header{position:sticky;top:0;z-index:50;background:rgba(255,249,241,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
+  .brand img{height:44px;width:auto;}
+  .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
+  .nav-links a{opacity:0.85;transition:opacity .2s;}
+  .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-right{display:flex;align-items:center;gap:12px;}
+  .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
+  .lang-btn{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;border:none;color:var(--brand-blue);background:transparent;border-radius:999px;padding:6px 8px;cursor:pointer;transition:background .2s, color .2s;white-space:nowrap;}
+  .lang-btn.active{background:var(--brand-blue);color:#fff;}
+  .lang-btn:not(.active):hover{background:rgba(3,101,163,0.15);}
+  .nav-cta{display:flex;align-items:center;gap:8px;background:var(--brand-orange);color:#fff;padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px;box-shadow:0 4px 14px rgba(241,86,11,0.35);transition:transform .15s, box-shadow .15s;white-space:nowrap;}
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
+  .article-hero{background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 60%, #0483C9 100%);color:#fff;padding:52px 0 44px;position:relative;overflow:hidden;}
+  .article-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 88% 15%, rgba(255,255,255,0.10) 0, transparent 40%);}
+  .article-hero .wrap{position:relative;z-index:2;}
+  .article-back{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#FFD9B0;margin-bottom:20px;}
+  .article-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;background:rgba(255,255,255,0.12);border:1px dashed rgba(255,255,255,0.5);padding:6px 14px;border-radius:999px;display:inline-block;margin-bottom:18px;}
+  .article-hero h1{font-size:30px;font-weight:900;margin-bottom:14px;max-width:760px;line-height:1.45;}
+  .article-hero .sub{font-size:15.5px;opacity:0.9;max-width:600px;margin-bottom:22px;}
+  .article-byline{display:flex;align-items:center;gap:12px;}
+  .article-byline img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.7);}
+  .article-byline .name{font-weight:800;font-size:14.5px;}
+  .article-byline .meta{font-family:'IBM Plex Mono',monospace;font-size:11.5px;opacity:0.8;}
+  .article-body{max-width:740px;margin:0 auto;padding:56px 24px;}
+  .article-body p{font-size:16px;color:#3E4C58;margin-bottom:20px;}
+  .article-body h2{font-size:21px;font-weight:800;color:var(--brand-blue-dark);margin:36px 0 16px;}
+  .steps{display:flex;flex-direction:column;gap:16px;margin:22px 0 30px;}
+  .step{background:var(--paper-card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;display:flex;gap:18px;align-items:flex-start;box-shadow:0 8px 20px rgba(11,32,54,0.06);}
+  .step .n{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:700;color:var(--brand-orange);flex-shrink:0;}
+  .step h3{font-size:16.5px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:6px;}
+  .step p{font-size:14.5px;color:#4B5A66;margin:0;}
+  .tip-box{background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));color:#fff;border-radius:16px;padding:24px 26px;margin:30px 0;box-shadow:0 14px 30px rgba(241,86,11,0.2);}
+  .tip-box .tip-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:1.5px;opacity:0.85;margin-bottom:8px;display:block;}
+  .tip-box p{color:#fff;margin:0;font-size:15px;}
+  .article-cta{text-align:center;background:var(--paper-card);border:1px solid var(--line);border-radius:18px;padding:36px 26px;margin-top:44px;}
+  .article-cta h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .article-cta p{color:#4B5A66;margin-bottom:20px;font-size:14.5px;}
+  .ticket-btn{display:inline-flex;align-items:center;gap:12px;background:var(--brand-orange);color:#fff;font-weight:800;font-size:16px;padding:16px 26px;border-radius:12px;box-shadow:0 10px 28px rgba(0,0,0,0.25);}
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
+  .footer-brand img{height:38px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
+  .floating-wa{position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;background:var(--whatsapp);color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 24px rgba(37,211,102,0.5);}
+  @media (max-width:900px){.nav-links{display:none;}}
+  @media (max-width:700px){.article-hero h1{font-size:23px;}}
+</style>
+</head>
+<body>
+
+<script>
+window.ARTICLE_CONFIG = {
+  contact: {
+    whatsappNumberByLang: {ar:"201116666306",en:"201116666306",it:"393801991992",fr:"201116666306",pt:"201116666306",ptbr:"201116666306"},
+    whatsappDefaultMessage: {ar:"مرحباً، عايز أحجز",en:"Hello, I'd like to book",it:"Ciao, vorrei prenotare",fr:"Bonjour, je voudrais réserver",pt:"Olá, gostaria de reservar",ptbr:"Oi, eu queria reservar"},
+    phoneDisplay: "01101576669", phoneDial: "+201101576669", email: "info@saferdiscounts.com", facebook: "https://www.facebook.com/saferdiscounts/"
+  },
+  sara: { photo: "images/sara.jpg" },
+  i18n: {
+    ar: {
+      brand:"سافر Discounts", nav:{services:"خدماتنا",destinations:"وجهاتنا",reviews:"آراء العملاء",how:"إزاي بتحجز",faq:"أسئلة شائعة",blog:"بلوج سارة",cta:"احجز واتساب"},
+      contactBtns:{wa:"واتساب",fb:"فيسبوك",ph:"اتصال",em:"إيميل"}, footerCopyright:"© 2026 سافر Discounts. جميع الحقوق محفوظة.",
+      back:"→ رجوع للبلوج", eyebrow:"✦ ARTICLE 02 · دليل الحجز",
+      title:"إزاي تحجز فندقك في 3 خطوات على واتساب",
+      sub:"مفيش استمارات، مفيش انتظار على التليفون — سارة بتاخدك خطوة بخطوة في طريقة الحجز كاملة.",
+      byName:"بقلم سارة", byMeta:"٣ دقايق قراءة · دليل الحجز",
+      intro:"أكتر سؤال بيوصلني هو: \"الحجز بيتم إزاي بالظبط؟\" فقلت أوضحهولك مرة وخلاص. مفيش موقع تسجل فيه، ومفيش نموذج طويل — كل حاجة بتتم في محادثة واتساب واحدة، من أول ما تقولي وجهتك لحد ما تستلم تذكرتك.",
+      stepsH2:"الخطوات التلاتة",
+      steps:[
+        {n:"01", title:"ابعتلي تفاصيل رحلتك", desc:"الوجهة، تاريخ السفر، وعدد الأفراد. لو عندك ميزانية معينة أو فندق بعينه في بالك، قولّيه من الأول يوفر عليك وقت."},
+        {n:"02", title:"هقارنلك الأسعار وهبعتلك أفضل عرض", desc:"بدور على أكتر من مصدر واقارن الأسعار، وهبعتلك رقم نهائي وواضح — من غير رسوم مخفية تظهر بعدين."},
+        {n:"03", title:"تأكد وادفع، وتستلم تذكرتك", desc:"لما توافق على السعر، بتدفع عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبتستلم تأكيد الحجز الرسمي من الفندق أو شركة الطيران نفسها على طول."}
+      ],
+      tipLabel:"نصيحة سارة",
+      tip:"كل ما تبعتلي تفاصيل رحلتك بدري كل ما لقيتلك سعر أحسن — بس حتى لو الرحلة بكرة، ابعتلي وهشوف أقصى حاجة أقدر أعملها.",
+      closing:"يعني بختصار: تتكلم، توافق، تدفع، وتسافر. مفيش خطوة رابعة. لو عندك سؤال عن حجز معين، ابعتلي دلوقتي وهرد عليك بأسرع وقت.",
+      ctaH3:"جاهز تبدأ حجزك؟", ctaP:"كلمني على واتساب وهبعتلك أفضل سعر لتذكرتك وفندقك.", ctaBtn:"احجز عبر واتساب"
+    },
+    en: {
+      brand:"Safer Discounts", nav:{services:"Services",destinations:"Destinations",reviews:"Reviews",how:"How it Works",faq:"FAQ",blog:"Sara's Blog",cta:"Book on WhatsApp"},
+      contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Call",em:"Email"}, footerCopyright:"© 2026 Safer Discounts. All rights reserved.",
+      back:"→ Back to the blog", eyebrow:"✦ ARTICLE 02 · Booking Guide",
+      title:"How to Book Your Hotel in 3 Steps on WhatsApp",
+      sub:"No forms, no hold music — Sara walks you through the entire booking process step by step.",
+      byName:"By Sara", byMeta:"3 min read · Booking Guide",
+      intro:"The question I get asked most is: \"how does the booking actually work?\" So here it is, once and for all. No site to register on, no long form — everything happens in a single WhatsApp conversation, from the moment you tell me your destination to the moment you receive your ticket.",
+      stepsH2:"The 3 Steps",
+      steps:[
+        {n:"01", title:"Send me your trip details", desc:"Destination, travel dates, and number of travelers. If you already have a budget or a specific hotel in mind, mention it up front — it saves time."},
+        {n:"02", title:"I compare prices and send you the best offer", desc:"I check multiple sources and compare prices, then send you one clear, final number — no hidden fees that show up later."},
+        {n:"03", title:"Confirm, pay, and receive your ticket", desc:"Once you're happy with the price, you pay by bank transfer, Vodafone Cash, or InstaPay, and get the official confirmation straight from the hotel or airline itself."}
+      ],
+      tipLabel:"Sara's Tip",
+      tip:"The earlier you send your trip details, the better the price I can find — but even for a last-minute trip, message me and I'll see what's possible.",
+      closing:"So in short: chat, agree, pay, travel. There's no fourth step. If you have a question about a specific booking, message me now and I'll get back to you fast.",
+      ctaH3:"Ready to start your booking?", ctaP:"Message me on WhatsApp and I'll send you the best price for your ticket and hotel.", ctaBtn:"Book on WhatsApp"
+    },
+    it: {
+      brand:"Safer Discounts", nav:{services:"Servizi",destinations:"Destinazioni",reviews:"Recensioni",how:"Come Prenotare",faq:"Domande Frequenti",blog:"Blog di Sara",cta:"Prenota su WhatsApp"},
+      contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Chiama",em:"Email"}, footerCopyright:"© 2026 Safer Discounts. Tutti i diritti riservati.",
+      back:"→ Torna al blog", eyebrow:"✦ ARTICOLO 02 · Guida alla Prenotazione",
+      title:"Come Prenotare il Tuo Hotel in 3 Passi su WhatsApp",
+      sub:"Niente moduli, niente attese al telefono — Sara ti guida passo dopo passo in tutto il processo di prenotazione.",
+      byName:"di Sara", byMeta:"3 min di lettura · Guida alla Prenotazione",
+      intro:"La domanda che mi fanno più spesso è: \"ma come funziona esattamente la prenotazione?\" Quindi eccola spiegata una volta per tutte. Nessun sito su cui registrarsi, nessun modulo lungo — tutto avviene in una singola conversazione su WhatsApp, dal momento in cui mi dici la tua destinazione fino a quando ricevi il tuo biglietto.",
+      stepsH2:"I 3 Passi",
+      steps:[
+        {n:"01", title:"Mandami i dettagli del tuo viaggio", desc:"Destinazione, date di viaggio e numero di persone. Se hai già un budget o un hotel specifico in mente, dimmelo subito — fa risparmiare tempo."},
+        {n:"02", title:"Confronto i prezzi e ti mando l'offerta migliore", desc:"Controllo più fonti e confronto i prezzi, poi ti mando una cifra finale chiara — senza costi nascosti che spuntano dopo."},
+        {n:"03", title:"Conferma, paga e ricevi il tuo biglietto", desc:"Una volta soddisfatto del prezzo, paghi tramite bonifico, Vodafone Cash o InstaPay, e ricevi la conferma ufficiale direttamente dall'hotel o dalla compagnia aerea."}
+      ],
+      tipLabel:"Il Consiglio di Sara",
+      tip:"Prima mi mandi i dettagli del tuo viaggio, migliore sarà il prezzo che riesco a trovarti — ma anche per un viaggio last-minute, scrivimi e vedrò cosa posso fare.",
+      closing:"In breve: chatti, sei d'accordo, paghi, parti. Non c'è un quarto passo. Se hai una domanda su una prenotazione specifica, scrivimi ora e ti risponderò velocemente.",
+      ctaH3:"Pronto a iniziare la tua prenotazione?", ctaP:"Scrivimi su WhatsApp e ti manderò il miglior prezzo per il tuo biglietto e il tuo hotel.", ctaBtn:"Prenota su WhatsApp"
+    },
+    fr: {
+      brand:"Safer Discounts", nav:{services:"Services",destinations:"Destinations",reviews:"Avis",how:"Comment Réserver",faq:"FAQ",blog:"Blog de Sara",cta:"Réserver sur WhatsApp"},
+      contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Appeler",em:"Email"}, footerCopyright:"© 2026 Safer Discounts. Tous droits réservés.",
+      back:"→ Retour au blog", eyebrow:"✦ ARTICLE 02 · Guide de Réservation",
+      title:"Comment Réserver Votre Hôtel en 3 Étapes sur WhatsApp",
+      sub:"Pas de formulaires, pas d'attente au téléphone — Sara vous guide étape par étape dans tout le processus de réservation.",
+      byName:"Par Sara", byMeta:"3 min de lecture · Guide de Réservation",
+      intro:"La question qu'on me pose le plus souvent : \"comment fonctionne exactement la réservation ?\" Alors la voici expliquée une bonne fois pour toutes. Pas de site où s'inscrire, pas de long formulaire — tout se passe dans une seule conversation WhatsApp, du moment où vous me donnez votre destination jusqu'à la réception de votre billet.",
+      stepsH2:"Les 3 Étapes",
+      steps:[
+        {n:"01", title:"Envoyez-moi les détails de votre voyage", desc:"Destination, dates de voyage et nombre de voyageurs. Si vous avez déjà un budget ou un hôtel précis en tête, dites-le dès le début — cela fait gagner du temps."},
+        {n:"02", title:"Je compare les prix et vous envoie la meilleure offre", desc:"Je vérifie plusieurs sources et compare les prix, puis je vous envoie un chiffre final clair — sans frais cachés qui apparaissent après."},
+        {n:"03", title:"Confirmez, payez, et recevez votre billet", desc:"Une fois satisfait du prix, vous payez par virement bancaire, Vodafone Cash ou InstaPay, et recevez la confirmation officielle directement de l'hôtel ou de la compagnie aérienne."}
+      ],
+      tipLabel:"Le Conseil de Sara",
+      tip:"Plus vous m'envoyez les détails de votre voyage tôt, meilleur sera le prix que je pourrai trouver — mais même pour un voyage de dernière minute, écrivez-moi et je verrai ce qui est possible.",
+      closing:"En résumé : on discute, vous êtes d'accord, vous payez, vous voyagez. Il n'y a pas de quatrième étape. Si vous avez une question sur une réservation précise, écrivez-moi maintenant et je vous répondrai rapidement.",
+      ctaH3:"Prêt à commencer votre réservation ?", ctaP:"Écrivez-moi sur WhatsApp et je vous enverrai le meilleur prix pour votre billet et votre hôtel.", ctaBtn:"Réserver sur WhatsApp"
+    },
+    pt: {
+      brand:"Safer Discounts", nav:{services:"Serviços",destinations:"Destinos",reviews:"Avaliações",how:"Como Reservar",faq:"Perguntas Frequentes",blog:"Blog da Sara",cta:"Reservar no WhatsApp"},
+      contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Ligar",em:"Email"}, footerCopyright:"© 2026 Safer Discounts. Todos os direitos reservados.",
+      back:"→ Voltar ao blog", eyebrow:"✦ ARTIGO 02 · Guia de Reserva",
+      title:"Como Reservar o Seu Hotel em 3 Passos no WhatsApp",
+      sub:"Sem formulários, sem esperar ao telefone — a Sara acompanha-o passo a passo em todo o processo de reserva.",
+      byName:"Por Sara", byMeta:"3 min de leitura · Guia de Reserva",
+      intro:"A pergunta que mais me fazem é: \"como é que a reserva funciona exatamente?\" Por isso aqui está, de uma vez por todas. Sem site para se registar, sem formulário longo — tudo acontece numa única conversa de WhatsApp, desde o momento em que me diz o destino até receber o bilhete.",
+      stepsH2:"Os 3 Passos",
+      steps:[
+        {n:"01", title:"Envie-me os detalhes da sua viagem", desc:"Destino, datas de viagem e número de viajantes. Se já tiver um orçamento ou um hotel específico em mente, diga-me logo — poupa tempo."},
+        {n:"02", title:"Comparo os preços e envio-lhe a melhor oferta", desc:"Verifico várias fontes e comparo os preços, depois envio-lhe um valor final claro — sem taxas escondidas que apareçam depois."},
+        {n:"03", title:"Confirme, pague, e receba o seu bilhete", desc:"Assim que estiver satisfeito com o preço, paga por transferência bancária, Vodafone Cash ou InstaPay, e recebe a confirmação oficial diretamente do hotel ou da companhia aérea."}
+      ],
+      tipLabel:"Dica da Sara",
+      tip:"Quanto mais cedo me enviar os detalhes da sua viagem, melhor será o preço que consigo encontrar — mas mesmo para uma viagem de última hora, escreva-me e vejo o que é possível.",
+      closing:"Resumindo: conversamos, concorda, paga, viaja. Não há um quarto passo. Se tiver uma pergunta sobre uma reserva específica, escreva-me agora e respondo rapidamente.",
+      ctaH3:"Pronto para começar a sua reserva?", ctaP:"Mande-me mensagem no WhatsApp e envio-lhe o melhor preço para o seu bilhete e hotel.", ctaBtn:"Reservar no WhatsApp"
+    },
+    ptbr: {
+      brand:"Safer Discounts", nav:{services:"Serviços",destinations:"Destinos",reviews:"Avaliações",how:"Como Reservar",faq:"Perguntas Frequentes",blog:"Blog da Sara",cta:"Reservar no WhatsApp"},
+      contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Ligar",em:"Email"}, footerCopyright:"© 2026 Safer Discounts. Todos os direitos reservados.",
+      back:"→ Voltar pro blog", eyebrow:"✦ ARTIGO 02 · Guia de Reserva",
+      title:"Como Reservar Seu Hotel em 3 Passos no WhatsApp",
+      sub:"Sem formulário, sem ficar esperando no telefone — a Sara te leva passo a passo por todo o processo de reserva.",
+      byName:"Por Sara", byMeta:"3 min de leitura · Guia de Reserva",
+      intro:"A pergunta que mais recebo é: \"como funciona a reserva, na prática?\" Então aqui está, de uma vez por todas. Sem site pra se cadastrar, sem formulário longo — tudo acontece numa única conversa no WhatsApp, desde o momento que você me conta seu destino até receber sua passagem.",
+      stepsH2:"Os 3 Passos",
+      steps:[
+        {n:"01", title:"Manda os detalhes da sua viagem", desc:"Destino, datas da viagem, e número de viajantes. Se você já tem um orçamento ou um hotel específico em mente, já fala logo — economiza tempo."},
+        {n:"02", title:"Eu comparo os preços e mando a melhor oferta", desc:"Eu checo várias fontes e comparo preços, depois mando um valor final bem claro — sem taxa escondida aparecendo depois."},
+        {n:"03", title:"Confirma, paga, e recebe sua passagem", desc:"Quando você aprovar o preço, paga por transferência bancária, Vodafone Cash ou InstaPay, e recebe a confirmação oficial direto do hotel ou da companhia aérea."}
+      ],
+      tipLabel:"Dica da Sara",
+      tip:"Quanto mais cedo você mandar os detalhes da viagem, melhor o preço que eu consigo achar — mas mesmo de última hora, manda mensagem que eu vejo o que dá pra fazer.",
+      closing:"Resumindo: a gente conversa, você aprova, paga, e viaja. Não tem um quarto passo. Se tiver alguma dúvida sobre uma reserva específica, manda mensagem agora que eu respondo rapidinho.",
+      ctaH3:"Pronto pra começar sua reserva?", ctaP:"Manda mensagem no WhatsApp que eu te mando o melhor preço pra passagem e pro hotel.", ctaBtn:"Reservar no WhatsApp"
+    }
+  }
+};
+</script>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand"><img src="logo.png" alt="Safer Discounts"></a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html#services" data-nav="services"></a>
+      <a href="index.html#destinations" data-nav="destinations"></a>
+      <a href="index.html#reviews" data-nav="reviews"></a>
+      <a href="index.html#how" data-nav="how"></a>
+      <a href="index.html#faq" data-nav="faq"></a>
+      <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="ar" type="button">AR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+      </div>
+      <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
+    </div>
+  </nav>
+</header>
+
+<section class="article-hero">
+  <div class="wrap">
+    <a class="article-back" href="blog.html" id="article-back"></a>
+    <span class="article-eyebrow" id="article-eyebrow"></span>
+    <h1 id="article-title"></h1>
+    <p class="sub" id="article-sub"></p>
+    <div class="article-byline">
+      <img src="images/sara.jpg" alt="Sara">
+      <div><div class="name" id="article-byname"></div><div class="meta" id="article-bymeta"></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="article-body">
+  <p id="article-intro"></p>
+  <h2 id="steps-h2"></h2>
+  <div class="steps" id="steps-list"></div>
+  <div class="tip-box"><span class="tip-label" id="tip-label"></span><p id="tip-text"></p></div>
+  <p id="article-closing"></p>
+  <div class="article-cta">
+    <h3 id="cta-h3"></h3>
+    <p id="cta-p"></p>
+    <a class="ticket-btn" data-wa href="#" id="cta-btn" style="display:inline-flex;"></a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="logo.png" alt="Safer Discounts"> <span id="footer-brand-text"></span></div>
+      <div class="footer-socials">
+        <a href="blog.html" id="footer-blog-text"></a>
+        <a data-fb href="#" target="_blank" id="footer-fb-text"></a>
+        <a data-wa href="#" id="footer-wa-text"></a>
+        <a data-email href="#" id="footer-email-text"></a>
+        <a data-phone href="#" id="footer-phone-text"></a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span id="footer-copyright"></span><span class="mono">SAFERDISCOUNTS.COM</span></div>
+  </div>
+</footer>
+
+<a class="floating-wa" data-wa href="#" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+  var cfg = window.ARTICLE_CONFIG;
+  function waLink(lang){
+    var num = cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumberByLang.en;
+    var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.en;
+    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+  }
+  function render(lang){
+    var t = cfg.i18n[lang] || cfg.i18n.en;
+    try { localStorage.setItem('sd_lang', lang); } catch(e){}
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.querySelectorAll('.lang-btn').forEach(function(btn){ btn.classList.toggle('active', btn.getAttribute('data-lang') === lang); });
+    document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
+    document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
+    document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
+    document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+    document.querySelector('[data-nav="services"]').textContent = t.nav.services;
+    document.querySelector('[data-nav="destinations"]').textContent = t.nav.destinations;
+    document.querySelector('[data-nav="reviews"]').textContent = t.nav.reviews;
+    document.querySelector('[data-nav="how"]').textContent = t.nav.how;
+    document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
+    document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
+    document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
+    document.getElementById('article-back').textContent = t.back;
+    document.getElementById('article-eyebrow').textContent = t.eyebrow;
+    document.getElementById('article-title').textContent = t.title;
+    document.getElementById('article-sub').textContent = t.sub;
+    document.getElementById('article-byname').textContent = t.byName;
+    document.getElementById('article-bymeta').textContent = t.byMeta;
+    document.getElementById('article-intro').textContent = t.intro;
+    document.getElementById('steps-h2').textContent = t.stepsH2;
+    document.getElementById('steps-list').innerHTML = t.steps.map(function(s){
+      return '<div class="step"><div class="n">'+s.n+'</div><div><h3>'+s.title+'</h3><p>'+s.desc+'</p></div></div>';
+    }).join('');
+    document.getElementById('tip-label').textContent = t.tipLabel;
+    document.getElementById('tip-text').textContent = t.tip;
+    document.getElementById('article-closing').textContent = t.closing;
+    document.getElementById('cta-h3').textContent = t.ctaH3;
+    document.getElementById('cta-p').textContent = t.ctaP;
+    document.getElementById('cta-btn').innerHTML = '💬 ' + t.ctaBtn;
+    document.getElementById('footer-brand-text').textContent = t.brand;
+    document.getElementById('footer-blog-text').textContent = t.nav.blog;
+    document.getElementById('footer-fb-text').textContent = t.contactBtns.fb;
+    document.getElementById('footer-wa-text').textContent = t.contactBtns.wa;
+    document.getElementById('footer-email-text').textContent = cfg.contact.email;
+    document.getElementById('footer-phone-text').textContent = cfg.contact.phoneDisplay;
+    document.getElementById('footer-copyright').textContent = t.footerCopyright;
+  }
+  document.querySelectorAll('.lang-btn').forEach(function(btn){ btn.addEventListener('click', function(){ render(btn.getAttribute('data-lang')); }); });
+  var savedLang = null;
+  try { savedLang = localStorage.getItem('sd_lang'); } catch(e){}
+  render(cfg.i18n[savedLang] ? savedLang : 'ar');
+})();
+</script>
+
+</body>
+</html>
