@@ -801,5 +801,303 @@ window.BLOG_CONFIG = {
 })();
 </script>
 
+<!-- ===================== SARA ASSISTANT WIDGET ===================== -->
+<style>
+  .sara-fab{
+    position:fixed;bottom:22px;inset-inline-end:22px;z-index:70;
+    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:26px;
+    box-shadow:0 8px 24px rgba(3,101,163,0.5);
+    border:none;cursor:pointer;transition:transform .15s;
+  }
+  .sara-fab:hover{transform:translateY(-2px);}
+  .sara-panel{
+    position:fixed;bottom:90px;inset-inline-end:22px;z-index:70;
+    width:320px;max-width:calc(100vw - 44px);
+    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:18px;
+    box-shadow:0 24px 48px rgba(11,32,54,0.25);
+    display:none;flex-direction:column;overflow:hidden;
+    font-family:'Cairo',sans-serif;
+  }
+  .sara-panel.open{display:flex;}
+  .sara-panel-header{
+    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
+    padding:14px 16px;display:flex;align-items:center;gap:10px;
+  }
+  .sara-panel-header img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.6);}
+  .sara-panel-header .who{flex:1;}
+  .sara-panel-header .who .name{font-weight:800;font-size:14px;}
+  .sara-panel-header .who .status{font-family:'IBM Plex Mono',monospace;font-size:10px;opacity:0.85;}
+  .sara-panel-header .status::before{content:"● ";color:#6CFF9E;}
+  .sara-close{background:transparent;border:none;color:#fff;font-size:18px;cursor:pointer;opacity:0.85;line-height:1;padding:4px;}
+  .sara-close:hover{opacity:1;}
+  .sara-messages{padding:16px;display:flex;flex-direction:column;gap:10px;max-height:280px;overflow-y:auto;}
+  .sara-msg{
+    background:#fff;border:1px solid #E4D9C8;border-radius:14px;border-start-start-radius:4px;
+    padding:10px 14px;font-size:13.5px;color:#3E4C58;line-height:1.6;max-width:88%;align-self:flex-start;
+  }
+  .sara-msg.user{
+    background:#0365A3;color:#fff;border:none;border-start-start-radius:14px;border-start-end-radius:4px;
+    align-self:flex-end;
+  }
+  .sara-options{padding:0 16px 16px;display:flex;flex-direction:column;gap:8px;}
+  .sara-opt-btn{
+    background:#fff;border:1.5px solid #0365A3;color:#0365A3;
+    border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700;
+    cursor:pointer;text-align:start;transition:background .15s, color .15s;
+    font-family:'Cairo',sans-serif;
+  }
+  .sara-opt-btn:hover{background:#0365A3;color:#fff;}
+  .sara-opt-btn.wa{border-color:#25D366;color:#25D366;}
+  .sara-opt-btn.wa:hover{background:#25D366;color:#fff;}
+  @media (max-width:480px){
+    .sara-panel{inset-inline-end:12px;width:calc(100vw - 24px);}
+    .sara-fab{inset-inline-end:12px;}
+  }
+</style>
+
+<button class="sara-fab" id="saraFab" aria-label="Sara's Assistant">🧭</button>
+<div class="sara-panel" id="saraPanel">
+  <div class="sara-panel-header">
+    <img src="images/sara.jpg" alt="Sara">
+    <div class="who">
+      <div class="name" id="saraPanelName">Sara</div>
+      <div class="status" id="saraPanelStatus"></div>
+    </div>
+    <button class="sara-close" id="saraClose" aria-label="Close">✕</button>
+  </div>
+  <div class="sara-messages" id="saraMessages"></div>
+  <div class="sara-options" id="saraOptions"></div>
+</div>
+
+<script>
+(function(){
+  var WA_NUM = {ar:"201116666306",en:"201116666306",it:"393801991992",fr:"201116666306",pt:"201116666306",ptbr:"201116666306"};
+  var WA_MSG = {
+    ar:"مرحباً، جاي من مساعد سارة على الموقع وعايز مساعدة",
+    en:"Hello, I came from Sara's site assistant and would like some help",
+    it:"Ciao, vengo dall'assistente del sito di Sara e vorrei un aiuto",
+    fr:"Bonjour, je viens de l'assistant du site de Sara et j'aimerais de l'aide",
+    pt:"Olá, venho do assistente do site da Sara e gostaria de ajuda",
+    ptbr:"Oi, eu vim do assistente do site da Sara e queria uma ajuda"
+  };
+  var STATUS_TXT = {ar:"أونلاين",en:"Online",it:"Online",fr:"En ligne",pt:"Online",ptbr:"Online"};
+
+  function waLink(lang){
+    var num = WA_NUM[lang] || WA_NUM.en;
+    var msg = WA_MSG[lang] || WA_MSG.en;
+    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+  }
+
+  var TREE = {
+    root: {
+      msg:{ar:"أهلاً! أنا سارة 👋 عايز أساعدك تستفيد من الموقع أد ما تقدر. تحب نبدأ بإيه؟",
+           en:"Hi! I'm Sara 👋 I want to help you get the most out of the site. What would you like to start with?",
+           it:"Ciao! Sono Sara 👋 Voglio aiutarti a sfruttare al meglio il sito. Da cosa vuoi iniziare?",
+           fr:"Bonjour ! Je suis Sara 👋 Je veux vous aider à tirer le meilleur parti du site. Par quoi voulez-vous commencer ?",
+           pt:"Olá! Sou a Sara 👋 Quero ajudá-lo a aproveitar ao máximo o site. Por onde quer começar?",
+           ptbr:"Oi! Eu sou a Sara 👋 Quero te ajudar a aproveitar o site ao máximo. Por onde você quer começar?"},
+      options:[
+        {label:{ar:"📅 عايز أحجز رحلة",en:"📅 Book a trip",it:"📅 Prenotare un viaggio",fr:"📅 Réserver un voyage",pt:"📅 Reservar uma viagem",ptbr:"📅 Reservar uma viagem"}, goto:"book"},
+        {label:{ar:"🗣️ أتعلم لغة قبل السفر",en:"🗣️ Learn a language first",it:"🗣️ Imparare una lingua prima",fr:"🗣️ Apprendre une langue avant",pt:"🗣️ Aprender uma língua antes",ptbr:"🗣️ Aprender um idioma antes"}, goto:"language"},
+        {label:{ar:"🍽️ أفكار أكل صحي",en:"🍽️ Healthy food ideas",it:"🍽️ Idee per pasti sani",fr:"🍽️ Idées de repas sains",pt:"🍽️ Ideias de comida saudável",ptbr:"🍽️ Ideias de comida saudável"}, goto:"food"},
+        {label:{ar:"🗺️ معلومات عن وجهة",en:"🗺️ Info about a destination",it:"🗺️ Info su una destinazione",fr:"🗺️ Infos sur une destination",pt:"🗺️ Info sobre um destino",ptbr:"🗺️ Info sobre um destino"}, goto:"destination"},
+        {label:{ar:"❓ أسئلة الحجز والدفع",en:"❓ Booking & payment questions",it:"❓ Domande su prenotazione e pagamento",fr:"❓ Questions réservation et paiement",pt:"❓ Perguntas sobre reserva e pagamento",ptbr:"❓ Perguntas sobre reserva e pagamento"}, goto:"faq"},
+        {label:{ar:"💬 أتكلم مع حد دلوقتي",en:"💬 Talk to someone now",it:"💬 Parlare subito con qualcuno",fr:"💬 Parler à quelqu'un maintenant",pt:"💬 Falar com alguém agora",ptbr:"💬 Falar com alguém agora"}, wa:true}
+      ]
+    },
+    book: {
+      msg:{ar:"تمام! تقدر تشوف كل خدماتنا أو الوجهات اللي بنحجزلك فيها، أو تكلمني على طول وهساعدك أحدد السعر.",
+           en:"Great! You can browse all our services or the destinations we book, or just message me now and I'll help you get a price.",
+           it:"Perfetto! Puoi vedere tutti i nostri servizi o le destinazioni che prenotiamo, oppure scrivimi subito per un prezzo.",
+           fr:"Parfait ! Vous pouvez consulter nos services ou les destinations que nous réservons, ou m'écrire directement pour un prix.",
+           pt:"Ótimo! Pode ver todos os nossos serviços ou os destinos que reservamos, ou mandar-me mensagem já para um preço.",
+           ptbr:"Ótimo! Você pode ver nossos serviços ou os destinos que reservamos, ou já mandar mensagem que eu ajudo com o preço."},
+      options:[
+        {label:{ar:"شوف خدماتنا",en:"See our services",it:"Vedi i nostri servizi",fr:"Voir nos services",pt:"Ver os nossos serviços",ptbr:"Ver nossos serviços"}, link:"index.html#services"},
+        {label:{ar:"شوف الوجهات",en:"See destinations",it:"Vedi le destinazioni",fr:"Voir les destinations",pt:"Ver os destinos",ptbr:"Ver os destinos"}, link:"index.html#destinations"},
+        {label:{ar:"💬 كلمني على واتساب دلوقتي",en:"💬 Message me on WhatsApp now",it:"💬 Scrivimi su WhatsApp ora",fr:"💬 Écrivez-moi sur WhatsApp",pt:"💬 Mande mensagem no WhatsApp",ptbr:"💬 Manda mensagem no WhatsApp"}, wa:true},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    language: {
+      msg:{ar:"عندنا كتيبات كاملة (أساسي ومتقدم، بست لغات شرح) لتعلم:",
+           en:"We have complete guidebooks (basic + advanced, explained in 6 languages) to learn:",
+           it:"Abbiamo guide complete (base e avanzato, in 6 lingue) per imparare:",
+           fr:"Nous avons des guides complets (débutant et avancé, en 6 langues) pour apprendre :",
+           pt:"Temos guias completos (básico e avançado, em 6 línguas) para aprender:",
+           ptbr:"Temos guias completos (básico e avançado, em 6 idiomas) para aprender:"},
+      options:[
+        {label:{ar:"🇮🇹 إيطالي",en:"🇮🇹 Italian",it:"🇮🇹 Italiano",fr:"🇮🇹 Italien",pt:"🇮🇹 Italiano",ptbr:"🇮🇹 Italiano"}, link:"guide-italian.html"},
+        {label:{ar:"🇫🇷 فرنساوي",en:"🇫🇷 French",it:"🇫🇷 Francese",fr:"🇫🇷 Français",pt:"🇫🇷 Francês",ptbr:"🇫🇷 Francês"}, link:"guide-french.html"},
+        {label:{ar:"🇧🇷 برتغالي برازيلي",en:"🇧🇷 Brazilian Portuguese",it:"🇧🇷 Portoghese Brasiliano",fr:"🇧🇷 Portugais Brésilien",pt:"🇧🇷 Português do Brasil",ptbr:"🇧🇷 Português do Brasil"}, link:"guide-portuguese-brazilian.html"},
+        {label:{ar:"🇵🇹 برتغالي",en:"🇵🇹 Portuguese",it:"🇵🇹 Portoghese",fr:"🇵🇹 Portugais",pt:"🇵🇹 Português",ptbr:"🇵🇹 Português"}, link:"guide-portuguese.html"},
+        {label:{ar:"🇪🇸 إسباني",en:"🇪🇸 Spanish",it:"🇪🇸 Spagnolo",fr:"🇪🇸 Espagnol",pt:"🇪🇸 Espanhol",ptbr:"🇪🇸 Espanhol"}, link:"guide-spanish.html"},
+        {label:{ar:"🇬🇧 إنجليزي",en:"🇬🇧 English",it:"🇬🇧 Inglese",fr:"🇬🇧 Anglais",pt:"🇬🇧 Inglês",ptbr:"🇬🇧 Inglês"}, link:"guide-english.html"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    food: {
+      msg:{ar:"عندنا خطط عشا كاملة لأسبوع، بأكل بيتي حقيقي من بلاد مختلفة. عايز تشوف أنهي واحدة؟",
+           en:"We have complete week-long dinner plans with real home cooking from different countries. Which one would you like to see?",
+           it:"Abbiamo piani cena completi per una settimana, con vera cucina casalinga. Quale vuoi vedere?",
+           fr:"Nous avons des plans de dîner complets pour une semaine, avec de la vraie cuisine maison. Lequel voulez-vous voir ?",
+           pt:"Temos planos de jantares completos para uma semana, com comida caseira. Qual quer ver?",
+           ptbr:"Temos planos de jantares completos pra uma semana, com comida caseira. Qual você quer ver?"},
+      options:[
+        {label:{ar:"خطة عامة (٧ أيام)",en:"General plan (7 days)",it:"Piano generale (7 giorni)",fr:"Plan général (7 jours)",pt:"Plano geral (7 dias)",ptbr:"Plano geral (7 dias)"}, link:"blog-dinner-plan.html"},
+        {label:{ar:"شرق أوسطي",en:"Middle Eastern",it:"Mediorientale",fr:"Moyen-Oriental",pt:"Médio Oriente",ptbr:"Oriente Médio"}, link:"blog-middle-eastern-dinner-plan.html"},
+        {label:{ar:"مصري",en:"Egyptian",it:"Egiziana",fr:"Égyptienne",pt:"Egípcia",ptbr:"Egípcia"}, link:"blog-egyptian-diet-plan.html"},
+        {label:{ar:"برازيلي",en:"Brazilian",it:"Brasiliana",fr:"Brésilienne",pt:"Brasileira",ptbr:"Brasileira"}, link:"blog-brazilian-diet-plan.html"},
+        {label:{ar:"أمريكي",en:"American",it:"Americana",fr:"Américaine",pt:"Americana",ptbr:"Americana"}, link:"blog-american-diet-plan.html"},
+        {label:{ar:"فرنساوي",en:"French",it:"Francese",fr:"Française",pt:"Francesa",ptbr:"Francesa"}, link:"blog-french-diet-plan.html"},
+        {label:{ar:"إسباني",en:"Spanish",it:"Spagnola",fr:"Espagnole",pt:"Espanhola",ptbr:"Espanhola"}, link:"blog-spanish-diet-plan.html"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    destination: {
+      msg:{ar:"عندنا دليلين تفصيليين جاهزين دلوقتي:",
+           en:"We have two detailed guides ready right now:",
+           it:"Abbiamo due guide dettagliate pronte adesso:",
+           fr:"Nous avons deux guides détaillés disponibles maintenant :",
+           pt:"Temos dois guias detalhados prontos agora:",
+           ptbr:"Temos dois guias detalhados prontos agora:"},
+      options:[
+        {label:{ar:"أهرامات الجيزة",en:"Giza Pyramids",it:"Piramidi di Giza",fr:"Pyramides de Gizeh",pt:"Pirâmides de Gizé",ptbr:"Pirâmides de Gizé"}, link:"guide-giza-pyramids.html"},
+        {label:{ar:"إسطنبول",en:"Istanbul",it:"Istanbul",fr:"Istanbul",pt:"Istambul",ptbr:"Istambul"}, link:"guide-istanbul.html"},
+        {label:{ar:"شوف كل الوجهات",en:"See all destinations",it:"Vedi tutte le destinazioni",fr:"Voir toutes les destinations",pt:"Ver todos os destinos",ptbr:"Ver todos os destinos"}, link:"index.html#destinations"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    faq: {
+      msg:{ar:"دي أشهر اللي بيسألوا عليها الناس:",
+           en:"Here are the most common questions people ask:",
+           it:"Ecco le domande più comuni:",
+           fr:"Voici les questions les plus fréquentes :",
+           pt:"Aqui estão as perguntas mais comuns:",
+           ptbr:"Aqui estão as perguntas mais comuns:"},
+      options:[
+        {label:{ar:"إزاي بتحجز خطوة بخطوة؟",en:"How does booking work, step by step?",it:"Come funziona la prenotazione, passo passo?",fr:"Comment fonctionne la réservation ?",pt:"Como funciona a reserva, passo a passo?",ptbr:"Como funciona a reserva, passo a passo?"}, link:"guide-booking-whatsapp.html"},
+        {label:{ar:"إزاي بتدفع؟",en:"How do I pay?",it:"Come pago?",fr:"Comment payer ?",pt:"Como pago?",ptbr:"Como eu pago?"}, goto:"faq_pay"},
+        {label:{ar:"تقدر تلغي لو غيرت رأيي؟",en:"Can I cancel if I change my mind?",it:"Posso cancellare se cambio idea?",fr:"Puis-je annuler ?",pt:"Posso cancelar se mudar de ideias?",ptbr:"Posso cancelar se eu mudar de ideia?"}, goto:"faq_cancel"},
+        {label:{ar:"شوف كل الأسئلة الشائعة",en:"See all FAQs",it:"Vedi tutte le FAQ",fr:"Voir toutes les FAQ",pt:"Ver todas as perguntas",ptbr:"Ver todas as perguntas"}, link:"index.html#faq"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    faq_pay: {
+      msg:{ar:"الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل التفاصيل قبل ما تدفع أي حاجة.",
+           en:"Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all the details before you pay anything.",
+           it:"Il pagamento avviene tramite bonifico, Vodafone Cash o InstaPay, e confermiamo tutto prima che tu paghi.",
+           fr:"Le paiement se fait par virement, Vodafone Cash ou InstaPay, et nous confirmons tout avant paiement.",
+           pt:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de pagar.",
+           ptbr:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de você pagar."},
+      options:[
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
+      ]
+    },
+    faq_cancel: {
+      msg:{ar:"الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
+           en:"Cancellation follows the airline's or hotel's own policy, and we explain this before you confirm, not after.",
+           it:"La cancellazione segue la politica della compagnia aerea o dell'hotel, spiegata prima della conferma.",
+           fr:"L'annulation suit la politique de la compagnie aérienne ou de l'hôtel, expliquée avant confirmation.",
+           pt:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação.",
+           ptbr:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação."},
+      options:[
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
+      ]
+    }
+  };
+
+  var history = ["root"];
+  var messagesEl, optionsEl, fab, panel;
+
+  function currentLang(){
+    return document.documentElement.lang || (function(){ try{return localStorage.getItem('sd_lang')||'ar';}catch(e){return 'ar';} })();
+  }
+
+  function pick(dict){ var l = currentLang(); return dict[l] || dict.en || dict.ar; }
+
+  function addMsg(text, isUser){
+    var div = document.createElement('div');
+    div.className = 'sara-msg' + (isUser ? ' user' : '');
+    div.textContent = text;
+    messagesEl.appendChild(div);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function renderNode(nodeId){
+    var node = TREE[nodeId];
+    addMsg(pick(node.msg), false);
+    optionsEl.innerHTML = '';
+    node.options.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'sara-opt-btn' + (opt.wa ? ' wa' : '');
+      btn.textContent = pick(opt.label);
+      btn.addEventListener('click', function(){ handleOption(opt, nodeId); });
+      optionsEl.appendChild(btn);
+    });
+  }
+
+  function handleOption(opt, fromNode){
+    if (!opt.back) addMsg(pick(opt.label), true);
+    if (opt.wa) {
+      window.open(waLink(currentLang()), '_blank');
+      return;
+    }
+    if (opt.link) {
+      window.location.href = opt.link;
+      return;
+    }
+    if (opt.back) {
+      history.pop();
+      var prev = history[history.length - 1] || 'root';
+      renderNode(prev);
+      return;
+    }
+    if (opt.goto) {
+      history.push(opt.goto);
+      renderNode(opt.goto);
+      return;
+    }
+  }
+
+  function openPanel(){
+    panel.classList.add('open');
+    document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
+    if (!messagesEl.hasChildNodes()) {
+      history = ["root"];
+      renderNode("root");
+    }
+  }
+
+  function init(){
+    fab = document.getElementById('saraFab');
+    panel = document.getElementById('saraPanel');
+    messagesEl = document.getElementById('saraMessages');
+    optionsEl = document.getElementById('saraOptions');
+    fab.addEventListener('click', function(){
+      if (panel.classList.contains('open')) { panel.classList.remove('open'); }
+      else { openPanel(); }
+    });
+    document.getElementById('saraClose').addEventListener('click', function(){
+      panel.classList.remove('open');
+    });
+    new MutationObserver(function(){
+      if (panel.classList.contains('open')) {
+        document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
+      }
+    }).observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<!-- =================== END SARA ASSISTANT WIDGET =================== -->
+
 </body>
 </html>

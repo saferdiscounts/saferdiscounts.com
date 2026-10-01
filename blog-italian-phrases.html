@@ -60,13 +60,14 @@
   .nav-links a{opacity:0.85;transition:opacity .2s;}
   .nav-links a:hover{opacity:1;color:var(--brand-blue);}
   .nav-right{display:flex;align-items:center;gap:12px;}
-  .lang-toggle{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;
-    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
-    background:transparent;border-radius:999px;padding:8px 14px;cursor:pointer;
-    transition:background .2s, color .2s;
+  .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
+  .lang-btn{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;
+    border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
+    padding:6px 8px;cursor:pointer;transition:background .2s, color .2s;white-space:nowrap;
   }
-  .lang-toggle:hover{background:var(--brand-blue);color:#fff;}
+  .lang-btn.active{background:var(--brand-blue);color:#fff;}
+  .lang-btn:not(.active):hover{background:rgba(3,101,163,0.15);}
   .nav-cta{
     display:flex;align-items:center;gap:8px;
     background:var(--brand-orange);color:#fff;
@@ -77,489 +78,6 @@
     white-space:nowrap;
   }
   .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(241,86,11,0.4);}
-
-  /* ===== HERO ===== */
-  .hero{
-    position:relative;
-    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%);
-    color:#fff;
-    padding:90px 0 120px;
-    overflow:hidden;
-  }
-  .hero::before{
-    content:"";position:absolute;inset:0;z-index:1;
-    background-image:
-      radial-gradient(circle at 85% 20%, rgba(255,255,255,0.10) 0, transparent 40%),
-      radial-gradient(circle at 10% 85%, rgba(241,86,11,0.22) 0, transparent 45%),
-      linear-gradient(160deg, rgba(2,49,82,0.55) 0%, rgba(3,101,163,0.42) 55%, rgba(4,131,201,0.32) 100%);
-  }
-  .hero-inner{position:relative;z-index:3;display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;}
-
-  /* خلفية متحركة بتلف بين خدماتنا: طيران، فنادق، نايل كروز، سي كروز */
-  .hero-scenes{position:absolute;inset:0;z-index:0;overflow:hidden;}
-  .hero-scene{
-    position:absolute;inset:0;
-    display:flex;align-items:center;justify-content:center;
-    opacity:0;transition:opacity 1.8s ease;
-  }
-  .hero-scene.active{opacity:1;}
-  .hero-scene img{
-    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-    opacity:0;transform:scale(1.06);
-    transition:opacity 1.4s ease, transform 8s ease;
-  }
-  .hero-scene.active img{transform:scale(1.14);}
-  .hero-scene img.loaded{opacity:0.62;}
-  .hero-scene .scene-tint{position:absolute;inset:0;opacity:0.78;mix-blend-mode:multiply;}
-  .hero-scene.has-photo .scene-tint{opacity:0.42;mix-blend-mode:normal;}
-  .hero-scene .scene-icon{
-    position:relative;font-size:200px;line-height:1;opacity:0.12;
-    transform:scale(1);transition:opacity .6s ease, transform 7s ease;
-  }
-  .hero-scene.active .scene-icon{transform:scale(1.1);}
-  .hero-scene.has-photo .scene-icon{opacity:0;}
-  @media (prefers-reduced-motion: reduce){
-    .hero-scene{transition:none;}
-    .hero-scene img{transition:none;transform:none;}
-    .hero-scene.active img{transform:none;}
-    .hero-scene .scene-icon{transition:none;}
-  }
-
-  .floating-plane{
-    position:absolute;z-index:2;font-size:26px;opacity:0.18;pointer-events:none;
-    animation:fly-across 22s linear infinite;
-    filter:drop-shadow(0 0 6px rgba(255,255,255,0.3));
-  }
-  .floating-plane.p2{font-size:16px;opacity:0.12;animation-duration:30s;animation-delay:-10s;top:65%;}
-  @keyframes fly-across{
-    0%{transform:translate(-10%,20%) rotate(8deg);}
-    50%{transform:translate(60%,-5%) rotate(4deg);}
-    100%{transform:translate(120%,15%) rotate(8deg);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .floating-plane{animation:none;display:none;}
-  }
-
-  /* ظهور تدريجي للعناصر لما تنزل الصفحة */
-  .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
-  .reveal.revealed{opacity:1;transform:translateY(0);}
-  @media (prefers-reduced-motion: reduce){
-    .reveal{opacity:1;transform:none;transition:none;}
-  }
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:8px;
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
-    background:rgba(255,255,255,0.12);
-    border:1px dashed rgba(255,255,255,0.5);
-    padding:6px 14px;border-radius:999px;margin-bottom:22px;
-  }
-  .hero h1{font-size:44px;font-weight:900;line-height:1.35;margin-bottom:20px;}
-  .hero h1 span{color:#FFD9B0;}
-  .hero p{font-size:17px;opacity:0.92;max-width:520px;margin-bottom:34px;}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:16px;}
-
-  .ticket-btn{
-    position:relative;
-    display:flex;align-items:center;gap:12px;
-    background:var(--brand-orange);
-    color:#fff;font-weight:800;font-size:16px;
-    padding:16px 26px;border-radius:12px;
-    box-shadow:0 10px 28px rgba(0,0,0,0.25);
-    transition:transform .15s;
-  }
-  .ticket-btn:hover{transform:translateY(-3px);}
-  .ticket-btn.outline{
-    background:transparent;border:2px solid rgba(255,255,255,0.6);
-    box-shadow:none;
-  }
-
-  .boarding-strip{
-    margin-top:46px;
-    background:rgba(255,255,255,0.08);
-    border:1px dashed rgba(255,255,255,0.4);
-    border-radius:14px;
-    padding:18px 20px;
-    display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  }
-  .boarding-strip div{text-align:center;flex:1;min-width:90px;}
-  .boarding-strip .num{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:22px;color:#FFD9B0;}
-  .boarding-strip .lbl{font-size:12px;opacity:0.85;margin-top:4px;}
-
-  .hero-visual{
-    position:relative;
-    background:rgba(255,255,255,0.95);
-    border-radius:20px;
-    padding:34px 26px;
-    color:var(--ink);
-    box-shadow:0 30px 60px rgba(0,0,0,0.3);
-  }
-  .hero-visual img{width:170px;margin:0 auto 14px;}
-  .hero-visual .code{
-    font-family:'IBM Plex Mono',monospace;text-align:center;font-size:13px;color:var(--brand-blue);
-    letter-spacing:3px;margin-bottom:10px;
-  }
-  .hero-visual .barcode{
-    height:34px;
-    background:repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px, var(--ink) 5px 7px, transparent 7px 11px, var(--ink) 11px 12px, transparent 12px 16px);
-    margin-top:16px;opacity:0.85;
-  }
-  .perf{
-    position:absolute;top:-12px;right:36px;width:24px;height:24px;background:var(--paper);border-radius:50%;
-  }
-  .perf.two{top:auto;bottom:-12px;left:36px;right:auto;}
-
-  /* ===== SECTIONS ===== */
-  section{padding:88px 0;}
-  .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
-  .tag{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
-    font-weight:600;display:block;margin-bottom:12px;
-  }
-  .section-head h2{font-size:32px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
-  .section-head p{font-size:16px;color:#4B5A66;}
-
-  /* رحلة العميل المتحركة (طيران → فندق → باص → حفلة → كروز) */
-  .journey{background:var(--paper);padding:70px 0 30px;}
-  .journey-svg{width:100%;height:auto;display:block;}
-  .journey-icon-emoji{font-size:34px;}
-  .journey-label{font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;fill:var(--brand-blue-dark);}
-  .journey-traveler{font-size:30px;}
-  @media (max-width:700px){
-    .journey{padding:44px 0 10px;}
-    .journey-icon-emoji{font-size:24px;}
-    .journey-label{font-size:11px;}
-    .journey-traveler{font-size:22px;}
-  }
-
-  /* Services - ticket stub cards */
-  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-  .ticket-card{
-    position:relative;
-    background:var(--paper-card);
-    border-radius:16px;
-    box-shadow:0 12px 30px rgba(11,32,54,0.08);
-    overflow:hidden;
-  }
-  .ticket-card .top{
-    padding:30px 26px 24px;
-    border-bottom:2px dashed var(--line);
-    position:relative;
-  }
-  .icon-badge{
-    width:52px;height:52px;border-radius:14px;
-    background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
-    display:flex;align-items:center;justify-content:center;
-    font-size:24px;margin-bottom:18px;
-  }
-  .ticket-card h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
-  .ticket-card p{font-size:14.5px;color:#4B5A66;}
-  .ticket-card .bottom{
-    padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
-    font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
-  }
-
-  /* Destinations - small image cards */
-  .destinations-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
-  .dest-card{
-    border-radius:14px;overflow:hidden;
-    box-shadow:0 8px 20px rgba(11,32,54,0.08);
-    background:var(--paper-card);
-    transition:transform .3s, box-shadow .3s;
-  }
-  .dest-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,0.16);}
-  .dest-img{position:relative;width:100%;height:170px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
-  .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
-  .dest-card:hover .dest-img img{transform:scale(1.12);}
-  .dest-img.no-img img{display:none;}
-  .dest-img.no-img::after{
-    content:"🖼";
-    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;opacity:0.6;color:#fff;
-  }
-  .dest-badge{
-    position:absolute;top:8px;inset-inline-end:8px;
-    background:rgba(11,32,54,0.75);color:#fff;
-    font-size:10px;font-family:'IBM Plex Mono',monospace;
-    padding:3px 8px;border-radius:999px;letter-spacing:0.5px;
-  }
-  .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
-
-  /* Reviews / testimonials */
-  .reviews-stats{
-    display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:44px;
-  }
-  .reviews-stats div{text-align:center;}
-  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
-  .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
-  .reviews-viewport{
-    overflow:hidden;padding:8px 0 24px;
-    direction:ltr;
-    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
-    mask-image:linear-gradient(90deg, transparent 0, #000 5%, #000 95%, transparent 100%);
-  }
-  .reviews-scroll{
-    display:flex;gap:20px;width:max-content;
-    direction:ltr;
-    animation:reviews-marquee linear infinite;
-  }
-  .reviews-viewport:hover .reviews-scroll,
-  .reviews-viewport:focus-within .reviews-scroll{
-    animation-play-state:paused;
-  }
-  @keyframes reviews-marquee{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-  }
-  @media (prefers-reduced-motion: reduce){
-    .reviews-scroll{animation:none;}
-  }
-  .review-card{
-    flex:0 0 300px;
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:16px;
-    padding:24px;
-    box-shadow:0 8px 20px rgba(11,32,54,0.06);
-    display:flex;flex-direction:column;gap:14px;
-  }
-  .review-top{display:flex;align-items:center;gap:12px;}
-  .review-avatar{
-    width:40px;height:40px;border-radius:50%;flex-shrink:0;
-    background:linear-gradient(135deg, var(--brand-blue), var(--brand-blue-dark));
-    color:#fff;font-weight:800;font-size:16px;
-    display:flex;align-items:center;justify-content:center;
-  }
-  .review-name{font-weight:700;font-size:14.5px;color:var(--brand-blue-dark);}
-  .review-quote-mark{font-size:28px;color:var(--brand-orange);opacity:0.35;line-height:0.6;font-family:Georgia,serif;}
-  .review-text{font-size:13.5px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
-  .reviews-cta{text-align:center;margin-top:8px;}
-
-  /* How it works */
-  .how{background:var(--brand-blue-dark);color:#fff;}
-  .how .section-head h2{color:#fff;}
-  .how .section-head p{color:#C9DCE8;}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  .step{
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,255,255,0.14);
-    border-radius:16px;padding:30px 24px;position:relative;
-  }
-  .step .n{
-    font-family:'IBM Plex Mono',monospace;font-size:34px;font-weight:600;color:var(--brand-orange);
-    opacity:0.9;margin-bottom:14px;
-  }
-  .step h4{font-size:17px;font-weight:700;margin-bottom:8px;}
-  .step p{font-size:14px;color:#C9DCE8;}
-
-  /* Why us */
-  .why{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
-  .why-list{display:flex;flex-direction:column;gap:22px;}
-  .why-item{display:flex;gap:16px;align-items:flex-start;}
-  .why-item .mark{
-    flex-shrink:0;width:36px;height:36px;border-radius:10px;
-    background:var(--brand-blue);color:#fff;
-    display:flex;align-items:center;justify-content:center;font-weight:800;
-  }
-  .why-item h4{font-size:16px;font-weight:700;color:var(--brand-blue-dark);margin-bottom:4px;}
-  .why-item p{font-size:14px;color:#4B5A66;}
-  .why-head-title{font-size:30px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:22px;}
-  .why-card{
-    background:linear-gradient(160deg, var(--brand-orange), var(--brand-orange-dark));
-    border-radius:20px;color:#fff;padding:40px;
-    box-shadow:0 20px 40px rgba(241,86,11,0.25);
-  }
-  .why-card .quote{font-size:20px;font-weight:800;line-height:1.6;margin-bottom:18px;}
-  .why-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;opacity:0.85;letter-spacing:1px;}
-
-  /* FAQ */
-  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
-  .faq-item{
-    background:var(--paper-card);
-    border:1px solid var(--line);
-    border-radius:14px;
-    overflow:hidden;
-  }
-  .faq-item summary{
-    padding:18px 22px;font-weight:700;font-size:15px;color:var(--brand-blue-dark);
-    cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;
-  }
-  .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary::after{
-    content:"+";font-size:22px;color:var(--brand-orange);flex-shrink:0;font-weight:400;
-    transition:transform .2s;
-  }
-  .faq-item[open] summary::after{transform:rotate(45deg);}
-  .faq-item .faq-a{padding:0 22px 20px;font-size:14px;color:#4B5A66;line-height:1.8;}
-
-  /* Contact */
-  .contact{background:var(--paper-card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .contact-inner{
-    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:32px;
-  }
-  .contact-inner h2{font-size:28px;font-weight:800;color:var(--brand-blue-dark);max-width:420px;}
-  .contact-inner p{color:#4B5A66;margin-top:10px;max-width:420px;font-size:15px;}
-  .contact-btns{display:flex;flex-wrap:wrap;gap:14px;}
-  .cbtn{
-    display:flex;align-items:center;gap:10px;
-    padding:14px 22px;border-radius:12px;font-weight:700;font-size:14.5px;
-    box-shadow:0 8px 20px rgba(11,32,54,0.1);
-    transition:transform .15s;
-  }
-  .cbtn:hover{transform:translateY(-3px);}
-  .cbtn.wa{background:var(--whatsapp);color:#fff;}
-  .cbtn.fb{background:#1877F2;color:#fff;}
-  .cbtn.ph{background:var(--brand-blue);color:#fff;}
-  .cbtn.em{background:var(--ink);color:#fff;}
-
-  /* Footer */
-  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
-  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
-  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
-  .footer-brand img{height:38px;}
-  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
-  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
-
-  /* Floating WhatsApp */
-  .floating-wa{
-    position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;
-    background:var(--whatsapp);color:#fff;
-    width:58px;height:58px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;font-size:28px;
-    box-shadow:0 8px 24px rgba(37,211,102,0.5);
-  }
-
-  @media (max-width:900px){
-    .nav-links{display:none;}
-    .hero-inner{grid-template-columns:1fr;}
-    .hero h1{font-size:32px;}
-    .services{grid-template-columns:1fr;}
-    .destinations-grid{grid-template-columns:repeat(3,1fr);}
-    .steps{grid-template-columns:1fr;}
-    .why{grid-template-columns:1fr;}
-    section{padding:60px 0;}
-    .contact-inner{flex-direction:column;align-items:flex-start;}
-  }
-  @media (max-width:520px){
-    .destinations-grid{grid-template-columns:repeat(2,1fr);}
-    .review-card{flex-basis:260px;}
-    .reviews-stats{gap:28px;}
-  }
-
-  /* ===== MEET SARA — guide pass card ===== */
-  .sara-card{
-    position:relative;
-    display:grid;grid-template-columns:300px 1fr;
-    background:var(--paper-card);
-    border-radius:20px;
-    box-shadow:0 26px 54px rgba(11,32,54,0.14);
-  }
-  .sara-photo{position:relative;border-radius:20px;overflow:hidden;}
-  .sara-photo img{width:100%;height:100%;min-height:380px;object-fit:cover;object-position:top center;display:block;}
-  .sara-photo::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(0deg, rgba(2,49,82,0.55) 0%, transparent 45%);
-  }
-  .sara-photo .sara-photo-tag{
-    position:absolute;bottom:14px;inset-inline-start:14px;inset-inline-end:14px;z-index:2;
-    font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.5px;
-    color:#fff;opacity:0.9;
-  }
-  .sara-info{
-    padding:40px 44px;
-    display:flex;flex-direction:column;justify-content:center;
-    border-inline-start:2px dashed var(--line);
-  }
-  .sara-eyebrow{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;
-    color:var(--brand-orange);font-weight:700;margin-bottom:12px;
-  }
-  .sara-name{font-size:28px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:4px;}
-  .sara-role{font-size:14.5px;color:#4B5A66;margin-bottom:18px;font-weight:600;}
-  .sara-bio{font-size:15px;color:#3E4C58;max-width:560px;margin-bottom:24px;}
-  .sara-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
-  .sara-tag{
-    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.5px;
-    border:1px dashed var(--brand-blue);color:var(--brand-blue);
-    border-radius:8px;padding:6px 13px;background:rgba(3,101,163,0.05);
-  }
-  .sara-card::before,.sara-card::after{
-    content:"";position:absolute;width:26px;height:26px;background:var(--paper);
-    border-radius:50%;inset-inline-start:300px;margin-inline-start:-13px;z-index:2;
-  }
-  .sara-card::before{top:-13px;}
-  .sara-card::after{bottom:-13px;}
-  @media (max-width:900px){
-    .sara-card{grid-template-columns:1fr;}
-    .sara-photo img{min-height:260px;}
-    .sara-info{border-inline-start:none;border-top:2px dashed var(--line);padding:30px 26px;}
-    .sara-card::before,.sara-card::after{display:none;}
-  }
-
-  /* ===== BLOG ===== */
-  .blog-hero{
-    position:relative;
-    background:linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 60%, #0483C9 100%);
-    color:#fff;padding:64px 0 56px;overflow:hidden;
-  }
-  .blog-hero::before{
-    content:"";position:absolute;inset:0;
-    background-image:radial-gradient(circle at 88% 15%, rgba(255,255,255,0.10) 0, transparent 40%),
-      radial-gradient(circle at 8% 90%, rgba(241,86,11,0.22) 0, transparent 45%);
-  }
-  .blog-hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:150px 1fr;gap:30px;align-items:center;}
-  .blog-hero-photo{width:150px;height:150px;border-radius:50%;overflow:hidden;border:4px solid rgba(255,255,255,0.85);box-shadow:0 14px 30px rgba(0,0,0,0.3);}
-  .blog-hero-photo img{width:100%;height:100%;object-fit:cover;object-position:top center;}
-  .blog-hero h1{font-size:32px;font-weight:900;margin-bottom:10px;}
-  .blog-hero p{font-size:15.5px;opacity:0.92;max-width:600px;}
-
-  .blog-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 auto 46px;justify-content:center;}
-  .blog-filter{
-    font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:0.5px;
-    border:1.5px solid var(--brand-blue);color:var(--brand-blue);
-    padding:8px 16px;border-radius:999px;background:transparent;
-  }
-
-  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-  .blog-card{
-    display:flex;flex-direction:column;
-    background:var(--paper-card);border-radius:16px;overflow:hidden;
-    box-shadow:0 12px 28px rgba(11,32,54,0.08);
-    transition:transform .25s, box-shadow .25s;
-  }
-  .blog-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(11,32,54,0.15);}
-  .blog-card.soon{opacity:0.65;}
-  .blog-card-img{position:relative;height:180px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
-  .blog-card-img img{width:100%;height:100%;object-fit:cover;}
-  .blog-card-cat{
-    position:absolute;top:12px;inset-inline-start:12px;
-    background:rgba(11,32,54,0.78);color:#fff;
-    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.5px;
-    padding:5px 11px;border-radius:999px;
-  }
-  .blog-card-soon-badge{
-    position:absolute;top:12px;inset-inline-end:12px;
-    background:var(--brand-orange);color:#fff;
-    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.5px;
-    padding:5px 11px;border-radius:999px;
-  }
-  .blog-card-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1;}
-  .blog-card-body h3{font-size:16.5px;font-weight:800;color:var(--brand-blue-dark);line-height:1.5;}
-  .blog-card-body p{font-size:13.5px;color:#4B5A66;flex:1;}
-  .blog-card-author{display:flex;align-items:center;gap:8px;margin-top:6px;}
-  .blog-card-author img{width:26px;height:26px;border-radius:50%;object-fit:cover;}
-  .blog-card-author span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;}
-  .blog-card-link{
-    margin-top:8px;font-weight:700;font-size:13.5px;color:var(--brand-orange);
-    display:inline-flex;align-items:center;gap:6px;
-  }
-
-  @media (max-width:900px){
-    .blog-grid{grid-template-columns:1fr 1fr;}
-    .blog-hero-inner{grid-template-columns:1fr;text-align:center;}
-    .blog-hero-photo{margin:0 auto;}
-  }
-  @media (max-width:600px){
-    .blog-grid{grid-template-columns:1fr;}
-  }
 
   /* ===== ARTICLE ===== */
   .article-hero{
@@ -607,6 +125,25 @@
   .article-cta h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
   .article-cta p{color:#4B5A66;margin-bottom:20px;font-size:14.5px;}
 
+  /* Footer */
+  footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:44px 0 26px;}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,0.12);}
+  .footer-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:#fff;}
+  .footer-brand img{height:38px;}
+  .footer-socials{display:flex;gap:16px;font-size:14px;flex-wrap:wrap;}
+  .footer-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#93A9B8;}
+
+  .floating-wa{
+    position:fixed;bottom:22px;inset-inline-start:22px;z-index:60;
+    background:var(--whatsapp);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:28px;
+    box-shadow:0 8px 24px rgba(37,211,102,0.5);
+  }
+
+  @media (max-width:900px){
+    .nav-links{display:none;}
+  }
   @media (max-width:700px){
     .article-hero h1{font-size:23px;}
     .phrase-table{font-size:13px;}
@@ -622,7 +159,11 @@ window.ARTICLE_CONFIG = {
     whatsappNumber: "201116666306",
     whatsappDefaultMessage: {
       ar: "مرحباً، عايز أحجز رحلة لإيطاليا",
-      en: "Hello, I'd like to book a trip to Italy"
+      en: "Hello, I'd like to book a trip to Italy",
+      it: "Ciao, vorrei prenotare un viaggio in Italia",
+      fr: "Bonjour, je voudrais réserver un voyage en Italie",
+      pt: "Olá, gostaria de reservar uma viagem a Itália",
+      ptbr: "Oi, eu queria reservar uma viagem pra Itália"
     },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
@@ -672,19 +213,163 @@ window.ARTICLE_CONFIG = {
       ctaH3: "Ready to book your trip to Italy?",
       ctaP: "Message me on WhatsApp and I'll send you the best price for your ticket and hotel.",
       ctaBtn: "Book on WhatsApp"
+    },
+    it: {
+      brand: "Safer Discounts",
+      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", cta: "Prenota su WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Chiama", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tutti i diritti riservati.",
+      back: "→ Torna al blog",
+      eyebrow: "✦ ARTICOLO 01 · Imparare le Lingue",
+      title: "10 Frasi Italiane di cui Avrai Bisogno Prima di Partire",
+      sub: "Dal saluto al conto al ristorante — la tua prima lezione veloce d'italiano prima del viaggio.",
+      byName: "di Sara",
+      byMeta: "4 min di lettura · Lingue",
+      intro: "Ciao! Sono Sara, e ti accompagnerò nel tuo viaggio in Italia senza farti sentire perso linguisticamente. Non serve parlare italiano perfettamente: bastano poche frasi semplici per fare davvero la differenza in aeroporto, in hotel e al ristorante. Ecco le 10 frasi più utili per il tuo viaggio.",
+      tableH2: "Le Dieci Frasi",
+      colMeaning: "Uso / Significato", colPron: "Pronuncia", colItalian: "In Italiano",
+      tipLabel: "Il Consiglio di Sara",
+      tip: "Gli italiani apprezzano molto quando qualcuno prova a parlare la loro lingua, anche con un accento imperfetto — non aver paura di provarci!",
+      closing: "Questo è solo l'inizio. Nei prossimi articoli tratterò altre frasi e ti porterò in un tour dei luoghi più famosi d'Italia. Nel frattempo...",
+      ctaH3: "Pronto a prenotare il tuo viaggio in Italia?",
+      ctaP: "Scrivimi su WhatsApp e ti manderò il miglior prezzo per il tuo biglietto e il tuo hotel.",
+      ctaBtn: "Prenota su WhatsApp"
+    },
+    fr: {
+      brand: "Safer Discounts",
+      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Appeler", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Tous droits réservés.",
+      back: "→ Retour au blog",
+      eyebrow: "✦ ARTICLE 01 · Apprentissage des Langues",
+      title: "10 Expressions Italiennes Utiles Avant de Voyager",
+      sub: "Du bonjour à l'addition au restaurant — un premier cours d'italien express avant votre voyage.",
+      byName: "Par Sara",
+      byMeta: "4 min de lecture · Apprentissage des langues",
+      intro: "Bonjour, je suis Sara, et je serai avec vous pendant votre voyage en Italie pour que vous ne vous sentiez jamais perdu. Pas besoin d'être bilingue : quelques phrases simples feront vraiment la différence à l'aéroport, à l'hôtel et au restaurant. Voici les 10 expressions dont vous aurez vraiment besoin en voyage.",
+      tableH2: "Les Dix Expressions",
+      colMeaning: "Signification", colPron: "Prononciation", colItalian: "En Italien",
+      tipLabel: "Le Conseil de Sara",
+      tip: "Les Italiens apprécient vraiment quand on essaie de parler leur langue, même avec un accent imparfait — n'ayez pas peur d'essayer !",
+      closing: "Ce n'est qu'un début. Dans les prochains articles, je couvrirai d'autres expressions et vous emmènerai visiter les plus beaux sites d'Italie. En attendant de vous y emmener réellement...",
+      ctaH3: "Prêt à réserver votre voyage en Italie ?",
+      ctaP: "Écrivez-moi sur WhatsApp et je vous enverrai le meilleur prix pour votre billet et votre hôtel.",
+      ctaBtn: "Réserver sur WhatsApp"
+    },
+    pt: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados.",
+      back: "→ Voltar ao blog",
+      eyebrow: "✦ ARTIGO 01 · Aprender Línguas",
+      title: "10 Expressões Italianas que Vai Precisar Antes de Viajar",
+      sub: "Do cumprimento à conta no restaurante — uma primeira lição rápida de italiano antes da sua viagem.",
+      byName: "Por Sara",
+      byMeta: "4 min de leitura · Aprender línguas",
+      intro: "Olá, sou a Sara, e vou acompanhá-lo na sua viagem a Itália para que nunca se sinta perdido. Não precisa de ser fluente: um punhado de frases simples fará uma grande diferença no aeroporto, no hotel e no restaurante. Aqui estão as 10 que vai realmente precisar durante a viagem.",
+      tableH2: "As Dez Expressões",
+      colMeaning: "Significado", colPron: "Pronúncia", colItalian: "Em Italiano",
+      tipLabel: "Dica da Sara",
+      tip: "Os italianos apreciam muito quando alguém tenta falar a sua língua, mesmo com sotaque imperfeito — não tenha medo de tentar!",
+      closing: "Isto é apenas o início. Nos próximos artigos vou abordar mais expressões e levá-lo numa visita aos principais monumentos de Itália. Até chegarmos lá...",
+      ctaH3: "Pronto para reservar a sua viagem a Itália?",
+      ctaP: "Mande-me mensagem no WhatsApp e envio-lhe o melhor preço para o seu bilhete e hotel.",
+      ctaBtn: "Reservar no WhatsApp"
+    },
+    ptbr: {
+      brand: "Safer Discounts",
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
+      footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados.",
+      back: "→ Voltar pro blog",
+      eyebrow: "✦ ARTIGO 01 · Aprender Idiomas",
+      title: "10 Frases em Italiano que Você Vai Precisar Antes de Viajar",
+      sub: "Do cumprimento até a conta no restaurante — uma primeira aula rápida de italiano antes da sua viagem.",
+      byName: "Por Sara",
+      byMeta: "4 min de leitura · Aprender idiomas",
+      intro: "Oi, eu sou a Sara, e vou estar com você na sua viagem pra Itália pra você nunca se sentir perdido. Não precisa ser fluente: algumas frases simples já fazem toda a diferença no aeroporto, no hotel e no restaurante. Aqui estão as 10 que você vai realmente precisar na viagem.",
+      tableH2: "As Dez Frases",
+      colMeaning: "Significado", colPron: "Pronúncia", colItalian: "Em Italiano",
+      tipLabel: "Dica da Sara",
+      tip: "Os italianos adoram quando alguém tenta falar a língua deles, mesmo com sotaque errado — não tenha medo de tentar!",
+      closing: "Isso é só o começo. Nos próximos artigos vou trazer mais frases e uma volta pelos pontos turísticos mais famosos da Itália. Até a gente te levar lá de verdade...",
+      ctaH3: "Pronto pra reservar sua viagem pra Itália?",
+      ctaP: "Manda mensagem no WhatsApp que eu te mando o melhor preço pra passagem e pro hotel.",
+      ctaBtn: "Reservar no WhatsApp"
     }
   },
   phrases: [
-    { it: "Ciao", ar_m: "أهلًا (كاجوال جدًا، للسلام والوداع)", ar_p: "تشاو", en_m: "Hi / Bye (very casual)", en_p: "chow" },
-    { it: "Buongiorno", ar_m: "صباح الخير", ar_p: "بوونجورنو", en_m: "Good morning", en_p: "bwohn-JOR-noh" },
-    { it: "Buonasera", ar_m: "مساء الخير", ar_p: "بوونا سيرا", en_m: "Good evening", en_p: "bwoh-nah SEH-rah" },
-    { it: "Grazie", ar_m: "شكرًا", ar_p: "جراتسيي", en_m: "Thank you", en_p: "GRAHT-tsee-eh" },
-    { it: "Per favore", ar_m: "لو سمحت", ar_p: "پير فابوري", en_m: "Please", en_p: "pehr fah-VOH-reh" },
-    { it: "Scusa / Mi dispiace", ar_m: "آسف / معلش", ar_p: "سكوزا / مي ديسپياتشي", en_m: "Sorry / excuse me", en_p: "SKOO-zah / mee dee-spee-AH-cheh" },
-    { it: "Dove si trova...?", ar_m: "فين...؟", ar_p: "دوفي سي تروفا...؟", en_m: "Where is...?", en_p: "DOH-veh see TROH-vah...?" },
-    { it: "Quanto costa questo?", ar_m: "بكام ده؟", ar_p: "كوانتو كوستا كويستو؟", en_m: "How much is this?", en_p: "KWAN-toh KOS-tah KWEHS-toh?" },
-    { it: "Il conto, per favore", ar_m: "الحساب لو سمحت", ar_p: "إل كونتو، پير فابوري", en_m: "The bill, please", en_p: "eel KOHN-toh pehr fah-VOH-reh" },
-    { it: "Vorrei prenotare una camera", ar_m: "عايز أحجز أوضة", ar_p: "فورّي پرينوتاري أونا كاميرا", en_m: "I'd like to book a room", en_p: "vor-REY preh-noh-TAH-reh OO-nah KAH-meh-rah" }
+    { it: "Ciao",
+      ar_m: "أهلًا (كاجوال جدًا، للسلام والوداع)", ar_p: "تشاو",
+      en_m: "Hi / Bye (very casual)", en_p: "chow",
+      it_m: "Saluto molto informale, usato sia per salutare che per accomiatarsi", it_p: "—",
+      fr_m: "Salut (très familier, pour dire bonjour ou au revoir)", fr_p: "tchaou",
+      pt_m: "Olá / Tchau (muito informal, para cumprimentar ou despedir)", pt_p: "tchau",
+      ptbr_m: "Oi / Tchau (bem informal, para cumprimentar ou se despedir)", ptbr_p: "tchau" },
+    { it: "Buongiorno",
+      ar_m: "صباح الخير", ar_p: "بوونجورنو",
+      en_m: "Good morning", en_p: "bwohn-JOR-noh",
+      it_m: "Saluto standard usato fino al primo pomeriggio", it_p: "—",
+      fr_m: "Bonjour", fr_p: "bwondjorno",
+      pt_m: "Bom dia", pt_p: "buondjôrno",
+      ptbr_m: "Bom dia", ptbr_p: "buondjôrrno" },
+    { it: "Buonasera",
+      ar_m: "مساء الخير", ar_p: "بوونا سيرا",
+      en_m: "Good evening", en_p: "bwoh-nah SEH-rah",
+      it_m: "Si usa dal tardo pomeriggio in poi", it_p: "—",
+      fr_m: "Bonsoir", fr_p: "bwona séra",
+      pt_m: "Boa tarde / Boa noite", pt_p: "buona séra",
+      ptbr_m: "Boa tarde / Boa noite", ptbr_p: "buona séra" },
+    { it: "Grazie",
+      ar_m: "شكرًا", ar_p: "جراتسيي",
+      en_m: "Thank you", en_p: "GRAHT-tsee-eh",
+      it_m: "Ringraziamento standard, valido in ogni contesto", it_p: "—",
+      fr_m: "Merci", fr_p: "gratsié",
+      pt_m: "Obrigado / Obrigada", pt_p: "gratsíe",
+      ptbr_m: "Obrigado / Obrigada", ptbr_p: "gratsíe" },
+    { it: "Per favore",
+      ar_m: "لو سمحت", ar_p: "پير فابوري",
+      en_m: "Please", en_p: "pehr fah-VOH-reh",
+      it_m: "Formula di cortesia standard", it_p: "—",
+      fr_m: "S'il vous plaît", fr_p: "pèr favoré",
+      pt_m: "Por favor", pt_p: "pér favóre",
+      ptbr_m: "Por favor", ptbr_p: "pér favóre" },
+    { it: "Scusa / Mi dispiace",
+      ar_m: "آسف / معلش", ar_p: "سكوزا / مي ديسپياتشي",
+      en_m: "Sorry / excuse me", en_p: "SKOO-zah / mee dee-spee-AH-cheh",
+      it_m: "«Scusa» è informale per un contatto rapido; «Mi dispiace» esprime dispiacere più sincero", it_p: "—",
+      fr_m: "Pardon / Je suis désolé(e)", fr_p: "skouza / mi dispiatché",
+      pt_m: "Desculpa / Lamento", pt_p: "skúza / mi dispiátche",
+      ptbr_m: "Desculpa / Sinto muito", ptbr_p: "skúza / mi dispiátchi" },
+    { it: "Dove si trova...?",
+      ar_m: "فين...؟", ar_p: "دوفي سي تروفا...؟",
+      en_m: "Where is...?", en_p: "DOH-veh see TROH-vah...?",
+      it_m: "Domanda standard per chiedere indicazioni", it_p: "—",
+      fr_m: "Où se trouve...?", fr_p: "dové si trova...?",
+      pt_m: "Onde fica...?", pt_p: "dóve si tróva...?",
+      ptbr_m: "Onde fica...?", ptbr_p: "dóve si tróva...?" },
+    { it: "Quanto costa questo?",
+      ar_m: "بكام ده؟", ar_p: "كوانتو كوستا كويستو؟",
+      en_m: "How much is this?", en_p: "KWAN-toh KOS-tah KWEHS-toh?",
+      it_m: "Domanda essenziale per lo shopping", it_p: "—",
+      fr_m: "Combien ça coûte ?", fr_p: "kwanto kosta kwesto?",
+      pt_m: "Quanto custa isto?", pt_p: "kuánto kósta kuésto?",
+      ptbr_m: "Quanto custa isso?", ptbr_p: "kuánto kósta kuésto?" },
+    { it: "Il conto, per favore",
+      ar_m: "الحساب لو سمحت", ar_p: "إل كونتو، پير فابوري",
+      en_m: "The bill, please", en_p: "eel KOHN-toh pehr fah-VOH-reh",
+      it_m: "Frase indispensabile al ristorante", it_p: "—",
+      fr_m: "L'addition, s'il vous plaît", fr_p: "il konto, pèr favoré",
+      pt_m: "A conta, por favor", pt_p: "il kónto, pér favóre",
+      ptbr_m: "A conta, por favor", ptbr_p: "il kónto, pér favóre" },
+    { it: "Vorrei prenotare una camera",
+      ar_m: "عايز أحجز أوضة", ar_p: "فورّي پرينوتاري أونا كاميرا",
+      en_m: "I'd like to book a room", en_p: "vor-REY preh-noh-TAH-reh OO-nah KAH-meh-rah",
+      it_m: "Frase formale per la prenotazione in hotel", it_p: "—",
+      fr_m: "Je voudrais réserver une chambre", fr_p: "vorrèi prénotaré ouna camèra",
+      pt_m: "Gostaria de reservar um quarto", pt_p: "vorréi prenotáre úna kámera",
+      ptbr_m: "Eu gostaria de reservar um quarto", ptbr_p: "vorréi prenotáre úna kámera" }
   ]
 };
 </script>
@@ -701,7 +386,14 @@ window.ARTICLE_CONFIG = {
       <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
     </div>
     <div class="nav-right">
-      <button class="lang-toggle" id="lang-toggle" type="button">EN</button>
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="ar" type="button">AR</button>
+        <button class="lang-btn" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="it" type="button">IT</button>
+        <button class="lang-btn" data-lang="fr" type="button">FR</button>
+        <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+      </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
   </nav>
@@ -785,10 +477,13 @@ window.ARTICLE_CONFIG = {
 
   function render(lang){
     currentLang = lang;
-    var t = cfg.i18n[lang];
+    var t = cfg.i18n[lang] || cfg.i18n.ar;
+    try { localStorage.setItem('sd_lang', lang); } catch(e){}
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+    document.querySelectorAll('.lang-btn').forEach(function(btn){
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
 
     document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
     document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
@@ -822,8 +517,8 @@ window.ARTICLE_CONFIG = {
     document.getElementById('cta-btn').innerHTML = '💬 ' + t.ctaBtn;
 
     document.getElementById('phrase-tbody').innerHTML = cfg.phrases.map(function(p){
-      var meaning = lang === 'ar' ? p.ar_m : p.en_m;
-      var pron = lang === 'ar' ? p.ar_p : p.en_p;
+      var meaning = p[lang + '_m'] || p.en_m;
+      var pron = p[lang + '_p'] || p.en_p;
       return '<tr><td>' + meaning + '</td><td class="phrase-pron">' + pron + '</td><td class="phrase-it">' + p.it + '</td></tr>';
     }).join('');
 
@@ -836,13 +531,315 @@ window.ARTICLE_CONFIG = {
     document.getElementById('footer-copyright').textContent = t.footerCopyright;
   }
 
-  document.getElementById('lang-toggle').addEventListener('click', function(){
-    render(currentLang === 'ar' ? 'en' : 'ar');
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      render(btn.getAttribute('data-lang'));
+    });
   });
 
-  render('ar');
+  var savedLang = null;
+  try { savedLang = localStorage.getItem('sd_lang'); } catch(e){}
+  render(cfg.i18n[savedLang] ? savedLang : 'ar');
 })();
 </script>
+
+<!-- ===================== SARA ASSISTANT WIDGET ===================== -->
+<style>
+  .sara-fab{
+    position:fixed;bottom:22px;inset-inline-end:22px;z-index:70;
+    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
+    width:58px;height:58px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:26px;
+    box-shadow:0 8px 24px rgba(3,101,163,0.5);
+    border:none;cursor:pointer;transition:transform .15s;
+  }
+  .sara-fab:hover{transform:translateY(-2px);}
+  .sara-panel{
+    position:fixed;bottom:90px;inset-inline-end:22px;z-index:70;
+    width:320px;max-width:calc(100vw - 44px);
+    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:18px;
+    box-shadow:0 24px 48px rgba(11,32,54,0.25);
+    display:none;flex-direction:column;overflow:hidden;
+    font-family:'Cairo',sans-serif;
+  }
+  .sara-panel.open{display:flex;}
+  .sara-panel-header{
+    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
+    padding:14px 16px;display:flex;align-items:center;gap:10px;
+  }
+  .sara-panel-header img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.6);}
+  .sara-panel-header .who{flex:1;}
+  .sara-panel-header .who .name{font-weight:800;font-size:14px;}
+  .sara-panel-header .who .status{font-family:'IBM Plex Mono',monospace;font-size:10px;opacity:0.85;}
+  .sara-panel-header .status::before{content:"● ";color:#6CFF9E;}
+  .sara-close{background:transparent;border:none;color:#fff;font-size:18px;cursor:pointer;opacity:0.85;line-height:1;padding:4px;}
+  .sara-close:hover{opacity:1;}
+  .sara-messages{padding:16px;display:flex;flex-direction:column;gap:10px;max-height:280px;overflow-y:auto;}
+  .sara-msg{
+    background:#fff;border:1px solid #E4D9C8;border-radius:14px;border-start-start-radius:4px;
+    padding:10px 14px;font-size:13.5px;color:#3E4C58;line-height:1.6;max-width:88%;align-self:flex-start;
+  }
+  .sara-msg.user{
+    background:#0365A3;color:#fff;border:none;border-start-start-radius:14px;border-start-end-radius:4px;
+    align-self:flex-end;
+  }
+  .sara-options{padding:0 16px 16px;display:flex;flex-direction:column;gap:8px;}
+  .sara-opt-btn{
+    background:#fff;border:1.5px solid #0365A3;color:#0365A3;
+    border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700;
+    cursor:pointer;text-align:start;transition:background .15s, color .15s;
+    font-family:'Cairo',sans-serif;
+  }
+  .sara-opt-btn:hover{background:#0365A3;color:#fff;}
+  .sara-opt-btn.wa{border-color:#25D366;color:#25D366;}
+  .sara-opt-btn.wa:hover{background:#25D366;color:#fff;}
+  @media (max-width:480px){
+    .sara-panel{inset-inline-end:12px;width:calc(100vw - 24px);}
+    .sara-fab{inset-inline-end:12px;}
+  }
+</style>
+
+<button class="sara-fab" id="saraFab" aria-label="Sara's Assistant">🧭</button>
+<div class="sara-panel" id="saraPanel">
+  <div class="sara-panel-header">
+    <img src="images/sara.jpg" alt="Sara">
+    <div class="who">
+      <div class="name" id="saraPanelName">Sara</div>
+      <div class="status" id="saraPanelStatus"></div>
+    </div>
+    <button class="sara-close" id="saraClose" aria-label="Close">✕</button>
+  </div>
+  <div class="sara-messages" id="saraMessages"></div>
+  <div class="sara-options" id="saraOptions"></div>
+</div>
+
+<script>
+(function(){
+  var WA_NUM = {ar:"201116666306",en:"201116666306",it:"393801991992",fr:"201116666306",pt:"201116666306",ptbr:"201116666306"};
+  var WA_MSG = {
+    ar:"مرحباً، جاي من مساعد سارة على الموقع وعايز مساعدة",
+    en:"Hello, I came from Sara's site assistant and would like some help",
+    it:"Ciao, vengo dall'assistente del sito di Sara e vorrei un aiuto",
+    fr:"Bonjour, je viens de l'assistant du site de Sara et j'aimerais de l'aide",
+    pt:"Olá, venho do assistente do site da Sara e gostaria de ajuda",
+    ptbr:"Oi, eu vim do assistente do site da Sara e queria uma ajuda"
+  };
+  var STATUS_TXT = {ar:"أونلاين",en:"Online",it:"Online",fr:"En ligne",pt:"Online",ptbr:"Online"};
+
+  function waLink(lang){
+    var num = WA_NUM[lang] || WA_NUM.en;
+    var msg = WA_MSG[lang] || WA_MSG.en;
+    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
+  }
+
+  var TREE = {
+    root: {
+      msg:{ar:"أهلاً! أنا سارة 👋 عايز أساعدك تستفيد من الموقع أد ما تقدر. تحب نبدأ بإيه؟",
+           en:"Hi! I'm Sara 👋 I want to help you get the most out of the site. What would you like to start with?",
+           it:"Ciao! Sono Sara 👋 Voglio aiutarti a sfruttare al meglio il sito. Da cosa vuoi iniziare?",
+           fr:"Bonjour ! Je suis Sara 👋 Je veux vous aider à tirer le meilleur parti du site. Par quoi voulez-vous commencer ?",
+           pt:"Olá! Sou a Sara 👋 Quero ajudá-lo a aproveitar ao máximo o site. Por onde quer começar?",
+           ptbr:"Oi! Eu sou a Sara 👋 Quero te ajudar a aproveitar o site ao máximo. Por onde você quer começar?"},
+      options:[
+        {label:{ar:"📅 عايز أحجز رحلة",en:"📅 Book a trip",it:"📅 Prenotare un viaggio",fr:"📅 Réserver un voyage",pt:"📅 Reservar uma viagem",ptbr:"📅 Reservar uma viagem"}, goto:"book"},
+        {label:{ar:"🗣️ أتعلم لغة قبل السفر",en:"🗣️ Learn a language first",it:"🗣️ Imparare una lingua prima",fr:"🗣️ Apprendre une langue avant",pt:"🗣️ Aprender uma língua antes",ptbr:"🗣️ Aprender um idioma antes"}, goto:"language"},
+        {label:{ar:"🍽️ أفكار أكل صحي",en:"🍽️ Healthy food ideas",it:"🍽️ Idee per pasti sani",fr:"🍽️ Idées de repas sains",pt:"🍽️ Ideias de comida saudável",ptbr:"🍽️ Ideias de comida saudável"}, goto:"food"},
+        {label:{ar:"🗺️ معلومات عن وجهة",en:"🗺️ Info about a destination",it:"🗺️ Info su una destinazione",fr:"🗺️ Infos sur une destination",pt:"🗺️ Info sobre um destino",ptbr:"🗺️ Info sobre um destino"}, goto:"destination"},
+        {label:{ar:"❓ أسئلة الحجز والدفع",en:"❓ Booking & payment questions",it:"❓ Domande su prenotazione e pagamento",fr:"❓ Questions réservation et paiement",pt:"❓ Perguntas sobre reserva e pagamento",ptbr:"❓ Perguntas sobre reserva e pagamento"}, goto:"faq"},
+        {label:{ar:"💬 أتكلم مع حد دلوقتي",en:"💬 Talk to someone now",it:"💬 Parlare subito con qualcuno",fr:"💬 Parler à quelqu'un maintenant",pt:"💬 Falar com alguém agora",ptbr:"💬 Falar com alguém agora"}, wa:true}
+      ]
+    },
+    book: {
+      msg:{ar:"تمام! تقدر تشوف كل خدماتنا أو الوجهات اللي بنحجزلك فيها، أو تكلمني على طول وهساعدك أحدد السعر.",
+           en:"Great! You can browse all our services or the destinations we book, or just message me now and I'll help you get a price.",
+           it:"Perfetto! Puoi vedere tutti i nostri servizi o le destinazioni che prenotiamo, oppure scrivimi subito per un prezzo.",
+           fr:"Parfait ! Vous pouvez consulter nos services ou les destinations que nous réservons, ou m'écrire directement pour un prix.",
+           pt:"Ótimo! Pode ver todos os nossos serviços ou os destinos que reservamos, ou mandar-me mensagem já para um preço.",
+           ptbr:"Ótimo! Você pode ver nossos serviços ou os destinos que reservamos, ou já mandar mensagem que eu ajudo com o preço."},
+      options:[
+        {label:{ar:"شوف خدماتنا",en:"See our services",it:"Vedi i nostri servizi",fr:"Voir nos services",pt:"Ver os nossos serviços",ptbr:"Ver nossos serviços"}, link:"index.html#services"},
+        {label:{ar:"شوف الوجهات",en:"See destinations",it:"Vedi le destinazioni",fr:"Voir les destinations",pt:"Ver os destinos",ptbr:"Ver os destinos"}, link:"index.html#destinations"},
+        {label:{ar:"💬 كلمني على واتساب دلوقتي",en:"💬 Message me on WhatsApp now",it:"💬 Scrivimi su WhatsApp ora",fr:"💬 Écrivez-moi sur WhatsApp",pt:"💬 Mande mensagem no WhatsApp",ptbr:"💬 Manda mensagem no WhatsApp"}, wa:true},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    language: {
+      msg:{ar:"عندنا كتيبات كاملة (أساسي ومتقدم، بست لغات شرح) لتعلم:",
+           en:"We have complete guidebooks (basic + advanced, explained in 6 languages) to learn:",
+           it:"Abbiamo guide complete (base e avanzato, in 6 lingue) per imparare:",
+           fr:"Nous avons des guides complets (débutant et avancé, en 6 langues) pour apprendre :",
+           pt:"Temos guias completos (básico e avançado, em 6 línguas) para aprender:",
+           ptbr:"Temos guias completos (básico e avançado, em 6 idiomas) para aprender:"},
+      options:[
+        {label:{ar:"🇮🇹 إيطالي",en:"🇮🇹 Italian",it:"🇮🇹 Italiano",fr:"🇮🇹 Italien",pt:"🇮🇹 Italiano",ptbr:"🇮🇹 Italiano"}, link:"guide-italian.html"},
+        {label:{ar:"🇫🇷 فرنساوي",en:"🇫🇷 French",it:"🇫🇷 Francese",fr:"🇫🇷 Français",pt:"🇫🇷 Francês",ptbr:"🇫🇷 Francês"}, link:"guide-french.html"},
+        {label:{ar:"🇧🇷 برتغالي برازيلي",en:"🇧🇷 Brazilian Portuguese",it:"🇧🇷 Portoghese Brasiliano",fr:"🇧🇷 Portugais Brésilien",pt:"🇧🇷 Português do Brasil",ptbr:"🇧🇷 Português do Brasil"}, link:"guide-portuguese-brazilian.html"},
+        {label:{ar:"🇵🇹 برتغالي",en:"🇵🇹 Portuguese",it:"🇵🇹 Portoghese",fr:"🇵🇹 Portugais",pt:"🇵🇹 Português",ptbr:"🇵🇹 Português"}, link:"guide-portuguese.html"},
+        {label:{ar:"🇪🇸 إسباني",en:"🇪🇸 Spanish",it:"🇪🇸 Spagnolo",fr:"🇪🇸 Espagnol",pt:"🇪🇸 Espanhol",ptbr:"🇪🇸 Espanhol"}, link:"guide-spanish.html"},
+        {label:{ar:"🇬🇧 إنجليزي",en:"🇬🇧 English",it:"🇬🇧 Inglese",fr:"🇬🇧 Anglais",pt:"🇬🇧 Inglês",ptbr:"🇬🇧 Inglês"}, link:"guide-english.html"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    food: {
+      msg:{ar:"عندنا خطط عشا كاملة لأسبوع، بأكل بيتي حقيقي من بلاد مختلفة. عايز تشوف أنهي واحدة؟",
+           en:"We have complete week-long dinner plans with real home cooking from different countries. Which one would you like to see?",
+           it:"Abbiamo piani cena completi per una settimana, con vera cucina casalinga. Quale vuoi vedere?",
+           fr:"Nous avons des plans de dîner complets pour une semaine, avec de la vraie cuisine maison. Lequel voulez-vous voir ?",
+           pt:"Temos planos de jantares completos para uma semana, com comida caseira. Qual quer ver?",
+           ptbr:"Temos planos de jantares completos pra uma semana, com comida caseira. Qual você quer ver?"},
+      options:[
+        {label:{ar:"خطة عامة (٧ أيام)",en:"General plan (7 days)",it:"Piano generale (7 giorni)",fr:"Plan général (7 jours)",pt:"Plano geral (7 dias)",ptbr:"Plano geral (7 dias)"}, link:"blog-dinner-plan.html"},
+        {label:{ar:"شرق أوسطي",en:"Middle Eastern",it:"Mediorientale",fr:"Moyen-Oriental",pt:"Médio Oriente",ptbr:"Oriente Médio"}, link:"blog-middle-eastern-dinner-plan.html"},
+        {label:{ar:"مصري",en:"Egyptian",it:"Egiziana",fr:"Égyptienne",pt:"Egípcia",ptbr:"Egípcia"}, link:"blog-egyptian-diet-plan.html"},
+        {label:{ar:"برازيلي",en:"Brazilian",it:"Brasiliana",fr:"Brésilienne",pt:"Brasileira",ptbr:"Brasileira"}, link:"blog-brazilian-diet-plan.html"},
+        {label:{ar:"أمريكي",en:"American",it:"Americana",fr:"Américaine",pt:"Americana",ptbr:"Americana"}, link:"blog-american-diet-plan.html"},
+        {label:{ar:"فرنساوي",en:"French",it:"Francese",fr:"Française",pt:"Francesa",ptbr:"Francesa"}, link:"blog-french-diet-plan.html"},
+        {label:{ar:"إسباني",en:"Spanish",it:"Spagnola",fr:"Espagnole",pt:"Espanhola",ptbr:"Espanhola"}, link:"blog-spanish-diet-plan.html"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    destination: {
+      msg:{ar:"عندنا دليلين تفصيليين جاهزين دلوقتي:",
+           en:"We have two detailed guides ready right now:",
+           it:"Abbiamo due guide dettagliate pronte adesso:",
+           fr:"Nous avons deux guides détaillés disponibles maintenant :",
+           pt:"Temos dois guias detalhados prontos agora:",
+           ptbr:"Temos dois guias detalhados prontos agora:"},
+      options:[
+        {label:{ar:"أهرامات الجيزة",en:"Giza Pyramids",it:"Piramidi di Giza",fr:"Pyramides de Gizeh",pt:"Pirâmides de Gizé",ptbr:"Pirâmides de Gizé"}, link:"guide-giza-pyramids.html"},
+        {label:{ar:"إسطنبول",en:"Istanbul",it:"Istanbul",fr:"Istanbul",pt:"Istambul",ptbr:"Istambul"}, link:"guide-istanbul.html"},
+        {label:{ar:"شوف كل الوجهات",en:"See all destinations",it:"Vedi tutte le destinazioni",fr:"Voir toutes les destinations",pt:"Ver todos os destinos",ptbr:"Ver todos os destinos"}, link:"index.html#destinations"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    faq: {
+      msg:{ar:"دي أشهر اللي بيسألوا عليها الناس:",
+           en:"Here are the most common questions people ask:",
+           it:"Ecco le domande più comuni:",
+           fr:"Voici les questions les plus fréquentes :",
+           pt:"Aqui estão as perguntas mais comuns:",
+           ptbr:"Aqui estão as perguntas mais comuns:"},
+      options:[
+        {label:{ar:"إزاي بتحجز خطوة بخطوة؟",en:"How does booking work, step by step?",it:"Come funziona la prenotazione, passo passo?",fr:"Comment fonctionne la réservation ?",pt:"Como funciona a reserva, passo a passo?",ptbr:"Como funciona a reserva, passo a passo?"}, link:"guide-booking-whatsapp.html"},
+        {label:{ar:"إزاي بتدفع؟",en:"How do I pay?",it:"Come pago?",fr:"Comment payer ?",pt:"Como pago?",ptbr:"Como eu pago?"}, goto:"faq_pay"},
+        {label:{ar:"تقدر تلغي لو غيرت رأيي؟",en:"Can I cancel if I change my mind?",it:"Posso cancellare se cambio idea?",fr:"Puis-je annuler ?",pt:"Posso cancelar se mudar de ideias?",ptbr:"Posso cancelar se eu mudar de ideia?"}, goto:"faq_cancel"},
+        {label:{ar:"شوف كل الأسئلة الشائعة",en:"See all FAQs",it:"Vedi tutte le FAQ",fr:"Voir toutes les FAQ",pt:"Ver todas as perguntas",ptbr:"Ver todas as perguntas"}, link:"index.html#faq"},
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
+      ]
+    },
+    faq_pay: {
+      msg:{ar:"الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل التفاصيل قبل ما تدفع أي حاجة.",
+           en:"Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all the details before you pay anything.",
+           it:"Il pagamento avviene tramite bonifico, Vodafone Cash o InstaPay, e confermiamo tutto prima che tu paghi.",
+           fr:"Le paiement se fait par virement, Vodafone Cash ou InstaPay, et nous confirmons tout avant paiement.",
+           pt:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de pagar.",
+           ptbr:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de você pagar."},
+      options:[
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
+      ]
+    },
+    faq_cancel: {
+      msg:{ar:"الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
+           en:"Cancellation follows the airline's or hotel's own policy, and we explain this before you confirm, not after.",
+           it:"La cancellazione segue la politica della compagnia aerea o dell'hotel, spiegata prima della conferma.",
+           fr:"L'annulation suit la politique de la compagnie aérienne ou de l'hôtel, expliquée avant confirmation.",
+           pt:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação.",
+           ptbr:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação."},
+      options:[
+        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
+      ]
+    }
+  };
+
+  var history = ["root"];
+  var messagesEl, optionsEl, fab, panel;
+
+  function currentLang(){
+    return document.documentElement.lang || (function(){ try{return localStorage.getItem('sd_lang')||'ar';}catch(e){return 'ar';} })();
+  }
+
+  function pick(dict){ var l = currentLang(); return dict[l] || dict.en || dict.ar; }
+
+  function addMsg(text, isUser){
+    var div = document.createElement('div');
+    div.className = 'sara-msg' + (isUser ? ' user' : '');
+    div.textContent = text;
+    messagesEl.appendChild(div);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function renderNode(nodeId){
+    var node = TREE[nodeId];
+    addMsg(pick(node.msg), false);
+    optionsEl.innerHTML = '';
+    node.options.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'sara-opt-btn' + (opt.wa ? ' wa' : '');
+      btn.textContent = pick(opt.label);
+      btn.addEventListener('click', function(){ handleOption(opt, nodeId); });
+      optionsEl.appendChild(btn);
+    });
+  }
+
+  function handleOption(opt, fromNode){
+    if (!opt.back) addMsg(pick(opt.label), true);
+    if (opt.wa) {
+      window.open(waLink(currentLang()), '_blank');
+      return;
+    }
+    if (opt.link) {
+      window.location.href = opt.link;
+      return;
+    }
+    if (opt.back) {
+      history.pop();
+      var prev = history[history.length - 1] || 'root';
+      renderNode(prev);
+      return;
+    }
+    if (opt.goto) {
+      history.push(opt.goto);
+      renderNode(opt.goto);
+      return;
+    }
+  }
+
+  function openPanel(){
+    panel.classList.add('open');
+    document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
+    if (!messagesEl.hasChildNodes()) {
+      history = ["root"];
+      renderNode("root");
+    }
+  }
+
+  function init(){
+    fab = document.getElementById('saraFab');
+    panel = document.getElementById('saraPanel');
+    messagesEl = document.getElementById('saraMessages');
+    optionsEl = document.getElementById('saraOptions');
+    fab.addEventListener('click', function(){
+      if (panel.classList.contains('open')) { panel.classList.remove('open'); }
+      else { openPanel(); }
+    });
+    document.getElementById('saraClose').addEventListener('click', function(){
+      panel.classList.remove('open');
+    });
+    new MutationObserver(function(){
+      if (panel.classList.contains('open')) {
+        document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
+      }
+    }).observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<!-- =================== END SARA ASSISTANT WIDGET =================== -->
 
 </body>
 </html>
