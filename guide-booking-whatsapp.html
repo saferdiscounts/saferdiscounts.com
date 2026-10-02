@@ -335,8 +335,10 @@ window.ARTICLE_CONFIG = {
     width:58px;height:58px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;font-size:26px;
     box-shadow:0 8px 24px rgba(3,101,163,0.5);
-    border:none;cursor:pointer;transition:transform .15s;
+    border:2px solid #fff;cursor:pointer;transition:transform .15s;
+    padding:0;overflow:hidden;
   }
+  .sara-fab img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
   .sara-fab:hover{transform:translateY(-2px);}
   .sara-panel{
     position:fixed;bottom:90px;inset-inline-end:22px;z-index:70;
@@ -383,7 +385,7 @@ window.ARTICLE_CONFIG = {
   }
 </style>
 
-<button class="sara-fab" id="saraFab" aria-label="Sara's Assistant">🧭</button>
+<button class="sara-fab" id="saraFab" aria-label="Sara's Assistant"><img src="images/sara.jpg" alt="Sara"></button>
 <div class="sara-panel" id="saraPanel">
   <div class="sara-panel-header">
     <img src="images/sara.jpg" alt="Sara">
@@ -624,6 +626,7 @@ window.ARTICLE_CONFIG = {
 })();
 </script>
 <!-- =================== END SARA ASSISTANT WIDGET =================== -->
+
 
 </body>
 </html>
