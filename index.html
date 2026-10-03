@@ -81,8 +81,8 @@
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
   .brand img{height:44px;width:auto;}
   .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
-  .nav-links a{opacity:0.85;transition:opacity .2s;}
-  .nav-links a:hover{opacity:1;color:var(--brand-blue);}
+  .nav-links a{opacity:0.85;position:relative;transition:opacity .2s,color .2s,transform .2s;}
+  .nav-links a::after{content:"";position:absolute;inset-inline:0;bottom:-8px;height:2px;background:var(--brand-orange);transform:scaleX(0);transform-origin:center;transition:transform .2s;}\n  .nav-links a:hover{opacity:1;color:var(--brand-blue);transform:translateY(-1px);}.nav-links a:hover::after{transform:scaleX(1);}
   .nav-right{display:flex;align-items:center;gap:12px;}
   .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
   .lang-btn{
@@ -192,7 +192,7 @@
     box-shadow:0 10px 28px rgba(0,0,0,0.25);
     transition:transform .15s;
   }
-  .ticket-btn:hover{transform:translateY(-3px);}
+  .ticket-btn{transition:transform .22s ease,box-shadow .22s ease,filter .22s ease;}\n  .ticket-btn:hover{transform:translateY(-4px) scale(1.01);filter:saturate(1.08);box-shadow:0 14px 30px rgba(0,0,0,.20);}
   .ticket-btn.outline{
     background:transparent;border:2px solid rgba(255,255,255,0.6);
     box-shadow:none;
@@ -283,6 +283,53 @@
     font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
   }
 
+  /* Destination finder */
+  .destination-tools{
+    display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;
+    padding:16px;background:rgba(3,101,163,0.05);border:1px solid var(--line);
+    border-radius:18px;margin:0 0 22px;
+  }
+  .destination-tools-main{display:flex;align-items:end;gap:10px;flex-wrap:wrap;flex:1;min-width:260px;}
+  .destination-label{display:block;font-size:12px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:7px;width:100%;}
+  .destination-select{
+    flex:1;min-width:210px;border:1px solid var(--line);border-radius:12px;background:#fff;
+    color:var(--brand-blue-dark);font:700 14px 'Cairo',sans-serif;padding:12px 14px;outline:none;
+    transition:border-color .2s, box-shadow .2s, transform .2s;
+  }
+  .destination-select:focus{border-color:var(--brand-blue);box-shadow:0 0 0 4px rgba(3,101,163,.10);}
+  .destination-book-btn{
+    width:48px;height:48px;border:0;border-radius:12px;background:var(--brand-orange);color:#fff;
+    font-size:18px;cursor:pointer;box-shadow:0 8px 18px rgba(241,86,11,.22);
+    transition:transform .2s, box-shadow .2s;
+  }
+  .destination-book-btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 24px rgba(241,86,11,.30);}
+  .destination-search-wrap{position:relative;min-width:220px;flex:0.8;}
+  .destination-search-icon{position:absolute;inset-inline-start:13px;top:10px;font-size:20px;color:#8293A1;pointer-events:none;}
+  .destination-search{
+    width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);
+    font:600 14px 'Cairo',sans-serif;padding:12px 14px 12px 36px;outline:none;
+    transition:border-color .2s, box-shadow .2s;
+  }
+  html[dir="rtl"] .destination-search{padding-left:14px;padding-right:36px;}
+  .destination-search:focus{border-color:var(--brand-blue);box-shadow:0 0 0 4px rgba(3,101,163,.10);}
+  .destination-picked{min-height:0;margin:-4px 0 18px;}
+  .destination-picked-card{
+    display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:14px 16px;background:linear-gradient(135deg,#fff,#F6FBFE);border:1px dashed #9BC5DB;border-radius:14px;
+  }
+  .destination-picked-card strong{color:var(--brand-blue-dark);font-size:15px;}
+  .destination-picked-card span{font-size:12px;color:#5C7180;}
+  .destination-picked-card .picked-action{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--brand-orange);font-weight:800;cursor:pointer;}
+  .pointer-card{position:relative;isolation:isolate;overflow:hidden;}
+  .pointer-card::after{
+    content:"";position:absolute;inset:-1px;z-index:-1;pointer-events:none;opacity:0;
+    background:radial-gradient(240px circle at var(--spot-x,50%) var(--spot-y,50%), rgba(3,101,163,.14), transparent 62%);
+    transition:opacity .25s ease;
+  }
+  .pointer-card:hover::after{opacity:1;}
+  .pointer-card:hover{box-shadow:0 20px 36px rgba(11,32,54,.14);}
+  .pointer-card .icon-badge,.pointer-card .dest-img img{will-change:transform;}
+
   /* Destinations - small image cards */
   .destinations-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;}
   .dest-card{
@@ -291,7 +338,7 @@
     background:var(--paper-card);
     transition:transform .3s, box-shadow .3s;
   }
-  .dest-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,0.16);}
+  .dest-card:hover{transform:translateY(-7px) scale(1.015);box-shadow:0 20px 36px rgba(11,32,54,0.18);}\n  .dest-card.selected{outline:3px solid rgba(3,101,163,.18);outline-offset:3px;}\n  .dest-name{display:flex;justify-content:center;align-items:center;gap:8px;}\n  .dest-arrow{font-size:16px;color:var(--brand-orange);opacity:.8;transition:transform .2s;}\n  .dest-card:hover .dest-arrow{transform:translate(2px,-2px);}
   .dest-img{position:relative;width:100%;height:170px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue),var(--brand-blue-dark));}
   .dest-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
   .dest-card:hover .dest-img img{transform:scale(1.12);}
@@ -448,7 +495,7 @@
     .hero-inner{grid-template-columns:1fr;}
     .hero h1{font-size:32px;}
     .services{grid-template-columns:1fr;}
-    .destinations-grid{grid-template-columns:repeat(3,1fr);}
+    .destinations-grid{grid-template-columns:repeat(4,1fr);}
     .steps{grid-template-columns:1fr;}
     .why{grid-template-columns:1fr;}
     section{padding:60px 0;}
@@ -489,7 +536,8 @@ window.SITE_CONFIG = {
       fr: "Bonjour, je voudrais réserver",
       it: "Ciao, vorrei prenotare",
       pt: "Olá, gostaria de reservar",
-      ptbr: "Oi, eu queria reservar"
+      ptbr: "Oi, eu queria reservar",
+      de: "Hallo, ich möchte buchen"
     },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
@@ -514,7 +562,8 @@ window.SITE_CONFIG = {
       journeyStops: ["طيران", "فندق", "توصيل", "حفلة", "كروز"],
       servicesHead: { tag: "خدماتنا", h2: "كل حجوزات سفرك في مكان واحد", p: "من التذكرة لحد الفندق للفعالية اللي هتروحها، إحنا بنتكفل بالحجز والسعر التنافسي." },
       destinationsHead: { tag: "وجهاتنا", h2: "جوة مصر وبرة مصر", p: "نماذج من الوجهات اللي بنحجزلك فيها، جوة مصر وبرّه." },
-      destinationGroups: { "in": "داخل مصر", out: "خارج مصر" },
+      destinationGroups: { "in": "داخل مصر", out: "خارج مصر" , holy: "الحرمين"},
+      destinationFinder: { label:"اختار وجهتك", search:"دوّر على وجهة...", book:"احجز الوجهة", selected:"الوجهة المختارة", go:"شوف الوجهة" },
       reviewsHead: { tag: "آراء عملائنا", h2: "عملاؤنا بيقولوا ايه", p: "آراء حقيقية من صفحتنا الرسمية على فيسبوك." },
       statsLabels: { followers: "متابع", reviews: "توصية", recommend: "نسبة التوصية" },
       reviewsCta: "شوف كل التقييمات على فيسبوك",
@@ -540,7 +589,8 @@ window.SITE_CONFIG = {
       journeyStops: ["Flight", "Hotel", "Transfer", "Event", "Cruise"],
       servicesHead: { tag: "Our Services", h2: "Everything for your trip, in one place", p: "From the ticket, to the hotel, to the event you're going to — we handle the booking and the competitive price." },
       destinationsHead: { tag: "Our Destinations", h2: "Inside Egypt & Beyond", p: "A sample of the destinations we book for you, in Egypt and abroad." },
-      destinationGroups: { "in": "Inside Egypt", out: "Outside Egypt" },
+      destinationGroups: { "in": "Inside Egypt", out: "Outside Egypt" , holy: "Holy Cities"},
+      destinationFinder: { label:"Choose your destination", search:"Search destinations...", book:"Book this destination", selected:"Selected destination", go:"View destination" },
       reviewsHead: { tag: "Customer Reviews", h2: "What our customers say", p: "Real reviews from our official Facebook page." },
       statsLabels: { followers: "Followers", reviews: "Recommendations", recommend: "Recommend Rate" },
       reviewsCta: "See all reviews on Facebook",
@@ -566,7 +616,8 @@ window.SITE_CONFIG = {
       journeyStops: ["Volo", "Hotel", "Transfer", "Evento", "Crociera"],
       servicesHead: { tag: "I Nostri Servizi", h2: "Tutto per il tuo viaggio, in un unico posto", p: "Dal biglietto, all'hotel, all'evento a cui parteciperai — ci occupiamo noi della prenotazione e del prezzo migliore." },
       destinationsHead: { tag: "Le Nostre Destinazioni", h2: "Dentro e fuori l'Egitto", p: "Un esempio delle destinazioni che prenotiamo per te, in Egitto e all'estero." },
-      destinationGroups: { "in": "In Egitto", out: "Fuori Egitto" },
+      destinationGroups: { "in": "In Egitto", out: "Fuori Egitto" , holy: "Città Sante"},
+      destinationFinder: { label:"Scegli la tua destinazione", search:"Cerca una destinazione...", book:"Prenota questa destinazione", selected:"Destinazione selezionata", go:"Vedi destinazione" },
       reviewsHead: { tag: "Recensioni dei Clienti", h2: "Cosa dicono i nostri clienti", p: "Recensioni reali dalla nostra pagina Facebook ufficiale." },
       statsLabels: { followers: "Follower", reviews: "Recensioni", recommend: "Tasso di Consiglio" },
       reviewsCta: "Vedi tutte le recensioni su Facebook",
@@ -592,7 +643,8 @@ window.SITE_CONFIG = {
       journeyStops: ["Vol", "Hôtel", "Transfert", "Événement", "Croisière"],
       servicesHead: { tag: "Nos Services", h2: "Tout pour votre voyage, en un seul endroit", p: "Du billet, à l'hôtel, à l'événement auquel vous assisterez — nous nous occupons de la réservation et du meilleur prix." },
       destinationsHead: { tag: "Nos Destinations", h2: "En Égypte et au-delà", p: "Un échantillon des destinations que nous réservons pour vous, en Égypte et à l'étranger." },
-      destinationGroups: { "in": "En Égypte", out: "Hors d'Égypte" },
+      destinationGroups: { "in": "En Égypte", out: "Hors d'Égypte" , holy: "Villes saintes"},
+      destinationFinder: { label:"Choisissez votre destination", search:"Rechercher une destination...", book:"Réserver cette destination", selected:"Destination sélectionnée", go:"Voir la destination" },
       reviewsHead: { tag: "Avis Clients", h2: "Ce que disent nos clients", p: "Avis réels provenant de notre page Facebook officielle." },
       statsLabels: { followers: "Abonnés", reviews: "Recommandations", recommend: "Taux de Recommandation" },
       reviewsCta: "Voir tous les avis sur Facebook",
@@ -618,7 +670,8 @@ window.SITE_CONFIG = {
       journeyStops: ["Voo", "Hotel", "Transporte", "Evento", "Cruzeiro"],
       servicesHead: { tag: "Os Nossos Serviços", h2: "Tudo para a sua viagem, num só lugar", p: "Do bilhete, ao hotel, ao evento a que vai assistir — tratamos da reserva e do melhor preço." },
       destinationsHead: { tag: "Os Nossos Destinos", h2: "Dentro e fora do Egito", p: "Uma amostra dos destinos que reservamos para si, no Egito e no estrangeiro." },
-      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" },
+      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" , holy: "Cidades Sagradas"},
+      destinationFinder: { label:"Escolha o seu destino", search:"Pesquisar destinos...", book:"Reservar este destino", selected:"Destino selecionado", go:"Ver destino" },
       reviewsHead: { tag: "Avaliações de Clientes", h2: "O que dizem os nossos clientes", p: "Avaliações reais da nossa página oficial no Facebook." },
       statsLabels: { followers: "Seguidores", reviews: "Recomendações", recommend: "Taxa de Recomendação" },
       reviewsCta: "Ver todas as avaliações no Facebook",
@@ -644,7 +697,8 @@ window.SITE_CONFIG = {
       journeyStops: ["Voo", "Hotel", "Traslado", "Evento", "Cruzeiro"],
       servicesHead: { tag: "Nossos Serviços", h2: "Tudo para sua viagem, em um só lugar", p: "Da passagem, ao hotel, ao evento que você vai curtir — a gente cuida da reserva e do melhor preço." },
       destinationsHead: { tag: "Nossos Destinos", h2: "Dentro e fora do Egito", p: "Uma amostra dos destinos que a gente reserva pra você, no Egito e no exterior." },
-      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" },
+      destinationGroups: { "in": "Dentro do Egito", out: "Fora do Egito" , holy: "Cidades Sagradas"},
+      destinationFinder: { label:"Escolha seu destino", search:"Buscar destinos...", book:"Reservar este destino", selected:"Destino selecionado", go:"Ver destino" },
       reviewsHead: { tag: "Avaliações de Clientes", h2: "O que nossos clientes dizem", p: "Avaliações reais da nossa página oficial no Facebook." },
       statsLabels: { followers: "Seguidores", reviews: "Recomendações", recommend: "Taxa de Recomendação" },
       reviewsCta: "Ver todas as avaliações no Facebook",
@@ -654,6 +708,25 @@ window.SITE_CONFIG = {
       contactHead: { h2: "Pronto pra reservar? Fala com a gente agora", p: "A gente tá no WhatsApp, Facebook e telefone o tempo todo pra qualquer dúvida ou reserva." },
       contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Ligar", em: "Email" },
       footerCopyright: "© 2026 Safer Discounts. Todos os direitos reservados."
+    },
+    de: {
+      brand: "Safer Discounts",
+      nav: { services: "Leistungen", destinations: "Reiseziele", reviews: "Bewertungen", how: "So funktioniert die Buchung", faq: "FAQ", blog: "Saras Blog", cta: "Über WhatsApp buchen" },
+      hero: { eyebrow: "✦ TICKET · HOTEL · EVENT — Faire Preise", titleLine1: "Reise günstiger,", titleHighlight: "ohne den Aufwand", subtitle: "Wir buchen Flugtickets, Hotels sowie Tickets für Events und Museen zu wettbewerbsfähigen Preisen — einfach über WhatsApp.", ctaWa: "Über WhatsApp buchen", ctaFb: "Auf Facebook folgen", strip: ["Flüge", "Hotels", "Events & Museen", "Persönliche Betreuung"] },
+      journeyStops: ["Flug", "Hotel", "Transfer", "Event", "Kreuzfahrt"],
+      servicesHead: { tag: "Unsere Leistungen", h2: "Alles für deine Reise an einem Ort", p: "Vom Flugticket über das Hotel bis zum Event — wir kümmern uns um deine Anfrage und Buchung." },
+      destinationsHead: { tag: "Unsere Reiseziele", h2: "Ägypten & die Welt", p: "Eine Auswahl der Reiseziele, für die wir Buchungsanfragen annehmen." },
+      destinationGroups: { "in": "In Ägypten", out: "Außerhalb Ägyptens", holy: "Heilige Städte" },
+      destinationFinder: { label:"Reiseziel auswählen", search:"Reiseziele suchen...", book:"Dieses Reiseziel buchen", selected:"Ausgewähltes Reiseziel", go:"Reiseziel ansehen" },
+      reviewsHead: { tag: "Kundenbewertungen", h2: "Was unsere Kunden sagen", p: "Echte Bewertungen von unserer offiziellen Facebook-Seite." },
+      statsLabels: { followers: "Follower", reviews: "Empfehlungen", recommend: "Empfehlungsrate" },
+      reviewsCta: "Alle Bewertungen auf Facebook ansehen",
+      howHead: { tag: "So buchst du", h2: "Einfache, klare Schritte", p: "Alles läuft unkompliziert über WhatsApp." },
+      whyHead: { tag: "Warum Safer Discounts", h2: "Mit Vertrauen buchen und gleichzeitig sparen" },
+      faqHead: { tag: "FAQ", h2: "Fragen? Wir haben Antworten", p: "Wenn deine Frage hier nicht steht, schreib uns auf WhatsApp." },
+      contactHead: { h2: "Bereit zu buchen? Schreib uns jetzt", p: "Du erreichst uns über WhatsApp, Facebook und Telefon bei Fragen oder Buchungen." },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Anrufen", em: "E-Mail" },
+      footerCopyright: "© 2026 Safer Discounts. Alle Rechte vorbehalten."
     }
   },
 
@@ -661,13 +734,13 @@ window.SITE_CONFIG = {
   // دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
   // لاستبدالها بصورك: ارفع صورتك في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
   heroScenes: [
-    { icon: "✈️", image: "https://images.pexels.com/photos/3646733/pexels-photo-3646733.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    { icon: "✈️", image: "https://images.pexels.com/photos/3646733/pexels-photo-3646733.jpeg?auto=compress&cs=tinysrgb&w=2200",
       gradient: "linear-gradient(160deg, var(--brand-blue-dark) 0%, var(--brand-blue) 55%, #0483C9 100%)" },
-    { icon: "🏨", image: "https://images.pexels.com/photos/5563469/pexels-photo-5563469.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    { icon: "🏨", image: "https://images.pexels.com/photos/5563469/pexels-photo-5563469.jpeg?auto=compress&cs=tinysrgb&w=2200",
       gradient: "linear-gradient(160deg, var(--brand-orange-dark) 0%, var(--brand-blue-dark) 60%, var(--brand-blue) 100%)" },
-    { icon: "🛳️", image: "https://images.pexels.com/photos/20506675/pexels-photo-20506675.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    { icon: "🛳️", image: "https://images.pexels.com/photos/20506675/pexels-photo-20506675.jpeg?auto=compress&cs=tinysrgb&w=2200",
       gradient: "linear-gradient(160deg, var(--brand-blue-dark) 0%, #046b5e 50%, var(--brand-blue) 100%)" },
-    { icon: "🚢", image: "https://images.pexels.com/photos/13486900/pexels-photo-13486900.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    { icon: "🚢", image: "https://images.pexels.com/photos/13486900/pexels-photo-13486900.jpeg?auto=compress&cs=tinysrgb&w=2200",
       gradient: "linear-gradient(160deg, #012a45 0%, var(--brand-blue) 60%, #0483C9 100%)" }
   ],
 
@@ -679,33 +752,35 @@ window.SITE_CONFIG = {
       it_title: "Biglietti Aerei", it_desc: "Prenotazione di voli nazionali e internazionali a prezzi inferiori rispetto ai siti ufficiali, con assistenza passo dopo passo.",
       fr_title: "Billets d'Avion", fr_desc: "Réservation de vols nationaux et internationaux à des prix inférieurs aux sites officiels, avec un accompagnement étape par étape.",
       pt_title: "Bilhetes de Avião", pt_desc: "Reserva de voos nacionais e internacionais a preços mais baixos do que os sites oficiais, com apoio passo a passo.",
-      ptbr_title: "Passagens Aéreas", ptbr_desc: "Reserva de voos nacionais e internacionais a preços mais baixos que os sites oficiais, com acompanhamento passo a passo." },
+      ptbr_title: "Passagens Aéreas", ptbr_desc: "Reserva de voos nacionais e internacionais a preços mais baixos que os sites oficiais, com acompanhamento passo a passo.", de_title: "Flugtickets", de_desc: "Inlands- und internationale Flüge zu wettbewerbsfähigen Preisen mit persönlicher Begleitung." },
     { icon: "🏨", tag: "STAY: ANY DESTINATION",
       ar_title: "إقامات وفنادق", ar_desc: "حجز فنادق وشقق فندقية في أي وجهة تختارها، بأسعار تنافسية.",
       en_title: "Hotels & Stays", en_desc: "Book hotels and serviced apartments at any destination you choose, at competitive prices.",
       it_title: "Hotel e Soggiorni", it_desc: "Prenotazione di hotel e appartamenti in qualsiasi destinazione tu scelga, a prezzi competitivi.",
       fr_title: "Hôtels et Séjours", fr_desc: "Réservation d'hôtels et d'appartements dans la destination de votre choix, à des prix compétitifs.",
       pt_title: "Hotéis e Estadias", pt_desc: "Reserva de hotéis e apartamentos no destino que escolher, a preços competitivos.",
-      ptbr_title: "Hotéis e Estadias", ptbr_desc: "Reserva de hotéis e apartamentos no destino que você escolher, a preços competitivos." },
+      ptbr_title: "Hotéis e Estadias", ptbr_desc: "Reserva de hotéis e apartamentos no destino que você escolher, a preços competitivos.", de_title: "Hotels & Unterkünfte", de_desc: "Hotels und Serviced Apartments am gewünschten Reiseziel zu wettbewerbsfähigen Preisen." },
     { icon: "🎟️", tag: "ENTRY: EVENTS & MUSEUMS",
       ar_title: "فعاليات ومتاحف", ar_desc: "تذاكر حفلات موسيقية، متاحف، وفعاليات محلية وعالمية بأسعار مخفضة.",
       en_title: "Events & Museums", en_desc: "Tickets for concerts, museums, and local & international events at discounted prices.",
       it_title: "Eventi e Musei", it_desc: "Biglietti per concerti, musei ed eventi locali e internazionali a prezzi scontati.",
       fr_title: "Événements et Musées", fr_desc: "Billets pour concerts, musées, et événements locaux et internationaux à prix réduits.",
       pt_title: "Eventos e Museus", pt_desc: "Bilhetes para concertos, museus, e eventos locais e internacionais a preços reduzidos.",
-      ptbr_title: "Eventos e Museus", ptbr_desc: "Ingressos para shows, museus, e eventos locais e internacionais a preços reduzidos." }
+      ptbr_title: "Eventos e Museus", ptbr_desc: "Ingressos para shows, museus, e eventos locais e internacionais a preços reduzidos.", de_title: "Events & Museen", de_desc: "Tickets für Konzerte, Museen sowie lokale und internationale Veranstaltungen." }
   ],
 
   // الوجهات السياحية (صور صغيرة) — دلوقتي مربوطة بصور حقيقية مجانية (Pexels) لحد ما تجهز صورك الخاصة
   // لاستبدال أي صورة بصورتك انت: ارفعها في فولدر images وغيّر قيمة "image" لاسم الملف المحلي بدل الرابط
   // group لازم تكون "in" (داخل مصر) أو "out" (خارج مصر) بالظبط
   destinations: [
-    { ar_name: "دبي",           en_name: "Dubai",              it_name: "Dubai",              fr_name: "Dubaï",              pt_name: "Dubai",              ptbr_name: "Dubai",              group: "out", image: "https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "باريس",          en_name: "Paris",              it_name: "Parigi",             fr_name: "Paris",              pt_name: "Paris",              ptbr_name: "Paris",              group: "out", image: "https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "إسطنبول",        en_name: "Istanbul",           it_name: "Istanbul",           fr_name: "Istanbul",           pt_name: "Istambul",           ptbr_name: "Istambul",           group: "out", image: "https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "أهرامات الجيزة", en_name: "Giza Pyramids",      it_name: "Piramidi di Giza",   fr_name: "Pyramides de Gizeh", pt_name: "Pirâmides de Gizé",  ptbr_name: "Pirâmides de Gizé",  group: "in",  image: "https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "شرم الشيخ",      en_name: "Sharm El Sheikh",    it_name: "Sharm el-Sheikh",    fr_name: "Sharm el-Cheikh",    pt_name: "Sharm el-Sheikh",    ptbr_name: "Sharm el-Sheikh",    group: "in",  image: "https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=800" },
-    { ar_name: "الأقصر",         en_name: "Luxor",              it_name: "Luxor",              fr_name: "Louxor",             pt_name: "Luxor",              ptbr_name: "Luxor",              group: "in",  image: "https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=800" }
+    { id:"dubai", ar_name:"دبي", en_name:"Dubai", it_name:"Dubai", fr_name:"Dubaï", pt_name:"Dubai", ptbr_name:"Dubai", de_name:"Dubai", group:"out", image:"https://images.pexels.com/photos/33438757/pexels-photo-33438757.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"paris", ar_name:"باريس", en_name:"Paris", it_name:"Parigi", fr_name:"Paris", pt_name:"Paris", ptbr_name:"Paris", de_name:"Paris", group:"out", image:"https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"istanbul", ar_name:"إسطنبول", en_name:"Istanbul", it_name:"Istanbul", fr_name:"Istanbul", pt_name:"Istambul", ptbr_name:"Istambul", de_name:"Istanbul", group:"out", image:"https://images.pexels.com/photos/9595972/pexels-photo-9595972.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"giza", ar_name:"أهرامات الجيزة", en_name:"Giza Pyramids", it_name:"Piramidi di Giza", fr_name:"Pyramides de Gizeh", pt_name:"Pirâmides de Gizé", ptbr_name:"Pirâmides de Gizé", de_name:"Pyramiden von Gizeh", group:"in", image:"https://images.pexels.com/photos/28682219/pexels-photo-28682219.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"sharm", ar_name:"شرم الشيخ", en_name:"Sharm El Sheikh", it_name:"Sharm el-Sheikh", fr_name:"Sharm el-Cheikh", pt_name:"Sharm el-Sheikh", ptbr_name:"Sharm el-Sheikh", de_name:"Sharm El-Sheikh", group:"in", image:"https://images.pexels.com/photos/18886592/pexels-photo-18886592.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"luxor", ar_name:"الأقصر", en_name:"Luxor", it_name:"Luxor", fr_name:"Louxor", pt_name:"Luxor", ptbr_name:"Luxor", de_name:"Luxor", group:"in", image:"https://images.pexels.com/photos/18934596/pexels-photo-18934596.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"makkah", ar_name:"مكة المكرمة", en_name:"Makkah", it_name:"La Mecca", fr_name:"La Mecque", pt_name:"Meca", ptbr_name:"Meca", de_name:"Mekka", group:"out", holy:true, image:"https://images.pexels.com/photos/33071620/pexels-photo-33071620.jpeg?auto=compress&cs=tinysrgb&w=1400" },
+    { id:"madinah", ar_name:"المدينة المنورة", en_name:"Madinah", it_name:"Medina", fr_name:"Médine", pt_name:"Medina", ptbr_name:"Medina", de_name:"Medina", group:"out", holy:true, image:"https://images.pexels.com/photos/33840568/pexels-photo-33840568.jpeg?auto=compress&cs=tinysrgb&w=1400" },
   ],
 
   // إحصائيات صفحة الفيسبوك (تظهر فوق آراء العملاء) — عدّلها من وقت للتاني يدويًا لما تزيد
@@ -766,21 +841,21 @@ window.SITE_CONFIG = {
       it_title: "Prezzi più bassi dei siti ufficiali", it_desc: "Grazie ad accordi con fornitori globali, ti garantiamo il prezzo migliore.",
       fr_title: "Prix plus bas que les sites officiels", fr_desc: "Nous bénéficions d'accords avec des fournisseurs mondiaux pour vous obtenir un meilleur prix.",
       pt_title: "Preços mais baixos do que os sites oficiais", pt_desc: "Beneficiamos de acordos com fornecedores globais para lhe garantir o melhor preço.",
-      ptbr_title: "Preços mais baixos que os sites oficiais", ptbr_desc: "A gente tem parcerias com fornecedores globais pra garantir o melhor preço pra você." },
+      ptbr_title: "Preços mais baixos que os sites oficiais", ptbr_desc: "A gente tem parcerias com fornecedores globais pra garantir o melhor preço pra você.", de_title: "Wettbewerbsfähige Preise", de_desc: "Wir vergleichen verfügbare Angebote und suchen nach passenden Optionen." },
     { mark: "💬",
       ar_title: "تواصل مباشر وسهل", ar_desc: "تواصل مباشر على واتساب أو فيسبوك، من غير خطوات معقدة.",
       en_title: "Direct, easy communication", en_desc: "Direct contact via WhatsApp or Facebook, no complicated steps.",
       it_title: "Comunicazione diretta e semplice", it_desc: "Contatto diretto su WhatsApp o Facebook, senza passaggi complicati.",
       fr_title: "Communication directe et facile", fr_desc: "Contact direct via WhatsApp ou Facebook, sans étapes compliquées.",
       pt_title: "Comunicação direta e fácil", pt_desc: "Contacto direto via WhatsApp ou Facebook, sem passos complicados.",
-      ptbr_title: "Comunicação direta e fácil", ptbr_desc: "Contato direto pelo WhatsApp ou Facebook, sem burocracia." },
+      ptbr_title: "Comunicação direta e fácil", ptbr_desc: "Contato direto pelo WhatsApp ou Facebook, sem burocracia.", de_title: "Direkter Kontakt", de_desc: "Direkte Kommunikation über WhatsApp oder Facebook ohne komplizierte Schritte." },
     { mark: "🤝",
       ar_title: "متابعة شخصية لحجزك", ar_desc: "حد بيتابع معاك حجزك من أول ما تسأل لحد ما تسافر.",
       en_title: "Personal follow-up on your booking", en_desc: "Someone follows up with you from the moment you ask until you travel.",
       it_title: "Assistenza personale per la tua prenotazione", it_desc: "Qualcuno segue la tua prenotazione dal momento in cui chiedi fino alla partenza.",
       fr_title: "Suivi personnalisé de votre réservation", fr_desc: "Quelqu'un suit votre réservation du moment où vous demandez jusqu'à votre voyage.",
       pt_title: "Acompanhamento pessoal da sua reserva", pt_desc: "Alguém acompanha a sua reserva desde o momento em que pergunta até à viagem.",
-      ptbr_title: "Acompanhamento pessoal da sua reserva", ptbr_desc: "Alguém acompanha sua reserva desde o momento que você pergunta até a viagem." }
+      ptbr_title: "Acompanhamento pessoal da sua reserva", ptbr_desc: "Alguém acompanha sua reserva desde o momento que você pergunta até a viagem.", de_title: "Persönliche Betreuung", de_desc: "Wir begleiten deine Anfrage von der ersten Nachricht bis zur Reise." }
   ],
 
   // اقتباس (بيظهر في الكارت البرتقالي جنب قسم ليه احنا)
@@ -800,31 +875,31 @@ window.SITE_CONFIG = {
       it_q: "Perché i vostri prezzi sono più bassi dei siti ufficiali?", it_a: "Lavoriamo con fornitori, compagnie aeree e hotel con accordi speciali all'ingrosso, e trasferiamo parte di quella differenza a te invece che a un intermediario.",
       fr_q: "Pourquoi vos prix sont-ils inférieurs aux sites officiels?", fr_a: "Nous travaillons avec des fournisseurs, compagnies aériennes et hôtels sur des accords de gros spéciaux, et vous transférons une partie de cette différence.",
       pt_q: "Porque são os vossos preços mais baixos do que os sites oficiais?", pt_a: "Trabalhamos com fornecedores, companhias aéreas e hotéis em acordos especiais por grosso, e transferimos parte dessa diferença para si.",
-      ptbr_q: "Por que os preços de vocês são mais baixos que os sites oficiais?", ptbr_a: "A gente trabalha com fornecedores, companhias aéreas e hotéis em acordos especiais de atacado, e passamos parte dessa diferença pra você." },
+      ptbr_q: "Por que os preços de vocês são mais baixos que os sites oficiais?", ptbr_a: "A gente trabalha com fornecedores, companhias aéreas e hotéis em acordos especiais de atacado, e passamos parte dessa diferença pra você.", de_q: "Warum sind eure Preise wettbewerbsfähig?", de_a: "Wir arbeiten mit Lieferanten, Airlines und Hotels zusammen und vergleichen verfügbare Angebote." },
     { ar_q: "الدفع بيتم إزاي؟", ar_a: "الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل تفاصيل الحجز قبل ما تدفع أي حاجة.",
       en_q: "How do I pay?", en_a: "Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all booking details with you before you pay anything.",
       it_q: "Come posso pagare?", it_a: "Il pagamento avviene tramite bonifico bancario, Vodafone Cash o InstaPay, e confermiamo tutti i dettagli della prenotazione prima che tu paghi qualsiasi cosa.",
       fr_q: "Comment puis-je payer?", fr_a: "Le paiement se fait par virement bancaire, Vodafone Cash, ou InstaPay, et nous confirmons tous les détails de la réservation avant que vous ne payiez quoi que ce soit.",
       pt_q: "Como posso pagar?", pt_a: "O pagamento é feito por transferência bancária, Vodafone Cash, ou InstaPay, e confirmamos todos os detalhes da reserva antes de pagar qualquer coisa.",
-      ptbr_q: "Como eu pago?", ptbr_a: "O pagamento é feito por transferência bancária, Vodafone Cash, ou InstaPay, e confirmamos todos os detalhes da reserva antes de você pagar qualquer coisa." },
+      ptbr_q: "Como eu pago?", ptbr_a: "O pagamento é feito por transferência bancária, Vodafone Cash, ou InstaPay, e confirmamos todos os detalhes da reserva antes de você pagar qualquer coisa.", de_q: "Wie kann ich bezahlen?", de_a: "Die Zahlung erfolgt nach Bestätigung der Buchungsdetails, zum Beispiel per Banküberweisung, Vodafone Cash oder InstaPay." },
     { ar_q: "الحجز هيبقى باسمي أنا؟", ar_a: "أيوه، التذكرة أو حجز الفندق بيتعمل باسمك وبياناتك أنت بالظبط، وبتستلم تأكيد الحجز الرسمي من شركة الطيران أو الفندق نفسه.",
       en_q: "Will the booking be in my own name?", en_a: "Yes, the ticket or hotel booking is made in your exact name and details, and you receive the official confirmation from the airline or hotel itself.",
       it_q: "La prenotazione sarà a mio nome?", it_a: "Sì, il biglietto o la prenotazione dell'hotel viene effettuata esattamente a tuo nome e con i tuoi dati, e ricevi la conferma ufficiale direttamente dalla compagnia aerea o dall'hotel.",
       fr_q: "La réservation sera-t-elle à mon nom?", fr_a: "Oui, le billet ou la réservation d'hôtel est fait exactement à votre nom et avec vos informations, et vous recevez la confirmation officielle directement de la compagnie aérienne ou de l'hôtel.",
       pt_q: "A reserva será em meu nome?", pt_a: "Sim, o bilhete ou a reserva do hotel é feita exatamente em seu nome e com os seus dados, e recebe a confirmação oficial diretamente da companhia aérea ou do hotel.",
-      ptbr_q: "A reserva vai estar no meu nome?", ptbr_a: "Sim, a passagem ou reserva do hotel é feita exatamente no seu nome e com seus dados, e você recebe a confirmação oficial direto da companhia aérea ou do hotel." },
+      ptbr_q: "A reserva vai estar no meu nome?", ptbr_a: "Sim, a passagem ou reserva do hotel é feita exatamente no seu nome e com seus dados, e você recebe a confirmação oficial direto da companhia aérea ou do hotel.", de_q: "Wird die Buchung auf meinen Namen ausgestellt?", de_a: "Ja. Die Buchung wird mit deinen genauen Daten erstellt und du erhältst die offizielle Bestätigung." },
     { ar_q: "لو غيرت رأيي بعد ما حجزت، أقدر ألغي؟", ar_a: "الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها (بعض الحجوزات فيها استرداد وبعضها لأ)، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
       en_q: "If I change my mind after booking, can I cancel?", en_a: "Cancellation follows the airline's or hotel's own policy (some bookings are refundable, others aren't), and we explain this before you confirm, not after.",
       it_q: "Se cambio idea dopo aver prenotato, posso cancellare?", it_a: "La cancellazione segue la politica della compagnia aerea o dell'hotel stesso (alcune prenotazioni sono rimborsabili, altre no), e te lo spieghiamo prima della conferma, non dopo.",
       fr_q: "Si je change d'avis après avoir réservé, puis-je annuler?", fr_a: "L'annulation suit la politique de la compagnie aérienne ou de l'hôtel lui-même (certaines réservations sont remboursables, d'autres non), et nous vous l'expliquons avant la confirmation, pas après.",
       pt_q: "Se mudar de ideias depois de reservar, posso cancelar?", pt_a: "O cancelamento segue a política da própria companhia aérea ou hotel (algumas reservas são reembolsáveis, outras não), e explicamos isto antes da confirmação, não depois.",
-      ptbr_q: "Se eu mudar de ideia depois de reservar, posso cancelar?", ptbr_a: "O cancelamento segue a política da própria companhia aérea ou hotel (algumas reservas têm reembolso, outras não), e a gente explica isso antes da confirmação, não depois." },
+      ptbr_q: "Se eu mudar de ideia depois de reservar, posso cancelar?", ptbr_a: "O cancelamento segue a política da própria companhia aérea ou hotel (algumas reservas têm reembolso, outras não), e a gente explica isso antes da confirmação, não depois.", de_q: "Kann ich nach der Buchung stornieren?", de_a: "Die Stornierung richtet sich nach den Bedingungen der jeweiligen Fluggesellschaft oder des Hotels." },
     { ar_q: "قد إيه المفروض أحجز قبل السفر؟", ar_a: "كل ما تحجز بدري كل ما الأسعار بتكون أفضل، بس تقدر تتواصل معانا حتى لو الرحلة قريبة ونشوف أحسن سعر متاح وقتها.",
       en_q: "How far in advance should I book?", en_a: "The earlier you book, the better the prices — but reach out even for a last-minute trip and we'll find the best price available then.",
       it_q: "Con quanto anticipo dovrei prenotare?", it_a: "Prima prenoti, migliori sono i prezzi — ma puoi contattarci anche per un viaggio last-minute e troveremo il miglior prezzo disponibile in quel momento.",
       fr_q: "Combien de temps à l'avance devrais-je réserver?", fr_a: "Plus tôt vous réservez, meilleurs sont les prix — mais contactez-nous même pour un voyage de dernière minute et nous trouverons le meilleur prix disponible à ce moment.",
       pt_q: "Com quanto tempo de antecedência devo reservar?", pt_a: "Quanto mais cedo reservar, melhores são os preços — mas contacte-nos mesmo para uma viagem de última hora e encontraremos o melhor preço disponível nessa altura.",
-      ptbr_q: "Com quanto tempo de antecedência eu devo reservar?", ptbr_a: "Quanto mais cedo você reservar, melhores os preços — mas fala com a gente mesmo de última hora que a gente acha o melhor preço disponível na hora." }
+      ptbr_q: "Com quanto tempo de antecedência eu devo reservar?", ptbr_a: "Quanto mais cedo você reservar, melhores os preços — mas fala com a gente mesmo de última hora que a gente acha o melhor preço disponível na hora.", de_q: "Wie früh sollte ich buchen?", de_a: "Je früher du buchst, desto mehr Optionen können verfügbar sein. Auch kurzfristige Anfragen kannst du uns schicken." }
   ],
 
   // خطوات الحجز
@@ -834,19 +909,19 @@ window.SITE_CONFIG = {
       it_title: "Inviaci i dettagli del tuo viaggio", it_desc: "Destinazione, data e numero di viaggiatori — via WhatsApp o Facebook.",
       fr_title: "Envoyez-nous les détails de votre voyage", fr_desc: "Destination, date, et nombre de voyageurs — via WhatsApp ou Facebook.",
       pt_title: "Envie-nos os detalhes da sua viagem", pt_desc: "Destino, data, e número de viajantes — via WhatsApp ou Facebook.",
-      ptbr_title: "Manda os detalhes da sua viagem", ptbr_desc: "Destino, data, e número de viajantes — pelo WhatsApp ou Facebook." },
+      ptbr_title: "Manda os detalhes da sua viagem", ptbr_desc: "Destino, data, e número de viajantes — pelo WhatsApp ou Facebook.", de_title: "Sende deine Reisedaten", de_desc: "Reiseziel, Datum und Anzahl der Reisenden per WhatsApp oder Facebook." },
     { n: "02", ar_title: "هنبعتلك أفضل سعر متاح", ar_desc: "بنقارن الخيارات المتاحة ونرشحلك أنسب سعر وميعاد.",
       en_title: "We'll send you the best price", en_desc: "We compare available options and recommend the best price and timing.",
       it_title: "Ti invieremo il prezzo migliore", it_desc: "Confrontiamo le opzioni disponibili e ti consigliamo il prezzo e l'orario più adatti.",
       fr_title: "Nous vous envoyons le meilleur prix", fr_desc: "Nous comparons les options disponibles et vous recommandons le meilleur prix et horaire.",
       pt_title: "Enviamos-lhe o melhor preço", pt_desc: "Comparamos as opções disponíveis e recomendamos o melhor preço e horário.",
-      ptbr_title: "A gente manda o melhor preço", ptbr_desc: "Comparamos as opções disponíveis e recomendamos o melhor preço e horário." },
+      ptbr_title: "A gente manda o melhor preço", ptbr_desc: "Comparamos as opções disponíveis e recomendamos o melhor preço e horário.", de_title: "Wir senden dir verfügbare Optionen", de_desc: "Wir vergleichen die verfügbaren Möglichkeiten und erklären dir Preis und Termin." },
     { n: "03", ar_title: "تأكيد الحجز",           ar_desc: "بعد ما تتأكد من السعر والتفاصيل، بنأكد حجزك ونبعتلك تذكرتك.",
       en_title: "Confirm your booking", en_desc: "Once you're happy with the price and details, we confirm your booking and send your ticket.",
       it_title: "Conferma la prenotazione", it_desc: "Una volta soddisfatto del prezzo e dei dettagli, confermiamo la tua prenotazione e ti inviamo il biglietto.",
       fr_title: "Confirmez votre réservation", fr_desc: "Une fois satisfait du prix et des détails, nous confirmons votre réservation et vous envoyons votre billet.",
       pt_title: "Confirme a sua reserva", pt_desc: "Depois de estar satisfeito com o preço e os detalhes, confirmamos a sua reserva e enviamos o seu bilhete.",
-      ptbr_title: "Confirme sua reserva", ptbr_desc: "Depois que você aprovar o preço e os detalhes, a gente confirma sua reserva e manda sua passagem." }
+      ptbr_title: "Confirme sua reserva", ptbr_desc: "Depois que você aprovar o preço e os detalhes, a gente confirma sua reserva e manda sua passagem.", de_title: "Bestätige deine Buchung", de_desc: "Nach deiner Bestätigung kümmern wir uns um die Buchung und senden dir die Bestätigung." }
   ]
 };
 </script>
@@ -874,6 +949,7 @@ window.SITE_CONFIG = {
         <button class="lang-btn" data-lang="it" type="button">IT</button>
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+        <button class="lang-btn" data-lang="de" type="button">DE</button>
       </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
@@ -952,6 +1028,18 @@ window.SITE_CONFIG = {
       <h2 id="destinations-h2"></h2>
       <p id="destinations-p"></p>
     </div>
+    <div class="destination-tools" id="destination-tools">
+      <div class="destination-tools-main">
+        <label class="destination-label" for="destination-select" id="destination-label"></label>
+        <select id="destination-select" class="destination-select" aria-label="Destination selector"></select>
+        <button type="button" class="destination-book-btn" id="destination-book-btn">💬</button>
+      </div>
+      <div class="destination-search-wrap">
+        <span class="destination-search-icon">⌕</span>
+        <input id="destination-search" class="destination-search" type="search" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <div class="destination-picked" id="destination-picked" aria-live="polite"></div>
     <div class="destinations-grid" id="destinations-grid"></div>
   </div>
 </section>
@@ -1063,6 +1151,103 @@ window.SITE_CONFIG = {
     return m ? { num: parseInt(m[1], 10), suffix: m[2] } : { num: 0, suffix: str };
   }
 
+  var selectedDestinationId = null;
+
+  function localized(obj, lang){
+    return obj[lang + '_name'] || obj.en_name || obj.ar_name || '';
+  }
+
+  function renderDestinationPicker(lang, t){
+    var select=document.getElementById('destination-select');
+    var label=document.getElementById('destination-label');
+    var search=document.getElementById('destination-search');
+    var bookBtn=document.getElementById('destination-book-btn');
+    if(!select || !label || !search || !bookBtn) return;
+    label.textContent=t.destinationFinder.label;
+    search.placeholder=t.destinationFinder.search;
+    bookBtn.title=t.destinationFinder.book;
+    select.innerHTML='<option value="">'+t.destinationFinder.label+'</option>'+cfg.destinations.map(function(d){
+      return '<option value="'+d.id+'">'+localized(d,lang)+'</option>';
+    }).join('');
+    if(selectedDestinationId && cfg.destinations.some(function(d){return d.id===selectedDestinationId;})){
+      select.value=selectedDestinationId;
+    }
+    search.value=search.dataset.keepValue || '';
+  }
+
+  function waDestinationLink(destination, lang){
+    var num=cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumberByLang.ar;
+    var name=localized(destination,lang);
+    var msgMap={
+      ar:'مرحباً، عايز أحجز لـ '+name+' ✈️',
+      en:"Hello, I'd like to book a trip to "+name+" ✈️",
+      it:"Ciao, vorrei prenotare un viaggio a "+name+" ✈️",
+      fr:"Bonjour, je voudrais réserver un voyage à "+name+" ✈️",
+      pt:"Olá, gostaria de reservar uma viagem para "+name+" ✈️",
+      ptbr:"Oi, eu queria reservar uma viagem para "+name+" ✈️"
+    };
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(msgMap[lang] || msgMap.en);
+  }
+
+  function selectDestination(id, shouldScroll){
+    var d=cfg.destinations.find(function(x){return x.id===id;});
+    if(!d) return;
+    selectedDestinationId=id;
+    var lang=document.documentElement.lang || 'ar';
+    var t=cfg.i18n[lang] || cfg.i18n.ar;
+    var select=document.getElementById('destination-select');
+    if(select) select.value=id;
+    document.querySelectorAll('.dest-card').forEach(function(card){
+      card.classList.toggle('selected',card.getAttribute('data-destination-id')===id);
+    });
+    var picked=document.getElementById('destination-picked');
+    if(picked){
+      var name=localized(d,lang);
+      picked.innerHTML='<div class="destination-picked-card"><div><span>'+t.destinationFinder.selected+'</span><br><strong>'+name+'</strong></div><button class="picked-action" type="button" data-book-picked>💬 '+t.destinationFinder.book+'</button></div>';
+      picked.querySelector('[data-book-picked]').addEventListener('click',function(){ window.open(waDestinationLink(d,lang),'_blank'); });
+    }
+    if(shouldScroll){
+      var card=document.querySelector('.dest-card[data-destination-id="'+id+'"]');
+      if(card) card.scrollIntoView({behavior:'smooth',block:'center'});
+    }
+  }
+
+  function bindDestinationCards(){
+    document.querySelectorAll('.dest-card').forEach(function(card){
+      card.addEventListener('click',function(){ selectDestination(card.getAttribute('data-destination-id'),false); });
+      card.addEventListener('dblclick',function(){
+        var d=cfg.destinations.find(function(x){return x.id===card.getAttribute('data-destination-id');});
+        if(d) window.open(waDestinationLink(d,document.documentElement.lang || 'ar'),'_blank');
+      });
+    });
+    var select=document.getElementById('destination-select');
+    var search=document.getElementById('destination-search');
+    var book=document.getElementById('destination-book-btn');
+    if(select && !select.dataset.bound){
+      select.addEventListener('change',function(){ if(this.value) selectDestination(this.value,true); });
+      select.dataset.bound='1';
+    }
+    if(book && !book.dataset.bound){
+      book.addEventListener('click',function(){
+        var d=cfg.destinations.find(function(x){return x.id===selectedDestinationId;});
+        if(d) window.open(waDestinationLink(d,document.documentElement.lang || 'ar'),'_blank');
+      });
+      book.dataset.bound='1';
+    }
+    if(search && !search.dataset.bound){
+      search.addEventListener('input',function(){
+        search.dataset.keepValue=this.value;
+        var q=this.value.trim().toLowerCase();
+        document.querySelectorAll('.dest-card').forEach(function(card){
+          var d=cfg.destinations.find(function(x){return x.id===card.getAttribute('data-destination-id');});
+          var name=d ? localized(d,document.documentElement.lang || 'ar').toLowerCase() : '';
+          card.style.display=!q || name.indexOf(q)!==-1 ? '' : 'none';
+        });
+      });
+      search.dataset.bound='1';
+    }
+  }
+
   function animateCount(el){
     var target = parseInt(el.getAttribute('data-target'), 10) || 0;
     var suffix = el.getAttribute('data-suffix') || '';
@@ -1129,6 +1314,22 @@ window.SITE_CONFIG = {
       viewport.addEventListener('mouseenter', function(){ isHovering = true; });
       viewport.addEventListener('mouseleave', function(){ isHovering = false; });
     }
+  }
+
+  function setupPointerCards(){
+    document.querySelectorAll('.pointer-card').forEach(function(card){
+      if(card.dataset.pointerBound) return;
+      card.addEventListener('pointermove',function(e){
+        var r=card.getBoundingClientRect();
+        card.style.setProperty('--spot-x',((e.clientX-r.left)/r.width*100)+'%');
+        card.style.setProperty('--spot-y',((e.clientY-r.top)/r.height*100)+'%');
+      });
+      card.addEventListener('pointerleave',function(){
+        card.style.setProperty('--spot-x','50%');
+        card.style.setProperty('--spot-y','50%');
+      });
+      card.dataset.pointerBound='1';
+    });
   }
 
   function setupRevealAndCounters(){
@@ -1235,7 +1436,7 @@ window.SITE_CONFIG = {
     document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
       var title = pick(s, 'title', lang);
       var desc = pick(s, 'desc', lang);
-      return '<div class="ticket-card"><div class="top">' +
+      return '<div class="ticket-card pointer-card"><div class="top">' +
              '<div class="icon-badge">' + s.icon + '</div>' +
              '<h3>' + title + '</h3><p>' + desc + '</p></div>' +
              '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
@@ -1245,17 +1446,19 @@ window.SITE_CONFIG = {
     document.getElementById('destinations-tag').textContent = t.destinationsHead.tag;
     document.getElementById('destinations-h2').textContent = t.destinationsHead.h2;
     document.getElementById('destinations-p').textContent = t.destinationsHead.p;
+    renderDestinationPicker(lang, t);
     document.getElementById('destinations-grid').innerHTML = cfg.destinations.map(function(d){
       var name = pick(d, 'name', lang);
-      var groupLabel = t.destinationGroups[d.group];
-      return '<div class="dest-card">' +
+      var groupLabel = d.holy ? t.destinationGroups.holy : t.destinationGroups[d.group];
+      return '<button type="button" class="dest-card pointer-card" data-destination-id="' + d.id + '" aria-label="' + name + '">' +
                '<div class="dest-img">' +
-                 '<img src="' + d.image + '" alt="' + name + '" onerror="this.parentElement.classList.add(\'no-img\')">' +
+                 '<img src="' + d.image + '" alt="' + name + '" loading="lazy" decoding="async" onerror="this.parentElement.classList.add(\'no-img\')">' +
                  '<span class="dest-badge">' + groupLabel + '</span>' +
                '</div>' +
-               '<div class="dest-name">' + name + '</div>' +
-             '</div>';
+               '<div class="dest-name"><span>' + name + '</span><span class="dest-arrow">↗</span></div>' +
+             '</button>';
     }).join('');
+    bindDestinationCards();
 
     // Reviews
     document.getElementById('reviews-tag').textContent = t.reviewsHead.tag;
@@ -1278,7 +1481,7 @@ window.SITE_CONFIG = {
     if (!reviewsGridEl.dataset.built) {
       var reviewsHtml = cfg.reviews.map(function(r){
         var initial = r.name.trim().charAt(0).toUpperCase();
-        return '<div class="review-card">' +
+        return '<div class="review-card pointer-card">' +
                  '<div class="review-top">' +
                    '<div class="review-avatar">' + initial + '</div>' +
                    '<div class="review-name">' + r.name + '</div>' +
@@ -1299,7 +1502,7 @@ window.SITE_CONFIG = {
     document.getElementById('steps-grid').innerHTML = cfg.steps.map(function(s){
       var title = pick(s, 'title', lang);
       var desc = pick(s, 'desc', lang);
-      return '<div class="step"><div class="n">' + s.n + '</div><h4>' + title + '</h4><p>' + desc + '</p></div>';
+      return '<div class="step pointer-card"><div class="n">' + s.n + '</div><h4>' + title + '</h4><p>' + desc + '</p></div>';
     }).join('');
 
     // Why us
@@ -1308,7 +1511,7 @@ window.SITE_CONFIG = {
     document.getElementById('why-list').innerHTML = cfg.why.map(function(w){
       var title = pick(w, 'title', lang);
       var desc = pick(w, 'desc', lang);
-      return '<div class="why-item"><div class="mark">' + w.mark + '</div>' +
+      return '<div class="why-item pointer-card"><div class="mark">' + w.mark + '</div>' +
              '<div><h4>' + title + '</h4><p>' + desc + '</p></div></div>';
     }).join('');
     var fq = pick(cfg.founderNote, 'quote', lang);
@@ -1323,7 +1526,7 @@ window.SITE_CONFIG = {
     document.getElementById('faq-list').innerHTML = cfg.faq.map(function(item){
       var q = pick(item, 'q', lang);
       var a = pick(item, 'a', lang);
-      return '<details class="faq-item"><summary>' + q + '</summary><div class="faq-a">' + a + '</div></details>';
+      return '<details class="faq-item pointer-card"><summary>' + q + '</summary><div class="faq-a">' + a + '</div></details>';
     }).join('');
 
     // Contact
@@ -1343,7 +1546,8 @@ window.SITE_CONFIG = {
     document.getElementById('footer-copyright').textContent = t.footerCopyright;
 
     // إعادة تفعيل تأثير الظهور التدريجي على أي عناصر اتبنت جديد
-    setupRevealAndCounters();
+    setupPointerCards();
+    if(selectedDestinationId) selectDestination(selectedDestinationId, false);
   }
 
   document.querySelectorAll('.lang-btn').forEach(function(btn){
@@ -1361,303 +1565,218 @@ window.SITE_CONFIG = {
 <!-- ===================== SARA ASSISTANT WIDGET ===================== -->
 <style>
   .sara-fab{
-    position:fixed;bottom:22px;inset-inline-end:22px;z-index:70;
-    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
-    width:58px;height:58px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;font-size:26px;
-    box-shadow:0 8px 24px rgba(3,101,163,0.5);
-    border:2px solid #fff;cursor:pointer;transition:transform .15s;
-    padding:0;overflow:hidden;
+    position:fixed;bottom:22px;inset-inline-end:22px;z-index:80;
+    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;width:62px;height:62px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(3,101,163,.42);
+    border:2px solid #fff;cursor:pointer;padding:0;overflow:hidden;
+    transition:transform .25s ease, box-shadow .25s ease;
+    animation:saraPulse 3.5s ease-in-out infinite;
   }
-  .sara-fab img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
-  .sara-fab:hover{transform:translateY(-2px);}
+  .sara-fab:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 16px 36px rgba(3,101,163,.55);}
+  .sara-fab img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+  @keyframes saraPulse{0%,100%{box-shadow:0 10px 28px rgba(3,101,163,.42)}50%{box-shadow:0 12px 34px rgba(3,101,163,.64)}}
   .sara-panel{
-    position:fixed;bottom:90px;inset-inline-end:22px;z-index:70;
-    width:320px;max-width:calc(100vw - 44px);
-    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:18px;
-    box-shadow:0 24px 48px rgba(11,32,54,0.25);
-    display:none;flex-direction:column;overflow:hidden;
-    font-family:'Cairo',sans-serif;
+    position:fixed;bottom:98px;inset-inline-end:22px;z-index:80;width:370px;max-width:calc(100vw - 28px);
+    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:20px;
+    box-shadow:0 28px 60px rgba(11,32,54,.28);display:none;flex-direction:column;overflow:hidden;
   }
-  .sara-panel.open{display:flex;}
-  .sara-panel-header{
-    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;
-    padding:14px 16px;display:flex;align-items:center;gap:10px;
-  }
-  .sara-panel-header img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,0.6);}
-  .sara-panel-header .who{flex:1;}
-  .sara-panel-header .who .name{font-weight:800;font-size:14px;}
-  .sara-panel-header .who .status{font-family:'IBM Plex Mono',monospace;font-size:10px;opacity:0.85;}
-  .sara-panel-header .status::before{content:"● ";color:#6CFF9E;}
-  .sara-close{background:transparent;border:none;color:#fff;font-size:18px;cursor:pointer;opacity:0.85;line-height:1;padding:4px;}
-  .sara-close:hover{opacity:1;}
-  .sara-messages{padding:16px;display:flex;flex-direction:column;gap:10px;max-height:280px;overflow-y:auto;}
-  .sara-msg{
-    background:#fff;border:1px solid #E4D9C8;border-radius:14px;border-start-start-radius:4px;
-    padding:10px 14px;font-size:13.5px;color:#3E4C58;line-height:1.6;max-width:88%;align-self:flex-start;
-  }
-  .sara-msg.user{
-    background:#0365A3;color:#fff;border:none;border-start-start-radius:14px;border-start-end-radius:4px;
-    align-self:flex-end;
-  }
-  .sara-options{padding:0 16px 16px;display:flex;flex-direction:column;gap:8px;}
-  .sara-opt-btn{
-    background:#fff;border:1.5px solid #0365A3;color:#0365A3;
-    border-radius:999px;padding:9px 14px;font-size:13px;font-weight:700;
-    cursor:pointer;text-align:start;transition:background .15s, color .15s;
-    font-family:'Cairo',sans-serif;
-  }
-  .sara-opt-btn:hover{background:#0365A3;color:#fff;}
-  .sara-opt-btn.wa{border-color:#25D366;color:#25D366;}
-  .sara-opt-btn.wa:hover{background:#25D366;color:#fff;}
-  @media (max-width:480px){
-    .sara-panel{inset-inline-end:12px;width:calc(100vw - 24px);}
-    .sara-fab{inset-inline-end:12px;}
-  }
+  .sara-panel.open{display:flex;animation:saraIn .22s ease-out both;}
+  @keyframes saraIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+  .sara-panel-header{background:linear-gradient(160deg,#0365A3,#023152);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:11px;}
+  .sara-panel-header img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.72);}
+  .sara-panel-header .who{flex:1}.sara-panel-header .name{font-weight:900;font-size:14px}.sara-panel-header .status{font:10px 'IBM Plex Mono',monospace;opacity:.86;}
+  .sara-close{background:transparent;border:0;color:#fff;font-size:18px;cursor:pointer;opacity:.8;padding:4px}.sara-close:hover{opacity:1;}
+  .sara-messages{padding:16px;display:flex;flex-direction:column;gap:10px;max-height:320px;overflow:auto;scroll-behavior:smooth;}
+  .sara-msg{background:#fff;border:1px solid #E4D9C8;border-radius:14px;border-start-start-radius:4px;padding:10px 13px;font-size:13.5px;color:#3E4C58;line-height:1.65;max-width:90%;}
+  .sara-msg.user{background:#0365A3;color:#fff;border:none;border-start-start-radius:14px;border-start-end-radius:4px;align-self:flex-end;}
+  .sara-msg.strong{border-color:#9BC5DB;background:#F1F8FC;}
+  .sara-options{padding:0 16px 10px;display:flex;flex-direction:column;gap:7px;max-height:190px;overflow:auto;}
+  .sara-opt-btn{background:#fff;border:1.5px solid #0365A3;color:#0365A3;border-radius:999px;padding:9px 13px;font-size:12.8px;font-weight:800;cursor:pointer;text-align:start;font-family:'Cairo',sans-serif;transition:background .18s,color .18s,transform .18s,box-shadow .18s;}
+  .sara-opt-btn:hover{background:#0365A3;color:#fff;transform:translateY(-1px);box-shadow:0 6px 12px rgba(3,101,163,.14);}
+  .sara-opt-btn.wa{border-color:#25D366;color:#25D366}.sara-opt-btn.wa:hover{background:#25D366;color:#fff;}
+  .sara-input-row{display:flex;gap:8px;padding:10px 16px 14px;background:#F6F0E6;border-top:1px solid #E4D9C8;}
+  .sara-input{flex:1;min-width:0;border:1px solid #D9CBB7;border-radius:12px;background:#fff;padding:10px 12px;font:600 13px 'Cairo',sans-serif;outline:none;}
+  .sara-input:focus{border-color:#0365A3;box-shadow:0 0 0 4px rgba(3,101,163,.09);}
+  .sara-send{width:44px;border:0;border-radius:12px;background:#0365A3;color:#fff;cursor:pointer;font-size:17px;transition:transform .18s}.sara-send:hover{transform:translateY(-2px);}
+  @media (prefers-reduced-motion:reduce){.sara-fab{animation:none}.sara-panel.open{animation:none}}
+  @media (max-width:480px){.sara-panel{inset-inline-end:10px;width:calc(100vw - 20px);bottom:88px}.sara-fab{inset-inline-end:10px}}
 </style>
 
-<button class="sara-fab" id="saraFab" aria-label="Sara's Assistant"><img src="images/sara.jpg" alt="Sara"></button>
-<div class="sara-panel" id="saraPanel">
+<button class="sara-fab" id="saraFab" type="button" aria-label="Sara's Assistant"><img src="images/sara.jpg" alt="Sara"></button>
+<div class="sara-panel" id="saraPanel" role="dialog" aria-label="Sara travel assistant">
   <div class="sara-panel-header">
     <img src="images/sara.jpg" alt="Sara">
-    <div class="who">
-      <div class="name" id="saraPanelName">Sara</div>
-      <div class="status" id="saraPanelStatus"></div>
-    </div>
-    <button class="sara-close" id="saraClose" aria-label="Close">✕</button>
+    <div class="who"><div class="name" id="saraPanelName">Sara</div><div class="status" id="saraPanelStatus"></div></div>
+    <button class="sara-close" id="saraClose" type="button" aria-label="Close">✕</button>
   </div>
   <div class="sara-messages" id="saraMessages"></div>
   <div class="sara-options" id="saraOptions"></div>
+  <div class="sara-input-row">
+    <input id="saraInput" class="sara-input" type="text" autocomplete="off" spellcheck="false">
+    <button id="saraSend" class="sara-send" type="button" aria-label="Send">➤</button>
+  </div>
 </div>
 
 <script>
 (function(){
-  var WA_NUM = {ar:"201116666306",en:"201116666306",it:"393801991992",fr:"201116666306",pt:"201116666306",ptbr:"201116666306"};
-  var WA_MSG = {
-    ar:"مرحباً، جاي من مساعد سارة على الموقع وعايز مساعدة",
-    en:"Hello, I came from Sara's site assistant and would like some help",
-    it:"Ciao, vengo dall'assistente del sito di Sara e vorrei un aiuto",
-    fr:"Bonjour, je viens de l'assistant du site de Sara et j'aimerais de l'aide",
-    pt:"Olá, venho do assistente do site da Sara e gostaria de ajuda",
-    ptbr:"Oi, eu vim do assistente do site da Sara e queria uma ajuda"
+  var cfg=window.SITE_CONFIG, booking={service:null,destination:null,date:null,travelers:null}, step='root';
+  var fab,panel,messagesEl,optionsEl,inputEl,sendEl;
+  var BOOK_SERVICES={
+    ar:[['flight','✈️ تذاكر طيران'],['hotel','🏨 فندق/إقامة'],['event','🎟️ فعالية أو متحف'],['package','🧳 رحلة كاملة']],
+    en:[['flight','✈️ Flight tickets'],['hotel','🏨 Hotel / stay'],['event','🎟️ Event or museum'],['package','🧳 Full trip']],
+    de:[['flight','✈️ Flugtickets'],['hotel','🏨 Hotel / Unterkunft'],['event','🎟️ Event oder Museum'],['package','🧳 Komplette Reise']],
+    it:[['flight','✈️ Biglietti aerei'],['hotel','🏨 Hotel / soggiorno'],['event','🎟️ Evento o museo'],['package','🧳 Viaggio completo']],
+    fr:[['flight','✈️ Billets d’avion'],['hotel','🏨 Hôtel / séjour'],['event','🎟️ Événement ou musée'],['package','🧳 Voyage complet']],
+    pt:[['flight','✈️ Bilhetes de avião'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento ou museu'],['package','🧳 Viagem completa']],
+    ptbr:[['flight','✈️ Passagem aérea'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento ou museu'],['package','🧳 Viagem completa']]
   };
-  var STATUS_TXT = {ar:"أونلاين",en:"Online",it:"Online",fr:"En ligne",pt:"Online",ptbr:"Online"};
-
-  function waLink(lang){
-    var num = WA_NUM[lang] || WA_NUM.en;
-    var msg = WA_MSG[lang] || WA_MSG.en;
-    return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg);
-  }
-
-  var TREE = {
-    root: {
-      msg:{ar:"أهلاً! أنا سارة 👋 عايز أساعدك تستفيد من الموقع أد ما تقدر. تحب نبدأ بإيه؟",
-           en:"Hi! I'm Sara 👋 I want to help you get the most out of the site. What would you like to start with?",
-           it:"Ciao! Sono Sara 👋 Voglio aiutarti a sfruttare al meglio il sito. Da cosa vuoi iniziare?",
-           fr:"Bonjour ! Je suis Sara 👋 Je veux vous aider à tirer le meilleur parti du site. Par quoi voulez-vous commencer ?",
-           pt:"Olá! Sou a Sara 👋 Quero ajudá-lo a aproveitar ao máximo o site. Por onde quer começar?",
-           ptbr:"Oi! Eu sou a Sara 👋 Quero te ajudar a aproveitar o site ao máximo. Por onde você quer começar?"},
-      options:[
-        {label:{ar:"📅 عايز أحجز رحلة",en:"📅 Book a trip",it:"📅 Prenotare un viaggio",fr:"📅 Réserver un voyage",pt:"📅 Reservar uma viagem",ptbr:"📅 Reservar uma viagem"}, goto:"book"},
-        {label:{ar:"🗣️ أتعلم لغة قبل السفر",en:"🗣️ Learn a language first",it:"🗣️ Imparare una lingua prima",fr:"🗣️ Apprendre une langue avant",pt:"🗣️ Aprender uma língua antes",ptbr:"🗣️ Aprender um idioma antes"}, goto:"language"},
-        {label:{ar:"🍽️ أفكار أكل صحي",en:"🍽️ Healthy food ideas",it:"🍽️ Idee per pasti sani",fr:"🍽️ Idées de repas sains",pt:"🍽️ Ideias de comida saudável",ptbr:"🍽️ Ideias de comida saudável"}, goto:"food"},
-        {label:{ar:"🗺️ معلومات عن وجهة",en:"🗺️ Info about a destination",it:"🗺️ Info su una destinazione",fr:"🗺️ Infos sur une destination",pt:"🗺️ Info sobre um destino",ptbr:"🗺️ Info sobre um destino"}, goto:"destination"},
-        {label:{ar:"❓ أسئلة الحجز والدفع",en:"❓ Booking & payment questions",it:"❓ Domande su prenotazione e pagamento",fr:"❓ Questions réservation et paiement",pt:"❓ Perguntas sobre reserva e pagamento",ptbr:"❓ Perguntas sobre reserva e pagamento"}, goto:"faq"},
-        {label:{ar:"💬 أتكلم مع حد دلوقتي",en:"💬 Talk to someone now",it:"💬 Parlare subito con qualcuno",fr:"💬 Parler à quelqu'un maintenant",pt:"💬 Falar com alguém agora",ptbr:"💬 Falar com alguém agora"}, wa:true}
-      ]
-    },
-    book: {
-      msg:{ar:"تمام! تقدر تشوف كل خدماتنا أو الوجهات اللي بنحجزلك فيها، أو تكلمني على طول وهساعدك أحدد السعر.",
-           en:"Great! You can browse all our services or the destinations we book, or just message me now and I'll help you get a price.",
-           it:"Perfetto! Puoi vedere tutti i nostri servizi o le destinazioni che prenotiamo, oppure scrivimi subito per un prezzo.",
-           fr:"Parfait ! Vous pouvez consulter nos services ou les destinations que nous réservons, ou m'écrire directement pour un prix.",
-           pt:"Ótimo! Pode ver todos os nossos serviços ou os destinos que reservamos, ou mandar-me mensagem já para um preço.",
-           ptbr:"Ótimo! Você pode ver nossos serviços ou os destinos que reservamos, ou já mandar mensagem que eu ajudo com o preço."},
-      options:[
-        {label:{ar:"شوف خدماتنا",en:"See our services",it:"Vedi i nostri servizi",fr:"Voir nos services",pt:"Ver os nossos serviços",ptbr:"Ver nossos serviços"}, link:"index.html#services"},
-        {label:{ar:"شوف الوجهات",en:"See destinations",it:"Vedi le destinazioni",fr:"Voir les destinations",pt:"Ver os destinos",ptbr:"Ver os destinos"}, link:"index.html#destinations"},
-        {label:{ar:"💬 كلمني على واتساب دلوقتي",en:"💬 Message me on WhatsApp now",it:"💬 Scrivimi su WhatsApp ora",fr:"💬 Écrivez-moi sur WhatsApp",pt:"💬 Mande mensagem no WhatsApp",ptbr:"💬 Manda mensagem no WhatsApp"}, wa:true},
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
-      ]
-    },
-    language: {
-      msg:{ar:"عندنا كتيبات كاملة (أساسي ومتقدم، بست لغات شرح) لتعلم:",
-           en:"We have complete guidebooks (basic + advanced, explained in 6 languages) to learn:",
-           it:"Abbiamo guide complete (base e avanzato, in 6 lingue) per imparare:",
-           fr:"Nous avons des guides complets (débutant et avancé, en 6 langues) pour apprendre :",
-           pt:"Temos guias completos (básico e avançado, em 6 línguas) para aprender:",
-           ptbr:"Temos guias completos (básico e avançado, em 6 idiomas) para aprender:"},
-      options:[
-        {label:{ar:"🇮🇹 إيطالي",en:"🇮🇹 Italian",it:"🇮🇹 Italiano",fr:"🇮🇹 Italien",pt:"🇮🇹 Italiano",ptbr:"🇮🇹 Italiano"}, link:"guide-italian.html"},
-        {label:{ar:"🇫🇷 فرنساوي",en:"🇫🇷 French",it:"🇫🇷 Francese",fr:"🇫🇷 Français",pt:"🇫🇷 Francês",ptbr:"🇫🇷 Francês"}, link:"guide-french.html"},
-        {label:{ar:"🇧🇷 برتغالي برازيلي",en:"🇧🇷 Brazilian Portuguese",it:"🇧🇷 Portoghese Brasiliano",fr:"🇧🇷 Portugais Brésilien",pt:"🇧🇷 Português do Brasil",ptbr:"🇧🇷 Português do Brasil"}, link:"guide-portuguese-brazilian.html"},
-        {label:{ar:"🇵🇹 برتغالي",en:"🇵🇹 Portuguese",it:"🇵🇹 Portoghese",fr:"🇵🇹 Portugais",pt:"🇵🇹 Português",ptbr:"🇵🇹 Português"}, link:"guide-portuguese.html"},
-        {label:{ar:"🇪🇸 إسباني",en:"🇪🇸 Spanish",it:"🇪🇸 Spagnolo",fr:"🇪🇸 Espagnol",pt:"🇪🇸 Espanhol",ptbr:"🇪🇸 Espanhol"}, link:"guide-spanish.html"},
-        {label:{ar:"🇬🇧 إنجليزي",en:"🇬🇧 English",it:"🇬🇧 Inglese",fr:"🇬🇧 Anglais",pt:"🇬🇧 Inglês",ptbr:"🇬🇧 Inglês"}, link:"guide-english.html"},
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
-      ]
-    },
-    food: {
-      msg:{ar:"عندنا خطط عشا كاملة لأسبوع، بأكل بيتي حقيقي من بلاد مختلفة. عايز تشوف أنهي واحدة؟",
-           en:"We have complete week-long dinner plans with real home cooking from different countries. Which one would you like to see?",
-           it:"Abbiamo piani cena completi per una settimana, con vera cucina casalinga. Quale vuoi vedere?",
-           fr:"Nous avons des plans de dîner complets pour une semaine, avec de la vraie cuisine maison. Lequel voulez-vous voir ?",
-           pt:"Temos planos de jantares completos para uma semana, com comida caseira. Qual quer ver?",
-           ptbr:"Temos planos de jantares completos pra uma semana, com comida caseira. Qual você quer ver?"},
-      options:[
-        {label:{ar:"خطة عامة (٧ أيام)",en:"General plan (7 days)",it:"Piano generale (7 giorni)",fr:"Plan général (7 jours)",pt:"Plano geral (7 dias)",ptbr:"Plano geral (7 dias)"}, link:"blog-dinner-plan.html"},
-        {label:{ar:"شرق أوسطي",en:"Middle Eastern",it:"Mediorientale",fr:"Moyen-Oriental",pt:"Médio Oriente",ptbr:"Oriente Médio"}, link:"blog-middle-eastern-dinner-plan.html"},
-        {label:{ar:"مصري",en:"Egyptian",it:"Egiziana",fr:"Égyptienne",pt:"Egípcia",ptbr:"Egípcia"}, link:"blog-egyptian-diet-plan.html"},
-        {label:{ar:"برازيلي",en:"Brazilian",it:"Brasiliana",fr:"Brésilienne",pt:"Brasileira",ptbr:"Brasileira"}, link:"blog-brazilian-diet-plan.html"},
-        {label:{ar:"أمريكي",en:"American",it:"Americana",fr:"Américaine",pt:"Americana",ptbr:"Americana"}, link:"blog-american-diet-plan.html"},
-        {label:{ar:"فرنساوي",en:"French",it:"Francese",fr:"Française",pt:"Francesa",ptbr:"Francesa"}, link:"blog-french-diet-plan.html"},
-        {label:{ar:"إسباني",en:"Spanish",it:"Spagnola",fr:"Espagnole",pt:"Espanhola",ptbr:"Espanhola"}, link:"blog-spanish-diet-plan.html"},
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
-      ]
-    },
-    destination: {
-      msg:{ar:"عندنا دليلين تفصيليين جاهزين دلوقتي:",
-           en:"We have two detailed guides ready right now:",
-           it:"Abbiamo due guide dettagliate pronte adesso:",
-           fr:"Nous avons deux guides détaillés disponibles maintenant :",
-           pt:"Temos dois guias detalhados prontos agora:",
-           ptbr:"Temos dois guias detalhados prontos agora:"},
-      options:[
-        {label:{ar:"أهرامات الجيزة",en:"Giza Pyramids",it:"Piramidi di Giza",fr:"Pyramides de Gizeh",pt:"Pirâmides de Gizé",ptbr:"Pirâmides de Gizé"}, link:"guide-giza-pyramids.html"},
-        {label:{ar:"إسطنبول",en:"Istanbul",it:"Istanbul",fr:"Istanbul",pt:"Istambul",ptbr:"Istambul"}, link:"guide-istanbul.html"},
-        {label:{ar:"شوف كل الوجهات",en:"See all destinations",it:"Vedi tutte le destinazioni",fr:"Voir toutes les destinations",pt:"Ver todos os destinos",ptbr:"Ver todos os destinos"}, link:"index.html#destinations"},
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
-      ]
-    },
-    faq: {
-      msg:{ar:"دي أشهر اللي بيسألوا عليها الناس:",
-           en:"Here are the most common questions people ask:",
-           it:"Ecco le domande più comuni:",
-           fr:"Voici les questions les plus fréquentes :",
-           pt:"Aqui estão as perguntas mais comuns:",
-           ptbr:"Aqui estão as perguntas mais comuns:"},
-      options:[
-        {label:{ar:"إزاي بتحجز خطوة بخطوة؟",en:"How does booking work, step by step?",it:"Come funziona la prenotazione, passo passo?",fr:"Comment fonctionne la réservation ?",pt:"Como funciona a reserva, passo a passo?",ptbr:"Como funciona a reserva, passo a passo?"}, link:"guide-booking-whatsapp.html"},
-        {label:{ar:"إزاي بتدفع؟",en:"How do I pay?",it:"Come pago?",fr:"Comment payer ?",pt:"Como pago?",ptbr:"Como eu pago?"}, goto:"faq_pay"},
-        {label:{ar:"تقدر تلغي لو غيرت رأيي؟",en:"Can I cancel if I change my mind?",it:"Posso cancellare se cambio idea?",fr:"Puis-je annuler ?",pt:"Posso cancelar se mudar de ideias?",ptbr:"Posso cancelar se eu mudar de ideia?"}, goto:"faq_cancel"},
-        {label:{ar:"شوف كل الأسئلة الشائعة",en:"See all FAQs",it:"Vedi tutte le FAQ",fr:"Voir toutes les FAQ",pt:"Ver todas as perguntas",ptbr:"Ver todas as perguntas"}, link:"index.html#faq"},
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, back:true}
-      ]
-    },
-    faq_pay: {
-      msg:{ar:"الدفع بيتم عن طريق تحويل بنكي أو فودافون كاش أو انستاباي، وبنأكدلك كل التفاصيل قبل ما تدفع أي حاجة.",
-           en:"Payment is via bank transfer, Vodafone Cash, or InstaPay, and we confirm all the details before you pay anything.",
-           it:"Il pagamento avviene tramite bonifico, Vodafone Cash o InstaPay, e confermiamo tutto prima che tu paghi.",
-           fr:"Le paiement se fait par virement, Vodafone Cash ou InstaPay, et nous confirmons tout avant paiement.",
-           pt:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de pagar.",
-           ptbr:"O pagamento é feito por transferência, Vodafone Cash, ou InstaPay, e confirmamos tudo antes de você pagar."},
-      options:[
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
-      ]
-    },
-    faq_cancel: {
-      msg:{ar:"الإلغاء بيرجع لسياسة شركة الطيران أو الفندق نفسها، وبنوضحلك ده قبل ما تأكد الحجز مش بعده.",
-           en:"Cancellation follows the airline's or hotel's own policy, and we explain this before you confirm, not after.",
-           it:"La cancellazione segue la politica della compagnia aerea o dell'hotel, spiegata prima della conferma.",
-           fr:"L'annulation suit la politique de la compagnie aérienne ou de l'hôtel, expliquée avant confirmation.",
-           pt:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação.",
-           ptbr:"O cancelamento segue a política da companhia aérea ou hotel, explicada antes da confirmação."},
-      options:[
-        {label:{ar:"← رجوع",en:"← Back",it:"← Indietro",fr:"← Retour",pt:"← Voltar",ptbr:"← Voltar"}, goto:"faq"}
-      ]
-    }
+  var TXT={
+    ar:{online:'أونلاين',root:'أهلاً! أنا سارة 👋 قولي عايز تعمل إيه وأنا أجهزلك الخطوات.',book:'تمام. إيه الخدمة اللي عايزها؟',dest:'اختار الوجهة اللي ناوي تسافر لها.',date:'اكتب تاريخ السفر (مثال: 20/12/2026).',travelers:'كام مسافر؟ اكتب العدد.',summary:'ممتاز. دي تفاصيل طلبك المبدئية:',send:'ابعث الطلب على واتساب',destInfo:'الوجهة دي موجودة عندنا. أقدر أجهزلك رسالة الحجز فورًا.',faq:'اختار سؤال أو اكتب سؤالك بطريقتك.',placeholder:'اكتب سؤالك أو تاريخك أو عدد المسافرين...',sendBtn:'إرسال',back:'← رجوع',human:'💬 تكلم مع شخص',chooseDest:'🗺️ اختيار وجهة',faqBtn:'❓ أسئلة الحجز',learn:'🗣️ تعلم لغة قبل السفر'},
+    en:{online:'Online',root:"Hi! I'm Sara 👋 Tell me what you need and I'll guide you.",book:'Sure. What service do you need?',dest:'Choose the destination you plan to visit.',date:'Type your travel date (example: 20/12/2026).',travelers:'How many travelers? Type the number.',summary:'Great. Here is your request summary:',send:'Send request on WhatsApp',destInfo:'This destination is available. I can prepare your booking message now.',faq:'Pick a question or type it in your own words.',placeholder:'Ask a question, enter a date or travelers...',sendBtn:'Send',back:'← Back',human:'💬 Talk to a person',chooseDest:'🗺️ Choose a destination',faqBtn:'❓ Booking questions',learn:'🗣️ Learn a language before travel',startBooking:'Start booking'},
+    it:{online:'Online',root:'Ciao! Sono Sara 👋 Dimmi cosa ti serve e ti guido.',book:'Certo. Quale servizio ti serve?',dest:'Scegli la destinazione del viaggio.',date:'Scrivi la data del viaggio (esempio: 20/12/2026).',travelers:'Quanti viaggiatori? Scrivi il numero.',summary:'Perfetto. Ecco il riepilogo:',send:'Invia la richiesta su WhatsApp',destInfo:'Questa destinazione è disponibile. Posso preparare il messaggio di prenotazione.',faq:'Scegli una domanda o scrivila con le tue parole.',placeholder:'Scrivi una domanda, una data o i viaggiatori...',sendBtn:'Invia',back:'← Indietro',human:'💬 Parla con una persona',chooseDest:'🗺️ Scegli destinazione',faqBtn:'❓ Domande prenotazione',learn:'🗣️ Impara una lingua prima del viaggio',startBooking:'Inizia la prenotazione'},
+    fr:{online:'En ligne',root:'Bonjour ! Je suis Sara 👋 Dites-moi ce dont vous avez besoin et je vous guide.',book:'Bien sûr. De quel service avez-vous besoin ?',dest:'Choisissez votre destination.',date:'Écrivez la date du voyage (exemple : 20/12/2026).',travelers:'Combien de voyageurs ? Écrivez le nombre.',summary:'Parfait. Voici le récapitulatif :',send:'Envoyer la demande sur WhatsApp',destInfo:'Cette destination est disponible. Je peux préparer votre message de réservation.',faq:'Choisissez une question ou écrivez-la avec vos mots.',placeholder:'Écrivez une question, une date ou le nombre de voyageurs...',sendBtn:'Envoyer',back:'← Retour',human:'💬 Parler à une personne',chooseDest:'🗺️ Choisir une destination',faqBtn:'❓ Questions de réservation',learn:'🗣️ Apprendre une langue avant le voyage',startBooking:'Commencer la réservation'},
+    pt:{online:'Online',root:'Olá! Sou a Sara 👋 Diga-me o que precisa e eu ajudo.',book:'Claro. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Escreva a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Escreva o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido pelo WhatsApp',destInfo:'Este destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva com suas próprias palavras.',placeholder:'Escreva uma pergunta, uma data ou o número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Perguntas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
+    ptbr:{online:'Online',root:'Oi! Eu sou a Sara 👋 Me diga o que você precisa e eu te guio.',book:'Beleza. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Digite a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Digite o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido no WhatsApp',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva do seu jeito.',placeholder:'Pergunte algo, digite a data ou número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Dúvidas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
+    de:{online:'Online',root:'Hallo! Ich bin Sara 👋 Sag mir, was du brauchst, und ich führe dich durch die nächsten Schritte.',book:'Gerne. Welche Leistung brauchst du?',dest:'Wähle dein Reiseziel.',date:'Gib dein Reisedatum ein (Beispiel: 20.12.2026).',travelers:'Wie viele Reisende? Gib die Anzahl ein.',summary:'Perfekt. Hier ist die Zusammenfassung deiner Anfrage:',send:'Anfrage über WhatsApp senden',destInfo:'Dieses Reiseziel ist bei uns verfügbar. Ich kann jetzt eine Buchungsnachricht vorbereiten.',faq:'Wähle eine Frage oder schreibe sie in deinen eigenen Worten.',placeholder:'Frage stellen, Datum oder Anzahl der Reisenden eingeben...',sendBtn:'Senden',back:'← Zurück',human:'💬 Mit einer Person sprechen',chooseDest:'🗺️ Reiseziel auswählen',faqBtn:'❓ Buchungsfragen',learn:'🗣️ Vor der Reise Deutsch lernen',startBooking:'Buchung starten'},
   };
 
-  var history = ["root"];
-  var messagesEl, optionsEl, fab, panel;
-
-  function currentLang(){
-    return document.documentElement.lang || (function(){ try{return localStorage.getItem('sd_lang')||'ar';}catch(e){return 'ar';} })();
+  function lang(){return document.documentElement.lang || 'ar';}
+  function t(){return TXT[lang()]||TXT.en;}
+  function nameOf(d){var l=lang();return d[l+'_name']||d.en_name||d.ar_name;}
+  function wa(langCode,msg){
+    var num=cfg.contact.whatsappNumberByLang[langCode]||cfg.contact.whatsappNumberByLang.ar;
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(msg);
   }
-
-  function pick(dict){ var l = currentLang(); return dict[l] || dict.en || dict.ar; }
-
-  function addMsg(text, isUser){
-    var div = document.createElement('div');
-    div.className = 'sara-msg' + (isUser ? ' user' : '');
-    div.textContent = text;
-    messagesEl.appendChild(div);
-    messagesEl.scrollTop = messagesEl.scrollHeight;
+  function addMsg(msg,user){
+    var d=document.createElement('div');d.className='sara-msg'+(user?' user':'');d.textContent=msg;messagesEl.appendChild(d);messagesEl.scrollTop=messagesEl.scrollHeight;
   }
-
-  function renderNode(nodeId){
-    var node = TREE[nodeId];
-    addMsg(pick(node.msg), false);
-    optionsEl.innerHTML = '';
-    node.options.forEach(function(opt){
-      var btn = document.createElement('button');
-      btn.className = 'sara-opt-btn' + (opt.wa ? ' wa' : '');
-      btn.textContent = pick(opt.label);
-      btn.addEventListener('click', function(){ handleOption(opt, nodeId); });
-      optionsEl.appendChild(btn);
+  function setOptions(items){
+    optionsEl.innerHTML='';
+    items.forEach(function(item){
+      var b=document.createElement('button');b.type='button';b.className='sara-opt-btn'+(item.wa?' wa':'');b.textContent=item.label;
+      b.addEventListener('click',function(){if(item.action)item.action();});optionsEl.appendChild(b);
     });
   }
-
-  function handleOption(opt, fromNode){
-    if (!opt.back) addMsg(pick(opt.label), true);
-    if (opt.wa) {
-      window.open(waLink(currentLang()), '_blank');
-      return;
-    }
-    if (opt.link) {
-      window.location.href = opt.link;
-      return;
-    }
-    if (opt.back) {
-      history.pop();
-      var prev = history[history.length - 1] || 'root';
-      renderNode(prev);
-      return;
-    }
-    if (opt.goto) {
-      history.push(opt.goto);
-      renderNode(opt.goto);
-      return;
-    }
+  function root(){
+    step='root';addMsg(t().root,false);
+    setOptions([
+      {label:t().chooseDest,action:destinationList},
+      {label:'📅 '+t().startBooking,action:startBooking},
+      {label:t().faqBtn,action:faqList},
+      {label:t().learn,action:function(){window.location.href=lang()==='de'?'guide-german.html':'guide-english.html';}},
+      {label:t().human,wa:true,action:function(){window.open(wa(lang(), cfg.contact.whatsappDefaultMessage[lang]||cfg.contact.whatsappDefaultMessage.en),'_blank');}}
+    ]);
   }
-
-  function openPanel(){
-    panel.classList.add('open');
-    document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
-    if (!messagesEl.hasChildNodes()) {
-      history = ["root"];
-      renderNode("root");
-    }
+  function destinationList(){
+    step='destination';addMsg(t().chooseDest,true);addMsg(t().destInfo,false);
+    var items=cfg.destinations.slice(0,12).map(function(d){
+      return {label:'📍 '+nameOf(d),action:function(){booking.destination=d.id;selectDest(d);}};
+    });
+    items.push({label:t().back,action:root});setOptions(items);
   }
-
+  function selectDest(id){
+    var d=cfg.destinations.find(function(x){return x.id===id;}); if(!d)return;
+    booking.destination=id;addMsg(nameOf(d),true);
+    var msg=t().destInfo+' '+nameOf(d);
+    addMsg(msg,false);
+    setOptions([
+      {label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(id),'_blank');}},
+      {label:'📅 '+(lang()==='ar'?'احجز الوجهة دي':'Book this destination'),action:startBooking},
+      {label:t().back,action:destinationList}
+    ]);
+  }
+  function startBooking(){
+    booking={service:null,destination:null,date:null,travelers:null};step='service';
+    addMsg(t().book,false);
+    setOptions((BOOK_SERVICES[lang()]||BOOK_SERVICES.en).map(function(s){return {label:s[1],action:function(){booking.service=s[0];serviceChosen(s[1]);}}}).concat([{label:t().back,action:root}]));
+  }
+  function serviceChosen(label){
+    addMsg(label,true);step='booking-dest';addMsg(t().dest,false);
+    setOptions(cfg.destinations.map(function(d){return {label:'📍 '+nameOf(d),action:function(){booking.destination=d.id;destinationChosen(d);}}}).concat([{label:t().back,action:startBooking}]));
+  }
+  function destinationChosen(d){
+    addMsg(nameOf(d),true);step='date';addMsg(t().date,false);setOptions([{label:t().back,action:startBooking}]);focusInput();
+  }
+  function travelers(){
+    step='travelers';addMsg(t().travelers,false);setOptions([{label:t().back,action:function(){step='date';addMsg(t().date,false);focusInput();}}]);focusInput();
+  }
+  function summary(){
+    step='summary';var d=cfg.destinations.find(function(x){return x.id===booking.destination;});
+    var services=(BOOK_SERVICES[lang()]||BOOK_SERVICES.en);var sv=(services.find(function(x){return x[0]===booking.service;})||['',''])[1];
+    addMsg(t().summary,false);addMsg(sv+' · '+nameOf(d)+' · '+booking.date+' · '+booking.travelers,false);
+    setOptions([{label:'💬 '+t().send,wa:true,action:function(){window.open(buildBookingWa(),'_blank');}},{label:t().back,action:startBooking}]);
+  }
+  function buildBookingWa(){
+    var l=lang(),d=cfg.destinations.find(function(x){return x.id===booking.destination;}),name=nameOf(d),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
+    var txt={
+      ar:'مرحباً، عايز أطلب حجز:\nالخدمة: '+booking.service+'\nالوجهة: '+name+'\nالتاريخ: '+booking.date+'\nعدد المسافرين: '+booking.travelers,
+      en:"Hello, I'd like to request a booking:\nService: "+booking.service+"\nDestination: "+name+"\nDate: "+booking.date+"\nTravelers: "+booking.travelers,
+      it:"Ciao, vorrei richiedere una prenotazione:\nServizio: "+booking.service+"\nDestinazione: "+name+"\nData: "+booking.date+"\nViaggiatori: "+booking.travelers,
+      fr:"Bonjour, je souhaite demander une réservation :\nService : "+booking.service+"\nDestination : "+name+"\nDate : "+booking.date+"\nVoyageurs : "+booking.travelers,
+      pt:"Olá, gostaria de solicitar uma reserva:\nServiço: "+booking.service+"\nDestino: "+name+"\nData: "+booking.date+"\nViajantes: "+booking.travelers,
+      ptbr:"Oi, eu queria solicitar uma reserva:\nServiço: "+booking.service+"\nDestino: "+name+"\nData: "+booking.date+"\nViajantes: "+booking.travelers
+    };
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(txt[l]||txt.en);
+  }
+  function waDestination(id){
+    var d=cfg.destinations.find(function(x){return x.id===id;}),l=lang(),name=nameOf(d),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
+    var txt={
+      ar:'مرحباً، عايز أحجز لـ '+name+' وعايز أعرف الأسعار والخيارات المتاحة.',
+      en:"Hello, I'd like to book "+name+" and see the available prices and options.",
+      it:"Ciao, vorrei prenotare "+name+" e conoscere prezzi e opzioni disponibili.",
+      fr:"Bonjour, je voudrais réserver "+name+" et connaître les prix et options disponibles.",
+      pt:"Olá, gostaria de reservar "+name+" e ver os preços e opções disponíveis.",
+      ptbr:"Oi, eu queria reservar "+name+" e ver os preços e opções disponíveis."
+    };
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(txt[l]||txt.en);
+  }
+  function faqList(){
+    step='faq';addMsg(t().faq,false);
+    var list=cfg.faq.slice(0,6).map(function(f){
+      var q=f[lang()+'_q']||f.en_q||f.ar_q, a=f[lang()+'_a']||f.en_a||f.ar_a;
+      return {label:'❓ '+q,action:function(){addMsg(q,true);addMsg(a,false);setOptions([{label:t().back,action:root},{label:t().human,wa:true,action:function(){window.open(wa(lang(),q),'_blank');}}]);}};
+    });
+    list.push({label:t().back,action:root});setOptions(list);
+  }
+  function knowledgeAnswer(raw){
+    var q=raw.toLowerCase(),l=lang();
+    var faqMatch=null;
+    cfg.faq.some(function(f){
+      var fq=(f[l+'_q']||f.en_q||f.ar_q||'').toLowerCase();
+      var words=fq.split(/\s+/).filter(function(w){return w.length>2;});
+      var hits=words.filter(function(w){return q.indexOf(w)!==-1;}).length;
+      if(hits>=Math.min(3,Math.max(1,Math.floor(words.length/5)))){faqMatch=f;return true;} return false;
+    });
+    if(faqMatch){return {text:faqMatch[l+'_a']||faqMatch.en_a||faqMatch.ar_a,actions:[{label:t().human,wa:true,action:function(){window.open(wa(l,raw),'_blank');}}]};}
+    var dest=cfg.destinations.find(function(d){
+      return Object.keys(d).filter(function(k){return /_name$/.test(k);}).some(function(k){return q.indexOf(String(d[k]).toLowerCase())!==-1;});
+    });
+    if(dest){return {text:t().destInfo+' '+nameOf(dest),actions:[{label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(dest.id),'_blank');}}]};}
+    return {text:(lang()==='ar'?'أقدر أساعدك أكتر لو اخترت وجهة أو بدأت الحجز، أو أحولك مباشرة لواتساب.':'I can help more if you choose a destination or start a booking, or I can connect you directly on WhatsApp.'),actions:[{label:t().chooseDest,action:destinationList},{label:t().human,wa:true,action:function(){window.open(wa(l,raw),'_blank');}}]};
+  }
+  function focusInput(){setTimeout(function(){if(inputEl)inputEl.focus();},50);}
+  function handleText(){
+    var raw=inputEl.value.trim();if(!raw)return;inputEl.value='';addMsg(raw,true);
+    if(step==='date'){booking.date=raw;travelers();return;}
+    if(step==='travelers'){var digits=(raw.match(/\d+/)||[])[0];booking.travelers=digits||raw;summary();return;}
+    var ans=knowledgeAnswer(raw);addMsg(ans.text,false);setOptions(ans.actions.concat([{label:t().back,action:root}]));focusInput();
+  }
+  function refreshUi(){
+    document.getElementById('saraPanelStatus').textContent='● '+t().online;
+    inputEl.placeholder=t().placeholder;sendEl.setAttribute('aria-label',t().sendBtn);
+  }
   function init(){
-    fab = document.getElementById('saraFab');
-    panel = document.getElementById('saraPanel');
-    messagesEl = document.getElementById('saraMessages');
-    optionsEl = document.getElementById('saraOptions');
-    fab.addEventListener('click', function(){
-      if (panel.classList.contains('open')) { panel.classList.remove('open'); }
-      else { openPanel(); }
-    });
-    document.getElementById('saraClose').addEventListener('click', function(){
-      panel.classList.remove('open');
-    });
-    new MutationObserver(function(){
-      if (panel.classList.contains('open')) {
-        document.getElementById('saraPanelStatus').textContent = pick(STATUS_TXT);
-      }
-    }).observe(document.documentElement, {attributes:true, attributeFilter:['lang']});
+    fab=document.getElementById('saraFab');panel=document.getElementById('saraPanel');messagesEl=document.getElementById('saraMessages');optionsEl=document.getElementById('saraOptions');inputEl=document.getElementById('saraInput');sendEl=document.getElementById('saraSend');
+    fab.addEventListener('click',function(){panel.classList.toggle('open');if(panel.classList.contains('open')&&!messagesEl.childNodes.length){root();}refreshUi();});
+    document.getElementById('saraClose').addEventListener('click',function(){panel.classList.remove('open');});
+    sendEl.addEventListener('click',handleText);inputEl.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();handleText();}});
+    new MutationObserver(refreshUi).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+    refreshUi();
   }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
 </script>
 <!-- =================== END SARA ASSISTANT WIDGET =================== -->
-
 
 </body>
 </html>

@@ -132,6 +132,7 @@
         <button class="lang-btn" data-lang="fr" type="button">FR</button>
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+        <button class="lang-btn" data-lang="de" type="button">DE</button>
       </div>
       <a class="nav-cta" id="nav-cta" href="#">💬</a>
     </div>
@@ -298,7 +299,11 @@ window.GUIDE_META = {"waNumberByLang": {"ar": "201116666306", "en": "20111666630
   }
 
   document.querySelectorAll('.lang-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){ render(btn.getAttribute('data-lang')); });
+    btn.addEventListener('click', function(){
+      var selected = btn.getAttribute('data-lang');
+      if (selected === 'de') { window.location.href = 'guide-german.html'; return; }
+      render(selected);
+    });
   });
 
   var savedLang = null;
