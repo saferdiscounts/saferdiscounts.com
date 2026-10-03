@@ -227,7 +227,8 @@ window.BLOG_CONFIG = {
       it: "Ciao, vorrei prenotare",
       fr: "Bonjour, je voudrais réserver",
       pt: "Olá, gostaria de reservar",
-      ptbr: "Oi, eu queria reservar"
+      ptbr: "Oi, eu queria reservar",
+      de: "Hallo, ich möchte buchen"
     },
     phoneDisplay: "01101576669",
     phoneDial: "+201101576669",
@@ -236,7 +237,7 @@ window.BLOG_CONFIG = {
   },
   sara: {
     photo: "images/sara.jpg",
-    languages: ["العربية", "English", "Italiano", "Español", "Português"]
+    languages: ["العربية", "English", "Italiano", "Español", "Português", "Deutsch"]
   },
   i18n: {
     ar: {
@@ -340,6 +341,15 @@ window.BLOG_CONFIG = {
       comingSoon: "Em breve",
       fullGuide: "Guia Completo",
       byline: "Por Sara"
+    },
+    de: {
+      brand: "Safer Discounts",
+      nav: { services: "Leistungen", destinations: "Reiseziele", reviews: "Bewertungen", how: "So funktioniert die Buchung", faq: "FAQ", blog: "Saras Blog", cta: "Über WhatsApp buchen" },
+      contactBtns: { wa: "WhatsApp", fb: "Facebook", ph: "Anrufen", em: "E-Mail" },
+      footerCopyright: "© 2026 Safer Discounts. Alle Rechte vorbehalten.",
+      blogHero: { eyebrow: "✦ BLOG PASS · Sara", h1: "Saras Blog", p: "Hier teilt Sara Buchungstipps, Reiseideen, Sehenswürdigkeiten, Sprachratgeber und Rezepte für unterwegs." },
+      categories: { booking: "Buchungsratgeber", destinations: "Reiseziele & Sehenswürdigkeiten", languages: "Sprachen lernen", diet: "Rezepte" },
+      readMore: "Artikel lesen", readGuide: "Vollständigen Guide öffnen", comingSoon: "Demnächst", fullGuide: "Vollständiger Guide", byline: "Von Sara"
     }
   },
   posts: [
@@ -600,6 +610,24 @@ window.BLOG_CONFIG = {
       ptbr_excerpt: "Um guia completo, básico e avançado — pronúncia, gramática, vocabulário de viagem e diálogos práticos úteis pra qualquer viagem."
     },
     {
+      category: "languages", status: "published", isFullGuide: true, url: "guide-german.html", targetLang: "de",
+      image: "images/blog-english.jpg",
+      ar_title: "دليلك العملي لتعلم الألماني للسفر",
+      en_title: "Practical German for Travel — with Sara",
+      it_title: "Tedesco pratico per viaggiare — con Sara",
+      fr_title: "Allemand pratique pour voyager — avec Sara",
+      pt_title: "Alemão prático para viajar — com a Sara",
+      ptbr_title: "Alemão prático para viajar — com a Sara",
+      de_title: "Praktisches Deutsch für Reisen — mit Sara",
+      ar_excerpt: "عبارات ألماني عملية للمطار والفندق والمطعم والمواصلات.",
+      en_excerpt: "Useful German for airports, hotels, restaurants, transport, and everyday travel situations.",
+      it_excerpt: "Frasi tedesche utili per aeroporto, hotel, ristoranti, trasporti e situazioni di viaggio.",
+      fr_excerpt: "Des phrases allemandes utiles pour l’aéroport, l’hôtel, le restaurant et les transports.",
+      pt_excerpt: "Frases úteis em alemão para aeroporto, hotel, restaurante e transportes.",
+      ptbr_excerpt: "Frases úteis em alemão para aeroporto, hotel, restaurante e situações do dia a dia.",
+      de_excerpt: "Nützliche deutsche Sätze für Flughafen, Hotel, Restaurant, Verkehr und typische Reisesituationen."
+    },
+    {
       category: "destinations", status: "published", url: "guide-istanbul.html",
       image: "images/blog-istanbul.jpg",
       ar_title: "إسطنبول: أهم الأماكن اللي لازم تزورها",
@@ -641,6 +669,7 @@ window.BLOG_CONFIG = {
         <button class="lang-btn" data-lang="fr" type="button">FR</button>
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
+        <button class="lang-btn" data-lang="de" type="button">DE</button>
       </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
