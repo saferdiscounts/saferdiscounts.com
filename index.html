@@ -1547,9 +1547,8 @@ window.SITE_CONFIG = {
     ];
     document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
       var p = parseStat(s.value);
-      var numeric = p.num !== null && isFinite(p.num);
-      var initial = numeric ? ('0' + p.suffix) : (p.num === null ? p.suffix : String(p.num) + p.suffix);
-      return '<div><div class="stat-num ' + (numeric ? 'stat-count' : '') + '" data-target="' + (numeric ? p.num : '') + '" data-suffix="' + p.suffix + '">' + initial + '</div><div class="stat-lbl">' + s.label + '</div></div>';
+      var display = p.num === null ? p.suffix : (String(p.num) + p.suffix);
+      return '<div class="stat-block"><div class="stat-num">' + display + '</div><div class="stat-lbl">' + s.label + '</div></div>';
     }).join('');
 
     var reviewsGridEl = document.getElementById('reviews-grid');
