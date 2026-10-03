@@ -80,14 +80,14 @@
   nav.wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;}
   .brand img{height:44px;width:auto;}
-  .nav-links{display:flex;gap:32px;font-weight:600;font-size:15px;}
+  .nav-links{display:flex;gap:30px;font-weight:700;font-size:16px;}
   .nav-links a{opacity:0.85;position:relative;transition:opacity .2s,color .2s,transform .2s;}
   .nav-links a::after{content:"";position:absolute;inset-inline:0;bottom:-8px;height:2px;background:var(--brand-orange);transform:scaleX(0);transform-origin:center;transition:transform .2s;}\n  .nav-links a:hover{opacity:1;color:var(--brand-blue);transform:translateY(-1px);}.nav-links a:hover::after{transform:scaleX(1);}
   .nav-right{display:flex;align-items:center;gap:12px;}
   .lang-switch{display:flex;flex-wrap:nowrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:4px;max-width:340px;overflow-x:auto;scrollbar-width:none;flex:0 0 auto;}
   .lang-switch::-webkit-scrollbar{display:none;}
   .lang-btn{
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;
+    font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:11px;
     border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
     padding:6px 8px;cursor:pointer;transition:background .2s, color .2s;white-space:nowrap;
   }
@@ -241,17 +241,18 @@
     font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
     font-weight:600;display:block;margin-bottom:12px;
   }
-  .section-head h2{font-size:32px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:14px;}
-  .section-head p{font-size:16px;color:#4B5A66;}
+  .section-head h2{font-size:36px;font-weight:900;color:var(--brand-blue-dark);margin-bottom:14px;}
+  .section-head p{font-size:17px;color:#4B5A66;}
 
   /* رحلة العميل المتحركة (طيران → فندق → باص → حفلة → كروز) */
   .journey{background:var(--paper);padding:24px 0 4px;}
-  .journey-svg{width:100%;height:180px;display:block;}
+  .journey-svg{width:100%;height:140px;display:block;}
   .journey-icon-emoji{font-size:34px;}
   .journey-label{font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;fill:var(--brand-blue-dark);}
   .journey-traveler{font-size:30px;}
   @media (max-width:700px){
-    .journey{padding:44px 0 10px;}
+    .journey{padding:12px 0 0;}
+    .journey-svg{height:115px;}
     .journey-icon-emoji{font-size:24px;}
     .journey-label{font-size:11px;}
     .journey-traveler{font-size:22px;}
@@ -285,8 +286,8 @@
     display:flex;align-items:center;justify-content:center;
     font-size:24px;margin-bottom:18px;
   }
-  .ticket-card h3{font-size:19px;font-weight:800;color:var(--brand-blue-dark);margin-bottom:10px;}
-  .ticket-card p{font-size:14.5px;color:#4B5A66;}
+  .ticket-card h3{font-size:21px;font-weight:900;color:var(--brand-blue-dark);margin-bottom:10px;}
+  .ticket-card p{font-size:15.5px;color:#4B5A66;}
   .ticket-card .bottom{
     padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
     font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
@@ -387,15 +388,15 @@
     display:flex;align-items:center;gap:5px;backdrop-filter:blur(5px);
   }
   .dest-lang-badge{font-weight:800;color:#FFD9B0;border-inline-start:1px solid rgba(255,255,255,.35);padding-inline-start:5px;}
-  .dest-name{padding:10px 12px;font-weight:700;font-size:13.5px;text-align:center;color:var(--brand-blue-dark);}
+  .dest-name{padding:12px 12px;font-weight:800;font-size:15px;text-align:center;color:var(--brand-blue-dark);}
 
   /* Reviews / testimonials */
   .reviews-stats{
-    display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-bottom:44px;
+    display:flex;justify-content:center;gap:72px;flex-wrap:wrap;margin-bottom:40px;
   }
   .reviews-stats div{text-align:center;}
-  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:var(--brand-orange);}
-  .reviews-stats .stat-lbl{font-size:13px;color:#4B5A66;margin-top:4px;}
+  .reviews-stats .stat-num{font-family:'IBM Plex Mono',monospace;font-size:42px;font-weight:800;color:var(--brand-orange);line-height:1.1;}
+  .reviews-stats .stat-lbl{font-size:15px;font-weight:700;color:#4B5A66;margin-top:7px;}
   .reviews-viewport{
     overflow:hidden;padding:8px 0 24px;
     direction:ltr;
@@ -427,7 +428,7 @@
   }
   .review-name{font-weight:700;font-size:14.5px;color:var(--brand-blue-dark);}
   .review-quote-mark{font-size:28px;color:var(--brand-orange);opacity:0.35;line-height:0.6;font-family:Georgia,serif;}
-  .review-text{font-size:13.5px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
+  .review-text{font-size:15px;color:#3E4C58;line-height:1.75;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:7;overflow:hidden;}
   .reviews-cta{text-align:center;margin-top:8px;}
 
   /* How it works */
@@ -1212,8 +1213,10 @@ window.SITE_CONFIG = {
   }
 
   function parseStat(str){
-    var m = String(str).match(/^(\d+)(.*)$/);
-    return m ? { num: parseInt(m[1], 10), suffix: m[2] } : { num: 0, suffix: str };
+    var raw = String(str == null ? '' : str).trim();
+    var m = raw.match(/^(\d+(?:\.\d+)?)(.*)$/);
+    if (!m) return { num: null, suffix: raw };
+    return { num: parseFloat(m[1]), suffix: m[2] };
   }
 
   var selectedDestinationId = null;
@@ -1314,13 +1317,15 @@ window.SITE_CONFIG = {
   }
 
   function animateCount(el){
-    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    var target = Number(el.getAttribute('data-target'));
     var suffix = el.getAttribute('data-suffix') || '';
-    var duration = 1200, start = null;
+    if (!isFinite(target)) { el.textContent = suffix; return; }
+    var duration = 1000, start = null;
     function step(ts){
       if (!start) start = ts;
       var progress = Math.min((ts - start) / duration, 1);
-      el.textContent = Math.floor(progress * target) + suffix;
+      var value = target >= 100 || Math.floor(target) === target ? Math.floor(progress * target) : Math.round(progress * target * 10) / 10;
+      el.textContent = value + suffix;
       if (progress < 1) requestAnimationFrame(step);
       else el.textContent = target + suffix;
     }
@@ -1542,7 +1547,9 @@ window.SITE_CONFIG = {
     ];
     document.getElementById('reviews-stats').innerHTML = statsData.map(function(s){
       var p = parseStat(s.value);
-      return '<div><div class="stat-num stat-count" data-target="' + p.num + '" data-suffix="' + p.suffix + '">0' + p.suffix + '</div><div class="stat-lbl">' + s.label + '</div></div>';
+      var numeric = p.num !== null && isFinite(p.num);
+      var initial = numeric ? ('0' + p.suffix) : (p.num === null ? p.suffix : String(p.num) + p.suffix);
+      return '<div><div class="stat-num ' + (numeric ? 'stat-count' : '') + '" data-target="' + (numeric ? p.num : '') + '" data-suffix="' + p.suffix + '">' + initial + '</div><div class="stat-lbl">' + s.label + '</div></div>';
     }).join('');
 
     var reviewsGridEl = document.getElementById('reviews-grid');
