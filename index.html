@@ -84,7 +84,8 @@
   .nav-links a{opacity:0.85;position:relative;transition:opacity .2s,color .2s,transform .2s;}
   .nav-links a::after{content:"";position:absolute;inset-inline:0;bottom:-8px;height:2px;background:var(--brand-orange);transform:scaleX(0);transform-origin:center;transition:transform .2s;}\n  .nav-links a:hover{opacity:1;color:var(--brand-blue);transform:translateY(-1px);}.nav-links a:hover::after{transform:scaleX(1);}
   .nav-right{display:flex;align-items:center;gap:12px;}
-  .lang-switch{display:flex;flex-wrap:wrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:3px;max-width:230px;}
+  .lang-switch{display:flex;flex-wrap:nowrap;gap:3px;background:rgba(3,101,163,0.08);border-radius:999px;padding:4px;max-width:340px;overflow-x:auto;scrollbar-width:none;flex:0 0 auto;}
+  .lang-switch::-webkit-scrollbar{display:none;}
   .lang-btn{
     font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:10.5px;
     border:none;color:var(--brand-blue);background:transparent;border-radius:999px;
@@ -234,7 +235,7 @@
   .perf.two{top:auto;bottom:-12px;left:36px;right:auto;}
 
   /* ===== SECTIONS ===== */
-  section{padding:88px 0;}
+  section{padding:70px 0;}
   .section-head{text-align:center;max-width:640px;margin:0 auto 52px;}
   .tag{
     font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--brand-orange);
@@ -244,8 +245,8 @@
   .section-head p{font-size:16px;color:#4B5A66;}
 
   /* رحلة العميل المتحركة (طيران → فندق → باص → حفلة → كروز) */
-  .journey{background:var(--paper);padding:70px 0 30px;}
-  .journey-svg{width:100%;height:auto;display:block;}
+  .journey{background:var(--paper);padding:24px 0 4px;}
+  .journey-svg{width:100%;height:180px;display:block;}
   .journey-icon-emoji{font-size:34px;}
   .journey-label{font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;fill:var(--brand-blue-dark);}
   .journey-traveler{font-size:30px;}
@@ -257,19 +258,27 @@
   }
 
   /* Services - ticket stub cards */
-  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
   .ticket-card{
     position:relative;
     background:var(--paper-card);
-    border-radius:16px;
-    box-shadow:0 12px 30px rgba(11,32,54,0.08);
+    border-radius:18px;
+    box-shadow:0 14px 32px rgba(11,32,54,0.09);
     overflow:hidden;
+    transition:transform .28s ease,box-shadow .28s ease;
   }
+  .ticket-card:hover{transform:translateY(-8px);box-shadow:0 24px 42px rgba(11,32,54,0.14);}
   .ticket-card .top{
-    padding:30px 26px 24px;
+    padding:22px 22px 20px;
     border-bottom:2px dashed var(--line);
     position:relative;
   }
+  .service-media{position:relative;height:156px;overflow:hidden;background:linear-gradient(135deg,var(--brand-blue-dark),var(--brand-blue));}
+  .service-media img{width:100%;height:100%;object-fit:cover;transition:transform .65s ease;}
+  .ticket-card:hover .service-media img{transform:scale(1.08);}
+  .service-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,49,82,.05),rgba(2,49,82,.65));}
+  .service-icon-floating{position:absolute;z-index:2;inset-inline-start:18px;bottom:16px;width:50px;height:50px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:rgba(255,255,255,.92);box-shadow:0 10px 24px rgba(0,0,0,.18);backdrop-filter:blur(8px);}
+
   .icon-badge{
     width:52px;height:52px;border-radius:14px;
     background:linear-gradient(135deg, var(--brand-orange), var(--brand-orange-dark));
@@ -282,6 +291,29 @@
     padding:18px 26px;display:flex;justify-content:space-between;align-items:center;
     font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8A9BA8;letter-spacing:1px;
   }
+
+
+  /* Language Academy teaser */
+  .academy{background:linear-gradient(135deg,#F6FBFE 0%,#FFF9F1 100%);border-top:1px solid rgba(3,101,163,.08);border-bottom:1px solid rgba(3,101,163,.08);}
+  .academy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;}
+  .academy-visual{position:relative;display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:145px 145px;gap:12px;min-height:300px;}
+  .academy-photo{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 18px 34px rgba(11,32,54,.12);border:1px solid rgba(3,101,163,.08);}
+  .academy-photo.main{grid-row:1/3;}
+  .academy-photo img{width:100%;height:100%;object-fit:cover;transition:transform .65s ease;}
+  .academy-photo:hover img{transform:scale(1.07);}
+  .academy-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,49,82,.5));}
+  .academy-visual-badge{position:absolute;z-index:3;bottom:18px;inset-inline-start:18px;background:rgba(255,255,255,.94);border-radius:14px;padding:10px 13px;box-shadow:0 10px 22px rgba(11,32,54,.16);font:800 11px 'IBM Plex Mono',monospace;color:var(--brand-blue-dark);}
+  .academy-copy .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.7px;color:var(--brand-orange);font-weight:700;display:block;margin-bottom:10px;}
+  .academy-copy h2{font-size:31px;line-height:1.35;color:var(--brand-blue-dark);font-weight:900;margin-bottom:12px;}
+  .academy-copy p{color:#4B5A66;font-size:15px;margin-bottom:20px;max-width:620px;}
+  .academy-pairs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0 22px;}
+  .academy-pair{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;font-size:12px;font-weight:800;color:var(--brand-blue-dark);box-shadow:0 7px 18px rgba(11,32,54,.05);transition:transform .2s,box-shadow .2s;}
+  .academy-pair:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(11,32,54,.09);}
+  .academy-pair .arrow{color:var(--brand-orange);font-size:16px;}
+  .academy-open{display:inline-flex;align-items:center;gap:9px;background:var(--brand-blue-dark);color:#fff;padding:13px 18px;border-radius:12px;font-weight:800;box-shadow:0 10px 20px rgba(2,49,82,.18);transition:transform .2s,box-shadow .2s;}
+  .academy-open:hover{transform:translateY(-3px);box-shadow:0 16px 28px rgba(2,49,82,.23);}
+  @media(max-width:900px){.academy-grid{grid-template-columns:1fr}.academy-visual{max-width:680px;margin:auto;width:100%;}}
+  @media(max-width:700px){.journey-svg{height:150px}.services{grid-template-columns:1fr}.academy-copy h2{font-size:25px}.academy-pairs{grid-template-columns:1fr}.academy-visual{grid-template-rows:120px 120px;min-height:248px}}
 
   /* Destination finder */
   .destination-tools{
@@ -1021,6 +1053,28 @@ window.SITE_CONFIG = {
   </div>
 </section>
 
+<section id="academy" class="academy">
+  <div class="wrap academy-grid">
+    <div class="academy-visual">
+      <div class="academy-photo main"><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="People learning together" loading="lazy" decoding="async"><div class="academy-visual-badge">🗣️ A → B · LANGUAGE LAB</div></div>
+      <div class="academy-photo"><img src="https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Learning and travel" loading="lazy" decoding="async"></div>
+      <div class="academy-photo"><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Study language" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="academy-copy">
+      <span class="tag" id="academy-tag"></span>
+      <h2 id="academy-h2"></h2>
+      <p id="academy-p"></p>
+      <div class="academy-pairs">
+        <div class="academy-pair"><span>🇩🇪 Deutsch</span><span class="arrow">↔</span><span>🇬🇧 English</span></div>
+        <div class="academy-pair"><span>🇦🇪 العربية</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
+        <div class="academy-pair"><span>🇮🇹 Italiano</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
+        <div class="academy-pair"><span>🇫🇷 Français</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
+      </div>
+      <a class="academy-open" href="language-academy.html" id="academy-open">🗣️</a>
+    </div>
+  </div>
+</section>
+
 <section id="destinations" style="background:var(--paper-card);">
   <div class="wrap">
     <div class="section-head">
@@ -1433,11 +1487,13 @@ window.SITE_CONFIG = {
     document.getElementById('services-tag').textContent = t.servicesHead.tag;
     document.getElementById('services-h2').textContent = t.servicesHead.h2;
     document.getElementById('services-p').textContent = t.servicesHead.p;
-    document.getElementById('services-grid').innerHTML = cfg.services.map(function(s){
+    document.getElementById('services-grid').innerHTML = cfg.services.map(function(s, idx){
       var title = pick(s, 'title', lang);
       var desc = pick(s, 'desc', lang);
-      return '<div class="ticket-card pointer-card"><div class="top">' +
-             '<div class="icon-badge">' + s.icon + '</div>' +
+      var cover = (cfg.heroScenes[idx] && cfg.heroScenes[idx].image) || (cfg.heroScenes[0] && cfg.heroScenes[0].image) || '';
+      return '<div class="ticket-card pointer-card">' +
+             '<div class="service-media"><img src="' + cover + '" alt="' + title + '" loading="lazy" decoding="async"><span class="service-icon-floating">' + s.icon + '</span></div>' +
+             '<div class="top">' +
              '<h3>' + title + '</h3><p>' + desc + '</p></div>' +
              '<div class="bottom"><span>' + s.tag + '</span><span>✓</span></div></div>';
     }).join('');
@@ -1637,7 +1693,7 @@ window.SITE_CONFIG = {
     fr:{online:'En ligne',root:'Bonjour ! Je suis Sara 👋 Dites-moi ce dont vous avez besoin et je vous guide.',book:'Bien sûr. De quel service avez-vous besoin ?',dest:'Choisissez votre destination.',date:'Écrivez la date du voyage (exemple : 20/12/2026).',travelers:'Combien de voyageurs ? Écrivez le nombre.',summary:'Parfait. Voici le récapitulatif :',send:'Envoyer la demande sur WhatsApp',destInfo:'Cette destination est disponible. Je peux préparer votre message de réservation.',faq:'Choisissez une question ou écrivez-la avec vos mots.',placeholder:'Écrivez une question, une date ou le nombre de voyageurs...',sendBtn:'Envoyer',back:'← Retour',human:'💬 Parler à une personne',chooseDest:'🗺️ Choisir une destination',faqBtn:'❓ Questions de réservation',learn:'🗣️ Apprendre une langue avant le voyage',startBooking:'Commencer la réservation'},
     pt:{online:'Online',root:'Olá! Sou a Sara 👋 Diga-me o que precisa e eu ajudo.',book:'Claro. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Escreva a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Escreva o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido pelo WhatsApp',destInfo:'Este destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva com suas próprias palavras.',placeholder:'Escreva uma pergunta, uma data ou o número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Perguntas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
     ptbr:{online:'Online',root:'Oi! Eu sou a Sara 👋 Me diga o que você precisa e eu te guio.',book:'Beleza. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Digite a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Digite o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido no WhatsApp',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva do seu jeito.',placeholder:'Pergunte algo, digite a data ou número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Dúvidas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
-    de:{online:'Online',root:'Hallo! Ich bin Sara 👋 Sag mir, was du brauchst, und ich führe dich durch die nächsten Schritte.',book:'Gerne. Welche Leistung brauchst du?',dest:'Wähle dein Reiseziel.',date:'Gib dein Reisedatum ein (Beispiel: 20.12.2026).',travelers:'Wie viele Reisende? Gib die Anzahl ein.',summary:'Perfekt. Hier ist die Zusammenfassung deiner Anfrage:',send:'Anfrage über WhatsApp senden',destInfo:'Dieses Reiseziel ist bei uns verfügbar. Ich kann jetzt eine Buchungsnachricht vorbereiten.',faq:'Wähle eine Frage oder schreibe sie in deinen eigenen Worten.',placeholder:'Frage stellen, Datum oder Anzahl der Reisenden eingeben...',sendBtn:'Senden',back:'← Zurück',human:'💬 Mit einer Person sprechen',chooseDest:'🗺️ Reiseziel auswählen',faqBtn:'❓ Buchungsfragen',learn:'🗣️ Vor der Reise Deutsch lernen',startBooking:'Buchung starten'},
+    de:{online:'Online',root:'Hallo! Ich bin Sara 👋 Sag mir, was du brauchst, und ich führe dich durch die nächsten Schritte.',book:'Gerne. Welche Leistung brauchst du?',dest:'Wähle dein Reiseziel.',date:'Gib dein Reisedatum ein (Beispiel: 20.12.2026).',travelers:'Wie viele Reisende? Gib die Anzahl ein.',summary:'Perfekt. Hier ist die Zusammenfassung deiner Anfrage:',send:'Anfrage über WhatsApp senden',destInfo:'Dieses Reiseziel ist bei uns verfügbar. Ich kann jetzt eine Buchungsnachricht vorbereiten.',faq:'Wähle eine Frage oder schreibe sie in deinen eigenen Worten.',placeholder:'Frage stellen, Datum oder Anzahl der Reisenden eingeben...',sendBtn:'Senden',back:'← Zurück',human:'💬 Mit einer Person sprechen',chooseDest:'🗺️ Reiseziel auswählen',faqBtn:'❓ Buchungsfragen',learn:'🗣️ Vor der Reise eine Sprache lernen',startBooking:'Buchung starten'},
   };
 
   function lang(){return document.documentElement.lang || 'ar';}
@@ -1663,7 +1719,7 @@ window.SITE_CONFIG = {
       {label:t().chooseDest,action:destinationList},
       {label:'📅 '+t().startBooking,action:startBooking},
       {label:t().faqBtn,action:faqList},
-      {label:t().learn,action:function(){window.location.href=lang()==='de'?'guide-german.html':'guide-english.html';}},
+      {label:t().learn,action:function(){window.location.href='language-academy.html';}},
       {label:t().human,wa:true,action:function(){window.open(wa(lang(), cfg.contact.whatsappDefaultMessage[lang]||cfg.contact.whatsappDefaultMessage.en),'_blank');}}
     ]);
   }
