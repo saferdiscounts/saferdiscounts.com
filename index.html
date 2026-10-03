@@ -244,18 +244,66 @@
   .section-head h2{font-size:36px;font-weight:900;color:var(--brand-blue-dark);margin-bottom:14px;}
   .section-head p{font-size:17px;color:#4B5A66;}
 
-  /* رحلة العميل المتحركة (طيران → فندق → باص → حفلة → كروز) */
-  .journey{background:var(--paper);padding:24px 0 4px;}
-  .journey-svg{width:100%;height:140px;display:block;}
-  .journey-icon-emoji{font-size:34px;}
-  .journey-label{font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;fill:var(--brand-blue-dark);}
-  .journey-traveler{font-size:30px;}
+  /* رحلة العميل — Timeline بصري بأيقونات كبيرة وواضحة */
+  .journey{background:linear-gradient(180deg,var(--paper) 0%,#FBF7EF 100%);padding:34px 0 26px;overflow:hidden;}
+  .journey-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;}
+  .journey-kicker{font:800 11px 'IBM Plex Mono',monospace;letter-spacing:1.6px;color:var(--brand-orange);text-transform:uppercase;}
+  .journey-note{font-size:12px;color:#73838F;font-weight:700;}
+  .journey-shell{position:relative;padding:16px 6px 8px;}
+  .journey-line{position:absolute;left:7%;right:7%;top:86px;height:4px;background:linear-gradient(90deg,#C9DDE8 0%,#9FC5D8 45%,#F1C09B 100%);border-radius:999px;opacity:.8;}
+  .journey-line::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 18px,rgba(255,255,255,.85) 18px 28px);opacity:.75;}
+  .journey-stops{position:relative;z-index:2;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+  .journey-stop{text-align:center;}
+  .journey-icon{
+    width:104px;height:104px;margin:0 auto 12px;border-radius:28px;
+    display:grid;place-items:center;
+    background:rgba(255,255,255,.96);
+    border:1px solid rgba(3,101,163,.12);
+    box-shadow:0 14px 30px rgba(11,32,54,.10);
+    color:var(--brand-blue-dark);
+    position:relative;
+    transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+  }
+  .journey-stop:hover .journey-icon{transform:translateY(-7px) scale(1.04);box-shadow:0 22px 38px rgba(11,32,54,.15);border-color:rgba(3,101,163,.25);}
+  .journey-icon svg{width:58px;height:58px;display:block;overflow:visible;}
+  .journey-icon .accent{fill:var(--brand-orange);}
+  .journey-icon .stroke{stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+  .journey-stop:nth-child(2) .journey-icon{color:#0C728F;}
+  .journey-stop:nth-child(3) .journey-icon{color:#175A86;}
+  .journey-stop:nth-child(4) .journey-icon{color:#C45118;}
+  .journey-stop:nth-child(5) .journey-icon{color:#086B64;}
+  .journey-label{
+    display:block;font-size:16px;font-weight:900;color:var(--brand-blue-dark);
+    line-height:1.3;
+  }
+  .journey-sub{display:block;margin-top:4px;font:700 10px 'IBM Plex Mono',monospace;color:#8A9BA8;letter-spacing:.4px;}
+  .journey-traveler{
+    position:absolute;top:56px;left:6.5%;z-index:4;
+    width:52px;height:52px;border-radius:50%;
+    display:grid;place-items:center;
+    background:#fff;border:3px solid var(--brand-orange);
+    box-shadow:0 10px 22px rgba(241,86,11,.24);
+    offset-path:path("M 0 0 C 190 0 230 0 320 0 C 430 0 480 0 560 0 C 680 0 740 0 860 0 C 960 0 1030 0 1120 0");
+    offset-distance:0%;
+    animation:journey-drive 11s linear infinite;
+    pointer-events:none;
+  }
+  .journey-traveler svg{width:28px;height:28px;fill:var(--brand-orange);transform:rotate(90deg);}
+  @keyframes journey-drive{to{offset-distance:100%;}}
+  @media (prefers-reduced-motion:reduce){.journey-traveler{animation:none;display:none;}}
   @media (max-width:700px){
-    .journey{padding:12px 0 0;}
-    .journey-svg{height:115px;}
-    .journey-icon-emoji{font-size:24px;}
-    .journey-label{font-size:11px;}
-    .journey-traveler{font-size:22px;}
+    .journey{padding:22px 0 16px;}
+    .journey-head{align-items:flex-start;flex-direction:column;gap:4px;}
+    .journey-note{font-size:11px;}
+    .journey-shell{overflow-x:auto;padding-bottom:14px;scrollbar-width:none;}
+    .journey-shell::-webkit-scrollbar{display:none;}
+    .journey-stops{min-width:820px;gap:14px;}
+    .journey-line{left:55px;right:55px;top:76px;}
+    .journey-icon{width:82px;height:82px;border-radius:23px;}
+    .journey-icon svg{width:47px;height:47px;}
+    .journey-label{font-size:13px;}
+    .journey-sub{font-size:9px;}
+    .journey-traveler{display:none;}
   }
 
   /* Services - ticket stub cards */
@@ -1024,33 +1072,80 @@ window.SITE_CONFIG = {
   </div>
 </section>
 
-<section class="journey">
+<section class="journey" aria-label="Travel journey">
   <div class="wrap">
-    <svg class="journey-svg" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
-      <path id="journey-route" d="M60,150 C150,45 240,45 330,65 C450,90 470,205 630,215 C790,225 800,55 930,55 C1020,55 1080,90 1140,150"
-            fill="none" stroke="#E4D9C8" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
-
-      <text x="60"  y="180" text-anchor="middle" class="journey-icon-emoji">✈️</text>
-      <text x="60"  y="205" text-anchor="middle" class="journey-label" id="journey-label-0"></text>
-
-      <text x="330" y="35"  text-anchor="middle" class="journey-icon-emoji">🏨</text>
-      <text x="330" y="20"  text-anchor="middle" class="journey-label" id="journey-label-1"></text>
-
-      <text x="630" y="245" text-anchor="middle" class="journey-icon-emoji">🚌</text>
-      <text x="630" y="260" text-anchor="middle" class="journey-label" id="journey-label-2"></text>
-
-      <text x="930" y="35"  text-anchor="middle" class="journey-icon-emoji">🎉</text>
-      <text x="930" y="20"  text-anchor="middle" class="journey-label" id="journey-label-3"></text>
-
-      <text x="1140" y="180" text-anchor="middle" class="journey-icon-emoji">🛳️</text>
-      <text x="1140" y="205" text-anchor="middle" class="journey-label" id="journey-label-4"></text>
-
-      <text text-anchor="middle" class="journey-traveler">✈️
-        <animateMotion dur="13s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1">
-          <mpath href="#journey-route"></mpath>
-        </animateMotion>
-      </text>
-    </svg>
+    <div class="journey-head">
+      <span class="journey-kicker">✦ TRAVEL JOURNEY</span>
+      <span class="journey-note">From booking to arrival — one connected trip</span>
+    </div>
+    <div class="journey-shell">
+      <div class="journey-line"></div>
+      <div class="journey-stops">
+        <div class="journey-stop">
+          <div class="journey-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path class="stroke" d="M8 34 54 18 46 35 29 39 18 49 13 46 19 39 8 34Z"/>
+              <path class="stroke" d="m28 39 9 12"/>
+              <path class="accent" d="m43 20 6-3-3 7-5 1z"/>
+            </svg>
+          </div>
+          <span class="journey-label" id="journey-label-0"></span>
+          <span class="journey-sub">FLIGHT</span>
+        </div>
+        <div class="journey-stop">
+          <div class="journey-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect class="stroke" x="15" y="10" width="34" height="44" rx="4"/>
+              <path class="stroke" d="M11 55h42M22 18h6M36 18h6M22 27h6M36 27h6M22 36h6M36 36h6"/>
+              <path class="accent" d="M27 54V43a5 5 0 0 1 10 0v11z"/>
+            </svg>
+          </div>
+          <span class="journey-label" id="journey-label-1"></span>
+          <span class="journey-sub">STAY</span>
+        </div>
+        <div class="journey-stop">
+          <div class="journey-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect class="stroke" x="9" y="22" width="46" height="24" rx="5"/>
+              <path class="stroke" d="M17 22V15h22v7M39 15h7v7"/>
+              <circle class="accent" cx="20" cy="49" r="5"/>
+              <circle class="accent" cx="44" cy="49" r="5"/>
+              <path class="stroke" d="M15 31h34M15 37h34"/>
+            </svg>
+          </div>
+          <span class="journey-label" id="journey-label-2"></span>
+          <span class="journey-sub">TRANSFER</span>
+        </div>
+        <div class="journey-stop">
+          <div class="journey-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path class="stroke" d="M13 19h38v26a5 5 0 0 1-5 5H18a5 5 0 0 1-5-5V19Z"/>
+              <path class="stroke" d="M13 27h38M24 19v31M40 19v31"/>
+              <path class="accent" d="m32 25 4 7h7l-6 5 2 7-7-4-7 4 2-7-6-5h7z"/>
+            </svg>
+          </div>
+          <span class="journey-label" id="journey-label-3"></span>
+          <span class="journey-sub">EVENT</span>
+        </div>
+        <div class="journey-stop">
+          <div class="journey-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path class="stroke" d="M16 23h32l5 20H11z"/>
+              <path class="stroke" d="M22 23V13h20v10M18 31h28M27 17h10"/>
+              <path class="accent" d="M11 43h42l-5 9H16z"/>
+              <path class="stroke" d="M8 55c5-5 10 5 15 0s10 5 15 0 10 5 18 0"/>
+            </svg>
+          </div>
+          <span class="journey-label" id="journey-label-4"></span>
+          <span class="journey-sub">CRUISE</span>
+        </div>
+      </div>
+      <div class="journey-traveler" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M32 4 41 25 58 36 41 34 37 55 29 37 9 46 24 29 12 14 29 23Z"/>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
 
