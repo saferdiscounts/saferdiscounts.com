@@ -1735,50 +1735,74 @@ window.SITE_CONFIG = {
 <style>
   .sara-fab{
     position:fixed;bottom:22px;inset-inline-end:22px;z-index:80;
-    background:linear-gradient(160deg,#0365A3,#023152);color:#fff;width:62px;height:62px;border-radius:50%;
-    display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(3,101,163,.42);
-    border:2px solid #fff;cursor:pointer;padding:0;overflow:hidden;
-    transition:transform .25s ease, box-shadow .25s ease;
-    animation:saraPulse 3.5s ease-in-out infinite;
+    width:66px;height:66px;border-radius:50%;padding:0;overflow:hidden;
+    background:linear-gradient(145deg,#0A7BBC,#023152);border:3px solid #fff;cursor:pointer;
+    box-shadow:0 10px 30px rgba(3,101,163,.34);transition:transform .25s ease,box-shadow .25s ease;
   }
-  .sara-fab:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 16px 36px rgba(3,101,163,.55);}
-  .sara-fab img{width:100%;height:100%;object-fit:cover;object-position:top center;}
-  @keyframes saraPulse{0%,100%{box-shadow:0 10px 28px rgba(3,101,163,.42)}50%{box-shadow:0 12px 34px rgba(3,101,163,.64)}}
+  .sara-fab:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 18px 40px rgba(3,101,163,.48);}
+  .sara-fab img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
   .sara-panel{
-    position:fixed;bottom:98px;inset-inline-end:22px;z-index:80;width:370px;max-width:calc(100vw - 28px);
-    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:20px;
-    box-shadow:0 28px 60px rgba(11,32,54,.28);display:none;flex-direction:column;overflow:hidden;
+    position:fixed;bottom:100px;inset-inline-end:22px;z-index:80;width:390px;max-width:calc(100vw - 24px);
+    background:#FFF9F1;border:1px solid #E4D9C8;border-radius:22px;overflow:hidden;
+    box-shadow:0 30px 70px rgba(11,32,54,.30);display:none;flex-direction:column;
   }
-  .sara-panel.open{display:flex;animation:saraIn .22s ease-out both;}
-  @keyframes saraIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
-  .sara-panel-header{background:linear-gradient(160deg,#0365A3,#023152);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:11px;}
-  .sara-panel-header img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.72);}
-  .sara-panel-header .who{flex:1}.sara-panel-header .name{font-weight:900;font-size:14px}.sara-panel-header .status{font:10px 'IBM Plex Mono',monospace;opacity:.86;}
-  .sara-close{background:transparent;border:0;color:#fff;font-size:18px;cursor:pointer;opacity:.8;padding:4px}.sara-close:hover{opacity:1;}
-  .sara-messages{padding:16px;display:flex;flex-direction:column;gap:10px;max-height:320px;overflow:auto;scroll-behavior:smooth;}
-  .sara-msg{background:#fff;border:1px solid #E4D9C8;border-radius:14px;border-start-start-radius:4px;padding:10px 13px;font-size:13.5px;color:#3E4C58;line-height:1.65;max-width:90%;}
-  .sara-msg.user{background:#0365A3;color:#fff;border:none;border-start-start-radius:14px;border-start-end-radius:4px;align-self:flex-end;}
-  .sara-msg.strong{border-color:#9BC5DB;background:#F1F8FC;}
-  .sara-options{padding:0 16px 10px;display:flex;flex-direction:column;gap:7px;max-height:190px;overflow:auto;}
-  .sara-opt-btn{background:#fff;border:1.5px solid #0365A3;color:#0365A3;border-radius:999px;padding:9px 13px;font-size:12.8px;font-weight:800;cursor:pointer;text-align:start;font-family:'Cairo',sans-serif;transition:background .18s,color .18s,transform .18s,box-shadow .18s;}
-  .sara-opt-btn:hover{background:#0365A3;color:#fff;transform:translateY(-1px);box-shadow:0 6px 12px rgba(3,101,163,.14);}
-  .sara-opt-btn.wa{border-color:#25D366;color:#25D366}.sara-opt-btn.wa:hover{background:#25D366;color:#fff;}
-  .sara-input-row{display:flex;gap:8px;padding:10px 16px 14px;background:#F6F0E6;border-top:1px solid #E4D9C8;}
-  .sara-input{flex:1;min-width:0;border:1px solid #D9CBB7;border-radius:12px;background:#fff;padding:10px 12px;font:600 13px 'Cairo',sans-serif;outline:none;}
-  .sara-input:focus{border-color:#0365A3;box-shadow:0 0 0 4px rgba(3,101,163,.09);}
-  .sara-send{width:44px;border:0;border-radius:12px;background:#0365A3;color:#fff;cursor:pointer;font-size:17px;transition:transform .18s}.sara-send:hover{transform:translateY(-2px);}
-  @media (prefers-reduced-motion:reduce){.sara-fab{animation:none}.sara-panel.open{animation:none}}
-  @media (max-width:480px){.sara-panel{inset-inline-end:10px;width:calc(100vw - 20px);bottom:88px}.sara-fab{inset-inline-end:10px}}
+  .sara-panel.open{display:flex;animation:saraIn .22s ease-out both}
+  @keyframes saraIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+  .sara-panel-header{
+    background:linear-gradient(145deg,#0A7BBC,#023152);color:#fff;padding:14px 16px;
+    display:flex;align-items:center;gap:11px;
+  }
+  .sara-panel-header img{width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.72)}
+  .sara-panel-header .who{flex:1}
+  .sara-panel-header .name{font-weight:900;font-size:15px}
+  .sara-panel-header .status{font:700 10px 'IBM Plex Mono',monospace;opacity:.88}
+  .sara-close,.sara-reset{background:transparent;border:0;color:#fff;cursor:pointer;opacity:.84;font-size:17px;padding:5px}
+  .sara-close:hover,.sara-reset:hover{opacity:1}
+  .sara-progress{height:4px;background:rgba(255,255,255,.13)}
+  .sara-progress span{display:block;height:100%;background:#FFB066;width:0;transition:width .3s ease}
+  .sara-messages{padding:14px 14px 10px;display:flex;flex-direction:column;gap:9px;max-height:330px;overflow:auto;scroll-behavior:smooth}
+  .sara-msg{max-width:91%;padding:10px 13px;border:1px solid #E4D9C8;border-radius:15px;border-start-start-radius:5px;background:#fff;color:#344754;font-size:13.5px;line-height:1.65;box-shadow:0 3px 10px rgba(11,32,54,.03)}
+  .sara-msg.user{align-self:flex-end;background:#0365A3;color:#fff;border-color:#0365A3;border-start-start-radius:15px;border-start-end-radius:5px}
+  .sara-msg.strong{background:#F2F8FC;border-color:#BBD7E5}
+  .sara-typing{display:inline-flex;align-items:center;gap:4px;padding:11px 13px;background:#fff;border:1px solid #E4D9C8;border-radius:15px;border-start-start-radius:5px;width:max-content}
+  .sara-typing i{width:6px;height:6px;border-radius:50%;background:#8BA5B5;animation:saraDot 1s infinite ease-in-out}
+  .sara-typing i:nth-child(2){animation-delay:.12s}.sara-typing i:nth-child(3){animation-delay:.24s}
+  @keyframes saraDot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
+  .sara-section-label{padding:0 14px 8px;color:#7B8B95;font:800 10px 'IBM Plex Mono',monospace;letter-spacing:1.1px}
+  .sara-options{padding:0 14px 10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;max-height:220px;overflow:auto}
+  .sara-opt-btn{
+    min-width:0;background:#fff;border:1.5px solid #BCD6E4;color:#0365A3;border-radius:13px;
+    padding:10px 11px;font-size:12.5px;font-weight:800;cursor:pointer;text-align:start;
+    font-family:'Cairo',sans-serif;transition:transform .18s,box-shadow .18s,background .18s,color .18s,border-color .18s
+  }
+  .sara-opt-btn:hover{transform:translateY(-2px);background:#0365A3;color:#fff;border-color:#0365A3;box-shadow:0 7px 14px rgba(3,101,163,.15)}
+  .sara-opt-btn.wide{grid-column:1/-1}
+  .sara-opt-btn.wa{border-color:#25D366;color:#159447}.sara-opt-btn.wa:hover{background:#25D366;color:#fff;border-color:#25D366}
+  .sara-input-row{display:flex;gap:8px;padding:10px 14px 14px;background:#F6F0E6;border-top:1px solid #E4D9C8}
+  .sara-input{flex:1;min-width:0;border:1px solid #D4C6B4;border-radius:13px;background:#fff;padding:11px 12px;color:#20394A;font:600 13px 'Cairo',sans-serif;outline:none}
+  .sara-input:focus{border-color:#0365A3;box-shadow:0 0 0 4px rgba(3,101,163,.08)}
+  .sara-send{width:46px;border:0;border-radius:13px;background:#0365A3;color:#fff;cursor:pointer;font-size:18px}
+  .sara-send:hover{filter:brightness(1.06);transform:translateY(-1px)}
+  @media(max-width:560px){.sara-panel{inset-inline-end:10px;width:calc(100vw - 20px);bottom:90px}.sara-fab{inset-inline-end:10px;bottom:16px}.sara-options{grid-template-columns:1fr}.sara-opt-btn.wide{grid-column:auto}}
 </style>
 
-<button class="sara-fab" id="saraFab" type="button" aria-label="Sara's Assistant"><img src="images/sara.jpg" alt="Sara"></button>
-<div class="sara-panel" id="saraPanel" role="dialog" aria-label="Sara travel assistant">
+<button class="sara-fab" id="saraFab" type="button" aria-label="Sara's Assistant">
+  <img src="images/sara.jpg" alt="Sara">
+</button>
+
+<div class="sara-panel" id="saraPanel" role="dialog" aria-label="Sara travel assistant" aria-live="polite">
   <div class="sara-panel-header">
     <img src="images/sara.jpg" alt="Sara">
-    <div class="who"><div class="name" id="saraPanelName">Sara</div><div class="status" id="saraPanelStatus"></div></div>
+    <div class="who">
+      <div class="name">Sara</div>
+      <div class="status" id="saraPanelStatus"></div>
+    </div>
+    <button class="sara-reset" id="saraReset" type="button" aria-label="Restart">↻</button>
     <button class="sara-close" id="saraClose" type="button" aria-label="Close">✕</button>
   </div>
+  <div class="sara-progress"><span id="saraProgress"></span></div>
   <div class="sara-messages" id="saraMessages"></div>
+  <div class="sara-section-label" id="saraOptionsLabel"></div>
   <div class="sara-options" id="saraOptions"></div>
   <div class="sara-input-row">
     <input id="saraInput" class="sara-input" type="text" autocomplete="off" spellcheck="false">
@@ -1788,161 +1812,269 @@ window.SITE_CONFIG = {
 
 <script>
 (function(){
-  var cfg=window.SITE_CONFIG, booking={service:null,destination:null,date:null,travelers:null}, step='root';
-  var fab,panel,messagesEl,optionsEl,inputEl,sendEl;
-  var BOOK_SERVICES={
-    ar:[['flight','✈️ تذاكر طيران'],['hotel','🏨 فندق/إقامة'],['event','🎟️ فعالية أو متحف'],['package','🧳 رحلة كاملة']],
-    en:[['flight','✈️ Flight tickets'],['hotel','🏨 Hotel / stay'],['event','🎟️ Event or museum'],['package','🧳 Full trip']],
-    de:[['flight','✈️ Flugtickets'],['hotel','🏨 Hotel / Unterkunft'],['event','🎟️ Event oder Museum'],['package','🧳 Komplette Reise']],
-    it:[['flight','✈️ Biglietti aerei'],['hotel','🏨 Hotel / soggiorno'],['event','🎟️ Evento o museo'],['package','🧳 Viaggio completo']],
-    fr:[['flight','✈️ Billets d’avion'],['hotel','🏨 Hôtel / séjour'],['event','🎟️ Événement ou musée'],['package','🧳 Voyage complet']],
-    pt:[['flight','✈️ Bilhetes de avião'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento ou museu'],['package','🧳 Viagem completa']],
-    ptbr:[['flight','✈️ Passagem aérea'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento ou museu'],['package','🧳 Viagem completa']]
+  var cfg=window.SITE_CONFIG;
+  var state={mode:'root',service:null,destination:null,origin:null,date:null,travelers:null,nights:null};
+  var history=[];
+  var fab,panel,messagesEl,optionsEl,inputEl,sendEl,progressEl,optionsLabel;
+  var LANGS={
+    ar:{label:'العربية',flag:'🇪🇬'},
+    en:{label:'English',flag:'🇬🇧'},
+    de:{label:'Deutsch',flag:'🇩🇪'},
+    it:{label:'Italiano',flag:'🇮🇹'},
+    fr:{label:'Français',flag:'🇫🇷'},
+    pt:{label:'Português',flag:'🇵🇹'},
+    ptbr:{label:'Português (BR)',flag:'🇧🇷'}
+  };
+  var SERVICES={
+    ar:[['flight','✈️ تذاكر طيران'],['hotel','🏨 فندق / إقامة'],['event','🎟️ فعالية / متحف'],['package','🧳 رحلة كاملة']],
+    en:[['flight','✈️ Flight tickets'],['hotel','🏨 Hotel / stay'],['event','🎟️ Event / museum'],['package','🧳 Full trip']],
+    de:[['flight','✈️ Flugtickets'],['hotel','🏨 Hotel / Unterkunft'],['event','🎟️ Event / Museum'],['package','🧳 Komplette Reise']],
+    it:[['flight','✈️ Biglietti aerei'],['hotel','🏨 Hotel / soggiorno'],['event','🎟️ Evento / museo'],['package','🧳 Viaggio completo']],
+    fr:[['flight','✈️ Billets d’avion'],['hotel','🏨 Hôtel / séjour'],['event','🎟️ Événement / musée'],['package','🧳 Voyage complet']],
+    pt:[['flight','✈️ Bilhetes de avião'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento / museu'],['package','🧳 Viagem completa']],
+    ptbr:[['flight','✈️ Passagem aérea'],['hotel','🏨 Hotel / estadia'],['event','🎟️ Evento / museu'],['package','🧳 Viagem completa']]
   };
   var TXT={
-    ar:{online:'أونلاين',root:'أهلاً! أنا سارة 👋 قولي عايز تعمل إيه وأنا أجهزلك الخطوات.',book:'تمام. إيه الخدمة اللي عايزها؟',dest:'اختار الوجهة اللي ناوي تسافر لها.',date:'اكتب تاريخ السفر (مثال: 20/12/2026).',travelers:'كام مسافر؟ اكتب العدد.',summary:'ممتاز. دي تفاصيل طلبك المبدئية:',send:'ابعث الطلب على واتساب',destInfo:'الوجهة دي موجودة عندنا. أقدر أجهزلك رسالة الحجز فورًا.',faq:'اختار سؤال أو اكتب سؤالك بطريقتك.',placeholder:'اكتب سؤالك أو تاريخك أو عدد المسافرين...',sendBtn:'إرسال',back:'← رجوع',human:'💬 تكلم مع شخص',chooseDest:'🗺️ اختيار وجهة',faqBtn:'❓ أسئلة الحجز',learn:'🗣️ تعلم لغة قبل السفر'},
-    en:{online:'Online',root:"Hi! I'm Sara 👋 Tell me what you need and I'll guide you.",book:'Sure. What service do you need?',dest:'Choose the destination you plan to visit.',date:'Type your travel date (example: 20/12/2026).',travelers:'How many travelers? Type the number.',summary:'Great. Here is your request summary:',send:'Send request on WhatsApp',destInfo:'This destination is available. I can prepare your booking message now.',faq:'Pick a question or type it in your own words.',placeholder:'Ask a question, enter a date or travelers...',sendBtn:'Send',back:'← Back',human:'💬 Talk to a person',chooseDest:'🗺️ Choose a destination',faqBtn:'❓ Booking questions',learn:'🗣️ Learn a language before travel',startBooking:'Start booking'},
-    it:{online:'Online',root:'Ciao! Sono Sara 👋 Dimmi cosa ti serve e ti guido.',book:'Certo. Quale servizio ti serve?',dest:'Scegli la destinazione del viaggio.',date:'Scrivi la data del viaggio (esempio: 20/12/2026).',travelers:'Quanti viaggiatori? Scrivi il numero.',summary:'Perfetto. Ecco il riepilogo:',send:'Invia la richiesta su WhatsApp',destInfo:'Questa destinazione è disponibile. Posso preparare il messaggio di prenotazione.',faq:'Scegli una domanda o scrivila con le tue parole.',placeholder:'Scrivi una domanda, una data o i viaggiatori...',sendBtn:'Invia',back:'← Indietro',human:'💬 Parla con una persona',chooseDest:'🗺️ Scegli destinazione',faqBtn:'❓ Domande prenotazione',learn:'🗣️ Impara una lingua prima del viaggio',startBooking:'Inizia la prenotazione'},
-    fr:{online:'En ligne',root:'Bonjour ! Je suis Sara 👋 Dites-moi ce dont vous avez besoin et je vous guide.',book:'Bien sûr. De quel service avez-vous besoin ?',dest:'Choisissez votre destination.',date:'Écrivez la date du voyage (exemple : 20/12/2026).',travelers:'Combien de voyageurs ? Écrivez le nombre.',summary:'Parfait. Voici le récapitulatif :',send:'Envoyer la demande sur WhatsApp',destInfo:'Cette destination est disponible. Je peux préparer votre message de réservation.',faq:'Choisissez une question ou écrivez-la avec vos mots.',placeholder:'Écrivez une question, une date ou le nombre de voyageurs...',sendBtn:'Envoyer',back:'← Retour',human:'💬 Parler à une personne',chooseDest:'🗺️ Choisir une destination',faqBtn:'❓ Questions de réservation',learn:'🗣️ Apprendre une langue avant le voyage',startBooking:'Commencer la réservation'},
-    pt:{online:'Online',root:'Olá! Sou a Sara 👋 Diga-me o que precisa e eu ajudo.',book:'Claro. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Escreva a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Escreva o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido pelo WhatsApp',destInfo:'Este destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva com suas próprias palavras.',placeholder:'Escreva uma pergunta, uma data ou o número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Perguntas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
-    ptbr:{online:'Online',root:'Oi! Eu sou a Sara 👋 Me diga o que você precisa e eu te guio.',book:'Beleza. Qual serviço você precisa?',dest:'Escolha o destino da viagem.',date:'Digite a data da viagem (exemplo: 20/12/2026).',travelers:'Quantos viajantes? Digite o número.',summary:'Perfeito. Aqui está o resumo:',send:'Enviar pedido no WhatsApp',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',faq:'Escolha uma pergunta ou escreva do seu jeito.',placeholder:'Pergunte algo, digite a data ou número de viajantes...',sendBtn:'Enviar',back:'← Voltar',human:'💬 Falar com uma pessoa',chooseDest:'🗺️ Escolher destino',faqBtn:'❓ Dúvidas de reserva',learn:'🗣️ Aprender um idioma antes da viagem',startBooking:'Começar a reserva'},
-    de:{online:'Online',root:'Hallo! Ich bin Sara 👋 Sag mir, was du brauchst, und ich führe dich durch die nächsten Schritte.',book:'Gerne. Welche Leistung brauchst du?',dest:'Wähle dein Reiseziel.',date:'Gib dein Reisedatum ein (Beispiel: 20.12.2026).',travelers:'Wie viele Reisende? Gib die Anzahl ein.',summary:'Perfekt. Hier ist die Zusammenfassung deiner Anfrage:',send:'Anfrage über WhatsApp senden',destInfo:'Dieses Reiseziel ist bei uns verfügbar. Ich kann jetzt eine Buchungsnachricht vorbereiten.',faq:'Wähle eine Frage oder schreibe sie in deinen eigenen Worten.',placeholder:'Frage stellen, Datum oder Anzahl der Reisenden eingeben...',sendBtn:'Senden',back:'← Zurück',human:'💬 Mit einer Person sprechen',chooseDest:'🗺️ Reiseziel auswählen',faqBtn:'❓ Buchungsfragen',learn:'🗣️ Vor der Reise eine Sprache lernen',startBooking:'Buchung starten'},
+    ar:{
+      online:'متاحة الآن · مساعدة سفر',welcome:'أهلاً! أنا سارة 👋 قولي محتاج إيه، وأنا هوجّهك للخطوة الصح بدل ما ألفّك في قوائم.',
+      choose:'إيه اللي محتاجه؟',book:'تمام — هنجهز طلب حجز خطوة بخطوة. اختار الخدمة أولًا.',destination:'اختار الوجهة أو اكتب اسم المدينة في الرسالة.',origin:'مسافر من أنهي مدينة؟ تقدر تكتبها زي ما هي.',date:'إيه تاريخ السفر؟ مثال: 20/12/2026',travelers:'كام مسافر؟ اكتب العدد.',nights:'هتقعد كام ليلة؟',eventDate:'تاريخ الفعالية أو الزيارة؟',summary:'ممتاز. راجعت البيانات دي قبل ما نبعتها:',send:'إرسال الطلب على واتساب',options:'اختيارات سريعة',placeholder:'اكتب سؤالك أو اسم مدينة أو تاريخ...',back:'← رجوع',restart:'بدء من جديد',destInfo:'الوجهة موجودة عندنا. أقدر أجهزلك رسالة حجز بالبيانات دي.',human:'💬 تحدث مع موظف',learn:'🗣️ تعلّم لغة للسفر',destBtn:'🗺️ الوجهات',faqBtn:'❓ الأسئلة الشائعة',bookingBtn:'📅 ابدأ الحجز',languageBtn:'🗣️ مدرسة اللغات',price:'💰 عايز أعرف السعر',pay:'💳 الدفع',cancel:'↩️ الإلغاء',name:'الاسم',home:'🏠 الموقع'},
+    en:{
+      online:'Available now · Travel help',welcome:"Hi! I'm Sara 👋 Tell me what you need and I'll guide you to the right next step — not just a list of buttons.",
+      choose:'What do you need help with?',book:"Great — I'll build your booking request step by step. Start with the service.",destination:'Choose the destination, or type the city name.',origin:'What city are you traveling from? You can type it.',date:'What is your travel date? Example: 20/12/2026',travelers:'How many travelers? Type the number.',nights:'How many nights will you stay?',eventDate:'What is the event or visit date?',summary:'Great. Please review these details before we send them:',send:'Send request on WhatsApp',options:'Quick actions',placeholder:'Ask something or type a city/date...',back:'← Back',restart:'Start over',destInfo:'That destination is available. I can prepare a booking message with these details.',human:'💬 Talk to a person',learn:'🗣️ Learn a travel language',destBtn:'🗺️ Destinations',faqBtn:'❓ FAQ',bookingBtn:'📅 Start booking',languageBtn:'🗣️ Language Academy',price:'💰 Ask about price',pay:'💳 Payment',cancel:'↩️ Cancellation',name:'Name',home:'🏠 Home'},
+    de:{
+      online:'Jetzt verfügbar · Reisehilfe',welcome:'Hallo! Ich bin Sara 👋 Sag mir, was du brauchst. Ich führe dich direkt zum passenden nächsten Schritt.',
+      choose:'Wobei brauchst du Hilfe?',book:'Super — ich erstelle deine Buchungsanfrage Schritt für Schritt. Wähle zuerst die Leistung.',destination:'Wähle dein Reiseziel oder schreibe den Stadtnamen.',origin:'Von welcher Stadt reist du ab? Du kannst sie einfach schreiben.',date:'Wann reist du? Beispiel: 20.12.2026',travelers:'Wie viele Reisende? Gib die Anzahl ein.',nights:'Wie viele Nächte bleibst du?',eventDate:'Wann ist die Veranstaltung oder der Besuch?',summary:'Perfekt. Prüfe bitte diese Angaben, bevor wir sie senden:',send:'Anfrage über WhatsApp senden',options:'Schnellauswahl',placeholder:'Frage stellen oder Stadt/Datum eingeben...',back:'← Zurück',restart:'Neu beginnen',destInfo:'Dieses Reiseziel ist verfügbar. Ich kann daraus eine Buchungsnachricht erstellen.',human:'💬 Mit einer Person sprechen',learn:'🗣️ Reisesprache lernen',destBtn:'🗺️ Reiseziele',faqBtn:'❓ FAQ',bookingBtn:'📅 Buchung starten',languageBtn:'🗣️ Sprachakademie',price:'💰 Preis anfragen',pay:'💳 Zahlung',cancel:'↩️ Stornierung',name:'Name',home:'🏠 Website'},
+    it:{
+      online:'Disponibile · Assistenza viaggio',welcome:'Ciao! Sono Sara 👋 Dimmi cosa ti serve e ti porto direttamente al passo giusto.',
+      choose:'Di cosa hai bisogno?',book:'Perfetto — preparo la richiesta di prenotazione passo dopo passo. Inizia dal servizio.',destination:'Scegli la destinazione o scrivi il nome della città.',origin:'Da quale città parti? Puoi scriverla.',date:'Qual è la data del viaggio? Esempio: 20/12/2026',travelers:'Quanti viaggiatori? Scrivi il numero.',nights:'Quante notti resterai?',eventDate:'Qual è la data dell’evento o della visita?',summary:'Perfetto. Controlla questi dati prima dell’invio:',send:'Invia richiesta su WhatsApp',options:'Azioni rapide',placeholder:'Scrivi una domanda o città/data...',back:'← Indietro',restart:'Ricomincia',destInfo:'Questa destinazione è disponibile. Posso preparare il messaggio di prenotazione.',human:'💬 Parla con una persona',learn:'🗣️ Impara una lingua di viaggio',destBtn:'🗺️ Destinazioni',faqBtn:'❓ FAQ',bookingBtn:'📅 Inizia prenotazione',languageBtn:'🗣️ Language Academy',price:'💰 Chiedi il prezzo',pay:'💳 Pagamento',cancel:'↩️ Cancellazione',name:'Nome',home:'🏠 Sito'},
+    fr:{
+      online:'Disponible · Assistance voyage',welcome:'Bonjour ! Je suis Sara 👋 Dites-moi ce qu’il vous faut et je vous guide vers la bonne étape.',
+      choose:'De quoi avez-vous besoin ?',book:'Parfait — je prépare votre demande de réservation étape par étape. Commencez par le service.',destination:'Choisissez la destination ou écrivez le nom de la ville.',origin:'De quelle ville partez-vous ? Écrivez-la simplement.',date:'Quelle est la date du voyage ? Exemple : 20/12/2026',travelers:'Combien de voyageurs ? Écrivez le nombre.',nights:'Combien de nuits allez-vous rester ?',eventDate:'Quelle est la date de l’événement ou de la visite ?',summary:'Parfait. Vérifiez ces informations avant l’envoi :',send:'Envoyer la demande sur WhatsApp',options:'Actions rapides',placeholder:'Écrivez une question ou une ville/date...',back:'← Retour',restart:'Recommencer',destInfo:'Cette destination est disponible. Je peux préparer le message de réservation.',human:'💬 Parler à un conseiller',learn:'🗣️ Apprendre une langue de voyage',destBtn:'🗺️ Destinations',faqBtn:'❓ FAQ',bookingBtn:'📅 Commencer la réservation',languageBtn:'🗣️ Académie des langues',price:'💰 Demander le prix',pay:'💳 Paiement',cancel:'↩️ Annulation',name:'Nom',home:'🏠 Site'},
+    pt:{
+      online:'Disponível · Ajuda de viagem',welcome:'Olá! Sou a Sara 👋 Diga-me o que precisa e eu levo você ao próximo passo certo.',
+      choose:'Com o que você precisa de ajuda?',book:'Ótimo — vou montar o pedido de reserva passo a passo. Comece pelo serviço.',destination:'Escolha o destino ou escreva o nome da cidade.',origin:'De qual cidade você vai sair? Pode escrever.',date:'Qual é a data da viagem? Exemplo: 20/12/2026',travelers:'Quantos viajantes? Digite o número.',nights:'Quantas noites você vai ficar?',eventDate:'Qual é a data do evento ou visita?',summary:'Perfeito. Confira estes dados antes de enviar:',send:'Enviar pedido pelo WhatsApp',options:'Ações rápidas',placeholder:'Digite uma pergunta ou cidade/data...',back:'← Voltar',restart:'Recomeçar',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',human:'💬 Falar com uma pessoa',learn:'🗣️ Aprender um idioma de viagem',destBtn:'🗺️ Destinos',faqBtn:'❓ FAQ',bookingBtn:'📅 Começar reserva',languageBtn:'🗣️ Academia de idiomas',price:'💰 Perguntar o preço',pay:'💳 Pagamento',cancel:'↩️ Cancelamento',name:'Nome',home:'🏠 Site'},
+    ptbr:{
+      online:'Disponível agora · Ajuda de viagem',welcome:'Oi! Eu sou a Sara 👋 Me fala o que você precisa e eu te levo direto pro próximo passo.',
+      choose:'Com o que você precisa de ajuda?',book:'Ótimo — vou montar seu pedido de reserva passo a passo. Comece pelo serviço.',destination:'Escolha o destino ou digite o nome da cidade.',origin:'De qual cidade você vai sair? Pode digitar.',date:'Qual é a data da viagem? Exemplo: 20/12/2026',travelers:'Quantos viajantes? Digite o número.',nights:'Quantas noites você vai ficar?',eventDate:'Qual é a data do evento ou da visita?',summary:'Perfeito. Confira estes dados antes de enviar:',send:'Enviar pedido no WhatsApp',options:'Ações rápidas',placeholder:'Pergunte algo ou digite cidade/data...',back:'← Voltar',restart:'Começar de novo',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',human:'💬 Falar com uma pessoa',learn:'🗣️ Aprender um idioma de viagem',destBtn:'🗺️ Destinos',faqBtn:'❓ FAQ',bookingBtn:'📅 Começar reserva',languageBtn:'🗣️ Academia de idiomas',price:'💰 Perguntar o preço',pay:'💳 Pagamento',cancel:'↩️ Cancelamento',name:'Nome',home:'🏠 Site'}
   };
 
-  function lang(){return document.documentElement.lang || 'ar';}
-  function t(){return TXT[lang()]||TXT.en;}
-  function nameOf(d){var l=lang();return d[l+'_name']||d.en_name||d.ar_name;}
-  function wa(langCode,msg){
-    var num=cfg.contact.whatsappNumberByLang[langCode]||cfg.contact.whatsappNumberByLang.ar;
-    return 'https://wa.me/'+num+'?text='+encodeURIComponent(msg);
+  function lang(){return document.documentElement.lang||'ar'}
+  function t(){return TXT[lang()]||TXT.en}
+  function norm(s){
+    return String(s||'').toLowerCase()
+      .replace(/[أإآ]/g,'ا').replace(/ى/g,'ي').replace(/ة/g,'ه')
+      .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+      .replace(/[^\p{L}\p{N}\s-]/gu,' ').replace(/\s+/g,' ').trim();
   }
-  function addMsg(msg,user){
-    var d=document.createElement('div');d.className='sara-msg'+(user?' user':'');d.textContent=msg;messagesEl.appendChild(d);messagesEl.scrollTop=messagesEl.scrollHeight;
+  function localized(d){return d[lang()+'_name']||d.en_name||d.ar_name}
+  function serviceLabel(id){
+    var arr=SERVICES[lang()]||SERVICES.en;
+    var x=arr.find(function(v){return v[0]===id});return x?x[1]:id
+  }
+  function addMsg(text,user,strong){
+    var d=document.createElement('div');d.className='sara-msg'+(user?' user':'')+(strong?' strong':'');d.textContent=text;messagesEl.appendChild(d);messagesEl.scrollTop=messagesEl.scrollHeight
+  }
+  function typing(){
+    var d=document.createElement('div');d.className='sara-typing';d.innerHTML='<i></i><i></i><i></i>';messagesEl.appendChild(d);messagesEl.scrollTop=messagesEl.scrollHeight;return d
+  }
+  function reply(text,actions,delay){
+    var dot=typing();setTimeout(function(){if(dot&&dot.parentNode)dot.parentNode.removeChild(dot);addMsg(text,false);setOptions(actions||[]);},delay||320)
+  }
+  function setProgress(){
+    var p={root:0,service:20,origin:40,dest:55,date:72,nights:82,travelers:88,summary:100};
+    progressEl.style.width=(p[state.mode]||0)+'%'
   }
   function setOptions(items){
     optionsEl.innerHTML='';
     items.forEach(function(item){
-      var b=document.createElement('button');b.type='button';b.className='sara-opt-btn'+(item.wa?' wa':'');b.textContent=item.label;
-      b.addEventListener('click',function(){if(item.action)item.action();});optionsEl.appendChild(b);
+      var b=document.createElement('button');b.type='button';b.className='sara-opt-btn'+(item.wa?' wa':'')+(item.wide?' wide':'');b.textContent=item.label;
+      b.addEventListener('click',function(){handleAction(item)});optionsEl.appendChild(b)
     });
+    optionsLabel.textContent=t().options;setProgress();
+  }
+  function chooseDirection(actions){
+    setOptions(actions.concat([
+      {label:t().learn,action:function(){window.location.href='language-academy.html';},wide:true},
+      {label:t().human,wa:true,action:function(){window.open(makeSimpleWa(t().choose),'_blank');},wide:true}
+    ]))
   }
   function root(){
-    step='root';addMsg(t().root,false);
-    setOptions([
-      {label:t().chooseDest,action:destinationList},
-      {label:'📅 '+t().startBooking,action:startBooking},
-      {label:t().faqBtn,action:faqList},
-      {label:t().learn,action:function(){window.location.href='language-academy.html';}},
-      {label:t().human,wa:true,action:function(){window.open(wa(lang(), cfg.contact.whatsappDefaultMessage[lang]||cfg.contact.whatsappDefaultMessage.en),'_blank');}}
-    ]);
-  }
-  function destinationList(){
-    step='destination';addMsg(t().chooseDest,true);addMsg(t().destInfo,false);
-    var items=cfg.destinations.slice(0,12).map(function(d){
-      return {label:'📍 '+nameOf(d),action:function(){booking.destination=d.id;selectDest(d);}};
-    });
-    items.push({label:t().back,action:root});setOptions(items);
-  }
-  function selectDest(id){
-    var d=cfg.destinations.find(function(x){return x.id===id;}); if(!d)return;
-    booking.destination=id;addMsg(nameOf(d),true);
-    var msg=t().destInfo+' '+nameOf(d);
-    addMsg(msg,false);
-    setOptions([
-      {label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(id),'_blank');}},
-      {label:'📅 '+(lang()==='ar'?'احجز الوجهة دي':'Book this destination'),action:startBooking},
-      {label:t().back,action:destinationList}
-    ]);
+    state={mode:'root',service:null,destination:null,origin:null,date:null,travelers:null,nights:null};history=[];
+    addMsg(t().welcome,false,true);
+    chooseDirection([
+      {label:t().bookingBtn,action:startBooking},
+      {label:t().destBtn,action:showDestinations},
+      {label:t().faqBtn,action:showFaq},
+      {label:t().price,action:priceHelp}
+    ])
   }
   function startBooking(){
-    booking={service:null,destination:null,date:null,travelers:null};step='service';
+    state={mode:'service',service:null,destination:null,origin:null,date:null,travelers:null,nights:null};history=['root'];
     addMsg(t().book,false);
-    setOptions((BOOK_SERVICES[lang()]||BOOK_SERVICES.en).map(function(s){return {label:s[1],action:function(){booking.service=s[0];serviceChosen(s[1]);}}}).concat([{label:t().back,action:root}]));
+    setOptions((SERVICES[lang()]||SERVICES.en).map(function(s){return {label:s[1],action:function(){selectService(s[0],s[1])}}}).concat([{label:t().back,action:root,wid‌e:true}]));
   }
-  function serviceChosen(label){
-    addMsg(label,true);step='booking-dest';addMsg(t().dest,false);
-    setOptions(cfg.destinations.map(function(d){return {label:'📍 '+nameOf(d),action:function(){booking.destination=d.id;destinationChosen(d);}}}).concat([{label:t().back,action:startBooking}]));
+  function selectService(id,label){
+    state.service=id;
+    addMsg(label,true);
+    history.push('service');
+    if(id==='flight'||id==='package'){askOrigin()}
+    else {askDestination()}
   }
-  function destinationChosen(d){
-    addMsg(nameOf(d),true);step='date';addMsg(t().date,false);setOptions([{label:t().back,action:startBooking}]);focusInput();
+  function askOrigin(){
+    state.mode='origin';addMsg(t().origin,false);setOptions([{label:t().back,action:startBooking,wid‌e:true}]);focusInput()
   }
-  function travelers(){
-    step='travelers';addMsg(t().travelers,false);setOptions([{label:t().back,action:function(){step='date';addMsg(t().date,false);focusInput();}}]);focusInput();
+  function askDestination(){
+    state.mode='dest';addMsg(t().destination,false);
+    setOptions(destinationButtons([{label:t().back,action:startBooking,wid‌e:true}]));setProgress()
   }
-  function summary(){
-    step='summary';var d=cfg.destinations.find(function(x){return x.id===booking.destination;});
-    var services=(BOOK_SERVICES[lang()]||BOOK_SERVICES.en);var sv=(services.find(function(x){return x[0]===booking.service;})||['',''])[1];
-    addMsg(t().summary,false);addMsg(sv+' · '+nameOf(d)+' · '+booking.date+' · '+booking.travelers,false);
-    setOptions([{label:'💬 '+t().send,wa:true,action:function(){window.open(buildBookingWa(),'_blank');}},{label:t().back,action:startBooking}]);
+  function destinationButtons(tail){
+    var buttons=cfg.destinations.map(function(d){
+      return {label:'📍 '+localized(d),action:function(){selectDestination(d.id)}}
+    });
+    return buttons.concat(tail||[])
+  }
+  function selectDestination(id){
+    var d=cfg.destinations.find(function(x){return x.id===id});if(!d)return;
+    state.destination=id;addMsg(localized(d),true);
+    if(state.service==='hotel'){state.mode='date';reply(t().date,[{label:t().back,action:askDestination,wid‌e:true}])}
+    else if(state.service==='event'){state.mode='date';reply(t().eventDate,[{label:t().back,action:askDestination,wid‌e:true}])}
+    else {state.mode='date';reply(t().date,[{label:t().back,action:function(){askDestination()},wide:true}])}
+  }
+  function askTravelers(){
+    state.mode='travelers';reply(t().travelers,[{label:t().back,action:function(){state.mode='date';addMsg(t().date,false);focusInput();},wide:true}]);focusInput()
+  }
+  function askNights(){
+    state.mode='nights';reply(t().nights,[{label:t().back,action:function(){state.mode='date';addMsg(t().date,false);focusInput();},wide:true}]);focusInput()
+  }
+  function finishDate(raw){
+    state.date=raw;
+    if(state.service==='hotel'){askNights();return}
+    askTravelers()
+  }
+  function finishNights(raw){
+    state.nights=raw;askTravelers()
+  }
+  function finishTravelers(raw){
+    var n=(String(raw).match(/\d+/)||[])[0];if(!n){reply(lang()==='de'?'Bitte gib eine Zahl ein.':'Please enter a number.',[],260);focusInput();return}
+    state.travelers=n;showSummary()
+  }
+  function showSummary(){
+    state.mode='summary';
+    var d=cfg.destinations.find(function(x){return x.id===state.destination});
+    var bits=[serviceLabel(state.service)];
+    if(state.origin)bits.push((lang()==='ar'?'من ':'From ')+state.origin);
+    bits.push(localized(d));bits.push((lang()==='ar'?'التاريخ: ':'Date: ')+state.date);
+    if(state.nights)bits.push((lang()==='ar'?'الليالي: ':'Nights: ')+state.nights);
+    bits.push((lang()==='ar'?'المسافرين: ':'Travelers: ')+state.travelers);
+    addMsg(t().summary,false,true);addMsg(bits.join(' · '),false);
+    setOptions([
+      {label:'💬 '+t().send,wa:true,action:function(){window.open(buildBookingWa(),'_blank')},wide:true},
+      {label:t().back,action:startBooking},
+      {label:t().restart,action:root}
+    ])
   }
   function buildBookingWa(){
-    var l=lang(),d=cfg.destinations.find(function(x){return x.id===booking.destination;}),name=nameOf(d),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
-    var txt={
-      ar:'مرحباً، عايز أطلب حجز:\nالخدمة: '+booking.service+'\nالوجهة: '+name+'\nالتاريخ: '+booking.date+'\nعدد المسافرين: '+booking.travelers,
-      en:"Hello, I'd like to request a booking:\nService: "+booking.service+"\nDestination: "+name+"\nDate: "+booking.date+"\nTravelers: "+booking.travelers,
-      it:"Ciao, vorrei richiedere una prenotazione:\nServizio: "+booking.service+"\nDestinazione: "+name+"\nData: "+booking.date+"\nViaggiatori: "+booking.travelers,
-      fr:"Bonjour, je souhaite demander une réservation :\nService : "+booking.service+"\nDestination : "+name+"\nDate : "+booking.date+"\nVoyageurs : "+booking.travelers,
-      pt:"Olá, gostaria de solicitar uma reserva:\nServiço: "+booking.service+"\nDestino: "+name+"\nData: "+booking.date+"\nViajantes: "+booking.travelers,
-      ptbr:"Oi, eu queria solicitar uma reserva:\nServiço: "+booking.service+"\nDestino: "+name+"\nData: "+booking.date+"\nViajantes: "+booking.travelers
+    var l=lang(),d=cfg.destinations.find(function(x){return x.id===state.destination}),name=d?localized(d):state.destination||'',num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
+    var svc=serviceLabel(state.service),parts={
+      ar:'مرحباً، أريد طلب حجز عبر سارة:\\nالخدمة: '+svc+'\\nمن: '+(state.origin||'غير محدد')+'\\nالوجهة: '+name+'\\nالتاريخ: '+state.date+'\\n'+(state.nights?'الليالي: '+state.nights+'\\n':'')+'عدد المسافرين: '+state.travelers,
+      en:'Hello, I would like to request a booking through Sara:\\nService: '+svc+'\\nFrom: '+(state.origin||'Not specified')+'\\nDestination: '+name+'\\nDate: '+state.date+'\\n'+(state.nights?'Nights: '+state.nights+'\\n':'')+'Travelers: '+state.travelers,
+      de:'Hallo, ich möchte über Sara eine Buchungsanfrage senden:\\nLeistung: '+svc+'\\nAbflugort: '+(state.origin||'Nicht angegeben')+'\\nReiseziel: '+name+'\\nDatum: '+state.date+'\\n'+(state.nights?'Nächte: '+state.nights+'\\n':'')+'Reisende: '+state.travelers,
+      it:'Ciao, vorrei richiedere una prenotazione tramite Sara:\\nServizio: '+svc+'\\nPartenza: '+(state.origin||'Non specificata')+'\\nDestinazione: '+name+'\\nData: '+state.date+'\\n'+(state.nights?'Notti: '+state.nights+'\\n':'')+'Viaggiatori: '+state.travelers,
+      fr:'Bonjour, je souhaite demander une réservation via Sara :\\nService : '+svc+'\\nDépart : '+(state.origin||'Non précisé')+'\\nDestination : '+name+'\\nDate : '+state.date+'\\n'+(state.nights?'Nuits : '+state.nights+'\\n':'')+'Voyageurs : '+state.travelers,
+      pt:'Olá, gostaria de solicitar uma reserva através da Sara:\\nServiço: '+svc+'\\nOrigem: '+(state.origin||'Não informado')+'\\nDestino: '+name+'\\nData: '+state.date+'\\n'+(state.nights?'Noites: '+state.nights+'\\n':'')+'Viajantes: '+state.travelers,
+      ptbr:'Oi, eu queria solicitar uma reserva pela Sara:\\nServiço: '+svc+'\\nOrigem: '+(state.origin||'Não informado')+'\\nDestino: '+name+'\\nData: '+state.date+'\\n'+(state.nights?'Noites: '+state.nights+'\\n':'')+'Viajantes: '+state.travelers
     };
-    return 'https://wa.me/'+num+'?text='+encodeURIComponent(txt[l]||txt.en);
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(parts[l]||parts.en)
+  }
+  function makeSimpleWa(text){
+    var l=lang(),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;return 'https://wa.me/'+num+'?text='+encodeURIComponent(text)
+  }
+  function showDestinations(){
+    state.mode='dest';addMsg(t().destBtn,true);reply(t().destination,destinationButtons([{label:t().back,action:root,wide:true}]),260)
+  }
+  function showFaq(){
+    state.mode='faq';addMsg(t().faqBtn,true);reply(t().choose,[],220);
+    var list=(cfg.faq||[]).slice(0,8).map(function(f){
+      var q=f[lang()+'_q']||f.en_q||f.ar_q,a=f[lang()+'_a']||f.en_a||f.ar_a;
+      return {label:'❓ '+q,action:function(){addMsg(q,true);reply(a,[{label:t().human,wa:true,action:function(){window.open(makeSimpleWa(q),'_blank')}},{label:t().back,action:showFaq}]);}}
+    });
+    setTimeout(function(){setOptions(list.concat([{label:t().back,action:root,wide:true}]));},240)
+  }
+  function priceHelp(){
+    addMsg(t().price,true);
+    var msg={ar:'السعر بيتحدد حسب الخدمة والتاريخ والوجهة. اختار الخدمة وسارة تجمع البيانات وتبعتها للفريق عشان يرجعلك بأفضل عرض متاح.',en:'Pricing depends on the service, date, and destination. Start a booking and Sara will collect the details needed for the available offer.',de:'Der Preis hängt von Leistung, Datum und Reiseziel ab. Starte eine Buchung, damit Sara die nötigen Angaben sammelt.',it:'Il prezzo dipende da servizio, data e destinazione. Inizia una prenotazione e Sara raccoglierà i dati necessari.',fr:'Le prix dépend du service, de la date et de la destination. Commencez une réservation et Sara recueillera les informations nécessaires.',pt:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara recolherá os dados necessários.',ptbr:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara vai coletar os dados necessários.'};
+    reply(msg[lang()]||msg.en,[{label:t().bookingBtn,action:startBooking},{label:t().human,wa:true,action:function(){window.open(makeSimpleWa(msg[lang()]||msg.en),'_blank')}},{label:t().back,action:root}],360)
+  }
+  function findDestination(raw){
+    var q=norm(raw);
+    return cfg.destinations.find(function(d){
+      return Object.keys(d).filter(function(k){return /_name$/.test(k)}).some(function(k){var n=norm(d[k]);return q===n||q.indexOf(n)!==-1||n.indexOf(q)!==-1;});
+    })
+  }
+  function knowledge(raw){
+    var q=norm(raw);
+    var dest=findDestination(raw);
+    if(dest)return {text:t().destInfo+' '+localized(dest),actions:[
+      {label:'📅 '+t().bookingBtn,action:function(){state.service='package';state.destination=dest.id;state.mode='date';addMsg(localized(dest),true);reply(t().date,[{label:t().back,action:root,wid‌e:true}]);}},
+      {label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(dest.id),'_blank')}}
+    ]};
+    var patterns=[
+      {keys:['book','booking','reserve','reservation','حجز','احجز','حجزلي','prenot','reservation','reserv','buchen','buchung','reservierung'],action:startBooking},
+      {keys:['learn','language','تعلم','لغه','لغة','apprendre','imparare','aprender','lernen','sprache'],action:function(){window.location.href='language-academy.html'}},
+      {keys:['payment','pay','الدفع','ادفع','paiement','pagamento','pagamento','zahlung'],action:function(){jumpFaq('payment')}},
+      {keys:['cancel','cancellation','الغاء','إلغاء','annulation','cancellazione','cancelamento','stornierung'],action:function(){jumpFaq('cancel')}},
+      {keys:['price','cost','السعر','سعر','prix','prezzo','preco','preis'],action:priceHelp}
+    ];
+    for(var i=0;i<patterns.length;i++){if(patterns[i].keys.some(function(k){return q.indexOf(norm(k))!==-1;})){patterns[i].action();return null;}}
+    return {text:{ar:'أقدر أفهم منك حاجات كتير، بس مش هخمن في تفاصيل سعر أو حجز. اختار حجز، وجهة، سؤال شائع، أو مدرسة اللغات.',en:"I can guide you, but I won't guess a live price or booking detail. Choose booking, a destination, an FAQ, or the Language Academy.",de:'Ich kann dich führen, aber keinen Live-Preis oder Buchungsdetails erfinden. Wähle Buchung, Reiseziel, FAQ oder Sprachakademie.',it:'Posso guidarti, ma non invento prezzi o dettagli di prenotazione. Scegli prenotazione, destinazione, FAQ o Academy.',fr:'Je peux vous guider, mais je n’inventerai pas un prix ou un détail de réservation. Choisissez réservation, destination, FAQ ou Académie.',pt:'Posso ajudar, mas não vou inventar preço ou detalhes de reserva. Escolha reserva, destino, FAQ ou academia.',ptbr:'Posso te guiar, mas não vou inventar preço ou detalhe de reserva. Escolha reserva, destino, FAQ ou academia.'}[lang()]||TXT.en};
+  }
+  function jumpFaq(kind){
+    var f=(cfg.faq||[]).find(function(x){var q=norm((x[lang()+'_q']||x.en_q||x.ar_q));return kind==='payment'?q.indexOf(norm('pay'))!==-1||q.indexOf(norm('الدفع'))!==-1:q.indexOf(norm('cancel'))!==-1||q.indexOf(norm('إلغاء'))!==-1});
+    if(f){var q=f[lang()+'_q']||f.en_q||f.ar_q,a=f[lang()+'_a']||f.en_a||f.ar_a;reply(q+'\n\n'+a,[{label:t().human,wa:true,action:function(){window.open(makeSimpleWa(q),'_blank')}},{label:t().back,action:root}],280)}
+    else showFaq()
   }
   function waDestination(id){
-    var d=cfg.destinations.find(function(x){return x.id===id;}),l=lang(),name=nameOf(d),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
-    var txt={
-      ar:'مرحباً، عايز أحجز لـ '+name+' وعايز أعرف الأسعار والخيارات المتاحة.',
-      en:"Hello, I'd like to book "+name+" and see the available prices and options.",
-      it:"Ciao, vorrei prenotare "+name+" e conoscere prezzi e opzioni disponibili.",
-      fr:"Bonjour, je voudrais réserver "+name+" et connaître les prix et options disponibles.",
-      pt:"Olá, gostaria de reservar "+name+" e ver os preços e opções disponíveis.",
-      ptbr:"Oi, eu queria reservar "+name+" e ver os preços e opções disponíveis."
-    };
-    return 'https://wa.me/'+num+'?text='+encodeURIComponent(txt[l]||txt.en);
+    var d=cfg.destinations.find(function(x){return x.id===id}),name=d?localized(d):'',l=lang(),num=cfg.contact.whatsappNumberByLang[l]||cfg.contact.whatsappNumberByLang.ar;
+    var msgs={ar:'مرحباً، أريد حجز '+name+' وأريد معرفة الأسعار والخيارات المتاحة.',en:"Hello, I'd like to book "+name+" and see the available prices and options.",de:'Hallo, ich möchte '+name+' buchen und die verfügbaren Preise und Optionen erfahren.',it:'Ciao, vorrei prenotare '+name+' e conoscere prezzi e opzioni disponibili.',fr:'Bonjour, je voudrais réserver '+name+' et connaître les prix et options disponibles.',pt:'Olá, gostaria de reservar '+name+' e ver preços e opções disponíveis.',ptbr:'Oi, eu queria reservar '+name+' e ver os preços e opções disponíveis.'};
+    return 'https://wa.me/'+num+'?text='+encodeURIComponent(msgs[l]||msgs.en)
   }
-  function faqList(){
-    step='faq';addMsg(t().faq,false);
-    var list=cfg.faq.slice(0,6).map(function(f){
-      var q=f[lang()+'_q']||f.en_q||f.ar_q, a=f[lang()+'_a']||f.en_a||f.ar_a;
-      return {label:'❓ '+q,action:function(){addMsg(q,true);addMsg(a,false);setOptions([{label:t().back,action:root},{label:t().human,wa:true,action:function(){window.open(wa(lang(),q),'_blank');}}]);}};
-    });
-    list.push({label:t().back,action:root});setOptions(list);
+  function handleAction(item){
+    if(item.action){item.action();return}
+    if(item.wa){window.open(makeSimpleWa(item.message||t().choose),'_blank')}
   }
-  function knowledgeAnswer(raw){
-    var q=raw.toLowerCase(),l=lang();
-    var faqMatch=null;
-    cfg.faq.some(function(f){
-      var fq=(f[l+'_q']||f.en_q||f.ar_q||'').toLowerCase();
-      var words=fq.split(/\s+/).filter(function(w){return w.length>2;});
-      var hits=words.filter(function(w){return q.indexOf(w)!==-1;}).length;
-      if(hits>=Math.min(3,Math.max(1,Math.floor(words.length/5)))){faqMatch=f;return true;} return false;
-    });
-    if(faqMatch){return {text:faqMatch[l+'_a']||faqMatch.en_a||faqMatch.ar_a,actions:[{label:t().human,wa:true,action:function(){window.open(wa(l,raw),'_blank');}}]};}
-    var dest=cfg.destinations.find(function(d){
-      return Object.keys(d).filter(function(k){return /_name$/.test(k);}).some(function(k){return q.indexOf(String(d[k]).toLowerCase())!==-1;});
-    });
-    if(dest){return {text:t().destInfo+' '+nameOf(dest),actions:[{label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(dest.id),'_blank');}}]};}
-    return {text:(lang()==='ar'?'أقدر أساعدك أكتر لو اخترت وجهة أو بدأت الحجز، أو أحولك مباشرة لواتساب.':'I can help more if you choose a destination or start a booking, or I can connect you directly on WhatsApp.'),actions:[{label:t().chooseDest,action:destinationList},{label:t().human,wa:true,action:function(){window.open(wa(l,raw),'_blank');}}]};
-  }
-  function focusInput(){setTimeout(function(){if(inputEl)inputEl.focus();},50);}
   function handleText(){
     var raw=inputEl.value.trim();if(!raw)return;inputEl.value='';addMsg(raw,true);
-    if(step==='date'){booking.date=raw;travelers();return;}
-    if(step==='travelers'){var digits=(raw.match(/\d+/)||[])[0];booking.travelers=digits||raw;summary();return;}
-    var ans=knowledgeAnswer(raw);addMsg(ans.text,false);setOptions(ans.actions.concat([{label:t().back,action:root}]));focusInput();
+    if(state.mode==='origin'){state.origin=raw;askDestination();return}
+    if(state.mode==='dest'){
+      var d=findDestination(raw);
+      if(d){selectDestination(d.id);return}
+      reply(t().destination,[{label:t().back,action:root,wid‌e:true}],220);return
+    }
+    if(state.mode==='date'){
+      if(!/^\\s*\\d{1,2}[\\/.\\-]\\d{1,2}[\\/.\\-]\\d{2,4}\\s*$/.test(raw)){reply(lang()==='de'?'Nutze bitte z. B. 20.12.2026.':lang()==='ar'?'اكتب التاريخ مثل 20/12/2026.':'Please use a date like 20/12/2026.',[],240);focusInput();return}
+      finishDate(raw);return
+    }
+    if(state.mode==='nights'){var n=(raw.match(/\\d+/)||[])[0];if(!n){reply(t().nights,[],220);focusInput();return}finishNights(n);return}
+    if(state.mode==='travelers'){finishTravelers(raw);return}
+    var ans=knowledge(raw);if(ans)reply(ans.text,ans.actions||[],320)
   }
-  function refreshUi(){
-    document.getElementById('saraPanelStatus').textContent='● '+t().online;
-    inputEl.placeholder=t().placeholder;sendEl.setAttribute('aria-label',t().sendBtn);
+  function focusInput(){setTimeout(function(){if(inputEl)inputEl.focus()},70)}
+  function refresh(){
+    var l=lang(),tt=t();document.getElementById('saraPanelStatus').textContent='● '+tt.online;inputEl.placeholder=tt.placeholder;
+    document.getElementById('saraSend').setAttribute('aria-label',tt.placeholder);optionsLabel.textContent=tt.options
+  }
+  function resetAndRender(){
+    messagesEl.innerHTML='';optionsEl.innerHTML='';state={mode:'root',service:null,destination:null,origin:null,date:null,travelers:null,nights:null};history=[];refresh();root()
   }
   function init(){
-    fab=document.getElementById('saraFab');panel=document.getElementById('saraPanel');messagesEl=document.getElementById('saraMessages');optionsEl=document.getElementById('saraOptions');inputEl=document.getElementById('saraInput');sendEl=document.getElementById('saraSend');
-    fab.addEventListener('click',function(){panel.classList.toggle('open');if(panel.classList.contains('open')&&!messagesEl.childNodes.length){root();}refreshUi();});
-    document.getElementById('saraClose').addEventListener('click',function(){panel.classList.remove('open');});
-    sendEl.addEventListener('click',handleText);inputEl.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();handleText();}});
-    new MutationObserver(refreshUi).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
-    refreshUi();
+    fab=document.getElementById('saraFab');panel=document.getElementById('saraPanel');messagesEl=document.getElementById('saraMessages');optionsEl=document.getElementById('saraOptions');inputEl=document.getElementById('saraInput');sendEl=document.getElementById('saraSend');progressEl=document.getElementById('saraProgress');optionsLabel=document.getElementById('saraOptionsLabel');
+    fab.addEventListener('click',function(){panel.classList.toggle('open');if(panel.classList.contains('open')&&!messagesEl.childNodes.length)root();refresh()});
+    document.getElementById('saraClose').addEventListener('click',function(){panel.classList.remove('open')});
+    document.getElementById('saraReset').addEventListener('click',resetAndRender);
+    sendEl.addEventListener('click',handleText);inputEl.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();handleText()}});
+    new MutationObserver(refresh).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});refresh()
   }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()
 })();
 </script>
 <!-- =================== END SARA ASSISTANT WIDGET =================== -->
