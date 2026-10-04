@@ -1911,7 +1911,7 @@ window.SITE_CONFIG = {
   function startBooking(){
     state={mode:'service',service:null,destination:null,origin:null,date:null,travelers:null,nights:null};history=['root'];
     addMsg(t().book,false);
-    setOptions((SERVICES[lang()]||SERVICES.en).map(function(s){return {label:s[1],action:function(){selectService(s[0],s[1])}}}).concat([{label:t().back,action:root,wid‌e:true}]));
+    setOptions((SERVICES[lang()]||SERVICES.en).map(function(s){return {label:s[1],action:function(){selectService(s[0],s[1])}}}).concat([{label:t().back,action:root,wide:true}]));
   }
   function selectService(id,label){
     state.service=id;
@@ -1921,11 +1921,11 @@ window.SITE_CONFIG = {
     else {askDestination()}
   }
   function askOrigin(){
-    state.mode='origin';addMsg(t().origin,false);setOptions([{label:t().back,action:startBooking,wid‌e:true}]);focusInput()
+    state.mode='origin';addMsg(t().origin,false);setOptions([{label:t().back,action:startBooking,wide:true}]);focusInput()
   }
   function askDestination(){
     state.mode='dest';addMsg(t().destination,false);
-    setOptions(destinationButtons([{label:t().back,action:startBooking,wid‌e:true}]));setProgress()
+    setOptions(destinationButtons([{label:t().back,action:startBooking,wide:true}]));setProgress()
   }
   function destinationButtons(tail){
     var buttons=cfg.destinations.map(function(d){
@@ -1936,8 +1936,8 @@ window.SITE_CONFIG = {
   function selectDestination(id){
     var d=cfg.destinations.find(function(x){return x.id===id});if(!d)return;
     state.destination=id;addMsg(localized(d),true);
-    if(state.service==='hotel'){state.mode='date';reply(t().date,[{label:t().back,action:askDestination,wid‌e:true}])}
-    else if(state.service==='event'){state.mode='date';reply(t().eventDate,[{label:t().back,action:askDestination,wid‌e:true}])}
+    if(state.service==='hotel'){state.mode='date';reply(t().date,[{label:t().back,action:askDestination,wide:true}])}
+    else if(state.service==='event'){state.mode='date';reply(t().eventDate,[{label:t().back,action:askDestination,wide:true}])}
     else {state.mode='date';reply(t().date,[{label:t().back,action:function(){askDestination()},wide:true}])}
   }
   function askTravelers(){
@@ -2015,7 +2015,7 @@ window.SITE_CONFIG = {
     var q=norm(raw);
     var dest=findDestination(raw);
     if(dest)return {text:t().destInfo+' '+localized(dest),actions:[
-      {label:'📅 '+t().bookingBtn,action:function(){state.service='package';state.destination=dest.id;state.mode='date';addMsg(localized(dest),true);reply(t().date,[{label:t().back,action:root,wid‌e:true}]);}},
+      {label:'📅 '+t().bookingBtn,action:function(){state.service='package';state.destination=dest.id;state.mode='date';addMsg(localized(dest),true);reply(t().date,[{label:t().back,action:root,wide:true}]);}},
       {label:'💬 '+t().send,wa:true,action:function(){window.open(waDestination(dest.id),'_blank')}}
     ]};
     var patterns=[
@@ -2048,7 +2048,7 @@ window.SITE_CONFIG = {
     if(state.mode==='dest'){
       var d=findDestination(raw);
       if(d){selectDestination(d.id);return}
-      reply(t().destination,[{label:t().back,action:root,wid‌e:true}],220);return
+      reply(t().destination,[{label:t().back,action:root,wide:true}],220);return
     }
     if(state.mode==='date'){
       if(!/^\\s*\\d{1,2}[\\/.\\-]\\d{1,2}[\\/.\\-]\\d{2,4}\\s*$/.test(raw)){reply(lang()==='de'?'Nutze bitte z. B. 20.12.2026.':lang()==='ar'?'اكتب التاريخ مثل 20/12/2026.':'Please use a date like 20/12/2026.',[],240);focusInput();return}
