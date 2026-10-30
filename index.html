@@ -349,7 +349,15 @@
   .academy-head h2{font-size:clamp(27px,3.2vw,38px);line-height:1.35;color:var(--brand-blue-dark);font-weight:900;margin:0 0 11px;}
   .academy-head p{max-width:730px;margin:auto;color:#52636f;font-size:15px;line-height:1.9;}
   .academy-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch;}
-  .academy-path-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:340px;padding:25px;border-radius:22px;border:1px solid rgba(3,101,163,.12);background:#fff;box-shadow:0 16px 36px rgba(11,32,54,.08);transition:transform .25s ease,box-shadow .25s ease;}
+  .academy-path-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:390px;padding:0;border-radius:22px;border:1px solid rgba(3,101,163,.12);background:#fff;box-shadow:0 16px 36px rgba(11,32,54,.08);transition:transform .25s ease,box-shadow .25s ease;}
+  .academy-path-photo{position:relative;height:156px;overflow:hidden;background:#dceaf2;}
+  .academy-path-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+  .academy-path-card:hover .academy-path-photo img{transform:scale(1.06);}
+  .academy-path-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,35,59,.02),rgba(2,35,59,.53));}
+  .academy-path-photo span{position:absolute;z-index:1;bottom:12px;inset-inline-start:15px;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--brand-blue-dark);font:800 10px 'IBM Plex Mono',monospace;}
+  .academy-path-body{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:20px 23px 22px;}
+  .academy-path-card.full .academy-path-body{background:linear-gradient(145deg,#062b49,#075b91 80%);}
+  .academy-path-card .academy-card-top{width:100%;}
   .academy-path-card:hover{transform:translateY(-5px);box-shadow:0 24px 44px rgba(11,32,54,.14);}
   .academy-path-card:before{content:"";position:absolute;inset:auto -55px -115px auto;width:230px;height:230px;border-radius:50%;background:rgba(3,101,163,.055);pointer-events:none;}
   .academy-path-card.full{background:linear-gradient(145deg,#062b49 0%,#075b91 72%,#0c75a9 100%);border-color:transparent;color:#fff;}
@@ -1179,18 +1187,20 @@ window.SITE_CONFIG = {
     </div>
     <div class="academy-path-grid">
       <article class="academy-path-card quick pointer-card">
-        <div class="academy-card-top"><span class="academy-card-icon">🧳</span><span class="academy-card-badge" id="academy-tour-badge"></span></div>
+        <div class="academy-path-photo"><img src="https://images.pexels.com/photos/3646733/pexels-photo-3646733.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Traveler preparing for a flight" loading="lazy" decoding="async"><span>✈️ TRAVEL READY</span></div>
+        <div class="academy-path-body"><div class="academy-card-top"><span class="academy-card-icon">🧳</span><span class="academy-card-badge" id="academy-tour-badge"></span></div>
         <h3 id="academy-tour-title"></h3>
         <p id="academy-tour-copy"></p>
         <div class="academy-features" id="academy-tour-features"></div>
-        <a class="academy-link" href="ptbr-travel-guide.html" id="academy-tour-button"></a>
+        <a class="academy-link" href="ptbr-travel-guide.html" id="academy-tour-button"></a></div>
       </article>
       <article class="academy-path-card full pointer-card">
-        <div class="academy-card-top"><span class="academy-card-icon">🎓</span><span class="academy-card-badge" id="academy-course-badge"></span></div>
+        <div class="academy-path-photo"><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="People learning together" loading="lazy" decoding="async"><span>🎓 LEARN FOR LIFE</span></div>
+        <div class="academy-path-body"><div class="academy-card-top"><span class="academy-card-icon">🎓</span><span class="academy-card-badge" id="academy-course-badge"></span></div>
         <h3 id="academy-course-title"></h3>
         <p id="academy-course-copy"></p>
         <div class="academy-features" id="academy-course-features"></div>
-        <a class="academy-link" href="ptbr-academy.html" id="academy-course-button"></a>
+        <a class="academy-link" href="ptbr-academy.html" id="academy-course-button"></a></div>
       </article>
     </div>
     <div class="academy-extra"><span id="academy-audio-copy"></span><a href="ptbr-pronunciation.html" id="academy-audio-link"></a></div>
