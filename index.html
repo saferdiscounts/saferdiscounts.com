@@ -342,28 +342,37 @@
   }
 
 
-  /* Language Academy teaser */
-  .academy{background:linear-gradient(135deg,#F6FBFE 0%,#FFF9F1 100%);border-top:1px solid rgba(3,101,163,.08);border-bottom:1px solid rgba(3,101,163,.08);}
-  .academy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;}
-  .academy-visual{position:relative;display:grid;grid-template-columns:1.25fr .75fr;grid-template-rows:145px 145px;gap:12px;min-height:300px;}
-  .academy-photo{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 18px 34px rgba(11,32,54,.12);border:1px solid rgba(3,101,163,.08);}
-  .academy-photo.main{grid-row:1/3;}
-  .academy-photo img{width:100%;height:100%;object-fit:cover;transition:transform .65s ease;}
-  .academy-photo:hover img{transform:scale(1.07);}
-  .academy-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(2,49,82,.5));}
-  .academy-visual-badge{position:absolute;z-index:3;bottom:18px;inset-inline-start:18px;background:rgba(255,255,255,.94);border-radius:14px;padding:10px 13px;box-shadow:0 10px 22px rgba(11,32,54,.16);font:800 11px 'IBM Plex Mono',monospace;color:var(--brand-blue-dark);}
-  .academy-copy .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1.7px;color:var(--brand-orange);font-weight:700;display:block;margin-bottom:10px;}
-  .academy-copy h2{font-size:31px;line-height:1.35;color:var(--brand-blue-dark);font-weight:900;margin-bottom:12px;}
-  .academy-copy p{color:#4B5A66;font-size:15px;margin-bottom:20px;max-width:620px;}
-  .academy-pairs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0 22px;}
-  .academy-pair{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 13px;font-size:12px;font-weight:800;color:var(--brand-blue-dark);box-shadow:0 7px 18px rgba(11,32,54,.05);transition:transform .2s,box-shadow .2s;}
-  .academy-pair:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(11,32,54,.09);}
-  .academy-pair .arrow{color:var(--brand-orange);font-size:16px;}
-  .academy-open{display:inline-flex;align-items:center;gap:9px;background:var(--brand-blue-dark);color:#fff;padding:13px 18px;border-radius:12px;font-weight:800;box-shadow:0 10px 20px rgba(2,49,82,.18);transition:transform .2s,box-shadow .2s;}
-  .academy-open:hover{transform:translateY(-3px);box-shadow:0 16px 28px rgba(2,49,82,.23);}
-  @media(max-width:900px){.academy-grid{grid-template-columns:1fr}.academy-visual{max-width:680px;margin:auto;width:100%;}}
-  @media(max-width:700px){.journey-svg{height:150px}.services{grid-template-columns:1fr}.academy-copy h2{font-size:25px}.academy-pairs{grid-template-columns:1fr}.academy-visual{grid-template-rows:120px 120px;min-height:248px}}
-
+  /* Two clear language paths: quick tourist guide and full relocation course */
+  .academy{background:linear-gradient(145deg,#f1f7fb 0%,#fff9f1 54%,#f2f8fb 100%);border-top:1px solid rgba(3,101,163,.09);border-bottom:1px solid rgba(3,101,163,.09);padding:74px 0;}
+  .academy-head{max-width:830px;margin:0 auto 30px;text-align:center;}
+  .academy-head .tag{display:inline-block;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:1.35px;color:var(--brand-orange);margin-bottom:9px;}
+  .academy-head h2{font-size:clamp(27px,3.2vw,38px);line-height:1.35;color:var(--brand-blue-dark);font-weight:900;margin:0 0 11px;}
+  .academy-head p{max-width:730px;margin:auto;color:#52636f;font-size:15px;line-height:1.9;}
+  .academy-path-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch;}
+  .academy-path-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:340px;padding:25px;border-radius:22px;border:1px solid rgba(3,101,163,.12);background:#fff;box-shadow:0 16px 36px rgba(11,32,54,.08);transition:transform .25s ease,box-shadow .25s ease;}
+  .academy-path-card:hover{transform:translateY(-5px);box-shadow:0 24px 44px rgba(11,32,54,.14);}
+  .academy-path-card:before{content:"";position:absolute;inset:auto -55px -115px auto;width:230px;height:230px;border-radius:50%;background:rgba(3,101,163,.055);pointer-events:none;}
+  .academy-path-card.full{background:linear-gradient(145deg,#062b49 0%,#075b91 72%,#0c75a9 100%);border-color:transparent;color:#fff;}
+  .academy-path-card.full:before{background:rgba(255,255,255,.08);}
+  .academy-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:19px;position:relative;z-index:1;}
+  .academy-card-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#eaf4fa;font-size:26px;box-shadow:inset 0 0 0 1px #d9e8f1;}
+  .academy-path-card.full .academy-card-icon{background:#ffffff19;box-shadow:inset 0 0 0 1px #ffffff32;}
+  .academy-card-badge{padding:7px 11px;border-radius:999px;background:#fff3e9;color:#a54c18;font:800 10px 'IBM Plex Mono',monospace;letter-spacing:.55px;}
+  .academy-path-card.full .academy-card-badge{background:#ffffff18;color:#ffe2c9;border:1px solid #ffffff2b;}
+  .academy-path-card h3{position:relative;z-index:1;font-size:24px;line-height:1.4;color:var(--brand-blue-dark);font-weight:900;margin:0 0 9px;}
+  .academy-path-card.full h3{color:#fff;}
+  .academy-path-card p{position:relative;z-index:1;color:#586a77;font-size:14px;line-height:1.9;margin:0 0 19px;}
+  .academy-path-card.full p{color:#dcecf6;}
+  .academy-features{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px;position:relative;z-index:1;}
+  .academy-features span{padding:6px 10px;border:1px solid #dfebf2;border-radius:999px;background:#f7fafc;color:#31536a;font-size:11px;font-weight:800;}
+  .academy-path-card.full .academy-features span{background:#ffffff12;border-color:#ffffff35;color:#f2f8fc;}
+  .academy-link{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;gap:9px;margin-top:auto;align-self:flex-start;padding:12px 17px;border-radius:12px;background:var(--brand-orange);color:#fff;font-weight:900;font-size:13px;box-shadow:0 10px 22px rgba(241,86,11,.18);transition:transform .2s,box-shadow .2s;}
+  .academy-link:hover{transform:translateY(-2px);box-shadow:0 14px 25px rgba(241,86,11,.27);}
+  .academy-path-card.full .academy-link{background:#fff;color:var(--brand-blue-dark);box-shadow:0 10px 22px rgba(0,0,0,.12);}
+  .academy-extra{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:21px auto 0;text-align:center;color:#5f7180;font-size:12px;}
+  .academy-extra a{font-weight:900;color:var(--brand-blue);text-decoration:underline;text-underline-offset:3px;}
+  @media(max-width:900px){.academy{padding:58px 0}.academy-path-grid{grid-template-columns:1fr;max-width:720px;margin:auto}.academy-path-card{min-height:300px}}
+  @media(max-width:700px){.academy-head h2{font-size:25px}.academy-head p{font-size:13px}.academy-path-card{padding:20px;min-height:0}.academy-path-card h3{font-size:21px}.academy-extra{line-height:1.9}}
   /* Destination finder */
   .destination-tools{
     display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;
@@ -1161,24 +1170,29 @@ window.SITE_CONFIG = {
 </section>
 
 <section id="academy" class="academy">
-  <div class="wrap academy-grid">
-    <div class="academy-visual">
-      <div class="academy-photo main"><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="People learning together" loading="lazy" decoding="async"><div class="academy-visual-badge">🗣️ A → B · LANGUAGE LAB</div></div>
-      <div class="academy-photo"><img src="https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Learning and travel" loading="lazy" decoding="async"></div>
-      <div class="academy-photo"><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Study language" loading="lazy" decoding="async"></div>
+  <div class="wrap">
+    <div class="academy-head">
+      <span class="tag" id="academy-kicker"></span>
+      <h2 id="academy-title"></h2>
+      <p id="academy-intro"></p>
     </div>
-    <div class="academy-copy">
-      <span class="tag" id="academy-tag"></span>
-      <h2 id="academy-h2"></h2>
-      <p id="academy-p"></p>
-      <div class="academy-pairs">
-        <div class="academy-pair"><span>🇩🇪 Deutsch</span><span class="arrow">↔</span><span>🇬🇧 English</span></div>
-        <div class="academy-pair"><span>🇦🇪 العربية</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
-        <div class="academy-pair"><span>🇮🇹 Italiano</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
-        <div class="academy-pair"><span>🇫🇷 Français</span><span class="arrow">↔</span><span>🇩🇪 Deutsch</span></div>
-      </div>
-      <a class="academy-open" href="language-academy.html" id="academy-open">🗣️</a>
+    <div class="academy-path-grid">
+      <article class="academy-path-card quick pointer-card">
+        <div class="academy-card-top"><span class="academy-card-icon">🧳</span><span class="academy-card-badge" id="academy-tour-badge"></span></div>
+        <h3 id="academy-tour-title"></h3>
+        <p id="academy-tour-copy"></p>
+        <div class="academy-features" id="academy-tour-features"></div>
+        <a class="academy-link" href="ptbr-travel-guide.html" id="academy-tour-button"></a>
+      </article>
+      <article class="academy-path-card full pointer-card">
+        <div class="academy-card-top"><span class="academy-card-icon">🎓</span><span class="academy-card-badge" id="academy-course-badge"></span></div>
+        <h3 id="academy-course-title"></h3>
+        <p id="academy-course-copy"></p>
+        <div class="academy-features" id="academy-course-features"></div>
+        <a class="academy-link" href="ptbr-academy.html" id="academy-course-button"></a>
+      </article>
     </div>
+    <div class="academy-extra"><span id="academy-audio-copy"></span><a href="ptbr-pronunciation.html" id="academy-audio-link"></a></div>
   </div>
 </section>
 
@@ -1528,6 +1542,34 @@ window.SITE_CONFIG = {
     }
   }
 
+  var academyCopy = {
+    ar:{kicker:"BRAZILIAN PORTUGUESE · مساران حسب رحلتك",title:"مسافر زيارة قصيرة ولا ناوي تعيش في البرازيل؟",intro:"مش كل مسافر محتاج نفس نوع التعلم. اختار دليلًا سريعًا يساعدك تتصرف أثناء السياحة، أو برنامجًا كاملًا يبني لغتك خطوة بخطوة.",tourBadge:"للسياحة والزيارة القصيرة",tourTitle:"جاي البرازيل سياحة؟",tourCopy:"ابدأ بالجمل التي تحتاجها فورًا في المطار والتاكسي والفندق والمطعم والتسوق وطلب المساعدة. من غير قواعد معقدة أو التزام بكورس طويل.",tourFeatures:["عبارات جاهزة للمواقف","نطق بالعربي وصوت مسموع","بحث حسب الموقف"],tourButton:"افتح دليل المسافر السريع ←",courseBadge:"للإقامة الطويلة والهجرة",courseTitle:"ناوي تعيش أو تهاجر للبرازيل؟",courseCopy:"اتعلم البرتغالية البرازيلية من الصفر: الحروف والأصوات والجرامر والأزمنة والمحادثة والاستماع والكتابة، في منهج متدرج يصل إلى C2.",courseFeatures:["78 درسًا من الصفر إلى C2","قواعد وحوارات واختبارات","تدريب على الحياة اليومية"],courseButton:"ابدأ الأكاديمية الكاملة ←",audioCopy:"عايز تسمع عبارات أكتر؟",audioLink:"افتح مكتبة 511 عبارة صوتية."},
+    en:{kicker:"BRAZILIAN PORTUGUESE · TWO PATHS FOR YOUR TRIP",title:"Visiting Brazil or planning to live there?",intro:"Different journeys need different learning. Choose a quick phrase guide for your holiday, or a complete course that builds your Portuguese step by step.",tourBadge:"TOURISTS · SHORT STAYS",tourTitle:"Coming to Brazil on holiday?",tourCopy:"Get the phrases you need right away at the airport, in taxis, hotels, restaurants, shops, and when asking for help. No long course or complicated grammar required.",tourFeatures:["Ready-to-use travel phrases","Arabic pronunciation + audio","Search by situation"],tourButton:"Open the quick travel guide →",courseBadge:"RELOCATION · LONG-TERM STAYS",courseTitle:"Planning to live or move to Brazil?",courseCopy:"Learn Brazilian Portuguese from zero: letters, sounds, grammar, tenses, conversation, listening, and writing in a structured path through C2.",courseFeatures:["78 lessons from zero to C2","Grammar, dialogues and quizzes","Everyday-life practice"],courseButton:"Start the full academy →",audioCopy:"Want more phrases with audio?",audioLink:"Explore the 511-phrase audio library."},
+    de:{kicker:"BRASILIANISCHES PORTUGIESISCH · ZWEI WEGE",title:"Brasilien besuchen oder dort leben?",intro:"Jede Reise braucht einen anderen Lernweg. Wähle einen schnellen Sprachführer für den Urlaub oder einen vollständigen Kurs für langfristiges Lernen.",tourBadge:"TOURISMUS · KURZAUFENTHALT",tourTitle:"Du reist als Tourist nach Brasilien?",tourCopy:"Lerne sofort nützliche Sätze für Flughafen, Taxi, Hotel, Restaurant, Einkaufen und Hilfe im Notfall – ohne langen Kurs.",tourFeatures:["Sofort nutzbare Reisesätze","Arabische Aussprache + Audio","Nach Situation suchen"],tourButton:"Schnellen Reiseguide öffnen →",courseBadge:"UMZUG · LANGER AUFENTHALT",courseTitle:"Möchtest du in Brasilien leben?",courseCopy:"Lerne brasilianisches Portugiesisch von Grund auf: Alphabet, Aussprache, Grammatik, Zeiten, Gespräche, Hörverstehen und Schreiben bis C2.",courseFeatures:["78 Lektionen von null bis C2","Grammatik, Dialoge und Tests","Übungen für den Alltag"],courseButton:"Vollständige Akademie starten →",audioCopy:"Du möchtest mehr Hörbeispiele?",audioLink:"Zur Audiobibliothek mit 511 Sätzen."},
+    it:{kicker:"PORTOGHESE BRASILIANO · DUE PERCORSI",title:"Visiti il Brasile o hai intenzione di viverci?",intro:"Viaggi diversi richiedono percorsi diversi. Scegli una guida rapida per la vacanza oppure un corso completo per imparare passo dopo passo.",tourBadge:"TURISMO · SOGGIORNI BREVI",tourTitle:"Vai in Brasile per turismo?",tourCopy:"Trova subito le frasi utili in aeroporto, taxi, hotel, ristoranti, negozi e per chiedere aiuto. Senza un corso lungo o grammatica complicata.",tourFeatures:["Frasi pronte per il viaggio","Pronuncia araba e audio","Ricerca per situazione"],tourButton:"Apri la guida rapida →",courseBadge:"TRASFERIMENTO · SOGGIORNI LUNGHI",courseTitle:"Vuoi vivere o trasferirti in Brasile?",courseCopy:"Impara il portoghese brasiliano da zero: alfabeto, suoni, grammatica, tempi verbali, conversazione, ascolto e scrittura fino al C2.",courseFeatures:["78 lezioni da zero a C2","Grammatica, dialoghi e quiz","Pratica per la vita quotidiana"],courseButton:"Inizia l'accademia completa →",audioCopy:"Vuoi ascoltare altre frasi?",audioLink:"Apri la libreria audio con 511 frasi."},
+    fr:{kicker:"PORTUGAIS BRÉSILIEN · DEUX PARCOURS",title:"Vous visitez le Brésil ou souhaitez y vivre ?",intro:"Chaque voyage demande un apprentissage différent. Choisissez un guide rapide pour vos vacances ou un cours complet pour progresser étape par étape.",tourBadge:"TOURISME · COURT SÉJOUR",tourTitle:"Vous partez au Brésil en touriste ?",tourCopy:"Retrouvez les phrases utiles à l'aéroport, en taxi, à l'hôtel, au restaurant, dans les magasins et pour demander de l'aide. Sans cours long ni grammaire complexe.",tourFeatures:["Phrases prêtes pour le voyage","Prononciation arabe + audio","Recherche par situation"],tourButton:"Ouvrir le guide rapide →",courseBadge:"INSTALLATION · LONG SÉJOUR",courseTitle:"Vous souhaitez vivre ou vous installer au Brésil ?",courseCopy:"Apprenez le portugais brésilien depuis zéro : alphabet, sons, grammaire, temps, conversation, compréhension orale et écriture jusqu'au niveau C2.",courseFeatures:["78 leçons de zéro à C2","Grammaire, dialogues et quiz","Pratique de la vie quotidienne"],courseButton:"Commencer l'académie complète →",audioCopy:"Vous voulez davantage de phrases audio ?",audioLink:"Ouvrir la bibliothèque de 511 phrases."},
+    pt:{kicker:"PORTUGUÊS DO BRASIL · DOIS PERCURSOS",title:"Vai visitar o Brasil ou pretende viver aqui?",intro:"Cada viagem pede uma aprendizagem diferente. Escolha um guia rápido para as férias ou um curso completo para aprender passo a passo.",tourBadge:"TURISMO · ESTADIAS CURTAS",tourTitle:"Vai ao Brasil em turismo?",tourCopy:"Encontre frases úteis para o aeroporto, táxi, hotel, restaurante, lojas e para pedir ajuda. Sem um curso longo nem gramática complicada.",tourFeatures:["Frases prontas para viajar","Pronúncia em árabe + áudio","Pesquisa por situação"],tourButton:"Abrir o guia rápido →",courseBadge:"MUDANÇA · ESTADIAS LONGAS",courseTitle:"Quer viver ou mudar-se para o Brasil?",courseCopy:"Aprenda português do Brasil desde o início: alfabeto, sons, gramática, tempos verbais, conversação, compreensão oral e escrita até C2.",courseFeatures:["78 aulas do zero ao C2","Gramática, diálogos e testes","Prática para o dia a dia"],courseButton:"Começar a academia completa →",audioCopy:"Quer ouvir mais frases?",audioLink:"Abrir a biblioteca de áudio com 511 frases."},
+    ptbr:{kicker:"PORTUGUÊS BRASILEIRO · DOIS CAMINHOS",title:"Vai visitar o Brasil ou quer morar por aqui?",intro:"Cada viagem pede um tipo de aprendizado. Escolha um guia rápido para curtir as férias ou um curso completo para aprender passo a passo.",tourBadge:"TURISMO · VIAGEM CURTA",tourTitle:"Vem pro Brasil a passeio?",tourCopy:"Encontre as frases que você precisa no aeroporto, no táxi, no hotel, no restaurante, nas lojas e para pedir ajuda. Sem curso longo nem gramática complicada.",tourFeatures:["Frases prontas para viajar","Pronúncia em árabe + áudio","Busca por situação"],tourButton:"Abrir o guia rápido do viajante →",courseBadge:"MUDANÇA · LONGA PERMANÊNCIA",courseTitle:"Quer morar ou se mudar para o Brasil?",courseCopy:"Aprenda português brasileiro do zero: alfabeto, sons, gramática, tempos verbais, conversação, compreensão oral e escrita até C2.",courseFeatures:["78 aulas do zero ao C2","Gramática, diálogos e testes","Prática para a vida real"],courseButton:"Começar a academia completa →",audioCopy:"Quer ouvir muito mais frases?",audioLink:"Abrir a biblioteca de áudio com 511 frases."}
+  };
+  function renderAcademy(lang){
+    var c=academyCopy[lang]||academyCopy.en;
+    document.getElementById('academy-kicker').textContent=c.kicker;
+    document.getElementById('academy-title').textContent=c.title;
+    document.getElementById('academy-intro').textContent=c.intro;
+    document.getElementById('academy-tour-badge').textContent=c.tourBadge;
+    document.getElementById('academy-tour-title').textContent=c.tourTitle;
+    document.getElementById('academy-tour-copy').textContent=c.tourCopy;
+    document.getElementById('academy-tour-features').innerHTML=c.tourFeatures.map(function(x){return '<span>'+x+'</span>';}).join('');
+    document.getElementById('academy-tour-button').textContent=c.tourButton;
+    document.getElementById('academy-course-badge').textContent=c.courseBadge;
+    document.getElementById('academy-course-title').textContent=c.courseTitle;
+    document.getElementById('academy-course-copy').textContent=c.courseCopy;
+    document.getElementById('academy-course-features').innerHTML=c.courseFeatures.map(function(x){return '<span>'+x+'</span>';}).join('');
+    document.getElementById('academy-course-button').textContent=c.courseButton;
+    document.getElementById('academy-audio-copy').textContent=c.audioCopy;
+    document.getElementById('academy-audio-link').textContent=c.audioLink;
+  }
+
   function render(lang){
     currentLang = lang;
     try { localStorage.setItem('sd_lang', lang); } catch(e){}
@@ -1554,6 +1596,7 @@ window.SITE_CONFIG = {
     document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
 
     // Hero
+    renderAcademy(lang);
     document.getElementById('hero-eyebrow').textContent = t.hero.eyebrow;
     document.getElementById('hero-title-1').textContent = t.hero.titleLine1;
     document.getElementById('hero-title-2').textContent = t.hero.titleHighlight;
