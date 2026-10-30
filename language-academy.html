@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safer Discounts | Language Academy</title>
-<meta name="description" content="تعلم لغات السفر من خلال جمل عملية، مع اختيار لغة الشرح واللغة التي تريد تعلمها.">
+<title>Safer Discounts | Travel Language Lab & Brazilian Portuguese Academy</title>
+<meta name="description" content="دليل سريع لعبارات السفر، ومعمل لتعلم لغات مختلفة، وأكاديمية كاملة للبرتغالية البرازيلية من الصفر حتى C2 للعيش والدراسة والعمل في البرازيل.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://saferdiscounts.com/language-academy.html">
 <link rel="icon" type="image/png" href="logo.png">
@@ -33,6 +33,25 @@ nav{min-height:76px;display:flex;align-items:center;justify-content:space-betwee
 .lang-btn{flex:0 0 auto;border:0;background:transparent;color:var(--brand-blue);padding:7px 9px;border-radius:999px;font:700 10px 'IBM Plex Mono',monospace;cursor:pointer;transition:.2s}
 .lang-btn.active,.lang-btn:hover{background:var(--brand-blue);color:#fff}
 .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--brand-orange);color:#fff;padding:10px 16px;border-radius:999px;font-weight:800;white-space:nowrap;box-shadow:0 8px 18px rgba(241,86,11,.22)}
+.pathways{padding:24px 0 28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.pathways-head{grid-column:1/-1;text-align:center;margin-bottom:2px}
+.pathways-head .tag{display:block;font:700 10px 'IBM Plex Mono',monospace;color:var(--brand-orange);letter-spacing:1.2px;margin-bottom:5px}
+.pathways-head h2{font-size:24px;color:var(--brand-blue-dark);font-weight:900}
+.pathways-head p{color:#637684;font-size:13px;margin-top:4px}
+.pathway-card{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:19px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 10px 26px rgba(11,32,54,.07);transition:transform .2s,box-shadow .2s}
+.pathway-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(11,32,54,.12)}
+.pathway-card.full{background:linear-gradient(140deg,#062b49,#075b91 80%);border-color:transparent;color:#fff}
+.pathway-card .path-meta{display:flex;align-items:center;gap:9px;width:100%;justify-content:space-between}
+.pathway-card .path-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#e9f3f9;font-size:22px}
+.pathway-card.full .path-icon{background:#ffffff1e}
+.pathway-card .path-badge{font:800 9px 'IBM Plex Mono',monospace;letter-spacing:.4px;padding:6px 9px;border-radius:999px;background:#fff1e7;color:#a64a16}
+.pathway-card.full .path-badge{background:#ffffff1e;color:#ffe5d1}
+.pathway-card h3{font-size:19px;color:var(--brand-blue-dark);font-weight:900;line-height:1.4}
+.pathway-card.full h3{color:#fff}
+.pathway-card p{font-size:12px;color:#5e707d;line-height:1.8;margin-bottom:4px}
+.pathway-card.full p{color:#dbeaf3}
+.pathway-card .path-btn{display:inline-flex;align-items:center;gap:7px;margin-top:auto;background:var(--brand-orange);color:white;border-radius:10px;padding:9px 13px;font-size:12px;font-weight:900}
+.pathway-card.full .path-btn{background:white;color:var(--brand-blue-dark)}
 .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(160deg,var(--brand-blue-dark),var(--brand-blue) 58%,#0b88cf);padding:64px 0 72px}
 .hero::before{content:"";position:absolute;inset:0;background:
 radial-gradient(circle at 12% 15%,rgba(255,255,255,.14),transparent 25%),
@@ -87,7 +106,7 @@ main{padding:62px 0}
 footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 .footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px}
 @media(max-width:900px){.hero-grid,.lab{grid-template-columns:1fr}.visual-collage{max-width:720px;margin:auto}.guide-links{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.wrap{width:min(100% - 24px,1140px)}nav{min-height:68px}.brand span{display:none}.nav-cta{display:none}.hero{padding:48px 0 54px}.hero p{font-size:15px}.visual-collage{grid-template-rows:120px 120px}.phrase{grid-template-columns:38px 1fr;}.phrase .target{grid-column:2;border-top:1px dashed var(--line);padding-top:9px}.guide-links{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:640px){.wrap{width:min(100% - 24px,1140px)}.pathways{grid-template-columns:1fr;padding:18px 0}.pathways-head h2{font-size:21px}nav{min-height:68px}.brand span{display:none}.nav-cta{display:none}.hero{padding:48px 0 54px}.hero p{font-size:15px}.visual-collage{grid-template-rows:120px 120px}.phrase{grid-template-columns:38px 1fr;}.phrase .target{grid-column:2;border-top:1px dashed var(--line);padding-top:9px}.guide-links{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
@@ -103,11 +122,11 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 </nav>
 </header>
 
-<div class="wrap" style="margin-top:14px;margin-bottom:10px;position:relative;z-index:3"><a href="ptbr-academy.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:15px 17px;border:1px solid #f4c7a7;border-radius:14px;background:#fff4e9;color:#082844"><span><strong>🎓 أكاديمية البرتغالية البرازيلية للمسافرين</strong><span style="display:block;font-size:12px;color:#657682">ابدأ من الصفر واتعلم تتعامل في البرازيل خطوة بخطوة</span></span><strong style="color:#c7430a">ابدأ التعلم ←</strong></a></div>\n<div class="wrap" style="margin-top:14px;margin-bottom:-36px;position:relative;z-index:3">
-  <a href="ptbr-pronunciation.html" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;border:1px solid #cbdfea;border-radius:14px;background:#fff;color:#082844;box-shadow:0 10px 24px #0828440b">
-    <span><strong>🇧🇷 معمل نطق البرتغالي البرازيلي</strong><span style="display:block;font-size:12px;color:#657682">511 عبارة و1,022 تسجيلًا بالسرعة العادية والبطيئة</span></span><span style="color:#f06423;font-weight:900">ابدأ الاستماع ←</span>
-  </a>
-</div>
+<section class="pathways wrap" aria-label="Choose your travel language path">
+  <div class="pathways-head"><span class="tag" id="path-eyebrow"></span><h2 id="path-title"></h2><p id="path-desc"></p></div>
+  <article class="pathway-card quick"><div class="path-meta"><span class="path-icon">🧳</span><span class="path-badge" id="path-quick-badge"></span></div><h3 id="path-quick-title"></h3><p id="path-quick-copy"></p><a class="path-btn" id="path-quick-button" href="ptbr-travel-guide.html"></a></article>
+  <article class="pathway-card full"><div class="path-meta"><span class="path-icon">🎓</span><span class="path-badge" id="path-full-badge"></span></div><h3 id="path-full-title"></h3><p id="path-full-copy"></p><a class="path-btn" id="path-full-button" href="ptbr-academy.html"></a></article>
+</section>
 
 <section class="hero">
 <div class="wrap hero-grid">
@@ -198,7 +217,7 @@ var WORDS=[
 ['understand',{ar:'لا أفهم.',en:"I don't understand.",de:'Ich verstehe nicht.',it:'Non capisco.',fr:'Je ne comprends pas.',pt:'Não entendo.',ptbr:'Não entendo.',es:'No entiendo.'}],
 ['help',{ar:'هل يمكنك مساعدتي؟',en:'Can you help me?',de:'Können Sie mir helfen?',it:'Può aiutarmi?',fr:'Pouvez-vous m’aider ?',pt:'Pode me ajudar?',ptbr:'Pode me ajudar?',es:'¿Puede ayudarme?'}],
 ['ticket',{ar:'أين يمكنني شراء تذكرة؟',en:'Where can I buy a ticket?',de:'Wo kann ich ein Ticket kaufen?',it:'Dove posso comprare un biglietto?',fr:'Où puis-je acheter un billet ?',pt:'Onde posso comprar um bilhete?',ptbr:'Onde posso comprar um ingresso?',es:'¿Dónde puedo comprar un billete?'}],
-['bill',{ar:'الحساب، من فضلك.',en:'The bill, please.',de:'Die Rechnung, bitte.',it:'Il conto, per favore.',fr:'L’addition, s’il vous plaît.',pt:'A conta, por favor.',ptbr:'A conta, por favor.',es:'La cuenta, por favor.']}
+['bill',{ar:'الحساب، من فضلك.',en:'The bill, please.',de:'Die Rechnung, bitte.',it:'Il conto, per favore.',fr:'L’addition, s’il vous plaît.',pt:'A conta, por favor.',ptbr:'A conta, por favor.',es:'La cuenta, por favor.'}]
 ];
 var GUIDE={ar:'guide-english.html',en:'guide-english.html',de:'guide-german.html',it:'guide-italian.html',fr:'guide-french.html',pt:'guide-portuguese.html',ptbr:'guide-portuguese-brazilian.html',es:'guide-spanish.html'};
 var ui='ar',source='ar',target='de';
@@ -214,7 +233,7 @@ function renderStatic(){
  Object.keys(c).forEach(function(k){
    var map={heroTitle:'hero-title',heroCopy:'hero-copy',start:'hero-start',home:'hero-home',eyebrow:'eyebrow',labTag:'lab-tag',labTitle:'lab-title',labCopy:'lab-copy',panel:'panel-title',source:'source-label',target:'target-label',practice:'practice-title',practiceCopy:'practice-copy',badge:'practice-badge',guidesTag:'guides-tag',guidesTitle:'guides-title',guidesCopy:'guides-copy',cta:'cta-title',ctaCopy:'cta-copy',ctaBtn:'cta-btn',footer:'footer-copy'};
    if(map[k]) fill(map[k],c[k]);
- }
+ });
  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active',b.dataset.ui===ui)});
  var n=document.getElementById('nav-book');n.textContent='💬 '+c.ctaBtn;n.href='https://wa.me/201116666306?text='+encodeURIComponent(c.ctaBtn);
  fillSelects();
