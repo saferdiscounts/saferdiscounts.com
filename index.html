@@ -641,7 +641,7 @@ window.SITE_CONFIG = {
   i18n: {
     ar: {
       brand: "سافر Discounts",
-      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", blog: "بلوج سارة", cta: "احجز واتساب" },
+      nav: { services: "خدماتنا", destinations: "وجهاتنا", reviews: "آراء العملاء", how: "إزاي بتحجز", faq: "أسئلة شائعة", blog: "بلوج سارة", academy: "الأكاديمية", cta: "احجز واتساب" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — أسعار أقل",
         titleLine1: "سافر بأقل سعر،",
@@ -668,7 +668,7 @@ window.SITE_CONFIG = {
     },
     en: {
       brand: "Safer Discounts",
-      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", blog: "Sara's Blog", cta: "Book on WhatsApp" },
+      nav: { services: "Services", destinations: "Destinations", reviews: "Reviews", how: "How it Works", faq: "FAQ", blog: "Sara's Blog", academy: "Academy", cta: "Book on WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — Lower Prices",
         titleLine1: "Travel for less,",
@@ -695,7 +695,7 @@ window.SITE_CONFIG = {
     },
     it: {
       brand: "Safer Discounts",
-      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", cta: "Prenota su WhatsApp" },
+      nav: { services: "Servizi", destinations: "Destinazioni", reviews: "Recensioni", how: "Come Prenotare", faq: "Domande Frequenti", blog: "Blog di Sara", academy: "Accademia", cta: "Prenota su WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENT — Prezzi più bassi",
         titleLine1: "Viaggia spendendo meno,",
@@ -722,7 +722,7 @@ window.SITE_CONFIG = {
     },
     fr: {
       brand: "Safer Discounts",
-      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", cta: "Réserver sur WhatsApp" },
+      nav: { services: "Services", destinations: "Destinations", reviews: "Avis", how: "Comment Réserver", faq: "FAQ", blog: "Blog de Sara", academy: "Académie", cta: "Réserver sur WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HÔTEL · ÉVÉNEMENT — Prix plus bas",
         titleLine1: "Voyagez pour moins cher,",
@@ -749,7 +749,7 @@ window.SITE_CONFIG = {
     },
     pt: {
       brand: "Safer Discounts",
-      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", cta: "Reservar no WhatsApp" },
+      nav: { services: "Serviços", destinations: "Destinos", reviews: "Avaliações", how: "Como Reservar", faq: "Perguntas Frequentes", blog: "Blog da Sara", academy: "Academia", academy: "Academia", cta: "Reservar no WhatsApp" },
       hero: {
         eyebrow: "✦ TICKET · HOTEL · EVENTO — Preços mais baixos",
         titleLine1: "Viaje a gastar menos,",
@@ -803,7 +803,7 @@ window.SITE_CONFIG = {
     },
     de: {
       brand: "Safer Discounts",
-      nav: { services: "Leistungen", destinations: "Reiseziele", reviews: "Bewertungen", how: "So funktioniert die Buchung", faq: "FAQ", blog: "Saras Blog", cta: "Über WhatsApp buchen" },
+      nav: { services: "Leistungen", destinations: "Reiseziele", reviews: "Bewertungen", how: "So funktioniert die Buchung", faq: "FAQ", blog: "Saras Blog", academy: "Akademie", cta: "Über WhatsApp buchen" },
       hero: { eyebrow: "✦ TICKET · HOTEL · EVENT — Faire Preise", titleLine1: "Reise günstiger,", titleHighlight: "ohne den Aufwand", subtitle: "Wir buchen Flugtickets, Hotels sowie Tickets für Events und Museen zu wettbewerbsfähigen Preisen — einfach über WhatsApp.", ctaWa: "Über WhatsApp buchen", ctaFb: "Auf Facebook folgen", strip: ["Flüge", "Hotels", "Events & Museen", "Persönliche Betreuung"] },
       journeyStops: ["Flug", "Hotel", "Transfer", "Event", "Kreuzfahrt"],
       servicesHead: { tag: "Unsere Leistungen", h2: "Alles für deine Reise an einem Ort", p: "Vom Flugticket über das Hotel bis zum Event — wir kümmern uns um deine Anfrage und Buchung." },
@@ -1041,6 +1041,7 @@ window.SITE_CONFIG = {
       <a href="#how" data-nav="how"></a>
       <a href="#faq" data-nav="faq"></a>
       <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
+      <a href="#academy" data-nav="academy"></a>
     </div>
     <div class="nav-right">
       <div class="lang-switch" id="lang-switch">
@@ -1593,6 +1594,7 @@ window.SITE_CONFIG = {
     document.querySelector('[data-nav="how"]').textContent = t.nav.how;
     document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
     document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
+    document.querySelector('[data-nav="academy"]').textContent = t.nav.academy;
     document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
 
     // Hero
