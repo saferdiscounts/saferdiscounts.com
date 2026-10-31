@@ -379,6 +379,19 @@
   .academy-path-card.full .academy-link{background:#fff;color:var(--brand-blue-dark);box-shadow:0 10px 22px rgba(0,0,0,.12);}
   .academy-extra{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin:21px auto 0;text-align:center;color:#5f7180;font-size:12px;}
   .academy-extra a{font-weight:900;color:var(--brand-blue);text-decoration:underline;text-underline-offset:3px;}
+  .academy-en-paths{margin:30px auto 0;padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#f7fbfd,#fff);max-width:1000px}
+  .academy-en-head{text-align:center;margin-bottom:16px}
+  .academy-en-head .tag{display:block;margin-bottom:5px;color:var(--brand-orange);font:800 10px 'IBM Plex Mono',monospace;letter-spacing:1px}
+  .academy-en-head h3{font-size:21px;color:var(--brand-blue-dark);margin:0 0 4px}
+  .academy-en-head p{font-size:12px;color:#647785;margin:0}
+  .academy-en-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .academy-en-card{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #dce8ef;background:#fff;border-radius:14px;transition:transform .2s,box-shadow .2s}
+  .academy-en-card:hover{transform:translateY(-3px);box-shadow:0 12px 22px rgba(8,40,68,.09)}
+  .academy-en-icon{width:42px;height:42px;display:grid;place-items:center;flex:0 0 auto;border-radius:12px;background:#eaf4fa;font-size:21px}
+  .academy-en-card strong{display:block;color:var(--brand-blue-dark);font-size:14px}
+  .academy-en-card small{display:block;color:#647785;font-size:11px;line-height:1.7}
+  .academy-en-card a{margin-inline-start:auto;white-space:nowrap;color:var(--brand-blue);font-weight:900;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+  @media(max-width:700px){.academy-en-paths{padding:16px}.academy-en-grid{grid-template-columns:1fr}.academy-en-card{align-items:flex-start}.academy-en-card a{margin-top:7px}}
   @media(max-width:900px){.academy{padding:58px 0}.academy-path-grid{grid-template-columns:1fr;max-width:720px;margin:auto}.academy-path-card{min-height:300px}}
   @media(max-width:700px){.academy-head h2{font-size:25px}.academy-head p{font-size:13px}.academy-path-card{padding:20px;min-height:0}.academy-path-card h3{font-size:21px}.academy-extra{line-height:1.9}}
   /* Destination finder */
@@ -1204,6 +1217,13 @@ window.SITE_CONFIG = {
       </article>
     </div>
     <div class="academy-extra"><span id="academy-audio-copy"></span><a href="ptbr-pronunciation.html" id="academy-audio-link"></a></div>
+    <div class="academy-en-paths">
+      <div class="academy-en-head"><span class="tag" id="academy-en-kicker"></span><h3 id="academy-en-title"></h3><p id="academy-en-copy"></p></div>
+      <div class="academy-en-grid">
+        <article class="academy-en-card"><span class="academy-en-icon">🧳</span><div><strong id="academy-en-tour-title"></strong><small id="academy-en-tour-copy"></small></div><a href="english-travel-guide.html" id="academy-en-tour-link"></a></article>
+        <article class="academy-en-card"><span class="academy-en-icon">🎓</span><div><strong id="academy-en-course-title"></strong><small id="academy-en-course-copy"></small></div><a href="english-academy.html" id="academy-en-course-link"></a></article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1562,6 +1582,21 @@ window.SITE_CONFIG = {
     pt:{kicker:"PORTUGUÊS DO BRASIL · DOIS PERCURSOS",title:"Vai visitar o Brasil ou pretende viver aqui?",intro:"Cada viagem pede uma aprendizagem diferente. Escolha um guia rápido para as férias ou um curso completo para aprender passo a passo.",tourBadge:"TURISMO · ESTADIAS CURTAS",tourTitle:"Vai ao Brasil em turismo?",tourCopy:"Encontre frases úteis para o aeroporto, táxi, hotel, restaurante, lojas e para pedir ajuda. Sem um curso longo nem gramática complicada.",tourFeatures:["Frases prontas para viajar","Pronúncia em árabe + áudio","Pesquisa por situação"],tourButton:"Abrir o guia rápido →",courseBadge:"MUDANÇA · ESTADIAS LONGAS",courseTitle:"Quer viver ou mudar-se para o Brasil?",courseCopy:"Aprenda português do Brasil desde o início: alfabeto, sons, gramática, tempos verbais, conversação, compreensão oral e escrita até C2.",courseFeatures:["78 aulas do zero ao C2","Gramática, diálogos e testes","Prática para o dia a dia"],courseButton:"Começar a academia completa →",audioCopy:"Quer ouvir mais frases?",audioLink:"Abrir a biblioteca de áudio com 511 frases."},
     ptbr:{kicker:"PORTUGUÊS BRASILEIRO · DOIS CAMINHOS",title:"Vai visitar o Brasil ou quer morar por aqui?",intro:"Cada viagem pede um tipo de aprendizado. Escolha um guia rápido para curtir as férias ou um curso completo para aprender passo a passo.",tourBadge:"TURISMO · VIAGEM CURTA",tourTitle:"Vem pro Brasil a passeio?",tourCopy:"Encontre as frases que você precisa no aeroporto, no táxi, no hotel, no restaurante, nas lojas e para pedir ajuda. Sem curso longo nem gramática complicada.",tourFeatures:["Frases prontas para viajar","Pronúncia em árabe + áudio","Busca por situação"],tourButton:"Abrir o guia rápido do viajante →",courseBadge:"MUDANÇA · LONGA PERMANÊNCIA",courseTitle:"Quer morar ou se mudar para o Brasil?",courseCopy:"Aprenda português brasileiro do zero: alfabeto, sons, gramática, tempos verbais, conversação, compreensão oral e escrita até C2.",courseFeatures:["78 aulas do zero ao C2","Gramática, diálogos e testes","Prática para a vida real"],courseButton:"Começar a academia completa →",audioCopy:"Quer ouvir muito mais frases?",audioLink:"Abrir a biblioteca de áudio com 511 frases."}
   };
+  var englishAcademyCopy = {
+    ar:{kicker:"ENGLISH FOR ARABIC SPEAKERS",title:"وكمان الإنجليزية للناطقين بالعربية",copy:"مساران منفصلان: عبارات جاهزة لرحلتك، أو أكاديمية منظمة للتعلم من الصفر.",tourTitle:"محتاج إنجليزي للسفر؟",tourCopy:"جمل للمطار والفندق والمواصلات والمطاعم والتسوق والطوارئ، مع نطق عربي وصوت.",tourLink:"دليل السفر السريع ←",courseTitle:"عايز تتعلم الإنجليزية بجد؟",courseCopy:"31 وحدة تعليمية من التأسيس والقواعد إلى المواقف اليومية والتواصل المتقدم، مع حفظ تقدمك.",courseLink:"افتح الأكاديمية ←"},
+    en:{kicker:"ENGLISH FOR ARABIC SPEAKERS",title:"English learning, with two clear paths",copy:"Choose ready-to-use phrases for your next trip, or a structured academy that builds your English step by step.",tourTitle:"Need English for travel?",tourCopy:"Airport, hotel, transport, restaurant, shopping and emergency phrases, with Arabic pronunciation and audio.",tourLink:"Quick travel guide →",courseTitle:"Ready to study English?",courseCopy:"31 learning units covering foundations, grammar, everyday situations and advanced communication, with saved progress.",courseLink:"Open the academy →"},
+    de:{kicker:"ENGLISCH FÜR ARABISCHSPRACHIGE",title:"Englisch lernen – mit zwei klaren Wegen",copy:"Wähle praktische Sätze für deine Reise oder eine strukturierte Akademie für Schritt-für-Schritt-Lernen.",tourTitle:"Englisch für die Reise?",tourCopy:"Sätze für Flughafen, Hotel, Verkehr, Restaurant, Einkaufen und Notfälle – mit arabischer Aussprache und Audio.",tourLink:"Schneller Reiseguide →",courseTitle:"Englisch richtig lernen?",courseCopy:"31 Lerneinheiten zu Grundlagen, Grammatik, Alltagssituationen und fortgeschrittener Kommunikation.",courseLink:"Akademie öffnen →"},
+    it:{kicker:"INGLESE PER CHI PARLA ARABO",title:"Impara l'inglese con due percorsi chiari",copy:"Scegli frasi pronte per il viaggio oppure un'accademia strutturata, passo dopo passo.",tourTitle:"Ti serve l'inglese in viaggio?",tourCopy:"Frasi per aeroporto, hotel, trasporti, ristoranti, acquisti ed emergenze, con pronuncia araba e audio.",tourLink:"Guida rapida →",courseTitle:"Vuoi studiare inglese seriamente?",courseCopy:"31 unità su basi, grammatica, situazioni quotidiane e comunicazione avanzata.",courseLink:"Apri l'accademia →"},
+    fr:{kicker:"ANGLAIS POUR ARABOPHONES",title:"Apprendre l’anglais avec deux parcours clairs",copy:"Choisissez des phrases prêtes pour voyager ou une académie structurée, étape par étape.",tourTitle:"Besoin d’anglais en voyage ?",tourCopy:"Phrases pour l’aéroport, l’hôtel, les transports, les restaurants, les achats et les urgences, avec prononciation arabe.",tourLink:"Guide rapide →",courseTitle:"Envie d’apprendre l’anglais ?",courseCopy:"31 unités sur les bases, la grammaire, les situations quotidiennes et la communication avancée.",courseLink:"Ouvrir l’académie →"},
+    pt:{kicker:"INGLÊS PARA FALANTES DE ÁRABE",title:"Aprenda inglês com dois caminhos claros",copy:"Escolha frases prontas para viajar ou uma academia estruturada, passo a passo.",tourTitle:"Precisa de inglês para viajar?",tourCopy:"Frases para aeroporto, hotel, transporte, restaurantes, compras e emergências, com pronúncia árabe e áudio.",tourLink:"Guia rápido →",courseTitle:"Quer estudar inglês a sério?",courseCopy:"31 unidades sobre fundamentos, gramática, situações do dia a dia e comunicação avançada.",courseLink:"Abrir academia →"},
+    ptbr:{kicker:"INGLÊS PARA FALANTES DE ÁRABE",title:"Aprenda inglês por dois caminhos claros",copy:"Escolha frases prontas para sua viagem ou uma academia estruturada para aprender passo a passo.",tourTitle:"Precisa de inglês para viajar?",tourCopy:"Frases para aeroporto, hotel, transporte, restaurantes, compras e emergências, com pronúncia árabe e áudio.",tourLink:"Guia rápido →",courseTitle:"Quer aprender inglês de verdade?",courseCopy:"31 unidades sobre fundamentos, gramática, situações do cotidiano e comunicação avançada.",courseLink:"Abrir academia →"}
+  };
+  function renderEnglishAcademy(lang){
+    var c=englishAcademyCopy[lang]||englishAcademyCopy.en;
+    [['kicker','kicker'],['title','title'],['copy','copy'],['tour-title','tourTitle'],['tour-copy','tourCopy'],['tour-link','tourLink'],['course-title','courseTitle'],['course-copy','courseCopy'],['course-link','courseLink']].forEach(function(pair){
+      var el=document.getElementById('academy-en-'+pair[0]);if(el)el.textContent=c[pair[1]]||'';
+    });
+  }
   function renderAcademy(lang){
     var c=academyCopy[lang]||academyCopy.en;
     document.getElementById('academy-kicker').textContent=c.kicker;
@@ -1609,6 +1644,7 @@ window.SITE_CONFIG = {
 
     // Hero
     renderAcademy(lang);
+    renderEnglishAcademy(lang);
     document.getElementById('hero-eyebrow').textContent = t.hero.eyebrow;
     document.getElementById('hero-title-1').textContent = t.hero.titleLine1;
     document.getElementById('hero-title-2').textContent = t.hero.titleHighlight;
