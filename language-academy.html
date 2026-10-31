@@ -52,6 +52,11 @@ nav{min-height:76px;display:flex;align-items:center;justify-content:space-betwee
 .pathway-card.full p{color:#dbeaf3}
 .pathway-card .path-btn{display:inline-flex;align-items:center;gap:7px;margin-top:auto;background:var(--brand-orange);color:white;border-radius:10px;padding:9px 13px;font-size:12px;font-weight:900}
 .pathway-card.full .path-btn{background:white;color:var(--brand-blue-dark)}
+.english-pathways{width:min(1120px,calc(100% - 32px));margin:0 auto 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.english-pathways .pathways-head{grid-column:1/-1;margin:5px 0 0}
+.english-pathways .pathways-head h2{font-size:22px}
+@media(max-width:700px){.english-pathways{grid-template-columns:1fr}.english-pathways .pathways-head h2{font-size:20px}}
+
 .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(160deg,var(--brand-blue-dark),var(--brand-blue) 58%,#0b88cf);padding:64px 0 72px}
 .hero::before{content:"";position:absolute;inset:0;background:
 radial-gradient(circle at 12% 15%,rgba(255,255,255,.14),transparent 25%),
@@ -126,6 +131,12 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
   <div class="pathways-head"><span class="tag" id="path-eyebrow"></span><h2 id="path-title"></h2><p id="path-desc"></p></div>
   <article class="pathway-card quick"><div class="path-meta"><span class="path-icon">🧳</span><span class="path-badge" id="path-quick-badge"></span></div><h3 id="path-quick-title"></h3><p id="path-quick-copy"></p><a class="path-btn" id="path-quick-button" href="ptbr-travel-guide.html"></a></article>
   <article class="pathway-card full"><div class="path-meta"><span class="path-icon">🎓</span><span class="path-badge" id="path-full-badge"></span></div><h3 id="path-full-title"></h3><p id="path-full-copy"></p><a class="path-btn" id="path-full-button" href="ptbr-academy.html"></a></article>
+</section>
+
+<section class="english-pathways" aria-label="English learning paths for Arabic speakers">
+  <div class="pathways-head"><span class="tag" id="en-path-eyebrow"></span><h2 id="en-path-title"></h2><p id="en-path-desc"></p></div>
+  <article class="pathway-card quick"><div class="path-meta"><span class="path-icon">🧳</span><span class="path-badge">ENGLISH · TRAVEL</span></div><h3 id="en-path-quick-title"></h3><p id="en-path-quick-copy"></p><a class="path-btn" id="en-path-quick-button" href="english-travel-guide.html"></a></article>
+  <article class="pathway-card full"><div class="path-meta"><span class="path-icon">🎓</span><span class="path-badge">ENGLISH · LEARNING</span></div><h3 id="en-path-full-title"></h3><p id="en-path-full-copy"></p><a class="path-btn" id="en-path-full-button" href="english-academy.html"></a></article>
 </section>
 
 <section class="hero">
@@ -222,6 +233,16 @@ var WORDS=[
 ];
 var GUIDE={ar:'guide-english.html',en:'guide-english.html',de:'guide-german.html',it:'guide-italian.html',fr:'guide-french.html',pt:'guide-portuguese.html',ptbr:'guide-portuguese-brazilian.html',es:'guide-spanish.html'};
 var ui='ar',source='ar',target='de';
+var EN_PATH_COPY={
+ ar:{eyebrow:'✦ الإنجليزية للناطقين بالعربية',title:'محتاج جمل للسفر ولا عايز تتعلم الإنجليزية بالكامل؟',desc:'اختار دليلًا سريعًا لرحلتك أو أكاديمية منظمة تبدأ معاك من الأساسيات.',quickTitle:'الإنجليزية للسفر والمواقف السريعة',quickCopy:'عبارات للمطار والفندق والمواصلات والمطاعم والتسوق والطوارئ، مع نطق عربي وصوت.',quickButton:'افتح دليل السفر السريع ←',fullTitle:'أكاديمية الإنجليزية من الصفر',fullCopy:'31 وحدة تعليمية من النطق والقواعد إلى مواقف الحياة اليومية والتواصل المتقدم، مع متابعة تقدمك.',fullButton:'ابدأ الأكاديمية ←'},
+ en:{eyebrow:'✦ ENGLISH FOR ARABIC SPEAKERS',title:'Quick travel phrases or complete English learning?',desc:'Choose a practical trip guide or a structured academy that starts with the foundations.',quickTitle:'English for travel and quick situations',quickCopy:'Phrases for airports, hotels, transport, restaurants, shopping and emergencies, with Arabic pronunciation and audio.',quickButton:'Open the quick travel guide →',fullTitle:'English academy from the beginning',fullCopy:'31 learning units covering pronunciation, grammar, everyday situations and advanced communication, with saved progress.',fullButton:'Start the academy →'},
+ de:{eyebrow:'✦ ENGLISCH FÜR ARABISCHSPRACHIGE',title:'Schnelle Reisesätze oder vollständiges Englischlernen?',desc:'Wähle einen praktischen Reiseguide oder eine strukturierte Akademie ab den Grundlagen.',quickTitle:'Englisch für Reisen und Alltagssituationen',quickCopy:'Sätze für Flughafen, Hotel, Verkehr, Restaurants, Einkaufen und Notfälle – mit arabischer Aussprache und Audio.',quickButton:'Schnellen Reiseguide öffnen →',fullTitle:'Englisch-Akademie von Anfang an',fullCopy:'31 Einheiten zu Aussprache, Grammatik, Alltag und fortgeschrittener Kommunikation mit Lernfortschritt.',fullButton:'Akademie starten →'},
+ it:{eyebrow:'✦ INGLESE PER CHI PARLA ARABO',title:'Frasi rapide per viaggiare o corso completo di inglese?',desc:'Scegli una guida pratica per il viaggio o un’accademia strutturata dalle basi.',quickTitle:'Inglese per viaggi e situazioni rapide',quickCopy:'Frasi per aeroporto, hotel, trasporti, ristoranti, acquisti ed emergenze, con pronuncia araba e audio.',quickButton:'Apri la guida rapida →',fullTitle:'Accademia di inglese dalle basi',fullCopy:'31 unità su pronuncia, grammatica, situazioni quotidiane e comunicazione avanzata, con progressi salvati.',fullButton:'Inizia l’accademia →'},
+ fr:{eyebrow:'✦ ANGLAIS POUR ARABOPHONES',title:'Phrases rapides pour voyager ou cours complet d’anglais ?',desc:'Choisissez un guide pratique de voyage ou une académie structurée qui commence par les bases.',quickTitle:'Anglais pour voyager et les situations rapides',quickCopy:'Phrases pour l’aéroport, l’hôtel, les transports, les restaurants, les achats et les urgences, avec prononciation arabe.',quickButton:'Ouvrir le guide rapide →',fullTitle:'Académie d’anglais depuis les bases',fullCopy:'31 unités sur la prononciation, la grammaire, le quotidien et la communication avancée, avec suivi des progrès.',fullButton:'Commencer l’académie →'},
+ pt:{eyebrow:'✦ INGLÊS PARA FALANTES DE ÁRABE',title:'Frases rápidas para viajar ou curso completo de inglês?',desc:'Escolha um guia prático de viagem ou uma academia estruturada desde o básico.',quickTitle:'Inglês para viagens e situações rápidas',quickCopy:'Frases para aeroporto, hotel, transporte, restaurantes, compras e emergências, com pronúncia árabe e áudio.',quickButton:'Abrir o guia rápido →',fullTitle:'Academia de inglês desde o início',fullCopy:'31 unidades sobre pronúncia, gramática, situações do dia a dia e comunicação avançada, com progresso salvo.',fullButton:'Começar a academia →'},
+ ptbr:{eyebrow:'✦ INGLÊS PARA FALANTES DE ÁRABE',title:'Frases rápidas para viajar ou curso completo de inglês?',desc:'Escolha um guia prático de viagem ou uma academia estruturada desde os fundamentos.',quickTitle:'Inglês para viagens e situações rápidas',quickCopy:'Frases para aeroporto, hotel, transporte, restaurantes, compras e emergências, com pronúncia árabe e áudio.',quickButton:'Abrir o guia rápido →',fullTitle:'Academia de inglês desde o começo',fullCopy:'31 unidades sobre pronúncia, gramática, situações cotidianas e comunicação avançada, com progresso salvo.',fullButton:'Começar a academia →'}
+};
+
 
 function pickUi(){
  try{ui=localStorage.getItem('sd_lang')||'ar'}catch(e){ui='ar'}
@@ -231,6 +252,10 @@ function fill(id,val){var el=document.getElementById(id);if(el)el.textContent=va
 function renderStatic(){
  var c=COPY[ui];
  var p=PATH_COPY[ui]||PATH_COPY.en;
+ var ep=EN_PATH_COPY[ui]||EN_PATH_COPY.en;
+ fill('en-path-eyebrow',ep.eyebrow);fill('en-path-title',ep.title);fill('en-path-desc',ep.desc);
+ fill('en-path-quick-title',ep.quickTitle);fill('en-path-quick-copy',ep.quickCopy);fill('en-path-quick-button',ep.quickButton);
+ fill('en-path-full-title',ep.fullTitle);fill('en-path-full-copy',ep.fullCopy);fill('en-path-full-button',ep.fullButton);
  fill('path-eyebrow',p.eyebrow);fill('path-title',p.title);fill('path-desc',p.desc);
  fill('path-quick-badge',p.quickBadge);fill('path-quick-title',p.quickTitle);fill('path-quick-copy',p.quickCopy);fill('path-quick-button',p.quickButton);
  fill('path-full-badge',p.fullBadge);fill('path-full-title',p.fullTitle);fill('path-full-copy',p.fullCopy);fill('path-full-button',p.fullButton);
