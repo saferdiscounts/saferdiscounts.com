@@ -66,7 +66,7 @@
     [/(?:medico|dottore|infermiera|ospedale|clinica|farmacia|medicina|dolore)/i,'doctor'],[/(?:gatto|gatti)/i,'cat'],[/(?:cane|cani|cucciolo)/i,'dog'],
     [/(?:arachidi|noccioline)/i,'peanuts'],[/(?:latte)/i,'milk'],[/(?:limone|limoni|limonata)/i,'lemon'],[/(?:cuore)/i,'heart'],
     [/(?:famiglia|madre|mamma|padre|papà|genitori|sorella|fratello)/i,'family'],[/(?:orologio|ora|minuto|minuti)/i,'clock'],
-    [/(?:destra|sinistra|svoltare|direzione|mappa|incrocio|ingresso|uscita)/i,'directions'],[/(?:ambulanza|emergenza|polizia|incidente)/i,'ambulance'],
+    [/(?:destra|sinistra|svoltare|direzione|mappa|incrocio|ingresso|uscita)/i,'directions'],[/(?:ambulanza|emergenza|incidente)/i,'ambulance'],
     [/(?:vestiti|abbigliamento|camicia|pantaloni|vestito|gonna|giacca|calzini|taglia)/i,'clothing'],[/(?:libro|libri|lettura|scuola|università|biblioteca|studiare)/i,'books']
   ];
   var spanishRules=[
@@ -80,7 +80,7 @@
     [/(?:médico|doctor|enfermera|hospital|clínica|farmacia|medicina|dolor)/i,'doctor'],[/(?:gato|gata|gatos)/i,'cat'],[/(?:perro|perra|perros|cachorro)/i,'dog'],
     [/(?:cacahuetes|maní|cacahuate|frutos secos)/i,'peanuts'],[/(?:leche)/i,'milk'],[/(?:limón|limones|limonada)/i,'lemon'],[/(?:corazón)/i,'heart'],
     [/(?:familia|madre|mamá|padre|papá|padres|hermana|hermano)/i,'family'],[/(?:reloj|hora|minuto|minutos)/i,'clock'],
-    [/(?:derecha|izquierda|girar|dirección|mapa|cruce|entrada|salida)/i,'directions'],[/(?:ambulancia|emergencia|policía|accidente)/i,'ambulance'],
+    [/(?:derecha|izquierda|girar|dirección|mapa|cruce|entrada|salida)/i,'directions'],[/(?:ambulancia|emergencia|accidente)/i,'ambulance'],
     [/(?:ropa|camisa|pantalones|vestido|falda|chaqueta|calcetines|talla)/i,'clothing'],[/(?:libro|libros|lectura|escuela|universidad|biblioteca|estudiar)/i,'books']
   ];
   var frenchRules=[
@@ -94,7 +94,7 @@
     [/(?:médecin|docteur|infirmier|infirmière|hôpital|clinique|pharmacie|médicament|douleur)/i,'doctor'],[/(?:chat|chats)/i,'cat'],[/(?:chien|chiens|chiot)/i,'dog'],
     [/(?:cacahuètes|arachides|cacahuète)/i,'peanuts'],[/(?:lait)/i,'milk'],[/(?:citron|citrons|limonade)/i,'lemon'],[/(?:cœur|coeur)/i,'heart'],
     [/(?:famille|mère|maman|père|papa|parents|sœur|soeur|frère)/i,'family'],[/(?:horloge|heure|minute|minutes|montre)/i,'clock'],
-    [/(?:droite|gauche|tourner|direction|carte|carrefour|entrée|sortie)/i,'directions'],[/(?:ambulance|urgence|police|accident)/i,'ambulance'],
+    [/(?:droite|gauche|tourner|direction|carte|carrefour|entrée|sortie)/i,'directions'],[/(?:ambulance|urgence|accident)/i,'ambulance'],
     [/(?:vêtements|habit|chemise|pantalon|robe|jupe|veste|chaussettes|taille)/i,'clothing'],[/(?:livre|livres|lecture|école|université|bibliothèque|étudier)/i,'books']
   ];
   var germanRules=[
@@ -108,7 +108,7 @@
     [/(?:Arzt|Ärztin|Doktor|Krankenhaus|Klinik|Apotheke|Medizin|Schmerz)/i,'doctor'],[/(?:Katze|Katzen)/i,'cat'],[/(?:Hund|Hunde|Welpe)/i,'dog'],
     [/(?:Erdnuss|Erdnüsse|Nüsse)/i,'peanuts'],[/(?:Milch)/i,'milk'],[/(?:Zitrone|Zitronen|Limonade)/i,'lemon'],[/(?:Herz)/i,'heart'],
     [/(?:Familie|Mutter|Mama|Vater|Papa|Eltern|Schwester|Bruder)/i,'family'],[/(?:Uhr|Stunde|Minute|Minuten|Zeit)/i,'clock'],
-    [/(?:rechts|links|abbiegen|Richtung|Karte|Kreuzung|Eingang|Ausgang)/i,'directions'],[/(?:Krankenwagen|Notfall|Polizei|Unfall)/i,'ambulance'],
+    [/(?:rechts|links|abbiegen|Richtung|Karte|Kreuzung|Eingang|Ausgang)/i,'directions'],[/(?:Krankenwagen|Notfall|Unfall)/i,'ambulance'],
     [/(?:Kleidung|Kleider|Hemd|Hose|Kleid|Rock|Jacke|Socken|Größe)/i,'clothing'],[/(?:Buch|Bücher|Lesen|Schule|Universität|Bibliothek|lernen)/i,'books']
   ];
   var russianRules=[
@@ -122,7 +122,7 @@
     [/(?:врач|доктор|медсестра|больница|клиника|аптека|лекарство|боль)/i,'doctor'],[/(?:кошка|кошки|кот|коты)/i,'cat'],[/(?:собака|собаки|щенок)/i,'dog'],
     [/(?:арахис|орехи)/i,'peanuts'],[/(?:молоко)/i,'milk'],[/(?:лимон|лимоны|лимонад)/i,'lemon'],[/(?:сердце)/i,'heart'],
     [/(?:семья|мать|мама|отец|папа|родители|сестра|брат)/i,'family'],[/(?:часы|час|минута|минуты|время)/i,'clock'],
-    [/(?:направо|налево|повернуть|направление|карта|перекрёсток|перекресток|вход|выход)/i,'directions'],[/(?:скорая|чрезвычайная ситуация|полиция|авария)/i,'ambulance'],
+    [/(?:направо|налево|повернуть|направление|карта|перекрёсток|перекресток|вход|выход)/i,'directions'],[/(?:скорая|чрезвычайная ситуация|авария)/i,'ambulance'],
     [/(?:одежда|рубашка|брюки|платье|юбка|куртка|носки|размер)/i,'clothing'],[/(?:книга|книги|чтение|школа|университет|библиотека|учиться)/i,'books']
   ];
   var europeanPortugueseRules=[
@@ -136,7 +136,7 @@
     [/(?:médico|médica|enfermeiro|enfermeira|hospital|clínica|farmácia|medicamento|dor)/i,'doctor'],[/(?:gato|gatos)/i,'cat'],[/(?:cão|cães|cachorro)/i,'dog'],
     [/(?:amendoim|amendoins)/i,'peanuts'],[/(?:leite)/i,'milk'],[/(?:limão|limões|limonada)/i,'lemon'],[/(?:coração)/i,'heart'],
     [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
-    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|polícia|acidente)/i,'ambulance'],
+    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calças|vestido|saia|casaco|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
   var brazilianPortugueseRules=[
@@ -181,6 +181,16 @@
     if(lang==='pt-PT'&&/(?:olá|bom dia|boa tarde|boa noite|adeus|até logo|prazer)/i.test(target))return photos.greeting;
     if(lang==='pt-PT'&&/(?:casa de banho|sanita|casa de banho pública)/i.test(target))return photos.bathroom;
     if(/\bpassport\b|\btravel document\b/i.test(target))return photos.passport;
+    if(/\b(?:boarding pass|boarding card|flight ticket|airline ticket)\b/i.test(target))return photos.airplane;
+    if(lang==='pt-BR'&&/(?:cartão de embarque|passagem aérea|bilhete aéreo)/i.test(target))return photos.airplane;
+    if(lang==='pt-PT'&&/(?:cartão de embarque|bilhete de avião|passagem aérea)/i.test(target))return photos.airplane;
+    if(lang==='it'&&/(?:carta d'imbarco|biglietto aereo)/i.test(target))return photos.airplane;
+    if(lang==='es'&&/(?:tarjeta de embarque|billete de avión|boleto de avión)/i.test(target))return photos.airplane;
+    if(lang==='fr'&&/(?:carte d'embarquement|billet d'avion)/i.test(target))return photos.airplane;
+    if(lang==='de'&&/(?:Bordkarte|Flugticket)/i.test(target))return photos.airplane;
+    if(lang==='ru'&&/(?:посадочный талон|авиабилет)/i.test(target))return photos.airplane;
+    if(/\b(?:medicine|medication|pills?|pharmacy)\b/i.test(target)||/(?:remédio|medicamento|farmácia|medicina|medikament|apotheke|лекарство|аптека)/i.test(target))return photos.medicine;
+    if(/\b(?:weather|cloudy|rain|rainy|storm|forecast)\b/i.test(target)||/(?:previsão do tempo|nublado|chuva|tempo chuvoso|meteo|nuvoloso|pioggia|clima|lluvia|nublado|météo|pluie|nuageux|Wetter|Regen|bewölkt|погода|дождь|облачно)/i.test(target))return photos.weather;
     if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
     if(/\b(?:table|dining table)\b/i.test(target))return photos.table;
     if(/\b(?:baggage claim|baggage carousel|luggage carousel)\b/i.test(target))return photos.baggageCarousel;
