@@ -250,6 +250,18 @@
     if(lang==='pt-BR'&&/(?:atrasado|atrasada)/i.test(target))return photos.clock;
     if(lang==='pt-BR'&&/(?:quando eu era criança)/i.test(target))return photos.family;
     if(lang==='pt-BR'&&/(?:poderia enviar por e-mail)/i.test(target))return photos.phone;
+    if(lang==='pt-BR'&&/(?:acordar|geralmente|durante a semana|na semana passada|antigamente|sempre|quando|de repente|enquanto|primeiro|em seguida|no fim|duas vezes por dia|fim de semana)/i.test(target))return photos.clock;
+    if(lang==='pt-BR'&&/(?:encontrei|convite|gostaria|eu tive um problema|fale mais devagar|você me entende|ela nos chamou|disse que|perguntou se|pediu para|recomendou|segundo ele|pelo que entendi|ela explicou que|como assim|você quer dizer|na verdade|na minha opinião|por um lado|no entanto|beleza|né\?)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:disponibilidade|cancelamento|trocar de quarto|você vai ficar aqui)/i.test(target))return photos.hotelReception;
+    if(lang==='pt-BR'&&/(?:perto de|^onde$|espere aqui)/i.test(target))return photos.directions;
+    if(lang==='pt-BR'&&/(?:a gente viajava|eu vou viajar|tenho viajado|quando você chegar|quando eu for)/i.test(target))return photos.airplane;
+    if(lang==='pt-BR'&&/(?:nós nos preparamos)/i.test(target))return photos.luggage;
+    if(lang==='pt-BR'&&/(?:se divertir)/i.test(target))return photos.beach;
+    if(lang==='pt-BR'&&/(?:eu preferiria)/i.test(target))return photos.meal;
+    if(lang==='pt-BR'&&/(?:sotaque|pronúncia|vocabulário)/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/(?:regional|dependendo da região|no sul)/i.test(target))return photos.city;
+    if(lang==='pt-BR'&&/(?:funcionando)/i.test(target))return photos.house;
+    if(lang==='pt-BR'&&/(?:não se preocupe|num sei)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/(?:onde fica|^aqui$|^ali$|^perto$)/i.test(target))return photos.directions;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
