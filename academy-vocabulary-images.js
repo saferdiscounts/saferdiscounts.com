@@ -101,6 +101,20 @@
     [/(?:rechts|links|abbiegen|Richtung|Karte|Kreuzung|Eingang|Ausgang)/i,'directions'],[/(?:Krankenwagen|Notfall|Polizei|Unfall)/i,'ambulance'],
     [/(?:Kleidung|Kleider|Hemd|Hose|Kleid|Rock|Jacke|Socken|Größe)/i,'clothing'],[/(?:Buch|Bücher|Lesen|Schule|Universität|Bibliothek|lernen)/i,'books']
   ];
+  var russianRules=[
+    [/(?:кофе|эспрессо)/i,'coffee'],[/(?:чай)/i,'tea'],[/(?:вода|воды)/i,'water'],[/(?:сок)/i,'juice'],
+    [/(?:деньги|цена|счёт|счет|платить|оплата|купить|продать|рубль|евро)/i,'money'],[/(?:телефон|мобильный|звонок|сообщение)/i,'phone'],
+    [/(?:хлеб|булка)/i,'bread'],[/(?:яйцо|яйца)/i,'egg'],[/(?:обувь|туфли|ботинки)/i,'shoes'],[/(?:писать|ручка|тетрадь|бумага)/i,'writing'],
+    [/(?:яблоко|яблоки)/i,'apple'],[/(?:дом|квартира|комната|кухня|ванная|отель|дверь|ключ)/i,'house'],
+    [/(?:самолёт|самолет|аэропорт|рейс)/i,'airplane'],[/(?:такси|машина|автомобиль|водитель)/i,'taxi'],[/(?:чемодан|багаж)/i,'luggage'],
+    [/(?:поезд|метро)/i,'train'],[/(?:автобус)/i,'bus'],[/(?:пляж|море|океан|остров|побережье)/i,'beach'],
+    [/(?:еда|пища|завтрак|обед|ужин|ресторан|мясо|блюдо)/i,'meal'],[/(?:город|улица|дорога|район|парк|музей)/i,'city'],
+    [/(?:врач|доктор|медсестра|больница|клиника|аптека|лекарство|боль)/i,'doctor'],[/(?:кошка|кошки|кот|коты)/i,'cat'],[/(?:собака|собаки|щенок)/i,'dog'],
+    [/(?:арахис|орехи)/i,'peanuts'],[/(?:молоко)/i,'milk'],[/(?:лимон|лимоны|лимонад)/i,'lemon'],[/(?:сердце)/i,'heart'],
+    [/(?:семья|мать|мама|отец|папа|родители|сестра|брат)/i,'family'],[/(?:часы|час|минута|минуты|время)/i,'clock'],
+    [/(?:направо|налево|повернуть|направление|карта|перекрёсток|перекресток|вход|выход)/i,'directions'],[/(?:скорая|чрезвычайная ситуация|полиция|авария)/i,'ambulance'],
+    [/(?:одежда|рубашка|брюки|платье|юбка|куртка|носки|размер)/i,'clothing'],[/(?:книга|книги|чтение|школа|университет|библиотека|учиться)/i,'books']
+  ];
   function find(meaning,word,lang){
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
@@ -109,19 +123,20 @@
     if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(spanishRules[q][0].test(target))return photos[spanishRules[q][1]];
     if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
     if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
+    if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
     var englishRules=[
-      [/\\b(?:coffee|espresso|latte)\\b/i,'coffee'],[/\\btea\\b/i,'tea'],[/\\b(?:water|drink)\\b/i,'water'],[/\\b(?:juice|orange juice)\\b/i,'juice'],
-      [/\\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\\b/i,'money'],[/\\b(?:phone|mobile|telephone|call|message)\\b/i,'phone'],
-      [/\\b(?:bread|loaf|toast)\\b/i,'bread'],[/\\beggs?\\b/i,'egg'],[/\\b(?:shoe|shoes|sneaker|sneakers)\\b/i,'shoes'],[/\\b(?:write|writing|pen|notebook|paper)\\b/i,'writing'],
-      [/\\bapples?\\b/i,'apple'],[/\\b(?:house|home|room|bedroom|kitchen|bathroom|hotel|apartment|door|key)\\b/i,'house'],
-      [/\\b(?:airplane|aircraft|plane|airport|flight)\\b/i,'airplane'],[/\\b(?:taxi|cab|uber|car|driver)\\b/i,'taxi'],[/\\b(?:luggage|suitcase|baggage)\\b/i,'luggage'],
-      [/\\b(?:train|metro|subway)\\b/i,'train'],[/\\b(?:bus|coach)\\b/i,'bus'],[/\\b(?:beach|sea|ocean|island|coast)\\b/i,'beach'],
-      [/\\b(?:food|meal|breakfast|lunch|dinner|restaurant|meat|dish)\\b/i,'meal'],[/\\b(?:city|street|road|neighborhood|park|museum)\\b/i,'city'],
-      [/\\b(?:doctor|nurse|hospital|clinic|pharmacy|medicine|pain|headache)\\b/i,'doctor'],[/\\bcats?\\b/i,'cat'],[/\\b(?:dogs?|puppies)\\b/i,'dog'],
-      [/\\b(?:peanuts?|nuts)\\b/i,'peanuts'],[/\\b(?:milk)\\b/i,'milk'],[/\\b(?:lemon|lemons|lemonade)\\b/i,'lemon'],[/\\bheart\\b/i,'heart'],
-      [/\\b(?:family|mother|father|parents|sister|brother)\\b/i,'family'],[/\\b(?:clock|time|watch|minute|minutes)\\b/i,'clock'],
-      [/\\b(?:right|left|turn|direction|map|intersection|entrance|exit)\\b/i,'directions'],[/\\b(?:ambulance|emergency|police|accident)\\b/i,'ambulance'],
-      [/\\b(?:clothes|clothing|shirt|trousers|pants|dress|skirt|jacket|socks|size)\\b/i,'clothing'],[/\\b(?:book|books|reading|school|university|library|study)\\b/i,'books']
+      [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
+      [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
+      [/\b(?:bread|loaf|toast)\b/i,'bread'],[/\beggs?\b/i,'egg'],[/\b(?:shoe|shoes|sneaker|sneakers)\b/i,'shoes'],[/\b(?:write|writing|pen|notebook|paper)\b/i,'writing'],
+      [/\bapples?\b/i,'apple'],[/\b(?:house|home|room|bedroom|kitchen|bathroom|hotel|apartment|door|key)\b/i,'house'],
+      [/\b(?:airplane|aircraft|plane|airport|flight)\b/i,'airplane'],[/\b(?:taxi|cab|uber|car|driver)\b/i,'taxi'],[/\b(?:luggage|suitcase|baggage)\b/i,'luggage'],
+      [/\b(?:train|metro|subway)\b/i,'train'],[/\b(?:bus|coach)\b/i,'bus'],[/\b(?:beach|sea|ocean|island|coast)\b/i,'beach'],
+      [/\b(?:food|meal|breakfast|lunch|dinner|restaurant|meat|dish)\b/i,'meal'],[/\b(?:city|street|road|neighborhood|park|museum)\b/i,'city'],
+      [/\b(?:doctor|nurse|hospital|clinic|pharmacy|medicine|pain|headache)\b/i,'doctor'],[/\bcats?\b/i,'cat'],[/\b(?:dogs?|puppies)\b/i,'dog'],
+      [/\b(?:peanuts?|nuts)\b/i,'peanuts'],[/\b(?:milk)\b/i,'milk'],[/\b(?:lemon|lemons|lemonade)\b/i,'lemon'],[/\bheart\b/i,'heart'],
+      [/\b(?:family|mother|father|parents|sister|brother)\b/i,'family'],[/\b(?:clock|time|watch|minute|minutes)\b/i,'clock'],
+      [/\b(?:right|left|turn|direction|map|intersection|entrance|exit)\b/i,'directions'],[/\b(?:ambulance|emergency|police|accident)\b/i,'ambulance'],
+      [/\b(?:clothes|clothing|shirt|trousers|pants|dress|skirt|jacket|socks|size)\b/i,'clothing'],[/\b(?:book|books|reading|school|university|library|study)\b/i,'books']
     ];
     for(var j=0;j<englishRules.length;j++)if(englishRules[j][0].test(target))return photos[englishRules[j][1]];
     return null;
