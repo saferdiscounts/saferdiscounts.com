@@ -46,24 +46,39 @@
   ];
   function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   var italianRules=[
-    [/\(?:caffè|espresso|latte macchiato)\/i,'coffee'],[/\(?:tè|the)\/i,'tea'],[/\(?:acqua)\/i,'water'],[/\(?:succo|aranciata)\/i,'juice'],
-    [/\(?:soldi|denaro|prezzo|conto|pagare|pagamento|comprare|vendere)\/i,'money'],[/\(?:telefono|cellulare|chiamata|messaggio)\/i,'phone'],
-    [/\(?:pane|panino)\/i,'bread'],[/\(?:uovo|uova)\/i,'egg'],[/\(?:scarpa|scarpe|scarpe da ginnastica)\/i,'shoes'],[/\(?:penna|scrivere|quaderno|carta)\/i,'writing'],
-    [/\(?:mela|mele)\/i,'apple'],[/\(?:casa|appartamento|camera|stanza|cucina|bagno|albergo|hotel|porta|chiave)\/i,'house'],
-    [/\(?:aereo|aeroplano|aeroporto|volo)\/i,'airplane'],[/\(?:taxi|auto|macchina|automobile|autista)\/i,'taxi'],[/\(?:valigia|bagaglio|bagagli)\/i,'luggage'],
-    [/\(?:treno|metro|metropolitana)\/i,'train'],[/\(?:autobus|bus)\/i,'bus'],[/\(?:spiaggia|mare|oceano|isola|costa)\/i,'beach'],
-    [/\(?:cibo|pasto|colazione|pranzo|cena|ristorante|carne|piatto)\/i,'meal'],[/\(?:città|strada|via|quartiere|parco|museo)\/i,'city'],
-    [/\(?:medico|dottore|infermiera|ospedale|clinica|farmacia|medicina|dolore|mal di testa)\/i,'doctor'],[/\(?:gatto|gatti)\/i,'cat'],[/\(?:cane|cani|cucciolo)\/i,'dog'],
-    [/\(?:arachidi|noccioline)\/i,'peanuts'],[/\(?:latte)\/i,'milk'],[/\(?:limone|limoni|limonata)\/i,'lemon'],[/\(?:cuore)\/i,'heart'],
-    [/\(?:famiglia|madre|mamma|padre|papà|genitori|sorella|fratello)\/i,'family'],[/\(?:orologio|ora|minuto|minuti)\/i,'clock'],
-    [/\(?:destra|sinistra|svoltare|direzione|mappa|incrocio|ingresso|uscita)\/i,'directions'],[/\(?:ambulanza|emergenza|polizia|incidente)\/i,'ambulance'],
-    [/\(?:vestiti|abbigliamento|camicia|pantaloni|vestito|gonna|giacca|calzini|taglia)\/i,'clothing'],[/\(?:libro|libri|lettura|scuola|università|biblioteca|studiare)\/i,'books']
+    [/(?:caffè|espresso|latte macchiato)/i,'coffee'],[/(?:tè|the)/i,'tea'],[/(?:acqua)/i,'water'],[/(?:succo|aranciata)/i,'juice'],
+    [/(?:soldi|denaro|prezzo|conto|pagare|pagamento|comprare|vendere)/i,'money'],[/(?:telefono|cellulare|chiamata|messaggio)/i,'phone'],
+    [/(?:pane|panino)/i,'bread'],[/(?:uovo|uova)/i,'egg'],[/(?:scarpa|scarpe)/i,'shoes'],[/(?:penna|scrivere|quaderno|carta)/i,'writing'],
+    [/(?:mela|mele)/i,'apple'],[/(?:casa|appartamento|camera|stanza|cucina|bagno|albergo|hotel|porta|chiave)/i,'house'],
+    [/(?:aereo|aeroplano|aeroporto|volo)/i,'airplane'],[/(?:taxi|auto|macchina|automobile|autista)/i,'taxi'],[/(?:valigia|bagaglio|bagagli)/i,'luggage'],
+    [/(?:treno|metro|metropolitana)/i,'train'],[/(?:autobus|bus)/i,'bus'],[/(?:spiaggia|mare|oceano|isola|costa)/i,'beach'],
+    [/(?:cibo|pasto|colazione|pranzo|cena|ristorante|carne|piatto)/i,'meal'],[/(?:città|strada|via|quartiere|parco|museo)/i,'city'],
+    [/(?:medico|dottore|infermiera|ospedale|clinica|farmacia|medicina|dolore)/i,'doctor'],[/(?:gatto|gatti)/i,'cat'],[/(?:cane|cani|cucciolo)/i,'dog'],
+    [/(?:arachidi|noccioline)/i,'peanuts'],[/(?:latte)/i,'milk'],[/(?:limone|limoni|limonata)/i,'lemon'],[/(?:cuore)/i,'heart'],
+    [/(?:famiglia|madre|mamma|padre|papà|genitori|sorella|fratello)/i,'family'],[/(?:orologio|ora|minuto|minuti)/i,'clock'],
+    [/(?:destra|sinistra|svoltare|direzione|mappa|incrocio|ingresso|uscita)/i,'directions'],[/(?:ambulanza|emergenza|polizia|incidente)/i,'ambulance'],
+    [/(?:vestiti|abbigliamento|camicia|pantaloni|vestito|gonna|giacca|calzini|taglia)/i,'clothing'],[/(?:libro|libri|lettura|scuola|università|biblioteca|studiare)/i,'books']
+  ];
+  var spanishRules=[
+    [/(?:café|cafetería)/i,'coffee'],[/(?:té)/i,'tea'],[/(?:agua)/i,'water'],[/(?:zumo|jugo)/i,'juice'],
+    [/(?:dinero|efectivo|precio|cuenta|pagar|pago|comprar|vender|euros?)/i,'money'],[/(?:teléfono|móvil|celular|llamada|mensaje)/i,'phone'],
+    [/(?:pan|bocadillo)/i,'bread'],[/(?:huevo|huevos)/i,'egg'],[/(?:zapato|zapatos|zapatillas)/i,'shoes'],[/(?:escribir|bolígrafo|cuaderno|papel)/i,'writing'],
+    [/(?:manzana|manzanas)/i,'apple'],[/(?:casa|hogar|habitación|cuarto|cocina|baño|hotel|puerta|llave)/i,'house'],
+    [/(?:avión|aeropuerto|vuelo)/i,'airplane'],[/(?:taxi|coche|carro|conductor)/i,'taxi'],[/(?:maleta|equipaje)/i,'luggage'],
+    [/(?:tren|metro|metropolitano)/i,'train'],[/(?:autobús|bus)/i,'bus'],[/(?:playa|mar|océano|isla|costa)/i,'beach'],
+    [/(?:comida|almuerzo|desayuno|cena|restaurante|carne|plato)/i,'meal'],[/(?:ciudad|calle|carretera|barrio|parque|museo)/i,'city'],
+    [/(?:médico|doctor|enfermera|hospital|clínica|farmacia|medicina|dolor)/i,'doctor'],[/(?:gato|gata|gatos)/i,'cat'],[/(?:perro|perra|perros|cachorro)/i,'dog'],
+    [/(?:cacahuetes|maní|cacahuate|frutos secos)/i,'peanuts'],[/(?:leche)/i,'milk'],[/(?:limón|limones|limonada)/i,'lemon'],[/(?:corazón)/i,'heart'],
+    [/(?:familia|madre|mamá|padre|papá|padres|hermana|hermano)/i,'family'],[/(?:reloj|hora|minuto|minutos)/i,'clock'],
+    [/(?:derecha|izquierda|girar|dirección|mapa|cruce|entrada|salida)/i,'directions'],[/(?:ambulancia|emergencia|policía|accidente)/i,'ambulance'],
+    [/(?:ropa|camisa|pantalones|vestido|falda|chaqueta|calcetines|talla)/i,'clothing'],[/(?:libro|libros|lectura|escuela|universidad|biblioteca|estudiar)/i,'books']
   ];
   function find(meaning,word,lang){
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     var target=String(word||'');
     if(lang==='it')for(var k=0;k<italianRules.length;k++)if(italianRules[k][0].test(target))return photos[italianRules[k][1]];
+    if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(spanishRules[q][0].test(target))return photos[spanishRules[q][1]];
     var englishRules=[
       [/\\b(?:coffee|espresso|latte)\\b/i,'coffee'],[/\\btea\\b/i,'tea'],[/\\b(?:water|drink)\\b/i,'water'],[/\\b(?:juice|orange juice)\\b/i,'juice'],
       [/\\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\\b/i,'money'],[/\\b(?:phone|mobile|telephone|call|message)\\b/i,'phone'],
