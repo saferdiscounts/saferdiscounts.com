@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="أكاديمية اللغة الروسية للناطقين بالعربية: منهج متدرج A1 إلى B1، نطق روسي، مفردات، قواعد، كتابة واختبارات.">
+<title>أكاديمية الروسية | Safer Discounts</title>
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#68738a;--line:#e4e9f1;--brand:#3156a6;--soft:#edf2ff;--good:#18794e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.75}
+header{background:linear-gradient(125deg,#172b58,#3156a6);color:#fff;padding:32px 18px 28px} .wrap{max-width:1100px;margin:auto;padding:0 16px}
+header h1{margin:0 0 8px;font-size:clamp(25px,4vw,38px)}header p{margin:0;color:#e2eaff}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{background:#ffffff1c;border:1px solid #ffffff33;padding:8px 13px;border-radius:12px;font-size:14px}
+main{padding:24px 0 50px}.intro,.lesson-panel,.lesson-list,.progress{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:16px;box-shadow:0 5px 20px #1b2b4a08}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.toolbar input,.toolbar select{border:1px solid var(--line);border-radius:11px;padding:11px;background:white;font:inherit;min-width:180px;flex:1}
+.levels{display:flex;gap:8px;flex-wrap:wrap}.level-btn,button{font:inherit;cursor:pointer;border:1px solid var(--line);background:white;color:var(--ink);border-radius:10px;padding:9px 13px}.level-btn.active,button.primary{background:var(--brand);border-color:var(--brand);color:white}
+.layout{display:grid;grid-template-columns:minmax(240px, .85fr) minmax(0,1.5fr);gap:16px}.lesson-list{max-height:760px;overflow:auto}.lesson-item{display:block;width:100%;text-align:right;margin:5px 0;border:0;border-radius:10px;padding:10px 12px;background:transparent}.lesson-item:hover,.lesson-item.active{background:var(--soft);color:var(--brand)}.lesson-item small{color:var(--muted);display:block}
+.lesson-panel h2{margin:0 0 5px}.eyebrow{color:var(--brand);font-weight:bold;font-size:13px}.muted{color:var(--muted)}.words{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px;margin:14px 0}.word{border:1px solid var(--line);border-radius:12px;padding:11px;background:#fff;text-align:right}.word strong{display:block;direction:ltr;text-align:left;font-size:19px}.word span{display:block;color:var(--muted);font-size:13px}.word button{margin-top:7px;padding:5px 9px;font-size:13px}
+.section{border-top:1px solid var(--line);padding-top:13px;margin-top:15px}.section h3{font-size:17px;margin:0 0 6px}.callout{background:#f2f5fb;border-radius:12px;padding:12px}.writing textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;direction:auto}.feedback{margin-top:8px;color:var(--good);font-weight:bold}
+.progressbar{height:9px;background:#edf0f5;border-radius:9px;overflow:hidden}.progressbar span{display:block;height:100%;background:var(--brand);width:0}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.quiz-options{display:grid;gap:8px}.quiz-options button{text-align:right}.quiz-options button.chosen{border-color:var(--brand);background:var(--soft)}
+footer{text-align:center;color:var(--muted);padding:22px}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.lesson-list{max-height:310px}.lesson-panel{padding:14px}}
+</style></head>
+<body>
+<header><div class="wrap"><h1>🇷🇺 أكاديمية اللغة الروسية</h1><p>من الصفر إلى التواصل بثقة — مسار تعليمي مصمم للناطقين بالعربية</p><div class="stats"><span class="stat">36 درسًا متدرجًا</span><span class="stat">A1 · A2 · B1</span><span class="stat">نطق روسي قابل للإبطاء</span><span class="stat">كتابة واختبارات وتقدم محفوظ</span></div></div></header>
+<main class="wrap">
+<section class="intro"><h2>ابدأ من الأساس وابنِ لغتك خطوة بخطوة</h2><p>ستتعلم الأبجدية السيريلية وطريقة نطق الحروف، ثم تكوّن الجمل وتستخدم اللغة في مواقف الحياة اليومية والعمل والسفر. اضغط زر الاستماع لسماع النطق الروسي، ويمكنك إبطاء السرعة.</p><div class="toolbar"><label>سرعة النطق <select id="speed"><option value=".65">بطيء جدًا 0.65×</option><option value=".75" selected>بطيء 0.75×</option><option value=".9">طبيعي هادئ 0.9×</option><option value="1">طبيعي 1×</option></select></label><label>البحث <input id="search" placeholder="ابحث في عناوين الدروس..."></label></div><div class="levels" id="levelFilters"><button class="level-btn active" data-level="all">كل المستويات</button><button class="level-btn" data-level="A1">A1 تأسيس</button><button class="level-btn" data-level="A2">A2 ما قبل المتوسط</button><button class="level-btn" data-level="B1">B1 متوسط</button></div></section>
+<section class="progress"><div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><strong>تقدمك في الأكاديمية</strong><span id="progressText" class="muted">0 من 36 درسًا مكتملًا</span></div><div class="progressbar" style="margin-top:10px"><span id="progressFill"></span></div></section>
+<div class="layout"><aside class="lesson-list"><h3>محتوى المنهج</h3><div id="lessonList"></div></aside><article class="lesson-panel" id="lessonPanel" aria-live="polite"><p class="muted">اختر درسًا من القائمة لبدء التعلم.</p></article></div>
+</main><footer>Safer Discounts · أكاديمية اللغات للناطقين بالعربية</footer>
+<script>
+const lessons=[{"level":"A1","title":"الحروف والأصوات الروسية","unit":1},{"level":"A1","title":"الأبجدية السيريلية","unit":2},{"level":"A1","title":"الحروف المتحركة","unit":3},{"level":"A1","title":"الحروف الساكنة","unit":4},{"level":"A1","title":"النطق والتشديد","unit":5},{"level":"A1","title":"التحيات والتعارف","unit":6},{"level":"A1","title":"الضمائر الشخصية","unit":7},{"level":"A1","title":"فعل يكون في الحاضر","unit":8},{"level":"A1","title":"الأسماء والجنس","unit":9},{"level":"A1","title":"أنا وأنت والعائلة","unit":10},{"level":"A1","title":"الأرقام والعمر","unit":11},{"level":"A1","title":"الوقت والأيام","unit":12},{"level":"A2","title":"الأسرة والوصف","unit":13},{"level":"A2","title":"البيت والغرف","unit":14},{"level":"A2","title":"الطعام والشراب","unit":15},{"level":"A2","title":"في المقهى والمطعم","unit":16},{"level":"A2","title":"التسوق والأسعار","unit":17},{"level":"A2","title":"الاتجاهات والمواصلات","unit":18},{"level":"A2","title":"المدينة والأماكن","unit":19},{"level":"A2","title":"الروتين اليومي","unit":20},{"level":"A2","title":"الهوايات ووقت الفراغ","unit":21},{"level":"A2","title":"الطقس والفصول","unit":22},{"level":"A2","title":"الماضي القريب","unit":23},{"level":"A2","title":"المستقبل والخطط","unit":24},{"level":"B1","title":"الحياة والعمل","unit":25},{"level":"B1","title":"الدراسة والتعلم","unit":26},{"level":"B1","title":"السكن والخدمات","unit":27},{"level":"B1","title":"الصحة والطبيب","unit":28},{"level":"B1","title":"السفر والإقامة","unit":29},{"level":"B1","title":"المواقف والمشكلات","unit":30},{"level":"B1","title":"التواصل عبر الهاتف","unit":31},{"level":"B1","title":"العمل والمقابلات","unit":32},{"level":"B1","title":"إبداء الرأي والمقارنة","unit":33},{"level":"B1","title":"القصص والتجارب","unit":34},{"level":"B1","title":"الحالات الإعرابية عمليًا","unit":35},{"level":"B1","title":"الأفعال والحركة والإنجاز","unit":36}];
+const vocab=[
+[["Привет","بريفيت","أهلًا"],["Здравствуйте","زدرَاستفويتي","مرحبًا (رسمي)"],["Спасибо","سباسيبا","شكرًا"],["Пожалуйста","باجالُستا","من فضلك / العفو"]],
+[["Меня зовут…","مينيا زافوت","اسمي…"],["Как дела?","كاك ديلا؟","كيف الحال؟"],["Хорошо","خَراشو","جيد"],["До свидания","دا سفيدانيا","إلى اللقاء"]],
+[["Я","يا","أنا"],["Ты","تي","أنت (غير رسمي)"],["Он / Она","أون / أنا","هو / هي"],["Мы","مي","نحن"]],
+[["Один","أدين","واحد"],["Два","دفا","اثنان"],["Три","تري","ثلاثة"],["Сегодня","سيفودنيا","اليوم"]],
+[["Дом","دوم","منزل"],["Вода","فادا","ماء"],["Хлеб","خليب","خبز"],["Город","جورَد","مدينة"]],
+[["Где?","جدي؟","أين؟"],["Сколько?","سكولكا؟","كم؟"],["Когда?","كاجدا؟","متى؟"],["Почему?","باشيمو؟","لماذا؟"]],
+[["Я хочу…","يا خاشو","أريد…"],["Мне нужно…","مني نوجنا","أحتاج إلى…"],["Можно?","موجنا؟","هل يمكن؟"],["Нельзя","نيلزيا","ممنوع / لا يمكن"]],
+[["Работа","رابوتا","عمل"],["Учёба","أوتشيوبا","دراسة"],["Время","فريميا","وقت"],["Деньги","دينجي","مال"]]
+];
+const grammar=[
+"تعرف على شكل الحروف السيريلية وأصواتها. بعض الحروف تشبه اللاتينية في الشكل لكنها تختلف في الصوت؛ مثل В = ڤ وН = ن وР = ر.",
+"لاحظ موضع التشديد؛ فهو مهم جدًا في الروسية وقد يغيّر نطق حروف العلة غير المشددة. كرر الكلمة كاملة ولا تعتمد على شكل الحرف وحده.",
+"الضمائر الأساسية: я (أنا)، ты (أنت غير رسمي)، вы (أنتم أو حضرتك)، он (هو)، она (هي)، мы (نحن)، они (هم).",
+"في الحاضر غالبًا لا نستخدم فعل «يكون» بصيغة مستقلة في الجملة الاسمية: Я студент = أنا طالب. يتغير معنى الجملة حسب السياق.",
+"الأسماء الروسية لها ثلاثة أجناس: مذكر ومؤنث ومحايد. النهايات تساعدك على التخمين لكنها ليست قاعدة بلا استثناء.",
+"ترتيب الكلمات مرن نسبيًا، لكن ابدأ غالبًا بالفاعل ثم الفعل ثم المفعول. استخدم السؤال المناسب: Кто؟ من، Что؟ ماذا، Где؟ أين.",
+"الفعل يتغير حسب الشخص والعدد. احفظ الفعل مع مثال كامل، ولا تحفظ المصدر وحده.",
+"في الروسية ستقابل ست حالات إعرابية. ابدأ بفهم وظيفة الكلمة في الجملة قبل حفظ النهايات، فكل حالة تجيب عن علاقة مختلفة."
+];
+const examples=[
+["Я учу русский язык.","أنا أتعلم اللغة الروسية."],
+["Меня зовут Анна.","اسمي آنا."],
+["Я живу в городе.","أنا أعيش في المدينة."],
+["У меня есть время.","لدي وقت."],
+["Я хочу пить воду.","أريد أن أشرب الماء."],
+["Где находится метро?","أين تقع محطة المترو؟"],
+["Мне нравится музыка.","الموسيقى تعجبني."],
+["Вчера я работал.","عملتُ أمس."]
+];
+const completed=new Set(JSON.parse(localStorage.getItem("sd_ru_done")||"[]"));
+let current=0,filter="all",quizChoice=null;
+function speak(t){if(!("speechSynthesis"in window)){alert("ميزة النطق غير مدعومة في هذا المتصفح.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="ru-RU";u.rate=Number(document.getElementById("speed").value);speechSynthesis.speak(u)}
+function renderList(){const q=document.getElementById("search").value.trim().toLowerCase();document.getElementById("lessonList").innerHTML=lessons.filter(x=>(filter==="all"||x.level===filter)&&x.title.toLowerCase().includes(q)).map(x=>'<button class="lesson-item '+(x.unit-1===current?'active':'')+'" data-unit="'+(x.unit-1)+'"><b>'+(completed.has(x.unit)?'✓ ':'')+x.unit+'. '+x.title+'</b><small>'+x.level+' · '+(x.level==="A1"?"تأسيس":x.level==="A2"?"مواقف يومية":"تواصل مستقل")+'</small></button>').join("");document.querySelectorAll(".lesson-item").forEach(b=>b.addEventListener("click",()=>{current=Number(b.dataset.unit);renderList();renderLesson()}))}
+function updateProgress(){document.getElementById("progressText").textContent=completed.size+" من 36 درسًا مكتملًا";document.getElementById("progressFill").style.width=(completed.size/36*100)+"%"}
+function renderLesson(){const l=lessons[current],set=vocab[Math.floor(current/5)%vocab.length],g=grammar[Math.floor(current/5)%grammar.length],ex=examples[current%examples.length];quizChoice=null;
+document.getElementById("lessonPanel").innerHTML='<div class="eyebrow">الوحدة '+l.unit+' · المستوى '+l.level+'</div><h2>'+l.title+'</h2><p class="muted">هدف الدرس: فهم المفردات والتعبيرات المرتبطة بالموضوع واستخدامها في جملة روسية بسيطة.</p><div class="section"><h3>🎧 مفردات ونطق</h3><p class="muted">اضغط «استمع» لسماع الكلمة أو العبارة بالروسية.</p><div class="words">'+set.map(w=>'<div class="word"><strong>'+w[0]+'</strong><span>'+w[1]+' · '+w[2]+'</span><button data-say="'+w[0]+'">استمع 🔊</button></div>').join("")+'</div></div><div class="section"><h3>📘 قاعدة لغوية</h3><div class="callout">'+g+'</div><p><b>مثال:</b> <span dir="ltr">'+ex[0]+'</span> — '+ex[1]+' <button data-say="'+ex[0]+'">استمع للمثال 🔊</button></p></div><div class="section"><h3>✍️ تدريب كتابة</h3><p>اكتب 2–3 جمل روسية عن: <b>'+l.title+'</b>. حاول استخدام كلمتين من مفردات الدرس، ثم قارن كتابتك بالمثال.</p><div class="writing"><textarea id="writingAnswer" placeholder="اكتب جملك هنا باللغة الروسية..."></textarea><p class="muted">نموذج للتدريب: <span dir="ltr">'+ex[0]+'</span> — '+ex[1]+'</p><button id="checkWriting">حفظ مسودة الكتابة</button><span id="writingFeedback" class="feedback"></span></div></div><div class="section"><h3>🧠 اختبار سريع</h3><p>ما معنى العبارة الروسية: <b dir="ltr">'+set[0][0]+'</b>؟</p><div class="quiz-options">'+[set[0][2],set[1][2],set[2][2]].map((a,i)=>'<button data-answer="'+i+'">'+a+'</button>').join("")+'</div><p id="quizFeedback" class="feedback"></p></div><div class="actions"><button class="primary" id="markDone">'+(completed.has(l.unit)?"إلغاء إكمال الدرس":"علّم الدرس كمكتمل ✓")+'</button><button id="prevLesson" '+(current===0?"disabled":"")+'>السابق</button><button id="nextLesson" '+(current===35?"disabled":"")+'>التالي</button></div>';
+document.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",()=>speak(b.dataset.say)));
+document.querySelectorAll("[data-answer]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-answer]").forEach(x=>x.classList.remove("chosen"));b.classList.add("chosen");document.getElementById("quizFeedback").textContent=Number(b.dataset.answer)===0?"إجابة صحيحة! أحسنت.":"حاول مرة أخرى؛ راجع معنى الكلمات ثم أعد المحاولة."}));
+document.getElementById("checkWriting").onclick=()=>{const v=document.getElementById("writingAnswer").value;localStorage.setItem("sd_ru_writing_"+l.unit,v);document.getElementById("writingFeedback").textContent=v.trim()?"تم حفظ مسودتك على هذا الجهاز.":"اكتب جملة أولًا ثم احفظها."};
+document.getElementById("writingAnswer").value=localStorage.getItem("sd_ru_writing_"+l.unit)||"";
+document.getElementById("markDone").onclick=()=>{completed.has(l.unit)?completed.delete(l.unit):completed.add(l.unit);localStorage.setItem("sd_ru_done",JSON.stringify([...completed]));renderList();renderLesson();updateProgress()};
+document.getElementById("prevLesson").onclick=()=>{current--;renderList();renderLesson()};document.getElementById("nextLesson").onclick=()=>{current++;renderList();renderLesson()};
+}
+document.querySelectorAll(".level-btn").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.level;document.querySelectorAll(".level-btn").forEach(x=>x.classList.toggle("active",x===b));renderList()}));
+document.getElementById("search").addEventListener("input",renderList);
+renderList();renderLesson();updateProgress();
+</script></body></html>
