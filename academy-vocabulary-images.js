@@ -232,6 +232,17 @@
     if(lang==='pt-BR'&&/(?:qual é o motivo da sua viagem|turismo|quanto tempo vai ficar)/i.test(target))return photos.passport;
     if(lang==='pt-BR'&&/(?:passagem de volta)/i.test(target))return photos.airplane;
     if(lang==='pt-BR'&&/(?:pode me levar|pode parar aqui|eu comprei uma passagem)/i.test(target))return photos.taxi;
+    if(lang==='pt-BR'&&/(?:passeio|eu visitei o rio|movimentado)/i.test(target))return photos.city;
+    if(lang==='pt-BR'&&/(?:viajar|viajava|vou viajar|viagem)/i.test(target))return photos.airplane;
+    if(lang==='pt-BR'&&/(?:todos os verões|verão|praia)/i.test(target))return photos.beach;
+    if(lang==='pt-BR'&&/(?:na próxima semana|mais tarde|cedo|fim de semana)/i.test(target))return photos.clock;
+    if(lang==='pt-BR'&&/(?:trocar|troca)/i.test(target))return photos.clothing;
+    if(lang==='pt-BR'&&/(?:o mais barato|barato)/i.test(target))return photos.money;
+    if(lang==='pt-BR'&&/(?:poderia repetir|poderia me ajudar|teria como|seria possível|sem problema|que tal|trabalhar em equipe|reformular)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:você deve descansar|eu me sinto bem)/i.test(target))return photos.doctor;
+    if(lang==='pt-BR'&&/(?:se acordar|eu me levanto cedo)/i.test(target))return photos.clock;
+    if(lang==='pt-BR'&&/(?:ar-condicionado)/i.test(target))return photos.house;
+    if(lang==='pt-BR'&&/(?:confortável)/i.test(target))return photos.hotelReception;
     if(lang==='pt-BR'&&/(?:atrasado|atrasada)/i.test(target))return photos.clock;
     if(lang==='pt-BR'&&/(?:quando eu era criança)/i.test(target))return photos.family;
     if(lang==='pt-BR'&&/(?:poderia enviar por e-mail)/i.test(target))return photos.phone;
