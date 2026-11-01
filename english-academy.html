@@ -48,7 +48,41 @@ function progress(){document.getElementById('progressText').textContent=done.len
 function groupFor(i){return groups.find(g=>i>=g.start&&i<=g.end)||groups[0]}
 function renderList(){const q=document.getElementById('search').value.trim().toLowerCase();let html='';groups.forEach(g=>{const indexes=chapters.map((x,i)=>i).filter(i=>i>=g.start&&i<=g.end&&chapters[i].title.toLowerCase().includes(q));if(!indexes.length)return;html+='<div class="group-label">'+g.name+'</div>'+indexes.map(i=>'<button type="button" class="lesson-pick '+(current===i?'active ':'')+(done.includes(i)?'done':'')+'" data-index="'+i+'"><span class="check">'+(done.includes(i)?'✓':'')+'</span><span>'+ (i+1)+'. '+escapeHtml(chapters[i].title)+'</span></button>').join('')});document.getElementById('lessonList').innerHTML=html||'<div class="empty">لا توجد دروس مطابقة.</div>';document.querySelectorAll('[data-index]').forEach(b=>b.addEventListener('click',()=>render(Number(b.dataset.index))))}
 function visualForMeaning(value){const s=String(value||'');const rules=[[/بيت|منزل|سكن|غرفة|باب|مفتاح/,'🏠'],[/قطة/,'🐈'],[/كلب/,'🐕'],[/ماء|ميه|مياه|عطش/,'💧'],[/قهوة/,'☕'],[/شاي/,'🍵'],[/طعام|أكل|وجبة|مطعم|غداء|عشاء/,'🍽️'],[/خبز/,'🍞'],[/تفاح|فاكهة|موز/,'🍎'],[/سيارة|عربية|تاكسي/,'🚗'],[/حافلة|أتوبيس/,'🚌'],[/قطار/,'🚆'],[/طائرة|طيران|مطار|رحلة/,'✈️'],[/فندق/,'🏨'],[/شارع|طريق/,'🛣️'],[/مدينة/,'🏙️'],[/مدرسة/,'🏫'],[/جامعة|تعليم|دراسة/,'🎓'],[/كتاب|قراءة/,'📚'],[/قلم|كتابة/,'✏️'],[/عمل|وظيفة|مكتب/,'💼'],[/طبيب|دكتور|صحة|مرض/,'🩺'],[/صيدلية|دواء|حبوب/,'💊'],[/مستشفى/,'🏥'],[/أسرة|عائلة|أم|أب|أخ|أخت/,'👨‍👩‍👧'],[/صديق|صداقة/,'🤝'],[/حب/,'❤️'],[/سعيد|فرح|سعادة/,'😊'],[/حزين/,'😢'],[/وقت|ساعة|موعد/,'🕒'],[/يوم|صباح/,'🌞'],[/ليل|مساء/,'🌙'],[/شمس/,'☀️'],[/مطر|طقس|جو/,'🌦️'],[/بحر|محيط/,'🌊'],[/شاطئ/,'🏖️'],[/شجرة|حديقة|نبات/,'🌳'],[/مال|نقود|سعر|شراء|بيع/,'💰'],[/هاتف|تليفون|اتصال/,'📱'],[/حاسوب|كمبيوتر/,'💻'],[/موسيقى|أغنية/,'🎵'],[/رياضة|كرة/,'⚽'],[/ملابس|قميص|حذاء|جزمة/,'👕']];const hit=rules.find(([re])=>re.test(s));const emoji=hit?hit[1]:'🖼️';const code=Array.from(emoji).map(ch=>ch.codePointAt(0).toString(16)).join('-');return '<img class="word-picture" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+code+'.svg" alt="صورة توضيحية: '+s.replace(/[<>&"]/g,'')+'" loading="lazy" decoding="async">'}
-function renderTable(b){return '<table><thead><tr>'+b.headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+b.rows.map(row=>'<tr>'+row.map((cell,i)=>{if(i===2&&row[0]){var raw=String(cell.t||''),word=raw.split(' (')[0];return '<td>'+SDAcademyImages.card(word,row[0].t,'en')+(raw!==word?'<small>'+escapeHtml(raw.slice(word.length))+'</small>':'')+'</td>'}return '<td>'+(cell.b?'<span class="phrase-it" lang="en">'+cell.t+' <button type="button" class="speak" data-say="'+escapeHtml(cell.t)+'">🔊</button></span>':cell.t)+'</td>'}).join('')+'</tr>').join('')+'</tbody></table>'}
+function renderTable(b){
+ const headers=b.headers||[];
+ function photoColumn(i,row){
+  const h=String(headers[i]||'').trim();
+  let meaningIndex=-1;
+  if(headers.length===4&&headers[1]==='إنجليزي'&&headers[3]==='إنجليزي'){
+   if(i===1)meaningIndex=0;
+   if(i===3)meaningIndex=2;
+  }else if((h==='الكلمة'||h==='الإنجليزي'||h==='إنجليزي'||h==='التعبير')&&i>0){
+   meaningIndex=0;
+  }else if((h==='إنجليزي'||h==='الإنجليزي')&&i===1){
+   meaningIndex=0;
+  }else if((h==='Phrasal verb')&&i===0){
+   meaningIndex=1;
+  }else if((h==='العبارة'||h==='التعبير')&&i===0&&(headers[1]==='المعنى')){
+   meaningIndex=1;
+  }else if(h==='مثال'&&i===1&&headers[0]==='الاستخدام'&&headers[2]==='الترجمة'){
+   meaningIndex=2;
+  }else if(h==='الفعل الشرطي'&&i===0&&headers[1]==='المعنى'){
+   meaningIndex=1;
+  }else if(h==='الفعل'&&i===3&&headers[0]==='المعنى'){
+   meaningIndex=0;
+  }
+  if(meaningIndex<0||!row[meaningIndex]||!row[i])return null;
+  const raw=String(row[i].t||'').trim();
+  const meaning=String(row[meaningIndex].t||'').trim();
+  if(!raw||!meaning||raw===meaning||!/[A-Za-z]/.test(raw)||!/[\u0600-\u06FF]/.test(meaning))return null;
+  return {word:raw.split(' (')[0],meaning,raw};
+ }
+ return '<table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+b.rows.map(row=>'<tr>'+row.map((cell,i)=>{
+  const photo=photoColumn(i,row);
+  if(photo)return '<td>'+SDAcademyImages.card(photo.word,photo.meaning,'en')+(photo.raw!==photo.word?'<small>'+escapeHtml(photo.raw.slice(photo.word.length))+'</small>':'')+'</td>';
+  return '<td>'+(cell.b?'<span class="phrase-it" lang="en">'+cell.t+' <button type="button" class="speak" data-say="'+escapeHtml(cell.t)+'">🔊</button></span>':cell.t)+'</td>';
+ }).join('')+'</tr>').join('')+'</tbody></table>';
+}
 function renderBlock(b,tip){if(b.type==='p')return '<p'+(b.italic?' style="font-style:italic"':'')+'>'+b.html+'</p>';if(b.type==='h3')return '<h3>'+b.text+'</h3>';if(b.type==='table')return renderTable(b);if(b.type==='list')return '<div class="'+(tip?'tip-box':'goal-box')+'">'+(b.label?'<b>'+b.label+'</b>':'')+(b.intro?'<p>'+b.intro+'</p>':'')+'<ul>'+b.items.map(x=>'<li>'+x+'</li>').join('')+'</ul></div>';if(b.type==='dialogue')return '<div class="dialogue">'+b.lines.map(l=>'<div class="line">'+(l.speaker?'<span class="speaker">'+l.speaker+'</span>':'')+' <span class="orig" lang="en">'+l.orig+'</span> <button class="speak" type="button" data-say="'+escapeHtml(l.orig)+'">🔊</button><br><span class="trans">'+(l.trans||'')+'</span></div>').join('')+'</div>';if(b.type==='writing')return '<section class="goal-box writing-practice"><h3>✍️ تدريب كتابة B1</h3><p>'+escapeHtml(b.prompt)+'</p><textarea rows="5" data-writing-input placeholder="اكتب إجابتك باللغة الإنجليزية..."></textarea><button type="button" class="quiz-next" data-writing-check data-keywords="'+escapeHtml(b.keywords.join('|'))+'" data-model="'+escapeHtml(b.model)+'">راجع إجابتي</button><p class="quiz-feedback" data-writing-feedback></p><p data-writing-model hidden></p></section>';return ''}
 function speak(s){if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'in window))return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s);u.lang='en-US';u.rate=.88;const v=window.speechSynthesis.getVoices().find(x=>/^en-US$/i.test(x.lang))||window.speechSynthesis.getVoices().find(x=>/^en[-_]/i.test(x.lang));if(v)u.voice=v;window.speechSynthesis.speak(u)}
 
