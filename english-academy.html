@@ -53,12 +53,25 @@ function speak(s){if(!('speechSynthesis'in window)||!('SpeechSynthesisUtterance'
 
 function quizPairs(ch){
  const pairs=[];
+ const add=(en,ar)=>{
+  en=String(en||'').trim();ar=String(ar||'').trim();
+  if(en&&ar&&/[A-Za-z]/.test(en)&&/[\u0600-\u06FF]/.test(ar))pairs.push({en,ar});
+ };
  ch.blocks.forEach(b=>{
-  if(b.type==='table') b.rows.forEach(row=>{
-   const en=row.find(x=>x&&x.b&&x.t), ar=row.find(x=>x&&!x.b&&x.t);
-   if(en&&ar&&/[A-Za-z]/.test(en.t)&&/[\u0600-\u06FF]/.test(ar.t))pairs.push({en:en.t,ar:ar.t});
+  if(b.type==='table') (b.rows||[]).forEach(row=>{
+   const cells=(row||[]).map(x=>String(x&&x.t||'').trim()).filter(Boolean);
+   const mixed=cells.find(t=>/[A-Za-z]/.test(t)&&/[\u0600-\u06FF]/.test(t));
+   if(mixed){
+    const parts=mixed.split(/\s+[—–-]\s+/);
+    if(parts.length>1){const english=parts.find(t=>/[A-Za-z]/.test(t)&&!/[\u0600-\u06FF]/.test(t));const arabic=parts.find(t=>/[\u0600-\u06FF]/.test(t));add(english,arabic)}
+    else {const match=mixed.match(/^(.+?)\s*[:：]\s*(.+)$/);if(match)add(match[1],match[2])}
+   }else{
+    const english=cells.find(t=>/[A-Za-z]/.test(t)&&!/[\u0600-\u06FF]/.test(t));
+    const arabic=cells.find(t=>/[\u0600-\u06FF]/.test(t)&&!/[A-Za-z]/.test(t));
+    add(english,arabic);
+   }
   });
-  if(b.type==='dialogue') b.lines.forEach(line=>{if(line.orig&&line.trans)pairs.push({en:line.orig,ar:line.trans})});
+  if(b.type==='dialogue') (b.lines||[]).forEach(line=>add(line.orig,line.trans));
  });
  return pairs.filter((p,i,a)=>a.findIndex(x=>x.en===p.en&&x.ar===p.ar)===i);
 }
