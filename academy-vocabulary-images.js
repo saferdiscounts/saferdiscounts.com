@@ -1,6 +1,10 @@
 (function(){
   'use strict';
   var photos={
+    police:{url:'https://images.unsplash.com/photo-1642888100704-70cb1c4ea203?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-police-car-and-a-police-car-parked-in-front-of-a-building-yd2Iuvic68g'},
+    hotelReception:{url:'https://images.unsplash.com/photo-1757840600384-2a384321fa6d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/hotel-lobby-entrance-with-staff-at-reception-desk-N0Th5bW7v3c'},
+    luggageTag:{url:'https://images.unsplash.com/photo-1645200593922-d75d2fd04f1c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-close-up-of-a-luggage-tag-on-a-bag-tTKyqAUVU6w'},
+    boardingGate:{url:'https://images.unsplash.com/photo-1765305975975-8ba04ecbc473?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/airplane-at-airport-gate-on-a-cloudy-day-CAnyyoosQjk'},
     passport:{url:'https://images.unsplash.com/photo-1654163601023-88f6ba22b2c7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-hand-holding-a-passport-over-a-white-background-q0vfoRmGIRA'},
     paymentCard:{url:'https://images.unsplash.com/photo-1750262701487-4ca222c89ef4?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/payment-is-being-made-with-a-credit-card-AAYpF9Vx7Ek'},
     medicine:{url:'https://images.unsplash.com/photo-1631980838902-e1eea9c12c67?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-pack-of-pills-sitting-on-top-of-a-white-table-uCNJs9v6lKE'},
@@ -45,7 +49,7 @@
     clothing:{url:'https://images.unsplash.com/photo-1767968037382-8eb9c564339f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/clothes-hanging-on-a-rack-in-a-boutique-pt3EBzQcxP0'}
   };
   var rules=[
-    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/بطاقة صعود الطائرة|بطاقة الصعود|بطاقة الركوب|كارت صعود الطائرة/,'airplane'],[/بطاقة ائتمان|بطاقة ائتمانية|بطاقة بنكية|بطاقة مصرفية|كارت بنكي|كارت ائتمان|بطاقة الدفع/,'paymentCard'],[/دواء|أدوية|علاج|أقراص|حبوب دواء|دواء الصيدلية|صيدلية/,'medicine'],[/طقس|الطقس|توقعات الطقس|غائم|مطر|ممطر|عاصفة|سحب|غيوم/,'weather'],[/طاولة|ترابيزة/,'table'],
+    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/شرطة|الشرطة|قسم الشرطة|مركز الشرطة|شرطي|ضابط شرطة/,'police'],[/تسجيل الدخول|تسجيل المغادرة|تسجيل الوصول|تسجيل الخروج|حجز|حجزي|الاستقبال|موظف الاستقبال|سأقيم في فندق|فندق/,'hotelReception'],[/ملصق الأمتعة|ملصق الحقيبة|بطاقة الأمتعة|بطاقة الحقيبة/,'luggageTag'],[/بوابة الصعود|بوابة الطائرة|بوابة المغادرة/,'boardingGate'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/بطاقة صعود الطائرة|بطاقة الصعود|بطاقة الركوب|كارت صعود الطائرة/,'airplane'],[/بطاقة ائتمان|بطاقة ائتمانية|بطاقة بنكية|بطاقة مصرفية|كارت بنكي|كارت ائتمان|بطاقة الدفع/,'paymentCard'],[/دواء|أدوية|علاج|أقراص|حبوب دواء|دواء الصيدلية|صيدلية/,'medicine'],[/طقس|الطقس|توقعات الطقس|غائم|مطر|ممطر|عاصفة|سحب|غيوم/,'weather'],[/طاولة|ترابيزة/,'table'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|برتقال|ليمونادة|مشروب فاكهة/,'juice'],
     [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
@@ -164,6 +168,10 @@
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     var target=String(word||'');
+    if(/\b(?:police|policeman|police officer|police station)\b|(?:polícia|policial|delegacia|policía|policía|policier|polizei|полиция)/i.test(target))return photos.police;
+    if(/\b(?:hotel|check-in|check-out|reception|reservation|booking)\b|(?:recepção|reserva|hospedagem|hotel|albergo|prenotazione|recepción|reserva|hotel|hôtel|réservation|rezeption|buchung|отель|регистрация|бронирование)/i.test(target))return photos.hotelReception;
+    if(/\b(?:luggage tag|baggage tag|bag tag)\b|(?:etiqueta de bagagem|tag de bagagem|etichetta bagaglio|etiqueta de equipaje|étiquette bagage|Gepäckanhänger|багажная бирка)/i.test(target))return photos.luggageTag;
+    if(/\b(?:boarding gate|departure gate|gate number)\b|(?:portão de embarque|portão|gate de embarque|puerta de embarque|porte d'embarquement|Abfluggate|выход на посадку)/i.test(target))return photos.boardingGate;
     if(/\b(?:hello|hi|good morning|good afternoon|good evening|goodbye|bye|nice to meet you)\b/i.test(target))return photos.greeting;
     if(/\b(?:bathroom|restroom|toilet|washroom|wc)\b/i.test(target))return photos.bathroom;
     if(lang==='it'&&/(?:ciao|buongiorno|buonasera|arrivederci|piacere)/i.test(target))return photos.greeting;
