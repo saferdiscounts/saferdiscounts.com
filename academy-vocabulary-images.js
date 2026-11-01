@@ -203,6 +203,11 @@
     if(/\b(?:my name is|what is your name|please|thank you|sorry|excuse me|do you speak|speak slowly|i don't understand|how are you|and you|nice to meet you|preciso de ajuda)\b|(?:meu nome é|como você se chama|eu sou do egito|por favor|obrigado|obrigada|desculpa|com licença|você fala|pode falar devagar|não entendi|tudo bem|e você|muito prazer|você se chama|bater papo|pode reformular|deixa eu reformular|como é mesmo|em outras palavras|do meu ponto de vista|por outro lado|eu te aviso)/i.test(target))return photos.conversation;
     if(/^[A-Z]\s*[—-]/.test(target))return photos.alphabet;
     if(lang==='pt-BR'&&/(?:ca-fé|mé-di-co|lâm-pa-da|também|sim, obrigado)/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/^(?:eu|você|ele|ela|nós|vocês|eles|elas|me|te|se|nos)$/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/^(?:ser|estar|falar|comer|abrir|ter|ir|querer|poder|precisar de|eu falo|eu como|eu abro|vocês abrem|eu sou|você é|nós somos)$/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/^(?:do|da|no|na|ao|à|dos \/ das|nos \/ nas)$/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/(?:você é brasileiro|nós somos turistas|eu sou egípcio|ela é professora|estou cansado|não entendo|pode me ajudar|eu estava esperando)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/^(?:hoje|vida)$/i.test(target))return photos.alphabet;
     if(/^(?:zero|um|dois|três|quatro|cinco|dez|vinte)$/i.test(target)||/(?:quantos anos|30 anos)/i.test(target))return photos.numbers;
     if(/\b(?:police|policeman|police officer|police station)\b|(?:polícia|policial|delegacia|policía|policía|policier|polizei|полиция)/i.test(target))return photos.police;
     if(/\b(?:hotel|check-in|check-out|reception|reservation|booking)\b|(?:recepção|reserva|hospedagem|hospedar|hotel|albergo|prenotazione|recepción|reserva|hotel|hôtel|réservation|rezeption|buchung|отель|регистрация|бронирование)/i.test(target))return photos.hotelReception;
