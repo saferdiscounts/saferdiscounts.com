@@ -380,6 +380,14 @@
     if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
     if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
     if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
+    if(lang==='pt-BR'&&/^(?:não|nao|quem|como|que|ele \/ ela|eles \/ elas|ele|ela|eles|elas|eu|você|vocês|nós|me|te|se|nos)$/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:bonito|bonita|pequeno|pequena|grande|interessante|variedade|regional|no sul)/i.test(target))return photos.city;
+    if(lang==='pt-BR'&&/(?:problema|impasse|preocupação|encaminhamento|concordo em parte|quebrar o galho|ficar de olho|cair a ficha|matar a saudade|deu tudo certo|estar por dentro|nossa!|até parece|nem pensar|por incrível que pareça|não toque nisso|tenha cuidado|não se preocupe)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:reembolso|cobrança indevida|dinheiro|pagamento|cobrança)/i.test(target))return photos.money;
+    if(lang==='pt-BR'&&/(?:esclarecimento|prazo de resposta|planejamento|alternativa|solução|relato|aprendizado|autonomia|tese|argumento|pressuposto|implicação|ressalva|ironia|evidência|generalização|destacar|considerar|negociar|ponto central|em anexo|fico no aguardo)/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/(?:porque|por isso|mas|então|apesar de|antes de|além disso|em síntese|em contrapartida|consequentemente|ao que tudo indica|em certa medida|diante disso|ao contrário|assim que|por exemplo|em resumo|no fim das contas|só que|por assim dizer|meio que|apesar disso|que|com quem|em que)/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/(?:infelizmente|talvez|consigo|percebi|pretendo|ter que|dever|melhor|pior|venha|seja|esteja|tenha|possa|aconteceu|poderia|seria melhor|pode ser que|é possível que|aparentemente|até onde sei|tudo indica que|talvez seja)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:para mim|com você|falar com ele|a gente vai|estou ligando a respeito|atender às duas partes|reformular|esclarecer)/i.test(target))return photos.conversation;
     if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
     if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
     var englishRules=[
