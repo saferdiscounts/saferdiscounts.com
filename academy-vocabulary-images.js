@@ -177,7 +177,30 @@
   function find(meaning,word,lang){
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
+    // Shared semantic vocabulary: one concept uses one existing photo across every academy.
+    // Match the source-language word only after the Arabic meaning has had priority.
     var target=String(word||'');
+    var sharedMeaningRules=[
+      [/^(?:house|home|casa|hogar|maison|haus|дом|lar|moradia|appartamento|wohnung)$/i,'house'],
+      [/^(?:water|agua|eau|wasser|вода|acqua|água)$/i,'water'],
+      [/^(?:cat|gato|chat|katze|кошка|кошка|gatto|gata)$/i,'cat'],
+      [/^(?:dog|perro|chien|hund|собака|cane|cão|cao)$/i,'dog'],
+      [/^(?:coffee|café|cafe|kaffee|кофе|caffè)$/i,'coffee'],
+      [/^(?:tea|thé|tee|чай|tè)$/i,'tea'],
+      [/^(?:bread|pan|pain|brot|хлеб|pane|pão|pao)$/i,'bread'],
+      [/^(?:apple|manzana|pomme|apfel|яблоко|mela|maçã|maca)$/i,'apple'],
+      [/^(?:car|coche|carro|voiture|auto|машина|macchina|wagen)$/i,'taxi'],
+      [/^(?:bus|autobús|autobus|autocar|автобус|autobus|ônibus|onibus)$/i,'bus'],
+      [/^(?:train|tren|train|zug|поезд|treno|comboio)$/i,'train'],
+      [/^(?:beach|playa|plage|strand|пляж|spiaggia|praia)$/i,'beach'],
+      [/^(?:book|libro|livre|buch|книга|libro|livro)$/i,'books'],
+      [/^(?:phone|teléfono|téléphone|telefon|телефон|telefono|telemóvel|telemovel)$/i,'phone'],
+      [/^(?:money|dinero|argent|geld|деньги|soldi|dinheiro)$/i,'money'],
+      [/^(?:family|familia|famille|familie|семья|famiglia)$/i,'family'],
+      [/^(?:doctor|médico|medico|médecin|arzt|врач|medico)$/i,'doctor'],
+      [/^(?:school|escuela|école|schule|школа|scuola|escola)$/i,'books']
+    ];
+    for(var sm=0;sm<sharedMeaningRules.length;sm++)if(sharedMeaningRules[sm][0].test(target.trim()))return photos[sharedMeaningRules[sm][1]];
     if(/^\d+$/.test(target))return photos.numbers;
     if(/(?:january|february|march|april|may|june|july|august|september|october|november|december|gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre|januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|январь|февраль|март|апрель|май|июнь|июль|август|сентябрь|октябрь|ноябрь|декабрь|janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)/i.test(target))return photos.clock;
     if(/(?:\b(?:red|blue|green|yellow|purple|pink|grey|gray|brown|orange|black|white)\b|rosso|blu|verde|giallo|viola|rosa|grigio|marrone|arancione|nero|bianco|rojo|azul|amarillo|morado|gris|marrón|naranja|negro|blanco|rouge|bleu|jaune|violet|marron|noir|blanc|rot|grün|gelb|lila|grau|braun|schwarz|weiß|красный|синий|зелёный|желтый|фиолетовый|розовый|серый|коричневый|оранжевый|чёрный|белый|vermelho|amarelo|roxo|cinza|marrom|laranja|preto)/i.test(target))return photos.colors;
