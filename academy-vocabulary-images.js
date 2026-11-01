@@ -141,7 +141,7 @@
     [/(?:comida|refeição|pequeno-almoço|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu|trânsito)/i,'city'],
     [/(?:médico|médica|enfermeiro|enfermeira|hospital|clínica|farmácia|medicamento|dor)/i,'doctor'],[/(?:gato|gatos)/i,'cat'],[/(?:cão|cães|cachorro)/i,'dog'],
     [/(?:amendoim|amendoins)/i,'peanuts'],[/(?:leite)/i,'milk'],[/(?:limão|limões|limonada)/i,'lemon'],[/(?:coração)/i,'heart'],
-    [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
+    [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão|avó|avô|menino|menina|amigo|amiga|amigos|amigas)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
     [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída|endereço)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calças|vestido|saia|casaco|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
@@ -170,7 +170,7 @@
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     var target=String(word||'');
-    if(/\b(?:my name is|what is your name|please|thank you|sorry|excuse me|do you speak|speak slowly|i don't understand|how are you|and you|nice to meet you|preciso de ajuda)\b|(?:meu nome é|como você se chama|eu sou do egito|por favor|obrigado|obrigada|desculpa|com licença|você fala|pode falar devagar|não entendi|tudo bem|e você|muito prazer)/i.test(target))return photos.conversation;
+    if(/\b(?:my name is|what is your name|please|thank you|sorry|excuse me|do you speak|speak slowly|i don't understand|how are you|and you|nice to meet you|preciso de ajuda)\b|(?:meu nome é|como você se chama|eu sou do egito|por favor|obrigado|obrigada|desculpa|com licença|você fala|pode falar devagar|não entendi|tudo bem|e você|muito prazer|você se chama|bater papo|pode reformular|deixa eu reformular|como é mesmo|em outras palavras|do meu ponto de vista|por outro lado|eu te aviso)/i.test(target))return photos.conversation;
     if(/^(?:zero|um|dois|três|quatro|cinco|dez|vinte)$/i.test(target)||/(?:quantos anos|30 anos)/i.test(target))return photos.numbers;
     if(/\b(?:police|policeman|police officer|police station)\b|(?:polícia|policial|delegacia|policía|policía|policier|polizei|полиция)/i.test(target))return photos.police;
     if(/\b(?:hotel|check-in|check-out|reception|reservation|booking)\b|(?:recepção|reserva|hospedagem|hospedar|hotel|albergo|prenotazione|recepción|reserva|hotel|hôtel|réservation|rezeption|buchung|отель|регистрация|бронирование)/i.test(target))return photos.hotelReception;
@@ -227,11 +227,14 @@
     if(lang==='pt-BR'&&/(?:cartão do quarto|cartão-chave do hotel|chave do quarto)/i.test(target))return photos.hotelKeyCard;
     if(lang==='pt-BR'&&/(?:cartão|aceita cartão)/i.test(target))return photos.paymentCard;
     if(lang==='pt-BR'&&/(?:estou procurando|maior|menor|estou só olhando)/i.test(target))return photos.clothing;
-    if(lang==='pt-BR'&&/(?:eu queria|para viagem|eu gosto de|eu não gosto de|eu prefiro|sem açúcar|^sem$|^com$|está delicioso|o que você recomenda)/i.test(target))return photos.meal;
+    if(lang==='pt-BR'&&/(?:eu queria|para viagem|eu gosto de|eu não gosto de|eu prefiro|sem açúcar|sem cebola|^sem$|^com$|está delicioso|o que você recomenda)/i.test(target))return photos.meal;
     if(lang==='pt-BR'&&/(?:alergia|não estou me sentindo bem|dor de cabeça|febre)/i.test(target))return photos.doctor;
     if(lang==='pt-BR'&&/(?:qual é o motivo da sua viagem|turismo|quanto tempo vai ficar)/i.test(target))return photos.passport;
     if(lang==='pt-BR'&&/(?:passagem de volta)/i.test(target))return photos.airplane;
-    if(lang==='pt-BR'&&/(?:pode me levar|pode parar aqui)/i.test(target))return photos.taxi;
+    if(lang==='pt-BR'&&/(?:pode me levar|pode parar aqui|eu comprei uma passagem)/i.test(target))return photos.taxi;
+    if(lang==='pt-BR'&&/(?:atrasado|atrasada)/i.test(target))return photos.clock;
+    if(lang==='pt-BR'&&/(?:quando eu era criança)/i.test(target))return photos.family;
+    if(lang==='pt-BR'&&/(?:poderia enviar por e-mail)/i.test(target))return photos.phone;
     if(lang==='pt-BR'&&/(?:onde fica|^aqui$|^ali$|^perto$)/i.test(target))return photos.directions;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
