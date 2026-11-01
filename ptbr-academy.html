@@ -123,9 +123,9 @@ lessonContent.addEventListener('click',event=>{
   const answer=e.target.closest('[data-group-answer]');
   if(answer&&!answered){
    answered=true;section.querySelectorAll('[data-group-answer]').forEach(x=>{x.disabled=true;if(x.dataset.correct==='1')x.classList.add('correct')});
-   const feedback=section.querySelector('.feedback');
-   if(answer.dataset.correct==='1'){score++;feedback.textContent='إجابة صحيحة! 👏';feedback.style.color='var(--green)'}
-   else{answer.classList.add('wrong');feedback.textContent='الإجابة الصحيحة باللون الأخضر.';feedback.style.color='#a34732'}
+   const feedback=section.querySelector('.feedback'),detail=target.kind==='comprehension'&&target.explain?' '+target.explain:'';
+   if(answer.dataset.correct==='1'){score++;feedback.textContent='إجابة صحيحة! 👏'+detail;feedback.style.color='var(--green)'}
+   else{answer.classList.add('wrong');feedback.textContent='الإجابة الصحيحة باللون الأخضر.'+detail;feedback.style.color='#a34732'}
    const next=document.createElement('button');next.type='button';next.className='btn';next.style.marginTop='10px';next.dataset.groupNext='1';next.textContent=step===questions.length-1?'عرض النتيجة ←':'السؤال التالي ←';section.appendChild(next);return;
   }
   if(e.target.closest('[data-group-next]')){step++;if(step>=questions.length)finish();else show()}
