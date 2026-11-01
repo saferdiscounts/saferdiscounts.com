@@ -36,6 +36,12 @@ const chapters=[{"title":"مقدمة: ليه نتعلم الإنجليزي؟","b
 const groups=[{name:'A1 · التأسيس والحياة اليومية',start:0,end:14},{name:'A2 · القواعد والسفر والتعامل اليومي',start:15,end:27},{name:'B1 · التواصل المستقل والعمل والرأي',start:28,end:39}];
 const STORE='sd_english_academy_done_v1';let done=[];let current=0;
 try{const x=JSON.parse(localStorage.getItem(STORE)||'[]');if(Array.isArray(x))done=[...new Set(x.filter(i=>Number.isInteger(i)&&i>=0&&i<chapters.length))]}catch(e){}
+const EXAM_STORE='sd_english_academy_exam_history_v1';
+function renderExamHistory(){
+ const host=document.getElementById('groupExamHistory');if(!host)return;
+ let history=[];try{const saved=JSON.parse(localStorage.getItem(EXAM_STORE)||'[]');if(Array.isArray(saved))history=saved.slice(0,10)}catch(e){}
+ host.innerHTML=history.length?history.map(item=>'<div class="exam-history-item"><span>'+escapeHtml(item.group||'امتحان شامل')+' · '+escapeHtml(item.date||'')+'</span><b>'+Number(item.score||0)+' / '+Number(item.total||0)+' · '+Number(item.pct||0)+'%</b></div>').join(''):'<span class="muted">لم تسجل نتائج بعد. بعد إنهاء أول امتحان شامل ستظهر نتيجته هنا.</span>';
+}
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function progress(){document.getElementById('progressText').textContent=done.length+' من '+chapters.length+' وحدات مكتملة';document.getElementById('progressBar').style.width=(done.length/chapters.length*100)+'%'}
 function groupFor(i){return groups.find(g=>i>=g.start&&i<=g.end)||groups[0]}
@@ -129,6 +135,12 @@ if(groupExam){
  }
  function finish(){
   const pct=Math.round(score/questions.length*100),msg=pct===100?'ممتاز! أتقنت المجموعة بالكامل 🌟':pct>=80?'مستوى رائع! استمر 👏':pct>=60?'نتيجة جيدة، راجع الوحدات وحاول مرة أخرى.':'راجع دروس المجموعة ثم أعد الامتحان.';
+  try{
+   const history=JSON.parse(localStorage.getItem(EXAM_STORE)||'[]');
+   const record={group:g.name,score,total:questions.length,pct,date:new Date().toLocaleDateString('ar-EG')};
+   localStorage.setItem(EXAM_STORE,JSON.stringify([record,...(Array.isArray(history)?history:[])].slice(0,10)));
+  }catch(e){}
+  renderExamHistory();
   groupExam.innerHTML='<div class="quiz-head"><span>🎓 نتيجة امتحان المجموعة</span><span>اكتمل</span></div><div class="quiz-result"><strong>'+score+' / '+questions.length+'</strong><span>'+pct+'%</span></div><p class="quiz-feedback">'+msg+'</p><button type="button" class="quiz-next" data-group-retry>إعادة الامتحان ↻</button>';
  }
  groupExam.addEventListener('click',event=>{
@@ -146,6 +158,6 @@ if(groupExam){
  });
 }
 document.querySelectorAll('[data-say]').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.say)));document.querySelectorAll('[data-writing-check]').forEach(b=>b.addEventListener('click',()=>{const box=b.closest('.writing-practice'),area=box.querySelector('[data-writing-input]'),feedback=box.querySelector('[data-writing-feedback]'),sample=box.querySelector('[data-writing-model]'),answer=area.value.trim();if(answer.length<45){feedback.textContent='اكتب 4 أو 5 جمل على الأقل قبل المراجعة.';return}const keys=b.dataset.keywords.split('|').filter(Boolean),hits=keys.filter(k=>answer.toLowerCase().includes(k.toLowerCase())).length;feedback.textContent=hits>=2?'أحسنت! استخدمت '+hits+' من عناصر الدرس المستهدفة. راجع ترابط الجمل والقواعد بنفسك.':'محاولة جيدة. أضف أدوات ربط ومفردات من الدرس لتوضيح فكرتك.';sample.hidden=false;sample.textContent='نموذج للمقارنة: '+b.dataset.model;}));renderList();progress();window.scrollTo({top:document.getElementById('curriculum').offsetTop-10,behavior:'smooth'})}
-document.getElementById('search').addEventListener('input',renderList);renderList();progress();render(0);
+document.getElementById('search').addEventListener('input',renderList);renderList();progress();renderExamHistory();render(0);
 })();
 </script></body></html>
