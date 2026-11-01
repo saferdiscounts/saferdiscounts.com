@@ -2,6 +2,9 @@
   'use strict';
   var photos={
     passport:{url:'https://images.unsplash.com/photo-1654163601023-88f6ba22b2c7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-hand-holding-a-passport-over-a-white-background-q0vfoRmGIRA'},
+    table:{url:'https://images.unsplash.com/photo-1721989516850-a02c70e2fce3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-dining-room-with-a-wooden-table-and-chairs-QAQQv0x8i0c'},
+    baggageCarousel:{url:'https://images.unsplash.com/photo-1702411739431-0b6874405792?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-luggage-carousel-in-an-airport-with-a-large-screen-nTHnC5-z334'},
+    hotelKeyCard:{url:'https://images.unsplash.com/photo-1761023717432-572bd8f780e1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/hand-holding-a-sho-hotel-key-card-cHB4nr-vPC8'},
     coffee:{url:'https://images.unsplash.com/photo-1530632308350-e96d55f00e4a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/white-ceramic-cup-on-saucer-on-top-of-wooden-table-UEIkj1N2LlE'},
     bread:{url:'https://images.unsplash.com/photo-1722606509001-6cdbc99bdf33?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-kitchen-counter-with-a-loaf-of-bread-on-it-7hVnFnt_u9U'},
     apple:{url:'https://images.unsplash.com/photo-1565794104797-bdabb8e04ba6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-close-up-of-a-red-apple-with-water-drops-jfCQFqhHhEw'},
@@ -37,12 +40,12 @@
     clothing:{url:'https://images.unsplash.com/photo-1767968037382-8eb9c564339f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/clothes-hanging-on-a-rack-in-a-boutique-pt3EBzQcxP0'}
   };
   var rules=[
-    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],
+    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/طاولة|ترابيزة/,'table'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|برتقال|ليمونادة|مشروب فاكهة/,'juice'],
     [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
     [/بيت|منزل|سكن|غرفة|باب|مفتاح|فندق|شقة|مطبخ|حمام|مرحاض|دورة المياه|غرفتك|غرفتي/,'house'],[/طائرة|طيران|مطار|رحلة|طيارة|إقلاع|هبوط/,'airplane'],
-    [/سيارة|عربية|تاكسي|كاب|سائق|أوبر/,'taxi'],[/حقيبة سفر|شنطة|أمتعة|حقائب|أمتعة السفر/,'luggage'],[/قطار|مترو|محطة قطار|محطة المترو|سكة حديد/,'train'],[/حافلة|أتوبيس|باص|محطة حافلات/,'bus'],[/بحر|محيط|شاطئ|شاطىء|جزيرة|ساحل/,'beach'],
+    [/سيارة|عربية|تاكسي|كاب|سائق|أوبر/,'taxi'],[/سير استلام الأمتعة|سير الحقائب|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/حقيبة سفر|شنطة|أمتعة|حقائب|أمتعة السفر/,'luggage'],[/قطار|مترو|محطة قطار|محطة المترو|سكة حديد/,'train'],[/حافلة|أتوبيس|باص|محطة حافلات/,'bus'],[/بحر|محيط|شاطئ|شاطىء|جزيرة|ساحل/,'beach'],
     [/طعام|أكل|وجبة|مطعم|غداء|عشاء|لحم|فطور|إفطار|غذاء|طبق|وجبات|كيلو/,'meal'],[/مدينة|شارع|طريق|مباني|وسط المدينة|الحي|الجوار|الحديقة|متحف/,'city'],[/طبيب|دكتور|صحة|مرض|مستشفى|عيادة|صيدلية|دواء|ممرضة|صداع|نزلة برد|الألم|دوخة|الكشف/,'doctor'],
     [/قطة|قط|قطه|قطط/,'cat'],[/كلب|جرو|كلاب/,'dog'],[/فول سوداني|الفول السوداني|فستق سوداني|مكسرات/,'peanuts'],[/لبن|حليب|لبن كامل|كوب لبن/,'milk'],[/ليمون|ليمونة|ليمونادة/,'lemon'],[/قلب|قلبي|القلب|قلوب/,'heart'],[/أم|الأم|أبي|الأب|أب|عائلة|عائلتي|أخي|أختي|أسرة|أسرتي|أمي|أمك|أبوك|والدان|والدي|عائلتك/,'family'],[/ساعة|الساعة|وقت|الآن|اليوم|غدًا|بكرة|صباحًا|مساءً|بعد الظهر|موعد|مواعيد|تاريخ|توقيت|دقيقة|دقائق/,'clock'],[/يمين|يسار|انعطف|اتجه|اتجاه|ناصية|تقاطع|مدخل|مخرج|قريب من هنا|بعيد|خريطة|لافتة|إشارة مرور/,'directions'],[/إسعاف|إسعافًا|إسعاف|طوارئ|نجدة|شرطة|حادث|مساعدة عاجلة/,'ambulance'],[/ملابس|قميص|بنطلون|فستان|تنورة|جاكيت|سترة|جوارب|ملابس|مقاس|مقاسي|لون آخر|أزرق|أسود|أحمر|أبيض|أخضر|تجربة الملابس|أجرّب|أقيس/,'clothing'],[/كتاب|كتب|قراءة|مدرسة|جامعة|مكتبة/,'books']
   ];
@@ -158,6 +161,30 @@
     var target=String(word||'');
     if(/\bpassport\b|\btravel document\b/i.test(target))return photos.passport;
     if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
+    if(/\b(?:table|dining table)\b/i.test(target))return photos.table;
+    if(/\b(?:baggage claim|baggage carousel|luggage carousel)\b/i.test(target))return photos.baggageCarousel;
+    if(/\b(?:hotel key card|room key card|room key)\b/i.test(target))return photos.hotelKeyCard;
+    if(lang==='it'&&/(?:tavolo)/i.test(target))return photos.table;
+    if(lang==='it'&&/(?:nastro bagagli|ritiro bagagli|nastro trasportatore bagagli)/i.test(target))return photos.baggageCarousel;
+    if(lang==='it'&&/(?:chiave della camera|tessera della camera|chiave dell'hotel)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='es'&&/(?:mesa|mesa de comedor)/i.test(target))return photos.table;
+    if(lang==='es'&&/(?:recogida de equipaje|cinta de equipaje|carrusel de equipaje)/i.test(target))return photos.baggageCarousel;
+    if(lang==='es'&&/(?:tarjeta de habitación|llave de la habitación|tarjeta de hotel)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='fr'&&/(?:table|table à manger)/i.test(target))return photos.table;
+    if(lang==='fr'&&/(?:tapis à bagages|carrousel à bagages|récupération des bagages)/i.test(target))return photos.baggageCarousel;
+    if(lang==='fr'&&/(?:carte de chambre|carte de chambre d'hôtel|clé de chambre)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='de'&&/(?:Tisch|Esstisch)/i.test(target))return photos.table;
+    if(lang==='de'&&/(?:Gepäckausgabe|Gepäckband|Gepäckkarussell)/i.test(target))return photos.baggageCarousel;
+    if(lang==='de'&&/(?:Zimmerkarte|Hotelkarte|Zimmerschlüssel)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='ru'&&/(?:стол|обеденный стол)/i.test(target))return photos.table;
+    if(lang==='ru'&&/(?:выдача багажа|багажная лента|лента выдачи багажа)/i.test(target))return photos.baggageCarousel;
+    if(lang==='ru'&&/(?:ключ от номера|карта номера|ключ-карта отеля)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='pt-BR'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
+    if(lang==='pt-BR'&&/(?:esteira de bagagem|retirada de bagagem|esteira de malas)/i.test(target))return photos.baggageCarousel;
+    if(lang==='pt-BR'&&/(?:cartão do quarto|cartão-chave do hotel|chave do quarto)/i.test(target))return photos.hotelKeyCard;
+    if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
+    if(lang==='pt-PT'&&/(?:tapete de bagagem|recolha de bagagem|passadeira de bagagem)/i.test(target))return photos.baggageCarousel;
+    if(lang==='pt-PT'&&/(?:cartão do quarto|cartão-chave do hotel|chave do quarto)/i.test(target))return photos.hotelKeyCard;
     if(lang==='es'&&spanishPassportRules[0].test(target))return photos.passport;
     if(lang==='fr'&&frenchPassportRules[0].test(target))return photos.passport;
     if(lang==='de'&&germanPassportRules[0].test(target))return photos.passport;
