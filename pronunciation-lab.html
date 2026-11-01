@@ -107,10 +107,12 @@ pairs:[["pero","perro","ر قصيرة مقابل ر مكررة"],["casa","caza",
 };
 const el=id=>document.getElementById(id);
 function speak(text,lang,rate=0.82){if(!('speechSynthesis'in window)){el('practiceStatus').textContent='ميزة النطق غير متاحة في هذا المتصفح.';return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=rate;speechSynthesis.speak(u);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
 function render(){const key=el('language').value,d=DATA[key];el('dialect').textContent=d.dialect;el('introTitle').textContent='كيف تتعلم النطق في '+({en:'الإنجليزية',ptbr:'البرتغالية البرازيلية',de:'الألمانية',fr:'الفرنسية',it:'الإيطالية',pt:'البرتغالية الأوروبية',es:'الإسبانية'}[key]);el('intro').textContent=d.intro;
-el('soundGrid').innerHTML=d.sounds.map((s,i)=>'<article class="sound"><div class="ipa">'+s[0]+'</div><div class="letter">'+s[1]+'</div><div class="examples">'+s[2]+'</div><div class="ar"><b>تقريب عربي:</b> '+s[3]+'</div><p class="muted">'+s[4]+'</p><button type="button" onclick="speak('+JSON.stringify(s[2].split(' · ')[0])+','+JSON.stringify(d.voice)+')">▶ اسمع المثال</button></article>').join('');
-el('pairs').innerHTML=d.pairs.map((p,i)=>'<div class="pair"><span><strong>'+p[0]+'</strong> / <strong>'+p[1]+'</strong><br><small>'+p[2]+'</small></span><button type="button" onclick="speak('+JSON.stringify(p[0]+' ... '+p[1])+','+JSON.stringify(d.voice)+')">▶ اسمع المقارنة</button></div>').join('');
+el('soundGrid').innerHTML=d.sounds.map(s=>'<article class="sound"><div class="ipa">'+esc(s[0])+'</div><div class="letter">'+esc(s[1])+'</div><div class="examples">'+esc(s[2])+'</div><div class="ar"><b>تقريب عربي:</b> '+esc(s[3])+'</div><p class="muted">'+esc(s[4])+'</p><button type="button" class="play" data-word="'+esc(s[2].split(' · ')[0])+'" data-voice="'+esc(d.voice)+'">▶ اسمع المثال</button></article>').join('');
+el('pairs').innerHTML=d.pairs.map(p=>'<div class="pair"><span><strong>'+esc(p[0])+'</strong> / <strong>'+esc(p[1])+'</strong><br><small>'+esc(p[2])+'</small></span><button type="button" class="play" data-word="'+esc(p[0]+' ... '+p[1])+'" data-voice="'+esc(d.voice)+'">▶ اسمع المقارنة</button></div>').join('');
 el('practiceStatus').textContent='تم تحميل '+d.sounds.length+' صوتًا أو نمطًا تدريبيًا.';}
+document.addEventListener('click',e=>{const b=e.target.closest('button.play');if(b)speak(b.dataset.word,b.dataset.voice);});
 el('language').addEventListener('change',render);el('repeatAll').addEventListener('click',()=>{const d=DATA[el('language').value];speak(d.sounds.slice(0,5).map(x=>x[2].split(' · ')[0]).join('. '),d.voice,0.72);el('practiceStatus').textContent='استمع للأمثلة ببطء ثم كررها.';});
 const params=new URLSearchParams(location.search);if(DATA[params.get('lang')])el('language').value=params.get('lang');render();
 </script></body></html>
