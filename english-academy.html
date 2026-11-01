@@ -74,7 +74,7 @@ function renderTable(b){
   if(meaningIndex<0||!row[meaningIndex]||!row[i])return null;
   const raw=String(row[i].t||'').trim();
   const meaning=String(row[meaningIndex].t||'').trim();
-  if(!raw||!meaning||raw===meaning||!/[A-Za-z]/.test(raw)||!/[\u0600-\u06FF]/.test(meaning))return null;
+  if(!raw||!meaning||raw===meaning||!/[A-Za-z]/.test(raw)||!(/[\u0600-\u06FF]/.test(meaning)||/^\\d+$/.test(meaning)))return null;
   return {word:raw.split(' (')[0],meaning,raw};
  }
  return '<table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+b.rows.map(row=>'<tr>'+row.map((cell,i)=>{
