@@ -2,6 +2,8 @@
   'use strict';
   var photos={
     passport:{url:'https://images.unsplash.com/photo-1654163601023-88f6ba22b2c7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-hand-holding-a-passport-over-a-white-background-q0vfoRmGIRA'},
+    greeting:{url:'https://images.unsplash.com/photo-1758600435233-258658d68648?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/young-woman-waving-hello-with-a-smile-FR8X8-xenL0'},
+    bathroom:{url:'https://images.unsplash.com/photo-1722186382699-8a6aecee6c65?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-bathroom-with-a-toilet-a-sink-and-a-mirror-ktemGiRcR_s'},
     table:{url:'https://images.unsplash.com/photo-1721989516850-a02c70e2fce3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-dining-room-with-a-wooden-table-and-chairs-QAQQv0x8i0c'},
     baggageCarousel:{url:'https://images.unsplash.com/photo-1702411739431-0b6874405792?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-luggage-carousel-in-an-airport-with-a-large-screen-nTHnC5-z334'},
     hotelKeyCard:{url:'https://images.unsplash.com/photo-1761023717432-572bd8f780e1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/hand-holding-a-sho-hotel-key-card-cHB4nr-vPC8'},
@@ -40,7 +42,7 @@
     clothing:{url:'https://images.unsplash.com/photo-1767968037382-8eb9c564339f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/clothes-hanging-on-a-rack-in-a-boutique-pt3EBzQcxP0'}
   };
   var rules=[
-    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/طاولة|ترابيزة/,'table'],
+    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/طاولة|ترابيزة/,'table'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|برتقال|ليمونادة|مشروب فاكهة/,'juice'],
     [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
@@ -159,6 +161,22 @@
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     var target=String(word||'');
+    if(/\b(?:hello|hi|good morning|good afternoon|good evening|goodbye|bye|nice to meet you)\b/i.test(target))return photos.greeting;
+    if(/\b(?:bathroom|restroom|toilet|washroom|wc)\b/i.test(target))return photos.bathroom;
+    if(lang==='it'&&/(?:ciao|buongiorno|buonasera|arrivederci|piacere)/i.test(target))return photos.greeting;
+    if(lang==='it'&&/(?:bagno|toilette)/i.test(target))return photos.bathroom;
+    if(lang==='es'&&/(?:hola|buenos días|buenas tardes|buenas noches|adiós|encantado)/i.test(target))return photos.greeting;
+    if(lang==='es'&&/(?:baño|aseo|servicio)/i.test(target))return photos.bathroom;
+    if(lang==='fr'&&/(?:bonjour|salut|bonsoir|au revoir|enchanté)/i.test(target))return photos.greeting;
+    if(lang==='fr'&&/(?:salle de bain|toilettes|toilette)/i.test(target))return photos.bathroom;
+    if(lang==='de'&&/(?:hallo|guten morgen|guten tag|guten abend|auf wiedersehen|tschüss)/i.test(target))return photos.greeting;
+    if(lang==='de'&&/(?:Badezimmer|Toilette|WC)/i.test(target))return photos.bathroom;
+    if(lang==='ru'&&/(?:привет|здравствуйте|доброе утро|до свидания)/i.test(target))return photos.greeting;
+    if(lang==='ru'&&/(?:ванная|туалет)/i.test(target))return photos.bathroom;
+    if(lang==='pt-BR'&&/(?:olá|oi|bom dia|boa tarde|boa noite|tchau|prazer)/i.test(target))return photos.greeting;
+    if(lang==='pt-BR'&&/(?:banheiro|toalete|sanitário)/i.test(target))return photos.bathroom;
+    if(lang==='pt-PT'&&/(?:olá|bom dia|boa tarde|boa noite|adeus|até logo|prazer)/i.test(target))return photos.greeting;
+    if(lang==='pt-PT'&&/(?:casa de banho|sanita|casa de banho pública)/i.test(target))return photos.bathroom;
     if(/\bpassport\b|\btravel document\b/i.test(target))return photos.passport;
     if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
     if(/\b(?:table|dining table)\b/i.test(target))return photos.table;
