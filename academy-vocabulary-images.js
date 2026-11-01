@@ -401,7 +401,7 @@
   }
   function card(word,meaning,lang,kind){
     var safeWord=esc(word),safeMeaning=esc(meaning),safeLang=esc(lang||'');
-    var p=find(meaning,word,lang),photo=p?'<img class="academy-photo-image" src="'+esc(p.url)+'" alt="'+safeWord+' — '+safeMeaning+'" loading="lazy" decoding="async" onerror="this.closest(\\'.academy-photo-card\\').classList.add(\\'no-photo\\');this.remove();var c=this.parentNode.querySelector(\\'.academy-photo-credit\\');if(c)c.remove()">':'';
+    var p=find(meaning,word,lang),photo=p?'<img class="academy-photo-image" src="'+esc(p.url)+'" alt="'+safeWord+' — '+safeMeaning+'" loading="lazy" decoding="async" onerror="this.closest(\'.academy-photo-card\').classList.add(\'no-photo\');var c=this.parentNode.querySelector(\'.academy-photo-credit\');if(c)c.remove();this.remove()">':'';
     var speech=kind==='ptbr'?'<span class="academy-photo-word pt-speak" role="button" tabindex="0" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</span>':'<button type="button" class="academy-photo-word target" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</button>';
     var credit=p?'<a class="academy-photo-credit" href="'+esc(p.source)+'" target="_blank" rel="noopener" aria-label="مصدر الصورة Unsplash">Unsplash</a>':'';
     return '<span class="academy-photo-card '+(p?'has-photo':'no-photo')+'" role="group" aria-label="'+safeWord+' — '+safeMeaning+'">'+photo+speech+'<small>'+safeMeaning+'</small>'+credit+'<span class="academy-photo-fallback">الصورة غير متاحة حاليًا</span></span>';
