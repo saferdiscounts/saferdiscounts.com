@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>معمل الفونتكس والنطق | Safer Discounts</title>
+<meta name="description" content="معمل نطق تفاعلي لتعليم أصوات اللغات للناطقين بالعربية مع IPA وأمثلة وتدريبات.">
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--ink:#172338;--muted:#65738a;--line:#dce4ef;--brand:#2356a8;--soft:#eaf1fc;--good:#e8f7ef}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}.wrap{max-width:1100px;margin:auto;padding:22px}.hero{background:linear-gradient(130deg,#173b75,#2875ad);color:#fff;border-radius:22px;padding:26px;margin:12px 0 18px}.hero h1{margin:0 0 8px;font-size:clamp(25px,4vw,36px)}.hero p{margin:0;color:#e6efff}.panel,.sound{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:18px;margin:14px 0;box-shadow:0 5px 18px #1b35500a}.toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.toolbar label{font-weight:bold}select,button{font:inherit;border-radius:11px;padding:10px 14px;border:1px solid var(--line)}select{background:white;min-width:220px}button{background:var(--brand);color:white;border:0;cursor:pointer}button.secondary{background:var(--soft);color:var(--brand)}button:focus,select:focus{outline:3px solid #9bbcf2}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.sound{margin:0}.ipa{font-size:30px;font-weight:bold;color:var(--brand);direction:ltr;text-align:left}.letter{font-size:22px;font-weight:bold;direction:ltr;text-align:left}.examples{direction:ltr;text-align:left;font-size:17px}.ar{background:var(--soft);padding:9px 12px;border-radius:10px;margin:8px 0}.tag{display:inline-block;background:#edf2f8;color:#40516a;padding:3px 9px;border-radius:20px;font-size:12px}.pair{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding:9px 0;direction:ltr}.pair strong{font-size:18px}.notice{background:#fff8e8;border:1px solid #f2dfb4;border-radius:12px;padding:12px}.back{display:inline-block;color:white;margin-top:12px;text-decoration:none}.practice{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.status{font-weight:bold;color:#176b43}footer{text-align:center;color:var(--muted);padding:24px}
+@media(max-width:600px){.wrap{padding:13px}.hero{padding:20px}.panel{padding:14px}}
+</style></head>
+<body><div class="wrap">
+<header class="hero"><span class="tag">تعليم النطق للناطقين بالعربية</span><h1>معمل الفونتكس والنطق</h1><p>افهم الصوت، شوف طريقة كتابته، اسمع المثال، ودرّب أذنك ولسانك خطوة بخطوة.</p><a class="back" href="language-academy.html">← العودة إلى أكاديمية اللغات</a></header>
+<section class="panel"><div class="toolbar"><label for="language">اختار اللغة:</label><select id="language"><option value="en">الإنجليزية</option><option value="ptbr">البرتغالية البرازيلية</option><option value="de">الألمانية</option><option value="fr">الفرنسية</option><option value="it">الإيطالية</option><option value="pt">البرتغالية الأوروبية</option><option value="es">الإسبانية</option></select><span class="muted" id="dialect"></span></div><h2 id="introTitle">ابدأ بالأصوات الأساسية</h2><p id="intro" class="muted"></p><div class="notice">ملاحظة: زر الاستماع يستخدم صوت اللغة المتاح على جهازك أو متصفحك. جودة الأصوات وتوفرها يختلفان حسب الجهاز؛ لذلك لا نعتبر النطق الآلي بديلًا عن تسجيلات متحدثين أصليين.</div></section>
+<section class="panel"><h2>الأصوات والأنماط الأساسية</h2><div id="soundGrid" class="grid"></div></section>
+<section class="panel"><h2>درّب أذنك: قارن بين كلمتين</h2><p class="muted">اسمع الكلمتين ولاحظ الفرق في الصوت. حاول تكرارهما بصوتك.</p><div id="pairs"></div><div class="practice"><button class="secondary" id="repeatAll">إعادة سماع الأمثلة</button><span id="practiceStatus" class="status" aria-live="polite"></span></div></section>
+<section class="panel"><h2>طريقة التدريب الصحيحة</h2><ol><li>اسمع الصوت منفردًا ثم اسمعه داخل كلمة.</li><li>لاحظ موضع اللسان والشفتين، ولا تعتمد على كتابة النطق بالعربية وحدها.</li><li>قارن بين كلمتين يختلف معناهما بصوت واحد.</li><li>كرر ببطء، ثم بسرعة الكلام الطبيعية.</li><li>سجّل صوتك وقارنه بنطق متحدث أصلي إن توفر تسجيل موثوق.</li></ol></section>
+<footer>Safer Discounts · Arabic-first pronunciation lab</footer></div>
+<script>
+const DATA={
+en:{voice:"en-US",dialect:"الإنجليزية – أمثلة عامة بلكنة أمريكية تعليمية",intro:"ابدأ بأصوات الحروف ومجموعاتها، ثم انتقل إلى الدمج وتقسيم الكلمات ومقاطع التشديد. هذا مسار تأسيسي أصلي مستوحى من تعليم الأصوات المنهجي؛ وليس نسخة من مواد Jolly Phonics.",sounds:[
+["/s/","s","sun · bus","س","هواء يمر من بين الأسنان دون اهتزاز واضح للأحبال الصوتية."],
+["/z/","z","zoo · nose","ز","مثل س لكن مع اهتزاز الأحبال الصوتية."],
+["/ʃ/","sh","ship · fish","ش","الشفتان للأمام قليلًا والهواء يخرج بهدوء."],
+["/tʃ/","ch","chair · lunch","تش","صوت مركب يبدأ بإغلاق ثم إطلاق الهواء."],
+["/θ/","th","think · bath","ث تقريبًا","طرف اللسان يلامس حافة الأسنان؛ لا تستبدله دائمًا بس."],
+["/ð/","th","this · mother","ذ تقريبًا","مثل موضع ث مع اهتزاز الصوت."],
+["/ŋ/","ng","sing · long","ن أنفية خلفية","يرتفع مؤخر اللسان؛ لا تضف g قوية في نهاية sing."],
+["/æ/","a","cat · map","بين أَ وَا","افتح الفم أكثر من الكسرة، والصوت قصير."],
+["/ɪ/","i","sit · fish","إ قصيرة","أقصر وأرخى من ee في see."],
+["/iː/","ee","see · green","إي طويلة","مد الصوت قليلًا مع ابتسامة خفيفة."],
+["/ʌ/","u","cup · bus","أَ قصيرة","صوت مركزي قصير، وليس واوًا."],
+["/ə/","a / about","about · teacher","صوت خفيف محايد","يظهر غالبًا في المقاطع غير المشددة."]],
+pairs:[["ship","sheep","/ɪ/ مقابل /iː/"],["think","sink","/θ/ مقابل /s/"],["vet","wet","/v/ مقابل /w/"],["cap","cup","/æ/ مقابل /ʌ/"]]},
+ptbr:{voice:"pt-BR",dialect:"البرتغالية البرازيلية – النطق يختلف قليلًا حسب المنطقة",intro:"ركز على الحركات الفموية والأنفية، وصوت R، وS في نهاية المقطع، وJ/G، وLH/NH. لا تخلط بين النطق البرازيلي والأوروبي.",sounds:[
+["/ɐ̃w̃/","ão","não · pão","أنو أنفية تقريبًا","الحركة أنفية وتنتهي بانزلاق صوتي؛ لا تنطقها مقطعين منفصلين."],
+["/ɲ/","nh","vinho · manhã","نيْ ناعمة","وسط اللسان يقترب من سقف الحلق؛ قريبة من ñ الإسبانية."],
+["/ʎ/","lh","filho · mulher","ليْ ملتحمة","صوت جانبي حنكي، وليس ل + ي منفصلتين."],
+["/ʒ/","j / ge / gi","janela · gente","ژ","احتكاك مجهور مثل ژ في بعض الكلمات الدخيلة."],
+["/ʃ/","ch / s final*","chuva · mais","ش","ch غالبًا ش؛ وs النهائية قد تصبح ش في لهجات مثل ريو."],
+["/ʁ/","r inicial / rr","rua · carro","ه/خ حلقية بحسب المنطقة","R البرازيلية تختلف إقليميًا؛ اسمع لهجة المنطقة المستهدفة."],
+["/dʒ/","di","dia · dinheiro","دج","في مناطق كثيرة تتحول d قبل i إلى دج."],
+["/tʃ/","ti","tia · noite","تش","في مناطق كثيرة تتحول t قبل i إلى تش."],
+["/ɐ̃/","ã / am","mãe · campo","أَ أنفية","مرر جزءًا من الهواء عبر الأنف دون إضافة نون كاملة."],
+["/e/ ~ /i/","e final","nome · tarde","إ / إي خفيفة","الحركة النهائية غير المشددة قد تُرفع إلى i في النطق البرازيلي."]],
+pairs:[["avó","avô","اختلاف الحركة والنبرة يغير المعنى"],["mau","mão","فموي مقابل أنفي"],["tia","dia","/tʃ/ مقابل /dʒ/ في لهجات كثيرة"]]},
+de:{voice:"de-DE",dialect:"الألمانية القياسية – Hochdeutsch",intro:"تعلم الحركات الطويلة والقصيرة، Umlaut، وCH، وSCH، وR. انتبه إلى أن الحرف الواحد قد يتغير صوته بحسب موقعه.",sounds:[
+["/ç/","ch بعد e,i,ä,ö,ü","ich · Bücher","خ ناعمة أمامية","ارفع وسط اللسان نحو سقف الحلق؛ ليست ش ولا خ عربية ثقيلة."],
+["/x/","ch بعد a,o,u","Bach · Buch","خ خلفية","يخرج الاحتكاك من مؤخرة الفم."],
+["/ʃ/","sch","Schule · Fisch","ش","ثلاثة أحرف تكتب صوتًا واحدًا."],
+["/ts/","z","Zeit · zehn","تس","الحرف z ينطق تس."],
+["/v/","w","Wasser · Winter","ڤ","الحرف w ينطق مثل v."],
+["/f/","v","Vater · vier","ف","في كلمات كثيرة ينطق v مثل ف."],
+["/yː/","ü","Tür · grün","إي مع تدوير الشفتين","حافظ على وضع اللسان في إي ودوّر الشفتين."],
+["/øː/","ö","schön · Öl","إه مع تدوير الشفتين","ابدأ من e ثم دوّر الشفتين."],
+["/ʁ/","r","rot · drei","ر حلقية غالبًا","النطق القياسي غالبًا خلفي، مع اختلافات إقليمية."],
+["/ʔ/","بداية حركة","Apfel · Abend","وقفة حنجرية","قد تبدأ الكلمة بوقفة خفيفة قبل الحركة."]],
+pairs:[["Bett","Beet","حركة قصيرة مقابل طويلة"],["schon","schön","o مقابل ö"],["Küche","Kuh","ü مقابل u"]]},
+fr:{voice:"fr-FR",dialect:"الفرنسية القياسية – نطق فرنسا",intro:"ركز على الحركات الأنفية، الفرق بين U وOU، الحروف الصامتة، والربط بين الكلمات (liaison). الكتابة الفرنسية لا تطابق النطق حرفًا بحرف.",sounds:[
+["/y/","u","tu · rue","إي مع تدوير الشفتين","قل إي مع إبقاء الشفتين مدورتين."],
+["/u/","ou","vous · roue","و","صوت خلفي مستدير؛ فرّقه عن u الفرنسية."],
+["/ɑ̃/","an / en","sans · enfant","آن أنفية","لا تنطق n كاملة؛ اجعل الرنين أنفيًا."],
+["/ɛ̃/","in / ain","pain · matin","إَ أنفية","حركة أنفية أمامية."],
+["/ɔ̃/","on","nom · bon","أو أنفية","الشفتان مستديرتان مع رنين أنفي."],
+["/ʃ/","ch","chat · bouche","ش","ch صوت واحد."],
+["/ʒ/","j / g + e,i","jour · girafe","ژ","احتكاكي مجهور."],
+["/ʁ/","r","rue · Paris","ر حلقية","يصدر من مؤخرة الفم، لا تهزه مثل الراء العربية."],
+["/ə/","e caduc","petit · samedi","صوت خفيف قد يسقط","وجوده أو حذفه يتغير بحسب سرعة الكلام والسياق."],
+["liaison","حرف أخير + حركة","les amis · vous avez","وصل صوتي","قد يظهر صوت حرف مكتوب صامت عند الوصل."]],
+pairs:[["tu","tout","/y/ مقابل /u/"],["beau","bon","حركة فموية مقابل أنفية"],["dessus","dessous","u مقابل ou"]]},
+it:{voice:"it-IT",dialect:"الإيطالية القياسية",intro:"الإيطالية واضحة نسبيًا في الحركات الخمس، لكن طول/تشديد الحروف الساكنة مهم جدًا. تعلّم أيضًا مجموعات gn وgli وsc.",sounds:[
+["/ɲ/","gn","gnocchi · bagno","نيْ ملتحمة","قريبة من ñ الإسبانية."],
+["/ʎ/","gli","figlio · famiglia","ليْ حنكية","لا تفصلها إلى g + l + i."],
+["/ʃ/","sc + e/i","scena · pesce","ش","قبل e أو i غالبًا تنطق ش."],
+["/tʃ/","c + e/i","ciao · cena","تش","c قبل e أو i تنطق تش."],
+["/k/","ch + e/i","che · chi","ك","h تحافظ على صوت الكاف قبل e وi."],
+["/dʒ/","g + e/i","gelato · giorno","دج","g قبل e أو i تنطق دج."],
+["/r/","r / rr","caro · carro","ر","في carro الراء مشددة أطول من caro."],
+["/a e i o u/","a e i o u","casa · bene · vino","ا إ إي أو أو","الحركات الخمس واضحة ولا تختزل عادة."],
+["/s/ ~ /z/","s","sole · casa","س أو ز","قد يتغير صوت s بحسب موقعها واللهجة."],
+["/ts/ ~ /dz/","z / zz","pizza · zero","تس / دز","تختلف قيمة z بين الكلمات؛ احفظها مع المثال."]],
+pairs:[["pala","palla","حرف l مفرد مقابل مشدد"],["caro","carro","r مفردة مقابل مشددة"],["pesca","pesca","نفس الكتابة قد تختلف الحركة والمعنى بحسب السياق"]]},
+pt:{voice:"pt-PT",dialect:"البرتغالية الأوروبية – لا تستخدم قواعد الصوت البرازيلي بدلًا منها",intro:"أهم ما يميز النطق الأوروبي اختزال الحركات غير المشددة، وكثرة الأصوات المركزية، والنطق المختلف لـ S النهائية وR. الأمثلة هنا تأسيسية ويجب ربطها بتسجيلات من البرتغال.",sounds:[
+["/ɐ/","a غير مشددة","cama · falar","أَ مركزية خفيفة","أقصر وأقل وضوحًا من a المشددة."],
+["/ɨ/","e غير مشددة","pequeno · de","إ مركزية خفيفة","قد تكون قصيرة جدًا أو تسقط في الكلام السريع."],
+["/ʃ/","s في نهاية المقطع","este · festas","ش","في النطق الأوروبي غالبًا تتحول s النهائية إلى ش."],
+["/ʒ/","s بين حركتين","casa · mesmo","ژ","قد ينطق s بين الحركات بصوت مجهور."],
+["/ʎ/","lh","filho · trabalho","ليْ حنكية","صوت واحد وليس حرفين منفصلين."],
+["/ɲ/","nh","vinho · manhã","نيْ حنكية","يشبه ñ الإسبانية."],
+["/ʁ/","r inicial / rr","rua · carro","ر حلقية","النطق يختلف بين المناطق والمتحدثين."],
+["/ɾ/","r مفرد بين حركتين","caro · barato","ر قصيرة","ضربة لسان سريعة."],
+["/ɐ̃w̃/","ão","não · coração","أنو أنفية","انتبه إلى الحركة الأنفية والنهاية المنزلقة."],
+["/u/","o نهائية غير مشددة","livro · amigo","و","كثيرًا ما تقترب o النهائية غير المشددة من u."]],
+pairs:[["avó","avô","اختلاف جودة الحركة والنبرة"],["caro","carro","r قصيرة مقابل rr حلقية"],["pato","pacto","تتابع الحركات/الصوامت"]]},
+es:{voice:"es-ES",dialect:"الإسبانية – أمثلة قشتالية؛ توجد اختلافات إقليمية",intro:"الإسبانية لها خمس حركات أساسية واضحة. ركز على R/RR، وJ، وÑ، وLL/Y، وعلى الفرق الإقليمي في C وZ.",sounds:[
+["/ɾ/","r مفردة","pero · caro","ر قصيرة","ضربة واحدة سريعة بطرف اللسان."],
+["/r/","rr / r أول الكلمة","perro · rosa","ر مكررة","اهتزازات متعددة؛ تميّز معنى كلمات مثل pero وperro."],
+["/ɲ/","ñ","niño · mañana","نيْ حنكية","صوت واحد قريب من نْي الملتحمة."],
+["/x/","j / g + e,i","jamón · gente","خ","احتكاك خلفي، يختلف عن خ العربية بحسب المنطقة."],
+["/ʝ/","y / ll","yo · calle","ي/ج خفيفة","في معظم اللهجات اندمج ll وy، مع تنوع واسع."],
+["/θ/","z / c + e,i","zapato · cinco","ث","في إسبانيا القشتالية؛ في أمريكا اللاتينية غالبًا /s/."],
+["/β/","b / v بين الحركات","lobo · uva","بين ب وڤ","إغلاق الشفتين يكون لينًا دون انفجار كامل."],
+["/a e i o u/","الحركات الخمس","casa · mesa · vino","ا إ إي أو أو","واضحة وثابتة نسبيًا ولا تختزل عادة."],
+["/tʃ/","ch","chico · noche","تش","مجموعة ch صوت واحد."],
+["/s/","s","sopa · casa","س","في مناطق كثيرة ثابتة، وقد تتغير s النهائية في لهجات أخرى."]],
+pairs:[["pero","perro","ر قصيرة مقابل ر مكررة"],["casa","caza","س مقابل ث في القشتالية؛ غالبًا يتطابقان بأمريكا اللاتينية"],["calló","cayó","ll مقابل y بحسب اللهجة"]]}
+};
+const el=id=>document.getElementById(id);
+function speak(text,lang,rate=0.82){if(!('speechSynthesis'in window)){el('practiceStatus').textContent='ميزة النطق غير متاحة في هذا المتصفح.';return;}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang;u.rate=rate;speechSynthesis.speak(u);}
+function render(){const key=el('language').value,d=DATA[key];el('dialect').textContent=d.dialect;el('introTitle').textContent='كيف تتعلم النطق في '+({en:'الإنجليزية',ptbr:'البرتغالية البرازيلية',de:'الألمانية',fr:'الفرنسية',it:'الإيطالية',pt:'البرتغالية الأوروبية',es:'الإسبانية'}[key]);el('intro').textContent=d.intro;
+el('soundGrid').innerHTML=d.sounds.map((s,i)=>'<article class="sound"><div class="ipa">'+s[0]+'</div><div class="letter">'+s[1]+'</div><div class="examples">'+s[2]+'</div><div class="ar"><b>تقريب عربي:</b> '+s[3]+'</div><p class="muted">'+s[4]+'</p><button type="button" onclick="speak('+JSON.stringify(s[2].split(' · ')[0])+','+JSON.stringify(d.voice)+')">▶ اسمع المثال</button></article>').join('');
+el('pairs').innerHTML=d.pairs.map((p,i)=>'<div class="pair"><span><strong>'+p[0]+'</strong> / <strong>'+p[1]+'</strong><br><small>'+p[2]+'</small></span><button type="button" onclick="speak('+JSON.stringify(p[0]+' ... '+p[1])+','+JSON.stringify(d.voice)+')">▶ اسمع المقارنة</button></div>').join('');
+el('practiceStatus').textContent='تم تحميل '+d.sounds.length+' صوتًا أو نمطًا تدريبيًا.';}
+el('language').addEventListener('change',render);el('repeatAll').addEventListener('click',()=>{const d=DATA[el('language').value];speak(d.sounds.slice(0,5).map(x=>x[2].split(' · ')[0]).join('. '),d.voice,0.72);el('practiceStatus').textContent='استمع للأمثلة ببطء ثم كررها.';});
+const params=new URLSearchParams(location.search);if(DATA[params.get('lang')])el('language').value=params.get('lang');render();
+</script></body></html>
