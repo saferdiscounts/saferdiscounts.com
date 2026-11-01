@@ -56,15 +56,19 @@ function groupExamHistory(){
  box.innerHTML=names.map(name=>{const v=saved[name];return '<div class="exam-history-item"><b>'+esc(name)+'</b><span>'+(v?'آخر نتيجة: '+v.latest+'/'+v.total+' ('+v.percent+'%) · أفضل نتيجة: '+v.best+'%':'لم تؤدَّ بعد')+'</span></div>'}).join('');
 }
 function groupExamItems(name){
- const items=[];
- lessonOrder.filter(i=>lessonGroup(i)===name).forEach(i=>lessons[i].words.forEach(w=>{if(w[0]&&w[2]&&!items.some(x=>x.pt===w[0]&&x.ar===w[2]))items.push({pt:w[0],ar:w[2],lesson:i})}));
+ const items=[],seen=new Set();
+ lessonOrder.filter(i=>lessonGroup(i)===name).forEach(i=>{
+  const lesson=lessons[i];
+  lesson.words.forEach(w=>{const key=w[0]+'|'+w[2];if(w[0]&&w[2]&&!seen.has(key)){seen.add(key);items.push({kind:'vocab',pt:w[0],ar:w[2],lesson:i})}});
+  if(lesson.q&&Array.isArray(lesson.answers)&&Number.isInteger(lesson.correct)&&lesson.answers[lesson.correct])items.push({kind:'comprehension',q:lesson.q,answers:lesson.answers.slice(),correct:lesson.correct,explain:lesson.explain||lesson.grammar||'',lesson:i});
+ });
  return items;
 }
 function groupExamMarkup(i){
  const name=lessonGroup(i),members=lessonOrder.filter(x=>lessonGroup(x)===name);
  if(members[members.length-1]!==i)return '';
  const total=groupExamItems(name).length;if(total<4)return '';
- return '<section class="group-exam" data-group-name="'+esc(name)+'"><div class="quiz-head"><b>🏆 امتحان شامل للمجموعة</b><span>'+total+' عبارة من دروس المجموعة</span></div><p>اختبر حصيلتك من مفردات ودروس المجموعة. سيتكوّن الامتحان من '+Math.min(10,total)+' أسئلة متنوعة.</p><button type="button" class="btn" data-group-start>ابدأ الامتحان الشامل ←</button></section>';
+ return '<section class="group-exam" data-group-name="'+esc(name)+'"><div class="quiz-head"><b>🏆 امتحان شامل للمجموعة</b><span>'+total+' سؤالًا من الدروس والمفردات</span></div><p>امتحان متنوع يجمع بين فهم العبارات البرتغالية وأسئلة الفهم والتطبيق من دروس المجموعة. سيتكوّن من '+Math.min(10,total)+' أسئلة في كل محاولة.</p><button type="button" class="btn" data-group-start>ابدأ الامتحان الشامل ←</button></section>';
 }
 const ptbrAudioBase=String(window.PTBR_AUDIO_BASE_URL||'').trim().replace(/\/?$/,'/');
 const ptbrAudioBridge=document.getElementById('ptbrAudioBridge');
@@ -94,10 +98,17 @@ lessonContent.addEventListener('click',event=>{
  let questions=[],step=0,score=0,answered=false;
  function start(){questions=shuffle(all).slice(0,Math.min(10,all.length));step=0;score=0;show()}
  function show(){
-  answered=false;const target=questions[step],used=new Set([target.ar]),wrong=[];
-  for(const item of shuffle(all.filter(x=>x!==target))){if(!used.has(item.ar)){used.add(item.ar);wrong.push(item);if(wrong.length===3)break}}
-  const choices=shuffle([target,...wrong]);
-  section.innerHTML='<div class="quiz-head"><b>🏆 امتحان المجموعة</b><span>السؤال '+(step+1)+' من '+questions.length+' · الدرجة '+score+'</span></div><div class="quiz-progress"><span style="width:'+(step/questions.length*100)+'%"></span></div><p>ما معنى العبارة البرتغالية التالية؟</p><div class="pt" lang="pt-BR" dir="ltr" style="font-size:22px;padding:12px">'+esc(target.pt)+'</div><div class="answers">'+choices.map((item,n)=>'<button type="button" class="answer" data-group-answer="'+n+'" data-correct="'+(item===target?'1':'0')+'">'+esc(item.ar)+'</button>').join('')+'</div><div class="feedback" aria-live="polite">اختار المعنى الصحيح.</div>';
+  answered=false;const target=questions[step];let prompt='',choices=[];
+  if(target.kind==='comprehension'){
+   prompt='<p><b>سؤال فهم وتطبيق:</b> '+esc(target.q)+'</p>';
+   choices=shuffle(target.answers.map((answer,index)=>({ar:answer,correct:index===target.correct})));
+  }else{
+   const used=new Set([target.ar]),wrong=[];
+   for(const item of shuffle(all.filter(x=>x.kind==='vocab'&&x!==target))){if(!used.has(item.ar)){used.add(item.ar);wrong.push(item);if(wrong.length===3)break}}
+   choices=shuffle([target,...wrong].map(item=>({ar:item.ar,correct:item===target})));
+   prompt='<p>ما معنى العبارة البرتغالية التالية؟</p><div class="pt" lang="pt-BR" dir="ltr" style="font-size:22px;padding:12px">'+esc(target.pt)+'</div>';
+  }
+  section.innerHTML='<div class="quiz-head"><b>🏆 امتحان المجموعة</b><span>السؤال '+(step+1)+' من '+questions.length+' · الدرجة '+score+'</span></div><div class="quiz-progress"><span style="width:'+(step/questions.length*100)+'%"></span></div>'+prompt+'<div class="answers">'+choices.map((item,n)=>'<button type="button" class="answer" data-group-answer="'+n+'" data-correct="'+(item.correct?'1':'0')+'">'+esc(item.ar)+'</button>').join('')+'</div><div class="feedback" aria-live="polite">اختار الإجابة الصحيحة.</div>';
  }
  function finish(){
   const percent=Math.round(score/questions.length*100);let saved={};try{saved=JSON.parse(localStorage.getItem('sd_ptbr_group_scores')||'{}')||{}}catch(e){saved={}}
