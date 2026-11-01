@@ -45,14 +45,30 @@
     [/قطة|قط|قطه|قطط/,'cat'],[/كلب|جرو|كلاب/,'dog'],[/فول سوداني|الفول السوداني|فول|سوداني|فستق سوداني|مكسرات|فول سوداني/,'peanuts'],[/لبن|حليب|لبن كامل|كوب لبن/,'milk'],[/ليمون|ليمونة|ليمونادة/,'lemon'],[/قلب|قلبي|القلب|قلوب/,'heart'],[/أم|الأم|أبي|الأب|أب|عائلة|عائلتي|أخي|أختي|أسرة|أسرتي|أمي|أمك|أبوك|والدان|والدي|عائلتك/,'family'],[/ساعة|الساعة|وقت|الآن|اليوم|غدًا|بكرة|صباحًا|مساءً|بعد الظهر|موعد|مواعيد|تاريخ|توقيت|دقيقة|دقائق/,'clock'],[/يمين|يسار|انعطف|اتجه|اتجاه|ناصية|تقاطع|مدخل|مخرج|قريب من هنا|بعيد|خريطة|لافتة|إشارة مرور/,'directions'],[/إسعاف|إسعافًا|إسعاف|طوارئ|نجدة|شرطة|حادث|مساعدة عاجلة/,'ambulance'],[/ملابس|قميص|بنطلون|فستان|تنورة|جاكيت|سترة|جوارب|ملابس|مقاس|مقاسي|لون آخر|أزرق|أسود|أحمر|أبيض|أخضر|تجربة الملابس|أجرّب|أقيس/,'clothing'],[/كتاب|كتب|قراءة|دراسة|تعليم|مدرسة|جامعة|مكتبة/,'books']
   ];
   function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-  function find(meaning){
+  function find(meaning,word){
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
+    var target=String(word||'');
+    var englishRules=[
+      [/\\b(?:coffee|espresso|latte)\\b/i,'coffee'],[/\\btea\\b/i,'tea'],[/\\b(?:water|drink)\\b/i,'water'],[/\\b(?:juice|orange juice)\\b/i,'juice'],
+      [/\\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\\b/i,'money'],[/\\b(?:phone|mobile|telephone|call|message)\\b/i,'phone'],
+      [/\\b(?:bread|loaf|toast)\\b/i,'bread'],[/\\beggs?\\b/i,'egg'],[/\\b(?:shoe|shoes|sneaker|sneakers)\\b/i,'shoes'],[/\\b(?:write|writing|pen|notebook|paper)\\b/i,'writing'],
+      [/\\bapples?\\b/i,'apple'],[/\\b(?:house|home|room|bedroom|kitchen|bathroom|hotel|apartment|door|key)\\b/i,'house'],
+      [/\\b(?:airplane|aircraft|plane|airport|flight)\\b/i,'airplane'],[/\\b(?:taxi|cab|uber|car|driver)\\b/i,'taxi'],[/\\b(?:luggage|suitcase|baggage)\\b/i,'luggage'],
+      [/\\b(?:train|metro|subway)\\b/i,'train'],[/\\b(?:bus|coach)\\b/i,'bus'],[/\\b(?:beach|sea|ocean|island|coast)\\b/i,'beach'],
+      [/\\b(?:food|meal|breakfast|lunch|dinner|restaurant|meat|dish)\\b/i,'meal'],[/\\b(?:city|street|road|neighborhood|park|museum)\\b/i,'city'],
+      [/\\b(?:doctor|nurse|hospital|clinic|pharmacy|medicine|pain|headache)\\b/i,'doctor'],[/\\bcats?\\b/i,'cat'],[/\\b(?:dogs?|puppies)\\b/i,'dog'],
+      [/\\b(?:peanuts?|nuts)\\b/i,'peanuts'],[/\\b(?:milk)\\b/i,'milk'],[/\\b(?:lemon|lemons|lemonade)\\b/i,'lemon'],[/\\bheart\\b/i,'heart'],
+      [/\\b(?:family|mother|father|parents|sister|brother)\\b/i,'family'],[/\\b(?:clock|time|watch|minute|minutes)\\b/i,'clock'],
+      [/\\b(?:right|left|turn|direction|map|intersection|entrance|exit)\\b/i,'directions'],[/\\b(?:ambulance|emergency|police|accident)\\b/i,'ambulance'],
+      [/\\b(?:clothes|clothing|shirt|trousers|pants|dress|skirt|jacket|socks|size)\\b/i,'clothing'],[/\\b(?:book|books|reading|school|university|library|study)\\b/i,'books']
+    ];
+    for(var j=0;j<englishRules.length;j++)if(englishRules[j][0].test(target))return photos[englishRules[j][1]];
     return null;
   }
   function card(word,meaning,lang,kind){
     var safeWord=esc(word),safeMeaning=esc(meaning),safeLang=esc(lang||'');
-    var p=find(meaning),photo=p?'<img class="academy-photo-image" src="'+esc(p.url)+'" alt="'+safeMeaning+'" loading="lazy" decoding="async">':'';
+    var p=find(meaning,word),photo=p?'<img class="academy-photo-image" src="'+esc(p.url)+'" alt="'+safeMeaning+'" loading="lazy" decoding="async">':'';
     var speech=kind==='ptbr'?'<span class="academy-photo-word pt-speak" role="button" tabindex="0" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</span>':'<button type="button" class="academy-photo-word target" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</button>';
     var credit=p?'<a class="academy-photo-credit" href="'+esc(p.source)+'" target="_blank" rel="noopener" aria-label="مصدر الصورة Unsplash">Unsplash</a>':'<span class="academy-photo-fallback">مفردة تعليمية</span>';
     return '<span class="academy-photo-card '+(p?'has-photo':'no-photo')+'" role="group" aria-label="'+safeWord+' — '+safeMeaning+'">'+photo+speech+'<small>'+safeMeaning+'</small>'+credit+'</span>';
