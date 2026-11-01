@@ -32,6 +32,32 @@ document.getElementById("next").onclick=()=>render((i+1)%lessons.length);
 const ex=document.querySelector("[data-exam]");if(ex)ex.onclick=()=>startExam(ex.dataset.exam);
 }
 function examMarkup(g){return '<section class="group-exam"><b>🏆 امتحان شامل: '+g+'</b><p>أسئلة متنوعة من مفردات الوحدتين، مع تصحيح فوري وتسجيل أفضل نتيجة.</p><button class="btn" data-exam="'+g+'">ابدأ الامتحان</button><div id="examBox"></div></section>'}
-function startExam(g){const bank=lessons.filter((l,i)=>group(i)===g).flatMap(l=>l.words.map(w=>({q:"ما معنى "+w[0]+"؟",opts:[w[2],...l.words.filter(x=>x!==w).map(x=>x[2]),"عبارة أخرى"],answer:0})));let qs=bank.slice(0,6),n=0,score=0;const box=document.getElementById("examBox");function show(){if(n>=qs.length){const pct=Math.round(score/qs.length*100);let s={};try{s=JSON.parse(localStorage.getItem(scoreKey)||"{}")}catch(e){}s[g]={latest:pct,best:Math.max(pct,s[g]?.best||0)};localStorage.setItem(scoreKey,JSON.stringify(s));box.innerHTML="<h3>نتيجتك: "+score+" من "+qs.length+" ("+pct+"%)</h3><button class='btn' id='again'>إعادة الامتحان</button>";document.getElementById("again").onclick=()=>startExam(g);history();return}const q=qs[n];const options=[q.opts[0],q.opts[1],q.opts[2]];box.innerHTML="<p>السؤال "+(n+1)+" من "+qs.length+": "+q.q+"</p>"+options.map((o,i)=>"<button class='answer' data-ex='"+i+"'>"+o+"</button>").join("");box.querySelectorAll("[data-ex]").forEach(b=>b.onclick=()=>{if(+b.dataset.ex===0)score++;n++;show()})}show()}
+function shuffle(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function startExam(g){
+ const allWords=lessons.flatMap(l=>l.words.map(w=>({foreign:w[0],meaning:w[2]})));
+ const bank=lessons.filter((l,i)=>group(i)===g).flatMap(l=>l.words.map(w=>{
+  const distractors=shuffle(allWords.filter(x=>x.meaning!==w[2])).slice(0,2).map(x=>x.meaning);
+  const options=shuffle([{text:w[2],correct:true},...distractors.map(text=>({text,correct:false}))]);
+  return {q:"ما معنى "+w[0]+"؟",options};
+ }));
+ const qs=shuffle(bank).slice(0,Math.min(6,bank.length));let n=0,score=0;const box=document.getElementById("examBox");
+ function show(){
+  if(n>=qs.length){
+   const pct=Math.round(score/qs.length*100);let s={};try{s=JSON.parse(localStorage.getItem(scoreKey)||"{}")}catch(e){}
+   s[g]={latest:pct,best:Math.max(pct,s[g]?.best||0)};localStorage.setItem(scoreKey,JSON.stringify(s));
+   box.innerHTML="<h3>نتيجتك: "+score+" من "+qs.length+" ("+pct+"%)</h3><button class='btn' id='again'>إعادة الامتحان بترتيب مختلف</button>";
+   document.getElementById("again").onclick=()=>startExam(g);history();return;
+  }
+  const q=qs[n];box.innerHTML="<p>السؤال "+(n+1)+" من "+qs.length+": "+q.q+"</p>"+q.options.map((o,i)=>"<button class='answer' data-ex='"+i+"'>"+o.text+"</button>").join("");
+  box.querySelectorAll("[data-ex]").forEach(b=>b.onclick=()=>{
+   const selected=q.options[+b.dataset.ex];if(selected.correct)score++;
+   box.querySelectorAll("[data-ex]").forEach(x=>{x.disabled=true;if(q.options[+x.dataset.ex].correct)x.classList.add("correct")});
+   if(!selected.correct)b.classList.add("wrong");
+   const feedback=document.createElement("p");feedback.className="feedback";feedback.textContent=selected.correct?"إجابة صحيحة":"الإجابة الصحيحة: "+q.options.find(o=>o.correct).text;box.appendChild(feedback);
+   const next=document.createElement("button");next.className="btn";next.textContent=n===qs.length-1?"عرض النتيجة":"السؤال التالي";next.onclick=()=>{n++;show()};box.appendChild(next);
+  });
+ }
+ show();
+}
 document.getElementById("lessonList").innerHTML=lessons.map((l,i)=>'<button class="lessonpick" data-i="'+i+'">'+(i+1)+". "+l.title+'</button>').join("");document.querySelectorAll(".lessonpick").forEach(b=>b.onclick=()=>render(+b.dataset.i));progress();history();render(0);
 </script></body></html>
