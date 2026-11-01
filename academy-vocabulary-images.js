@@ -1,6 +1,7 @@
 (function(){
   'use strict';
   var photos={
+    passport:{url:'https://images.unsplash.com/photo-1654163601023-88f6ba22b2c7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-hand-holding-a-passport-over-a-white-background-q0vfoRmGIRA'},
     coffee:{url:'https://images.unsplash.com/photo-1530632308350-e96d55f00e4a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/white-ceramic-cup-on-saucer-on-top-of-wooden-table-UEIkj1N2LlE'},
     bread:{url:'https://images.unsplash.com/photo-1722606509001-6cdbc99bdf33?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-kitchen-counter-with-a-loaf-of-bread-on-it-7hVnFnt_u9U'},
     apple:{url:'https://images.unsplash.com/photo-1565794104797-bdabb8e04ba6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-close-up-of-a-red-apple-with-water-drops-jfCQFqhHhEw'},
@@ -36,6 +37,7 @@
     clothing:{url:'https://images.unsplash.com/photo-1767968037382-8eb9c564339f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/clothes-hanging-on-a-rack-in-a-boutique-pt3EBzQcxP0'}
   };
   var rules=[
+    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|برتقال|ليمونادة|مشروب فاكهة/,'juice'],
     [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
@@ -143,10 +145,25 @@
     [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|polícia|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calça|vestido|saia|jaqueta|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
+  var italianPassportRules=[/passaporto|documento di viaggio/i];
+  var spanishPassportRules=[/pasaporte|documento de viaje/i];
+  var frenchPassportRules=[/passeport|document de voyage/i];
+  var germanPassportRules=[/reisepass|pass\b|reisedokument/i];
+  var russianPassportRules=[/паспорт|проездной документ/i];
+  var europeanPassportRules=[/passaporte|documento de viagem/i];
+  var brazilianPassportRules=[/passaporte|documento de viagem/i];
   function find(meaning,word,lang){
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     var target=String(word||'');
+    if(/\bpassport\b|\btravel document\b/i.test(target))return photos.passport;
+    if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
+    if(lang==='es'&&spanishPassportRules[0].test(target))return photos.passport;
+    if(lang==='fr'&&frenchPassportRules[0].test(target))return photos.passport;
+    if(lang==='de'&&germanPassportRules[0].test(target))return photos.passport;
+    if(lang==='ru'&&russianPassportRules[0].test(target))return photos.passport;
+    if((lang==='pt-BR'&&brazilianPassportRules[0].test(target))||(lang==='pt-PT'&&europeanPassportRules[0].test(target)))return photos.passport;
+
     if(lang==='it')for(var k=0;k<italianRules.length;k++)if(italianRules[k][0].test(target))return photos[italianRules[k][1]];
     if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(spanishRules[q][0].test(target))return photos[spanishRules[q][1]];
     if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
