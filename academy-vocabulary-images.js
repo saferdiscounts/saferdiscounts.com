@@ -136,25 +136,25 @@
     [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|quarto|cozinha|casa de banho|hotel|porta|chave)/i,'house'],
     [/(?:avião|aeroporto|voo)/i,'airplane'],[/(?:táxi|carro|automóvel|condutor)/i,'taxi'],[/(?:mala|bagagem)/i,'luggage'],
     [/(?:comboio|metro|estação)/i,'train'],[/(?:autocarro|ônibus|paragem)/i,'bus'],[/(?:praia|mar|oceano|ilha|costa)/i,'beach'],
-    [/(?:comida|refeição|pequeno-almoço|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu)/i,'city'],
+    [/(?:comida|refeição|pequeno-almoço|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu|trânsito)/i,'city'],
     [/(?:médico|médica|enfermeiro|enfermeira|hospital|clínica|farmácia|medicamento|dor)/i,'doctor'],[/(?:gato|gatos)/i,'cat'],[/(?:cão|cães|cachorro)/i,'dog'],
     [/(?:amendoim|amendoins)/i,'peanuts'],[/(?:leite)/i,'milk'],[/(?:limão|limões|limonada)/i,'lemon'],[/(?:coração)/i,'heart'],
     [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
-    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
+    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída|endereço)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calças|vestido|saia|casaco|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
   var brazilianPortugueseRules=[
     [/(?:café|cafezinho|expresso)/i,'coffee'],[/(?:chá)/i,'tea'],[/(?:água)/i,'water'],[/(?:suco|suco de laranja)/i,'juice'],
-    [/(?:dinheiro|grana|preço|conta|pagar|pagamento|comprar|vender|reais)/i,'money'],[/(?:telefone|celular|ligação|mensagem)/i,'phone'],
+    [/(?:dinheiro|grana|preço|conta|pagar|pagamento|comprar|vender|reais|gorjeta)/i,'money'],[/(?:telefone|celular|ligação|mensagem)/i,'phone'],
     [/(?:pão|pão francês)/i,'bread'],[/(?:ovo|ovos)/i,'egg'],[/(?:sapato|sapatos|tênis)/i,'shoes'],[/(?:escrever|caneta|caderno|papel)/i,'writing'],
     [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|quarto|cozinha|banheiro|hotel|porta|chave)/i,'house'],
     [/(?:avião|aeroporto|voo)/i,'airplane'],[/(?:táxi|carro|motorista)/i,'taxi'],[/(?:mala|bagagem)/i,'luggage'],
-    [/(?:trem|metrô|estação)/i,'train'],[/(?:ônibus|onibus|ponto de ônibus)/i,'bus'],[/(?:praia|mar|oceano|ilha|litoral)/i,'beach'],
+    [/(?:trem|metrô|estação|linha)/i,'train'],[/(?:ônibus|onibus|ponto de ônibus)/i,'bus'],[/(?:praia|mar|oceano|ilha|litoral)/i,'beach'],
     [/(?:comida|refeição|café da manhã|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu)/i,'city'],
     [/(?:médico|médica|enfermeiro|enfermeira|hospital|clínica|farmácia|remédio|dor)/i,'doctor'],[/(?:gato|gata|gatos)/i,'cat'],[/(?:cachorro|cão|cães|filhote)/i,'dog'],
     [/(?:amendoim|amendoins)/i,'peanuts'],[/(?:leite)/i,'milk'],[/(?:limão|limões|limonada)/i,'lemon'],[/(?:coração)/i,'heart'],
-    [/(?:família|mãe|mamãe|pai|papai|pais|irmã|irmão)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
-    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|polícia|acidente)/i,'ambulance'],
+    [/(?:família|mãe|mamãe|pai|papai|pais|irmã|irmão|avó|avô|menino|menina)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
+    [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calça|vestido|saia|jaqueta|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
   var italianPassportRules=[/passaporto|documento di viaggio/i];
