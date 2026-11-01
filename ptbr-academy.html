@@ -96,7 +96,7 @@ lessonContent.addEventListener('click',event=>{
  const name=section.dataset.groupName,all=groupExamItems(name);
  const shuffle=list=>{const a=list.slice();for(let n=a.length-1;n>0;n--){const j=Math.floor(Math.random()*(n+1));[a[n],a[j]]=[a[j],a[n]]}return a};
  let questions=[],step=0,score=0,answered=false;
- function start(){questions=shuffle(all).slice(0,Math.min(10,all.length));step=0;score=0;show()}
+ function start(){const size=Math.min(10,all.length),vocab=shuffle(all.filter(x=>x.kind==='vocab')),comprehension=shuffle(all.filter(x=>x.kind==='comprehension')),comprehensionCount=Math.min(Math.floor(size/2),comprehension.length),vocabCount=Math.min(size-comprehensionCount,vocab.length);questions=shuffle([...vocab.slice(0,vocabCount),...comprehension.slice(0,comprehensionCount)]);step=0;score=0;show()}
  function show(){
   answered=false;const target=questions[step];let prompt='',choices=[];
   if(target.kind==='comprehension'){
