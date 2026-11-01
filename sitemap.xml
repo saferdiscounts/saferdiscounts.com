@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://saferdiscounts.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/blog.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/guide-german.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/language-academy.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/english-travel-guide.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/english-academy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://saferdiscounts.com/guide-english.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://saferdiscounts.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://saferdiscounts.com/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+  <!-- Language academy hub and complete academies -->
+  <url><loc>https://saferdiscounts.com/language-academy.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://saferdiscounts.com/ptbr-academy.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://saferdiscounts.com/english-academy.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://saferdiscounts.com/german-academy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/french-academy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/italian-academy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/spanish-academy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/portuguese-academy.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Pronunciation practice -->
+  <url><loc>https://saferdiscounts.com/pronunciation-lab.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/ptbr-pronunciation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Travel guides -->
+  <url><loc>https://saferdiscounts.com/ptbr-travel-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://saferdiscounts.com/english-travel-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Language reference guides -->
+  <url><loc>https://saferdiscounts.com/guide-english.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-french.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-german.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-italian.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-portuguese-brazilian.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-portuguese.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-spanish.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Destination and booking guides -->
+  <url><loc>https://saferdiscounts.com/guide-giza-pyramids.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-istanbul.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://saferdiscounts.com/guide-booking-whatsapp.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
