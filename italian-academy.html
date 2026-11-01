@@ -27,7 +27,6 @@ document.getElementById("listen").onclick=()=>speak(l.dialogue.map(d=>d[1]).join
 document.getElementById("slow").onclick=()=>speak(l.dialogue.map(d=>d[1]).join(". "),.62);
 document.getElementById("repeat").onclick=()=>speak(l.dialogue.map(d=>d[1]).join(". "));
 runLessonQuiz(l);
-document.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{const ok=+b.dataset.a===l.correct;document.querySelectorAll("[data-a]").forEach(x=>{x.disabled=true;if(+x.dataset.a===l.correct)x.classList.add("correct")});if(!ok)b.classList.add("wrong");document.getElementById("feedback").textContent=ok?"إجابة صحيحة!":"مش دي الإجابة الصحيحة. راجع العبارة واستمع لها مرة تانية."});
 document.getElementById("complete").onclick=()=>{if(!done.includes(i))done.push(i);localStorage.setItem(key,JSON.stringify(done));progress();render(i)};
 document.getElementById("next").onclick=()=>render((i+1)%lessons.length);
 const ex=document.querySelector("[data-exam]");if(ex)ex.onclick=()=>startExam(ex.dataset.exam);
@@ -37,11 +36,11 @@ function shuffle(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j
 function runLessonQuiz(l){
  const all=lessons.flatMap(x=>x.words.map(w=>w[2])).filter((v,i,a)=>a.indexOf(v)===i);
  const questions=l.words.map(w=>({q:"ما معنى "+w[0]+"؟",correct:w[2]}));
- questions.push({q:l.q,correct:l.answers[l.correct]});
+ questions.push({q:l.q,correct:l.answers[l.correct],distractors:l.answers.filter((x,i)=>i!==l.correct)});
  const qs=shuffle(questions);let n=0,score=0;const box=document.getElementById("lessonQuiz");
  function show(){
   if(n>=qs.length){box.innerHTML="<h4>نتيجتك: "+score+" من "+qs.length+"</h4><button class='btn alt' id='retryLesson'>أعد الاختبار</button>";document.getElementById("retryLesson").onclick=()=>runLessonQuiz(l);return}
-  const q=qs[n],wrong=shuffle(all.filter(x=>x!==q.correct)).slice(0,2);
+  const q=qs[n],wrong=q.distractors?shuffle(q.distractors).slice(0,2):shuffle(all.filter(x=>x!==q.correct)).slice(0,2);
   const opts=shuffle([{text:q.correct,ok:true},...wrong.map(text=>({text,ok:false}))]);
   box.innerHTML="<p>السؤال "+(n+1)+" من "+qs.length+": "+q.q+"</p>"+opts.map((o,i)=>"<button class='answer' data-lq='"+i+"'>"+o.text+"</button>").join("");
   box.querySelectorAll("[data-lq]").forEach(b=>b.onclick=()=>{
