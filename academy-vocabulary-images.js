@@ -198,7 +198,24 @@
       [/^(?:money|dinero|argent|geld|деньги|soldi|dinheiro)$/i,'money'],
       [/^(?:family|familia|famille|familie|семья|famiglia)$/i,'family'],
       [/^(?:doctor|médico|medico|médecin|arzt|врач|medico)$/i,'doctor'],
-      [/^(?:school|escuela|école|schule|школа|scuola|escola)$/i,'books']
+      [/^(?:school|escuela|école|schule|школа|scuola|escola|classroom|aula|salle de classe|klassenzimmer|класс|aula)$/i,'books'],
+      [/^(?:room|bedroom|kitchen|apartment|flat|chambre|cuisine|zimmer|schlafzimmer|küche|комната|спальня|кухня|camera|cucina|quarto|cozinha)$/i,'house'],
+      [/^(?:orange|banana|grape|pear|mango|naranja|plátano|uva|pera|mangue|oranje|banane|traube|birne|апельсин|банан|виноград|груша|arancia|banana|uva|pera|laranja|banana|uva|pera)$/i,'fruit'],
+      [/^(?:tomato|carrot|potato|onion|lettuce|cucumber|tomate|zanahoria|patata|cebolla|tomate|carotte|pomme de terre|oignon|tomate|karotte|kartoffel|zwiebel|помидор|морковь|картофель|лук|pomodoro|carota|patata|cipolla|tomate|cenoura|batata|cebola)$/i,'vegetables'],
+      [/^(?:chicken|meat|fish|poultry|poulet|viande|pollo|carne|huhn|fleisch|курица|мясо|pollo|carne|frango|carne)$/i,'meal'],
+      [/^(?:airport|airplane|plane|flight|aéroport|avión|aeropuerto|flughafen|flugzeug|самолёт|аэропорт|aeroporto|aereo)$/i,'airplane'],
+      [/^(?:suitcase|luggage|bag|valise|equipaje|koffer|багаж|чемодан|valigia|mala|bagagem)$/i,'luggage'],
+      [/^(?:shirt|trousers|pants|dress|jacket|clothes|chemise|pantalon|robe|vêtements|hemd|hose|kleid|kleidung|рубашка|брюки|платье|одежда|camicia|pantaloni|vestito|roupa)$/i,'clothing'],
+      [/^(?:street|city|park|museum|road|rue|ville|parque|ciudad|straße|stadt|улица|город|парк|strada|città|rua|cidade)$/i,'city'],
+      [/^(?:clock|watch|time|heure|horloge|uhr|zeit|часы|время|orologio|ora|relógio|hora)$/i,'clock'],
+      [/^(?:direction|map|left|right|straight|carte|dirección|mapa|richtung|karte|направление|карта|direzione|mappa|direção|mapa)$/i,'directions'],
+      [/^(?:table|desk|mesa|table|tisch|стол|tavolo|mesa)$/i,'table'],
+      [/^(?:egg|eggs|œuf|huevo|ei|яйцо|uovo|ovo)$/i,'egg'],
+      [/^(?:shoe|shoes|sneaker|chaussure|zapato|schuh|обувь|scarpa|sapato)$/i,'shoes'],
+      [/^(?:lemon|citron|limón|zitrone|лимон|limone|limão)$/i,'lemon'],
+      [/^(?:milk|lait|leche|milch|молоко|latte|leite)$/i,'milk'],
+      [/^(?:juice|jus|zumo|saft|сок|succo|sumo)$/i,'juice'],
+      [/^(?:heart|cœur|corazón|herz|сердце|cuore|coração)$/i,'heart']
     ];
     for(var sm=0;sm<sharedMeaningRules.length;sm++)if(sharedMeaningRules[sm][0].test(target.trim()))return photos[sharedMeaningRules[sm][1]];
     if(/^\d+$/.test(target))return photos.numbers;
