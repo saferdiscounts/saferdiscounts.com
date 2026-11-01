@@ -619,7 +619,7 @@
     .review-card{flex-basis:260px;}
     .reviews-stats{gap:28px;}
   }
-.academy-all-languages{margin:30px 0 8px}.academy-all-languages-head{text-align:center;margin:0 auto 18px;max-width:760px}.academy-all-languages-head h3{font-size:clamp(21px,3vw,28px);margin:8px 0}.academy-all-languages-head p{color:var(--muted);margin:0}.academy-language-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.academy-language-card{display:flex;align-items:center;gap:12px;min-width:0;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--paper-card);text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.academy-language-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #15324d16;border-color:var(--brand-blue-dark)}.academy-language-flag{display:grid;place-items:center;flex:0 0 46px;width:46px;height:46px;border-radius:13px;background:#edf3fa;font-size:25px}.academy-language-card strong,.academy-language-card small{display:block}.academy-language-card strong{font-size:15px}.academy-language-card small{color:var(--muted);font-size:12px;margin-top:3px}@media(max-width:760px){.academy-language-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.academy-language-card{padding:11px;gap:8px}.academy-language-flag{flex-basis:38px;width:38px;height:38px;font-size:21px}}@media(max-width:380px){.academy-language-grid{grid-template-columns:1fr}}</style>
+.academy-all-languages{margin:30px 0 8px;scroll-margin-top:96px}.academy-all-languages-head{text-align:center;margin:0 auto 18px;max-width:760px}.academy-all-languages-head h3{font-size:clamp(21px,3vw,28px);margin:8px 0}.academy-all-languages-head p{color:var(--muted);margin:0}.academy-language-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.academy-language-card{display:flex;align-items:center;gap:12px;min-width:0;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--paper-card);text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.academy-language-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #15324d16;border-color:var(--brand-blue-dark)}.academy-language-flag{display:grid;place-items:center;flex:0 0 46px;width:46px;height:46px;border-radius:13px;background:#edf3fa;font-size:25px}.academy-language-card strong,.academy-language-card small{display:block}.academy-language-card strong{font-size:15px}.academy-language-card small{color:var(--muted);font-size:12px;margin-top:3px}@media(max-width:760px){.academy-language-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.academy-language-card{padding:11px;gap:8px}.academy-language-flag{flex-basis:38px;width:38px;height:38px;font-size:21px}}@media(max-width:380px){.academy-language-grid{grid-template-columns:1fr}}</style>
 </head>
 <body>
 
@@ -1062,7 +1062,7 @@ window.SITE_CONFIG = {
       <a href="#how" data-nav="how"></a>
       <a href="#faq" data-nav="faq"></a>
       <a href="blog.html" data-nav="blog" style="color:var(--brand-orange);"></a>
-      <a href="language-academy.html" data-nav="academy" aria-label="افتح أكاديميات اللغات الثماني"></a>
+      <a href="#academy-all-languages" data-nav="academy" aria-label="افتح أكاديميات اللغات الثماني"></a>
     </div>
     <div class="nav-right">
       <div class="lang-switch" id="lang-switch">
@@ -1091,6 +1091,7 @@ window.SITE_CONFIG = {
       <div class="hero-actions">
         <a class="ticket-btn" data-wa href="#" id="hero-cta-wa">💬</a>
         <a class="ticket-btn outline" data-fb href="#" target="_blank" id="hero-cta-fb"></a>
+        <a class="ticket-btn outline" href="#academy-all-languages" id="hero-academies-link"></a>
       </div>
       <div class="boarding-strip" id="hero-strip"></div>
     </div>
@@ -1653,6 +1654,7 @@ window.SITE_CONFIG = {
     document.querySelector('[data-nav="faq"]').textContent = t.nav.faq;
     document.querySelector('[data-nav="blog"]').textContent = t.nav.blog;
     document.querySelector('[data-nav="academy"]').textContent = t.nav.academy;
+    document.getElementById('hero-academies-link').textContent = '🎓 ' + t.nav.academy;
     document.getElementById('nav-cta-text').innerHTML = '💬 ' + t.nav.cta;
 
     // Hero
