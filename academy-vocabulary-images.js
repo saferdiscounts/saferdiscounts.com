@@ -235,6 +235,16 @@
     if(lang==='ru'&&/(?:посадочный талон|авиабилет)/i.test(target))return photos.airplane;
     if(/\b(?:medicine|medication|pills?|pharmacy)\b/i.test(target)||/(?:remédio|medicamento|farmácia|medicina|medikament|apotheke|лекарство|аптека)/i.test(target))return photos.medicine;
     if(/\b(?:weather|cloudy|rain|rainy|storm|forecast)\b/i.test(target)||/(?:previsão do tempo|nublado|chuva|tempo chuvoso|meteo|nuvoloso|pioggia|clima|lluvia|nublado|météo|pluie|nuageux|Wetter|Regen|bewölkt|погода|дождь|облачно)/i.test(target))return photos.weather;
+    if(lang==='it'&&/(?:svegliarsi|la prossima settimana|prima|dopo|all'improvviso|infine|in anticipo|innanzitutto|la settimana prossima)/i.test(target))return photos.clock;
+    if(lang==='it'&&/(?:visitato|visitare)/i.test(target))return photos.city;
+    if(lang==='it'&&/(?:più grande|più piccolo|cambiare)/i.test(target))return photos.clothing;
+    if(lang==='it'&&/(?:il compito|lo stage|la candidatura|la fonte|la domanda|il documento|un'affermazione|una richiesta|riferire|secondo|riguardo a|inoltre|in conclusione|un vantaggio|affidabile|un'esperienza)/i.test(target))return photos.writing;
+    if(lang==='it'&&/(?:socievole|un malinteso|scusarsi|chiarire|condividere|vorrei)/i.test(target))return photos.conversation;
+    if(lang==='it'&&/(?:tranquillo)/i.test(target))return photos.house;
+    if(lang==='it'&&/(?:l'affitto)/i.test(target))return photos.house;
+    if(lang==='it'&&/(?:preferire|lo spreco)/i.test(target))return photos.meal;
+    if(lang==='it'&&/(?:l'ambiente)/i.test(target))return photos.city;
+    if(lang==='it'&&/(?:avere intenzione)/i.test(target))return photos.clock;
     if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
     if(/\b(?:table|dining table)\b/i.test(target))return photos.table;
     if(/\b(?:baggage claim|baggage carousel|luggage carousel)\b/i.test(target))return photos.baggageCarousel;
