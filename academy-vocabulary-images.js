@@ -5,7 +5,7 @@
     dentist:{url:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/dentist'},
     bank:{url:'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bank'},
     postOffice:{url:'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/post-office'},
-    supermarket:{url:'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/supermarket'},
+    supermarket:{url:'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/supermarket'},
     umbrella:{url:'https://images.unsplash.com/photo-1516569422867-4d2c4f9c7f9f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/umbrella'},
     rain:{url:'https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/rain'},
     elevator:{url:'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/elevator'},
