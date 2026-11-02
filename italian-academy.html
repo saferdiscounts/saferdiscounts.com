@@ -21,7 +21,7 @@ const locale="it-IT";
 const key="sd_it_academy_done",scoreKey="sd_it_academy_scores";
 let done=[];try{done=JSON.parse(localStorage.getItem(key)||"[]")}catch(e){done=[]}
 let current=0;const groups=["التأسيس والنطق","التواصل اليومي","مواقف السفر","الاحتياجات والخطط","الحياة اليومية","التواصل المتقدم"];
-function group(i){const level=lessons[i].level||"A1";const base=level==="B1"?24:level==="A2"?12:0;return level+" · "+groups[Math.floor((i-base)/2)%groups.length]}
+function group(i){const level=lessons[i].level||"A1";const base=level==="B2"?36:level==="B1"?24:level==="A2"?12:0;return level+" · "+groups[Math.floor((i-base)/2)%groups.length]}
 function speak(t,rate=0.88){if(!("speechSynthesis"in window)||!("SpeechSynthesisUtterance"in window)){alert("ميزة النطق غير متاحة في هذا المتصفح.");return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=locale;u.rate=rate;speechSynthesis.speak(u)}
 function progress(){done=done.filter((x,i,a)=>Number.isInteger(x)&&x>=0&&x<lessons.length&&a.indexOf(x)===i);document.getElementById("progressText").textContent=done.length+" من "+lessons.length+" دروس مكتملة";document.getElementById("progressBar").style.width=(done.length/lessons.length*100)+"%"}
 function history(){let s={};try{s=JSON.parse(localStorage.getItem(scoreKey)||"{}")}catch(e){}document.getElementById("history").textContent=groups.map(g=>g+": "+(s[g]?"آخر نتيجة "+s[g].latest+"% · أفضل نتيجة "+s[g].best+"%":"لم تؤدَّ بعد")).join(" | ")}
