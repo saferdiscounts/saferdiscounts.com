@@ -828,8 +828,6 @@
       [/(?:guitar|violão|chitarra|guitarra|guitare|Gitarre|гитара)/i,'guitar'],
       [/(?:basketball|basquete|pallacanestro|baloncesto|basket|Basketball|баскетбол)/i,'basketball'],
       [/(?:football|soccer|futebol|calcio|fútbol|football|Fußball|футбол)/i,'football'],
-      [/(?:swimming pool|piscina|piscina|piscina|piscine|Schwimmbad|бассейн)/i,'swimmingPool'],
-      [/(?:sunglasses|óculos de sol|occhiali da sole|gafas de sol|lunettes de soleil|Sonnenbrille|солнцезащитные очки)/i,'sunglasses'],
       [/(?:gloves|luvas|guanti|guantes|gants|Handschuhe|перчатки)/i,'gloves'],
       [/(?:bicycle|bike|bicicleta|bicicletta|bicicleta|vélo|Fahrrad|велосипед)/i,'bicycle']
     ];
