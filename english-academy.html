@@ -5393,8 +5393,31 @@ function renderGroupExam(g){
 }
 
 function audioSectionFor(i){if(i<31)return '<section class="lesson-audio" aria-label="ملف الاستماع للوحدة"><div class="lesson-audio-head"><span class="lesson-audio-title">🎧 استمع إلى مفردات وجمل الوحدة</span><span class="lesson-audio-meta">AMERICAN ENGLISH · MP3</span></div><audio id="lessonAudio" controls preload="none" src="https://audio.saferdiscounts.com/english/lessons/lesson-'+String(i+1).padStart(2,'0')+'.mp3">متصفحك لا يدعم تشغيل الصوت.</audio><div class="lesson-audio-controls"><button type="button" class="audio-tool" id="slowAudio" aria-pressed="false">🐢 سرعة بطيئة 0.6×</button><button type="button" class="audio-tool" id="repeatAudio" aria-pressed="false">🔁 تكرار: مغلق</button></div><p class="lesson-audio-note">اسمع الجمل، ثم كررها بصوتك. استخدم السرعة البطيئة للتدريب، أو فعّل التكرار للاستماع أكثر من مرة.</p></section>';return '<section class="lesson-audio"><div class="lesson-audio-head"><span class="lesson-audio-title">🎧 نطق أمريكي للجمل والمفردات</span><span class="lesson-audio-meta">B1 · TEXT TO SPEECH</span></div><div class="lesson-audio-controls"><button type="button" class="audio-tool" id="slowSpeech" aria-pressed="false">🐢 نطق بطيء 0.62×: مغلق</button></div><p class="lesson-audio-note">استخدم أزرار 🔊 بجوار الكلمات والجمل لسماع النطق. يمكنك تفعيل السرعة البطيئة؛ الصوت من محرك النطق المتاح على جهازك وليس تسجيل MP3 بشريًا.</p></section>'}
-function visualDataForChapter(ch){const items=[];ch.blocks.forEach(block=>{if(block.type==='table'&&Array.isArray(block.rows)){block.rows.forEach(row=>{const cells=row.filter(c=>c&&typeof c.t==='string'&&c.t.trim());let idx=-1;for(let k=0;k<cells.length;k++){if(cells[k].b){idx=k;break}}if(idx>=0){const term=cells[idx].t.split('(')[0].trim();const meaning=(cells.find((c,k)=>k!==idx&&!c.b)||{}).t||'مثال من الدرس';if(term&&meaning)items.push({term,meaning,note:'مفردة وتطبيق'})}})}if(block.type==='list'&&Array.isArray(block.items)){block.items.forEach(line=>{const match=line.match(/\\b[A-Za-z][A-Za-z' -]{1,28}\\b/);if(match)items.push({term:match[0].trim(),meaning:line,note:'نقطة أساسية'})}})});const unique=[];const seen=new Set();items.forEach(x=>{const key=x.term.toLowerCase();if(!seen.has(key)){seen.add(key);unique.push(x)}});const fallback=[{term:'Understand',meaning:'افهم الفكرة الأساسية',note:'الخطوة الأولى'},{term:'Practise',meaning:'طبّق باستخدام مثال',note:'الخطوة الثانية'},{term:'Use it',meaning:'استخدمها في موقف حقيقي',note:'الخطوة الثالثة'}];return {title:ch.title,items:unique.slice(0,3).length?unique.slice(0,3):fallback}}
-function renderChapterVisual(ch){const v=visualDataForChapter(ch);const cards=v.items.map(x=>SDAcademyImages.card(x.term,x.meaning,'en')).join('');const nodes=v.items.map((x,i)=>'<g><circle cx="'+(100+i*150)+'" cy="62" r="26" fill="'+(i===0?'#075b9a':i===1?'#16865d':'#f06423')+'"/><text x="'+(100+i*150)+'" y="69" text-anchor="middle" fill="#fff" font-size="19">'+(i+1)+'</text></g>').join('');return '<section class="chapter-visual" aria-label="لوحة توضيحية: '+escapeHtml(v.title)+'"><div class="chapter-visual-head"><b>🧩 الصورة التعليمية للدرس</b><p>'+escapeHtml(v.title)+'</p></div><svg class="chapter-visual-track" viewBox="0 0 500 92" role="img" aria-label="'+v.items.map(x=>escapeHtml(x.term)).join('، ')+'"><path d="M100 62 H400" stroke="#cbd9e5" stroke-width="5"/>'+nodes+'</svg><div class="chapter-visual-cards">'+cards+'</div><p>💡 اقرأ الكلمة الإنجليزية على الصورة، افهم معناها بالعربي، ثم اضغط عليها لسماع النطق وكررها بصوتك.</p></section>'}
+function visualDataForChapter(ch){
+ const items=[];
+ (ch.blocks||[]).forEach(block=>{
+  if(block.type!=='table'||!Array.isArray(block.rows))return;
+  block.rows.forEach(row=>{
+   const cells=Array.isArray(row)?row:[];
+   const english=cells.find(cell=>cell&&cell.b&&/[A-Za-z]/.test(String(cell.t||'')));
+   const arabic=cells.find(cell=>cell&&!cell.b&&/[\u0600-\u06FF]/.test(String(cell.t||'')));
+   if(!english||!arabic)return;
+   const term=String(english.t||'').split('(')[0].trim();
+   const meaning=String(arabic.t||'').trim();
+   if(term&&meaning&&SDAcademyImages.resolve(meaning,term,'en'))items.push({term,meaning,note:'مفردة مصوّرة'});
+  });
+ });
+ const unique=[],seen=new Set();
+ items.forEach(item=>{const key=item.term.toLowerCase();if(!seen.has(key)){seen.add(key);unique.push(item)}});
+ return {title:ch.title,items:unique.slice(0,3)};
+}
+function renderChapterVisual(ch){
+ const v=visualDataForChapter(ch);
+ if(!v.items.length)return '';
+ const cards=v.items.map(item=>SDAcademyImages.card(item.term,item.meaning,'en')).join('');
+ const nodes=v.items.map((item,i)=>'<g><circle cx="'+(100+i*150)+'" cy="62" r="26" fill="'+(i===0?'#075b9a':i===1?'#16865d':'#f06423')+'"/><text x="'+(100+i*150)+'" y="69" text-anchor="middle" fill="#fff" font-size="19">'+(i+1)+'</text></g>').join('');
+ return '<section class="chapter-visual" aria-label="لوحة توضيحية: '+escapeHtml(v.title)+'"><div class="chapter-visual-head"><b>🧩 الصورة التعليمية للدرس</b><p>'+escapeHtml(v.title)+'</p></div><svg class="chapter-visual-track" viewBox="0 0 500 92" role="img" aria-label="'+v.items.map(item=>escapeHtml(item.term)).join('، ')+'"><path d="M100 62 H400" stroke="#cbd9e5" stroke-width="5"/>'+nodes+'</svg><div class="chapter-visual-cards">'+cards+'</div><p>💡 اقرأ الكلمة الإنجليزية على الصورة، افهم معناها بالعربي، ثم اضغط عليها لسماع النطق وكررها بصوتك.</p></section>';
+}
 function render(i){if(!Number.isInteger(i)||i<0||i>=chapters.length)i=0;current=i;const ch=chapters[i],g=groupFor(i);document.getElementById('lessonContent').innerHTML='<div class="lesson-kicker">'+g.name+'</div><h2>'+(i+1)+'. '+ch.title+'</h2>'+renderChapterVisual(ch)+audioSectionFor(i)+''+ch.blocks.map(b=>renderBlock(b,ch.tip)).join('')+renderListeningQuiz(ch,i)+((i===g.end)?renderGroupExam(g):'')+'<div class="lesson-actions"><button class="btn" type="button" id="markDone">'+(done.includes(i)?'✓ تم إكمال الوحدة':'علّم الوحدة كمكتملة')+'</button><button class="btn" type="button" id="nextLesson">الوحدة التالية ←</button></div>';document.getElementById('markDone').addEventListener('click',()=>{if(!done.includes(i))done.push(i);localStorage.setItem(STORE,JSON.stringify(done));progress();renderList();render(i)});document.getElementById('nextLesson').addEventListener('click',()=>render((i+1)%chapters.length));
 const lessonAudio=document.getElementById('lessonAudio'),slowBtn=document.getElementById('slowAudio'),repeatBtn=document.getElementById('repeatAudio');
 const slowSpeechBtn=document.getElementById('slowSpeech');

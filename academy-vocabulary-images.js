@@ -660,7 +660,6 @@
     if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
     if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
     if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
-    if(lang==='pt-BR'&&/^(?:não|nao|quem|como|que|ele \/ ela|eles \/ elas|ele|ela|eles|elas|eu|você|vocês|nós|me|te|se|nos)$/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/(?:reembolso|cobrança indevida|dinheiro|pagamento|cobrança)/i.test(target))return photos.money;
     if(lang==='pt-BR'&&/(?:por sorte|se eu pudesse|eu faria isso|caso contrário|na sua situação|tá \/ está|tô \/ estou|cê \/ você|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|sem pé nem cabeça|me manda)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/^(?:aqui|ali|perto)$/i.test(target.trim()))return photos.directions;

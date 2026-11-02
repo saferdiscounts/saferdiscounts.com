@@ -75,7 +75,7 @@ function finalExamHistory(){
  let saved={};try{saved=JSON.parse(localStorage.getItem('sd_ptbr_final_exam_v1')||'{}')||{}}catch(e){saved={}}
  const box=document.getElementById('finalExamHistory');if(!box)return;
  const attempts=Array.isArray(saved.attempts)?saved.attempts:[];
- box.textContent=attempts.length?'Tentativas: '+attempts.length+' · آخر نتيجة: '+attempts[0].percent+'% · أفضل نتيجة: '+(Number(saved.best)||0)+'%'+(saved.passed?' · ✓ اجتزت الامتحان':''):'لم تؤدِّ امتحان التخرج بعد.');
+ box.textContent=attempts.length?'Tentativas: '+attempts.length+' · آخر نتيجة: '+attempts[0].percent+'% · أفضل نتيجة: '+(Number(saved.best)||0)+'%'+(saved.passed?' · ✓ اجتزت الامتحان':''):'لم تؤدِّ امتحان التخرج بعد.';
 }
 function startFinalExam(){
  const vocab=[],seen=new Set(),quiz=[];
