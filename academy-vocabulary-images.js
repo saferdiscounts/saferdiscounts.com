@@ -1,6 +1,31 @@
 (function(){
   'use strict';
   var photos={
+    airportCheckin:{url:'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/airport-check-in'},
+    dentist:{url:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/dentist'},
+    bank:{url:'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bank'},
+    postOffice:{url:'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/post-office'},
+    supermarket:{url:'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/supermarket'},
+    umbrella:{url:'https://images.unsplash.com/photo-1516569422867-4d2c4f9c7f9f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/umbrella'},
+    rain:{url:'https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/rain'},
+    elevator:{url:'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/elevator'},
+    stairs:{url:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/stairs'},
+    computer:{url:'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/laptop-computer'},
+    headphones:{url:'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/headphones'},
+    dessert:{url:'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/dessert'},
+    soup:{url:'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/soup'},
+    rice:{url:'https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/rice'},
+    pasta:{url:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/pasta'},
+    salt:{url:'https://images.unsplash.com/photo-1518110925495-5fe2fda0442b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/salt'},
+    sugar:{url:'https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/sugar'},
+    key:{url:'https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/keys'},
+    map:{url:'https://images.unsplash.com/photo-1524666041070-9b876833eab3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/map'},
+    firefighter:{url:'https://images.unsplash.com/photo-1599708153386-62bf1f5d7c6f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/firefighter'},
+    baby:{url:'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/baby'},
+    birthday:{url:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/birthday-cake'},
+    wedding:{url:'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/wedding'},
+    garden:{url:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/garden'},
+
     conversation:{url:'https://images.unsplash.com/photo-1523582407565-efee5cf4a353?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/group-of-people-having-a-conversation-in-a-circle-E0ylfF52C6M'},
     numbers:{url:'https://images.unsplash.com/photo-1772663042999-f2d61d02b7be?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/scattered-black-numbers-on-white-paper-background-OBgh6h_2yL0'},
     colors:{url:'https://images.unsplash.com/photo-1777537953461-744f35dcb1de?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/watercolor-paint-palettes-and-brushes-with-colorful-swatches-oIcwk0nS0bs'},
@@ -625,6 +650,34 @@
     if(lang==='pt-BR'&&/(?:por sorte|se eu pudesse|eu faria isso|caso contrário|na sua situação|tá \/ está|tô \/ estou|cê \/ você|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|sem pé nem cabeça|me manda)/i.test(target))return photos.conversation;
     if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
     if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
+
+    var multilingualExtraRules=[
+      [/(?:check.?in|boarding pass|check-in counter|embarque|cartão de embarque|facturación|mostrador de facturación|enregistrement|comptoir d'enregistrement|Einchecken|Check-in-Schalter|регистрация на рейс|стойка регистрации)/i,'airportCheckin'],
+      [/(?:dentist|dental|toothache|dentista|dente doendo|diente|dentiste|mal aux dents|Zahnarzt|Zahnärztin|стоматолог|зуб болит)/i,'dentist'],
+      [/(?:bank|banco|banca|banque|Bank|банк|caixa eletrônico|atm|cash machine|bancomat|cajero automático|guichet)/i,'bank'],
+      [/(?:post office|correios|correio|posta|oficina de correos|bureau de poste|Postamt|почта|почтовое отделение)/i,'postOffice'],
+      [/(?:supermarket|grocery store|supermercado|supermercati|supermarché|Supermarkt|супермаркет|mercado)/i,'supermarket'],
+      [/(?:umbrella|guarda-chuva|ombrello|paraguas|parapluie|Regenschirm|зонт)/i,'umbrella'],
+      [/(?:rain|raining|chuva|pioggia|lluvia|pluie|Regen|дождь)/i,'rain'],
+      [/(?:elevator|lift|elevador|ascensore|ascensor|ascenseur|Aufzug|лифт)/i,'elevator'],
+      [/(?:stairs|staircase|escadas|escada|scale|escaleras|escalier|Treppe|лестница)/i,'stairs'],
+      [/(?:computer|laptop|computador|ordenador|ordinateur|Computer|компьютер)/i,'computer'],
+      [/(?:headphones|earphones|fones de ouvido|cuffie|auriculares|écouteurs|Kopfhörer|наушники)/i,'headphones'],
+      [/(?:dessert|sobremesa|dolce|postre|dessert|Nachtisch|десерт)/i,'dessert'],
+      [/(?:soup|sopa|zuppa|soupe|Suppe|суп)/i,'soup'],
+      [/(?:rice|arroz|riso|riz|Reis|рис)/i,'rice'],
+      [/(?:pasta|macarrão|massa|pâtes|Nudeln|макароны)/i,'pasta'],
+      [/(?:salt|sal|sale|sel|Salz|соль)/i,'salt'],
+      [/(?:sugar|açúcar|zucchero|azúcar|sucre|Zucker|сахар)/i,'sugar'],
+      [/(?:key|keys|chave|chiave|llave|clé|Schlüssel|ключ)/i,'key'],
+      [/(?:map|mapa|mappa|carte|Karte|карта)/i,'map'],
+      [/(?:firefighter|fireman|bombeiro|vigile del fuoco|bombero|pompier|Feuerwehrmann|пожарный)/i,'firefighter'],
+      [/(?:baby|bebê|bambino|bebé|bébé|Baby|младенец)/i,'baby'],
+      [/(?:birthday|birthday cake|aniversário|compleanno|cumpleaños|anniversaire|Geburtstag|день рождения)/i,'birthday'],
+      [/(?:wedding|casamento|matrimonio|boda|mariage|Hochzeit|свадьба)/i,'wedding'],
+      [/(?:garden|jardim|giardino|jardín|jardin|Garten|сад)/i,'garden']
+    ];
+    for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
     var englishRules=[
       [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
       [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
