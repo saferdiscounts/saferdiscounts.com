@@ -844,6 +844,7 @@
     if(lang==='en'&&/^public transport$/i.test(target.trim()))return photos.bus;
     if(lang==='en'&&/^leak$/i.test(target.trim()))return photos.water;
     if(lang==='en'&&/^arrange a repair$/i.test(target.trim()))return photos.tools;
+    if(lang==='en'&&/^(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|one hundred)$/i.test(target.trim()))return photos.numbers;
     for(var j=0;j<englishRules.length;j++)if(englishRules[j][0].test(target))return photos[englishRules[j][1]];
     return null;
   }
