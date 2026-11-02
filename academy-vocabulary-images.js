@@ -132,6 +132,7 @@
     heart:{url:'https://images.unsplash.com/photo-1743767587687-9ebaac2b55e3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/three-anatomical-models-of-human-hearts-are-shown-guINnH1Jwl8'},
     clock:{url:'https://images.unsplash.com/photo-1624969862293-b749659ccc4e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/white-and-pink-analog-alarm-clock-jOeh3Lv88xA'},
     directions:{url:'https://images.unsplash.com/photo-1625859199540-35df63b224f3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/white-and-black-street-sign-p3FHp5mqW5o'},
+    roundabout:{url:'https://images.unsplash.com/photo-1643264235256-000363093382?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/an-aerial-view-of-an-intersection-in-a-city-g-t6a81IfJw'},
     ambulance:{url:'https://images.unsplash.com/photo-1742016102687-46ee5f824f49?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/an-ambulance-drives-down-a-busy-city-street-Vdp9VNnwzZs'},
     clothing:{url:'https://images.unsplash.com/photo-1767968037382-8eb9c564339f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/clothes-hanging-on-a-rack-in-a-boutique-pt3EBzQcxP0'},
     classroom:{url:'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/'},
@@ -659,9 +660,10 @@
     if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(spanishRules[q][0].test(target))return photos[spanishRules[q][1]];
     if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
     if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
+    if(lang==='ru'&&/^учёба$/i.test(target.trim()))return photos.school;
     if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
     if(lang==='pt-BR'&&/(?:reembolso|cobrança indevida|dinheiro|pagamento|cobrança)/i.test(target))return photos.money;
-    if(lang==='pt-BR'&&/(?:por sorte|se eu pudesse|eu faria isso|caso contrário|na sua situação|tá \/ está|tô \/ estou|cê \/ você|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|sem pé nem cabeça|me manda)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/(?:na sua situação|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|me manda)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/^(?:aqui|ali|perto)$/i.test(target.trim()))return photos.directions;
     if(lang==='pt-BR'&&/^(?:manhã)$/i.test(target.trim()))return photos.sunrise;
     if(lang==='pt-BR'&&/^(?:filho|filha)$/i.test(target.trim()))return photos.family;
@@ -818,6 +820,21 @@
       [/\b(?:right|left|turn|direction|map|intersection|entrance|exit)\b/i,'directions'],[/\b(?:ambulance|emergency|accident)\b/i,'ambulance'],
       [/\b(?:clothes|clothing|shirt|trousers|pants|dress|skirt|jacket|socks|size)\b/i,'clothing'],[/\b(?:book|books|reading|library|study)\b/i,'books']
     ];
+    if(lang==='en'&&/^(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)$/i.test(target.trim()))return photos.clock;
+    if(lang==='en'&&/^where is\.\.\.$/i.test(target.trim()))return photos.directions;
+    if(lang==='en'&&/^nothing to declare$/i.test(target.trim()))return photos.customs;
+    if(lang==='en'&&/^(?:the room isn't ready|i would like to change rooms)$/i.test(target.trim()))return photos.hotelRoom;
+    if(lang==='en'&&/^(?:it hurts here|symptoms)$/i.test(target.trim()))return photos.doctor;
+    if(lang==='en'&&/^current account$/i.test(target.trim()))return photos.bank;
+    if(lang==='en'&&/^residence permit$/i.test(target.trim()))return photos.passportControl;
+    if(lang==='en'&&/^(?:go straight ahead)$/i.test(target.trim()))return photos.directions;
+    if(lang==='en'&&/^roundabout$/i.test(target.trim()))return photos.roundabout;
+    if(lang==='en'&&/^platform$/i.test(target.trim()))return photos.trainStation;
+    if(lang==='en'&&/^job application$/i.test(target.trim()))return photos.writing;
+    if(lang==='en'&&/^job interview$/i.test(target.trim()))return photos.office;
+    if(lang==='en'&&/^public transport$/i.test(target.trim()))return photos.bus;
+    if(lang==='en'&&/^leak$/i.test(target.trim()))return photos.water;
+    if(lang==='en'&&/^arrange a repair$/i.test(target.trim()))return photos.tools;
     for(var j=0;j<englishRules.length;j++)if(englishRules[j][0].test(target))return photos[englishRules[j][1]];
     return null;
   }
