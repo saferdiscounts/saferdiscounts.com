@@ -851,7 +851,6 @@
       [/(?:cake|bolo|torta|pastel|gâteau|Kuchen|торт)/i,'cake'],
       [/(?:lemon|limão|limone|limón|citron|Zitrone|лимон)/i,'lemon'],
       [/(?:egg|ovo|uovo|huevo|œuf|Ei|яйцо)/i,'egg'],
-      [/(?:cutlery|silverware|talheres|posate|cubiertos|couverts|Besteck|столовые приборы)/i,'cutlery']
     ];
     for(var fs=0;fs<freshFoodStyleRules.length;fs++)if(freshFoodStyleRules[fs][0].test(target))return photos[freshFoodStyleRules[fs][1]];
     var englishRules=[
