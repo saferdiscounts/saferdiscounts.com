@@ -211,6 +211,13 @@
     football:{url:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/football'},
     gloves:{url:'https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/winter-gloves'},
 
+    watch:{url:'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/wristwatch'},
+    shirt:{url:'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/t-shirt'},
+    pizza:{url:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/pizza'},
+    burger:{url:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/hamburger'},
+    iceCream:{url:'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ice-cream'},
+    cake:{url:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/cake'},
+
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -832,6 +839,21 @@
       [/(?:bicycle|bike|bicicleta|bicicletta|bicicleta|vélo|Fahrrad|велосипед)/i,'bicycle']
     ];
     for(var ap=0;ap<activityPhotoRules.length;ap++)if(activityPhotoRules[ap][0].test(target))return photos[activityPhotoRules[ap][1]];
+
+    var freshFoodStyleRules=[
+      [/(?:shoes|shoe|sapatos|sapato|scarpe|scarpa|zapatos|chaussures|Schuhe|обувь)/i,'shoes'],
+      [/(?:watch|wristwatch|relógio|orologio|reloj|montre|Uhr|наручные часы)/i,'watch'],
+      [/(?:hat|cap|chapéu|cappello|sombrero|chapeau|Hut|шляпа)/i,'hat'],
+      [/(?:shirt|t-shirt|camisa|maglietta|camiseta|chemise|Hemd|рубашка)/i,'shirt'],
+      [/(?:pizza|pizza|pizza|pizza|pizza|Pizza|пицца)/i,'pizza'],
+      [/(?:burger|hambúrguer|hamburger|hamburguesa|hamburger|Burger|бургер)/i,'burger'],
+      [/(?:ice cream|sorvete|gelato|helado|glace|Eiscreme|мороженое)/i,'iceCream'],
+      [/(?:cake|bolo|torta|pastel|gâteau|Kuchen|торт)/i,'cake'],
+      [/(?:lemon|limão|limone|limón|citron|Zitrone|лимон)/i,'lemon'],
+      [/(?:egg|ovo|uovo|huevo|œuf|Ei|яйцо)/i,'egg'],
+      [/(?:cutlery|silverware|talheres|posate|cubiertos|couverts|Besteck|столовые приборы)/i,'cutlery']
+    ];
+    for(var fs=0;fs<freshFoodStyleRules.length;fs++)if(freshFoodStyleRules[fs][0].test(target))return photos[freshFoodStyleRules[fs][1]];
     var englishRules=[
       [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
       [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
