@@ -1,6 +1,31 @@
 (function(){
   'use strict';
   var photos={
+    bakery:{url:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bakery-bread'},
+    butcher:{url:'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/butcher-shop'},
+    fishMarket:{url:'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/fish-market'},
+    hotelRoom:{url:'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/hotel-room'},
+    airportSecurity:{url:'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/airport-security'},
+    passportControl:{url:'https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/passport-control'},
+    customs:{url:'https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/customs-airport'},
+    suitcaseOpen:{url:'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/open-suitcase'},
+    pedestrianCrossing:{url:'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/pedestrian-crossing'},
+    trafficLight:{url:'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/traffic-light'},
+    bicycleHelmet:{url:'https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bicycle-helmet'},
+    schoolBus:{url:'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/school-bus'},
+    breakfast:{url:'https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/breakfast'},
+    sandwich:{url:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/sandwich'},
+    salad:{url:'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/salad'},
+    chicken:{url:'https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/roast-chicken'},
+    tomato:{url:'https://images.unsplash.com/photo-1546094096-0df4bcaaa337?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/tomato'},
+    onion:{url:'https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/onion'},
+    potato:{url:'https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/potato'},
+    strawberry:{url:'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/strawberry'},
+    grapes:{url:'https://images.unsplash.com/photo-1537640538966-79f369143f8f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/grapes'},
+    orange:{url:'https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/orange-fruit'},
+    camel:{url:'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/camel'},
+    mosque:{url:'https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/mosque'},
+
     airportCheckin:{url:'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/airport-check-in'},
     dentist:{url:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/dentist'},
     bank:{url:'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bank'},
@@ -651,6 +676,33 @@
     if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
     if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
 
+    var newPhotoRules=[
+      [/(?:bakery|padaria|panetteria|panadería|boulangerie|Bäckerei|пекарня)/i,'bakery'],
+      [/(?:butcher|açougue|macelleria|carnicería|boucherie|Metzgerei|мясная лавка)/i,'butcher'],
+      [/(?:fish market|peixaria|pescheria|pescadería|poissonnerie|Fischmarkt|рыбный рынок)/i,'fishMarket'],
+      [/(?:hotel room|quarto de hotel|camera d'albergo|habitación de hotel|chambre d'hôtel|Hotelzimmer|номер отеля)/i,'hotelRoom'],
+      [/(?:airport security|security checkpoint|controle de segurança|controllo sicurezza|control de seguridad|contrôle de sécurité|Sicherheitskontrolle|досмотр в аэропорту)/i,'airportSecurity'],
+      [/(?:passport control|controle de passaporte|controllo passaporti|control de pasaportes|contrôle des passeports|Passkontrolle|паспортный контроль)/i,'passportControl'],
+      [/(?:customs|alfândega|dogana|aduana|douane|Zoll|таможня)/i,'customs'],
+      [/(?:open suitcase|packed suitcase|mala aberta|valigia aperta|maleta abierta|valise ouverte|offener Koffer|открытый чемодан)/i,'suitcaseOpen'],
+      [/(?:pedestrian crossing|crosswalk|faixa de pedestres|strisce pedonali|paso de peatones|passage piéton|Zebrastreifen|пешеходный переход)/i,'pedestrianCrossing'],
+      [/(?:traffic light|semaphore|semáforo|semaforo|feu de circulation|Ampel|светофор)/i,'trafficLight'],
+      [/(?:bicycle helmet|bike helmet|capacete de bicicleta|casco da bici|casco de bicicleta|casque de vélo|Fahrradhelm|велошлем)/i,'bicycleHelmet'],
+      [/(?:school bus|ônibus escolar|autobus scolastico|autobús escolar|bus scolaire|Schulbus|школьный автобус)/i,'schoolBus'],
+      [/(?:breakfast|café da manhã|colazione|desayuno|petit déjeuner|Frühstück|завтрак)/i,'breakfast'],
+      [/(?:sandwich|sanduíche|panino|bocadillo|belegte[s]? Brot|сэндвич)/i,'sandwich'],
+      [/(?:salad|salada|insalata|ensalada|salade|Salat|салат)/i,'salad'],
+      [/(?:chicken|frango|pollo|poulet|Hähnchen|курица)/i,'chicken'],
+      [/(?:tomato|tomate|pomodoro|Tomate|помидор)/i,'tomato'],
+      [/(?:onion|cebola|cipolla|cebolla|oignon|Zwiebel|лук)/i,'onion'],
+      [/(?:potato|batata|patata|pomme de terre|Kartoffel|картофель)/i,'potato'],
+      [/(?:strawberry|morango|fragola|fresa|fraise|Erdbeere|клубника)/i,'strawberry'],
+      [/(?:grapes|uva|uvas|raisin|Trauben|виноград)/i,'grapes'],
+      [/(?:orange fruit|orange|laranja|arancia|naranja|Orange|апельсин)/i,'orange'],
+      [/(?:camel|camelo|cammello|camello|chameau|Kamel|верблюд)/i,'camel'],
+      [/(?:mosque|mesquita|moschea|mezquita|mosquée|Moschee|мечеть)/i,'mosque']
+    ];
+    for(var nr=0;nr<newPhotoRules.length;nr++)if(newPhotoRules[nr][0].test(target))return photos[newPhotoRules[nr][1]];
     var multilingualExtraRules=[
       [/(?:check.?in|boarding pass|check-in counter|embarque|cartão de embarque|facturación|mostrador de facturación|enregistrement|comptoir d'enregistrement|Einchecken|Check-in-Schalter|регистрация на рейс|стойка регистрации)/i,'airportCheckin'],
       [/(?:dentist|dental|toothache|dentista|dente doendo|diente|dentiste|mal aux dents|Zahnarzt|Zahnärztin|стоматолог|зуб болит)/i,'dentist'],
