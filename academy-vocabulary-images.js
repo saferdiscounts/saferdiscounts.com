@@ -678,7 +678,7 @@
     if(lang==='pt-BR'&&/^(?:eu como)$/i.test(target.trim()))return photos.meal;
     if(lang==='pt-BR'&&/^(?:abrir|eu abro|vocês abrem)$/i.test(target.trim()))return photos.door;
     if(lang==='pt-BR'&&/^(?:os amigos|as amigas|somos amigos|amigos|amigas)$/i.test(target.trim()))return photos.friends;
-    if(lang==='pt-BR'&&/(?:mão|mãos)/i.test(target))return photos.hand;
+    
     if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
     if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
 
