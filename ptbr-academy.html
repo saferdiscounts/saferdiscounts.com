@@ -26,7 +26,9 @@ main{padding:28px 0 60px}.progressbox,.panel{background:white;border:1px solid v
 <main class="wrap">
 <section class="phonetics-entry" style="margin:16px auto;padding:16px 18px;border-radius:16px;background:linear-gradient(120deg,#eaf1fc,#f7faff);border:1px solid #dce6f5;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap"><div><strong style="display:block;font-size:18px">🎧 معمل الفونتكس والنطق</strong><span style="color:#52627a">اتعلم الأصوات ومخارج الحروف والتمييز بين الكلمات مع شرح عربي وتدريب استماع.</span></div><a href="pronunciation-lab.html?lang=ptbr" style="display:inline-block;padding:10px 16px;border-radius:10px;background:#2356a8;color:#fff;text-decoration:none;font-weight:bold">ابدأ تدريب النطق ←</a></section>
 
-<section class="progressbox"><div class="progressrow"><strong>تقدمك في الأكاديمية</strong><span id="progressText">0 من 90 درسًا مكتملًا</span></div><div class="progress"><span id="progressBar"></span></div><div class="exam-history"><b>📊 سجل نتائج الامتحانات الشاملة</b><div id="groupExamHistory"></div></div><p class="muted" style="margin:8px 0 0">يُحفظ تقدمك ونتائجك على نفس المتصفح والجهاز. لا تحتاج إلى إنشاء حساب في النسخة الحالية.</p></section>
+<section class="progressbox"><div class="progressrow"><strong>تقدمك في الأكاديمية</strong><span id="progressText">0 من 90 درسًا مكتملًا</span></div><div class="progress"><span id="progressBar"></span></div><div class="exam-history"><b>📊 سجل نتائج الامتحانات الشاملة</b><div id="groupExamHistory"></div></div>
+<div class="exam-history" style="margin-top:14px;padding-top:14px;border-top:1px solid var(--line)"><b>🎓 امتحان التخرج الشامل · 20 سؤالًا</b><p class="muted" style="margin:6px 0 10px">تقييم نهائي يجمع المفردات والفهم والقواعد من جميع مراحل المنهج. درجة الاجتياز 80%، وتُحفظ أفضل نتيجة وآخر المحاولات على جهازك.</p><button type="button" class="btn" id="startFinalExam">ابدأ امتحان التخرج ←</button><div id="finalExamHistory" class="muted" style="margin-top:8px"></div><div id="finalExamArea" aria-live="polite"></div></div>
+<p class="muted" style="margin:8px 0 0">يُحفظ تقدمك ونتائجك على نفس المتصفح والجهاز. لا تحتاج إلى إنشاء حساب في النسخة الحالية.</p></section>
 <section id="curriculum" class="panel"><h2 class="sectiontitle">خريطة المنهج</h2><p class="muted">المستويات مرتبة حسب المهارة، مش حسب حفظ الكلمات فقط. هنوسع كل مرحلة بوحدات ودروس متتابعة.</p><div class="levels">
 <div class="level current"><span class="num">LEVEL 0 · START</span><strong>من الصفر</strong><p>14 درسًا: الأبجدية، أصوات الحروف، الحركات الأنفية، النبر، الترقيم والكتابة.</p></div>
 <div class="level"><span class="num">LEVEL 1 · A1</span><strong>أساسيات التواصل</strong><p>5 دروس للبدء بالمحادثة: التحية، التعارف، الأدب، السؤال عن اللغة وأول حوار.</p></div>
@@ -54,6 +56,69 @@ function groupExamHistory(){
  const box=document.getElementById('groupExamHistory');if(!box)return;
  const names=[...new Set(lessonOrder.map(lessonGroup))];
  box.innerHTML=names.map(name=>{const v=saved[name];return '<div class="exam-history-item"><b>'+esc(name)+'</b><span>'+(v?'آخر نتيجة: '+v.latest+'/'+v.total+' ('+v.percent+'%) · أفضل نتيجة: '+v.best+'%':'لم تؤدَّ بعد')+'</span></div>'}).join('');
+}
+function finalExamShuffle(list){
+ const a=list.slice();for(let n=a.length-1;n>0;n--){const j=Math.floor(Math.random()*(n+1));[a[n],a[j]]=[a[j],a[n]]}return a;
+}
+function finalExamPickBalanced(pool,count){
+ const tracks=[...new Set(pool.map(item=>lessons[item.lesson].track))],buckets={};
+ tracks.forEach(track=>buckets[track]=finalExamShuffle(pool.filter(item=>lessons[item.lesson].track===track)));
+ const picked=[];
+ while(picked.length<count){
+  let added=false;
+  for(const track of tracks){if(buckets[track].length&&picked.length<count){picked.push(buckets[track].pop());added=true}}
+  if(!added)break;
+ }
+ return picked;
+}
+function finalExamHistory(){
+ let saved={};try{saved=JSON.parse(localStorage.getItem('sd_ptbr_final_exam_v1')||'{}')||{}}catch(e){saved={}}
+ const box=document.getElementById('finalExamHistory');if(!box)return;
+ const attempts=Array.isArray(saved.attempts)?saved.attempts:[];
+ box.textContent=attempts.length?'Tentativas: '+attempts.length+' · آخر نتيجة: '+attempts[0].percent+'% · أفضل نتيجة: '+(Number(saved.best)||0)+'%'+(saved.passed?' · ✓ اجتزت الامتحان':''):'لم تؤدِّ امتحان التخرج بعد.');
+}
+function startFinalExam(){
+ const vocab=[],seen=new Set(),quiz=[];
+ lessons.forEach((lesson,lessonIndex)=>{
+  lesson.words.forEach(word=>{const key=String(word[0]||'').toLowerCase().trim()+'|'+String(word[2]||'').trim();if(word[0]&&word[2]&&!seen.has(key)){seen.add(key);vocab.push({kind:'vocab',pt:word[0],ar:word[2],lesson:lessonIndex})}});
+  if(lesson.q&&Array.isArray(lesson.answers)&&lesson.answers.length>=3&&Number.isInteger(lesson.correct)&&lesson.answers[lesson.correct])quiz.push({kind:'quiz',q:lesson.q,answers:lesson.answers.slice(),correct:lesson.correct,explain:lesson.explain||lesson.grammar||'',lesson:lessonIndex});
+ });
+ const questions=finalExamShuffle([...finalExamPickBalanced(vocab,10),...finalExamPickBalanced(quiz,10)]);
+ const area=document.getElementById('finalExamArea');if(!area)return;
+ if(questions.length<10){area.textContent='المحتوى المتاح لا يكفي لتكوين امتحان موثوق.';return}
+ let step=0,score=0,answered=false;
+ function show(){
+  answered=false;const item=questions[step];let prompt='',choices=[];
+  if(item.kind==='quiz'){
+   prompt='<p><b>فهم وقواعد:</b> '+esc(item.q)+'</p>';
+   choices=finalExamShuffle(item.answers.map((answer,index)=>({label:answer,correct:index===item.correct})));
+  }else{
+   prompt='<p>ما معنى العبارة التالية بالبرتغالية البرازيلية؟</p><div dir="ltr" lang="pt-BR" style="font-size:22px;font-weight:900;padding:12px;background:#f4f8fb;border-radius:10px">'+esc(item.pt)+'</div>';
+   const alternatives=[],used=new Set([item.ar]);
+   for(const candidate of finalExamShuffle(vocab.filter(x=>x!==item))){if(!used.has(candidate.ar)){used.add(candidate.ar);alternatives.push(candidate.ar);if(alternatives.length===3)break}}
+   choices=finalExamShuffle([item.ar,...alternatives].map(label=>({label,correct:label===item.ar})));
+  }
+  area.innerHTML='<div class="group-exam" style="margin-top:12px"><div class="quiz-head"><b>امتحان التخرج</b><span>السؤال '+(step+1)+' من '+questions.length+' · الدرجة '+score+'</span></div><div class="quiz-progress"><span style="width:'+(step/questions.length*100)+'%"></span></div>'+prompt+'<div class="answers">'+choices.map((choice,index)=>'<button type="button" class="answer" data-final-answer="'+index+'" data-correct="'+(choice.correct?'1':'0')+'">'+esc(choice.label)+'</button>').join('')+'</div><div class="feedback" aria-live="polite">اختر إجابة واحدة.</div></div>';
+ }
+ function finish(){
+  const percent=Math.round(score/questions.length*100),passed=percent>=80;let saved={};try{saved=JSON.parse(localStorage.getItem('sd_ptbr_final_exam_v1')||'{}')||{}}catch(e){saved={}}
+  const attempts=Array.isArray(saved.attempts)?saved.attempts:[];attempts.unshift({score,total:questions.length,percent,passed,date:new Date().toISOString()});
+  saved={best:Math.max(Number(saved.best)||0,percent),passed:Boolean(saved.passed||passed),attempts:attempts.slice(0,10)};
+  try{localStorage.setItem('sd_ptbr_final_exam_v1',JSON.stringify(saved))}catch(e){}
+  area.innerHTML='<div class="group-exam" style="margin-top:12px"><div class="quiz-head"><b>نتيجة امتحان التخرج</b><span>'+(passed?'اجتزت الامتحان ✓':'لم تصل إلى درجة الاجتياز بعد')+'</span></div><div class="exam-result"><strong>'+score+' / '+questions.length+'</strong><span>'+percent+'%</span></div><p class="feedback">'+(passed?'أحسنت! حققت درجة الاجتياز المطلوبة (80%).':'تحتاج إلى 80% على الأقل. راجع الدروس التي واجهت صعوبة فيها ثم أعد المحاولة.')+'</p><button type="button" class="btn" id="retryFinalExam">أعد الامتحان من جديد ↻</button></div>';
+  finalExamHistory();
+ }
+ area.onclick=function(event){
+  if(event.target.closest('#retryFinalExam')){startFinalExam();return}
+  const button=event.target.closest('[data-final-answer]');if(!button||answered)return;
+  answered=true;const item=questions[step];area.querySelectorAll('[data-final-answer]').forEach(option=>{option.disabled=true;if(option.dataset.correct==='1')option.classList.add('correct')});
+  const feedback=area.querySelector('.feedback'),detail=item.kind==='quiz'&&item.explain?' '+item.explain:'';
+  if(button.dataset.correct==='1'){score++;feedback.textContent='إجابة صحيحة. '+lessons[item.lesson].title+'.'+detail;feedback.style.color='var(--green)'}
+  else{button.classList.add('wrong');feedback.textContent='راجع درس «'+lessons[item.lesson].title+'». الإجابة الصحيحة باللون الأخضر.'+detail;feedback.style.color='#a34732'}
+  const next=document.createElement('button');next.type='button';next.className='btn';next.style.marginTop='10px';next.textContent=step===questions.length-1?'إنهاء الامتحان وعرض النتيجة ←':'السؤال التالي ←';next.dataset.finalNext='1';area.querySelector('.group-exam').appendChild(next);
+ };
+ area.addEventListener('click',function(event){if(event.target.closest('[data-final-next]')){step++;if(step>=questions.length)finish();else show()}});
+ show();
 }
 function groupExamItems(name){
  const items=[],seen=new Set();
@@ -131,6 +196,6 @@ lessonContent.addEventListener('click',event=>{
   if(e.target.closest('[data-group-next]')){step++;if(step>=questions.length)finish();else show()}
  });
 });
-lessonContent.addEventListener('pointerover',e=>{const el=e.target.closest('.pt-speak');if(el&&e.pointerType==='mouse'&&!el.contains(e.relatedTarget))speakPortuguese(el)});lessonContent.addEventListener('click',e=>{const audioButton=e.target.closest('[data-ptbr-human-audio]');if(audioButton){playPtbrHostedPath(audioButton.getAttribute('data-ptbr-human-audio'),audioButton.getAttribute('data-ptbr-label'));return}const el=e.target.closest('.pt-speak');if(el)speakPortuguese(el)});lessonContent.addEventListener('keydown',e=>{const el=e.target.closest('.pt-speak');if(el&&(e.key==='Enter'||e.key===' ')){e.preventDefault();speakPortuguese(el)}});buildLessonList();render(0);progress();groupExamHistory();initPtbrHostedAudio();
+lessonContent.addEventListener('pointerover',e=>{const el=e.target.closest('.pt-speak');if(el&&e.pointerType==='mouse'&&!el.contains(e.relatedTarget))speakPortuguese(el)});lessonContent.addEventListener('click',e=>{const audioButton=e.target.closest('[data-ptbr-human-audio]');if(audioButton){playPtbrHostedPath(audioButton.getAttribute('data-ptbr-human-audio'),audioButton.getAttribute('data-ptbr-label'));return}const el=e.target.closest('.pt-speak');if(el)speakPortuguese(el)});lessonContent.addEventListener('keydown',e=>{const el=e.target.closest('.pt-speak');if(el&&(e.key==='Enter'||e.key===' ')){e.preventDefault();speakPortuguese(el)}});buildLessonList();render(0);progress();groupExamHistory();finalExamHistory();document.getElementById('startFinalExam').addEventListener('click',startFinalExam);initPtbrHostedAudio();
 })();
 </script></body></html>
