@@ -1,6 +1,31 @@
 (function(){
   'use strict';
   var photos={
+    pharmacy:{url:'https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/pharmacy'},
+    hospitalBuilding:{url:'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/hospital-building'},
+    veterinarian:{url:'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/veterinarian'},
+    postbox:{url:'https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/postbox'},
+    trainStation:{url:'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/train-station'},
+    ferry:{url:'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ferry-boat'},
+    ship:{url:'https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ship'},
+    bridge:{url:'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bridge'},
+    tunnel:{url:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/tunnel'},
+    gasStation:{url:'https://images.unsplash.com/photo-1545262810-77515befe149?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/gas-station'},
+    mechanic:{url:'https://images.unsplash.com/photo-1487754180451-c456f0d4b3c2?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/car-mechanic'},
+    parkingGarage:{url:'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/parking-garage'},
+    wallet:{url:'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/wallet'},
+    receipt:{url:'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/receipt'},
+    ticket:{url:'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/event-ticket'},
+    calendar:{url:'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/calendar'},
+    notebook:{url:'https://images.unsplash.com/photo-1531346878377-a5be20888e57?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/notebook'},
+    scissors:{url:'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/scissors'},
+    screwdriver:{url:'https://images.unsplash.com/photo-1581147036324-c1c4f8b8f5a1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/screwdriver'},
+    hammer:{url:'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/hammer'},
+    suitcaseLock:{url:'https://images.unsplash.com/photo-1512412046876-f386342eddb3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/luggage-lock'},
+    laundry:{url:'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/laundry'},
+    shower:{url:'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/shower'},
+    bathtub:{url:'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bathtub'},
+
     bakery:{url:'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bakery-bread'},
     butcher:{url:'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/butcher-shop'},
     fishMarket:{url:'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/fish-market'},
@@ -703,6 +728,33 @@
       [/(?:mosque|mesquita|moschea|mezquita|mosquée|Moschee|мечеть)/i,'mosque']
     ];
     for(var nr=0;nr<newPhotoRules.length;nr++)if(newPhotoRules[nr][0].test(target))return photos[newPhotoRules[nr][1]];
+    var distinctPhotoRules=[
+      [/(?:pharmacy|farmácia|farmacia|pharmacie|Apotheke|аптека)/i,'pharmacy'],
+      [/(?:hospital building|hospital|hôpital|Krankenhaus|больница)/i,'hospitalBuilding'],
+      [/(?:veterinarian|vet clinic|veterinário|veterinario|vétérinaire|Tierarzt|ветеринар)/i,'veterinarian'],
+      [/(?:postbox|mailbox|caixa de correio|cassetta postale|buzón|boîte aux lettres|Briefkasten|почтовый ящик)/i,'postbox'],
+      [/(?:train station|railway station|estação de trem|stazione ferroviaria|estación de tren|gare|Bahnhof|вокзал)/i,'trainStation'],
+      [/(?:ferry|ferry boat|balsa|traghetto|transbordador|Fähre|паром)/i,'ferry'],
+      [/(?:ship|navio|nave|barco|bateau|Schiff|корабль)/i,'ship'],
+      [/(?:bridge|ponte|puente|pont|Brücke|мост)/i,'bridge'],
+      [/(?:tunnel|túnel|galleria|Tunnel|тоннель)/i,'tunnel'],
+      [/(?:gas station|petrol station|posto de gasolina|benzinaio|gasolinera|station-service|Tankstelle|заправка)/i,'gasStation'],
+      [/(?:mechanic|car mechanic|mecânico|meccanico|mecánico|mécanicien|Mechaniker|автомеханик)/i,'mechanic'],
+      [/(?:parking garage|car park|estacionamento|parcheggio|aparcamiento|Parkhaus|парковка)/i,'parkingGarage'],
+      [/(?:wallet|carteira|portafoglio|cartera|portefeuille|Geldbörse|кошелёк)/i,'wallet'],
+      [/(?:receipt|recibo|scontrino|ticket de caisse|Kassenbon|чек)/i,'receipt'],
+      [/(?:ticket|bilhete|biglietto|entrada|billet|Fahrkarte|билет)/i,'ticket'],
+      [/(?:calendar|calendário|calendario|calendrier|Kalender|календарь)/i,'calendar'],
+      [/(?:notebook|caderno|quaderno|cuaderno|cahier|Notizbuch|тетрадь)/i,'notebook'],
+      [/(?:scissors|tesoura|forbici|tijeras|ciseaux|Schere|ножницы)/i,'scissors'],
+      [/(?:screwdriver|chave de fenda|cacciavite|destornillador|tournevis|Schraubenzieher|отвёртка)/i,'screwdriver'],
+      [/(?:hammer|martelo|martello|martillo|marteau|Hammer|молоток)/i,'hammer'],
+      [/(?:luggage lock|suitcase lock|cadeado de mala|lucchetto per valigia|candado de maleta|cadenas de valise|Kofferschloss|замок чемодана)/i,'suitcaseLock'],
+      [/(?:laundry|laundromat|lavanderia|lavandería|laverie|Wäscherei)/i,'laundry'],
+      [/(?:shower|chuveiro|doccia|ducha|douche|Dusche|душ)/i,'shower'],
+      [/(?:bathtub|bath tub|banheira|vasca da bagno|bañera|baignoire|Badewanne|ванна)/i,'bathtub']
+    ];
+    for(var dx=0;dx<distinctPhotoRules.length;dx++)if(distinctPhotoRules[dx][0].test(target))return photos[distinctPhotoRules[dx][1]];
     var multilingualExtraRules=[
       [/(?:check.?in|boarding pass|check-in counter|embarque|cartão de embarque|facturación|mostrador de facturación|enregistrement|comptoir d'enregistrement|Einchecken|Check-in-Schalter|регистрация на рейс|стойка регистрации)/i,'airportCheckin'],
       [/(?:dentist|dental|toothache|dentista|dente doendo|diente|dentiste|mal aux dents|Zahnarzt|Zahnärztin|стоматолог|зуб болит)/i,'dentist'],
