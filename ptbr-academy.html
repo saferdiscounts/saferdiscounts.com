@@ -110,6 +110,7 @@ function startFinalExam(){
  }
  area.onclick=function(event){
   if(event.target.closest('#retryFinalExam')){startFinalExam();return}
+  if(event.target.closest('[data-final-next]')){step++;if(step>=questions.length)finish();else show();return}
   const button=event.target.closest('[data-final-answer]');if(!button||answered)return;
   answered=true;const item=questions[step];area.querySelectorAll('[data-final-answer]').forEach(option=>{option.disabled=true;if(option.dataset.correct==='1')option.classList.add('correct')});
   const feedback=area.querySelector('.feedback'),detail=item.kind==='quiz'&&item.explain?' '+item.explain:'';
@@ -117,7 +118,6 @@ function startFinalExam(){
   else{button.classList.add('wrong');feedback.textContent='راجع درس «'+lessons[item.lesson].title+'». الإجابة الصحيحة باللون الأخضر.'+detail;feedback.style.color='#a34732'}
   const next=document.createElement('button');next.type='button';next.className='btn';next.style.marginTop='10px';next.textContent=step===questions.length-1?'إنهاء الامتحان وعرض النتيجة ←':'السؤال التالي ←';next.dataset.finalNext='1';area.querySelector('.group-exam').appendChild(next);
  };
- area.addEventListener('click',function(event){if(event.target.closest('[data-final-next]')){step++;if(step>=questions.length)finish();else show()}});
  show();
 }
 function groupExamItems(name){
