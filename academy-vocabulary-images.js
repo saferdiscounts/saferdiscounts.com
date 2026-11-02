@@ -635,7 +635,7 @@
     if(lang==='pt-BR'&&/(?:trocar|troca)/i.test(target))return photos.clothing;
     if(lang==='pt-BR'&&/(?:o mais barato|barato)/i.test(target))return photos.money;
     if(lang==='pt-BR'&&/(?:poderia repetir|poderia me ajudar|teria como|seria possível|sem problema|que tal|trabalhar em equipe|reformular)/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/(?:você deve descansar|eu me sinto bem)/i.test(target))return photos.doctor;
+    if(lang==='pt-BR'&&/(?:você deve descansar|eu me sinto bem)/i.test(target))return null;
     if(lang==='pt-BR'&&/(?:se acordar|eu me levanto cedo)/i.test(target))return photos.clock;
     if(lang==='pt-BR'&&/(?:ar-condicionado)/i.test(target))return photos.house;
     if(lang==='pt-BR'&&/(?:confortável)/i.test(target))return photos.hotelReception;
@@ -648,9 +648,9 @@
     if(lang==='pt-BR'&&/(?:perto de|^onde$|espere aqui)/i.test(target))return photos.directions;
     if(lang==='pt-BR'&&/(?:a gente viajava|eu vou viajar|tenho viajado|quando você chegar|quando eu for)/i.test(target))return photos.airplane;
     if(lang==='pt-BR'&&/(?:nós nos preparamos)/i.test(target))return photos.luggage;
-    if(lang==='pt-BR'&&/(?:^os amigos$|^as amigas$|somos amigos|amigos|amigas)/i.test(target))return photos.family;
+    if(lang==='pt-BR'&&/(?:^os amigos$|^as amigas$|somos amigos|amigos|amigas)/i.test(target))return photos.friends;
     if(lang==='pt-BR'&&/(?:hotéis|hoteis)/i.test(target))return photos.hotelReception;
-    if(lang==='pt-BR'&&/(?:^a mão$|mão)/i.test(target))return photos.writing;
+    if(lang==='pt-BR'&&/(?:^a mão$|mão|mãos)/i.test(target))return photos.hand;
     if(lang==='pt-BR'&&/(?:se fizer frio)/i.test(target))return photos.weather;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
