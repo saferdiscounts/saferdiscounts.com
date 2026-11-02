@@ -409,6 +409,9 @@
     var pronounMeaning=/(?:^|\s)(?:أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ)(?:\s|$)/i.test(meaningPlain);
     var pronounWord=/^(?:you|your|yours|yourself|você|vocês|tu|te|ti|usted|ustedes|tú|vosotros|vosotras|vous|toi|du|dich|ihr|sie|ты|вы|тебя|тебе|вас|lei|voi)$/i.test(rawWord);
     if(pronounMeaning||pronounWord)return null;
+    // Brazilian Portuguese: avoid reusing a stationery photo for the literal word “mão”.
+    if(lang==='pt-BR'&&/^(?:mão|mãos)$/i.test(rawWord))return null;
+    if(lang==='pt-BR'&&/^(?:irmão|irmã|irmãos|irmãs)$/i.test(rawWord))return photos.family;
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
