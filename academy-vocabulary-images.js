@@ -196,6 +196,18 @@
     camping:{url:'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/'},
     tent:{url:'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/'},
     garden:{url:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/'}
+    toothpaste:{url:'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/toothpaste'},
+    bedroom:{url:'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bedroom'},
+    pillow:{url:'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/pillow'},
+    lamp:{url:'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/table-lamp'},
+    refrigerator:{url:'https://images.unsplash.com/photo-1571175443880-49e1d58579?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/refrigerator'},
+    stove:{url:'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/kitchen-stove'},
+    chair:{url:'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/chair'},
+    bookshelf:{url:'https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bookshelf'},
+    book:{url:'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/open-book'},
+    newspaper:{url:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/newspaper'},
+    oceanWave:{url:'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ocean-waves'},
+
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -782,6 +794,33 @@
       [/(?:garden|jardim|giardino|jardín|jardin|Garten|сад)/i,'garden']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
+
+    var householdNatureRules=[
+      [/(?:toothbrush|escova de dentes|spazzolino|cepillo de dientes|brosse à dents|Zahnbürste|зубная щётка)/i,'toothbrush'],
+      [/(?:toothpaste|pasta de dentes|dentifricio|pasta de dientes|dentifrice|Zahnpasta|зубная паста)/i,'toothpaste'],
+      [/(?:soap|sabonete|sapone|jabón|savon|Seife|мыло)/i,'soap'],
+      [/(?:towel|toalha|asciugamano|toalla|serviette|Handtuch|полотенце)/i,'towel'],
+      [/(?:bedroom|quarto|camera da letto|dormitorio|chambre à coucher|Schlafzimmer|спальня)/i,'bedroom'],
+      [/(?:pillow|travesseiro|cuscino|almohada|oreiller|Kissen|подушка)/i,'pillow'],
+      [/(?:lamp|abajur|lâmpada|lampada|lámpara|lampe|Lampe|лампа)/i,'lamp'],
+      [/(?:sofa|couch|sofá|divano|sofá|canapé|Sofa|диван)/i,'sofa'],
+      [/(?:kitchen|cozinha|cucina|cocina|cuisine|Küche|кухня)/i,'kitchen'],
+      [/(?:refrigerator|fridge|geladeira|frigorifero|nevera|réfrigérateur|Kühlschrank|холодильник)/i,'refrigerator'],
+      [/(?:stove|fogão|fornello|estufa|cuisinière|Herd|плита)/i,'stove'],
+      [/(?:washing machine|máquina de lavar|lavatrice|lavadora|machine à laver|Waschmaschine|стиральная машина)/i,'washingMachine'],
+      [/(?:chair|cadeira|sedia|silla|chaise|Stuhl|стул)/i,'chair'],
+      [/(?:bookshelf|estante de livros|libreria|estantería|bibliothèque|Bücherregal|книжная полка)/i,'bookshelf'],
+      [/(?:book|livro|libro|libro|livre|Buch|книга)/i,'book'],
+      [/(?:newspaper|jornal|giornale|periódico|journal|Zeitung|газета)/i,'newspaper'],
+      [/(?:mountain|montanha|montagna|montaña|montagne|Berg|гора)/i,'mountain'],
+      [/(?:waterfall|cachoeira|cascata|cascada|cascade|Wasserfall|водопад)/i,'waterfall'],
+      [/(?:forest|floresta|foresta|bosque|forêt|Wald|лес)/i,'forest'],
+      [/(?:sunrise|nascer do sol|alba|amanecer|lever du soleil|Sonnenaufgang|восход)/i,'sunrise'],
+      [/(?:ocean wave|wave|onda do mar|onda|vague|Meereswelle|морская волна)/i,'oceanWave'],
+      [/(?:camping tent|barraca de camping|tenda da campeggio|tienda de campaña|tente de camping|Campingzelt|палатка)/i,'campingTent'],
+      [/(?:backpack|mochila|zaino|mochila|sac à dos|Rucksack|рюкзак)/i,'backpack']
+    ];
+    for(var hn=0;hn<householdNatureRules.length;hn++)if(householdNatureRules[hn][0].test(target))return photos[householdNatureRules[hn][1]];
     var englishRules=[
       [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
       [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
