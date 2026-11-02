@@ -77,6 +77,8 @@
     garden:{url:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/garden'},
 
     conversation:{url:'https://images.unsplash.com/photo-1523582407565-efee5cf4a353?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/group-of-people-having-a-conversation-in-a-circle-E0ylfF52C6M'},
+    friends:{url:'https://images.unsplash.com/photo-1670272506160-bdf0c7a45d2b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-group-of-people-sitting-outside-d9jiWu7Q90Q'},
+    hand:{url:'https://images.unsplash.com/photo-1628058494685-6c2f796ac24a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/person-holding-silver-and-black-hand-tool-Mr9m0tGdTIE'},
     numbers:{url:'https://images.unsplash.com/photo-1772663042999-f2d61d02b7be?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/scattered-black-numbers-on-white-paper-background-OBgh6h_2yL0'},
     colors:{url:'https://images.unsplash.com/photo-1777537953461-744f35dcb1de?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/watercolor-paint-palettes-and-brushes-with-colorful-swatches-oIcwk0nS0bs'},
     fish:{url:'https://images.unsplash.com/photo-1763867641066-cd26a5f11105?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/fish-fillet-with-greens-and-sauce-on-a-white-plate-hc1TswjkUJo'},
@@ -284,14 +286,14 @@
     [/صالة رياضة|جيم|نادي رياضي|تمارين|رفع الأثقال|لياقة بدنية/,'gym'],
     [/سباحة|مسبح|حمام سباحة|سباح|سباحون/,'swimming'],
     [/كرة سلة|كرة السلة|ملعب كرة السلة/,'basketball'],
-    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/شرطة|الشرطة|قسم الشرطة|مركز الشرطة|شرطي|ضابط شرطة/,'police'],[/تسجيل الدخول|تسجيل المغادرة|تسجيل الوصول|تسجيل الخروج|حجز|حجزي|الاستقبال|موظف الاستقبال|سأقيم في فندق|فندق|فنادق|الفنادق/,'hotelReception'],[/ملصق الأمتعة|ملصق الحقيبة|بطاقة الأمتعة|بطاقة الحقيبة/,'luggageTag'],[/بوابة الصعود|بوابة الطائرة|بوابة المغادرة/,'boardingGate'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/اسم الحرف|الحروف الأبجدية|الأبجدية/,'alphabet'],[/علامة الترقيم|علامة على|علامة acute|علامة circumflex|النبر|فاصلة|نقطة|علامة تعجب|علامة استفهام|الترقيم|اليد|يد|خبرة|مهارة|خطة|حل|حدث بدأ في الماضي|الماضي ولسه مستمر/,'writing'],[/اسمي|ما اسمك|أنا من مصر|من فضلك|شكرًا|شكرا|آسف|معلش|بعد إذنك|هل تتكلم|تتكلم الإنجليزية|تتكلم ببطء|لم أفهم|كل شيء تمام|وأنت|سعيد بمعرفتك|مزحة|نكتة|دعابة/,'conversation'],[/^(?:صفر|واحد|اثنان|ثلاثة|أربعة|خمسة|عشرة|عشرون)$|كم عمرك|عمري \d+/,'numbers'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/بطاقة صعود الطائرة|بطاقة الصعود|بطاقة الركوب|كارت صعود الطائرة/,'airplane'],[/بطاقة ائتمان|بطاقة ائتمانية|بطاقة بنكية|بطاقة مصرفية|كارت بنكي|كارت ائتمان|بطاقة الدفع/,'paymentCard'],[/دواء|أدوية|علاج|أقراص|حبوب دواء|دواء الصيدلية|صيدلية/,'medicine'],[/طقس|الطقس|توقعات الطقس|غائم|مطر|ممطر|عاصفة|سحب|غيوم|بارد|برد|برودة|الجو بارد/,'weather'],[/طاولة|ترابيزة/,'table'],
+    [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/شرطة|الشرطة|قسم الشرطة|مركز الشرطة|شرطي|ضابط شرطة/,'police'],[/تسجيل الدخول|تسجيل المغادرة|تسجيل الوصول|تسجيل الخروج|حجز|حجزي|الاستقبال|موظف الاستقبال|سأقيم في فندق|فندق|فنادق|الفنادق/,'hotelReception'],[/ملصق الأمتعة|ملصق الحقيبة|بطاقة الأمتعة|بطاقة الحقيبة/,'luggageTag'],[/بوابة الصعود|بوابة الطائرة|بوابة المغادرة/,'boardingGate'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/اسم الحرف|الحروف الأبجدية|الأبجدية/,'alphabet'],[/علامة الترقيم|علامة على|علامة acute|علامة circumflex|النبر|فاصلة|نقطة|علامة تعجب|علامة استفهام|الترقيم|اليد|يد|خبرة|مهارة|خطة|حل|حدث بدأ في الماضي|الماضي ولسه مستمر/,'writing'],[/اسمي|ما اسمك|أنا من مصر|من فضلك|شكرًا|شكرا|آسف|معلش|بعد إذنك|هل تتكلم|تتكلم الإنجليزية|تتكلم ببطء|لم أفهم|كل شيء تمام|وأنت|سعيد بمعرفتك|مزحة|نكتة|دعابة/,'conversation'],[/^(?:صفر|واحد|اثنان|ثلاثة|أربعة|خمسة|عشرة|عشرون)$|كم عمرك|عمري \d+/,'numbers'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/بطاقة صعود الطائرة|بطاقة الصعود|بطاقة الركوب|كارت صعود الطائرة/,'airplane'],[/بطاقة ائتمان|بطاقة ائتمانية|بطاقة بنكية|بطاقة مصرفية|كارت بنكي|كارت ائتمان|بطاقة الدفع/,'paymentCard'],[/صيدلية|صيدليات|صيدلي|صيدلانية/,'pharmacy'],[/مستشفى|مستشفيات/,'hospitalBuilding'],[/طبيب|دكتور|ممرضة|ممرض/,'doctor'],[/دواء|أدوية|علاج|أقراص|حبوب دواء|دواء الصيدلية/,'medicine'],[/طقس|الطقس|توقعات الطقس|غائم|مطر|ممطر|عاصفة|سحب|غيوم|بارد|برد|برودة|الجو بارد/,'weather'],[/طاولة|ترابيزة/,'table'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|ليمونادة|مشروب فاكهة/,'juice'],[/سمك|سمكة|أسماك/,'fish'],[/نبيذ|خمر|خمور/,'wine'],[/فاكهة|فواكه|موز|عنب|كمثرى|كيوي|مانجو|برتقال/,'fruit'],[/خضار|خضروات|بروكلي|جزر|طماطم|فلفل|خيار|خس/,'vegetables'],[/جبن|جبنة|أجبان/,'cheese'],[/ألوان|لون|أصفر|بنفسجي|وردي|رمادي|بني|برتقالي|أزرق|أسود|أحمر|أبيض|أخضر/,'colors'],
     [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
     [/بيت|منزل|سكن|غرفة|باب|مفتاح|فندق|شقة|مطبخ|حمام|مرحاض|دورة المياه|غرفتك|غرفتي/,'house'],[/طائرة|طيران|مطار|رحلة|طيارة|إقلاع|هبوط/,'airplane'],
     [/سيارة|عربية|تاكسي|كاب|سائق|أوبر/,'taxi'],[/سير استلام الأمتعة|سير الحقائب|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/حقيبة سفر|شنطة|أمتعة|حقائب|أمتعة السفر/,'luggage'],[/قطار|مترو|محطة قطار|محطة المترو|سكة حديد/,'train'],[/حافلة|أتوبيس|باص|محطة حافلات/,'bus'],[/بحر|محيط|شاطئ|شاطىء|جزيرة|ساحل/,'beach'],
     [/طعام|أكل|وجبة|مطعم|غداء|عشاء|لحم|فطور|إفطار|غذاء|طبق|وجبات|كيلو|فراخ|دجاج|دجاجة/,'meal'],[/مدينة|شارع|طريق|مباني|وسط المدينة|الحي|الجوار|الحديقة|متحف/,'city'],[/طبيب|دكتور|صحة|مرض|مستشفى|عيادة|صيدلية|دواء|ممرضة|صداع|نزلة برد|الألم|دوخة|الكشف/,'doctor'],
-    [/قطة|قط|قطه|قطط/,'cat'],[/كلب|جرو|كلاب/,'dog'],[/فول سوداني|الفول السوداني|فستق سوداني|مكسرات/,'peanuts'],[/لبن|حليب|لبن كامل|كوب لبن/,'milk'],[/ليمون|ليمونة|ليمونادة/,'lemon'],[/قلب|قلبي|القلب|قلوب/,'heart'],[/أم|الأم|أبي|الأب|أب|عائلة|عائلتي|أخي|أختي|أسرة|أسرتي|أمي|أمك|أبوك|والدان|والدي|عائلتك|صديق|صديقة|أصدقاء|صديقات|ابن|ابنة|ولد|بنت|جد|جدة|زوج|زوجة|جوز|مراتي|زوجي|زوجتي|عم|خال|عمة|خالة/,'family'],[/ساعة|الساعة|وقت|الآن|اليوم|غدًا|بكرة|صباحًا|مساءً|بعد الظهر|موعد|مواعيد|تاريخ|توقيت|دقيقة|دقائق|يناير|فبراير|مارس|أبريل|ابريل|مايو|يونيو|يوليو|أغسطس|اغسطس|سبتمبر|أكتوبر|اكتوبر|نوفمبر|ديسمبر/,'clock'],[/يمين|يسار|انعطف|اتجه|اتجاه|ناصية|تقاطع|مدخل|مخرج|قريب من هنا|بعيد|خريطة|لافتة|إشارة مرور/,'directions'],[/إسعاف|إسعافًا|طوارئ|نجدة|حادث|مساعدة عاجلة/,'ambulance'],[/ملابس|قميص|بنطلون|فستان|تنورة|جاكيت|سترة|جوارب|ملابس|مقاس|مقاسي|لون آخر|تجربة الملابس|أجرّب|أقيس/,'clothing'],[/كتاب|كتب|قراءة|مدرسة|جامعة|مكتبة/,'books']
+    [/قطة|قط|قطه|قطط/,'cat'],[/كلب|جرو|كلاب/,'dog'],[/فول سوداني|الفول السوداني|فستق سوداني|مكسرات/,'peanuts'],[/لبن|حليب|لبن كامل|كوب لبن/,'milk'],[/ليمون|ليمونة|ليمونادة/,'lemon'],[/قلب|قلبي|القلب|قلوب/,'heart'],[/أم|الأم|أبي|الأب|أب|عائلة|عائلتي|أخي|أختي|أسرة|أسرتي|أمي|أمك|أبوك|والدان|والدي|عائلتك|ابن|ابنة|ولد|بنت|جد|جدة|زوج|زوجة|جوز|مراتي|زوجي|زوجتي|عم|خال|عمة|خالة/,'family'],[/صديق|صديقة|أصدقاء|صديقات|أصحاب|صاحبي|أصحابي/,'friends'],[/يد|اليد|أيدي|يدين|كف اليد|كف/,'hand'],[/ساعة|الساعة|وقت|الآن|اليوم|غدًا|بكرة|صباحًا|مساءً|بعد الظهر|موعد|مواعيد|تاريخ|توقيت|دقيقة|دقائق|يناير|فبراير|مارس|أبريل|ابريل|مايو|يونيو|يوليو|أغسطس|اغسطس|سبتمبر|أكتوبر|اكتوبر|نوفمبر|ديسمبر/,'clock'],[/يمين|يسار|انعطف|اتجه|اتجاه|ناصية|تقاطع|مدخل|مخرج|قريب من هنا|بعيد|خريطة|لافتة|إشارة مرور/,'directions'],[/إسعاف|إسعافًا|طوارئ|نجدة|حادث|مساعدة عاجلة/,'ambulance'],[/ملابس|قميص|بنطلون|فستان|تنورة|جاكيت|سترة|جوارب|ملابس|مقاس|مقاسي|لون آخر|تجربة الملابس|أجرّب|أقيس/,'clothing'],[/كتاب|كتب|قراءة|مدرسة|جامعة|مكتبة/,'books']
   ];
   function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   var italianRules=[
@@ -374,7 +376,7 @@
     [/(?:comida|refeição|pequeno-almoço|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu|trânsito)/i,'city'],
     [/(?:médico|médica|enfermeiro|enfermeira|hospital|clínica|farmácia|medicamento|dor)/i,'doctor'],[/(?:gato|gatos)/i,'cat'],[/(?:cão|cães|cachorro)/i,'dog'],
     [/(?:amendoim|amendoins)/i,'peanuts'],[/(?:leite)/i,'milk'],[/(?:limão|limões|limonada)/i,'lemon'],[/(?:coração)/i,'heart'],
-    [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão|avó|avô|menino|menina|amigo|amiga|amigos|amigas)/i,'family'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
+    [/(?:família|mãe|mamã|pai|papá|pais|irmã|irmão|avó|avô|menino|menina)/i,'family'],[/(?:amigo|amiga|amigos|amigas)/i,'friends'],[/(?:relógio|hora|minuto|minutos)/i,'clock'],
     [/(?:direita|esquerda|virar|direção|mapa|cruzamento|entrada|saída|endereço)/i,'directions'],[/(?:ambulância|emergência|acidente)/i,'ambulance'],
     [/(?:roupa|camisa|calças|vestido|saia|casaco|meias|tamanho)/i,'clothing'],[/(?:livro|livros|leitura|escola|universidade|biblioteca|estudar)/i,'books']
   ];
@@ -486,6 +488,11 @@
       [/^(?:phone|teléfono|téléphone|telefon|телефон|telefono|telemóvel|telemovel)$/i,'phone'],
       [/^(?:money|dinero|argent|geld|деньги|soldi|dinheiro)$/i,'money'],
       [/^(?:family|familia|famille|familie|семья|famiglia)$/i,'family'],
+      [/^(?:son|daughter|filho|filha|figlio|figlia|hijo|hija|fils|fille|sohn|tochter|сын|дочь)$/i,'family'],
+      [/^(?:friend|friends|amigo|amiga|amigos|amigas|ami|amis|freund|freunde|друг|друзья|amico|amica|amici|amiche)$/i,'friends'],
+      [/^(?:hand|hands|mano|manos|main|mains|hände|рука|руки|mão|mãos)$/i,'hand'],
+      [/^(?:lamp|lamps|lâmpada|lâmpadas|lámpara|lampe|лампа)$/i,'lamp'],
+      [/^(?:morning|mañana|matin|morgen|утро|mattina|manhã)$/i,'sunrise'],
       [/^(?:doctor|médico|medico|médecin|arzt|врач|medico)$/i,'doctor'],
       [/^(?:book|libro|livre|buch|книга|livro)$/i,'books'],
       [/^(?:apartment|flat|appartamento|wohnung|apartamento)$/i,'house'],
@@ -518,12 +525,7 @@
     if(/(?:\b(?:tennis|tennis racket)\b|tennis|raqueta de tenis|raquette de tennis|tennisschläger|ракетка)/i.test(target))return photos.tennis;
     if(lang==='en'&&/(?:boy|girl|son|daughter|grandfather|grandmother|husband|wife|uncle|aunt)/i.test(target))return photos.family;
     if(lang==='en'&&/(?:chicken)/i.test(target))return photos.meal;
-    if(lang==='en'&&/(?:^stuff$|^هو\/هي$)/i.test(target))return photos.conversation;
-    if(lang==='en'&&/(?:worked yesterday)/i.test(target))return photos.clock;
-    if(lang==='en'&&/(?:عايش هنا من 5 سنين)/i.test(target))return photos.writing;
     if(lang==='en'&&/^(?:I|you|he|she|we|they|yes|no|okay|sure)$/i.test(target)||lang==='en'&&/(?:see you soon|you're welcome|you are welcome|i need help|could you help me|sure|awesome|honestly|no biggie|whatever)/i.test(target))return photos.conversation;
-    if(lang==='en'&&/^(?:work|works|has|goes|does|can|wants|knows)$/i.test(target))return photos.writing;
-    if(lang==='en'&&/(?:where is|where's)/i.test(target))return photos.directions;
     if(lang==='en'&&/(?:can i see the menu|menu)/i.test(target))return photos.meal;
     if(lang==='en'&&/(?:i'm flying|flying to|flight)/i.test(target))return photos.airplane;
     if(lang==='en'&&/(?:i can swim|swim)/i.test(target))return photos.beach;
@@ -531,11 +533,6 @@
     if(lang==='en'&&/(?:played tennis)/i.test(target))return photos.tennis;
     if(/\b(?:my name is|what is your name|please|thank you|sorry|excuse me|do you speak|speak slowly|i don't understand|how are you|and you|nice to meet you|preciso de ajuda)\b|(?:meu nome é|como você se chama|eu sou do egito|por favor|obrigado|obrigada|desculpa|com licença|você fala|pode falar devagar|não entendi|tudo bem|e você|muito prazer|você se chama|bater papo|pode reformular|deixa eu reformular|como é mesmo|em outras palavras|do meu ponto de vista|por outro lado|eu te aviso)/i.test(target))return photos.conversation;
     if(/^[A-Z]\s*[—-]/.test(target))return photos.alphabet;
-    if(lang==='pt-BR'&&/(?:ca-fé|mé-di-co|lâm-pa-da|também|sim, obrigado)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/^(?:eu|você|ele|ela|nós|vocês|eles|elas|me|te|se|nos)$/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/^(?:ser|estar|falar|comer|abrir|ter|ir|querer|poder|precisar de|eu falo|eu como|eu abro|vocês abrem|eu sou|você é|nós somos)$/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/^(?:do|da|no|na|ao|à|dos \/ das|nos \/ nas)$/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:você é brasileiro|nós somos turistas|eu sou egípcio|ela é professora|estou cansado|não entendo|pode me ajudar|eu estava esperando)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/^(?:hoje|vida)$/i.test(target))return photos.alphabet;
     if(/^(?:zero|um|dois|três|quatro|cinco|dez|vinte)$/i.test(target)||/(?:quantos anos|30 anos)/i.test(target))return photos.numbers;
     if(/\b(?:police|policeman|police officer|police station)\b|(?:polícia|policial|delegacia|policía|policía|policier|polizei|полиция)/i.test(target))return photos.police;
@@ -570,53 +567,21 @@
     if(/\b(?:medicine|medication|pills?|pharmacy)\b/i.test(target)||/(?:remédio|medicamento|farmácia|medicina|medikament|apotheke|лекарство|аптека)/i.test(target))return photos.medicine;
     if(/\b(?:weather|cloudy|rain|rainy|storm|forecast)\b/i.test(target)||/(?:previsão do tempo|nublado|chuva|tempo chuvoso|meteo|nuvoloso|pioggia|clima|lluvia|nublado|météo|pluie|nuageux|Wetter|Regen|bewölkt|погода|дождь|облачно)/i.test(target))return photos.weather;
     if(lang==='it'&&/(?:svegliarsi|la prossima settimana|prima|dopo|all'improvviso|infine|in anticipo|innanzitutto|la settimana prossima)/i.test(target))return photos.clock;
-    if(lang==='it'&&/(?:visitato|visitare)/i.test(target))return photos.city;
-    if(lang==='it'&&/(?:più grande|più piccolo|cambiare)/i.test(target))return photos.clothing;
     if(lang==='it'&&/(?:il compito|lo stage|la candidatura|la fonte|la domanda|il documento|un'affermazione|una richiesta|riferire|secondo|riguardo a|inoltre|in conclusione|un vantaggio|affidabile|un'esperienza)/i.test(target))return photos.writing;
     if(lang==='it'&&/(?:socievole|un malinteso|scusarsi|chiarire|condividere|vorrei)/i.test(target))return photos.conversation;
-    if(lang==='it'&&/(?:tranquillo)/i.test(target))return photos.house;
-    if(lang==='it'&&/(?:l'affitto)/i.test(target))return photos.house;
-    if(lang==='it'&&/(?:preferire|lo spreco)/i.test(target))return photos.meal;
-    if(lang==='it'&&/(?:l'ambiente)/i.test(target))return photos.city;
-    if(lang==='it'&&/(?:avere intenzione)/i.test(target))return photos.clock;
     if(lang==='es'&&/(?:despertarse|la semana que viene|primero|después|de repente|por fin|de antemano|en primer lugar)/i.test(target))return photos.clock;
-    if(lang==='es'&&/(?:visitado|visitar)/i.test(target))return photos.city;
-    if(lang==='es'&&/(?:más grande|más pequeño|cambiar)/i.test(target))return photos.clothing;
     if(lang==='es'&&/(?:la experiencia|la tarea|las prácticas|la candidatura|la fuente|la solicitud|el justificante|una declaración|una consulta|contar|según|con respecto a|además|en conclusión|una ventaja|fiable)/i.test(target))return photos.writing;
     if(lang==='es'&&/(?:quisiera|amable|compartir|un malentendido|disculparse|aclarar)/i.test(target))return photos.conversation;
-    if(lang==='es'&&/(?:estropeado|tranquilo|el alquiler)/i.test(target))return photos.house;
-    if(lang==='es'&&/(?:preferir|el desperdicio)/i.test(target))return photos.meal;
-    if(lang==='es'&&/(?:el medio ambiente)/i.test(target))return photos.city;
-    if(lang==='es'&&/(?:tener pensado)/i.test(target))return photos.clock;
     if(lang==='fr'&&/(?:se lever|la semaine prochaine|d'abord|ensuite|soudain|finalement|à l'avance|tout d'abord)/i.test(target))return photos.clock;
-    if(lang==='fr'&&/(?:visité|visiter)/i.test(target))return photos.city;
-    if(lang==='fr'&&/(?:plus grand|plus petit|échanger)/i.test(target))return photos.clothing;
     if(lang==='fr'&&/(?:la tâche|le stage|l'examen|une candidature|une source|un dossier|une déclaration|une demande|raconter|selon|concernant|en outre|en conclusion|un avantage|fiable|une expérience)/i.test(target))return photos.writing;
     if(lang==='fr'&&/(?:je voudrais|accueillant|un malentendu|s'excuser|clarifier|partager)/i.test(target))return photos.conversation;
-    if(lang==='fr'&&/(?:en panne|calme|le loyer)/i.test(target))return photos.house;
-    if(lang==='fr'&&/(?:préférer|le gaspillage)/i.test(target))return photos.meal;
-    if(lang==='fr'&&/(?:l'environnement)/i.test(target))return photos.city;
-    if(lang==='fr'&&/(?:prévoir)/i.test(target))return photos.clock;
     if(lang==='de'&&/(?:aufstehen|zuerst|danach|nächste Woche|plötzlich|schließlich|im Voraus|zunächst)/i.test(target))return photos.clock;
     if(lang==='de'&&/(?:die Aufgabe|zuständig|die Bewerbung|die Quelle|die Aussage|die Unterlage|der Antrag|beantragen|berichten|bezüglich|zusammenfassen|Erfahrung|der Zusammenhang|zuverlässig)/i.test(target))return photos.writing;
     if(lang==='de'&&/(?:ich möchte|freundlich|Missverständnis|sich entschuldigen|klären)/i.test(target))return photos.conversation;
-    if(lang==='de'&&/(?:kaputt|ruhig|die Miete)/i.test(target))return photos.house;
-    if(lang==='de'&&/(?:umtauschen)/i.test(target))return photos.clothing;
-    if(lang==='de'&&/(?:die Untersuchung)/i.test(target))return photos.doctor;
-    if(lang==='de'&&/(?:die Umwelt)/i.test(target))return photos.city;
-    if(lang==='de'&&/(?:die Verschwendung)/i.test(target))return photos.meal;
-    if(lang==='de'&&/(?:vorhaben)/i.test(target))return photos.clock;
     if(lang==='pt-PT'&&/(?:acordar|primeiro|depois|na próxima semana|de repente|por fim|antecipadamente|em primeiro lugar)/i.test(target))return photos.clock;
-    if(lang==='pt-PT'&&/(?:visitei|visitar)/i.test(target))return photos.city;
-    if(lang==='pt-PT'&&/(?:trocar)/i.test(target))return photos.clothing;
     if(lang==='pt-PT'&&/(?:a experiência|a tarefa|o estágio|a candidatura|a fonte|o pedido|o comprovativo|uma declaração|relatar|segundo|relativamente a|além disso|em conclusão|uma vantagem|fiável)/i.test(target))return photos.writing;
     if(lang==='pt-PT'&&/(?:queria|simpático|mal-entendido|esclarecer)/i.test(target))return photos.conversation;
-    if(lang==='pt-PT'&&/(?:avariado|sossegado|a renda)/i.test(target))return photos.house;
-    if(lang==='pt-PT'&&/(?:preferir|o desperdício)/i.test(target))return photos.meal;
-    if(lang==='pt-PT'&&/(?:o ambiente|a zona)/i.test(target))return photos.city;
-    if(lang==='pt-PT'&&/(?:planear)/i.test(target))return photos.clock;
     if(/^[А-ЯЁ]$/.test(target))return photos.alphabet;
-    if(lang==='ru'&&/(?:^я$|^ты$|^вы$|^они$|она здесь)/i.test(target))return photos.conversation;
     if(lang==='ru'&&/(?:словарь|читать)/i.test(target))return photos.books;
     if(lang==='ru'&&/(?:понедельник|вторник|среда|четверг|пятница|суббота|воскресенье|обычно|просыпаться|однажды|сначала|потом)/i.test(target))return photos.clock;
     if(lang==='ru'&&/(?:этаж|аренда|ремонт|сломался)/i.test(target))return photos.house;
@@ -624,13 +589,8 @@
     if(lang==='ru'&&/(?:сколько стоит|скидка|зарплата)/i.test(target))return photos.money;
     if(lang==='ru'&&/(?:прямо)/i.test(target))return photos.directions;
     if(lang==='ru'&&/(?:площадь|гулять|ходить)/i.test(target))return photos.city;
-    if(lang==='ru'&&/(?:рисовать|сотрудник|начальник|занятие|экзамен|знание|улучшать|резюме|считать|сравнивать|договор)/i.test(target))return photos.writing;
-    if(lang==='ru'&&/(?:нравиться|проблема|помогите|случилось)/i.test(target))return photos.conversation;
     if(lang==='ru'&&/(?:жарко|температура|весна|лето|осень|зима)/i.test(target))return photos.weather;
-    if(lang==='ru'&&/(?:поеду|приехать)/i.test(target))return photos.taxi;
     if(lang==='ru'&&/(?:билет)/i.test(target))return photos.train;
-    if(lang==='ru'&&/(?:потерял)/i.test(target))return photos.luggage;
-    if(lang==='ru'&&/(?:занят)/i.test(target))return photos.clock;
     if(lang==='it'&&italianPassportRules[0].test(target))return photos.passport;
     if(/\b(?:table|dining table)\b/i.test(target))return photos.table;
     if(/\b(?:baggage claim|baggage carousel|luggage carousel)\b/i.test(target))return photos.baggageCarousel;
@@ -681,19 +641,10 @@
     if(lang==='pt-BR'&&/(?:perto de|^onde$|espere aqui)/i.test(target))return photos.directions;
     if(lang==='pt-BR'&&/(?:a gente viajava|eu vou viajar|tenho viajado|quando você chegar|quando eu for)/i.test(target))return photos.airplane;
     if(lang==='pt-BR'&&/(?:nós nos preparamos)/i.test(target))return photos.luggage;
-    if(lang==='pt-BR'&&/(?:se divertir)/i.test(target))return photos.beach;
-    if(lang==='pt-BR'&&/(?:eu preferiria)/i.test(target))return photos.meal;
-    if(lang==='pt-BR'&&/(?:sotaque|pronúncia|vocabulário)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:regional|dependendo da região|no sul)/i.test(target))return photos.city;
-    if(lang==='pt-BR'&&/(?:funcionando)/i.test(target))return photos.house;
-    if(lang==='pt-BR'&&/(?:não se preocupe|num sei)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/(?:^os amigos$|^as amigas$|somos amigos|amigos|amigas)/i.test(target))return photos.family;
     if(lang==='pt-BR'&&/(?:hotéis|hoteis)/i.test(target))return photos.hotelReception;
     if(lang==='pt-BR'&&/(?:^a mão$|mão)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:experiência|habilidade|plano|solução|solicitar|solicito|experiência profissional|colocar a mão na massa)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:brincadeira)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/(?:se fizer frio)/i.test(target))return photos.weather;
-    if(lang==='pt-BR'&&/(?:onde fica|^aqui$|^ali$|^perto$)/i.test(target))return photos.directions;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
     if(lang==='pt-PT'&&/(?:tapete de bagagem|recolha de bagagem|passadeira de bagagem)/i.test(target))return photos.baggageCarousel;
@@ -710,16 +661,17 @@
     if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
     if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
     if(lang==='pt-BR'&&/^(?:não|nao|quem|como|que|ele \/ ela|eles \/ elas|ele|ela|eles|elas|eu|você|vocês|nós|me|te|se|nos)$/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/(?:bonito|bonita|pequeno|pequena|grande|interessante|variedade|regional|no sul)/i.test(target))return photos.city;
-    if(lang==='pt-BR'&&/(?:problema|impasse|preocupação|encaminhamento|concordo em parte|quebrar o galho|ficar de olho|cair a ficha|matar a saudade|deu tudo certo|estar por dentro|nossa!|até parece|nem pensar|por incrível que pareça|não toque nisso|tenha cuidado|não se preocupe)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/(?:reembolso|cobrança indevida|dinheiro|pagamento|cobrança)/i.test(target))return photos.money;
-    if(lang==='pt-BR'&&/(?:esclarecimento|prazo de resposta|planejamento|alternativa|solução|relato|aprendizado|autonomia|tese|argumento|pressuposto|implicação|ressalva|ironia|evidência|generalização|destacar|considerar|negociar|ponto central|em anexo|fico no aguardo)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:porque|por isso|mas|então|apesar de|antes de|além disso|em síntese|em contrapartida|consequentemente|ao que tudo indica|em certa medida|diante disso|ao contrário|assim que|por exemplo|em resumo|no fim das contas|só que|por assim dizer|meio que|apesar disso|que|com quem|em que)/i.test(target))return photos.writing;
-    if(lang==='pt-BR'&&/(?:infelizmente|talvez|consigo|percebi|pretendo|ter que|dever|melhor|pior|venha|seja|esteja|tenha|possa|aconteceu|poderia|seria melhor|pode ser que|é possível que|aparentemente|até onde sei|tudo indica que|talvez seja)/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/(?:para mim|com você|falar com ele|a gente vai|estou ligando a respeito|atender às duas partes|reformular|esclarecer)/i.test(target))return photos.conversation;
-    if(lang==='pt-BR'&&/(?:NH صوت|LH صوت|D وT قبل I)/i.test(String(meaning||'')))return photos.alphabet;
-    if(lang==='pt-BR'&&/(?:tão\.\.\. quanto|cujo \/ cuja|já tinha|nunca tinha visto|já tinha acontecido|será enviado|é permitido|pra \/ para|pro \/ para o|se eu tiver|se eu tivesse|teria feito|caso fosse possível|já tinha saído|o autor afirma|sugere|responsabilidade|como resultado|para concluir|proposta|termo exato|reparar em|notar|constatar|supor|presumir|a rigor|próximos passos|prezado|sem dúvida|de fato|até certo ponto|em princípio|provavelmente|viável)/i.test(target))return photos.writing;
     if(lang==='pt-BR'&&/(?:por sorte|se eu pudesse|eu faria isso|caso contrário|na sua situação|tá \/ está|tô \/ estou|cê \/ você|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|sem pé nem cabeça|me manda)/i.test(target))return photos.conversation;
+    if(lang==='pt-BR'&&/^(?:aqui|ali|perto)$/i.test(target.trim()))return photos.directions;
+    if(lang==='pt-BR'&&/^(?:manhã)$/i.test(target.trim()))return photos.sunrise;
+    if(lang==='pt-BR'&&/^(?:filho|filha)$/i.test(target.trim()))return photos.family;
+    if(lang==='pt-BR'&&/^(?:lâm-pa-da|lâmpada)$/i.test(target.trim()))return photos.lamp;
+    if(lang==='pt-BR'&&/^(?:falar|eu falo|falar com ele|pode me ajudar\?|não entendo\.)$/i.test(target.trim()))return photos.conversation;
+    if(lang==='pt-BR'&&/^(?:eu como)$/i.test(target.trim()))return photos.meal;
+    if(lang==='pt-BR'&&/^(?:abrir|eu abro|vocês abrem)$/i.test(target.trim()))return photos.door;
+    if(lang==='pt-BR'&&/^(?:os amigos|as amigas|somos amigos|amigos|amigas)$/i.test(target.trim()))return photos.friends;
+    if(lang==='pt-BR'&&/(?:mão|mãos)/i.test(target))return photos.hand;
     if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
     if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
 
