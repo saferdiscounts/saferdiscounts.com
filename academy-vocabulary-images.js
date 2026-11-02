@@ -405,7 +405,10 @@
   function find(meaning,word,lang){
     var rawMeaning=String(meaning||'').trim(),rawWord=String(word||'').trim();
     // Pronouns are abstract concepts: never assign an unrelated animal or object photo.
-    if(/^(?:أنت|أنتَ|أنتِ|انت|انتا|you|your|yours|yourself)$/i.test(rawMeaning)||/^(?:you|your|yours|yourself)$/i.test(rawWord))return null;
+    var meaningPlain=rawMeaning.replace(/[()؟?!،,:؛]/g,' ').replace(/\s+/g,' ').trim();
+    var pronounMeaning=/(?:^|\s)(?:أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ)(?:\s|$)/i.test(meaningPlain);
+    var pronounWord=/^(?:you|your|yours|yourself|você|vocês|tu|te|ti|usted|ustedes|tú|vosotros|vosotras|vous|toi|du|dich|ihr|sie|ты|вы|тебя|тебе|вас|lei|voi)$/i.test(rawWord);
+    if(pronounMeaning||pronounWord)return null;
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
