@@ -208,6 +208,9 @@
     newspaper:{url:'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/newspaper'},
     oceanWave:{url:'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ocean-waves'},
 
+    football:{url:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/football'},
+    gloves:{url:'https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/winter-gloves'},
+
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -817,10 +820,20 @@
       [/(?:forest|floresta|foresta|bosque|forêt|Wald|лес)/i,'forest'],
       [/(?:sunrise|nascer do sol|alba|amanecer|lever du soleil|Sonnenaufgang|восход)/i,'sunrise'],
       [/(?:ocean wave|wave|onda do mar|onda|vague|Meereswelle|морская волна)/i,'oceanWave'],
-      [/(?:camping tent|barraca de camping|tenda da campeggio|tienda de campaña|tente de camping|Campingzelt|палатка)/i,'campingTent'],
-      [/(?:backpack|mochila|zaino|mochila|sac à dos|Rucksack|рюкзак)/i,'backpack']
     ];
     for(var hn=0;hn<householdNatureRules.length;hn++)if(householdNatureRules[hn][0].test(target))return photos[householdNatureRules[hn][1]];
+
+    var activityPhotoRules=[
+      [/(?:camera|câmera|macchina fotografica|cámara|appareil photo|Kamera|фотоаппарат)/i,'camera'],
+      [/(?:guitar|violão|chitarra|guitarra|guitare|Gitarre|гитара)/i,'guitar'],
+      [/(?:basketball|basquete|pallacanestro|baloncesto|basket|Basketball|баскетбол)/i,'basketball'],
+      [/(?:football|soccer|futebol|calcio|fútbol|football|Fußball|футбол)/i,'football'],
+      [/(?:swimming pool|piscina|piscina|piscina|piscine|Schwimmbad|бассейн)/i,'swimmingPool'],
+      [/(?:sunglasses|óculos de sol|occhiali da sole|gafas de sol|lunettes de soleil|Sonnenbrille|солнцезащитные очки)/i,'sunglasses'],
+      [/(?:gloves|luvas|guanti|guantes|gants|Handschuhe|перчатки)/i,'gloves'],
+      [/(?:bicycle|bike|bicicleta|bicicletta|bicicleta|vélo|Fahrrad|велосипед)/i,'bicycle']
+    ];
+    for(var ap=0;ap<activityPhotoRules.length;ap++)if(activityPhotoRules[ap][0].test(target))return photos[activityPhotoRules[ap][1]];
     var englishRules=[
       [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
       [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
