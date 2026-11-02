@@ -650,7 +650,7 @@
     if(lang==='pt-BR'&&/(?:nós nos preparamos)/i.test(target))return photos.luggage;
     if(lang==='pt-BR'&&/(?:^os amigos$|^as amigas$|somos amigos|amigos|amigas)/i.test(target))return photos.friends;
     if(lang==='pt-BR'&&/(?:hotéis|hoteis)/i.test(target))return photos.hotelReception;
-    if(lang==='pt-BR'&&/(?:^a mão$|mão|mãos)/i.test(target))return photos.hand;
+    if(lang==='pt-BR'&&/(?:^a mão$|mão|mãos)/i.test(target))return null;
     if(lang==='pt-BR'&&/(?:se fizer frio)/i.test(target))return photos.weather;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
