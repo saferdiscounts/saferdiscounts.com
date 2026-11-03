@@ -835,7 +835,7 @@
       [/(?:garden|jardim|giardino|jardín|jardin|Garten|сад)/i,'garden'],
       [/(?:banana|bananas|banana-da-terra|banane|plátano|banano|banane|Banane|банан)/i,'banana'],
       [/(?:street cafe|café|cafe|coffee shop|cafeteria|cafetería|cafeteria|caffè|Kaffeehaus|кафе)/i,'streetCafe'],
-      [/(?:courtyard|patio interior|pátio|cortile|patio|cour|Innenhof|внутренний двор)/i,'courtyard']
+      [/(?:courtyard|patio interior|pátio|cortile|patio|cour|Innenhof|внутренний двор)/i,'courtyard'],
       [/(?:pineapple|ananas|abacaxi|piña|ananá|ananas|Ananas|ананас)/i,'pineapple'],
       [/(?:watermelon|melancia|sandía|patilla|pastèque|Wassermelone|арбуз)/i,'watermelon'],
       [/(?:carrot|carrots|cenoura|zanahoria|carotte|Karotte|морковь)/i,'carrot'],
