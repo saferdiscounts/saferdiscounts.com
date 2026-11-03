@@ -241,6 +241,14 @@
     tram:{url:'https://images.unsplash.com/photo-1775045308924-d2d6605683b0?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/woman-rides-bicycle-past-yellow-tram-on-city-street-g8LRfdGEsJA'},
     rainbowForest:{url:'https://images.unsplash.com/photo-1758998075454-055322de8d20?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/rainbow-over-foggy-forest-and-green-hills-IR_V3XjYuL4'},
 
+    ginger:{url:'https://images.unsplash.com/photo-1630623093145-f606591c2546?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-ginger-root-and-a-piece-of-ginger-on-a-white-surface-ziCb4_EKmak'},
+    eggplant:{url:'https://images.unsplash.com/photo-1526049332082-27f8e41d5e8a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/two-sliced-eggplants-m7XaGsHRBYw'},
+    radish:{url:'https://images.unsplash.com/photo-1681307733509-16caf15dcbb1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-pile-of-radishes-with-green-leaves-on-top-aWd8B51jbuQ'},
+    blueberries:{url:'https://images.unsplash.com/photo-1597774681009-f8679cf72348?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/fresh-blueberries-with-water-droplets-TdDtTu2rv4s'},
+    chiliPepper:{url:'https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/red-green-and-yellow-chili-peppers-and-green-chili-peppers-Y5n8mCpvlZU'},
+    peas:{url:'https://images.unsplash.com/photo-1424593463432-4104fa2c015a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/green-peas-on-top-of-brown-wooden-chopping-board-DQdDD3iwt2I'},
+    cauliflower:{url:'https://images.unsplash.com/photo-1510629954389-c1e0da47d414?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/cauliflower-with-green-vegetable-MRHyv-hHxgk'},
+    greenBeans:{url:'https://images.unsplash.com/photo-1448293065296-c7e2e5b76ae9?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/bunch-of-green-beans-8eJPcAuqIhY'},
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -867,7 +875,15 @@
       [/(?:jacket|coat|winter coat|jaqueta|casaco|giacca|chaqueta|veste|mantel|куртка)/i,'jacketBackpack'],
       [/(?:scarf|scarves|cachecol|sciarpa|bufanda|écharpe|Schal|шарф)/i,'scarfSunglasses'],
       [/(?:tram|streetcar|bonde|eléctrico|tranvía|tramway|Straßenbahn|трамвай)/i,'tram'],
-      [/(?:rainbow|arco-íris|arcobaleno|arcoíris|arc-en-ciel|Regenbogen|радуга)/i,'rainbowForest']
+      [/(?:rainbow|arco-íris|arcobaleno|arcoíris|arc-en-ciel|Regenbogen|радуга)/i,'rainbowForest'],
+      [/(?:ginger|gengibre|zenzero|jengibre|gingembre|Ingwer|имбир)/i,'ginger'],
+      [/(?:eggplant|aubergine|berinjela|melanzana|berenjena|aubergine|Aubergine|баклажан)/i,'eggplant'],
+      [/(?:radish|radishes|rabanete|ravanello|rábano|radis|Radieschen|редис)/i,'radish'],
+      [/(?:blueberry|blueberries|mirtilo|mirtilli|arándano azul|myrtille|Blaubeere|голубик)/i,'blueberries'],
+      [/(?:chili pepper|chilli pepper|pimenta|peperoncino|chile|piment|Chili|чили)/i,'chiliPepper'],
+      [/(?:peas|green peas|ervilha|piselli|guisantes|petits pois|Erbsen|горох)/i,'peas'],
+      [/(?:cauliflower|couve-flor|cavolfiore|coliflor|chou-fleur|Blumenkohl|цветная капуста)/i,'cauliflower'],
+      [/(?:green beans|string beans|vagem|fagiolini|judías verdes|haricots verts|grüne Bohnen|стручковая фасоль)/i,'greenBeans']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
 
