@@ -53,11 +53,7 @@
 
     airportCheckin:{url:'https://images.unsplash.com/photo-1760581190058-b492570add9d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/modern-airport-terminal-with-large-windows-and-check-in-counters-_HL8emdJztQ'},
     dentist:{url:'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/dentist'},
-    bank:{url:'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bank'},
-    postOffice:{url:'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/post-office'},
     supermarket:{url:'https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/supermarket'},
-    umbrella:{url:'https://images.unsplash.com/photo-1516569422867-4d2c4f9c7f9f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/umbrella'},
-    rain:{url:'https://images.unsplash.com/photo-1519692933481-e162a57d6721?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/rain'},
     elevator:{url:'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/elevator'},
     stairs:{url:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/stairs'},
     computer:{url:'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/laptop-computer'},
@@ -70,11 +66,7 @@
     sugar:{url:'https://images.unsplash.com/photo-1581441363689-1f3c3c414635?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/sugar'},
     key:{url:'https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/keys'},
     map:{url:'https://images.unsplash.com/photo-1524666041070-9b876833eab3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/map'},
-    firefighter:{url:'https://images.unsplash.com/photo-1599708153386-62bf1f5d7c6f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/firefighter'},
-    baby:{url:'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/baby'},
     birthday:{url:'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/birthday-cake'},
-    wedding:{url:'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/wedding'},
-    garden:{url:'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/garden'},
 
     conversation:{url:'https://images.unsplash.com/photo-1523582407565-efee5cf4a353?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/group-of-people-having-a-conversation-in-a-circle-E0ylfF52C6M'},
     friends:{url:'https://images.unsplash.com/photo-1670272506160-bdf0c7a45d2b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-group-of-people-sitting-outside-d9jiWu7Q90Q'},
