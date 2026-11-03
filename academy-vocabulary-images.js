@@ -529,6 +529,39 @@
       [/^(?:heart|cœur|corazón|herz|сердце|cuore|coração)$/i,'heart']
     ];
     for(var sm=0;sm<sharedMeaningRules.length;sm++)if(sharedMeaningRules[sm][0].test(target.trim()))return photos[sharedMeaningRules[sm][1]];
+    // Additional concrete travel and everyday vocabulary: reuse dedicated, already-curated photos.
+    // These rules run after Arabic meanings and core shared concepts, so they cannot override them.
+    var extendedObjectRules=[
+      [/^(?:train station|railway station|estação de trem|estação ferroviária|stazione ferroviaria|estación de tren|gare|Bahnhof|железнодорожная станция)$/i,'trainStation'],
+      [/^(?:ferry|ferry boat|balsa|traghetto|ferry|bac|Fähre|паром)$/i,'ferry'],
+      [/^(?:ship|boat|navio|barco|nave|barco|bateau|Schiff|корабль)$/i,'ship'],
+      [/^(?:bridge|ponte|puente|pont|Brücke|мост)$/i,'bridge'],
+      [/^(?:tunnel|túnel|túnel|tunnel|Tunnel|туннель)$/i,'tunnel'],
+      [/^(?:gas station|petrol station|posto de gasolina|posto|stazione di servizio|gasolinera|station-service|Tankstelle|заправка)$/i,'gasStation'],
+      [/^(?:mechanic|mechanic's shop|mecânico|mecânica|meccanico|mecánico|mécanicien|Mechaniker|механик)$/i,'mechanic'],
+      [/^(?:parking garage|car park|parking lot|estacionamento|parcheggio|aparcamiento|parking|Parkhaus|парковка)$/i,'parkingGarage'],
+      [/^(?:receipt|bill receipt|recibo|ricevuta|recibo|reçu|Quittung|чек)$/i,'receipt'],
+      [/^(?:ticket|bilhete|biglietto|boleto|billet|Fahrkarte|билет)$/i,'ticket'],
+      [/^(?:calendar|calendário|calendario|calendario|calendrier|Kalender|календарь)$/i,'calendar'],
+      [/^(?:scissors|tesoura|forbici|tijeras|ciseaux|Schere|ножницы)$/i,'scissors'],
+      [/^(?:screwdriver|chave de fenda|cacciavite|destornillador|tournevis|Schraubenzieher|отвёртка)$/i,'screwdriver'],
+      [/^(?:hammer|martelo|martello|martillo|marteau|Hammer|молоток)$/i,'hammer'],
+      [/^(?:laundry|laundromat|lavanderia|lavandería|laverie|Wäscherei|прачечная)$/i,'laundry'],
+      [/^(?:shower|chuveiro|doccia|ducha|douche|Dusche|душ)$/i,'shower'],
+      [/^(?:bathtub|bath tub|banheira|vasca da bagno|bañera|baignoire|Badewanne|ванна)$/i,'bathtub'],
+      [/^(?:bakery|padaria|panetteria|panadería|boulangerie|Bäckerei|пекарня)$/i,'bakery'],
+      [/^(?:butcher|butcher shop|açougue|macelleria|carnicería|boucherie|Metzgerei|мясная лавка)$/i,'butcher'],
+      [/^(?:fish market|mercado de peixe|mercato del pesce|mercado de pescado|marché aux poissons|Fischmarkt|рыбный рынок)$/i,'fishMarket'],
+      [/^(?:hotel room|quarto de hotel|camera d'albergo|habitación de hotel|chambre d'hôtel|Hotelzimmer|номер отеля)$/i,'hotelRoom'],
+      [/^(?:airport security|airport screening|segurança do aeroporto|sicurezza aeroportuale|seguridad aeroportuaria|sécurité aéroportuaire|Flughafensicherheit|досмотр в аэропорту)$/i,'airportSecurity'],
+      [/^(?:passport control|immigration control|controle de passaporte|controllo passaporti|control de pasaportes|contrôle des passeports|Passkontrolle|паспортный контроль)$/i,'passportControl'],
+      [/^(?:customs|alfândega|dogana|aduana|douane|Zoll|таможня)$/i,'customs'],
+      [/^(?:pedestrian crossing|crosswalk|faixa de pedestres|attraversamento pedonale|paso de peatones|passage piéton|Zebrastreifen|пешеходный переход)$/i,'pedestrianCrossing'],
+      [/^(?:traffic light|semaforo|semaforo|semáforo|feu de circulation|Ampel|светофор)$/i,'trafficLight'],
+      [/^(?:bicycle helmet|bike helmet|capacete de bicicleta|casco da bici|casco de bicicleta|casque de vélo|Fahrradhelm|велошлем)$/i,'bicycleHelmet'],
+      [/^(?:school bus|ônibus escolar|autobus scolastico|autobús escolar|bus scolaire|Schulbus|школьный автобус)$/i,'schoolBus']
+    ];
+    for(var xo=0;xo<extendedObjectRules.length;xo++)if(extendedObjectRules[xo][0].test(target.trim()))return photos[extendedObjectRules[xo][1]];
     if(/^\d+$/.test(target))return photos.numbers;
     if(/(?:january|february|march|april|may|june|july|august|september|october|november|december|gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre|enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre|januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember|январь|февраль|март|апрель|май|июнь|июль|август|сентябрь|октябрь|ноябрь|декабрь|janeiro|fevereiro|março|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro)/i.test(target))return photos.clock;
     if(/(?:\b(?:red|blue|green|yellow|purple|pink|grey|gray|brown|orange|black|white)\b|rosso|blu|verde|giallo|viola|rosa|grigio|marrone|arancione|nero|bianco|rojo|azul|amarillo|morado|gris|marrón|naranja|negro|blanco|rouge|bleu|jaune|violet|marron|noir|blanc|rot|grün|gelb|lila|grau|braun|schwarz|weiß|красный|синий|зелёный|желтый|фиолетовый|розовый|серый|коричневый|оранжевый|чёрный|белый|vermelho|amarelo|roxo|cinza|marrom|laranja|preto)/i.test(target))return photos.colors;
