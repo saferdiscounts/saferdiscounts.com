@@ -223,6 +223,11 @@
     pineapple:{url:'https://images.unsplash.com/photo-1562191326-8d3baab823a5?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/closeup-photo-of-pineapple-fruit-Kl1Z3z47dq8'},
     watermelon:{url:'https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/sliced-watermelon-on-green-surface-eiNdbqWZww4'},
     carrot:{url:'https://images.unsplash.com/photo-1757332914679-0906a57881e1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-pile-of-fresh-orange-carrots-close-up-L5uSiJotytw'},
+    croissant:{url:'https://images.unsplash.com/photo-1741527444569-6227e1a96691?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/delicious-croissant-with-butter-and-jam-BXE5qS7xSuk'},
+    jacketBackpack:{url:'https://images.unsplash.com/photo-1519944159858-806d435dc86b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/person-wearing-jacket-and-backpack-9GBwZrbT0QU'},
+    scarfSunglasses:{url:'https://images.unsplash.com/photo-1610384104075-e05c8cf200c3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/woman-in-black-jacket-wearing-white-knit-scarf-and-black-sunglasses-Egj4Dg107kc'},
+    tram:{url:'https://images.unsplash.com/photo-1775045308924-d2d6605683b0?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/woman-rides-bicycle-past-yellow-tram-on-city-street-g8LRfdGEsJA'},
+    rainbowForest:{url:'https://images.unsplash.com/photo-1758998075454-055322de8d20?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/rainbow-over-foggy-forest-and-green-hills-IR_V3XjYuL4'},
 
   };
   var rules=[
@@ -833,7 +838,12 @@
       [/(?:courtyard|patio interior|pátio|cortile|patio|cour|Innenhof|внутренний двор)/i,'courtyard']
       [/(?:pineapple|ananas|abacaxi|piña|ananá|ananas|Ananas|ананас)/i,'pineapple'],
       [/(?:watermelon|melancia|sandía|patilla|pastèque|Wassermelone|арбуз)/i,'watermelon'],
-      [/(?:carrot|carrots|cenoura|zanahoria|carotte|Karotte|морковь)/i,'carrot']
+      [/(?:carrot|carrots|cenoura|zanahoria|carotte|Karotte|морковь)/i,'carrot'],
+      [/(?:croissant|croissants|croissant|cornetto|medialuna|croissant|Croissant|круассан)/i,'croissant'],
+      [/(?:jacket|coat|winter coat|jaqueta|casaco|giacca|chaqueta|veste|mantel|куртка)/i,'jacketBackpack'],
+      [/(?:scarf|scarves|cachecol|sciarpa|bufanda|écharpe|Schal|шарф)/i,'scarfSunglasses'],
+      [/(?:tram|streetcar|bonde|eléctrico|tranvía|tramway|Straßenbahn|трамвай)/i,'tram'],
+      [/(?:rainbow|arco-íris|arcobaleno|arcoíris|arc-en-ciel|Regenbogen|радуга)/i,'rainbowForest']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
 
