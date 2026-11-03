@@ -220,6 +220,9 @@
     banana:{url:'https://images.unsplash.com/photo-1695716633454-57328efd6889?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-bicycle-parked-in-front-of-a-store-with-bunches-of-bananas-jGk_r6Mjj_E'},
     streetCafe:{url:'https://images.unsplash.com/photo-1774488259673-c44f49b3f579?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-dog-rests-outside-a-shop-on-a-sunny-day-WWgElkuavZ8'},
     courtyard:{url:'https://images.unsplash.com/photo-1776153116025-2a69fdcaf67b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-cat-walks-past-a-bicycle-in-a-courtyard-DCGzwP_1-qk'},
+    pineapple:{url:'https://images.unsplash.com/photo-1562191326-8d3baab823a5?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/closeup-photo-of-pineapple-fruit-Kl1Z3z47dq8'},
+    watermelon:{url:'https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/sliced-watermelon-on-green-surface-eiNdbqWZww4'},
+    carrot:{url:'https://images.unsplash.com/photo-1757332914679-0906a57881e1?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-pile-of-fresh-orange-carrots-close-up-L5uSiJotytw'},
 
   };
   var rules=[
@@ -828,6 +831,9 @@
       [/(?:banana|bananas|banana-da-terra|banane|plátano|banano|banane|Banane|банан)/i,'banana'],
       [/(?:street cafe|café|cafe|coffee shop|cafeteria|cafetería|cafeteria|caffè|Kaffeehaus|кафе)/i,'streetCafe'],
       [/(?:courtyard|patio interior|pátio|cortile|patio|cour|Innenhof|внутренний двор)/i,'courtyard']
+      [/(?:pineapple|ananas|abacaxi|piña|ananá|ananas|Ananas|ананас)/i,'pineapple'],
+      [/(?:watermelon|melancia|sandía|patilla|pastèque|Wassermelone|арбуз)/i,'watermelon'],
+      [/(?:carrot|carrots|cenoura|zanahoria|carotte|Karotte|морковь)/i,'carrot']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
 
