@@ -78,8 +78,12 @@
 
     conversation:{url:'https://images.unsplash.com/photo-1523582407565-efee5cf4a353?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/group-of-people-having-a-conversation-in-a-circle-E0ylfF52C6M'},
     friends:{url:'https://images.unsplash.com/photo-1670272506160-bdf0c7a45d2b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-group-of-people-sitting-outside-d9jiWu7Q90Q'},
-    hand:{url:'https://images.pexels.com/photos/8058739/pexels-photo-8058739.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/close-up-shot-of-a-palm-8058739'},
+    hand:{url:'https://images.pexels.com/photos/8058739/pexels-photo-8058739.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/close-up-shot-of-a-palm-8058739/'},
     brokenItem:{url:'https://images.unsplash.com/photo-1712600096579-afb75d1b72ab?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-close-up-of-a-broken-cell-phone-kpZuxqH0tvM'},
+    fork:{url:'https://images.pexels.com/photos/12021475/pexels-photo-12021475.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/fork-on-white-surface-12021475/'},
+    spoon:{url:'https://images.pexels.com/photos/12021477/pexels-photo-12021477.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/close-up-shot-of-a-metal-spoon-12021477/'},
+    flour:{url:'https://images.pexels.com/photos/5441099/pexels-photo-5441099.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/white-flour-in-a-clear-glass-bowl-5441099/'},
+    document:{url:'https://images.pexels.com/photos/7054757/pexels-photo-7054757.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/a-close-up-shot-of-paper-clipped-documents-7054757/'},
     numbers:{url:'https://images.unsplash.com/photo-1772663042999-f2d61d02b7be?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/scattered-black-numbers-on-white-paper-background-OBgh6h_2yL0'},
     colors:{url:'https://images.unsplash.com/photo-1777537953461-744f35dcb1de?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/watercolor-paint-palettes-and-brushes-with-colorful-swatches-oIcwk0nS0bs'},
     fish:{url:'https://images.unsplash.com/photo-1763867641066-cd26a5f11105?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/fish-fillet-with-greens-and-sauce-on-a-white-plate-hc1TswjkUJo'},
@@ -602,6 +606,22 @@
     if(lang==='pt-PT'&&/(?:queria|simpático|mal-entendido|esclarecer)/i.test(target))return photos.conversation;
     if(/^[А-ЯЁ]$/.test(target))return photos.alphabet;
     if(lang==='ru'&&/(?:словарь|читать)/i.test(target))return photos.books;
+    if(lang==='ru'&&/(?:спасибо|хорошо|как дела|помогите|извините)/i.test(target))return photos.conversation;
+    if(lang==='ru'&&/(?:алло|слушаю|перезвоню|линия занята)/i.test(target))return photos.phone;
+    if(lang==='ru'&&/(?:плавать)/i.test(target))return photos.swimming;
+    if(lang==='ru'&&/(?:солнце)/i.test(target))return photos.sunrise;
+    if(lang==='ru'&&/(?:ветер)/i.test(target))return photos.weather;
+    if(lang==='ru'&&/(?:экзамен)/i.test(target))return photos.classroom;
+    if(lang==='ru'&&/(?:болит|кашель)/i.test(target))return photos.doctor;
+    if(lang==='ru'&&/(?:дешевле)/i.test(target))return photos.money;
+    if(lang==='ru'&&/(?:днём|неделя)/i.test(target))return photos.clock;
+    if(lang==='ru'&&/(?:путешествовать|лететь)/i.test(target))return photos.airplane;
+    if(lang==='ru'&&/(?:ехать)/i.test(target))return photos.bus;
+    if(lang==='ru'&&/(?:умываться)/i.test(target))return photos.shower;
+    if(lang==='ru'&&/(?:ложиться)/i.test(target))return photos.bed;
+    if(lang==='ru'&&/(?:открыть|закрыть)/i.test(target))return photos.door;
+    if(lang==='ru'&&/(?:спорт)/i.test(target))return photos.gym;
+    if(lang==='ru'&&/(?:коммунальные услуги)/i.test(target))return photos.house;
     if(lang==='ru'&&/(?:понедельник|вторник|среда|четверг|пятница|суббота|воскресенье|обычно|просыпаться|однажды|сначала|потом)/i.test(target))return photos.clock;
     if(lang==='ru'&&/(?:этаж|аренда|ремонт|сломался)/i.test(target))return photos.house;
     if(lang==='ru'&&/(?:вкусный|без сахара|я буду)/i.test(target))return photos.meal;
@@ -717,7 +737,11 @@
       [/(?:grapes|uva|uvas|raisin|Trauben|виноград)/i,'grapes'],
       [/(?:orange fruit|orange|laranja|arancia|naranja|Orange|апельсин)/i,'orange'],
       [/(?:camel|camelo|cammello|camello|chameau|Kamel|верблюд)/i,'camel'],
-      [/(?:mosque|mesquita|moschea|mezquita|mosquée|Moschee|мечеть)/i,'mosque']
+      [/(?:mosque|mesquita|moschea|mezquita|mosquée|Moschee|мечеть)/i,'mosque'],
+      [/(?:\\bfork\\b|garfo|forchetta|tenedor|fourchette|Gabel|вилка)/i,'fork'],
+      [/(?:\\bspoon\\b|colher|cucchiaio|cuchara|cuillère|Löffel|ложка)/i,'spoon'],
+      [/(?:\\bflour\\b|farinha|farina|harina|farine|Mehl|мука)/i,'flour'],
+      [/(?:\\bdocument(?:s)?\\b|documento|documenti|documentos|pièce complémentaire|pièce jointe|Anlage|anexo|anexa|вложение|документ(?:ы)?)/i,'document']
     ];
     for(var nr=0;nr<newPhotoRules.length;nr++)if(newPhotoRules[nr][0].test(target))return photos[newPhotoRules[nr][1]];
     var distinctPhotoRules=[
