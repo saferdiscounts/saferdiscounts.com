@@ -249,6 +249,12 @@
     peas:{url:'https://images.unsplash.com/photo-1424593463432-4104fa2c015a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/green-peas-on-top-of-brown-wooden-chopping-board-DQdDD3iwt2I'},
     cauliflower:{url:'https://images.unsplash.com/photo-1510629954389-c1e0da47d414?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/cauliflower-with-green-vegetable-MRHyv-hHxgk'},
     greenBeans:{url:'https://images.unsplash.com/photo-1448293065296-c7e2e5b76ae9?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/bunch-of-green-beans-8eJPcAuqIhY'},
+    asparagus:{url:'https://images.unsplash.com/photo-1717003741100-4a146c01ba4e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-bunch-of-asparagus-sitting-on-a-piece-of-paper-JCO1AZgpFhU'},
+    pomegranate:{url:'https://images.unsplash.com/photo-1574709755755-1699988a9c82?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/pomegranate-fruit-YjLywIe8vxE'},
+    artichoke:{url:'https://images.unsplash.com/photo-1519077223030-0d9320f86672?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/selective-focus-photography-of-red-and-green-artichokes-jJ5iJANU-3w'},
+    spinach:{url:'https://images.unsplash.com/photo-1784043436675-dbe53cbcec88?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/fresh-green-spinach-leaves-with-pink-stems-NoxzzaDGkfs'},
+    beetroot:{url:'https://images.unsplash.com/photo-1627738668807-5bdcfe92acfd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/man-in-black-t-shirt-holding-green-leaf-plant-BVu0ET1Vpzg'},
+    cabbage:{url:'https://images.unsplash.com/photo-1534441596-341c8d7d0e51?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/close-up-of-vegetables-asK-tikpD5A'},
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -883,7 +889,13 @@
       [/(?:chili pepper|chilli pepper|pimenta|peperoncino|chile|piment|Chili|чили)/i,'chiliPepper'],
       [/(?:peas|green peas|ervilha|piselli|guisantes|petits pois|Erbsen|горох)/i,'peas'],
       [/(?:cauliflower|couve-flor|cavolfiore|coliflor|chou-fleur|Blumenkohl|цветная капуста)/i,'cauliflower'],
-      [/(?:green beans|string beans|vagem|fagiolini|judías verdes|haricots verts|grüne Bohnen|стручковая фасоль)/i,'greenBeans']
+      [/(?:green beans|string beans|vagem|fagiolini|judías verdes|haricots verts|grüne Bohnen|стручковая фасоль)/i,'greenBeans'],
+      [/(?:asparagus|aspargo|asparagi|espárrago|asperge|Spargel|спаржа)/i,'asparagus'],
+      [/(?:pomegranate|romã|melagrana|granada|grenade|Granatapfel|гранат)/i,'pomegranate'],
+      [/(?:artichoke|alcachofra|carciofo|alcachofa|artichaut|Artischocke|артишок)/i,'artichoke'],
+      [/(?:spinach|espinafre|spinaci|espinaca|épinards|Spinat|шпинат)/i,'spinach'],
+      [/(?:beetroot|beet|beterraba|barbabietola|remolacha|betterave|Rote Bete|свёкла)/i,'beetroot'],
+      [/(?:cabbage|repolho|cavolo|col|chou|Kohl|капуста)/i,'cabbage']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
 
