@@ -78,7 +78,8 @@
 
     conversation:{url:'https://images.unsplash.com/photo-1523582407565-efee5cf4a353?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/group-of-people-having-a-conversation-in-a-circle-E0ylfF52C6M'},
     friends:{url:'https://images.unsplash.com/photo-1670272506160-bdf0c7a45d2b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-group-of-people-sitting-outside-d9jiWu7Q90Q'},
-    hand:{url:'https://images.unsplash.com/photo-1628058494685-6c2f796ac24a?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/person-holding-silver-and-black-hand-tool-Mr9m0tGdTIE'},
+    hand:{url:'https://images.pexels.com/photos/8058739/pexels-photo-8058739.jpeg?auto=compress&cs=tinysrgb&w=1200',credit:'Pexels',source:'https://www.pexels.com/photo/close-up-shot-of-a-palm-8058739'},
+    brokenItem:{url:'https://images.unsplash.com/photo-1712600096579-afb75d1b72ab?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-close-up-of-a-broken-cell-phone-kpZuxqH0tvM'},
     numbers:{url:'https://images.unsplash.com/photo-1772663042999-f2d61d02b7be?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/scattered-black-numbers-on-white-paper-background-OBgh6h_2yL0'},
     colors:{url:'https://images.unsplash.com/photo-1777537953461-744f35dcb1de?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/watercolor-paint-palettes-and-brushes-with-colorful-swatches-oIcwk0nS0bs'},
     fish:{url:'https://images.unsplash.com/photo-1763867641066-cd26a5f11105?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/fish-fillet-with-greens-and-sauce-on-a-white-plate-hc1TswjkUJo'},
@@ -410,13 +411,21 @@
     var pronounWord=/^(?:you|your|yours|yourself|você|vocês|tu|te|ti|usted|ustedes|tú|vosotros|vosotras|vous|toi|du|dich|ihr|sie|ты|вы|тебя|тебе|вас|lei|voi)$/i.test(rawWord);
     if(pronounMeaning||pronounWord)return null;
     // Brazilian Portuguese: avoid reusing a stationery photo for the literal word “mão”.
-    if(lang==='pt-BR'&&/^(?:mão|mãos)$/i.test(rawWord))return null;
     if(lang==='pt-BR'&&/^(?:irmão|irmã|irmãos|irmãs)$/i.test(rawWord))return photos.family;
     var s=String(meaning||'');
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
     // Match the source-language word only after the Arabic meaning has had priority.
     var target=String(word||'');
+    var targetTrimmed=target.trim();
+    if((lang==='en'&&/^(?:broken|damaged|out of order)$/i.test(targetTrimmed))||
+       (lang==='it'&&/^(?:rotto|guasto)$/i.test(targetTrimmed))||
+       (lang==='es'&&/^(?:estropeado|averiado)$/i.test(targetTrimmed))||
+       (lang==='fr'&&/^(?:en panne|cassé|cassée)$/i.test(targetTrimmed))||
+       (lang==='de'&&/^(?:kaputt|defekt)$/i.test(targetTrimmed))||
+       (lang==='ru'&&/^(?:сломанный|сломалась|сломался|не работает)$/i.test(targetTrimmed))||
+       (lang==='pt-BR'&&/^(?:quebrado|quebrada|estragado|estragada)$/i.test(targetTrimmed))||
+       (lang==='pt-PT'&&/^(?:avariado|avariada|estragado|estragada)$/i.test(targetTrimmed)))return photos.brokenItem;
     var sharedMeaningRules=[
       [/^(?:car|coche|voiture|auto|машина|macchina|carro)$/i,'car'],
       [/^(?:motorcycle|motorbike|moto|motocicleta|motorrad|мотоцикл|motocicletta|motociclo)$/i,'motorcycle'],
@@ -653,7 +662,6 @@
     if(lang==='pt-BR'&&/(?:nós nos preparamos)/i.test(target))return photos.luggage;
     if(lang==='pt-BR'&&/(?:^os amigos$|^as amigas$|somos amigos|amigos|amigas)/i.test(target))return photos.friends;
     if(lang==='pt-BR'&&/(?:hotéis|hoteis)/i.test(target))return photos.hotelReception;
-    if(lang==='pt-BR'&&/(?:^a mão$|mão|mãos)/i.test(target))return null;
     if(lang==='pt-BR'&&/(?:se fizer frio)/i.test(target))return photos.weather;
     if(lang==='pt-BR'&&/(?:onde compro o bilhete|baldeação|^uma passagem$)/i.test(target))return photos.train;
     if(lang==='pt-PT'&&/(?:mesa|mesa de jantar)/i.test(target))return photos.table;
@@ -852,7 +860,7 @@
     var safeWord=esc(word),safeMeaning=esc(meaning),safeLang=esc(lang||'');
     var p=find(meaning,word,lang),photo=p?'<img class="academy-photo-image" src="'+esc(p.url)+'" alt="'+safeWord+' — '+safeMeaning+'" loading="lazy" decoding="async" onerror="this.closest(\'.academy-photo-card\').classList.add(\'no-photo\');var c=this.parentNode.querySelector(\'.academy-photo-credit\');if(c)c.remove();this.remove()">':'';
     var speech=kind==='ptbr'?'<span class="academy-photo-word pt-speak" role="button" tabindex="0" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</span>':'<button type="button" class="academy-photo-word target" lang="'+safeLang+'" data-say="'+safeWord+'">'+safeWord+'</button>';
-    var credit=p?'<a class="academy-photo-credit" href="'+esc(p.source)+'" target="_blank" rel="noopener" aria-label="مصدر الصورة Unsplash">Unsplash</a>':'';
+    var credit=p?'<a class="academy-photo-credit" href="'+esc(p.source)+'" target="_blank" rel="noopener" aria-label="مصدر الصورة '+esc(p.credit||'')+'">'+esc(p.credit||'مصدر الصورة')+'</a>':'';
     return '<span class="academy-photo-card '+(p?'has-photo':'no-photo')+'" role="group" aria-label="'+safeWord+' — '+safeMeaning+'">'+photo+speech+'<small>'+safeMeaning+'</small>'+credit+'<span class="academy-photo-fallback">الصورة غير متاحة حاليًا</span></span>';
   }
   var css='.academy-photo-card{position:relative;display:flex;min-height:148px;width:100%;max-width:290px;overflow:hidden;flex-direction:column;justify-content:flex-end;align-items:flex-start;gap:5px;padding:13px;border-radius:14px;background:#e8f0f5;background-size:cover;background-position:center;border:1px solid rgba(4,49,82,.14);isolation:isolate;box-sizing:border-box}.academy-photo-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;display:block}.academy-photo-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,20,34,.04) 5%,rgba(4,20,34,.82) 100%);z-index:1;pointer-events:none}.academy-photo-word{position:relative;z-index:2;max-width:100%;padding:0;border:0;background:transparent;color:#fff;text-align:start;text-shadow:0 1px 5px #000;font-family:inherit;font-size:17px;font-weight:850;line-height:1.35;cursor:pointer}.academy-photo-card small{position:relative;z-index:2;color:#fff;font-weight:750;text-shadow:0 1px 4px #000;font-size:13px;line-height:1.4}.academy-photo-credit{position:absolute;z-index:3;top:7px;inset-inline-end:8px;color:#fff;background:#102b3dcc;border-radius:6px;padding:3px 6px;font-size:10px;text-decoration:none}.academy-photo-card.no-photo{justify-content:center;background:linear-gradient(135deg,#edf3f8,#fff3e7)}.academy-photo-card.no-photo:before{display:none}.academy-photo-card.no-photo .academy-photo-word,.academy-photo-card.no-photo small{color:#17364d;text-shadow:none}.academy-photo-fallback{display:none;position:relative;z-index:2;color:#526b7c;font-size:11px;font-weight:700}.academy-photo-card.no-photo .academy-photo-fallback{display:block}.pt .academy-photo-card{max-width:100%}.words .academy-photo-card{max-width:100%;min-height:144px}.words .academy-photo-word{font-size:20px}@media(max-width:600px){.academy-photo-card{min-height:132px;max-width:100%;padding:11px}.academy-photo-word{font-size:16px}.academy-photo-card small{font-size:12px}}.academy-photo-image{transition:transform .35s ease}.academy-photo-word:focus-visible{outline:3px solid #ffd166;outline-offset:4px;border-radius:4px}.academy-photo-card:focus-within{outline:3px solid #2879a7;outline-offset:3px}@media(hover:hover) and (prefers-reduced-motion:no-preference){.academy-photo-card.has-photo{transition:transform .25s ease,box-shadow .25s ease}.academy-photo-card.has-photo:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(12,42,62,.2)}.academy-photo-card.has-photo:hover .academy-photo-image{transform:scale(1.055)}}@media(prefers-reduced-motion:reduce){.academy-photo-image,.academy-photo-card{transition:none!important}}';if(typeof document!=='undefined'){var st=document.createElement('style');st.id='sd-academy-photo-styles';st.textContent=css;document.head.appendChild(st)}
