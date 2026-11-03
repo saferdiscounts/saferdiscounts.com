@@ -217,6 +217,9 @@
     burger:{url:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/hamburger'},
     iceCream:{url:'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ice-cream'},
     cake:{url:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/cake'},
+    banana:{url:'https://images.unsplash.com/photo-1695716633454-57328efd6889?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-bicycle-parked-in-front-of-a-store-with-bunches-of-bananas-jGk_r6Mjj_E'},
+    streetCafe:{url:'https://images.unsplash.com/photo-1774488259673-c44f49b3f579?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-dog-rests-outside-a-shop-on-a-sunny-day-WWgElkuavZ8'},
+    courtyard:{url:'https://images.unsplash.com/photo-1776153116025-2a69fdcaf67b?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-cat-walks-past-a-bicycle-in-a-courtyard-DCGzwP_1-qk'},
 
   };
   var rules=[
@@ -821,7 +824,10 @@
       [/(?:baby|bebê|bambino|bebé|bébé|Baby|младенец)/i,'baby'],
       [/(?:birthday|birthday cake|aniversário|compleanno|cumpleaños|anniversaire|Geburtstag|день рождения)/i,'birthday'],
       [/(?:wedding|casamento|matrimonio|boda|mariage|Hochzeit|свадьба)/i,'wedding'],
-      [/(?:garden|jardim|giardino|jardín|jardin|Garten|сад)/i,'garden']
+      [/(?:garden|jardim|giardino|jardín|jardin|Garten|сад)/i,'garden'],
+      [/(?:banana|bananas|banana-da-terra|banane|plátano|banano|banane|Banane|банан)/i,'banana'],
+      [/(?:street cafe|café|cafe|coffee shop|cafeteria|cafetería|cafeteria|caffè|Kaffeehaus|кафе)/i,'streetCafe'],
+      [/(?:courtyard|patio interior|pátio|cortile|patio|cour|Innenhof|внутренний двор)/i,'courtyard']
     ];
     for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
 
