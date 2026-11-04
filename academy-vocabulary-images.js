@@ -8,6 +8,12 @@
     trainStation:{url:'https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/train-station'},
     ferry:{url:'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ferry-boat'},
     ship:{url:'https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/ship'},
+    cruiseShip:{url:'https://images.unsplash.com/photo-1638123657021-f9aca72f8caf?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-cruise-ship-in-the-middle-of-the-ocean-GGH3oVUj8cM'},
+    fireTruck:{url:'https://images.unsplash.com/photo-1637169252579-3f74b7426a00?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-red-fire-truck-driving-down-a-street-YX01TgMBJmg'},
+    puppy:{url:'https://images.unsplash.com/photo-1769117317230-aa2ae87de191?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/cute-black-and-white-puppy-poses-for-the-camera-WhQ4QHwAaMU'},
+    parrot:{url:'https://images.unsplash.com/photo-1693840053092-2ca6e64bce83?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-blue-and-yellow-parrot-sitting-on-a-branch-RbYXbvn3cgg'},
+    dolphin:{url:'https://images.unsplash.com/photo-1526849875464-471c91f5ecae?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/dolphin-swimming-under-water-HLGejFzm77Y'},
+    rabbit:{url:'https://images.unsplash.com/photo-1768322784230-b2edd30c1fc8?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/a-white-rabbit-sits-in-green-grass-kWPfvusyHGI'},
     bridge:{url:'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/bridge'},
     tunnel:{url:'https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/tunnel'},
     gasStation:{url:'https://images.unsplash.com/photo-1545262810-77515befe149?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/s/photos/gas-station'},
@@ -262,6 +268,15 @@
     [/أريكة|كنبة|مقعد|صالون/,'sofa'],
     [/نافذة|شباك|نوافذ|شبابيك/,'window'],
     [/باب|أبواب|مدخل المنزل/,'door'],
+    [/غرفة نوم|غرفة النوم|حجرة النوم/,'bedroom'],
+    [/محفظة|محفظة نقود|محافظ/,'wallet'],
+    [/مفتاح|مفاتيح/,'key'],
+    [/سيارة إطفاء|شاحنة إطفاء|عربة إطفاء/,'fireTruck'],
+    [/سفينة سياحية|سفينة رحلات|باخرة سياحية/,'cruiseShip'],
+    [/جرو|كلب صغير/,'puppy'],
+    [/ببغاء|ببغاوات/,'parrot'],
+    [/دلفين|دلافين/,'dolphin'],
+    [/أرنب|أرانب/,'rabbit'],
     [/فرشاة أسنان|تنظيف الأسنان/,'toothbrush'],
     [/صابون|صابونة|غسل اليدين/,'soap'],
     [/منشفة|فوطة|مناشف|فوط/,'towel'],
@@ -322,9 +337,9 @@
     [/كرة سلة|كرة السلة|ملعب كرة السلة/,'basketball'],
     [/جواز سفر|جواز|باسبور|وثيقة سفر|وثائق السفر/,'passport'],[/شرطة|الشرطة|قسم الشرطة|مركز الشرطة|شرطي|ضابط شرطة/,'police'],[/تسجيل الدخول|تسجيل المغادرة|تسجيل الوصول|تسجيل الخروج|حجز|حجزي|الاستقبال|موظف الاستقبال|سأقيم في فندق|فندق|فنادق|الفنادق/,'hotelReception'],[/ملصق الأمتعة|ملصق الحقيبة|بطاقة الأمتعة|بطاقة الحقيبة/,'luggageTag'],[/بوابة الصعود|بوابة الطائرة|بوابة المغادرة/,'boardingGate'],[/مرحاض|حمام|الحمّام|الحمام|دورة المياه|الحمّامات|الحمامات|حمّام/,'bathroom'],[/مرحبًا|مرحبا|أهلًا|اهلا|صباح الخير|مساء الخير|مع السلامة|إلى اللقاء|تشرفت بمعرفتك|تحية/,'greeting'],[/اسم الحرف|الحروف الأبجدية|الأبجدية/,'alphabet'],[/علامة الترقيم|علامة على|علامة acute|علامة circumflex|النبر|فاصلة|نقطة|علامة تعجب|علامة استفهام|الترقيم|خبرة|مهارة|خطة|حل|حدث بدأ في الماضي|الماضي ولسه مستمر/,'writing'],[/اسمي|ما اسمك|أنا من مصر|من فضلك|شكرًا|شكرا|آسف|معلش|بعد إذنك|هل تتكلم|تتكلم الإنجليزية|تتكلم ببطء|لم أفهم|كل شيء تمام|وأنت|سعيد بمعرفتك|مزحة|نكتة|دعابة/,'conversation'],[/^(?:صفر|واحد|اثنان|ثلاثة|أربعة|خمسة|عشرة|عشرون)$|كم عمرك|عمري \d+/,'numbers'],[/سير استلام الأمتعة|سير الحقائب|سير الحقائب بالمطار|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/بطاقة الغرفة|مفتاح الغرفة|كارت الغرفة|كارت مفتاح الفندق/,'hotelKeyCard'],[/بطاقة صعود الطائرة|بطاقة الصعود|بطاقة الركوب|كارت صعود الطائرة/,'airplane'],[/بطاقة ائتمان|بطاقة ائتمانية|بطاقة بنكية|بطاقة مصرفية|كارت بنكي|كارت ائتمان|بطاقة الدفع/,'paymentCard'],[/صيدلية|صيدليات|صيدلي|صيدلانية/,'pharmacy'],[/مستشفى|مستشفيات/,'hospitalBuilding'],[/طبيب|دكتور|ممرضة|ممرض/,'doctor'],[/دواء|أدوية|علاج|أقراص|حبوب دواء|دواء الصيدلية/,'medicine'],[/طقس|الطقس|توقعات الطقس|غائم|مطر|ممطر|عاصفة|سحب|غيوم|بارد|برد|برودة|الجو بارد/,'weather'],[/طاولة|ترابيزة/,'table'],
     [/قهوة|كافيه|مقهى|إسبريسو|لاتيه/,'coffee'],[/شاي|كوب شاي|فنجان شاي/,'tea'],[/ماء|ميه|مياه|عطش|زجاجة ماء|ازازة مياه/,'water'],[/عصير|ليمونادة|مشروب فاكهة/,'juice'],[/سمك|سمكة|أسماك/,'fish'],[/نبيذ|خمر|خمور/,'wine'],[/فاكهة|فواكه|موز|عنب|كمثرى|كيوي|مانجو|برتقال/,'fruit'],[/خضار|خضروات|بروكلي|جزر|طماطم|فلفل|خيار|خس/,'vegetables'],[/جبن|جبنة|أجبان/,'cheese'],[/ألوان|لون|أصفر|بنفسجي|وردي|رمادي|بني|برتقالي|أزرق|أسود|أحمر|أبيض|أخضر/,'colors'],
-    [/نقود|فلوس|مال|نقود كاش|كاش|نقد|محفظة|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
+    [/نقود|فلوس|مال|نقود كاش|كاش|نقد|سعر|ثمن|بكام|رخيص|غالي|دفع|يدفع|شراء|بيع|الحساب|إيصال|فاتورة|باقي الحساب/,'money'],[/هاتف|تليفون|موبايل|جوال|اتصال|مكالمة|رسالة نصية/,'phone'],
     [/خبز|عيش|مخبز|رغيف|توست/,'bread'],[/بيض|بيضة|بيضه/,'egg'],[/حذاء|جزمة|أحذية|كوتشي|حذاء رياضي|حذاء رسمي/,'shoes'],[/قلم|كتابة|يكتب|دفتر|كراسة|ورقة|مذكرات/,'writing'],[/تفاح|تفاحة/,'apple'],
-    [/بيت|منزل|سكن|غرفة|باب|مفتاح|فندق|شقة|مطبخ|حمام|مرحاض|دورة المياه|غرفتك|غرفتي/,'house'],[/طائرة|طيران|مطار|رحلة|طيارة|إقلاع|هبوط/,'airplane'],
+    [/بيت|منزل|سكن|فندق|شقة|مطبخ|حمام|مرحاض|دورة المياه/,'house'],[/طائرة|طيران|مطار|رحلة|طيارة|إقلاع|هبوط/,'airplane'],
     [/سيارة|عربية|تاكسي|كاب|سائق|أوبر/,'taxi'],[/سير استلام الأمتعة|سير الحقائب|استلام الأمتعة|استلام الحقائب/,'baggageCarousel'],[/حقيبة سفر|شنطة|أمتعة|حقائب|أمتعة السفر/,'luggage'],[/قطار|مترو|محطة قطار|محطة المترو|سكة حديد/,'train'],[/حافلة|أتوبيس|باص|محطة حافلات/,'bus'],[/بحر|محيط|شاطئ|شاطىء|جزيرة|ساحل/,'beach'],
     [/طعام|أكل|وجبة|مطعم|غداء|عشاء|لحم|فطور|إفطار|غذاء|طبق|وجبات|كيلو|فراخ|دجاج|دجاجة/,'meal'],[/مدينة|شارع|طريق|مباني|وسط المدينة|الحي|الجوار|الحديقة|متحف/,'city'],[/طبيب|دكتور|صحة|مرض|مستشفى|عيادة|صيدلية|دواء|ممرضة|صداع|نزلة برد|الألم|دوخة|الكشف/,'doctor'],
     [/قطة|قط|قطه|قطط/,'cat'],[/كلب|جرو|كلاب/,'dog'],[/فول سوداني|الفول السوداني|فستق سوداني|مكسرات/,'peanuts'],[/لبن|حليب|لبن كامل|كوب لبن/,'milk'],[/ليمون|ليمونة|ليمونادة/,'lemon'],[/قلب|قلبي|القلب|قلوب/,'heart'],[/أم|الأم|أبي|الأب|أب|عائلة|عائلتي|أخي|أختي|أسرة|أسرتي|أمي|أمك|أبوك|والدان|والدي|عائلتك|ابن|ابنة|ولد|بنت|جد|جدة|زوج|زوجة|جوز|مراتي|زوجي|زوجتي|عم|خال|عمة|خالة/,'family'],[/صديق|صديقة|أصدقاء|صديقات|أصحاب|صاحبي|أصحابي/,'friends'],[/يد|اليد|أيدي|يدين|كف اليد|كف/,'hand'],[/ساعة|الساعة|وقت|الآن|اليوم|غدًا|بكرة|صباحًا|مساءً|بعد الظهر|موعد|مواعيد|تاريخ|توقيت|دقيقة|دقائق|يناير|فبراير|مارس|أبريل|ابريل|مايو|يونيو|يوليو|أغسطس|اغسطس|سبتمبر|أكتوبر|اكتوبر|نوفمبر|ديسمبر/,'clock'],[/يمين|يسار|انعطف|اتجه|اتجاه|ناصية|تقاطع|مدخل|مخرج|قريب من هنا|بعيد|خريطة|لافتة|إشارة مرور/,'directions'],[/إسعاف|إسعافًا|طوارئ|نجدة|حادث|مساعدة عاجلة/,'ambulance'],[/ملابس|قميص|بنطلون|فستان|تنورة|جاكيت|سترة|جوارب|ملابس|مقاس|مقاسي|لون آخر|تجربة الملابس|أجرّب|أقيس/,'clothing'],[/كتاب|كتب|قراءة|مدرسة|جامعة|مكتبة/,'books']
@@ -334,7 +349,7 @@
     [/(?:caffè|espresso|latte macchiato)/i,'coffee'],[/(?:tè|the)/i,'tea'],[/(?:acqua)/i,'water'],[/(?:succo|aranciata)/i,'juice'],
     [/(?:soldi|denaro|prezzo|conto|pagare|pagamento|comprare|vendere)/i,'money'],[/(?:telefono|cellulare|chiamata|messaggio)/i,'phone'],
     [/(?:pane|panino)/i,'bread'],[/(?:uovo|uova)/i,'egg'],[/(?:scarpa|scarpe)/i,'shoes'],[/(?:penna|scrivere|quaderno|carta)/i,'writing'],
-    [/(?:mela|mele)/i,'apple'],[/(?:casa|appartamento|camera|stanza|cucina|bagno|albergo|hotel|porta|chiave)/i,'house'],
+    [/(?:mela|mele)/i,'apple'],[/(?:casa|appartamento|cucina|bagno|albergo|hotel)/i,'house'],
     [/(?:aereo|aeroplano|aeroporto|volo)/i,'airplane'],[/(?:taxi|auto|macchina|automobile|autista)/i,'taxi'],[/(?:valigia|bagaglio|bagagli)/i,'luggage'],
     [/(?:treno|metro|metropolitana|stazione)/i,'train'],[/(?:autobus|bus|fermata)/i,'bus'],[/(?:spiaggia|mare|oceano|isola|costa)/i,'beach'],
     [/(?:cibo|pasto|colazione|pranzo|cena|ristorante|carne|piatto)/i,'meal'],[/(?:città|strada|via|quartiere|parco|museo)/i,'city'],
@@ -348,23 +363,23 @@
     [/(?:café|cafetería)/i,'coffee'],[/(?:té)/i,'tea'],[/(?:agua)/i,'water'],[/(?:zumo|jugo)/i,'juice'],
     [/(?:dinero|efectivo|precio|cuenta|pagar|pago|comprar|vender|euros?)/i,'money'],[/(?:teléfono|móvil|celular|llamada|mensaje)/i,'phone'],
     [/(?:pan|bocadillo)/i,'bread'],[/(?:huevo|huevos)/i,'egg'],[/(?:zapato|zapatos|zapatillas)/i,'shoes'],[/(?:escribir|bolígrafo|cuaderno|papel)/i,'writing'],
-    [/(?:manzana|manzanas)/i,'apple'],[/(?:casa|hogar|habitación|cuarto|cocina|baño|hotel|puerta|llave)/i,'house'],
+    [/(?:manzana|manzanas)/i,'apple'],[/(?:casa|hogar|cocina|baño|hotel)/i,'house'],
     [/(?:avión|aeropuerto|vuelo)/i,'airplane'],[/(?:taxi|coche|carro|conductor)/i,'taxi'],[/(?:maleta|equipaje)/i,'luggage'],
     [/(?:tren|metro|metropolitano|estación)/i,'train'],[/(?:autobús|bus|parada)/i,'bus'],[/(?:playa|mar|océano|isla|costa)/i,'beach'],
     [/(?:comida|almuerzo|desayuno|cena|restaurante|carne|plato)/i,'meal'],[/(?:ciudad|calle|carretera|barrio|parque|museo)/i,'city'],
     [/(?:médico|doctor|enfermera|hospital|clínica|farmacia|medicina|dolor)/i,'doctor'],[/(?:gato|gata|gatos)/i,'cat'],[/(?:perro|perra|perros|cachorro)/i,'dog'],
     [/(?:cacahuetes|maní|cacahuate|frutos secos)/i,'peanuts'],[/(?:leche)/i,'milk'],[/(?:limón|limones|limonada)/i,'lemon'],[/(?:corazón)/i,'heart'],
     [/(?:familia|madre|mamá|padre|papá|padres|hermana|hermano)/i,'family'],[/(?:reloj|hora|minuto|minutos)/i,'clock'],
-    [/(?:derecha|izquierda|girar|dirección|mapa|cruce|entrada|salida)/i,'directions'],[/(?:ambulancia|emergencia|accidente)/i,'ambulance'],
+    [/\b(?:derecha|izquierda|girar|dirección|mapa|cruce|entrada|salida)\b/i,'directions'],[/(?:ambulancia|emergencia|accidente)/i,'ambulance'],
     [/(?:ropa|camisa|pantalones|vestido|falda|chaqueta|calcetines|talla)/i,'clothing'],[/(?:libro|libros|lectura|escuela|universidad|biblioteca|estudiar)/i,'books']
   ];
   var frenchRules=[
-    [/(?:café|espresso)/i,'coffee'],[/(?:thé)/i,'tea'],[/(?:eau)/i,'water'],[/(?:jus|jus d'orange)/i,'juice'],
+    [/(?:café|espresso)/i,'coffee'],[/(?:thé)/i,'tea'],[/\b(?:eau|eaux)\b/i,'water'],[/(?:jus|jus d'orange)/i,'juice'],
     [/(?:argent|espèces|prix|addition|payer|paiement|acheter|vendre|euros?)/i,'money'],[/(?:téléphone|portable|appel|message)/i,'phone'],
     [/(?:pain|baguette)/i,'bread'],[/(?:œuf|oeuf|œufs|oeufs)/i,'egg'],[/(?:chaussure|chaussures)/i,'shoes'],[/(?:écrire|stylo|cahier|papier)/i,'writing'],
-    [/(?:pomme|pommes)/i,'apple'],[/(?:maison|appartement|chambre|cuisine|salle de bain|hôtel|porte|clé)/i,'house'],
+    [/(?:pomme|pommes)/i,'apple'],[/(?:maison|appartement|cuisine|salle de bain|hôtel)/i,'house'],
     [/(?:avion|aéroport|vol)/i,'airplane'],[/(?:taxi|voiture|chauffeur)/i,'taxi'],[/(?:valise|bagage)/i,'luggage'],
-    [/(?:train|métro|gare)/i,'train'],[/(?:bus|autobus|arrêt)/i,'bus'],[/(?:plage|mer|océan|île|côte)/i,'beach'],
+    [/(?:train|métro|gare)/i,'train'],[/(?:bus|autobus|arrêt)/i,'bus'],[/\b(?:plage|mer|océan|île|côte)\b/i,'beach'],
     [/(?:nourriture|repas|petit-déjeuner|déjeuner|dîner|restaurant|viande|plat)/i,'meal'],[/(?:ville|rue|route|quartier|parc|musée)/i,'city'],
     [/(?:médecin|docteur|infirmier|infirmière|hôpital|clinique|pharmacie|médicament|douleur)/i,'doctor'],[/(?:chat|chats)/i,'cat'],[/(?:chien|chiens|chiot)/i,'dog'],
     [/(?:cacahuètes|arachides|cacahuète)/i,'peanuts'],[/(?:lait)/i,'milk'],[/(?:citron|citrons|limonade)/i,'lemon'],[/(?:cœur|coeur)/i,'heart'],
@@ -375,9 +390,9 @@
   var germanRules=[
     [/(?:Kaffee|Espresso)/i,'coffee'],[/(?:Tee)/i,'tea'],[/(?:Wasser)/i,'water'],[/(?:Saft|Orangensaft)/i,'juice'],
     [/(?:Geld|Bargeld|Preis|Rechnung|bezahlen|Zahlung|kaufen|verkaufen|Euro)/i,'money'],[/(?:Telefon|Handy|Anruf|Nachricht)/i,'phone'],
-    [/(?:Brot|Brötchen)/i,'bread'],[/(?:Ei|Eier)/i,'egg'],[/(?:Schuh|Schuhe|Turnschuhe)/i,'shoes'],[/(?:schreiben|Stift|Kugelschreiber|Heft|Papier)/i,'writing'],
-    [/(?:Apfel|Äpfel)/i,'apple'],[/(?:Haus|Zuhause|Wohnung|Zimmer|Küche|Bad|Hotel|Tür|Schlüssel)/i,'house'],
-    [/(?:Flugzeug|Flughafen|Flug)/i,'airplane'],[/(?:Taxi|Auto|Wagen|Fahrer)/i,'taxi'],[/(?:Koffer|Gepäck)/i,'luggage'],
+    [/(?:Brot|Brötchen)/i,'bread'],[/\b(?:Ei|Eier)\b/i,'egg'],[/(?:Schuh|Schuhe|Turnschuhe)/i,'shoes'],[/(?:schreiben|Stift|Kugelschreiber|Heft|Papier)/i,'writing'],
+    [/(?:Apfel|Äpfel)/i,'apple'],[/(?:Haus|Zuhause|Wohnung|Küche|Bad|Hotel)/i,'house'],
+    [/(?:Flugzeug|Flughafen|Flug)/i,'airplane'],[/\b(?:Taxi|Auto|Wagen|Fahrer)\b/i,'taxi'],[/(?:Koffer|Gepäck)/i,'luggage'],
     [/(?:Zug|Bahn|U-Bahn|Bahnhof)/i,'train'],[/(?:Bus|Autobus|Haltestelle)/i,'bus'],[/(?:Strand|Meer|Ozean|Insel|Küste)/i,'beach'],
     [/(?:Essen|Mahlzeit|Frühstück|Mittagessen|Abendessen|Restaurant|Fleisch|Gericht)/i,'meal'],[/(?:Stadt|Straße|Weg|Viertel|Park|Museum)/i,'city'],
     [/(?:Arzt|Ärztin|Doktor|Krankenhaus|Klinik|Apotheke|Medizin|Schmerz)/i,'doctor'],[/(?:Katze|Katzen)/i,'cat'],[/(?:Hund|Hunde|Welpe)/i,'dog'],
@@ -390,7 +405,7 @@
     [/(?:кофе|эспрессо)/i,'coffee'],[/(?:чай)/i,'tea'],[/(?:вода|воды)/i,'water'],[/(?:сок)/i,'juice'],
     [/(?:деньги|цена|счёт|счет|платить|оплата|купить|продать|рубль|евро)/i,'money'],[/(?:телефон|мобильный|звонок|сообщение)/i,'phone'],
     [/(?:хлеб|булка)/i,'bread'],[/(?:яйцо|яйца)/i,'egg'],[/(?:обувь|туфли|ботинки)/i,'shoes'],[/(?:писать|ручка|тетрадь|бумага)/i,'writing'],
-    [/(?:яблоко|яблоки)/i,'apple'],[/(?:дом|квартира|комната|кухня|ванная|отель|дверь|ключ)/i,'house'],
+    [/(?:яблоко|яблоки)/i,'apple'],[/(?:дом|квартира|кухня|ванная|отель)/i,'house'],
     [/(?:самолёт|самолет|аэропорт|рейс)/i,'airplane'],[/(?:такси|машина|автомобиль|водитель)/i,'taxi'],[/(?:чемодан|багаж)/i,'luggage'],
     [/(?:поезд|метро|станция)/i,'train'],[/(?:автобус|остановка)/i,'bus'],[/(?:пляж|море|океан|остров|побережье)/i,'beach'],
     [/(?:еда|пища|завтрак|обед|ужин|ресторан|мясо|блюдо)/i,'meal'],[/(?:город|улица|дорога|район|парк|музей)/i,'city'],
@@ -404,7 +419,7 @@
     [/(?:café|cafeteria|expresso)/i,'coffee'],[/(?:chá)/i,'tea'],[/(?:água)/i,'water'],[/(?:sumo|néctar)/i,'juice'],
     [/(?:dinheiro|preço|conta|pagar|pagamento|comprar|vender|euros?)/i,'money'],[/(?:telefone|telemóvel|chamada|mensagem)/i,'phone'],
     [/(?:pão|carcaça)/i,'bread'],[/(?:ovo|ovos)/i,'egg'],[/(?:sapato|sapatos|ténis)/i,'shoes'],[/(?:escrever|caneta|caderno|papel)/i,'writing'],
-    [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|quarto|cozinha|casa de banho|hotel|porta|chave)/i,'house'],
+    [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|cozinha|casa de banho|hotel)/i,'house'],
     [/(?:avião|aeroporto|voo)/i,'airplane'],[/(?:táxi|carro|automóvel|condutor)/i,'taxi'],[/(?:mala|bagagem)/i,'luggage'],
     [/(?:comboio|metro|estação)/i,'train'],[/(?:autocarro|ônibus|paragem)/i,'bus'],[/(?:praia|mar|oceano|ilha|costa)/i,'beach'],
     [/(?:comida|refeição|pequeno-almoço|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu|trânsito)/i,'city'],
@@ -418,7 +433,7 @@
     [/(?:café|cafezinho|expresso)/i,'coffee'],[/(?:chá)/i,'tea'],[/(?:água)/i,'water'],[/(?:suco|suco de laranja)/i,'juice'],
     [/(?:dinheiro|grana|preço|conta|pagar|pagamento|comprar|vender|reais|gorjeta)/i,'money'],[/(?:telefone|celular|ligação|mensagem)/i,'phone'],
     [/(?:pão|pão francês)/i,'bread'],[/(?:ovo|ovos)/i,'egg'],[/(?:sapato|sapatos|tênis)/i,'shoes'],[/(?:escrever|caneta|caderno|papel)/i,'writing'],
-    [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|quarto|cozinha|banheiro|hotel|porta|chave)/i,'house'],
+    [/(?:maçã|maçãs)/i,'apple'],[/(?:casa|apartamento|cozinha|banheiro|hotel)/i,'house'],
     [/(?:avião|aeroporto|voo)/i,'airplane'],[/(?:táxi|carro|motorista)/i,'taxi'],[/(?:mala|bagagem)/i,'luggage'],
     [/(?:trem|metrô|estação|linha)/i,'train'],[/(?:ônibus|onibus|ponto de ônibus)/i,'bus'],[/(?:praia|mar|oceano|ilha|litoral)/i,'beach'],
     [/(?:comida|refeição|café da manhã|almoço|jantar|restaurante|carne|prato)/i,'meal'],[/(?:cidade|rua|estrada|bairro|parque|museu|trânsito)/i,'city'],
@@ -439,9 +454,9 @@
     var rawMeaning=String(meaning||'').trim(),rawWord=String(word||'').trim();
     // Pronouns are abstract concepts: never assign an unrelated animal or object photo.
     var meaningPlain=rawMeaning.replace(/[()؟?!،,:؛]/g,' ').replace(/\s+/g,' ').trim();
-    var pronounMeaning=/(?:^|\s)(?:أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ)(?:\s|$)/i.test(meaningPlain);
-    var pronounWord=/^(?:you|your|yours|yourself|você|vocês|tu|te|ti|usted|ustedes|tú|vosotros|vosotras|vous|toi|du|dich|ihr|sie|ты|вы|тебя|тебе|вас|lei|voi)$/i.test(rawWord);
-    if(pronounMeaning||pronounWord)return null;
+    var pronounMeaning=/^(?:أنا|أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ|هو|هي|نحن|احنا|إحنا|هم|هن|هما|أنتم|أنتما|إياي|إياك|إياه|إياها)$/i.test(meaningPlain);
+    var pronounWord=/^(?:i|me|my|mine|myself|you|your|yours|yourself|he|him|his|himself|she|her|hers|herself|we|us|our|ours|ourselves|they|them|their|theirs|themselves|eu|meu|minha|nós|nos|nosso|nossa|ele|ela|eles|elas|seu|sua|io|mi|mio|mia|noi|ci|nostro|nostra|lui|lei|yo|me|mi|mío|mía|nosotros|nosotras|él|ella|ellos|ellas|usted|ustedes|tú|vosotros|vosotras|je|me|moi|mon|ma|nous|notre|il|elle|ils|elles|vous|tu|ich|mich|mein|meine|wir|uns|unser|er|ihn|sie|ihr|es|du|dich|я|меня|мне|мой|моя|мы|нас|наш|он|она|они|его|её|вы|ты|тебя|тебе|вас|você|vocês|te|ti|voi)$/i.test(rawWord);
+    if(pronounMeaning||pronounWord||(lang==='it'&&/^loro$/i.test(rawWord)))return null;
     // Brazilian Portuguese: avoid reusing a stationery photo for the literal word “mão”.
     if(lang==='pt-BR'&&/^(?:irmão|irmã|irmãos|irmãs)$/i.test(rawWord))return photos.family;
     var s=String(meaning||'');
@@ -568,6 +583,18 @@
     // Additional concrete travel and everyday vocabulary: reuse dedicated, already-curated photos.
     // These rules run after Arabic meanings and core shared concepts, so they cannot override them.
     var extendedObjectRules=[
+      [/^(?:cruise ship|cruise liner|navio de cruzeiro|navio cruzeiro|nave da crociera|crucero|barco de crucero|bateau de croisière|Kreuzfahrtschiff|круизный лайнер|круизный корабль)$/i,'cruiseShip'],
+      [/^(?:fire truck|fire engine|firetruck|caminhão de bombeiros|camião de bombeiros|carro de bombeiros|camion dei pompieri|autopompa|camión de bomberos|coche de bomberos|camion de pompiers|camion-pompe|Feuerwehrwagen|Feuerwehrauto|Löschfahrzeug|пожарная машина|пожарный автомобиль)$/i,'fireTruck'],
+      [/^(?:puppy|pup|filhote de cachorro|cachorrinho|cãozinho|cucciolo|cucciolo di cane|perrito|chiot|Welpe|щенок)$/i,'puppy'],
+      [/^(?:parrot|papagaio|pappagallo|loro|perroquet|Papagei|попугай)$/i,'parrot'],
+      [/^(?:dolphin|golfinho|delfino|delfín|dauphin|Delfin|дельфин)$/i,'dolphin'],
+      [/^(?:rabbit|bunny|coelho|coniglio|conejo|lapin|Kaninchen|кролик)$/i,'rabbit'],
+      [/^(?:bedroom|quarto|camera da letto|dormitorio|chambre à coucher|Schlafzimmer|спальня)$/i,'bedroom'],
+      [/^(?:front door|main door|entry door|porta de entrada|porta principal|porta d'ingresso|puerta principal|puerta de entrada|porte d'entrée|Haustür|Eingangstür|входная дверь)$/i,'door'],
+      [/^(?:wallet|carteira|portafoglio|cartera|portefeuille|Geldbörse|кошелёк|кошелек)$/i,'wallet'],
+      [/^(?:key|keys|chave|chiave|llave|clé|Schlüssel|ключ)$/i,'key'],
+      [/^(?:sun hat|sunhat|chapeau de soleil|sombrero para el sol|cappello da sole|Sonnenhut|панама)$/i,'hat'],
+      [/^(?:merci|grazie|gracias|obrigado|obrigada|danke|спасибо|thank you|thanks)$/i,'conversation'],
       [/^(?:train station|railway station|estação de trem|estação ferroviária|stazione ferroviaria|estación de tren|gare|Bahnhof|железнодорожная станция)$/i,'trainStation'],
       [/^(?:ferry|ferry boat|balsa|traghetto|ferry|bac|Fähre|паром)$/i,'ferry'],
       [/^(?:ship|boat|navio|barco|nave|barco|bateau|Schiff|корабль)$/i,'ship'],
