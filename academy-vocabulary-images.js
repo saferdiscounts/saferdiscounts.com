@@ -269,6 +269,8 @@
     [/نافذة|شباك|نوافذ|شبابيك/,'window'],
     [/باب|أبواب|مدخل المنزل/,'door'],
     [/غرفة نوم|غرفة النوم|حجرة النوم/,'bedroom'],
+    [/غرفة|غرفتك|غرفتي|غرفة الفندق|غرفة في الفندق/,'hotelRoom'],
+    [/الإيجار|إيجار|أجرة السكن|الإيجار الشهري/,'house'],
     [/محفظة|محفظة نقود|محافظ/,'wallet'],
     [/مفتاح|مفاتيح/,'key'],
     [/سيارة إطفاء|شاحنة إطفاء|عربة إطفاء/,'fireTruck'],
@@ -465,6 +467,14 @@
     // Match the source-language word only after the Arabic meaning has had priority.
     var target=String(word||'');
     var targetTrimmed=target.trim();
+    // Hotel vocabulary in these courses means a booked room, not a generic house or bedroom.
+    if((lang==='pt-BR'||lang==='pt-PT')&&/^(?:o quarto|um quarto|quarto)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='it'&&/^(?:una camera|la camera|camera)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='es'&&/^(?:una habitación|la habitación|habitación)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='fr'&&/^(?:une chambre|la chambre|chambre)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='de'&&/^(?:ein Zimmer|das Zimmer|Zimmer)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='en'&&/^(?:room|the room)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='ru'&&/^(?:комната|номер)$/i.test(targetTrimmed))return photos.hotelRoom;
     if((lang==='en'&&/^(?:broken|damaged|out of order)$/i.test(targetTrimmed))||
        (lang==='it'&&/^(?:rotto|guasto)$/i.test(targetTrimmed))||
        (lang==='es'&&/^(?:estropeado|averiado)$/i.test(targetTrimmed))||
@@ -583,13 +593,15 @@
     // Additional concrete travel and everyday vocabulary: reuse dedicated, already-curated photos.
     // These rules run after Arabic meanings and core shared concepts, so they cannot override them.
     var extendedObjectRules=[
+      [/^(?:rent|rental|affitto|l'affitto|alquiler|el alquiler|loyer|le loyer|Miete|die Miete|renda|a renda|aluguel)$/i,'house'],
       [/^(?:cruise ship|cruise liner|navio de cruzeiro|navio cruzeiro|nave da crociera|crucero|barco de crucero|bateau de croisière|Kreuzfahrtschiff|круизный лайнер|круизный корабль)$/i,'cruiseShip'],
       [/^(?:fire truck|fire engine|firetruck|caminhão de bombeiros|camião de bombeiros|carro de bombeiros|camion dei pompieri|autopompa|camión de bomberos|coche de bomberos|camion de pompiers|camion-pompe|Feuerwehrwagen|Feuerwehrauto|Löschfahrzeug|пожарная машина|пожарный автомобиль)$/i,'fireTruck'],
       [/^(?:puppy|pup|filhote de cachorro|cachorrinho|cãozinho|cucciolo|cucciolo di cane|perrito|chiot|Welpe|щенок)$/i,'puppy'],
       [/^(?:parrot|papagaio|pappagallo|loro|perroquet|Papagei|попугай)$/i,'parrot'],
       [/^(?:dolphin|golfinho|delfino|delfín|dauphin|Delfin|дельфин)$/i,'dolphin'],
       [/^(?:rabbit|bunny|coelho|coniglio|conejo|lapin|Kaninchen|кролик)$/i,'rabbit'],
-      [/^(?:bedroom|quarto|camera da letto|dormitorio|chambre à coucher|Schlafzimmer|спальня)$/i,'bedroom'],
+      [/^(?:bedroom|camera da letto|dormitorio|chambre à coucher|Schlafzimmer|спальня)$/i,'bedroom'],
+      [/^(?:rent|rental|affitto|l'affitto|alquiler|el alquiler|loyer|le loyer|Miete|die Miete|renda|a renda|aluguel)$/i,'house'],
       [/^(?:front door|main door|entry door|porta de entrada|porta principal|porta d'ingresso|puerta principal|puerta de entrada|porte d'entrée|Haustür|Eingangstür|входная дверь)$/i,'door'],
       [/^(?:wallet|carteira|portafoglio|cartera|portefeuille|Geldbörse|кошелёк|кошелек)$/i,'wallet'],
       [/^(?:key|keys|chave|chiave|llave|clé|Schlüssel|ключ)$/i,'key'],
@@ -694,6 +706,7 @@
     if(lang==='pt-PT'&&/(?:a experiência|a tarefa|o estágio|a candidatura|a fonte|o pedido|o comprovativo|uma declaração|relatar|segundo|relativamente a|além disso|em conclusão|uma vantagem|fiável)/i.test(target))return photos.writing;
     if(lang==='pt-PT'&&/(?:queria|simpático|mal-entendido|esclarecer)/i.test(target))return photos.conversation;
     if(/^[А-ЯЁ]$/.test(target))return photos.alphabet;
+    if(lang==='ru'&&/^(?:занятие|урок|занятия)$/i.test(targetTrimmed))return photos.classroom;
     if(lang==='ru'&&/(?:словарь|читать)/i.test(target))return photos.books;
     if(lang==='ru'&&/(?:спасибо|хорошо|как дела|помогите|извините)/i.test(target))return photos.conversation;
     if(lang==='ru'&&/(?:алло|слушаю|перезвоню|линия занята)/i.test(target))return photos.phone;
@@ -701,6 +714,7 @@
     if(lang==='ru'&&/(?:солнце)/i.test(target))return photos.sunrise;
     if(lang==='ru'&&/(?:ветер)/i.test(target))return photos.weather;
     if(lang==='ru'&&/(?:экзамен)/i.test(target))return photos.classroom;
+    if(lang==='de'&&/^(?:die Untersuchung|Untersuchung)$/i.test(targetTrimmed))return photos.doctor;
     if(lang==='ru'&&/(?:болит|кашель)/i.test(target))return photos.doctor;
     if(lang==='ru'&&/(?:дешевле)/i.test(target))return photos.money;
     if(lang==='ru'&&/(?:днём|неделя)/i.test(target))return photos.clock;
@@ -827,10 +841,11 @@
       [/(?:orange fruit|orange|laranja|arancia|naranja|Orange|апельсин)/i,'orange'],
       [/(?:camel|camelo|cammello|camello|chameau|Kamel|верблюд)/i,'camel'],
       [/(?:mosque|mesquita|moschea|mezquita|mosquée|Moschee|мечеть)/i,'mosque'],
-      [/(?:\\bfork\\b|garfo|forchetta|tenedor|fourchette|Gabel|вилка)/i,'fork'],
-      [/(?:\\bspoon\\b|colher|cucchiaio|cuchara|cuillère|Löffel|ложка)/i,'spoon'],
-      [/(?:\\bflour\\b|farinha|farina|harina|farine|Mehl|мука)/i,'flour'],
-      [/(?:\\bdocument(?:s)?\\b|documento|documenti|documentos|pièce complémentaire|pièce jointe|Anlage|anexo|anexa|вложение|документ(?:ы)?)/i,'document']
+      [/(?:\bfork\b|garfo|forchetta|tenedor|fourchette|Gabel|вилка)/i,'fork'],
+      [/(?:\bspoon\b|colher|cucchiaio|cuchara|cuillère|Löffel|ложка)/i,'spoon'],
+      [/(?:\bflour\b|farinha|farina|harina|farine|Mehl|мука)/i,'flour'],
+      [/(?:\bdocument(?:s)?\b|documento|documenti|documentos|pièce complémentaire|pièce jointe|Anlage|Anhang|anexo|anexa|вложение|документ(?:ы)?|\battachment\b|\bcontract\b|\bresume\b|\brésumé\b|\bcv\b|\breport\b|rapport|relatório|relatorio|Bericht|отчёт|отчет|договор|контракт|резюме|свидетельство|ci-joint|im Anhang|in allegato)/i,'document'],
+      [/^(?:photo|photograph|photography|a photo|foto|a foto|fotografia|fotografía|photographie|Foto|фото)$/i,'camera']
     ];
     for(var nr=0;nr<newPhotoRules.length;nr++)if(newPhotoRules[nr][0].test(target))return photos[newPhotoRules[nr][1]];
     var distinctPhotoRules=[
