@@ -500,6 +500,47 @@
        (lang==='ru'&&/^(?:сломанный|сломалась|сломался|не работает)$/i.test(targetTrimmed))||
        (lang==='pt-BR'&&/^(?:quebrado|quebrada|estragado|estragada)$/i.test(targetTrimmed))||
        (lang==='pt-PT'&&/^(?:avariado|avariada|estragado|estragada)$/i.test(targetTrimmed)))return photos.brokenItem;
+    // Prefer an exact, dedicated photo for a concrete food item before broad category fallbacks.
+    // This prevents words such as tomato or chicken from receiving a generic vegetables/meal image.
+    var specificFoodTargetRules=[
+      [/^(?:tomato|tomatoes|tomate|tomates|pomodoro|pomodori|tomate|tomates|Tomate|Tomaten|помидор|помидоры)$/i,'tomato'],
+      [/^(?:onion|onions|cebola|cebolas|cipolla|cipolle|cebolla|cebollas|oignon|oignons|Zwiebel|Zwiebeln|лук)$/i,'onion'],
+      [/^(?:potato|potatoes|batata|batatas|patata|patate|patata|patatas|pomme de terre|pommes de terre|Kartoffel|Kartoffeln|картофель|картошка)$/i,'potato'],
+      [/^(?:chicken|poulet|pollo|Hähnchen|Huhn|курица|frango)$/i,'chicken'],
+      [/^(?:fish|poisson|pez|pescado|pesce|Fisch|рыба|peixe)$/i,'fish'],
+      [/^(?:orange|oranges|laranja|laranjas|arancia|arance|naranja|naranjas|orange|oranges|Orange|Orangen|апельсин|апельсины)$/i,'orange'],
+      [/^(?:strawberry|strawberries|morango|morangos|fragola|fragole|fresa|fresas|fraise|fraises|Erdbeere|Erdbeeren|клубника)$/i,'strawberry'],
+      [/^(?:grape|grapes|uva|uvas|uva|uvas|raisin|raisins|Weintraube|Weintrauben|виноград)$/i,'grapes'],
+      [/^(?:apple|apples|maçã|maçãs|mela|mele|manzana|manzanas|pomme|pommes|Apfel|Äpfel|яблоко|яблоки)$/i,'apple'],
+      [/^(?:banana|bananas|banane|bananes|plátano|plátanos|Banane|Bananen|банан|бананы)$/i,'banana'],
+      [/^(?:pineapple|abacaxi|abacaxis|piña|piñas|ananas|Ananas|ананас|ананасы)$/i,'pineapple'],
+      [/^(?:watermelon|melancia|melancias|sandía|sandías|pastèque|pastèques|Wassermelone|арбуз)$/i,'watermelon'],
+      [/^(?:carrot|carrots|cenoura|cenouras|zanahoria|zanahorias|carota|carote|carotte|carottes|Karotte|Karotten|морковь)$/i,'carrot'],
+      [/^(?:kiwi|kiwis|kiwifruit|kiwifruits|киви)$/i,'kiwi'],
+      [/^(?:cucumber|cucumbers|pepino|pepinos|cetriolo|cetrioli|pepino|pepinos|concombre|concombres|Gurke|Gurken|огурец|огурцы)$/i,'cucumber'],
+      [/^(?:pumpkin|pumpkins|abóbora|abóboras|calabaza|calabazas|zucca|zucche|citrouille|citrouilles|Kürbis|Kürbisse|тыква)$/i,'pumpkin'],
+      [/^(?:garlic|alho|alhos|ajo|ajos|aglio|ail|Knoblauch|чеснок)$/i,'garlic'],
+      [/^(?:coconut|coconuts|coco|kokosnuss|Kokosnüsse|noix de coco|cocco|кокос)$/i,'coconut'],
+      [/^(?:pear|pears|pera|peras|pere|poire|poires|Birne|Birnen|груша|груши)$/i,'pear'],
+      [/^(?:mango|mangos|mangoes|manga|mangas|mangue|mangues|Mango|манго)$/i,'mango'],
+      [/^(?:bell pepper|sweet pepper|capsicum|pimentão|pimentões|pimiento|pimientos|peperone|peperoni|poivron|poivrons|Paprika|болгарский перец)$/i,'bellPepper'],
+      [/^(?:corn|corn cob|sweet corn|milho|maíz|maiz|mais|maïs|Maiskolben|кукуруза)$/i,'cornCob'],
+      [/^(?:broccoli|brócolis|brócoli|broccolo|broccoli|brocoli|Brokkoli|брокколи)$/i,'broccoli'],
+      [/^(?:mushroom|mushrooms|cogumelo|cogumelos|seta|setas|champignon|champignons|fungo|funghi|Pilz|Pilze|гриб|грибы)$/i,'mushrooms'],
+      [/^(?:eggplant|aubergine|berinjela|berinjelas|melanzana|melanzane|berenjena|berenjenas|Aubergine|баклажан)$/i,'eggplant'],
+      [/^(?:radish|radishes|rabanete|rabanetes|ravanello|ravanelli|rábano|rábanos|radis|Radieschen|редис)$/i,'radish'],
+      [/^(?:blueberry|blueberries|mirtilo|mirtilos|arándano azul|arándanos azules|myrtille|myrtilles|Blaubeere|Blaubeeren|голубика)$/i,'blueberries'],
+      [/^(?:chili pepper|chilli pepper|chili|chilli|pimenta|pimentas|peperoncino|chile|chiles|piment|piments|Chili|чили)$/i,'chiliPepper'],
+      [/^(?:pea|peas|green peas|ervilha|ervilhas|piselli|guisante|guisantes|petit pois|petits pois|Erbse|Erbsen|горох)$/i,'peas'],
+      [/^(?:cauliflower|couve-flor|couve flor|coliflor|cavolfiore|chou-fleur|Blumenkohl|цветная капуста)$/i,'cauliflower'],
+      [/^(?:green beans|string beans|vagem|vagens|fagiolini|judías verdes|judias verdes|haricots verts|grüne Bohnen|стручковая фасоль)$/i,'greenBeans'],
+      [/^(?:asparagus|aspargo|aspargos|asparagi|espárrago|espárragos|asperge|asperges|Spargel|спаржа)$/i,'asparagus'],
+      [/^(?:pomegranate|romã|romãs|melagrana|melagrane|granada|granadas|grenade|grenades|Granatapfel|Granatäpfel|гранат)$/i,'pomegranate'],
+      [/^(?:artichoke|alcachofra|alcachofras|carciofo|carciofi|alcachofa|alcachofas|artichaut|artichauts|Artischocke|Artischocken|артишок)$/i,'artichoke'],
+      [/^(?:spinach|espinafre|espinafres|spinaci|espinaca|espinacas|épinards|Spinat|шпинат)$/i,'spinach'],
+      [/^(?:cabbage|repolho|repolhos|cavolo|cavoli|col|coles|chou|choux|Kohl|капуста)$/i,'cabbage']
+    ];
+    for(var sf=0;sf<specificFoodTargetRules.length;sf++)if(specificFoodTargetRules[sf][0].test(targetTrimmed))return photos[specificFoodTargetRules[sf][1]];
     var sharedMeaningRules=[
       [/^(?:car|coche|voiture|auto|машина|macchina|carro)$/i,'car'],
       [/^(?:motorcycle|motorbike|moto|motocicleta|motorrad|мотоцикл|motocicletta|motociclo)$/i,'motorcycle'],
