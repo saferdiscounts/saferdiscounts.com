@@ -469,6 +469,16 @@
     // Brazilian Portuguese: avoid reusing a stationery photo for the literal word “mão”.
     if(lang==='pt-BR'&&/^(?:irmão|irmã|irmãos|irmãs)$/i.test(rawWord))return photos.family;
     var s=String(meaning||'');
+    // A flat/apartment is a residential building or unit, not a generic detached house.
+    // Resolve this specific concept before broad Arabic meaning rules and shared vocabulary.
+    var apartmentMeaning=/^(?:شقة|الشقة|شقق|شقه|الشقه|عمارة سكنية|مبنى سكني)$/i.test(meaningPlain);
+    var apartmentWord=/^(?:(?:the|a|an)\\s+)?(?:apartment|apartments|flat|flats)$/i.test(rawWord)||
+      /^(?:(?:un|uno|una|il|lo|la|i|gli|le)\\s+)?(?:appartamento|appartamenti)$/i.test(rawWord)||
+      /^(?:(?:un|une)\\s+|l')?(?:appartement|appartements)$/i.test(rawWord)||
+      /^(?:(?:der|die|das|ein|eine)\\s+)?(?:wohnung|wohnungen)$/i.test(rawWord)||
+      /^(?:(?:o|a|um|uma|os|as)\\s+)?(?:apartamento|apartamentos)$/i.test(rawWord)||
+      /^(?:квартира|квартиры)$/i.test(rawWord);
+    if(apartmentMeaning||apartmentWord)return photos.apartmentBuilding;
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
     // Match the source-language word only after the Arabic meaning has had priority.
@@ -578,7 +588,6 @@
       [/^(?:morning|mañana|matin|morgen|утро|mattina|manhã)$/i,'sunrise'],
       [/^(?:doctor|médico|medico|médecin|arzt|врач|medico)$/i,'doctor'],
       [/^(?:book|libro|livre|buch|книга|livro)$/i,'books'],
-      [/^(?:apartment|flat|appartamento|wohnung|apartamento)$/i,'house'],
       [/^(?:orange|banana|grape|pear|mango|naranja|plátano|uva|pera|mangue|oranje|banane|traube|birne|апельсин|банан|виноград|груша|arancia|banana|uva|pera|laranja|banana|uva|pera)$/i,'fruit'],
       [/^(?:tomato|carrot|potato|onion|lettuce|cucumber|tomate|zanahoria|patata|cebolla|tomate|carotte|pomme de terre|oignon|tomate|karotte|kartoffel|zwiebel|помидор|морковь|картофель|лук|pomodoro|carota|patata|cipolla|tomate|cenoura|batata|cebola)$/i,'vegetables'],
       [/^(?:chicken|meat|poultry|poulet|viande|pollo|carne|huhn|fleisch|курица|мясо|frango)$/i,'meal'],
