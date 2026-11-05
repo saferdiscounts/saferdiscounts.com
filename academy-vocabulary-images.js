@@ -266,6 +266,7 @@
     artist:{url:'https://images.unsplash.com/photo-1758522275317-bc285fab87f4?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/artist-painting-a-colorful-abstract-artwork-on-canvas-in7H9J6WTPI'},
     crowd:{url:'https://images.unsplash.com/photo-1666712613000-2b68f37e5777?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/it/foto/una-folla-di-persone-8AFXba-RKFk'},
     brazilFlag:{url:'https://images.unsplash.com/photo-1676899069914-373ae0b13d3e?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/the-flag-of-brazil-is-flying-in-the-blue-sky-UqBeA-7apRE'},
+    coworkers:{url:'https://images.unsplash.com/photo-1758876203026-99a024dc43b9?auto=format&fit=crop&w=760&q=82',credit:'Unsplash',source:'https://unsplash.com/photos/two-colleagues-collaborating-on-a-laptop-in-an-office-1zHJk06hAqw'},
   };
   var rules=[
     [/سيارة|سيارات|مركبة|عربة/,'car'],
@@ -610,6 +611,7 @@
       [/^(?:artist|artists|artista|artistas|artiste|artistes|künstler|künstlerin|künstlerinnen|художник|художница|художники|художницы|o artista \/ a artista)$/i,'artist'],
       [/^(?:people|crowd|audience|gente|pessoas|público|plateia|multidão|persone|folla|pubblico|personas|multitud|audiencia|gens|personnes|foule|public|publikum|leute|menschen|menge|люди|народ|толпа|публика|аудитория)$/i,'crowd'],
       [/^(?:brazil|brasil|brasile|brésil|brasilien|бразилия)$/i,'brazilFlag'],
+      [/^(?:colleague|colleagues|coworker|coworkers|colega|colegas|collega|colleghi|colleghe|collega di lavoro|colleghi di lavoro|compañero de trabajo|compañera de trabajo|compañeros de trabajo|compañeras de trabajo|collègue|collègues|collègue de travail|Kollege|Kollegin|Kollegen|Kolleginnen|Arbeitskollege|Arbeitskollegin|коллега|коллеги|сослуживец|сослуживица)$/i,'coworkers'],
       [/^(?:cruise ship|cruise liner|navio de cruzeiro|navio cruzeiro|nave da crociera|crucero|barco de crucero|bateau de croisière|Kreuzfahrtschiff|круизный лайнер|круизный корабль)$/i,'cruiseShip'],
       [/^(?:fire truck|fire engine|firetruck|caminhão de bombeiros|camião de bombeiros|carro de bombeiros|camion dei pompieri|autopompa|camión de bomberos|coche de bomberos|camion de pompiers|camion-pompe|Feuerwehrwagen|Feuerwehrauto|Löschfahrzeug|пожарная машина|пожарный автомобиль)$/i,'fireTruck'],
       [/^(?:puppy|pup|filhote de cachorro|cachorrinho|cãozinho|cucciolo|cucciolo di cane|perrito|chiot|Welpe|щенок)$/i,'puppy'],
