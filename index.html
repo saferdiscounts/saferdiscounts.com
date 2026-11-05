@@ -384,14 +384,21 @@
   .academy-en-head .tag{display:block;margin-bottom:5px;color:var(--brand-orange);font:800 10px 'IBM Plex Mono',monospace;letter-spacing:1px}
   .academy-en-head h3{font-size:21px;color:var(--brand-blue-dark);margin:0 0 4px}
   .academy-en-head p{font-size:12px;color:#647785;margin:0}
-  .academy-en-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  .academy-en-card{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid #dce8ef;background:#fff;border-radius:14px;transition:transform .2s,box-shadow .2s}
-  .academy-en-card:hover{transform:translateY(-3px);box-shadow:0 12px 22px rgba(8,40,68,.09)}
+  .academy-en-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .academy-en-card{min-width:0;overflow:hidden;border:1px solid #dce8ef;background:#fff;border-radius:16px;transition:transform .2s,box-shadow .2s}
+  .academy-en-card:hover{transform:translateY(-4px);box-shadow:0 14px 26px rgba(8,40,68,.12)}
+  .academy-en-photo{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#dceaf2}
+  .academy-en-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s ease}
+  .academy-en-card:hover .academy-en-photo img{transform:scale(1.055)}
+  .academy-en-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,35,59,.02),rgba(2,35,59,.48))}
+  .academy-en-photo span{position:absolute;z-index:1;bottom:11px;inset-inline-start:12px;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.94);color:var(--brand-blue-dark);font:800 9px 'IBM Plex Mono',monospace}
+  .academy-en-card-body{padding:14px;display:flex;flex-direction:column;gap:10px}
+  .academy-en-card-copy{display:flex;align-items:center;gap:11px;min-width:0}
   .academy-en-icon{width:42px;height:42px;display:grid;place-items:center;flex:0 0 auto;border-radius:12px;background:#eaf4fa;font-size:21px}
   .academy-en-card strong{display:block;color:var(--brand-blue-dark);font-size:14px}
   .academy-en-card small{display:block;color:#647785;font-size:11px;line-height:1.7}
-  .academy-en-card a{margin-inline-start:auto;white-space:nowrap;color:var(--brand-blue);font-weight:900;font-size:11px;text-decoration:underline;text-underline-offset:3px}
-  @media(max-width:700px){.academy-en-paths{padding:16px}.academy-en-grid{grid-template-columns:1fr}.academy-en-card{align-items:flex-start}.academy-en-card a{margin-top:7px}}
+  .academy-en-card a{align-self:flex-start;white-space:nowrap;color:var(--brand-blue);font-weight:900;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+  @media(max-width:700px){.academy-en-paths{padding:16px}.academy-en-grid{grid-template-columns:1fr}.academy-en-photo{aspect-ratio:16/9}}
   @media(max-width:900px){.academy{padding:58px 0}.academy-path-grid{grid-template-columns:1fr;max-width:720px;margin:auto}.academy-path-card{min-height:300px}}
   @media(max-width:700px){.academy-head h2{font-size:25px}.academy-head p{font-size:13px}.academy-path-card{padding:20px;min-height:0}.academy-path-card h3{font-size:21px}.academy-extra{line-height:1.9}}
   /* Destination finder */
@@ -1221,8 +1228,14 @@ window.SITE_CONFIG = {
     <div class="academy-en-paths">
       <div class="academy-en-head"><span class="tag" id="academy-en-kicker"></span><h3 id="academy-en-title"></h3><p id="academy-en-copy"></p></div>
       <div class="academy-en-grid">
-        <article class="academy-en-card"><span class="academy-en-icon">🧳</span><div><strong id="academy-en-tour-title"></strong><small id="academy-en-tour-copy"></small></div><a href="english-travel-guide.html" id="academy-en-tour-link"></a></article>
-        <article class="academy-en-card"><span class="academy-en-icon">🎓</span><div><strong id="academy-en-course-title"></strong><small id="academy-en-course-copy"></small></div><a href="english-academy.html" id="academy-en-course-link"></a></article>
+        <article class="academy-en-card">
+          <div class="academy-en-photo"><img src="https://images.pexels.com/photos/15136326/pexels-photo-15136326.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="London city landmark for English travel" loading="lazy" decoding="async"><span>✈️ ENGLISH FOR TRAVEL</span></div>
+          <div class="academy-en-card-body"><div class="academy-en-card-copy"><span class="academy-en-icon">🧳</span><div><strong id="academy-en-tour-title"></strong><small id="academy-en-tour-copy"></small></div></div><a href="english-travel-guide.html" id="academy-en-tour-link"></a></div>
+        </article>
+        <article class="academy-en-card">
+          <div class="academy-en-photo"><img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Students studying English together" loading="lazy" decoding="async"><span>🎓 ENGLISH ACADEMY</span></div>
+          <div class="academy-en-card-body"><div class="academy-en-card-copy"><span class="academy-en-icon">🎓</span><div><strong id="academy-en-course-title"></strong><small id="academy-en-course-copy"></small></div></div><a href="english-academy.html" id="academy-en-course-link"></a></div>
+        </article>
       </div>
     </div>
 <div class="academy-all-languages" id="academy-all-languages">
