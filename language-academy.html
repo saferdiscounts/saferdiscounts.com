@@ -52,10 +52,17 @@ nav{min-height:76px;display:flex;align-items:center;justify-content:space-betwee
 .pathway-card.full p{color:#dbeaf3}
 .pathway-card .path-btn{display:inline-flex;align-items:center;gap:7px;margin-top:auto;background:var(--brand-orange);color:white;border-radius:10px;padding:9px 13px;font-size:12px;font-weight:900}
 .pathway-card.full .path-btn{background:white;color:var(--brand-blue-dark)}
-.english-pathways{width:min(1120px,calc(100% - 32px));margin:0 auto 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.english-pathways{width:min(1120px,calc(100% - 32px));margin:0 auto 30px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .english-pathways .pathways-head{grid-column:1/-1;margin:5px 0 0}
 .english-pathways .pathways-head h2{font-size:22px}
-@media(max-width:700px){.english-pathways{grid-template-columns:1fr}.english-pathways .pathways-head h2{font-size:20px}}
+.english-pathways>.pathway-card{min-width:0;min-height:100%;padding:0 0 18px;gap:10px;overflow:hidden}
+.english-pathways>.pathway-card h3,.english-pathways>.pathway-card p,.english-pathways>.pathway-card .path-meta,.english-pathways>.pathway-card .path-btn{margin-inline:18px}
+.english-pathways .pathway-photo{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#dce5eb}
+.english-pathways .pathway-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .6s ease}
+.english-pathways>.pathway-card:hover .pathway-photo img{transform:scale(1.045)}
+.english-pathways .pathway-photo span{position:absolute;inset:auto 12px 12px;padding:7px 10px;border-radius:9px;background:rgba(2,35,58,.78);color:#fff;font-size:11px;font-weight:800}
+.english-pathways>.pathway-card p{font-size:13px;line-height:1.9}
+@media(max-width:700px){.english-pathways{grid-template-columns:1fr;gap:14px}.english-pathways .pathways-head h2{font-size:20px}.english-pathways .pathway-photo{aspect-ratio:16/9}}
 
 .hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(160deg,var(--brand-blue-dark),var(--brand-blue) 58%,#0b88cf);padding:64px 0 72px}
 .hero::before{content:"";position:absolute;inset:0;background:
@@ -116,11 +123,11 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 /* Culture-led academy photography */
 .academy-grid .pathway-card.full{padding:0 0 18px;gap:9px}
 .academy-grid .pathway-card.full .path-meta,.academy-grid .pathway-card.full h3,.academy-grid .pathway-card.full p,.academy-grid .pathway-card.full .path-btn{margin-inline:18px}
-.academy-culture-photo{position:relative;width:100%;height:190px;overflow:hidden;background:#dce5eb;border-radius:17px 17px 0 0}
-.academy-culture-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .65s ease,filter .35s ease}
+.academy-culture-photo{position:relative;width:100%;aspect-ratio:16/9;height:auto;overflow:hidden;background:#dce5eb;border-radius:17px 17px 0 0}
+.academy-culture-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .65s ease,filter .35s ease}
 .academy-grid .pathway-card.full:hover .academy-culture-photo img{transform:scale(1.055);filter:saturate(1.08)}
 .academy-culture-photo span{position:absolute;inset:auto 10px 10px;padding:7px 10px;border-radius:9px;background:rgba(2,35,58,.76);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(5px)}
-@media(max-width:640px){.academy-culture-photo{height:175px}}
+@media(max-width:640px){.academy-culture-photo{aspect-ratio:16/9}}
 .image-fallback{background:linear-gradient(135deg,#0b3554,#1478a5 58%,#d46a32)}.image-fallback:after{content:'Safer Discounts · Language & Culture';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(15px,2vw,22px);font-weight:900;text-align:center;padding:20px;letter-spacing:.3px}</style>
 </head>
 <body>
@@ -144,8 +151,8 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 
 <section class="english-pathways" aria-label="English learning paths for Arabic speakers">
   <div class="pathways-head"><span class="tag" id="en-path-eyebrow"></span><h2 id="en-path-title"></h2><p id="en-path-desc"></p></div>
-  <article class="pathway-card quick"><div class="path-meta"><span class="path-icon">🧳</span><span class="path-badge">ENGLISH · TRAVEL</span></div><h3 id="en-path-quick-title"></h3><p id="en-path-quick-copy"></p><a class="path-btn" id="en-path-quick-button" href="english-travel-guide.html"></a></article>
-  <article class="pathway-card full"><div class="path-meta"><span class="path-icon">🎓</span><span class="path-badge">ENGLISH · LEARNING</span></div><h3 id="en-path-full-title"></h3><p id="en-path-full-copy"></p><a class="path-btn" id="en-path-full-button" href="english-academy.html"></a></article>
+  <article class="pathway-card quick"><div class="pathway-photo"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=85" alt="مسافر ينظر من نافذة الطائرة في طريقه إلى وجهته" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentElement.classList.add('image-fallback')"><span>إنجليزي عملي للمطار والرحلة</span></div><div class="path-meta"><span class="path-icon">🧳</span><span class="path-badge">ENGLISH · TRAVEL</span></div><h3 id="en-path-quick-title"></h3><p id="en-path-quick-copy"></p><a class="path-btn" id="en-path-quick-button" href="english-travel-guide.html"></a></article>
+  <article class="pathway-card full"><div class="pathway-photo"><img src="https://www.john-crocket.com/cdn/shop/files/DSC08458.jpg?v=1757088016&width=1365" alt="أناقة بريطانية كلاسيكية تعكس ثقافة اللغة الإنجليزية" loading="lazy" decoding="async" onerror="this.hidden=true;this.parentElement.classList.add('image-fallback')"><span>الثقافة البريطانية والإنجليزية</span></div><div class="path-meta"><span class="path-icon">🎓</span><span class="path-badge">ENGLISH · LEARNING</span></div><h3 id="en-path-full-title"></h3><p id="en-path-full-copy"></p><a class="path-btn" id="en-path-full-button" href="english-academy.html"></a></article>
 </section>
 
 <section class="english-pathways academy-grid" aria-label="أكاديميات اللغات للناطقين بالعربية">
