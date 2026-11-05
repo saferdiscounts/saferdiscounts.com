@@ -30,7 +30,7 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 <main class="wrap">
 <div class="toolbar">
 <select id="language" aria-label="اختيار اللغة">
-<option value="en">الإنجليزية</option><option value="es">الإسبانية</option><option value="it">الإيطالية</option><option value="fr">الفرنسية</option>
+<option value="ptbr">البرتغالية البرازيلية</option><option value="en">الإنجليزية</option><option value="it">الإيطالية</option><option value="es">الإسبانية</option><option value="fr">الفرنسية</option><option value="de">الألمانية</option><option value="ru">الروسية</option><option value="pt">البرتغالية الأوروبية</option>
 </select>
 <input id="search" type="search" placeholder="ابحث بالكلمة أو الترجمة العربية أو رقم الملف">
 </div>
@@ -43,7 +43,7 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 (function(){
 const MANIFEST_URL='https://audio.saferdiscounts.com/language-pronunciation/manifest.json';
 const BASE='https://audio.saferdiscounts.com/';
-const labels={en:'الإنجليزية',es:'الإسبانية',it:'الإيطالية',fr:'الفرنسية'};
+const labels={ptbr:'البرتغالية البرازيلية',en:'الإنجليزية',it:'الإيطالية',es:'الإسبانية',fr:'الفرنسية',de:'الألمانية',ru:'الروسية',pt:'البرتغالية الأوروبية'};
 const lang=document.getElementById('language'), search=document.getElementById('search'), list=document.getElementById('list'), status=document.getElementById('status');
 let data=null, audio=new Audio();
 const params=new URLSearchParams(location.search); if(labels[params.get('lang')]) lang.value=params.get('lang');
@@ -62,6 +62,6 @@ function escapeHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'
 function escapeAttr(s){return escapeHtml(s).replace(/'/g,'&#39;');}
 list.addEventListener('click',e=>{const b=e.target.closest('button[data-path]');if(b&&b.dataset.path)play(b.dataset.path);});
 lang.addEventListener('change',render); search.addEventListener('input',render);
-fetch(MANIFEST_URL).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(json=>{data=json;render();}).catch(err=>{status.textContent='فهرس الصوت لم يُرفع بعد أو تعذر الوصول إليه. '+err.message;list.innerHTML='<div class="empty">الأكاديمية جاهزة لاستقبال التسجيلات. بعد رفع حزمة الصوت إلى R2 ستظهر التسجيلات هنا تلقائيًا.</div>';});
+fetch(MANIFEST_URL).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(json=>{data=json;render();}).catch(err=>{status.textContent='مكتبة التسجيلات المفهرسة غير متاحة حاليًا؛ يمكنك الدخول مباشرة إلى الأكاديميات الثماني. لم يتم تشغيل أو اختبار أي ملف صوتي من هذه الصفحة بعد.';const academies=[['ptbr','🇧🇷','البرتغالية البرازيلية','ptbr-academy.html'],['en','🇬🇧','الإنجليزية','english-academy.html'],['it','🇮🇹','الإيطالية','italian-academy.html'],['es','🇪🇸','الإسبانية','spanish-academy.html'],['fr','🇫🇷','الفرنسية','french-academy.html'],['de','🇩🇪','الألمانية','german-academy.html'],['ru','🇷🇺','الروسية','russian-academy.html'],['pt','🇵🇹','البرتغالية الأوروبية','portuguese-academy.html']];list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>التسجيلات قيد التنظيم والربط.</strong><p>اختر الأكاديمية لمتابعة الدروس الحالية. ستظهر أزرار التسجيل الطبيعي والبطيء هنا بعد تجهيز فهرس موثوق يربط كل ملف بنصه وترجمته، دون تغيير الدروس أو ملفات الصوت الحالية.</p><div class="academy-links">'+academies.map(a=>'<a href="'+a[3]+'">'+a[1]+' '+a[2]+' ←</a>').join('')+'</div><p style="margin-top:12px"><a href="language-academy.html">عرض صفحة جميع الأكاديميات</a></p></div>';});
 })();
 </script></body></html>
