@@ -483,7 +483,8 @@
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
     // Match the source-language word only after the Arabic meaning has had priority.
     var target=String(word||'');
-    var targetTrimmed=target.trim();
+    // Normalize common leading articles so the same real-world object photo is selected for phrases such as 'the tomato', 'la tomate', 'der Apfel', or 'o tomate'.
+    var targetTrimmed=target.trim().replace(/^(?:(?:the|a|an|el|la|los|las|un|una|unos|unas|o|os|as|um|uma|uns|umas|il|lo|i|gli|le|der|die|das|ein|eine|les|des|du|de la|de l')\\s+|l')/i,'');
     // Hotel vocabulary in these courses means a booked room, not a generic house or bedroom.
     if((lang==='pt-BR'||lang==='pt-PT')&&/^(?:o quarto|um quarto|quarto)$/i.test(targetTrimmed))return photos.hotelRoom;
     if(lang==='it'&&/^(?:una camera|la camera|camera)$/i.test(targetTrimmed))return photos.hotelRoom;
