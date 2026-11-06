@@ -19,7 +19,7 @@ function load(lang){
  }
  throw Error(lang+': unclosed lessons');
 }
-test('216 European lessons contain translated dialogue comprehension guidance',()=>{
+test('240 European lessons contain translated dialogue comprehension guidance',()=>{
  let total=0;
  for(const lang of languages){
   const lessons=load(lang);total+=lessons.length;
@@ -33,7 +33,7 @@ test('216 European lessons contain translated dialogue comprehension guidance',(
    }
   }
  }
- assert.equal(total,216);
+ assert.equal(total,240);
 });
 test('Beginner lesson writing tasks do not require independent sentence creation',()=>{
  for(const lang of languages){
