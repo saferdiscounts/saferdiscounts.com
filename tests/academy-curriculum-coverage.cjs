@@ -376,7 +376,7 @@ test('Russian card offers the same reference and review entry point as other aca
 
 test('Brazilian zero level follows alphabet, sounds, grammar, verbs and only then numbers',()=>{
  const html=read('ptbr-academy.html'),items=lessons('ptbr-academy.html');
- const begin=html.indexOf('const foundationOrder='),end=html.indexOf(';function lessonNumber(',begin);
+ const begin=html.indexOf('const foundationOrder='),end=html.indexOf('\nfunction lessonNumber(',begin);
  assert.ok(begin>0&&end>begin,'Need explicit curriculum sequence separate from original IDs');
  const order=vm.runInNewContext(html.slice(begin,end)+';lessonOrder',{lessons:items},{timeout:2000});
  assert.equal(order.length,90);
@@ -388,7 +388,7 @@ test('Brazilian zero level follows alphabet, sounds, grammar, verbs and only the
  assert.equal(items[initial[14]].title,'الأرقام من الصفر إلى الألف والعمر');
  for(const i of initial)assert.equal(items[i].track,'foundation');
  for(let i=0;i<20;i++)assert.ok(items[order[i]].writing.mode,'Newcomers should have skill-specific guided writing');
- assert.match(html,/const lessonNumber\(i\)/);
+ assert.match(html,/function lessonNumber\(i\)/);
  assert.match(html,/data-track="foundation"/,'Zero level accessible from curriculum navigation');
  assert.match(html,/render\(21\);progress\(\)/,'Initial page opens the alphabet and preserves the stable lesson ID');
 });
