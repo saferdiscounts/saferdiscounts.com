@@ -141,4 +141,5 @@ const requested=new URLSearchParams(location.search).get('topic');
 const pos=catalog.themes.findIndex(x=>x.id===requested);
 if(pos>=0)active=pos;
 draw();
+audioNotice();
 })();
