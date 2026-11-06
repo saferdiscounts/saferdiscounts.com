@@ -140,8 +140,8 @@ test('Five European academies combine vocabulary, scenarios and labeled browser 
 test('European academy writing feedback does not misrepresent keyword matching as grammar correction',()=>{
  for(const lang of ['italian','spanish','french','german','portuguese']){
   const html=read(lang+'-academy.html');
-  assert.match(html,/فحص مفردات فقط/,lang+' feedback scope');
-  assert.match(html,/هذا ليس تصحيحًا للقواعد أو الإملاء/,lang+' feedback honesty');
+  assert.match(html,/مراجعة تدريبية/,lang+' feedback scope');
+  assert.match(html,/لا تثبت صحة المعنى أو القواعد أو الإملاء/,lang+' feedback honesty');
   assert.match(html,/lower\.includes\(" "\+term\+" "\)/,lang+' phrase boundary');
  }
 });
