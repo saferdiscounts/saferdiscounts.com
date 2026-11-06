@@ -426,8 +426,28 @@ test('Beginner Brazilian writing practice starts with symbols and short guided f
  assert.match(items[21].writing.prompt,/لا تحتاج إلى تأليف جملة/);
  for(const i of [22,23,24,25,26])assert.equal(items[i].writing.mode,'sounds','Phonetics and punctuation must target symbols or words');
  for(const i of [27,28,29,30,31,32,33,34,5,0,1,2,3,4])assert.equal(items[i].writing.mode,'guided','Grammar, numbers and early communication must be scaffolded');
- assert.match(html,/writingMinimum=l\.writing\.mode==='sounds'\?7/,'Feedback minimum must match task type');
+ assert.match(html,/minimumByMode=\{sounds:7,guided:10,travel:25,a2:45,b1:70,b2:100,c1:160,c2:200\}/,'Feedback minimum must match task type');
  assert.match(html,/if\(i===21\)/,'Alphabet must have letter-specific review');
  assert.match(html,/هذه نتيجة تدريب على التمييز السمعي، وليست شهادة/,'Results should not imply official proficiency');
  assert.match(html,/اختبار القراءة والفهم/,'Reading and listening must not be conflated');
+});
+
+
+test('Every Brazilian lesson uses a level-appropriate writing task rather than the same novice dialogue',()=>{
+ const items=lessons('ptbr-academy.html');
+ const expected={foundation:15,a1:5,travel:15,a2:12,b1:14,b2:12,c1:9,c2:8};
+ const counts={};
+ for(const [i,l] of items.entries()){
+  counts[l.track]=(counts[l.track]||0)+1;
+  assert.ok(l.writing.mode,'Brazilian lesson '+i+' lacks level-specific feedback');
+  assert.ok(l.writing.prompt.length>=70,'Brazilian lesson '+i+' lacks meaningful writing directions');
+  if(['b2','c1','c2'].includes(l.track)){
+   assert.match(l.writing.prompt,/شرح|مثال|دليل|ناقش|الموقفين|الأسلوب|اللغة|الدقة|الفكرة/,'Higher-level practice needs argument or explanation');
+   assert.doesNotMatch(l.writing.prompt,/من 3 إلى 5 جمل/,'B2–C2 should not reuse A1 mini-dialogue');
+  }
+ }
+ assert.deepEqual(counts,expected);
+ const html=read('ptbr-academy.html');
+ assert.match(html,/const isIndependent=\['a2','b1','b2','c1','c2'\]/,'Advanced writing must rely on self-review, not false automatic proficiency marking');
+ assert.match(html,/مقتطف استرشادي للمقارنة، وليس إجابة كاملة أو تصحيحًا آليًا/,'Short reference dialogues cannot be presented as full advanced answers');
 });
