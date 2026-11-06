@@ -53,7 +53,7 @@ const prefix={en:'english/',it:'italian/',es:'spanish/',ru:'russian/',pt:'portug
 const selection=document.getElementById('lang'),file=document.getElementById('file'),status=document.getElementById('status'),report=document.getElementById('report');
 const stats=document.getElementById('stats'),details=document.getElementById('details'),tbody=document.getElementById('examples'),exportButton=document.getElementById('export');
 let result=null,inventoryCache=new Map();
-const norm=s=>String(s||'').normalize('NFC').toLocaleLowerCase().replace(/\s+/g,' ').trim();
+const norm=s=>String(s||'').normalize('NFC').toLocaleLowerCase().replace(/[.!?¿¡,;:…“”"'«»()]/g,'').replace(/\s+/g,' ').trim();
 function elem(tag,text,cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
 async function getInventory(code){
  if(inventoryCache.has(code))return inventoryCache.get(code);
