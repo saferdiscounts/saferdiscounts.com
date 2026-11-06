@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>مكتبة التسجيلات الصوتية | Safer Discounts</title>
-<meta name="description" content="مكتبة التسجيلات المفهرسة بالنص للبرتغالية البرازيلية والفرنسية، مع النطق العادي والبطيء وروابط بقية الأكاديميات.">
+<meta name="description" content="مكتبة النطق العادي والبطيء للبرتغالية البرازيلية والفرنسية والألمانية، بفهرس عام وفهرسين محليين موثوقين عند تعذر الفهرس العام.">
 <style>
 :root{--navy:#092d49;--blue:#0876aa;--orange:#f16a25;--ink:#203545;--muted:#657988;--line:#dce7ed;--paper:#f4f8fb}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
@@ -35,34 +35,88 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 <input id="search" type="search" placeholder="ابحث بالكلمة أو الترجمة العربية أو رقم الملف">
 </div>
 <div id="status" class="meta">جاري تحميل فهرس التسجيلات…</div>
-<div class="notice">البرازيلية والفرنسية والألمانية مفهرسة الآن بالنص والملف، لكن التسجيلات لم تخضع كلها لمراجعة استماع بشرية مستقلة. الملفات المرفوعة للغات الأخرى لم تُربط هنا حتى يتم إثبات مطابقة الكلمة للتسجيل؛ الدروس تستمر بنطق المتصفح عند الحاجة.</div>
+<div class="notice">في حالة تعذر الفهرس العام، تستمر مكتبة الفرنسية والألمانية باستخدام فهرسيهما المحليين مع استبعاد النصوص الملتبسة. وجود ملف في الفهرس لا يضمن تشغيله أو أنه تسجيل بشري؛ التسجيلات الأخرى تُعرض فقط بعد تأكيد ربط النص بالملف. <a href="academy-audio-status.html">راجع تقرير التغطية لكل لغة.</a></div>
 <section id="list" class="list" aria-live="polite"></section>
 </main>
 <footer>Safer Discounts · Audio learning for Arabic speakers</footer>
 <script>
 (function(){
+'use strict';
 const MANIFEST_URL='https://audio.saferdiscounts.com/language-pronunciation/manifest.json';
 const BASE='https://audio.saferdiscounts.com/';
 const labels={ptbr:'البرتغالية البرازيلية',en:'الإنجليزية',it:'الإيطالية',es:'الإسبانية',fr:'الفرنسية',de:'الألمانية',ru:'الروسية',pt:'البرتغالية الأوروبية'};
 const courses={ptbr:'ptbr-academy.html',en:'english-academy.html',it:'italian-academy.html',es:'spanish-academy.html',fr:'french-academy.html',de:'german-academy.html',ru:'russian-academy.html',pt:'portuguese-academy.html'};
-const lang=document.getElementById('language'), search=document.getElementById('search'), list=document.getElementById('list'), status=document.getElementById('status');
-let data=null, audio=new Audio();
-const params=new URLSearchParams(location.search); if(labels[params.get('lang')]) lang.value=params.get('lang');
-function play(path){if(!path)return;audio.pause();audio=new Audio(BASE+path);audio.play().catch(()=>{status.textContent='تعذر تشغيل التسجيل. تأكد من اكتمال رفع الملفات إلى مكتبة الصوت.';});}
-function render(){
- if(!data)return;
- const code=lang.value, pack=data.languages[code]; if(!pack||!Array.isArray(pack.records)){status.textContent=labels[code]+' · تسجيلات مرفوعة، لكن مطابقتها بالكلمات لم تُعتمد بعد';list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>لسه بنراجع فهرسة هذه اللغة.</strong><p>ملفات الصوت موجودة في R2، لكن من غير مرجع نصي موثوق لكل ملف مش هنعرض أي تسجيل باسم كلمة قد تكون مختلفة. تقدر تبدأ الدروس الآن بالنطق المتاح داخل الأكاديمية.</p><p><a href="'+courses[code]+'">افتح الأكاديمية ←</a></p></div>';return;}
- const q=search.value.trim().toLocaleLowerCase();
- const rows=pack.records.filter(r=>(r.text+' '+r.arabic+' '+r.id).toLocaleLowerCase().includes(q));
- status.textContent=labels[code]+' · '+pack.records.length+' تسجيلًا مفهرسًا بالنص · المعروض '+rows.length+' · لم تُراجع كل التسجيلات سمعيًا';
- if(!rows.length){list.innerHTML='<div class="empty">لا توجد نتائج مطابقة لبحثك.</div>';return;}
- list.innerHTML=rows.slice(0,180).map((r,i)=>'<article class="item"><div class="phrase" dir="ltr">'+escapeHtml(r.text||r.id)+'</div><div class="arabic">'+escapeHtml(r.arabic||'')+'</div><div class="actions"><button data-path="'+escapeAttr(r.normal)+'">▶ طبيعي</button><button class="slow" '+(r.slow?'':'disabled')+' data-path="'+escapeAttr(r.slow||'')+'">🐢 بطيء</button>'+(r.example?'<button class="slow" data-path="'+escapeAttr(r.example)+'">مثال صوتي</button>':'')+(r.exampleSlow?'<button class="slow" data-path="'+escapeAttr(r.exampleSlow)+'">مثال بطيء</button>':'')+'</div></article>').join('');
- if(rows.length>180)status.textContent+=' · يتم عرض أول 180 نتيجة؛ ضيّق البحث لرؤية المزيد.';
+const prefixes={fr:'french/pronunciation/',de:'german/pronunciation/'};
+const safePart=/^(basic|advanced)\/[a-z0-9_]+\.mp3$/;
+const safeRemote=/^[a-zA-Z0-9_/-]+\.mp3$/;
+const lang=document.getElementById('language'),search=document.getElementById('search'),list=document.getElementById('list'),status=document.getElementById('status');
+const params=new URLSearchParams(location.search);
+if(labels[params.get('lang')])lang.value=params.get('lang');
+let manifest={languages:{}},manifestStatus='loading',local={},localPromised={},audio=new Audio();
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function normalize(s){return String(s||'').normalize('NFC').toLocaleLowerCase().replace(/\s+/g,' ').trim();}
+function ensureLocal(code){
+ if(!prefixes[code])return Promise.resolve(null);
+ if(localPromised[code])return localPromised[code];
+ localPromised[code]=fetch('audio-text-index-'+code+'.json',{cache:'force-cache'}).then(r=>{
+  if(!r.ok)throw Error('Local index HTTP '+r.status);
+  return r.json();
+ }).then(index=>{
+  if(!index||index.language!==code||!Array.isArray(index.records))throw Error('Invalid audio text index');
+  const groups=new Map();
+  for(const rec of index.records){
+   if(!rec||typeof rec.text!=='string'||!safePart.test(rec.normal||'')||!safePart.test(rec.slow||''))continue;
+   const key=normalize(rec.text);if(!key)continue;
+   if(!groups.has(key))groups.set(key,[]);
+   groups.get(key).push(rec);
+  }
+  const records=[];
+  for(const entries of groups.values()){
+   if(entries.length!==1)continue;
+   const entry=entries[0];
+   records.push({text:entry.text,id:entry.text,arabic:'',normal:prefixes[code]+entry.normal,slow:prefixes[code]+entry.slow});
+  }
+  local[code]={records,source:'local'};
+  return local[code];
+ }).catch(()=>{
+  local[code]=null;return null;
+ }).then(value=>{render();return value;});
+ return localPromised[code];
 }
-function escapeHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
-function escapeAttr(s){return escapeHtml(s).replace(/'/g,'&#39;');}
-list.addEventListener('click',e=>{const b=e.target.closest('button[data-path]');if(b&&b.dataset.path)play(b.dataset.path);});
-lang.addEventListener('change',render); search.addEventListener('input',render);
-fetch(MANIFEST_URL).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(json=>{if(!json||json.schemaVersion!==1||!json.languages)throw new Error('Invalid manifest');data=json;render();}).catch(err=>{status.textContent='مكتبة التسجيلات المفهرسة غير متاحة حاليًا؛ يمكنك الدخول مباشرة إلى الأكاديميات الثماني. لم يتم تشغيل أو اختبار أي ملف صوتي من هذه الصفحة بعد.';const academies=[['ptbr','🇧🇷','البرتغالية البرازيلية','ptbr-academy.html'],['en','🇬🇧','الإنجليزية','english-academy.html'],['it','🇮🇹','الإيطالية','italian-academy.html'],['es','🇪🇸','الإسبانية','spanish-academy.html'],['fr','🇫🇷','الفرنسية','french-academy.html'],['de','🇩🇪','الألمانية','german-academy.html'],['ru','🇷🇺','الروسية','russian-academy.html'],['pt','🇵🇹','البرتغالية الأوروبية','portuguese-academy.html']];list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>التسجيلات قيد التنظيم والربط.</strong><p>اختر الأكاديمية لمتابعة الدروس الحالية. ستظهر أزرار التسجيل الطبيعي والبطيء هنا بعد تجهيز فهرس موثوق يربط كل ملف بنصه وترجمته، دون تغيير الدروس أو ملفات الصوت الحالية.</p><div class="academy-links">'+academies.map(a=>'<a href="'+a[3]+'">'+a[1]+' '+a[2]+' ←</a>').join('')+'</div><p style="margin-top:12px"><a href="language-academy.html">عرض صفحة جميع الأكاديميات</a></p></div>';});
+function play(path){
+ if(!path||!safeRemote.test(path)){
+  status.textContent='تعذر التحقق من مسار الملف الصوتي. لم نحاول تشغيله.';return;
+ }
+ audio.pause();audio=new Audio(BASE+path);
+ audio.play().catch(()=>{status.textContent='تعذر تشغيل هذا التسجيل من الخادم؛ وجود مسار في الفهرس لا يضمن إتاحة الملف حاليًا.';});
+}
+function fallbackMarkup(code){
+ return '<div class="empty" style="grid-column:1/-1;text-align:right"><strong>لا يوجد ربط موثوق متاح لهذه اللغة حاليًا في المكتبة.</strong><p>ده لا يعني عدم وجود ملفات MP3. بنحتاج فهرسًا يربط نص كل كلمة بملفها، ونتجنب تسمية أي صوت بالتخمين.</p><p><a href="'+courses[code]+'">افتح الأكاديمية ←</a> · <a href="academy-audio-status.html?lang='+code+'">تقرير التغطية</a></p></div>';
+}
+function render(){
+ const code=lang.value;
+ const pack=local[code]&&local[code].records.length?local[code]:(manifest.languages&&manifest.languages[code]);
+ if(!pack||!Array.isArray(pack.records)){
+  const waiting=manifestStatus==='loading'||(prefixes[code]&&!Object.prototype.hasOwnProperty.call(local,code));
+  status.textContent=labels[code]+(waiting?' · جارٍ تحميل الفهارس المتاحة...':' · لم يتوفر فهرس نصي صالح في المكتبة');
+  list.innerHTML=fallbackMarkup(code);
+  return;
+ }
+ const q=normalize(search.value);
+ const rows=pack.records.filter(r=>normalize([r.text,r.arabic,r.id].join(' ')).includes(q));
+ const localSource=pack.source==='local';
+ status.textContent=labels[code]+' · '+pack.records.length+' عبارة مفهرسة بالنص'+(localSource?' · من الفهرس المحلي المراجع؛ حُذفت النصوص الملتبسة':' · من الفهرس العام')+' · المعروض '+rows.length+' · جودة الصوت والتشغيل لم يُفحصا هنا.';
+ if(!rows.length){list.innerHTML='<div class="empty">لم نعثر على عبارة تطابق البحث.</div>';return;}
+ list.innerHTML=rows.slice(0,180).map(r=>'<article class="item"><div class="phrase" dir="ltr">'+esc(r.text||r.id)+'</div><div class="arabic">'+esc(r.arabic||'')+'</div><div class="actions"><button type="button" data-path="'+esc(r.normal||'')+'">▶ التسجيل</button><button type="button" class="slow" '+(r.slow?'':'disabled')+' data-path="'+esc(r.slow||'')+'">🐢 بطيء</button>'+(r.example?'<button type="button" class="slow" data-path="'+esc(r.example)+'">مثال</button>':'')+(r.exampleSlow?'<button type="button" class="slow" data-path="'+esc(r.exampleSlow)+'">مثال بطيء</button>':'')+'</div></article>').join('');
+ if(rows.length>180)status.textContent+=' · نعرض أول 180 نتيجة؛ ضيّق البحث لرؤية المزيد.';
+}
+list.addEventListener('click',e=>{const button=e.target.closest('button[data-path]');if(button&&!button.disabled)play(button.dataset.path);});
+lang.addEventListener('change',()=>{render();ensureLocal(lang.value);});
+search.addEventListener('input',render);
+render();ensureLocal(lang.value);
+fetch(MANIFEST_URL,{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Manifest HTTP '+r.status);return r.json()}).then(json=>{
+ if(!json||json.schemaVersion!==1||!json.languages)throw Error('Invalid global manifest');
+ manifest=json;manifestStatus='ready';render();
+}).catch(()=>{manifestStatus='unavailable';render();});
 })();
 </script></body></html>
