@@ -1,0 +1,1616 @@
+{
+  "schemaVersion": 1,
+  "locale": "pt-BR",
+  "source": "Safer Discounts original course and phrase trainer, exact-missing from R2 source index",
+  "createdOn": "2026-11-07",
+  "description": "Fixed priority pack for human/licensed natural Brazilian audio production, with a normal and genuinely slower version per text; no audio files are generated or reviewed by this list.",
+  "readyForPublication": false,
+  "counts": {
+    "total": 160,
+    "trainer": 80,
+    "lessonWords": 40,
+    "lessonDialogues": 40
+  },
+  "items": [
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Oi! Eu me chamo Laila.",
+      "arabic": "أهلًا! اسمي ليلى.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "É um prazer conhecer você.",
+      "arabic": "تشرفت بالتعرف عليك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Eu sou do Egito.",
+      "arabic": "أنا من مصر.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Estou aprendendo português brasileiro.",
+      "arabic": "أنا أتعلم البرتغالية البرازيلية.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Você pode falar mais devagar?",
+      "arabic": "هل يمكنك التحدث ببطء أكثر؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Desculpe, não entendi a última palavra.",
+      "arabic": "معذرة، لم أفهم الكلمة الأخيرة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Como você prefere ser chamado?",
+      "arabic": "كيف تحب أن يناديك الآخرون؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "text": "Muito obrigado pela ajuda.",
+      "arabic": "شكرًا جزيلًا على المساعدة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "Que horas são agora?",
+      "arabic": "كم الساعة الآن؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "A aula começa às nove.",
+      "arabic": "تبدأ الحصة الساعة التاسعة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "Podemos nos encontrar amanhã?",
+      "arabic": "هل يمكننا أن نلتقي غدًا؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "Tenho um compromisso na sexta-feira.",
+      "arabic": "عندي موعد يوم الجمعة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "Chego em cerca de dez minutos.",
+      "arabic": "سأصل خلال نحو عشر دقائق.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "A loja fecha às seis da tarde.",
+      "arabic": "يغلق المتجر الساعة السادسة مساءً.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "O atendimento começa pela manhã.",
+      "arabic": "تبدأ الخدمة في الصباح.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "text": "Pode confirmar o horário por mensagem?",
+      "arabic": "هل يمكنك تأكيد الموعد برسالة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Onde fica o balcão de check-in?",
+      "arabic": "أين مكتب تسجيل الوصول؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Preciso despachar esta mala.",
+      "arabic": "أحتاج إلى شحن حقيبة السفر هذه.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Meu voo foi adiado.",
+      "arabic": "تم تأجيل رحلتي الجوية.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Qual é o portão de embarque?",
+      "arabic": "ما رقم بوابة الصعود للطائرة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Posso levar esta mochila na cabine?",
+      "arabic": "هل يمكنني اصطحاب حقيبة الظهر هذه داخل المقصورة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Não encontrei minha bagagem.",
+      "arabic": "لم أجد أمتعتي.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Tenho o comprovante da bagagem.",
+      "arabic": "معي إيصال الأمتعة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "text": "Onde posso informar uma mala extraviada?",
+      "arabic": "أين يمكنني الإبلاغ عن حقيبة مفقودة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Estou viajando a turismo.",
+      "arabic": "أنا أسافر بغرض السياحة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Esta é minha primeira visita ao Brasil.",
+      "arabic": "هذه أول زيارة لي إلى البرازيل.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Vou ficar aqui por uma semana.",
+      "arabic": "سأبقى هنا لمدة أسبوع.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Tenho uma reserva de hotel confirmada.",
+      "arabic": "لدي حجز فندق مؤكد.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Este é meu endereço de hospedagem.",
+      "arabic": "هذا عنوان مكان إقامتي.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Minha passagem de volta está aqui.",
+      "arabic": "تذكرة عودتي هنا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Posso mostrar o comprovante no celular?",
+      "arabic": "هل يمكنني عرض الإثبات على الهاتف؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "text": "Preciso de ajuda para entender a pergunta.",
+      "arabic": "أحتاج مساعدة لفهم السؤال.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Tenho uma reserva em meu nome.",
+      "arabic": "لدي حجز باسمي.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Gostaria de fazer o check-in.",
+      "arabic": "أود إتمام تسجيل الدخول.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "O café da manhã está incluído?",
+      "arabic": "هل الإفطار مشمول؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Qual é o horário do check-out?",
+      "arabic": "ما موعد تسجيل المغادرة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Meu quarto ainda não está pronto.",
+      "arabic": "غرفتي ليست جاهزة بعد.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "O ar-condicionado não está funcionando.",
+      "arabic": "مكيف الهواء لا يعمل.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Preciso de outra toalha, por favor.",
+      "arabic": "أحتاج منشفة أخرى، من فضلك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "text": "Pode me enviar a confirmação da reserva?",
+      "arabic": "هل يمكنك إرسال تأكيد الحجز لي؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Posso ver o cardápio, por favor?",
+      "arabic": "هل يمكنني رؤية قائمة الطعام من فضلك؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Gostaria de pedir arroz e frango.",
+      "arabic": "أود طلب الأرز والدجاج.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Este prato tem frutos do mar?",
+      "arabic": "هل يحتوي هذا الطبق على مأكولات بحرية؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Tenho alergia a amendoim.",
+      "arabic": "لدي حساسية من الفول السوداني.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Pode preparar sem leite?",
+      "arabic": "هل يمكن إعداده بدون حليب؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Quero água sem gás, por favor.",
+      "arabic": "أريد ماءً غير غازي، من فضلك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "A comida está muito apimentada?",
+      "arabic": "هل الطعام حار جدًا؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "text": "Pode trazer a conta quando puder?",
+      "arabic": "هل يمكنك إحضار الحساب عندما تستطيع؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Como chego ao centro da cidade?",
+      "arabic": "كيف أصل إلى وسط المدينة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Onde fica a estação de metrô?",
+      "arabic": "أين تقع محطة المترو؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Este ônibus vai para o aeroporto?",
+      "arabic": "هل تذهب هذه الحافلة إلى المطار؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Preciso comprar um bilhete.",
+      "arabic": "أحتاج إلى شراء تذكرة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Pode parar nesta esquina, por favor?",
+      "arabic": "هل يمكنك التوقف عند هذا الركن من فضلك؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "Quanto custa a corrida até o hotel?",
+      "arabic": "كم تكلفة الرحلة إلى الفندق؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "É possível pagar pelo aplicativo?",
+      "arabic": "هل يمكن الدفع عبر التطبيق؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "text": "A entrada fica do outro lado da rua.",
+      "arabic": "المدخل على الجانب الآخر من الشارع.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Quanto custa esta camiseta?",
+      "arabic": "كم ثمن هذا القميص؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Você tem um tamanho maior?",
+      "arabic": "هل لديك مقاس أكبر؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Posso experimentar esta roupa?",
+      "arabic": "هل يمكنني تجربة هذه القطعة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Existe outra cor disponível?",
+      "arabic": "هل يوجد لون آخر متاح؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Aceitam cartão de crédito?",
+      "arabic": "هل تقبلون بطاقة الائتمان؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Quero pagar em dinheiro.",
+      "arabic": "أريد الدفع نقدًا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Posso trocar se não servir?",
+      "arabic": "هل يمكنني الاستبدال إن لم يناسب المقاس؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "text": "Preciso da nota fiscal, por favor.",
+      "arabic": "أحتاج إلى الفاتورة، من فضلك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Preciso encontrar uma farmácia aberta.",
+      "arabic": "أحتاج إلى إيجاد صيدلية مفتوحة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Estou com dor de cabeça.",
+      "arabic": "أعاني صداعًا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Preciso falar com um médico.",
+      "arabic": "أحتاج إلى التحدث إلى طبيب.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Onde fica o hospital mais próximo?",
+      "arabic": "أين يقع أقرب مستشفى؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Por favor, chame uma ambulância.",
+      "arabic": "من فضلك، اتصل بالإسعاف.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Perdi meu documento de identidade.",
+      "arabic": "فقدت وثيقة هويتي.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Pode me ajudar a ligar para a polícia?",
+      "arabic": "هل يمكنك مساعدتي في الاتصال بالشرطة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "text": "Não estou conseguindo falar bem.",
+      "arabic": "لا أستطيع التحدث جيدًا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Estou procurando um apartamento para alugar.",
+      "arabic": "أبحث عن شقة للإيجار.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "O aluguel inclui água e energia?",
+      "arabic": "هل الإيجار يشمل الماء والكهرباء؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Gostaria de conhecer as condições do contrato.",
+      "arabic": "أود الاطلاع على شروط العقد.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "A torneira da cozinha está vazando.",
+      "arabic": "صنبور المطبخ يسرب المياه.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Pode informar quando virá o técnico?",
+      "arabic": "هل يمكنك إبلاغي بموعد مجيء الفني؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Estou procurando oportunidades de trabalho.",
+      "arabic": "أبحث عن فرص عمل.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Tenho experiência em atendimento ao cliente.",
+      "arabic": "لدي خبرة في خدمة العملاء.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P0",
+      "source": "practical-trainer",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "text": "Podemos marcar uma entrevista para amanhã?",
+      "arabic": "هل يمكننا تحديد مقابلة غدًا؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Meu nome é…",
+      "arabic": "اسمي…",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Prazer",
+      "arabic": "تشرفت بمعرفتك",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Eu sou do Egito",
+      "arabic": "أنا من مصر",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "text": "Com licença",
+      "arabic": "بعد إذنك / لو سمحت للمرور",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "text": "Eu falo um pouco de português",
+      "arabic": "أتكلم قليلًا من البرتغالية",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "text": "Pode falar devagar?",
+      "arabic": "ممكن تتكلم ببطء؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "text": "Não entendi",
+      "arabic": "لم أفهم",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Tudo bem.",
+      "arabic": "أنا بخير / تمام",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "E você?",
+      "arabic": "وأنت؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "estudamos",
+      "arabic": "نحن ندرس",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "trabalha",
+      "arabic": "يعمل / تعمل (مع você أو ele/ela)",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Sou egípcio.",
+      "arabic": "أنا مصري (متحدث رجل).",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Sou egípcia.",
+      "arabic": "أنا مصرية (متحدثة).",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Ela é professora.",
+      "arabic": "هي معلمة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Ele é médico.",
+      "arabic": "هو طبيب.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "De onde você é?",
+      "arabic": "من أين أنت؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Qual é sua profissão?",
+      "arabic": "ما مهنتك؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "text": "Eu sou estudante.",
+      "arabic": "أنا طالب / طالبة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+      "text": "Estou bem.",
+      "arabic": "أنا بخير.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-vocabulary",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+      "text": "Estou cansado.",
+      "arabic": "أنا متعب (متحدث رجل).",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "um / uma",
+      "arabic": "1 — واحد / واحدة؛ يتغير حسب الاسم",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "dois / duas",
+      "arabic": "2 — اثنان / اثنتان",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "quatorze / catorze",
+      "arabic": "14 — أربعة عشر",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "vinte e um",
+      "arabic": "21 — واحد وعشرون",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "vinte e três",
+      "arabic": "23 — ثلاثة وعشرون",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "cento e um",
+      "arabic": "101 — مئة وواحد",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "duzentos / duzentas",
+      "arabic": "200 — مئتان؛ يتغير الجنس",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "trezentos",
+      "arabic": "300 — ثلاثمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "quatrocentos",
+      "arabic": "400 — أربعمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "quinhentos",
+      "arabic": "500 — خمسمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "seiscentos",
+      "arabic": "600 — ستمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "setecentos",
+      "arabic": "700 — سبعمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "oitocentos",
+      "arabic": "800 — ثمانمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "novecentos",
+      "arabic": "900 — تسعمئة",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "mil",
+      "arabic": "1,000 — ألف",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "cento e quarenta e cinco",
+      "arabic": "145 — مئة وخمسة وأربعون",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "duzentos e vinte",
+      "arabic": "220 — مئتان وعشرون",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "Quantos anos você tem?",
+      "arabic": "كم عمرك؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "Tenho 28 anos.",
+      "arabic": "عمري 28 سنة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "foundation-vocabulary",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "text": "Quanto custa?",
+      "arabic": "بكم السعر؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "text": "Oi! Bom dia!",
+      "arabic": "أهلًا! صباح الخير!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "text": "Bom dia! Tudo bem?",
+      "arabic": "صباح النور! كل شيء تمام؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "text": "Tudo bem, obrigado. Tchau!",
+      "arabic": "تمام، شكرًا. مع السلامة!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Oi! Como você se chama?",
+      "arabic": "أهلًا! اسمك إيه؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Meu nome é Ahmed. E você?",
+      "arabic": "اسمي أحمد. وإنت؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "text": "Eu sou a Ana. Prazer!",
+      "arabic": "أنا آنا. تشرفت بيك!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "text": "Um café, por favor.",
+      "arabic": "قهوة من فضلك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "text": "Claro!",
+      "arabic": "طبعًا!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "text": "Obrigado!",
+      "arabic": "شكرًا!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "text": "Um pouco.",
+      "arabic": "قليلًا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "text": "Tudo bem. Pode falar devagar?",
+      "arabic": "لا بأس. ممكن تتكلم ببطء؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Oi! Tudo bem?",
+      "arabic": "أهلًا! عامل إيه؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Tudo bem, e você?",
+      "arabic": "تمام، وإنت؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Tudo bem. Meu nome é Lucas.",
+      "arabic": "تمام. اسمي لوكاس.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Prazer! Eu sou Sara.",
+      "arabic": "تشرفت! أنا سارة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "text": "Muito prazer!",
+      "arabic": "سعيد جدًا بمعرفتك!",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "Você estuda português?",
+      "arabic": "هل تدرس البرتغالية؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "Sim, eu estudo português.",
+      "arabic": "نعم، أنا أدرس البرتغالية.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "E seus amigos?",
+      "arabic": "وماذا عن أصدقائك؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "a1-dialogues",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "text": "Nós estudamos juntos.",
+      "arabic": "نحن ندرس معًا.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "تسأل عن مكان شيء",
+      "text": "Com licença, onde fica o banheiro?",
+      "arabic": "بعد إذنك، الحمّام فين؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "تسأل عن مكان شيء",
+      "text": "Fica ali, à direita.",
+      "arabic": "هناك، على اليمين.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "text": "Como chego à estação?",
+      "arabic": "أوصل للمحطة إزاي؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "text": "Siga reto e vire à direita na esquina.",
+      "arabic": "امشِ على طول وانعطف يمين عند الناصية.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "text": "É longe?",
+      "arabic": "هي بعيدة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "text": "Não, é perto.",
+      "arabic": "لا، قريبة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "text": "Que horas são?",
+      "arabic": "الساعة كام؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "text": "São três horas.",
+      "arabic": "الساعة الثالثة.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "text": "E que dia é hoje?",
+      "arabic": "والنهارده يوم إيه؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "text": "Hoje é segunda-feira.",
+      "arabic": "النهارده يوم الاثنين.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "text": "Quanto custa esta água?",
+      "arabic": "المياه دي بكام؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "text": "Custa cinco reais.",
+      "arabic": "سعرها خمسة ريالات برازيلية.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "text": "Aceita cartão?",
+      "arabic": "بتقبلوا البطاقة؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "text": "Sim, aceita.",
+      "arabic": "أيوه، بنقبلها.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "text": "Estou procurando uma camiseta.",
+      "arabic": "أنا بدوّر على تيشيرت.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "text": "Qual tamanho?",
+      "arabic": "مقاس إيه؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "text": "Tem um tamanho maior?",
+      "arabic": "في مقاس أكبر؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "text": "Sim, vou pegar para você.",
+      "arabic": "أيوه، هجيبهولك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "تطلب أكلًا ومشروبًا",
+      "text": "Boa tarde! Eu queria um suco, por favor.",
+      "arabic": "مساء الخير! كنت عايز عصير من فضلك.",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    },
+    {
+      "priority": "P1",
+      "source": "travel-dialogues",
+      "level": "travel",
+      "lesson": "تطلب أكلًا ومشروبًا",
+      "text": "Com açúcar ou sem açúcar?",
+      "arabic": "بسُكر ولا من غير سكر؟",
+      "recordingStatus": "missing-exact-source-text",
+      "humanValidated": false
+    }
+  ]
+}
