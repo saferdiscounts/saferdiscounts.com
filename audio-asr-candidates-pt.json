@@ -5,9 +5,9 @@
   "source": "Cloudflare R2 audio binary",
   "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy term match; no human listening; candidate records only",
   "reviewStatus": "automated-unverified",
-  "requested": 20,
-  "agreed": 5,
-  "exactLessonCandidates": 2,
+  "requested": 40,
+  "agreed": 10,
+  "exactLessonCandidates": 3,
   "records": [
     {
       "normal": "portuguese/pronunciation/basic/bas_001.mp3",
@@ -373,6 +373,369 @@
         "bytes": 16605
       },
       "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_021.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_021_slow.mp3",
+      "original": {
+        "text": "Prazer em conhecê-lo.",
+        "duration": 1.5726875,
+        "logprob": -0.12939453249176344,
+        "bytes": 10461
+      },
+      "slowRecognition": {
+        "text": "O prazer é em conhecê-lo.",
+        "duration": 2.191375,
+        "logprob": -0.14969307716403688,
+        "bytes": 14589
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_022.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_022_slow.mp3",
+      "original": {
+        "text": "Até logo.",
+        "duration": 1.146,
+        "logprob": -0.4397786657015483,
+        "bytes": 7101
+      },
+      "slowRecognition": {
+        "text": "Até logo!",
+        "duration": 1.423375,
+        "logprob": -0.4993489384651184,
+        "bytes": 9237
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Até logo",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_023.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_023_slow.mp3",
+      "original": {
+        "text": "Até amanhã.",
+        "duration": 1.3166875,
+        "logprob": -0.38476561648505075,
+        "bytes": 8541
+      },
+      "slowRecognition": {
+        "text": "Até amanhã.",
+        "duration": 1.807375,
+        "logprob": -0.6116071598870414,
+        "bytes": 12189
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_024.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_024_slow.mp3",
+      "original": {
+        "text": "Adeus.",
+        "duration": 0.911375,
+        "logprob": -0.3684895733992259,
+        "bytes": 5637
+      },
+      "slowRecognition": {
+        "text": "Adeus.",
+        "duration": 1.167375,
+        "logprob": -0.4853515823682149,
+        "bytes": 7293
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_025.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_025_slow.mp3",
+      "original": {
+        "text": "Tchau.",
+        "duration": 0.762,
+        "logprob": -0.4098307341337204,
+        "bytes": 4413
+      },
+      "slowRecognition": {
+        "text": "E tchau!",
+        "duration": 0.954,
+        "logprob": -0.5644531079701015,
+        "bytes": 5757
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_026.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_026_slow.mp3",
+      "original": {
+        "text": "Por favor.",
+        "duration": 1.039375,
+        "logprob": -0.4300130407015483,
+        "bytes": 6333
+      },
+      "slowRecognition": {
+        "text": "E por favor.",
+        "duration": 1.338,
+        "logprob": -0.5608258928571429,
+        "bytes": 8757
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_027.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_027_slow.mp3",
+      "original": {
+        "text": "Obrigado.",
+        "duration": 1.103375,
+        "logprob": -0.4703776041666667,
+        "bytes": 7149
+      },
+      "slowRecognition": {
+        "text": "Obrigada.",
+        "duration": 1.4446875,
+        "logprob": -0.6272786358992258,
+        "bytes": 9861
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_028.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_028_slow.mp3",
+      "original": {
+        "text": "Do nada.",
+        "duration": 1.039375,
+        "logprob": -0.504882832368215,
+        "bytes": 6741
+      },
+      "slowRecognition": {
+        "text": "E do nada.",
+        "duration": 1.295375,
+        "logprob": -0.7745535543986729,
+        "bytes": 9093
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_029.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_029_slow.mp3",
+      "original": {
+        "text": "Desculpa.",
+        "duration": 1.167375,
+        "logprob": -0.24107142857142858,
+        "bytes": 7173
+      },
+      "slowRecognition": {
+        "text": "Desculpa.",
+        "duration": 1.5086875,
+        "logprob": -0.4966517686843872,
+        "bytes": 9861
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_030.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_030_slow.mp3",
+      "original": {
+        "text": "Com licença.",
+        "duration": 1.295375,
+        "logprob": -0.47154016154153006,
+        "bytes": 8757
+      },
+      "slowRecognition": {
+        "text": "Com Lisa Sainz.",
+        "duration": 1.85,
+        "logprob": -0.7135416666666666,
+        "bytes": 11949
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_031.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_031_slow.mp3",
+      "original": {
+        "text": "Sim.",
+        "duration": 0.8046875,
+        "logprob": -0.60703125,
+        "bytes": 4557
+      },
+      "slowRecognition": {
+        "text": "Assim.",
+        "duration": 1.039375,
+        "logprob": -0.709375,
+        "bytes": 6333
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_032.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_032_slow.mp3",
+      "original": {
+        "text": "Não.",
+        "duration": 0.9966875,
+        "logprob": -0.828125,
+        "bytes": 5757
+      },
+      "slowRecognition": {
+        "text": "O que é isso?",
+        "duration": 1.2526875,
+        "logprob": -1.2226562798023224,
+        "bytes": 7845
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_033.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_033_slow.mp3",
+      "original": {
+        "text": "Você.",
+        "duration": 0.9326875,
+        "logprob": -0.6765625,
+        "bytes": 5469
+      },
+      "slowRecognition": {
+        "text": "Você.",
+        "duration": 1.1886875,
+        "logprob": -0.791015625,
+        "bytes": 7485
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_034.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_034_slow.mp3",
+      "original": {
+        "text": "Zellulah.",
+        "duration": 0.783375,
+        "logprob": -0.9184570610523224,
+        "bytes": 4629
+      },
+      "slowRecognition": {
+        "text": "Vê-lê-lê.",
+        "duration": 1.018,
+        "logprob": -0.7955729365348816,
+        "bytes": 5853
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_035.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_035_slow.mp3",
+      "original": {
+        "text": "Zealot",
+        "duration": 0.8046875,
+        "logprob": -0.808593730131785,
+        "bytes": 4725
+      },
+      "slowRecognition": {
+        "text": "Velas",
+        "duration": 1.039375,
+        "logprob": -0.435546875,
+        "bytes": 6165
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_036.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_036_slow.mp3",
+      "original": {
+        "text": "Nós.",
+        "duration": 0.783375,
+        "logprob": -0.9515625,
+        "bytes": 4557
+      },
+      "slowRecognition": {
+        "text": "E não acho que...",
+        "duration": 1.0606875,
+        "logprob": -1.2019882500171661,
+        "bytes": 6549
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_037.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_037_slow.mp3",
+      "original": {
+        "text": "Vocês...",
+        "duration": 0.954,
+        "logprob": -0.9588272094726562,
+        "bytes": 5853
+      },
+      "slowRecognition": {
+        "text": "Ao vocês.",
+        "duration": 1.1886875,
+        "logprob": -0.9772135814030966,
+        "bytes": 7341
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_038.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_038_slow.mp3",
+      "original": {
+        "text": "Elas",
+        "duration": 0.89,
+        "logprob": -0.537890625,
+        "bytes": 5013
+      },
+      "slowRecognition": {
+        "text": "Bom dia, Lula, gente.",
+        "duration": 1.167375,
+        "logprob": -0.594460205598311,
+        "bytes": 7053
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_039.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_039_slow.mp3",
+      "original": {
+        "text": "E Lush",
+        "duration": 0.89,
+        "logprob": -0.7408854365348816,
+        "bytes": 5085
+      },
+      "slowRecognition": {
+        "text": "Meio das.",
+        "duration": 1.0606875,
+        "logprob": -1.0494166782924108,
+        "bytes": 6789
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "portuguese/pronunciation/basic/bas_040.mp3",
+      "slow": "portuguese/pronunciation/basic/bas_040_slow.mp3",
+      "original": {
+        "text": "Zor",
+        "duration": 0.718375,
+        "logprob": -0.797265625,
+        "bytes": 4125
+      },
+      "slowRecognition": {
+        "text": "Ansuou.",
+        "duration": 0.89,
+        "logprob": -1.11328125,
+        "bytes": 5133
+      },
+      "agreed": false,
       "exactLesson": null
     }
   ]
