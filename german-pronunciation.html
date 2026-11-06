@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="421 عبارة ألمانية مع التسجيل الأصلي والبطيء. مصدر كل تسجيل مُطابق رقميًا للملفات المرفوعة على Safer Discounts.">
+<title>مكتبة النطق الألماني الموثقة | Safer Discounts</title>
+<style>
+:root{color-scheme:light;--blue:#20589a;--ink:#22334b;--line:#d9e3ec}
+*{box-sizing:border-box}body{margin:0;background:#f3f7fa;color:var(--ink);font:16px/1.85 Tahoma,Arial,sans-serif}
+header{background:linear-gradient(115deg,#183b69,#2e67a1);color:#fff;padding:27px 16px}
+.wrap{max-width:1100px;margin:auto;padding:0 16px}h1{margin:0 0 10px;font-size:clamp(23px,3vw,32px)}h2{font-size:21px}
+header p{margin:0 0 12px;color:#edf5ff}a{color:inherit}header a{display:inline-block;padding:7px 11px;background:#ffffff24;border-radius:9px;text-decoration:none;margin-inline-end:8px}
+main{padding:20px 0 60px}.hint{background:#eaf5ed;border:1px solid #b0d9b9;border-radius:13px;padding:14px 16px}
+.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{font:inherit;padding:10px;border-radius:10px;border:1px solid var(--line);background:#fff}.toolbar input{flex:1;min-width:180px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:12px}.item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.phrase{direction:ltr;text-align:left;unicode-bidi:isolate;font-size:18px;font-weight:850;overflow-wrap:anywhere;min-height:38px}.actions{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 0}.actions button{font:inherit;border-radius:9px;border:1px solid #a3c5dc;padding:7px 10px;background:#ebf5fc;color:#20538e;cursor:pointer}.actions button:hover,.actions button:focus-visible{background:#d6e9f6;outline-color:#18599b}.muted{color:#536779;font-size:14px}#error{color:#aa2d19;font-weight:700}#count{font-weight:700;color:#164f82}.foot{border-top:1px solid var(--line);padding:15px;font-size:13px;color:#596b7a;text-align:center}
+</style></head>
+<body><header><div class="wrap"><h1>🇩🇪 مكتبة النطق الألماني — تسجيلات موثّقة</h1><p>421 عبارة مرتبطة نصيًا بملفات MP3 الأصلية، لكل عبارة تسجيل عادي وتسجيل بطيء.</p><a href="german-academy.html">← الأكاديمية الألمانية</a><a href="language-academy.html#arabic-academies">جميع الكورسات العربية</a></div></header>
+<main class="wrap"><div class="hint">✅ تم التأكد من تطابق البصمات الرقمية للـ842 ملفًا في R2 مع التسجيلات المضمّنة في الفهرس الألماني الأصلي. كل عبارة هنا مربوطة بالملف الذي حدده المصدر، من غير ربط تخميني. جودة اللفظ نفسها تحتاج تقييم استماع منفصل.</div>
+<div class="toolbar"><label for="level">المستوى</label><select id="level"><option value="all">الأساسي والمتقدم</option><option value="basic">الأساسي</option><option value="advanced">المتقدم</option></select><input id="search" type="search" aria-label="البحث عن كلمة ألمانية" placeholder="ابحث عن عبارة ألمانية..."><button id="stop" type="button">⏹ إيقاف الصوت</button></div>
+<p id="count" role="status">جارٍ قراءة الفهرس...</p><p id="error" aria-live="polite"></p><div class="grid" id="list"></div></main>
+<footer class="foot">Safer Discounts · لا تعتمد على تشابه أرقام الملفات؛ استخدم الفهرس الموثّق فقط.</footer>
+<script>
+(function(){
+'use strict';
+const host='https://audio.saferdiscounts.com/german/pronunciation/';
+const list=document.getElementById('list'),status=document.getElementById('count'),err=document.getElementById('error'),level=document.getElementById('level'),search=document.getElementById('search');
+const audio=new Audio();let records=[];
+function play(path){if(!/^(basic|advanced)\/de_(?:bas|adv)_\d{3}_?(?:slow)?\.mp3$/.test(path)){err.textContent='اسم الملف غير صالح.';return}audio.pause();audio.src=host+path;audio.play().then(()=>{err.textContent=''}).catch(()=>{err.textContent='تعذر تشغيل التسجيل. تحقق من الاتصال أو أعد المحاولة.'})}
+function button(parent,label,path){const b=document.createElement('button');b.type='button';b.textContent=label;b.onclick=()=>play(path);parent.appendChild(b)}
+function draw(){const q=search.value.trim().toLocaleLowerCase(),selected=level.value;const filtered=records.filter(r=>(selected==='all'||r.normal.startsWith(selected+'/'))&&(!q||r.text.toLocaleLowerCase().includes(q)));status.textContent='عبارات مطابقة: '+filtered.length+' من '+records.length+(filtered.length>120?' · يتم عرض أول 120؛ استخدم البحث لتضييق النتائج':'');list.replaceChildren();filtered.slice(0,120).forEach(r=>{const card=document.createElement('article');card.className='item';const name=document.createElement('div');name.className='phrase';name.lang='de';name.textContent=r.text;card.appendChild(name);const buttons=document.createElement('div');buttons.className='actions';button(buttons,'▶ التسجيل الأصلي',r.normal);button(buttons,'🐢 بطيء',r.slow);card.appendChild(buttons);list.appendChild(card)})}
+document.getElementById('stop').onclick=()=>audio.pause();level.onchange=draw;search.oninput=draw;
+fetch('audio-text-index-de.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{if(data.language!=='de'||!Array.isArray(data.records)||data.records.length!==421)throw Error('Invalid index');records=data.records;draw()}).catch(()=>{status.textContent='فهرس الصوت غير متاح حاليًا';err.textContent='لن نشغّل أي ملف بدون ربط مُثبت بالنص.'});
+})();
+</script></body></html>
