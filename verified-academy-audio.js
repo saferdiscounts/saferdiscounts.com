@@ -43,16 +43,21 @@ function sync(){
    const record=word&&entries.get(normalize(word.textContent));
    if(word)total++;
    if(record)matched++;
-   if(card.dataset.sdVerifiedAudio)continue;
-   card.dataset.sdVerifiedAudio='checked';
+   const key=normalize(word&&word.textContent);
+   if(card.dataset.sdVerifiedAudio===key)continue;
+   card.querySelectorAll('.sd-verified-audio').forEach(node=>node.remove());
+   card.dataset.sdVerifiedAudio=key;
    if(record)makeButtons(card,record);
  }
  for(const control of controls){
    const record=entries.get(normalize(control.dataset.say||control.textContent));
    if(record)dialogueMatched++;
-   if(control.dataset.sdVerifiedAudio)continue;
-   control.dataset.sdVerifiedAudio='checked';
-   if(record)makeButtons(control.parentElement,record);
+   const key=normalize(control.dataset.say||control.textContent);
+   if(control.dataset.sdVerifiedAudio===key)continue;
+   const parent=control.parentElement;
+   if(parent)parent.querySelectorAll('.sd-verified-audio').forEach(node=>node.remove());
+   control.dataset.sdVerifiedAudio=key;
+   if(record&&parent)makeButtons(parent,record);
  }
  status.textContent='🎧 هذا الدرس: '+matched+' من '+total+' مفردات لها ربط نصي مباشر بالتسجيل العادي والبطيء'
    +(controls.length?' · الحوارات المطابقة: '+dialogueMatched+' من '+controls.length:'')
