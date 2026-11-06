@@ -41,7 +41,16 @@ const checks=[
  ['pt-PT','a vírgula','فاصلة','writing'],
  ['de','Punkt','نقطة','writing'],
  ['it','segno di punteggiatura','علامة الترقيم','writing'],
- ['en','you','أنت',null]
+ ['en','you','أنت',null],
+ ['en','tomato','طماطم','tomato'],
+ ['en','banana','موز','banana'],
+ ['en','orange','برتقال','orange'],
+ ['en','orange','اللون البرتقالي','colors'],
+ ['it','pomodoro','طماطم','tomato'],
+ ['es','pollo','دجاج','chicken'],
+ ['ru','банан','موز','banana'],
+ ['en','carrot','جزر','carrot'],
+ ['en','grapes','عنب','grapes']
 ];
 let failures=0;
 for(const [lang,word,meaning,expected] of checks){
