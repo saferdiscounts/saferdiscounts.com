@@ -245,3 +245,25 @@ test('All 90 Brazilian lesson quizzes have valid distinct choices and explanatio
   assert.ok(typeof lesson.explain==='string'&&lesson.explain.trim().length>=15,where+' missing explanation');
  }
 });
+
+test('All 216 European academy lesson quizzes and scenarios have distinct usable answers',()=>{
+ let checked=0;
+ for(const lang of european){
+  const items=lessons(lang+'-academy.html');
+  for(const [i,l] of items.entries()){
+   const where=lang+' lesson '+(i+1);
+   for(const [label,question,options,correct] of [
+    ['quiz',l.q,l.answers,l.correct],
+    ['scenario',l.scenario.question,l.scenario.options,l.scenario.correct]
+   ]){
+    assert.ok(typeof question==='string'&&question.trim().length>=5,where+' '+label+' missing question');
+    assert.ok(Array.isArray(options)&&options.length>=3,where+' '+label+' missing options');
+    assert.ok(options.every(x=>typeof x==='string'&&x.trim()),where+' '+label+' blank option');
+    assert.equal(new Set(options.map(x=>x.trim().toLocaleLowerCase())).size,options.length,where+' '+label+' duplicate options');
+    assert.ok(Number.isInteger(correct)&&correct>=0&&correct<options.length,where+' '+label+' invalid answer');
+    checked++;
+   }
+  }
+ }
+ assert.equal(checked,432,'Expected quiz and scenario for each of 216 lessons');
+});
