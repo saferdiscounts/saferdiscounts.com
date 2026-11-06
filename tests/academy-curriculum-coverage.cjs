@@ -112,7 +112,7 @@ test('European lessons have valid assessable teaching and practice content at ev
 
 test('Brazilian Portuguese lessons provide complete assessed learning tasks',()=>{
  const items=lessons('ptbr-academy.html');
- assert.equal(items.length,90,'Brazilian Portuguese lesson count');
+ assert.equal(items.length,97,'Brazilian Portuguese lesson count');
  const tracks=new Set(items.map(x=>x.track));
  for(const track of ['a1','foundation','travel','a2','b1','b2','c1','c2'])assert.ok(tracks.has(track),'Missing track '+track);
  for(const [i,l] of items.entries()){
@@ -232,9 +232,9 @@ test('Brazilian writing feedback supports fill-in phrase templates and slash alt
  assert.match(html,/const matched=l\.writing\.keywords\.filter\(k=>writingPhraseMatches/);
 });
 
-test('All 90 Brazilian lesson quizzes have valid distinct choices and explanations',()=>{
+test('All 97 Brazilian lesson quizzes have valid distinct choices and explanations',()=>{
  const items=lessons('ptbr-academy.html');
- assert.equal(items.length,90);
+ assert.equal(items.length,97);
  for(const [index,lesson] of items.entries()){
   const where='Brazilian lesson '+(index+1)+' '+lesson.title;
   assert.ok(typeof lesson.q==='string'&&lesson.q.trim().length>=10,where+' missing meaningful question');
@@ -379,8 +379,8 @@ test('Brazilian zero level follows alphabet, sounds, grammar, verbs and only the
  const begin=html.indexOf('const foundationOrder='),end=html.indexOf('\nfunction lessonNumber(',begin);
  assert.ok(begin>0&&end>begin,'Need explicit curriculum sequence separate from original IDs');
  const order=vm.runInNewContext(html.slice(begin,end)+';lessonOrder',{lessons:items},{timeout:2000});
- assert.equal(order.length,90);
- assert.equal(new Set(order).size,90,'All 90 lessons appear exactly once');
+ assert.equal(order.length,97);
+ assert.equal(new Set(order).size,97,'All 97 lessons appear exactly once');
  const initial=[21,22,23,24,25,26,27,28,29,30,31,32,33,34,5];
  assert.deepEqual(Array.from(order.slice(0,15)),initial,'Numbers must follow letters, pronouns and verbs');
  assert.deepEqual(Array.from(order.slice(15,20)),[0,1,2,3,4],'A1 conversation comes after the zero-level foundation');
@@ -435,7 +435,7 @@ test('Beginner Brazilian writing practice starts with symbols and short guided f
 
 test('Every Brazilian lesson uses a level-appropriate writing task rather than the same novice dialogue',()=>{
  const items=lessons('ptbr-academy.html');
- const expected={foundation:15,a1:5,travel:15,a2:12,b1:14,b2:12,c1:9,c2:8};
+ const expected={foundation:15,a1:12,travel:15,a2:12,b1:14,b2:12,c1:9,c2:8};
  const counts={};
  for(const [i,l] of items.entries()){
   counts[l.track]=(counts[l.track]||0)+1;
