@@ -129,3 +129,22 @@ test('Manual review workbench does not turn machine proposals into human approva
  assert.match(reporting,/asrProvisionalAudit/);
  assert.match(reporting,/لم يُعتمد أي منها باستماع بشري بعد/);
 });
+
+test('Original offline source importer supports local ZIP/HTML while rejecting unverified file-to-word links',()=>{
+ const importer=read('academy-original-audio-import.html');
+ assert.match(importer,/name="robots" content="noindex,follow"/);
+ assert.match(importer,/JSZip\.loadAsync/);
+ assert.match(importer,/DOMParser\(\)\.parseFromString\(raw,'text\/html'\)/);
+ assert.match(importer,/row\.querySelector\('\.en'\)/);
+ assert.match(importer,/row\.querySelectorAll\('button\[onclick\]'\)/);
+ assert.match(importer,/inventory\.get\(absolute\)/);
+ assert.match(importer,/rows\.length!==1/);
+ assert.match(importer,/humanAudioReviewed:false/);
+ assert.match(importer,/application\/json/);
+ assert.ok(!importer.includes('fetch("https://api.github.com/'),'Source import must not publish or upload any HTML');
+ const scripts=[...importer.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]).filter(Boolean);
+ assert.ok(scripts.length>0);
+ for(const script of scripts)assert.doesNotThrow(()=>new vm.Script(script));
+ assert.match(read('audio-review-workbench.html'),/href="academy-original-audio-import\.html"/);
+ assert.match(read('academy-audio-status.html'),/academy-original-audio-import\.html/);
+});
