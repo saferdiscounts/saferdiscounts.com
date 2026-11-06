@@ -155,13 +155,17 @@ function setupRussianFoundation(unit){
  });
  // The answer must be heard, not printed in the question or in the audio button.
  quiz.classList.add('ru-audio-quiz');
- quiz.innerHTML='<h3>🎧 اختبر سمعك: أي حرف سمعته؟</h3><p>اضغط للاستماع لاسم الحرف الروسي، ثم اختر رمزه من الأزرار. لا يظهر رمز الإجابة في نص السؤال. أجب بعد مراجعة الدرس، دون النظر إلى بطاقات الحروف.</p><p class="muted">الصوت من صوت روسي في المتصفح، وليس تسجيلًا بشريًا موثقًا. إذا لم يتوفر صوت روسي فلن نحتسب اختبارًا سمعيًا. '+(unit===1?'الحرفان Ъ وЬ بلا صوت مستقل، ولذلك لا يُختبران كصوت منفرد.':'')+'</p><button id="ruStartLetters" type="button" class="primary">ابدأ اختبار الاستماع</button><div id="ruLetterExam" hidden><p id="ruLetterQuestion" class="muted"></p><button type="button" id="ruListenLetter">🔊 استمع إلى الحرف</button><div id="ruLetterOptions" class="quiz-options" role="group" aria-label="اختر رمز الحرف المسموع"></div><p id="ruLetterStatus" class="feedback" role="status" aria-live="polite"></p></div>';
+ quiz.innerHTML='<h3>🎧 اختبر سمعك: أي حرف سمعته؟</h3><p>اضغط للاستماع لاسم الحرف الروسي، ثم اختر رمزه من الأزرار. لا يظهر رمز الإجابة في نص السؤال. أجب بعد مراجعة الدرس، دون النظر إلى بطاقات الحروف.</p><p class="muted">الصوت من صوت روسي في المتصفح، وليس تسجيلًا بشريًا موثقًا. إذا لم يتوفر صوت روسي فلن نحتسب اختبارًا سمعيًا. '+(unit===1?'الحرفان Ъ وЬ بلا صوت مستقل، ولذلك لا يُختبران كصوت منفرد.':'')+'</p><button id="ruStartLetters" type="button" class="primary">ابدأ اختبار الاستماع</button><div id="ruLetterExam" hidden><p id="ruLetterQuestion" class="muted"></p><button type="button" id="ruListenLetter">🔊 استمع إلى الحرف</button> <button type="button" id="ruStopLetters">إنهاء التدريب والعودة للشرح</button><div id="ruLetterOptions" class="quiz-options" role="group" aria-label="اختر رمز الحرف المسموع"></div><p id="ruLetterStatus" class="feedback" role="status" aria-live="polite"></p></div>';
  const start=quiz.querySelector('#ruStartLetters');
  const exam=quiz.querySelector('#ruLetterExam');
  const question=quiz.querySelector('#ruLetterQuestion');
  const options=quiz.querySelector('#ruLetterOptions');
  const status=quiz.querySelector('#ruLetterStatus');
  const listen=quiz.querySelector('#ruListenLetter');
+ const stop=quiz.querySelector('#ruStopLetters');
+ const studySections=[...panel.querySelectorAll(':scope > .section')].filter(section=>section!==quiz);
+ const visual=panel.querySelector('#visualLesson');
+ function focusQuiz(active){studySections.forEach(section=>{section.hidden=active});if(visual)visual.hidden=active}
  const shuffle=items=>{for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]]}return items};
  let targets=[],step=0,right=0,heard=false;
  function playLetter(){
@@ -174,9 +178,10 @@ function setupRussianFoundation(unit){
    }
    const sound=new SpeechSynthesisUtterance(RU_LETTER_NAMES[targets[step]]);
    sound.lang='ru-RU';sound.voice=russianVoice;sound.rate=.82;
+   sound.onstart=()=>{heard=true;options.hidden=false;status.textContent='استمع جيدًا ثم اختر أحد الرموز الأربعة.'};
    sound.onerror=()=>{heard=false;options.hidden=true;status.textContent='تعذّر تشغيل الصوت الروسي. أعد الاستماع قبل اختيار الإجابة.'};
+   heard=false;options.hidden=true;status.textContent='يُشغّل الصوت الروسي الآن...';
    speechSynthesis.cancel();speechSynthesis.speak(sound);
-   heard=true;options.hidden=false;status.textContent='استمع جيدًا ثم اختر أحد الرموز الأربعة.';
  }
  function renderQuestion(){
    if(step>=targets.length){
@@ -185,7 +190,7 @@ function setupRussianFoundation(unit){
      const percent=Math.round(right/targets.length*100);
      status.textContent='نتيجتك: '+right+' من '+targets.length+' ('+percent+'%). '+(percent>=75?'أحسنت! جرّب التذكر مرة أخرى غدًا.':'راجع الحروف التي التبست عليك ثم أعد المحاولة.')+' هذه نتيجة تدريب على هذا الجهاز وليست شهادة مستوى.';
      try{localStorage.setItem('sd_ru_listening_letters_'+(unit+1),String(percent))}catch(e){}
-     start.hidden=false;start.textContent='أعد الاختبار';return;
+     focusQuiz(false);start.hidden=false;start.textContent='أعد الاختبار';return;
    }
    heard=false;options.hidden=true;listen.hidden=false;options.replaceChildren();
    question.textContent='السؤال '+(step+1)+' من '+targets.length;
@@ -210,8 +215,9 @@ function setupRussianFoundation(unit){
  }
  start.addEventListener('click',()=>{
    targets=shuffle(letters.slice()).slice(0,unit===1?10:4);
-   step=0;right=0;start.hidden=true;exam.hidden=false;renderQuestion();
+   step=0;right=0;start.hidden=true;exam.hidden=false;focusQuiz(true);renderQuestion();
  });
+ stop.addEventListener('click',()=>{if('speechSynthesis' in window)speechSynthesis.cancel();heard=false;focusQuiz(false);exam.hidden=true;start.hidden=false;start.textContent='ابدأ اختبار الاستماع'});
  listen.addEventListener('click',playLetter);
 }
 
