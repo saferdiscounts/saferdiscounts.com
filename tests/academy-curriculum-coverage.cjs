@@ -362,7 +362,7 @@ test('Russian A1 listening quiz tests heard letters, not printed answers or sent
  assert.match(code,/sound\.onstart=\(\)=>\{heard=true;options\.hidden=false/,'Choices must remain hidden until audio starts');
  assert.match(code,/if\(!heard\)return/,'Do not allow scoring without listening');
  assert.match(code,/studySections\.forEach\(section=>\{section\.hidden=active\}\)/,'Hide reference cards while testing');
- assert.match(code,/setupRussianFoundation\(current\)/,'Connect letter-specific assessment to the active lesson');
+ assert.match(html,/if\(current<4\)setupRussianFoundation\(current\)/,'Connect letter-specific assessment to the active lesson');
  assert.match(code,/لا يُطلب منك تأليف جمل/,'Do not demand sentence writing before letters');
 });
 
