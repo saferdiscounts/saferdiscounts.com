@@ -88,3 +88,27 @@ A focused, *original-content* extension was built after reviewing two competing 
 **Practical Brazilian phrase trainer benchmark** is a bounded release enhancement, not a commitment to reproduce the competitors' 100/125 topics. Continue the quality gates before adding further subject catalogs.
 
 **Audit correction (2026-11-07):** `academy-audio-audit.json` now reports 97 Brazilian academy lessons instead of stale 90, while retaining the last measured 511 normal/slow R2 pairs and **unknown** text-to-audio verified coverage. A regression test now locks the snapshot count to the actual lesson array. Automated checks have passed; human hearing, mobile usability and end-to-end speech review are still outstanding.
+
+## Brazilian R2 audio evidence and review workflow — 2026-11-07
+
+This checkpoint is based on **read-only inspection of the actual Cloudflare R2 bucket** `saferdiscounts-audio`, using `ptbr/manifest.json` plus the live R2 object-key listing, then exact text comparisons against the repository's **97 lessons and 80 practical phrases**.
+
+**Confirmed by storage metadata (not hearing):** 1024 objects under `ptbr/`, including 1022 nonempty MP3 objects (511 normal+slow pairs), `ptbr/bridge.html`, and `ptbr/manifest.json`. All 511 manifest records reference existing normal/slow objects with structurally safe file paths and MP3 content types. There are 478 unique normalized Portuguese source texts and 33 duplicate normalized text groups; duplicates are not automatically selected.
+
+**Confirmed by text only (not speech accuracy):**
+
+| Content type | Total rows | Unique-source exact matches | Ambiguous duplicate-source matches | Missing exact source text |
+| --- | ---: | ---: | ---: | ---: |
+| Main academy vocabulary | 857 | **94** | 17 | 746 |
+| Main academy dialogue turns | 384 | **1** | 0 | 383 |
+| Practical trainer phrases | 80 | **0** | 0 | 80 |
+
+A matching text string does **not** establish that the MP3 says it correctly, uses the intended Brazilian accent, or plays on every device. The source manifest itself has **234 rows with no Arabic gloss**, but lessons may have their own Arabic explanation. Do not confuse absent source glosses with absent course translations.
+
+**Committed deliverables:** `audio-text-index-ptbr.json` is a stable 511-entry same-origin snapshot from R2, `academy-audio-audit.json` now reports measured Brazilian coverage and 97 lesson-level deficits. `ptbr-academy.html` attempts the same-origin source index first and falls back to the existing R2 `bridge.html` when needed. `academy-audio-status.html?lang=ptbr` presents the real 94/857 ratio and the dialogue/trainer gaps.
+
+**Manual listening workflow:** `ptbr-audio-review.html` presents the 511 source pairs; an operator must fully play both normal and slow, then explicitly attest that speech matches the displayed transcript before marking one locally accepted. Broken/misaligned audio can be flagged with a reason. Reviews remain local to the operator's browser, can be exported as JSON, and are **never auto-published or counted as independently verified sound**. Test scripts require path safety, frozen source totals, and both playback gates.
+
+**Bounded next steps:** prioritize human recording or licensed natural-voice audio for the 80 unmatched original travel/trainer phrases, then essential first-lesson conversations; separately verify representative recorded pairs by human listening. Fix any high-severity mismatch before rollout. Avoid relabeling browser TTS as human recordings and avoid uncontrolled expansion of new lessons.
+
+**Evidence limit:** We have not personally verified the audio by listening to all 511 clips; speech correctness, browser-playback success, and full mobile UX remain unapproved.
