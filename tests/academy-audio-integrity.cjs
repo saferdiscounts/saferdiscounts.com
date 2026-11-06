@@ -145,3 +145,13 @@ test('European academy writing feedback does not misrepresent keyword matching a
   assert.match(html,/lower\.includes\(" "\+term\+" "\)/,lang+' phrase boundary');
  }
 });
+
+test('European writing exercises preserve and clear local drafts by lesson',()=>{
+ for(const lang of ['italian','spanish','french','german','portuguese']){
+  const html=read(lang+'-academy.html');
+  assert.match(html,new RegExp('sd_writing_draft_'+lang+'_'),lang+' per-language draft key');
+  assert.match(html,/localStorage\.setItem\(draftKey,area\.value\)/,lang+' autosave');
+  assert.match(html,/localStorage\.removeItem\(draftKey\)/,lang+' clear draft');
+  assert.match(html,/تُحفظ مسودتك تلقائيًا على هذا الجهاز فقط/,lang+' privacy disclosure');
+ }
+});
