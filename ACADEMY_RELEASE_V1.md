@@ -54,3 +54,21 @@ Latest committed `academy-audio-audit.json` reports **3,506 normal/slow pairs** 
 The Brazilian A1 track has been expanded by **7 real lessons** (57 additional word/phrase cards, 28 dialogue turns, specific grammar guidance, contextual quiz and guided writing per lesson), appended without changing the original 90 lesson indexes. The original 90-lesson audio and progress IDs remain in place; the academy now has 97 lessons total.
 
 **Updated structural coverage: 348/384 = 90.6%; remaining gaps 36, specifically 12 B2 English + 12 B2 Italian + 12 B2 Spanish.** This percentage describes minimum CEFR core lesson distribution, **not** validated learner outcomes or audio correctness. Do not expand beyond these 36 structural slots before starting the formal quality/audio/image gates.
+
+## Structural scope complete — checkpoint after B2 tracks
+
+**Automated result on GitHub Actions:** `384 / 384 = 100.0%` minimum A1–B2 CEFR core-lesson slots across all eight academies; `0` missing slots. The repository now has **437 main-academy lessons** (97 Brazilian Portuguese, 52 English, and 48 each in Italian, Spanish, French, German, Russian and European Portuguese). The additional 48 basic-skills modules and 36 conversation scenarios remain supplementary and are never counted as replacements for core-lesson slots.
+
+New material in the current close-out: seven Brazilian A1 lessons, twelve English B2 chapters, twelve Italian B2 lessons, twelve Spanish B2 lessons. Existing lesson indexes were preserved to avoid breaking saved learner progress and historical audio paths. The curriculum, HTML scripts and links passed GitHub Actions regression checks; CI also prints `scripts/academy-v1-progress.cjs` on every academy update.
+
+**The structural-content batch is now frozen. Do not create further lessons just to raise counts.**
+
+### Outstanding certification work (separate measured gates)
+
+- **Pedagogy and assessment:** Human review of grammatical correctness, Arabic translations, level placement, answer ambiguity and exam answer leakage on a fixed cross-level sample; record `passed/checked` per language. Automated shape checks are not a CEFR language-expert review.
+- **Audio:** For each language and level, collect at least 3 representative normal/slow pairs (minimum 96 pairs total) with independent text/voice verification, correct locale, and browser playback. Audit all existing direct mappings for unsafe paths, mismatched text and broken URLs. Never label provisional speech-to-text matching as human verified.
+- **Images:** Manually inspect at least 10 vocabulary visual mappings per language (80 total) for semantic accuracy, no incorrect animal or abstract concept pictures, and graceful fallbacks. No requirement to force a picture on every abstract grammatical term.
+- **Experience:** Smoke-test first lesson, foundation, listening challenge, writing, progress persistence, level navigation and final assessment across desktop and mobile. Confirm RTL/LTR isolation and that no answer is printed during listening quizzes.
+- **Release:** Content CI green and Pages deployment green for the *same release SHA* plus recorded browser checks; then mark V1 reliable and archive new requests for V2.
+
+**Status: CONTENT STRUCTURE COMPLETE; FULL LEARNING-QUALITY / AUDIO / IMAGE APPROVAL PENDING.** The overall quality-readiness percentage is intentionally not invented until those independent sample denominators have been audited. Current 100% does **not** mean the academy is ready to certify learners.
