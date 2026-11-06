@@ -192,7 +192,7 @@ test('Brazilian writing keyword checks normalize accents and require full phrase
  assert.ok(includes('Meu nome é Ana.','Meu nome é'));
  assert.ok(!includes('Dois livros.','Oi'),'partial words must not count as target vocabulary');
  assert.ok(!includes('Eu sou do Egito.','sou doze'),'unrelated phrases must not match');
- assert.match(html,/text\.includes\(' '\+stem\+' '\)/,'keyword matching must use phrase boundaries');
+ assert.match(html,/const marker=' '\+stem\+' '/,'keyword matching must use phrase boundaries');
 });
 
 test('Brazilian consonant writing exercise asks for exactly eight words',()=>{
