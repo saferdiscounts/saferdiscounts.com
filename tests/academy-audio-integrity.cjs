@@ -124,12 +124,15 @@ test('Russian lesson quiz randomizes answer positions and checks the actual corr
  assert.match(html,/Number\(b\.dataset\.answer\)===quizCorrect/);
 });
 
-test('Five European academies balance vocabulary and practical scenario checks',()=>{
+test('Five European academies combine vocabulary, scenarios and labeled browser listening',()=>{
  for(const lang of ['italian','spanish','french','german','portuguese']){
   const html=read(lang+'-academy.html');
   assert.match(html,/const scenarioBank=lessons\.filter/,lang+' scenario bank');
-  assert.match(html,/x\.options\.map\(\(text,i\)=>\(\{text,correct:i===x\.correct\}\)\)/,lang+' answer mapping');
-  assert.match(html,/shuffle\(bank\)\.slice\(0,6\)/,lang+' vocabulary count');
-  assert.match(html,/shuffle\(scenarioBank\)\.slice\(0,6\)/,lang+' scenario count');
+  assert.match(html,/const listeningBank=lessons\.filter/,lang+' listening bank');
+  assert.match(html,/shuffle\(bank\)\.slice\(0,4\)/,lang+' vocabulary count');
+  assert.match(html,/shuffle\(scenarioBank\)\.slice\(0,4\)/,lang+' scenario count');
+  assert.match(html,/shuffle\(listeningBank\)\.slice\(0,4\)/,lang+' listening count');
+  assert.match(html,/speechSynthesis\.cancel\(\)/,lang+' speech reset');
+  assert.match(html,/صوت صناعي من المتصفح/,lang+' speech disclosure');
  }
 });
