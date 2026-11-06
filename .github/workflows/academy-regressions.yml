@@ -6,6 +6,7 @@ on:
     paths:
       - '**/*-academy.html'
       - 'language-academy.html'
+      - 'academy-core-skills.html'
       - 'alphabet-foundations.html'
       - 'academy-*.json'
       - 'academy-audio-status.html'
@@ -20,6 +21,7 @@ on:
     paths:
       - '**/*-academy.html'
       - 'language-academy.html'
+      - 'academy-core-skills.html'
       - 'alphabet-foundations.html'
       - 'academy-*.json'
       - 'academy-audio-status.html'
