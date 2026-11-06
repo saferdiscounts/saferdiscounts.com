@@ -40,7 +40,8 @@ function render(data){
  const code=select.value,item=data.languages[code];if(!item){box.textContent='لا تتوفر بيانات لهذه اللغة.';return;}
  box.replaceChildren();
  const name=node('h2','',item.name+' · '+item.lessons+' درسًا');box.append(name);
- const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));if(code==='ptbr')actions.append(link('ptbr-audio-review.html','مراجعة وفحص الـ511 زوج برازيلي عادي وبطيء',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('audio-review-workbench.html?lang='+code,'مراجعة ملفات اللغة',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('academy-original-audio-import.html','استيراد المصدر الأصلي ZIP/HTML',true));box.append(actions);
+ const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));if(code==='ptbr')actions.append(link('ptbr-audio-review.html','مراجعة وفحص الـ511 زوج برازيلي عادي وبطيء',true));
+ if(code==='ptbr')actions.append(link('ptbr-audio-recording-priority.json','قائمة 160 عبارة للتسجيل الطبيعي حسب الأولوية',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('audio-review-workbench.html?lang='+code,'مراجعة ملفات اللغة',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('academy-original-audio-import.html','استيراد المصدر الأصلي ZIP/HTML',true));box.append(actions);
  const storage=data.storageAudit?.languages?.[code];
  if(storage){const phrase='📦 الجرد الفعلي على R2: '+storage.mp3+' ملف MP3، منها '+storage.paired+' زوجًا طبيعيًا وبطيئًا'+(storage.solo?'، و'+storage.solo+' ملفًا فرديًا بلا نسخة بطيئة':'')+'.';box.append(node('p','',phrase));}
  const proposals=data.asrProvisionalAudit?.languages?.[code];
