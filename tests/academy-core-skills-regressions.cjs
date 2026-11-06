@@ -36,7 +36,10 @@ test('Learning cards disappear during tests, options are randomized and progress
  assert.match(script,/paper\.innerHTML='<h2>اختبار الفهم/);
  assert.match(script,/shuffled=shuffle\(/);
  assert.match(script,/paper\.querySelectorAll\('\[data-choice\]'\)/);
- assert.match(script,/score>=2/);
+ assert.match(script,/score===3/);
+ assert.match(script,/mastery\.record\(/);
+ assert.match(script,/mistakes\.push\(/);
+ assert.ok(html.includes('src="academy-mastery.js"'));
  assert.match(script,/localStorage\.setItem\('safer_academy_core_v1'/);
  assert.match(script,/speechSynthesis/);
  assert.match(html,/الصوت المعروض صناعي من المتصفح/);
