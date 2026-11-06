@@ -97,3 +97,17 @@ test('The catalog and audio library link users to the provenance report',()=>{
  assert.match(html,/item\.mapping!=='exact-index'/);
  assert.doesNotThrow(()=>new vm.Script(html.match(/<script>([\s\S]*?)<\/script>/)[1]));
 });
+
+test('Brazilian audio bridge excludes ambiguous or malformed sound paths and updates coverage on lesson switches',()=>{
+ const html=read('ptbr-academy.html');
+ const embedded=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
+  .map(m=>m[1]).filter(Boolean);
+ assert.ok(embedded.length,'No academy code');
+ for(const script of embedded)assert.doesNotThrow(()=>new vm.Script(script));
+ assert.match(html,/ptbrAudioIndex=new Map/);
+ assert.match(html,/safePtbrAudioPath\.test\(item\.normal/);
+ assert.match(html,/safePtbrAudioPath\.test\(item\.slow/);
+ assert.match(html,/rows\.length===1/);
+ assert.match(html,/updatePtbrAudioConnection\(l\)/);
+ assert.match(html,/ptbrAudioFailed/);
+});
