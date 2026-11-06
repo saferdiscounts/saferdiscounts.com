@@ -6,8 +6,8 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..');
 const read=(name)=>fs.readFileSync(path.join(root,name),'utf8');
 const specs=[
- ['it','italian-academy.html',36,26],
- ['es','spanish-academy.html',36,27],
+ ['it','italian-academy.html',48,26],
+ ['es','spanish-academy.html',48,27],
  ['fr','french-academy.html',48,26],
  ['de','german-academy.html',48,30],
  ['pt','portuguese-academy.html',48,26]
