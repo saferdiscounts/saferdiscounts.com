@@ -247,3 +247,17 @@ test('Brazilian writing template matcher accepts filled answers and rejects part
  assert.equal(fn('Bom dia / Boa tarde',answer('Boa tarde!')),true);
  assert.equal(fn('Bom dia / Boa tarde',answer('Boa noite!')),false);
 });
+
+test('All 90 Brazilian lesson quizzes have valid distinct choices and explanations',()=>{
+ const items=lessons('ptbr-academy.html');
+ assert.equal(items.length,90);
+ for(const [index,lesson] of items.entries()){
+  const where='Brazilian lesson '+(index+1)+' '+lesson.title;
+  assert.ok(typeof lesson.q==='string'&&lesson.q.trim().length>=10,where+' missing meaningful question');
+  assert.ok(Array.isArray(lesson.answers)&&lesson.answers.length>=3,where+' missing choices');
+  assert.ok(lesson.answers.every(x=>typeof x==='string'&&x.trim()),where+' blank choice');
+  assert.equal(new Set(lesson.answers.map(x=>x.trim().toLocaleLowerCase('pt-BR'))).size,lesson.answers.length,where+' duplicate choices');
+  assert.ok(Number.isInteger(lesson.correct)&&lesson.correct>=0&&lesson.correct<lesson.answers.length,where+' invalid correct index');
+  assert.ok(typeof lesson.explain==='string'&&lesson.explain.trim().length>=15,where+' missing explanation');
+ }
+});
