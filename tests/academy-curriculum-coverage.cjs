@@ -126,7 +126,7 @@ test('Brazilian Portuguese lessons provide complete assessed learning tasks',()=
 });
 test('English chapters include practice, dialogue and model writing',()=>{
  const chapters=JSON.parse(bracketed(read('english-academy.html'),'const chapters='));
- assert.equal(chapters.length,40,'English chapter count');
+ assert.equal(chapters.length,52,'English chapter count including twelve B2 lessons');
  for(const [i,ch] of chapters.entries()){
   assert.ok(typeof ch.title==='string'&&ch.title.trim(),'English chapter '+i+' missing title');
   assert.ok(Array.isArray(ch.blocks)&&ch.blocks.length>=2,'English chapter '+i+' missing teaching blocks');
