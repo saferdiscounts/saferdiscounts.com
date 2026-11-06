@@ -176,7 +176,7 @@ test('Brazilian recall challenge provides audio with explicit TTS fallback and a
 
 test('Brazilian academy inline lesson scripts parse as valid JavaScript',()=>{
  const html=read('ptbr-academy.html');
- const scripts=[...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/gi)].map(match=>match[1]).filter(source=>source.trim());
+ const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)].map(match=>match[1]).filter(source=>source.trim());
  assert.ok(scripts.length,'Missing inline lesson script');
  scripts.forEach((source,index)=>assert.doesNotThrow(()=>new vm.Script(source,{filename:'ptbr-academy-inline-'+index+'.js'})));
 });
