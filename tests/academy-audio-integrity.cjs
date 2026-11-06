@@ -123,3 +123,11 @@ test('Russian lesson quiz randomizes answer positions and checks the actual corr
  assert.match(html,/quizChoices\.map\(\(a,i\)=>/);
  assert.match(html,/Number\(b\.dataset\.answer\)===quizCorrect/);
 });
+
+test('Five European academies provide twelve randomized vocabulary questions per level check',()=>{
+ for(const lang of ['italian','spanish','french','german','portuguese']){
+  const html=read(lang+'-academy.html');
+  assert.match(html,/const qs=shuffle\(bank\)\.slice\(0,Math\.min\(12,bank\.length\)\)/,lang+' exam length');
+  assert.match(html,/const options=shuffle\(\[\{text:w\[2\],correct:true\}/,lang+' shuffled answer options');
+ }
+});
