@@ -20,7 +20,7 @@ nav{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;font-weight:bold}.sectio
 <h1>🎧 تقرير الصوتيات داخل الكورسات</h1>
 <p>خريطة للربط النصي الدقيق بين كلمات الدروس والفهارس الصوتية المعروفة، مع توضيح الفرق بين ملف موجود، وكلمة لها تسجيل مرتبط، وتسجيل تم سماعه والتحقق من جودته.</p></div></header>
 <main class="wrap">
-<div class="notice"><strong>مهم: ده تدقيق للفهارس الموجودة في GitHub، مش اختبارًا مباشرًا لكل ملف صوتي.</strong><p>في الفرنسية والألمانية، بنحسب المطابقة للنص نفسه بعد توحيد شكل Unicode والمسافات وحالة الحروف فقط. لا نعتبر التشابه في المعنى مطابقة، ونستبعد النصوص المكررة الملتبسة. باقي اللغات لا تظهر بنسبة صفر: التغطية «لم تُقَس محليًا» حتى يتوفر فهرس موثوق للكلمات في المستودع. نجاح الفهرس لا يضمن جودة النطق أو تشغيل R2.</p></div>
+<div class="notice"><strong>مهم: ده تدقيق للفهارس الموجودة في GitHub، مش اختبارًا مباشرًا لكل ملف صوتي.</strong><p>لدينا الآن جرد مباشر لأعداد ملفات MP3 في R2 للغات الثماني، لكن عدد الملفات لا يساوي عدد الكلمات المرتبطة به. في الفرنسية والألمانية نحسب مطابقة النص في الدرس بفهرس المصدر دون تخمين أو إعادة ترجمة، أما نسب ربط الكلمات في اللغات الأخرى فما زالت «غير مقاسة». اكتمال زوج الملفات لا يثبت نجاح التشغيل أو جودة النطق.</p></div>
 <div class="metrics" id="summary" aria-live="polite"></div>
 <div class="controls"><label for="language">تفاصيل الأكاديمية:</label><select id="language"><option value="ptbr">🇧🇷 البرتغالية البرازيلية</option><option value="en">🇬🇧 الإنجليزية</option><option value="it">🇮🇹 الإيطالية</option><option value="es">🇪🇸 الإسبانية</option><option value="fr">🇫🇷 الفرنسية</option><option value="de">🇩🇪 الألمانية</option><option value="ru">🇷🇺 الروسية</option><option value="pt">🇵🇹 البرتغالية الأوروبية</option></select></div>
 <section class="panel" id="detail" aria-live="polite"><h2>تحميل التقرير...</h2></section>
@@ -40,7 +40,9 @@ function render(data){
  const code=select.value,item=data.languages[code];if(!item){box.textContent='لا تتوفر بيانات لهذه اللغة.';return;}
  box.replaceChildren();
  const name=node('h2','',item.name+' · '+item.lessons+' درسًا');box.append(name);
- const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));box.append(actions);
+ const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('audio-review-workbench.html?lang='+code,'مراجعة ملفات اللغة',true));box.append(actions);
+ const storage=data.storageAudit?.languages?.[code];
+ if(storage){const phrase='📦 الجرد الفعلي على R2: '+storage.mp3+' ملف MP3، منها '+storage.paired+' زوجًا طبيعيًا وبطيئًا'+(storage.solo?'، و'+storage.solo+' ملفًا فرديًا بلا نسخة بطيئة':'')+'.';box.append(node('p','',phrase));}
  if(item.mapping!=='exact-index'){
   const p=node('div','empty',(summaries[code]||'لم يُعتمد فهرس نصي مستقل لهذا المسار.')+' النسبة هنا غير معروفة؛ لا يصح اعتبارها 0%.');box.append(p);return;
  }
@@ -69,8 +71,10 @@ function cards(data){
   const record=data.languages[code];const item=node('div','metric'+(record.mapping!=='exact-index'?' unknown':''));
   const label=node('span','',record.name);
   const value=node('strong','',record.mapping==='exact-index'?pct(record.exactMatches,record.words):'غير مقاس');
+  const storage=data.storageAudit?.languages?.[code];
   const detail=node('span','',record.mapping==='exact-index'?record.exactMatches+' / '+record.words+' كلمة/عبارة في الدروس':record.lessons+' درسًا · لا توجد نسبة موثوقة');
-  item.append(label,value,detail);
+  const storageLine=node('span','',storage?' · في R2: '+storage.paired+' زوجًا صوتيًا':' · لم يتم قياس الجرد');
+  item.append(label,value,detail,storageLine);
   item.addEventListener('click',()=>{select.value=code;render(data);select.scrollIntoView({behavior:'smooth',block:'start'})});
   item.style.cursor='pointer';item.tabIndex=0;item.setAttribute('role','button');
   item.setAttribute('aria-label','عرض حالة '+record.name);
