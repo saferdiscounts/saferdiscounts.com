@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "lang": "ru",
+  "model": "@cf/openai/whisper-large-v3-turbo",
+  "source": "Cloudflare R2 audio binary",
+  "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy term match; no human listening; candidate records only",
+  "reviewStatus": "automated-unverified",
+  "requested": 20,
+  "agreed": 16,
+  "exactLessonCandidates": 6,
+  "records": [
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_001.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_001_slow.mp3",
+      "original": {
+        "text": "Привет.",
+        "duration": 0.5573125,
+        "logprob": -0.3548828125,
+        "bytes": 4941
+      },
+      "slowRecognition": {
+        "text": "Привет!",
+        "duration": 0.7430625,
+        "logprob": -0.411328125,
+        "bytes": 6045
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Привет",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_002.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_002_slow.mp3",
+      "original": {
+        "text": "Здравствуйте.",
+        "duration": 1.068125,
+        "logprob": -0.3092447916666667,
+        "bytes": 9117
+      },
+      "slowRecognition": {
+        "text": "Здравствуйте.",
+        "duration": 1.2539375,
+        "logprob": -0.4287109275658925,
+        "bytes": 10053
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Здравствуйте",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_003.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_003_slow.mp3",
+      "original": {
+        "text": "Доброе утро.",
+        "duration": 1.300375,
+        "logprob": -0.22178819444444445,
+        "bytes": 10797
+      },
+      "slowRecognition": {
+        "text": "Доброе утро!",
+        "duration": 1.671875,
+        "logprob": -0.1948784722222222,
+        "bytes": 12429
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_004.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_004_slow.mp3",
+      "original": {
+        "text": "Добрый вечер.",
+        "duration": 1.058,
+        "logprob": -0.17903645833333334,
+        "bytes": 8229
+      },
+      "slowRecognition": {
+        "text": "Добрый вечер.",
+        "duration": 1.3351875,
+        "logprob": -0.13932291666666666,
+        "bytes": 10341
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_005.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_005_slow.mp3",
+      "original": {
+        "text": "До свидания.",
+        "duration": 1.114625,
+        "logprob": -0.1541573703289032,
+        "bytes": 9237
+      },
+      "slowRecognition": {
+        "text": "До свидания.",
+        "duration": 1.4745,
+        "logprob": -0.29213169642857145,
+        "bytes": 11421
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "До свидания",
+        "lesson": 1
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_006.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_006_slow.mp3",
+      "original": {
+        "text": "Пока.",
+        "duration": 0.615375,
+        "logprob": -0.248046875,
+        "bytes": 5373
+      },
+      "slowRecognition": {
+        "text": "Пока.",
+        "duration": 0.7663125,
+        "logprob": -0.258984375,
+        "bytes": 5949
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_007.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_007_slow.mp3",
+      "original": {
+        "text": "Как дела?",
+        "duration": 0.9404375,
+        "logprob": -0.3066406150658925,
+        "bytes": 7509
+      },
+      "slowRecognition": {
+        "text": "Как дело?",
+        "duration": 1.1494375,
+        "logprob": -0.3759765625,
+        "bytes": 8397
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_008.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_008_slow.mp3",
+      "original": {
+        "text": "Хорошо, спасибо.",
+        "duration": 1.8228125,
+        "logprob": -0.34430804422923494,
+        "bytes": 13485
+      },
+      "slowRecognition": {
+        "text": "Хорошо, спасибо.",
+        "duration": 2.438125,
+        "logprob": -0.2918526700564793,
+        "bytes": 17157
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_009.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_009_slow.mp3",
+      "original": {
+        "text": "Спасибо.",
+        "duration": 0.81275,
+        "logprob": -0.382421875,
+        "bytes": 6669
+      },
+      "slowRecognition": {
+        "text": "Спасибо.",
+        "duration": 0.9985,
+        "logprob": -0.460546875,
+        "bytes": 8157
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Спасибо",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_010.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_010_slow.mp3",
+      "original": {
+        "text": "Пожалуйста.",
+        "duration": 0.87075,
+        "logprob": -0.2986653645833333,
+        "bytes": 7197
+      },
+      "slowRecognition": {
+        "text": "Пожалуйста.",
+        "duration": 1.172625,
+        "logprob": -0.4700520634651184,
+        "bytes": 9093
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Пожалуйста",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_011.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_011_slow.mp3",
+      "original": {
+        "text": "Извините.",
+        "duration": 0.882375,
+        "logprob": -0.19531249574252538,
+        "bytes": 7125
+      },
+      "slowRecognition": {
+        "text": "Извините.",
+        "duration": 1.2655,
+        "logprob": -0.27818081208637785,
+        "bytes": 9693
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_012.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_012_slow.mp3",
+      "original": {
+        "text": "Да.",
+        "duration": 0.615375,
+        "logprob": -0.3833984375,
+        "bytes": 4989
+      },
+      "slowRecognition": {
+        "text": "Да.",
+        "duration": 0.674,
+        "logprob": -0.45625,
+        "bytes": 5445
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_013.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_013_slow.mp3",
+      "original": {
+        "text": "Нет.",
+        "duration": 0.4760625,
+        "logprob": -0.2158203125,
+        "bytes": 5349
+      },
+      "slowRecognition": {
+        "text": "Нет.",
+        "duration": 0.627,
+        "logprob": -0.309375,
+        "bytes": 6021
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_014.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_014_slow.mp3",
+      "original": {
+        "text": "Меня зовут...",
+        "duration": 0.986875,
+        "logprob": -0.52734375,
+        "bytes": 8229
+      },
+      "slowRecognition": {
+        "text": "Меня зовут...",
+        "duration": 1.300375,
+        "logprob": -0.4811198016007741,
+        "bytes": 10245
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Меня зовут…",
+        "lesson": 1
+      }
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_015.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_015_slow.mp3",
+      "original": {
+        "text": "Очень приятно.",
+        "duration": 1.07975,
+        "logprob": -0.14215959395681108,
+        "bytes": 8805
+      },
+      "slowRecognition": {
+        "text": "Очень приятно.",
+        "duration": 1.37,
+        "logprob": -0.17452566964285715,
+        "bytes": 11061
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_016.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_016_slow.mp3",
+      "original": {
+        "text": "— Я не понимаю.",
+        "duration": 1.37,
+        "logprob": -0.2646484449505806,
+        "bytes": 10125
+      },
+      "slowRecognition": {
+        "text": "«Я не понимаю».",
+        "duration": 1.8111875,
+        "logprob": -0.2583007737994194,
+        "bytes": 13269
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_017.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_017_slow.mp3",
+      "original": {
+        "text": "Вы говорите по-английски.",
+        "duration": 1.846,
+        "logprob": -0.07934570002059142,
+        "bytes": 15189
+      },
+      "slowRecognition": {
+        "text": "Вы говорите по-английски.",
+        "duration": 2.34525,
+        "logprob": -0.09863281063735485,
+        "bytes": 17685
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_018.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_018_slow.mp3",
+      "original": {
+        "text": "Я египтянин.",
+        "duration": 1.103,
+        "logprob": -0.17613635821775955,
+        "bytes": 8637
+      },
+      "slowRecognition": {
+        "text": "Я египтянин.",
+        "duration": 1.5209375,
+        "logprob": -0.2107599377632141,
+        "bytes": 11277
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_019.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_019_slow.mp3",
+      "original": {
+        "text": "Я египтянка.",
+        "duration": 1.381625,
+        "logprob": -0.12482244860042226,
+        "bytes": 10773
+      },
+      "slowRecognition": {
+        "text": "«Я египтянка».",
+        "duration": 1.6254375,
+        "logprob": -0.13614909102519354,
+        "bytes": 12501
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_020.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_020_slow.mp3",
+      "original": {
+        "text": "Ты.",
+        "duration": 0.406375,
+        "logprob": -0.466796875,
+        "bytes": 3429
+      },
+      "slowRecognition": {
+        "text": "Т.",
+        "duration": 0.4528125,
+        "logprob": -0.95234375,
+        "bytes": 3837
+      },
+      "agreed": false,
+      "exactLesson": null
+    }
+  ]
+}
