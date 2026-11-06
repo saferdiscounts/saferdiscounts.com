@@ -1720,5 +1720,73 @@
       "levels": [],
       "priorityMissing": []
     }
+  },
+  "storageAudit": {
+    "asOf": "2026-11-06",
+    "source": "Cloudflare R2 List Objects API, complete pagination across eight language prefixes",
+    "metric": "normal+slow filename pair present in bucket; not a transcript, HTTP playback test, voice-quality review, or word-to-sound matching",
+    "languages": {
+      "ptbr": {
+        "files": 1024,
+        "mp3": 1022,
+        "paired": 511,
+        "solo": 0,
+        "other": 2
+      },
+      "en": {
+        "files": 728,
+        "mp3": 728,
+        "paired": 348,
+        "solo": 32,
+        "other": 0,
+        "inventory": "audio-review-inventory-en.json"
+      },
+      "it": {
+        "files": 882,
+        "mp3": 882,
+        "paired": 441,
+        "solo": 0,
+        "other": 0,
+        "inventory": "audio-review-inventory-it.json"
+      },
+      "es": {
+        "files": 1018,
+        "mp3": 1018,
+        "paired": 509,
+        "solo": 0,
+        "other": 0,
+        "inventory": "audio-review-inventory-es.json"
+      },
+      "fr": {
+        "files": 842,
+        "mp3": 842,
+        "paired": 421,
+        "solo": 0,
+        "other": 0
+      },
+      "de": {
+        "files": 842,
+        "mp3": 842,
+        "paired": 421,
+        "solo": 0,
+        "other": 0
+      },
+      "ru": {
+        "files": 666,
+        "mp3": 666,
+        "paired": 333,
+        "solo": 0,
+        "other": 0,
+        "inventory": "audio-review-inventory-ru.json"
+      },
+      "pt": {
+        "files": 1044,
+        "mp3": 1044,
+        "paired": 522,
+        "solo": 0,
+        "other": 0,
+        "inventory": "audio-review-inventory-pt.json"
+      }
+    }
   }
 }
