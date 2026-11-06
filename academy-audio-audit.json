@@ -1,21 +1,1894 @@
 {
   "schemaVersion": 1,
-  "method": "static exact NFC/case-insensitive/whitespace-normalized match of academy word text to locally committed audio-text-index-{fr,de}.json; a unique match requires a normal/slow pair and safe relative paths. Does not verify live URLs, audio quality, playback, or whether the speech is human.",
+  "method": "static exact NFC/case-insensitive/whitespace-normalized match of academy word text to locally committed audio-text-index-{fr,de}.json; a unique match requires a normal/slow pair and safe relative paths. Does not verify live URLs, audio quality, playback, or whether the speech is human. Brazilian ptbr results come from the live R2 ptbr/manifest.json snapshot and checked object keys, exact matching only; do not equate it with hearing or human review.",
   "languages": {
     "ptbr": {
       "name": "البرتغالية البرازيلية",
       "academy": "ptbr-academy.html",
       "lessons": 97,
-      "mapping": "separate-bridge-unmeasured",
-      "sourceRecords": null,
-      "sourceUnique": null,
-      "sourceAmbiguousTexts": null,
-      "words": null,
-      "exactMatches": null,
-      "ambiguousMatches": null,
-      "levels": [],
-      "priorityMissing": [],
-      "note": "Course now has 97 lessons (15 foundation, 15 travel, 12 A1, 12 A2, 14 B1, 12 B2, 9 C1, 8 C2). The 511 stored normal/slow pairs are an R2 inventory and remain unverified for lesson phrase alignment and human voice."
+      "mapping": "exact-r2-source-manifest-unreviewed",
+      "sourceRecords": 511,
+      "sourceUnique": 478,
+      "sourceAmbiguousTexts": 33,
+      "words": 857,
+      "exactMatches": 94,
+      "ambiguousMatches": 17,
+      "levels": [
+        {
+          "lesson": 1,
+          "level": "A1",
+          "title": "التحية والتوديع",
+          "words": 6,
+          "matched": 6,
+          "ambiguous": 0,
+          "missing": 0,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": []
+        },
+        {
+          "lesson": 2,
+          "level": "A1",
+          "title": "تقول اسمك وتتعرف",
+          "words": 4,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 3,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Meu nome é…",
+            "Prazer",
+            "Eu sou do Egito"
+          ]
+        },
+        {
+          "lesson": 3,
+          "level": "A1",
+          "title": "كلمات الأدب الأساسية",
+          "words": 5,
+          "matched": 4,
+          "ambiguous": 0,
+          "missing": 1,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Com licença"
+          ]
+        },
+        {
+          "lesson": 4,
+          "level": "A1",
+          "title": "تسأل عن اللغة",
+          "words": 4,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 3,
+          "dialogue": 3,
+          "dialogueMatched": 1,
+          "missingSamples": [
+            "Eu falo um pouco de português",
+            "Pode falar devagar?",
+            "Não entendi"
+          ]
+        },
+        {
+          "lesson": 5,
+          "level": "A1",
+          "title": "أول حوار قصير",
+          "words": 4,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 2,
+          "dialogue": 5,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Tudo bem.",
+            "E você?"
+          ]
+        },
+        {
+          "lesson": 6,
+          "level": "FOUNDATION",
+          "title": "الأرقام من الصفر إلى الألف والعمر",
+          "words": 47,
+          "matched": 26,
+          "ambiguous": 0,
+          "missing": 21,
+          "dialogue": 6,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "um / uma",
+            "dois / duas",
+            "quatorze / catorze",
+            "vinte e um",
+            "vinte e três",
+            "cento e um"
+          ]
+        },
+        {
+          "lesson": 7,
+          "level": "TRAVEL",
+          "title": "تسأل عن مكان شيء",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "o banheiro",
+            "a entrada",
+            "a saída",
+            "aqui",
+            "ali",
+            "perto"
+          ]
+        },
+        {
+          "lesson": 8,
+          "level": "TRAVEL",
+          "title": "الاتجاهات وفهم الطريق",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "à direita",
+            "à esquerda",
+            "em frente",
+            "siga reto",
+            "vire",
+            "na esquina"
+          ]
+        },
+        {
+          "lesson": 9,
+          "level": "TRAVEL",
+          "title": "الأيام والوقت والمواعيد",
+          "words": 10,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 10,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Que horas são?",
+            "É uma hora.",
+            "São duas horas.",
+            "hoje",
+            "amanhã",
+            "ontem"
+          ]
+        },
+        {
+          "lesson": 10,
+          "level": "TRAVEL",
+          "title": "الأسعار والدفع",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Quanto custa?",
+            "Quanto é?",
+            "É caro.",
+            "É barato.",
+            "dinheiro",
+            "cartão"
+          ]
+        },
+        {
+          "lesson": 11,
+          "level": "TRAVEL",
+          "title": "التسوق والمقاسات والألوان",
+          "words": 9,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Estou procurando...",
+            "tamanho",
+            "maior",
+            "menor",
+            "Tem outra cor?",
+            "Posso provar?"
+          ]
+        },
+        {
+          "lesson": 12,
+          "level": "TRAVEL",
+          "title": "تطلب أكلًا ومشروبًا",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "O cardápio, por favor.",
+            "Eu queria...",
+            "água sem gás",
+            "água com gás",
+            "um café",
+            "um suco"
+          ]
+        },
+        {
+          "lesson": 13,
+          "level": "TRAVEL",
+          "title": "تقول بتحب إيه وتوضح الحساسية",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Eu gosto de...",
+            "Eu não gosto de...",
+            "Eu prefiro...",
+            "Tenho alergia a...",
+            "amendoim",
+            "leite"
+          ]
+        },
+        {
+          "lesson": 14,
+          "level": "TRAVEL",
+          "title": "في المطار وتسجيل الوصول",
+          "words": 8,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 6,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Tenho um voo para...",
+            "Aqui está meu passaporte.",
+            "Onde fica o balcão da companhia aérea?",
+            "despachar a mala",
+            "cartão de embarque",
+            "Que horas começa o embarque?"
+          ]
+        },
+        {
+          "lesson": 15,
+          "level": "TRAVEL",
+          "title": "أسئلة الجوازات والدخول",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Qual é o motivo da sua viagem?",
+            "Turismo.",
+            "Quanto tempo vai ficar?",
+            "Vou ficar por duas semanas.",
+            "Onde vai se hospedar?",
+            "Vou ficar em um hotel."
+          ]
+        },
+        {
+          "lesson": 16,
+          "level": "TRAVEL",
+          "title": "استلام الشنط ومشكلة الأمتعة",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Onde fica a esteira de bagagem?",
+            "Minha mala não chegou.",
+            "Minha mala está danificada.",
+            "etiqueta de bagagem",
+            "comprovante",
+            "Preciso de ajuda."
+          ]
+        },
+        {
+          "lesson": 17,
+          "level": "TRAVEL",
+          "title": "تسجيل الدخول في الفندق",
+          "words": 8,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 6,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Tenho uma reserva em nome de...",
+            "check-out",
+            "O café da manhã está incluído?",
+            "Qual é o número do quarto?",
+            "chave",
+            "cartão do quarto"
+          ]
+        },
+        {
+          "lesson": 18,
+          "level": "TRAVEL",
+          "title": "التاكسي ووسائل النقل بالتطبيق",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Pode me levar a este endereço?",
+            "endereço",
+            "Quanto tempo demora?",
+            "Pode parar aqui, por favor?",
+            "Estou esperando o carro.",
+            "trânsito"
+          ]
+        },
+        {
+          "lesson": 19,
+          "level": "TRAVEL",
+          "title": "المترو والأتوبيس",
+          "words": 9,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 6,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Onde compro o bilhete?",
+            "linha",
+            "Qual linha vai para...?",
+            "Preciso fazer baldeação?",
+            "Em qual estação eu desço?",
+            "uma passagem"
+          ]
+        },
+        {
+          "lesson": 20,
+          "level": "TRAVEL",
+          "title": "في المطعم: الطلب والحساب",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "O que você recomenda?",
+            "Qual é o prato do dia?",
+            "O que vem neste prato?",
+            "Pode trazer mais água?",
+            "A conta, por favor.",
+            "Pode dividir a conta?"
+          ]
+        },
+        {
+          "lesson": 21,
+          "level": "TRAVEL",
+          "title": "طلب المساعدة في موقف صعب",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Preciso de ajuda agora.",
+            "Perdi meu passaporte.",
+            "Pode chamar a polícia?",
+            "Pode chamar uma ambulância?",
+            "Não estou me sentindo bem.",
+            "Preciso de um médico."
+          ]
+        },
+        {
+          "lesson": 22,
+          "level": "FOUNDATION",
+          "title": "الحروف الأبجدية البرتغالية",
+          "words": 27,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 27,
+          "dialogue": 3,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "A — á",
+            "B — bê",
+            "C — cê",
+            "D — dê",
+            "E — é",
+            "F — efe"
+          ]
+        },
+        {
+          "lesson": 23,
+          "level": "FOUNDATION",
+          "title": "الحركات الخمس: الأصوات المفتوحة والمغلقة",
+          "words": 15,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 13,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "A — água",
+            "E — mesa",
+            "É — café",
+            "Ê — você",
+            "I — vida",
+            "O — avô"
+          ]
+        },
+        {
+          "lesson": 24,
+          "level": "FOUNDATION",
+          "title": "الأصوات الأنفية: ã وõ وão وam وem",
+          "words": 18,
+          "matched": 5,
+          "ambiguous": 0,
+          "missing": 13,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "mã",
+            "maçã",
+            "coração",
+            "limão",
+            "avião",
+            "nação"
+          ]
+        },
+        {
+          "lesson": 25,
+          "level": "FOUNDATION",
+          "title": "الحروف الساكنة والتركيبات: C وG وR وS وCH وNH وLH",
+          "words": 18,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 15,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "casa",
+            "cidade",
+            "cedo",
+            "gato",
+            "gente",
+            "guitarra"
+          ]
+        },
+        {
+          "lesson": 26,
+          "level": "FOUNDATION",
+          "title": "المقاطع والنبر وعلامات الحروف",
+          "words": 15,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 13,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "ca-fé",
+            "mé-di-co",
+            "ja-ne-la",
+            "ho-tel",
+            "fá-bri-ca",
+            "vo-cê"
+          ]
+        },
+        {
+          "lesson": 27,
+          "level": "FOUNDATION",
+          "title": "علامات الترقيم والكتابة الصحيحة",
+          "words": 15,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 15,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "ponto final (.)",
+            "vírgula (,)",
+            "ponto de interrogação (?)",
+            "ponto de exclamação (!)",
+            "dois-pontos (:)",
+            "ponto e vírgula (;)"
+          ]
+        },
+        {
+          "lesson": 28,
+          "level": "FOUNDATION",
+          "title": "المذكر والمؤنث وأدوات التعريف والنكرة",
+          "words": 16,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 16,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "o livro",
+            "a casa",
+            "um hotel",
+            "uma mala",
+            "os amigos",
+            "as amigas"
+          ]
+        },
+        {
+          "lesson": 29,
+          "level": "FOUNDATION",
+          "title": "ضمائر الفاعل والفعل ser: التعريف والهوية",
+          "words": 16,
+          "matched": 0,
+          "ambiguous": 4,
+          "missing": 12,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "tu",
+            "ele / ela",
+            "eles / elas",
+            "eu sou",
+            "você é",
+            "ele é / ela é"
+          ]
+        },
+        {
+          "lesson": 30,
+          "level": "FOUNDATION",
+          "title": "ser وestar: الهوية والحالة والمكان",
+          "words": 14,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 12,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "sou egípcio",
+            "é médica",
+            "estou cansado",
+            "está no hotel",
+            "é bonito",
+            "está bonito"
+          ]
+        },
+        {
+          "lesson": 31,
+          "level": "FOUNDATION",
+          "title": "تصريف الأفعال المنتظمة في المضارع: -ar و-er و-ir",
+          "words": 17,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 16,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "trabalhar",
+            "estudar",
+            "comer",
+            "beber",
+            "vender",
+            "abrir"
+          ]
+        },
+        {
+          "lesson": 32,
+          "level": "FOUNDATION",
+          "title": "النفي وتكوين الأسئلة",
+          "words": 9,
+          "matched": 2,
+          "ambiguous": 1,
+          "missing": 6,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Não entendo.",
+            "onde",
+            "quando",
+            "quem",
+            "por que",
+            "quanto custa?"
+          ]
+        },
+        {
+          "lesson": 33,
+          "level": "FOUNDATION",
+          "title": "الصفات والتذكير والتأنيث والجمع",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "bonito / bonita",
+            "caro / cara",
+            "pequeno / pequena",
+            "grande",
+            "interessante",
+            "hotel bonito"
+          ]
+        },
+        {
+          "lesson": 34,
+          "level": "FOUNDATION",
+          "title": "حروف الجر والدمج مع أدوات التعريف",
+          "words": 10,
+          "matched": 5,
+          "ambiguous": 0,
+          "missing": 5,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "à",
+            "dos / das",
+            "nos / nas",
+            "Sou do Egito.",
+            "Estou na estação."
+          ]
+        },
+        {
+          "lesson": 35,
+          "level": "FOUNDATION",
+          "title": "الأفعال الأساسية: ter وir وquerer وpoder",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 4,
+          "missing": 5,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Tenho uma reserva.",
+            "Vou para o hotel.",
+            "Quero água, por favor.",
+            "Pode me ajudar?",
+            "precisar de"
+          ]
+        },
+        {
+          "lesson": 36,
+          "level": "A2",
+          "title": "روتينك اليومي وتنظيم الوقت",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "acordar",
+            "geralmente",
+            "horário",
+            "durante a semana"
+          ]
+        },
+        {
+          "lesson": 37,
+          "level": "A2",
+          "title": "حكي بسيط عن عطلة نهاية الأسبوع",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "fim de semana",
+            "encontrei",
+            "depois",
+            "passeio"
+          ]
+        },
+        {
+          "lesson": 38,
+          "level": "A2",
+          "title": "حجز رحلة وفندق",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "disponibilidade",
+            "diária",
+            "cancelamento",
+            "confirmar"
+          ]
+        },
+        {
+          "lesson": 39,
+          "level": "A2",
+          "title": "في المطعم: طلب وتعديل الوجبة",
+          "words": 4,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 2,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "sem cebola",
+            "trocar"
+          ]
+        },
+        {
+          "lesson": 40,
+          "level": "A2",
+          "title": "الصيدلية ووصف أعراض بسيطة",
+          "words": 4,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 2,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "duas vezes por dia",
+            "há dois dias"
+          ]
+        },
+        {
+          "lesson": 41,
+          "level": "A2",
+          "title": "المواصلات وتغيير الخطة",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "linha",
+            "baldeação",
+            "atrasado",
+            "ponto de ônibus"
+          ]
+        },
+        {
+          "lesson": 42,
+          "level": "A2",
+          "title": "التسوق والاستبدال",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "provador",
+            "recibo",
+            "tamanho",
+            "troca"
+          ]
+        },
+        {
+          "lesson": 43,
+          "level": "A2",
+          "title": "وصف الحي والسكن",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "bairro",
+            "movimentado",
+            "perto de",
+            "confortável"
+          ]
+        },
+        {
+          "lesson": 44,
+          "level": "A2",
+          "title": "الدعوات والمواعيد",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "convite",
+            "adoraria",
+            "infelizmente",
+            "que tal...?"
+          ]
+        },
+        {
+          "lesson": 45,
+          "level": "A2",
+          "title": "الطقس والخطط",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "previsão do tempo",
+            "nublado",
+            "chuva",
+            "talvez"
+          ]
+        },
+        {
+          "lesson": 46,
+          "level": "A2",
+          "title": "التعامل مع مشكلة في الفندق",
+          "words": 4,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 3,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "ar-condicionado",
+            "funcionando",
+            "trocar de quarto"
+          ]
+        },
+        {
+          "lesson": 47,
+          "level": "A2",
+          "title": "الحديث عن الخبرات والمهارات",
+          "words": 4,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 4,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "experiência",
+            "habilidade",
+            "consigo",
+            "trabalhar em equipe"
+          ]
+        },
+        {
+          "lesson": 48,
+          "level": "B1",
+          "title": "الماضي المكتمل: ماذا فعلت؟ (Pretérito Perfeito)",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "ontem",
+            "na semana passada",
+            "Eu visitei o Rio.",
+            "Eu comi no restaurante.",
+            "Eu comprei uma passagem.",
+            "Eu fui ao centro."
+          ]
+        },
+        {
+          "lesson": 49,
+          "level": "B1",
+          "title": "الماضي الوصفي والعادات (Pretérito Imperfeito)",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "antigamente",
+            "quando eu era criança",
+            "Eu morava no Cairo.",
+            "A gente viajava muito.",
+            "O hotel era pequeno.",
+            "sempre"
+          ]
+        },
+        {
+          "lesson": 50,
+          "level": "B1",
+          "title": "الفرق بين الماضيين في حكاية واحدة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "quando",
+            "naquela época",
+            "de repente",
+            "Eu estava esperando...",
+            "o telefone tocou",
+            "percebi"
+          ]
+        },
+        {
+          "lesson": 51,
+          "level": "B1",
+          "title": "المستقبل والخطط (Ir + infinitivo)",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "amanhã",
+            "na próxima semana",
+            "Eu vou viajar.",
+            "Você vai ficar aqui?",
+            "Vamos sair mais tarde.",
+            "Eles vão chegar cedo."
+          ]
+        },
+        {
+          "lesson": 52,
+          "level": "B1",
+          "title": "المضارع المستمر: ماذا يحدث الآن؟",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "agora",
+            "Estou esperando.",
+            "está chovendo",
+            "Estamos procurando o hotel.",
+            "O que você está fazendo?",
+            "trabalhando"
+          ]
+        },
+        {
+          "lesson": 53,
+          "level": "B1",
+          "title": "الطلب المهذب والشرطي (Gostaria / Poderia)",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Gostaria de...",
+            "Poderia me ajudar?",
+            "Poderia repetir?",
+            "Teria como...?",
+            "Eu preferiria...",
+            "por gentileza"
+          ]
+        },
+        {
+          "lesson": 54,
+          "level": "B1",
+          "title": "الضرورة والقدرة والنصيحة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 1,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "ter que",
+            "precisar de",
+            "dever",
+            "Tenho que sair.",
+            "Preciso de um médico.",
+            "Você deve descansar."
+          ]
+        },
+        {
+          "lesson": 55,
+          "level": "B1",
+          "title": "المقارنة والتفضيل",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "mais... do que",
+            "menos... do que",
+            "melhor",
+            "pior",
+            "maior / menor",
+            "o mais barato"
+          ]
+        },
+        {
+          "lesson": 56,
+          "level": "B1",
+          "title": "الأفعال الانعكاسية واليوميات",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "se acordar",
+            "Eu me levanto cedo.",
+            "Você se chama...?",
+            "Eu me sinto bem.",
+            "Nós nos preparamos.",
+            "se perder"
+          ]
+        },
+        {
+          "lesson": 57,
+          "level": "B1",
+          "title": "روابط الجمل وترتيب الأفكار",
+          "words": 9,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 6,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "por isso",
+            "então",
+            "enquanto",
+            "antes de",
+            "depois de",
+            "além disso"
+          ]
+        },
+        {
+          "lesson": 58,
+          "level": "B1",
+          "title": "صيغة التمني والاحتمال (Subjuntivo)",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Quero que...",
+            "Espero que...",
+            "Talvez",
+            "É importante que...",
+            "venha",
+            "seja"
+          ]
+        },
+        {
+          "lesson": 59,
+          "level": "B1",
+          "title": "الأوامر والتعليمات والنصيحة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Vire à direita.",
+            "Siga em frente.",
+            "Espere aqui.",
+            "Não toque nisso.",
+            "Tenha cuidado!",
+            "Entre, por favor."
+          ]
+        },
+        {
+          "lesson": 60,
+          "level": "B1",
+          "title": "مفعول الأفعال والضمائر في الكلام",
+          "words": 9,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "te",
+            "para mim",
+            "com você",
+            "falar com ele",
+            "Você me entende?",
+            "Eu te aviso."
+          ]
+        },
+        {
+          "lesson": 61,
+          "level": "B1",
+          "title": "حكي تجربة كاملة وترتيب الأحداث",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "primeiro",
+            "depois",
+            "em seguida",
+            "enquanto",
+            "finalmente",
+            "no fim"
+          ]
+        },
+        {
+          "lesson": 62,
+          "level": "B2",
+          "title": "المستقبل الشرطي والافتراض",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Se eu pudesse...",
+            "Eu faria isso.",
+            "Eu gostaria de...",
+            "poderia",
+            "seria melhor",
+            "teria tempo"
+          ]
+        },
+        {
+          "lesson": 63,
+          "level": "B2",
+          "title": "المستقبل في جملة الشرط (Futuro do Subjuntivo)",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Quando você chegar...",
+            "Se eu tiver tempo...",
+            "assim que",
+            "quando pudermos",
+            "se fizer frio",
+            "quando eu for"
+          ]
+        },
+        {
+          "lesson": 64,
+          "level": "B2",
+          "title": "الماضي الأسبق والماضي المركب",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "já tinha...",
+            "tinha reservado",
+            "quando cheguei",
+            "tenho viajado",
+            "ultimamente",
+            "desde então"
+          ]
+        },
+        {
+          "lesson": 65,
+          "level": "B2",
+          "title": "المبني للمجهول والوصف الرسمي",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "foi cancelado",
+            "está reservado",
+            "será enviado",
+            "foi encontrado",
+            "está fechado",
+            "é permitido"
+          ]
+        },
+        {
+          "lesson": 66,
+          "level": "B2",
+          "title": "جمل الوصل والوصف الدقيق",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "que",
+            "quem",
+            "onde",
+            "com quem",
+            "em que",
+            "a pessoa que me ajudou"
+          ]
+        },
+        {
+          "lesson": 67,
+          "level": "B2",
+          "title": "نقل الكلام والآراء",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "disse que",
+            "perguntou se",
+            "pediu para",
+            "avisou que",
+            "recomendou",
+            "segundo ele"
+          ]
+        },
+        {
+          "lesson": 68,
+          "level": "B2",
+          "title": "العامية والاختصارات الشائعة",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 9,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "tá / está",
+            "tô / estou",
+            "cê / você",
+            "pra / para",
+            "pro / para o",
+            "a gente vai"
+          ]
+        },
+        {
+          "lesson": 69,
+          "level": "B2",
+          "title": "التعبيرات الاصطلاحية واللغة المجازية",
+          "words": 8,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 5,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "quebrar um galho",
+            "matar a saudade",
+            "deu tudo certo",
+            "bater papo",
+            "estar por dentro"
+          ]
+        },
+        {
+          "lesson": 70,
+          "level": "B2",
+          "title": "فهم الرد السريع وإصلاح سوء الفهم",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Como assim?",
+            "Pode reformular?",
+            "Não peguei a última parte.",
+            "Você quer dizer que...?",
+            "então",
+            "na verdade"
+          ]
+        },
+        {
+          "lesson": 71,
+          "level": "B2",
+          "title": "اختلاف النطق واللهجات داخل البرازيل",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "sotaque",
+            "regional",
+            "pronúncia",
+            "vocabulário",
+            "variedade",
+            "dependendo da região"
+          ]
+        },
+        {
+          "lesson": 72,
+          "level": "B2",
+          "title": "النقاش وإبداء الرأي بأدلة",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "na minha opinião",
+            "do meu ponto de vista",
+            "por um lado",
+            "por outro lado",
+            "no entanto",
+            "por exemplo"
+          ]
+        },
+        {
+          "lesson": 73,
+          "level": "B2",
+          "title": "مكالمة هاتفية وحل مشكلة مع خدمة العملاء",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Estou ligando a respeito de...",
+            "número de protocolo",
+            "solicitar",
+            "confirmar",
+            "reembolso",
+            "cobrança indevida"
+          ]
+        },
+        {
+          "lesson": 74,
+          "level": "C1",
+          "title": "صياغة حجة متماسكة ومتوازنة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "em síntese",
+            "em contrapartida",
+            "não obstante",
+            "consequentemente",
+            "ao que tudo indica",
+            "em certa medida"
+          ]
+        },
+        {
+          "lesson": 75,
+          "level": "C1",
+          "title": "الفروق الدقيقة بين الأزمنة والصيغ",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Se eu tiver...",
+            "Se eu tivesse...",
+            "Se eu tivesse tido...",
+            "teria feito",
+            "quando eu puder",
+            "caso fosse possível"
+          ]
+        },
+        {
+          "lesson": 76,
+          "level": "C1",
+          "title": "التعبير الدقيق عن التحفظ والاحتمال",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "pode ser que",
+            "aparentemente",
+            "até onde sei",
+            "não posso afirmar",
+            "tudo indica que",
+            "talvez seja"
+          ]
+        },
+        {
+          "lesson": 77,
+          "level": "C1",
+          "title": "الأسلوب الرسمي والبريد المهني",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Prezados(as)",
+            "Escrevo para solicitar...",
+            "Em anexo",
+            "Fico no aguardo",
+            "Atenciosamente",
+            "Cordialmente"
+          ]
+        },
+        {
+          "lesson": 78,
+          "level": "C1",
+          "title": "الاجتماعات والتفاوض وحل الخلاف",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "destacar",
+            "ressalva",
+            "considerar",
+            "alternativa",
+            "alinhamento",
+            "negociar"
+          ]
+        },
+        {
+          "lesson": 79,
+          "level": "C1",
+          "title": "فهم المعنى الضمني والسخرية والنبرة",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Pois é...",
+            "Que beleza...",
+            "até parece",
+            "Você está falando sério?",
+            "nem pensar",
+            "por incrível que pareça"
+          ]
+        },
+        {
+          "lesson": 80,
+          "level": "C1",
+          "title": "تلخيص المحتوى وإعادة صياغته",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "em resumo",
+            "em outras palavras",
+            "o ponto central",
+            "o autor afirma",
+            "sugere",
+            "questiona"
+          ]
+        },
+        {
+          "lesson": 81,
+          "level": "C1",
+          "title": "العروض الشفوية والتقديم المهني",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "experiência profissional",
+            "responsabilidade",
+            "como resultado",
+            "por exemplo",
+            "passando ao próximo ponto",
+            "gostaria de enfatizar"
+          ]
+        },
+        {
+          "lesson": 82,
+          "level": "C1",
+          "title": "الطلاقة والتصحيح الذاتي في المحادثة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "quer dizer",
+            "melhor dizendo",
+            "ou melhor",
+            "deixa eu reformular",
+            "não era bem isso",
+            "termo exato"
+          ]
+        },
+        {
+          "lesson": 83,
+          "level": "C2",
+          "title": "الدلالة الدقيقة والتعبيرات متعددة المعنى",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "reparar em",
+            "perceber",
+            "notar",
+            "constatar",
+            "supor",
+            "presumir"
+          ]
+        },
+        {
+          "lesson": 84,
+          "level": "C2",
+          "title": "التعابير الاصطلاحية المتقدمة والمجاز",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "colocar a mão na massa",
+            "puxar assunto",
+            "falar pelos cotovelos",
+            "na ponta da língua",
+            "fazer vista grossa",
+            "dar com os burros n'água"
+          ]
+        },
+        {
+          "lesson": 85,
+          "level": "C2",
+          "title": "اختيار السجل اللغوي بدقة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "solicito",
+            "gostaria de solicitar",
+            "você poderia...",
+            "me manda...",
+            "senhor / senhora",
+            "prezado(a)"
+          ]
+        },
+        {
+          "lesson": 86,
+          "level": "C2",
+          "title": "البلاغة والتوكيد والتلطيف",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "sem dúvida",
+            "de fato",
+            "é inegável que",
+            "até certo ponto",
+            "em princípio",
+            "a menos que"
+          ]
+        },
+        {
+          "lesson": 87,
+          "level": "C2",
+          "title": "قراءة النصوص الطويلة وتحليل وجهة النظر",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "tese",
+            "argumento",
+            "pressuposto",
+            "implicação",
+            "ressalva",
+            "ironia"
+          ]
+        },
+        {
+          "lesson": 88,
+          "level": "C2",
+          "title": "الاستماع المتقدم: المعنى وراء الكلمات",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "no fim das contas",
+            "só que",
+            "por assim dizer",
+            "meio que",
+            "provavelmente",
+            "certamente"
+          ]
+        },
+        {
+          "lesson": 89,
+          "level": "C2",
+          "title": "إدارة حوار صعب وحل الخلاف",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "preocupação",
+            "encaminhamento",
+            "viável",
+            "atender às duas partes",
+            "esclarecer",
+            "reformular"
+          ]
+        },
+        {
+          "lesson": 90,
+          "level": "C2",
+          "title": "مشروع التخرج: رحلة كاملة بالبرتغالية",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "planejamento",
+            "reserva confirmada",
+            "imprevisto",
+            "alternativa",
+            "solução",
+            "relato"
+          ]
+        },
+        {
+          "lesson": 91,
+          "level": "A1",
+          "title": "A1 تطبيقي: الضمائر في المواقف اليومية",
+          "words": 9,
+          "matched": 0,
+          "ambiguous": 7,
+          "missing": 2,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "estudamos",
+            "trabalha"
+          ]
+        },
+        {
+          "lesson": 92,
+          "level": "A1",
+          "title": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Eu sou do Egito.",
+            "Sou egípcio.",
+            "Sou egípcia.",
+            "Ela é professora.",
+            "Ele é médico.",
+            "De onde você é?"
+          ]
+        },
+        {
+          "lesson": 93,
+          "level": "A1",
+          "title": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Estou bem.",
+            "Estou cansado.",
+            "Estou cansada.",
+            "Ela está aqui.",
+            "Você está no hotel?",
+            "Nós estamos prontos."
+          ]
+        },
+        {
+          "lesson": 94,
+          "level": "A1",
+          "title": "A1 تطبيقي: الملكية والعمر باستخدام ter",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Eu tenho um bilhete.",
+            "Você tem passaporte?",
+            "Nós temos tempo.",
+            "Tenho vinte anos.",
+            "Quantos anos você tem?",
+            "Tenho fome."
+          ]
+        },
+        {
+          "lesson": 95,
+          "level": "A1",
+          "title": "A1 تطبيقي: أدوات السؤال في الشارع والمقهى",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Onde fica o metrô?",
+            "Quando começa?",
+            "Quanto custa?",
+            "Como você está?",
+            "Por que está fechado?",
+            "Quem é ela?"
+          ]
+        },
+        {
+          "lesson": 96,
+          "level": "A1",
+          "title": "A1 تطبيقي: الطلب المهذب والقدرة",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Pode me ajudar?",
+            "Eu quero água.",
+            "Eu gostaria de água.",
+            "Posso entrar?",
+            "Você pode repetir?",
+            "Não entendi."
+          ]
+        },
+        {
+          "lesson": 97,
+          "level": "A1",
+          "title": "A1 تطبيقي: الروتين والنفي في المضارع",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "dialogue": 4,
+          "dialogueMatched": 0,
+          "missingSamples": [
+            "Eu acordo cedo.",
+            "Eu tomo café.",
+            "Eu estudo de manhã.",
+            "Eu trabalho à tarde.",
+            "Nós estudamos juntos.",
+            "Não trabalho hoje."
+          ]
+        }
+      ],
+      "priorityMissing": [
+        {
+          "lesson": 22,
+          "title": "الحروف الأبجدية البرتغالية",
+          "level": "FOUNDATION",
+          "words": 27
+        },
+        {
+          "lesson": 27,
+          "title": "علامات الترقيم والكتابة الصحيحة",
+          "level": "FOUNDATION",
+          "words": 15
+        },
+        {
+          "lesson": 28,
+          "title": "المذكر والمؤنث وأدوات التعريف والنكرة",
+          "level": "FOUNDATION",
+          "words": 16
+        },
+        {
+          "lesson": 29,
+          "title": "ضمائر الفاعل والفعل ser: التعريف والهوية",
+          "level": "FOUNDATION",
+          "words": 16
+        },
+        {
+          "lesson": 33,
+          "title": "الصفات والتذكير والتأنيث والجمع",
+          "level": "FOUNDATION",
+          "words": 9
+        },
+        {
+          "lesson": 35,
+          "title": "الأفعال الأساسية: ter وir وquerer وpoder",
+          "level": "FOUNDATION",
+          "words": 9
+        },
+        {
+          "lesson": 91,
+          "title": "A1 تطبيقي: الضمائر في المواقف اليومية",
+          "level": "A1",
+          "words": 9
+        },
+        {
+          "lesson": 92,
+          "title": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+          "level": "A1",
+          "words": 8
+        },
+        {
+          "lesson": 93,
+          "title": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+          "level": "A1",
+          "words": 8
+        },
+        {
+          "lesson": 94,
+          "title": "A1 تطبيقي: الملكية والعمر باستخدام ter",
+          "level": "A1",
+          "words": 8
+        },
+        {
+          "lesson": 95,
+          "title": "A1 تطبيقي: أدوات السؤال في الشارع والمقهى",
+          "level": "A1",
+          "words": 8
+        },
+        {
+          "lesson": 97,
+          "title": "A1 تطبيقي: الروتين والنفي في المضارع",
+          "level": "A1",
+          "words": 8
+        }
+      ],
+      "note": "Manifest text matches 94/857 academy vocabulary rows (17 ambiguous) and 1/384 dialogue lines; the 80 new trainer phrases have no identical old recording. Other phrase matches remain unknown until recorded/reviewed.",
+      "dialogueCoverage": {
+        "lines": 384,
+        "exactMatches": 1,
+        "ambiguousMatches": 0,
+        "missing": 383
+      },
+      "practicalCoverage": {
+        "phrases": 80,
+        "exactMatches": 0,
+        "ambiguousMatches": 0,
+        "missing": 80
+      },
+      "sourceManifestGlossMissing": 234,
+      "verification": "Real R2 object-key and source-text match, NOT verified spoken phonetics, human pronunciation, browser playback or CEFR mastery"
     },
     "en": {
       "name": "الإنجليزية",
