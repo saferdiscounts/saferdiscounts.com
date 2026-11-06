@@ -1,14 +1,15 @@
 (function(){
 'use strict';
-const catalog=window.SD_PTBR_PRACTICE,mastery=window.SDAcademyMastery;
-if(!catalog||!mastery||!Array.isArray(catalog.themes))throw Error('Practical lab dependencies are missing');
+const catalog=window.SD_PTBR_PRACTICE,mastery=window.SDAcademyMastery,writingCheck=window.SDPTBRWritingCheck;
+if(!catalog||!mastery||!writingCheck||!Array.isArray(catalog.themes))throw Error('Practical lab dependencies are missing');
 const $=id=>document.getElementById(id);
 const topicList=$('topicList'),panel=$('lessonPanel'),progress=$('progress'),voiceStatus=$('voiceStatus');
-const storeKey='sd_ptbr_practical_mastery_v1',errKey='sd_ptbr_practical_errors_v1';
+const storeKey='sd_ptbr_practical_mastery_v2',errKey='sd_ptbr_practical_errors_v1';
+// Keep older achievements in their original key: the V2 7-point recall check is stricter.
 let saved={},wrong={};
 try{const j=JSON.parse(localStorage.getItem(storeKey)||'{}');if(j&&typeof j==='object'&&!Array.isArray(j))saved=j}catch(e){}
 try{const j=JSON.parse(localStorage.getItem(errKey)||'{}');if(j&&typeof j==='object'&&!Array.isArray(j))wrong=j}catch(e){}
-let active=0,stage='cards',cardIndex=0,flipped=false,round=[],question=0,score=0,mistakes=[],locked=false,orderIndex=-1,tokenOptions=[],picked=[],orderScored=false;
+let active=0,stage='cards',cardIndex=0,flipped=false,round=[],question=0,score=0,mistakes=[],locked=false,orderIndex=-1,tokenOptions=[],picked=[],orderScored=false,writingIndex=-1,writingFinished=false,resultSaved=false;
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuffle=x=>{const a=x.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const unit=()=>catalog.themes[active],key=()=>unit().id;
@@ -56,11 +57,12 @@ function draw(){
  if(stage==='cards')return cards();
  if(stage==='quiz')return quiz();
  if(stage==='order')return ordering();
+ if(stage==='write')return writing();
  if(stage==='result')return result();
 }
 function cards(){
  const t=unit(),p=t.phrases[cardIndex];
- panel.innerHTML=panelHeader(t)+'<div class="mini"><span>الخطوة 1 من 3 · البطاقات</span><span>بطاقة '+(cardIndex+1)+' / 8</span></div>'+
+ panel.innerHTML=panelHeader(t)+'<div class="mini"><span>الخطوة 1 من 4 · البطاقات</span><span>بطاقة '+(cardIndex+1)+' / 8</span></div>'+
  '<div class="flipcard"><p>اقرأ المعنى وحاول تذكر العبارة قبل كشفها.</p><div class="arabic">'+esc(p[1])+'</div>'+
  (flipped?'<div class="translation" lang="pt-BR" dir="ltr">'+esc(p[0])+'</div>':'<button type="button" class="primary" id="reveal">اكشف العبارة بعد المحاولة</button>')+
  '</div><div class="row">'+(flipped?'<button type="button" class="outline" id="hard">مش فاكرها — أضفها للمراجعة</button><button type="button" class="primary" id="known">عرفتها — البطاقة التالية</button><button type="button" class="audio" data-play="'+cardIndex+'" data-slow="yes">🐢 اسمع ببطء</button>':'')+'</div>'+
@@ -73,14 +75,14 @@ function cards(){
  }
 }
 function nextCard(){if(cardIndex<7){cardIndex++;flipped=false;cards()}else startQuiz()}
-function startQuiz(){stage='quiz';question=0;score=0;mistakes=[];round=shuffle([0,1,2,3,4,5,6,7]).slice(0,5);quiz()}
+function startQuiz(){stage='quiz';question=0;score=0;mistakes=[];resultSaved=false;round=shuffle([0,1,2,3,4,5,6,7]).slice(0,5);quiz()}
 function quiz(){
  const t=unit();if(question>=round.length){startOrdering();return}
  const id=round[question],pair=t.phrases[id],reverse=question%2===1;
  const alternatives=shuffle([id,...shuffle(t.phrases.map((_,i)=>i).filter(i=>i!==id)).slice(0,3)]);
  locked=false;
  panel.innerHTML='<span class="level">'+esc(t.level)+'</span><h2>اختبار الفهم · '+(question+1)+' من 5</h2>'+
- '<p class="small">الخطوة 2 من 3. لا تظهر البطاقة أو ترجمتها كاملة قبل الإجابة.</p><div class="exam"><p><b>'+(reverse?'اختر المعنى العربي الصحيح:':'اختر العبارة البرازيلية المناسبة:')+'</b></p>'+
+ '<p class="small">الخطوة 2 من 4. لا تظهر البطاقة أو ترجمتها كاملة قبل الإجابة.</p><div class="exam"><p><b>'+(reverse?'اختر المعنى العربي الصحيح:':'اختر العبارة البرازيلية المناسبة:')+'</b></p>'+
  (reverse?'<p class="translation" lang="pt-BR" dir="ltr">'+esc(pair[0])+'</p>':'<p class="arabic">'+esc(pair[1])+'</p>')+
  '<div class="answers">'+alternatives.map(i=>'<button type="button" data-pick="'+i+'" '+(reverse?'dir="rtl"':'dir="ltr" lang="pt-BR"')+'>'+esc(t.phrases[i][reverse?1:0])+'</button>').join('')+'</div>'+
  '<p id="feedback" role="status" aria-live="polite"></p><button type="button" class="primary" id="next" hidden>السؤال التالي</button></div>';
@@ -96,7 +98,8 @@ function quiz(){
 }
 function startOrdering(){
  stage='order';const t=unit();
- const candidates=t.phrases.map((p,i)=>({i,size:p[0].trim().split(/\s+/).length})).filter(x=>x.size>=4&&x.size<=12);
+ const candidates=t.phrases.map((p,i)=>({i,size:p[0].trim().split(/\s+/).length})).filter(x=>!round.includes(x.i)&&x.size>=4&&x.size<=12);
+ if(!candidates.length)throw Error('Missing distinct sentence-order candidate');
  orderIndex=shuffle(candidates)[0].i;
  const tokens=t.phrases[orderIndex][0].trim().split(/\s+/);
  tokenOptions=shuffle(tokens.map((word,index)=>({word,index})));
@@ -106,7 +109,7 @@ function startOrdering(){
 }
 function ordering(){
  const t=unit(),pair=t.phrases[orderIndex],tokens=pair[0].trim().split(/\s+/);
- panel.innerHTML='<span class="level">'+esc(t.level)+'</span><h2>رتّب الجملة بنفسك</h2><p class="small">الخطوة 3 من 3. كوّن الجملة البرتغالية من الكلمات، بدون عرضها كاملة.</p>'+
+ panel.innerHTML='<span class="level">'+esc(t.level)+'</span><h2>رتّب الجملة بنفسك</h2><p class="small">الخطوة 3 من 4. كوّن الجملة البرتغالية من الكلمات، بدون عرضها كاملة.</p>'+
  '<div class="exam"><p><b>المعنى المطلوب:</b> '+esc(pair[1])+'</p><div id="selected" class="selected" dir="ltr" aria-live="polite">'+(picked.length?picked.map(i=>'<span>'+esc(tokens[i])+'</span>').join(''):'اضغط على الكلمات بالترتيب الصحيح')+'</div>'+
  '<div class="tokens" dir="ltr">'+tokenOptions.map(x=>'<button type="button" data-token="'+x.index+'" '+(picked.includes(x.index)?'disabled':'')+'>'+esc(x.word)+'</button>').join('')+'</div>'+
  '<div class="row"><button type="button" class="outline" id="undo" '+(!picked.length?'disabled':'')+'>تراجع</button><button type="button" class="primary" id="check" '+(picked.length!==tokens.length?'disabled':'')+'>تحقق من ترتيب الجملة</button></div><p id="orderMessage" role="status" aria-live="polite"></p></div>';
@@ -117,18 +120,64 @@ function ordering(){
   orderScored=true;
   const correct=picked.every((token,i)=>token===i);
   if(correct)score++;else{mistakes.push(orderIndex);rememberError(orderIndex)}
-  stage='result';result();
+  startWriting();
  };
 }
+function startWriting(){
+ stage='write';writingFinished=false;
+ const available=unit().phrases.map((p,i)=>i).filter(i=>!round.includes(i)&&i!==orderIndex);
+ if(!available.length)throw Error('Writing recall needs an unseen exam phrase');
+ writingIndex=shuffle(available)[0];
+ writing();
+}
+function writing(){
+ const t=unit(),phrase=t.phrases[writingIndex];
+ panel.innerHTML='<span class="level">'+esc(t.level)+'</span><h2>اكتب العبارة من ذاكرتك</h2>'+
+ '<p class="small">الخطوة 4 من 4. ده تمرين لاسترجاع جملة سبق ودرستها، مش تصحيحًا حرًا لكل الجمل الصحيحة. الإجابة مخفية لحد ما تحاول.</p>'+
+ '<div class="exam"><p><b>اكتب بالبرتغالية البرازيلية العبارة التي تعلمتها لهذا المعنى:</b></p><p class="arabic">'+esc(phrase[1])+'</p>'+
+ '<label for="writingAnswer">محاولتك بالبرتغالية</label><textarea id="writingAnswer" lang="pt-BR" dir="ltr" spellcheck="false" autocomplete="off" autocapitalize="off" aria-describedby="writingHint"></textarea>'+
+ '<p id="writingHint" class="small">احرص على ترتيب الكلمات وعلامات الحروف مثل (ã، ç، é). تجاهل الترقيم في التصحيح.</p>'+
+ '<div class="tokens" aria-label="إدخال الحروف البرتغالية" dir="ltr">'+[...'áàâãçéêíóôõú'].map(c=>'<button type="button" data-char="'+c+'" aria-label="اكتب '+c+'">'+c+'</button>').join('')+'</div>'+
+ '<div class="row"><button type="button" class="primary" id="submitWriting">تحقق من محاولتي</button><button type="button" class="outline" id="skipWriting">لا أتذكر — اكشف النموذج واحتسبها خطأ</button></div>'+
+ '<p id="writingFeedback" role="status" aria-live="polite"></p><div class="translation" id="writingModel" lang="pt-BR" dir="ltr" hidden></div>'+
+ '<div class="row"><button type="button" class="outline" id="revealWriting" hidden>اكشف نموذج الدرس</button><button type="button" class="primary" id="finishWriting" hidden>اعرض نتيجة التدريب</button></div></div>';
+ const input=panel.querySelector('#writingAnswer');
+ panel.querySelectorAll('[data-char]').forEach(b=>b.onclick=()=>{
+  if(writingFinished)return;
+  const p=input.selectionStart??input.value.length,q=input.selectionEnd??p;
+  input.setRangeText(b.dataset.char,p,q,'end');input.focus();
+ });
+ const finish=(answer,skipped)=>{
+  if(writingFinished)return;
+  if(!skipped&&!String(answer).trim()){panel.querySelector('#writingFeedback').textContent='اكتب محاولة أولًا، أو اختر كشف النموذج واحتسابها خطأ.';return}
+  writingFinished=true;
+  const checked=skipped?{exact:false,issue:'skipped',message:'تم تجاوز الكتابة. راجع النموذج ثم جرب مرة أخرى في التدريب القادم.'}:writingCheck.compare(answer,phrase[0]);
+  if(checked.exact)score++;
+  else {mistakes.push(writingIndex);rememberError(writingIndex)}
+  input.disabled=true;panel.querySelectorAll('[data-char]').forEach(b=>b.disabled=true);
+  panel.querySelector('#submitWriting').disabled=true;panel.querySelector('#skipWriting').disabled=true;
+  panel.querySelector('#writingFeedback').textContent=checked.message;
+  panel.querySelector('#revealWriting').hidden=false;panel.querySelector('#finishWriting').hidden=false;
+  if(checked.exact||skipped)showModel();
+ };
+ const showModel=()=>{const m=panel.querySelector('#writingModel');m.textContent=phrase[0];m.hidden=false;panel.querySelector('#revealWriting').hidden=true};
+ panel.querySelector('#submitWriting').onclick=()=>finish(input.value,false);
+ panel.querySelector('#skipWriting').onclick=()=>finish('',true);
+ panel.querySelector('#revealWriting').onclick=showModel;
+ panel.querySelector('#finishWriting').onclick=()=>{stage='result';result()};
+}
 function result(){
- const t=unit(),full=score===6,k=key();
- saved[k]=mastery.record(saved[k],full?3:Math.min(2,Math.floor(score/2)),[...new Set(mistakes)].slice(0,3));
- try{localStorage.setItem(storeKey,JSON.stringify(saved))}catch(e){}
+ const t=unit(),full=score===7,k=key();
+ if(!resultSaved){
+  resultSaved=true;
+  saved[k]=mastery.record(saved[k],full?3:Math.min(2,Math.floor(score/3)),[...new Set(mistakes)].slice(0,3));
+  try{localStorage.setItem(storeKey,JSON.stringify(saved))}catch(e){}
+ }
  navbar();
  const status=mastery.state(saved[k]),failed=[...new Set([...(wrong[k]||[]),...mistakes])];
- panel.innerHTML='<h2>نتيجة التدريب: '+score+' / 6</h2><p class="hint">'+(full?'نجحت في جولة الاسترجاع؛ عد في موعد المراجعة التالي لتثبيت الحفظ.':'لم تكتمل الجولة. راجع العبارات الصعبة وأعد الاختبار.')+'</p>'+
+ panel.innerHTML='<h2>نتيجة التدريب: '+score+' / 7</h2><p class="hint">'+(full?'نجحت في جولة الاسترجاع؛ عد في موعد المراجعة التالي لتثبيت الحفظ.':'لم تكتمل الجولة. راجع العبارات الصعبة وأعد الاختبار.')+'</p>'+
  '<p><strong>'+esc(status.label)+'</strong></p>'+
- '<p class="small">الدرجة مكوّنة من 5 اختيارات فهم + ترتيب جملة. لا تشمل تقييم جودة الصوت أو إنتاج كلام حر.</p>'+
+ '<p class="small">الدرجة مكوّنة من 5 اختيارات فهم + ترتيب جملة + استرجاع عبارة مكتوبة. الكتابة تقارن بنموذج الدرس حرفيًا بعد تجاهل حالة الحروف والترقيم، وليست حكمًا على جميع الصياغات الصحيحة أو إتقان التحدث.</p>'+
  '<h3>بنك مراجعة العبارات الصعبة</h3>'+(failed.length?'<div class="review">'+failed.map(i=>'<div><span lang="pt-BR" dir="ltr">'+esc(t.phrases[i][0])+'</span><span>'+esc(t.phrases[i][1])+'</span><button type="button" class="audio" data-play="'+i+'" data-slow="yes">🐢 صوت المتصفح</button></div>').join('')+'</div>':'<p>لا توجد أخطاء محفوظة لهذا الموضوع.</p>')+
  '<div class="row"><button type="button" class="outline" id="again">أعد مراجعة البطاقات</button><button type="button" class="primary" id="retry">اختبار جديد</button>'+(active<catalog.themes.length-1?'<button type="button" class="outline" id="onward">الموضوع التالي</button>':'')+'</div>';
  panel.querySelector('#again').onclick=()=>{stage='cards';cardIndex=0;flipped=false;cards()};
