@@ -43,6 +43,8 @@ function render(data){
  const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));if(data.storageAudit?.languages?.[code]?.inventory)actions.append(link('audio-review-workbench.html?lang='+code,'مراجعة ملفات اللغة',true));box.append(actions);
  const storage=data.storageAudit?.languages?.[code];
  if(storage){const phrase='📦 الجرد الفعلي على R2: '+storage.mp3+' ملف MP3، منها '+storage.paired+' زوجًا طبيعيًا وبطيئًا'+(storage.solo?'، و'+storage.solo+' ملفًا فرديًا بلا نسخة بطيئة':'')+'.';box.append(node('p','',phrase));}
+ const proposals=data.asrProvisionalAudit?.languages?.[code];
+ if(proposals)box.append(node('p','small','🧪 تحليل آلي تجريبي: '+proposals.analyzedPairs+' زوجًا صوتيًا · '+proposals.agreeingTranscripts+' متفقين في التفريغ · '+proposals.exactCourseProposals+' مقترحًا مطابقًا لعبارات الدرس، لم يُعتمد أي منها باستماع بشري بعد.'));
  if(item.mapping!=='exact-index'){
   const p=node('div','empty',(summaries[code]||'لم يُعتمد فهرس نصي مستقل لهذا المسار.')+' النسبة هنا غير معروفة؛ لا يصح اعتبارها 0%.');box.append(p);return;
  }
@@ -74,7 +76,9 @@ function cards(data){
   const storage=data.storageAudit?.languages?.[code];
   const detail=node('span','',record.mapping==='exact-index'?record.exactMatches+' / '+record.words+' كلمة/عبارة في الدروس':record.lessons+' درسًا · لا توجد نسبة موثوقة');
   const storageLine=node('span','',storage?' · في R2: '+storage.paired+' زوجًا صوتيًا':' · لم يتم قياس الجرد');
-  item.append(label,value,detail,storageLine);
+  const machine=data.asrProvisionalAudit?.languages?.[code];
+  const machineLine=node('span','',machine?' · '+machine.exactCourseProposals+' ربطًا تجريبيًا (آليًا)':'');
+  item.append(label,value,detail,storageLine,machineLine);
   item.addEventListener('click',()=>{select.value=code;render(data);select.scrollIntoView({behavior:'smooth',block:'start'})});
   item.style.cursor='pointer';item.tabIndex=0;item.setAttribute('role','button');
   item.setAttribute('aria-label','عرض حالة '+record.name);
