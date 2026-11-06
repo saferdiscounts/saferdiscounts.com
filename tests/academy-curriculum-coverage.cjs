@@ -411,8 +411,8 @@ test('Every Brazilian lesson offers an honest audio-only question with no writte
  const logic=html.slice(end,html.indexOf('function render(i)',end));
  assert.match(logic,/dialog\.showModal\(\)/,'Hide source lesson during audio testing');
  assert.match(logic,/question/,'Sound rounds should track progress and question state');
- assert.match(logic,/player\.onplaying=\(\)=>\{if\(!closed&&!answered\)\{heard=true/,'Unlock only on real recorded sound');
- assert.match(logic,/utterance\.onstart=\(\)=>\{if\(!closed&&!answered\)\{heard=true/,'Unlock only when speech begins');
+ assert.match(logic,/player\.onplaying=\(\)=>\{if\(!closed&&!answered&&expectedStep===step\)\{heard=true/,'Unlock only on real recorded sound');
+ assert.match(logic,/utterance\.onstart=\(\)=>\{if\(!closed&&!answered&&expectedStep===step\)\{heard=true/,'Unlock only when speech begins');
  assert.match(logic,/if\(!heard\|\|answered\)return/,'Do not score unheard prompts');
  assert.match(logic,/button\.disabled=true/,'Question choices must initially be unavailable');
  assert.match(logic,/getVoices\(\)\.find\(v=>\/\^pt\[-_\]BR\$\/i/,'Use Brazilian Portuguese voice rather than a default unknown accent');
