@@ -463,6 +463,9 @@
     var rawMeaning=String(meaning||'').trim(),rawWord=String(word||'').trim();
     // Pronouns are abstract concepts: never assign an unrelated animal or object photo.
     var meaningPlain=rawMeaning.replace(/[()؟?!،,:؛]/g,' ').replace(/\s+/g,' ').trim();
+    // Abstract concepts need explanation or a diagram, not an unrelated stock photograph.
+    // Keep the normal text-and-audio card rather than mislabeling writing, money or transport imagery.
+    if(/^(?:الخبرة|خبرة|خبرة مهنية|الخبرة المهنية|احتمال|الاحتمال|احتمالية|الاحتمالية|الانتماء|انتماء|شعور بالانتماء)$/.test(meaningPlain))return null;
     var pronounMeaning=/^(?:أنا|أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ|هو|هي|نحن|احنا|إحنا|هم|هن|هما|أنتم|أنتما|إياي|إياك|إياه|إياها)$/i.test(meaningPlain);
     var pronounWord=/^(?:i|me|my|mine|myself|you|your|yours|yourself|he|him|his|himself|she|her|hers|herself|we|us|our|ours|ourselves|they|them|their|theirs|themselves|eu|meu|minha|nós|nos|nosso|nossa|ele|ela|eles|elas|seu|sua|io|mi|mio|mia|noi|ci|nostro|nostra|lui|lei|yo|me|mi|mío|mía|nosotros|nosotras|él|ella|ellos|ellas|usted|ustedes|tú|vosotros|vosotras|je|me|moi|mon|ma|nous|notre|il|elle|ils|elles|vous|tu|ich|mich|mein|meine|wir|uns|unser|er|ihn|sie|ihr|es|du|dich|я|меня|мне|мой|моя|мы|нас|наш|он|она|они|его|её|вы|ты|тебя|тебе|вас|você|vocês|te|ti|voi)$/i.test(rawWord);
     if(pronounMeaning||pronounWord||(lang==='it'&&/^loro$/i.test(rawWord)))return null;
