@@ -1,0 +1,48 @@
+name: Academy content and audio regression checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*-academy.html'
+      - 'language-academy.html'
+      - 'alphabet-foundations.html'
+      - 'academy-*.json'
+      - 'academy-audio-status.html'
+      - 'audio-*.json'
+      - 'audio-review-workbench.html'
+      - 'pronunciation-audio-library.html'
+      - 'verified-academy-audio.js'
+      - 'academy-vocabulary-images.js'
+      - 'tests/**'
+      - '.github/workflows/academy-regressions.yml'
+  pull_request:
+    paths:
+      - '**/*-academy.html'
+      - 'language-academy.html'
+      - 'alphabet-foundations.html'
+      - 'academy-*.json'
+      - 'academy-audio-status.html'
+      - 'audio-*.json'
+      - 'audio-review-workbench.html'
+      - 'pronunciation-audio-library.html'
+      - 'verified-academy-audio.js'
+      - 'academy-vocabulary-images.js'
+      - 'tests/**'
+      - '.github/workflows/academy-regressions.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  content-and-audio:
+    name: Validate academy curriculum and R2 audio mapping
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run all Node.js curriculum, image, RTL and audio audits
+        run: node --test tests/*.cjs
