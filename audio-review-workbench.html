@@ -41,7 +41,7 @@ button:hover:not(:disabled){filter:brightness(.95)}button:focus-visible,a:focus-
 <main class="wrap">
 <div class="disclaimer"><strong>الفرق بين الملف والكلمة:</strong> جميع المسارات في هذه الأداة مأخوذة من جرد فعلي لملفات Cloudflare R2، لكن أسماء الملفات مثل (bas_001.mp3) ليست نصوصًا موثوقة لما يقال فيها. إضافة النص تتطلب استماعًا حقيقيًا. هذه الصفحة لا تكتب شيئًا في Cloudflare أو GitHub تلقائيًا، ولا تسمّي ملفًا دون مراجعة.</div>
 <div class="toolbar"><label for="lang">اللغة</label><select id="lang"><option value="en">🇬🇧 الإنجليزية</option><option value="it">🇮🇹 الإيطالية</option><option value="es">🇪🇸 الإسبانية</option><option value="ru">🇷🇺 الروسية</option><option value="pt">🇵🇹 البرتغالية الأوروبية</option></select>
-<label for="filter">عرض</label><select id="filter"><option value="all">جميع الملفات</option><option value="pending">لم يُراجع</option><option value="reviewed">تم توثيق النص</option><option value="single">بلا ملف بطيء</option></select>
+<label for="filter">عرض</label><select id="filter"><option value="all">جميع الملفات</option><option value="pending">لم يُراجع</option><option value="reviewed">تم توثيق النص</option><option value="suggested">مطابقة آلية لدرس</option><option value="single">بلا ملف بطيء</option></select>
 <input id="search" type="search" placeholder="ابحث باسم الملف أو النص المدخَل..." aria-label="ابحث في الملفات">
 </div>
 <div id="info" class="stats" aria-live="polite">جارٍ تحميل قائمة الملفات...</div>
@@ -59,7 +59,7 @@ const languages={en:'english/',it:'italian/',es:'spanish/',ru:'russian/',pt:'por
 const lang=document.getElementById('lang'),filter=document.getElementById('filter'),search=document.getElementById('search'),grid=document.getElementById('list'),audio=document.getElementById('audio');
 const info=document.getElementById('info'),status=document.getElementById('playStatus');
 const previous=document.getElementById('previous'),next=document.getElementById('next'),pageText=document.getElementById('pageText');
-const maxPerPage=18;const cache=new Map();let inventory=null,page=0,shown=[],saved={};
+const maxPerPage=18;const cache=new Map(),recognitions=new Map();let inventory=null,page=0,shown=[],saved={};
 const localKey='sd_audio_manual_review_v1';
 try{saved=JSON.parse(localStorage.getItem(localKey)||'{}')||{}}catch(e){saved={};}
 const urlCode=new URLSearchParams(location.search).get('lang');if(languages[urlCode])lang.value=urlCode;
@@ -75,6 +75,18 @@ async function load(code){
   if(!data){const response=await fetch('audio-review-inventory-'+code+'.json',{cache:'force-cache'});if(!response.ok)throw Error('HTTP '+response.status);data=await response.json();if(data.schemaVersion!==1||data.lang!==code||!Array.isArray(data.items))throw Error('Invalid audio inventory');cache.set(code,data)}
   if(lang.value!==code)return;
   for(const pair of data.items)if(!Array.isArray(pair)||!safePath(pair[0],code)||pair[1]!==null&&!safePath(pair[1],code))throw Error('Unexpected audio path');
+  if(!recognitions.has(code)){
+   try{
+    const response=await fetch('audio-asr-candidates-'+code+'.json',{cache:'no-cache'});
+    if(!response.ok)throw Error('No ASR candidate index');
+    const candidates=await response.json();
+    if(candidates.lang!==code||candidates.schemaVersion!==1||!Array.isArray(candidates.records))throw Error('Untrusted ASR candidate list');
+    const byPath=new Map();
+    for(const rec of candidates.records)if(rec&&safePath(rec.normal,code))byPath.set(rec.normal,rec);
+    recognitions.set(code,byPath);
+   }catch(e){recognitions.set(code,new Map());}
+  }
+  if(lang.value!==code)return;
   inventory={...data,items:data.items.slice().sort((a,b)=>rank(a[0])-rank(b[0])||a[0].localeCompare(b[0]))};
   draw();
  }catch(err){if(lang.value===code){info.textContent='تعذر تحميل فهرس الملفات: '+err.message;grid.replaceChildren();pageText.textContent='';}}
@@ -83,6 +95,7 @@ function pairs(){if(!inventory)return[];const q=search.value.trim().toLowerCase(
  const path=pair[0],note=savedNote(path),statusValue=filter.value;
  if(statusValue==='reviewed'&&!note)return false;
  if(statusValue==='pending'&&note)return false;
+ if(statusValue==='suggested'&&!(recognitions.get(lang.value)?.get(path)?.exactLesson))return false;
  if(statusValue==='single'&&pair[1])return false;
  return !q||path.toLowerCase().includes(q)||(note&&[note.text,note.arabic].join(' ').toLowerCase().includes(q));
 });}
@@ -90,7 +103,8 @@ function draw(){
  if(!inventory)return;
  shown=pairs();const totalPages=Math.max(1,Math.ceil(shown.length/maxPerPage));page=Math.max(0,Math.min(page,totalPages-1));
  const count=inventory.items.filter(pair=>savedNote(pair[0])).length;
- info.textContent='اللغة: '+inventory.items.length+' ملفًا عاديًا، منها '+inventory.paired+' لها نسخة بطيئة و'+inventory.unpairedNormal+' بلا نسخة بطيئة. النصوص التي وثّقتها محليًا: '+count+'. المعروض بعد التصفية: '+shown.length+'.';
+ const automatic=[...(recognitions.get(lang.value)?.values()||[])].filter(v=>v.agreed&&v.exactLesson).length;
+ info.textContent='اللغة: '+inventory.items.length+' ملفًا عاديًا، منها '+inventory.paired+' لها نسخة بطيئة و'+inventory.unpairedNormal+' بلا نسخة بطيئة. مقترحات تلقائية مطابقة لكلمات المنهج: '+automatic+' (غير مراجعة بشريًا). النصوص التي وثّقتها بنفسك: '+count+'. المعروض: '+shown.length+'.';
  grid.replaceChildren();
  const segment=shown.slice(page*maxPerPage,(page+1)*maxPerPage);
  for(const pair of segment)grid.append(renderCard(pair));
@@ -113,6 +127,23 @@ function renderCard(pair){
  card.append(actions);
  const phraseWrap=put('div','field'),phraseLabel=put('label','', 'النص الأجنبي الذي تسمعه'),phrase=put('input');phrase.type='text';phrase.dataset.kind='text';phrase.autocomplete='off';phrase.placeholder='اكتب النص بعد التأكد من الاستماع';phrase.value=note?.text||'';
  phraseWrap.append(phraseLabel,phrase);card.append(phraseWrap);
+ const machine=recognitions.get(lang.value)?.get(normal);
+ if(machine){
+  const box=put('div','disclaimer');
+  box.style.margin='8px 0';box.style.padding='8px 10px';
+  const first=put('p','small','🔎 التفريغ العادي: '+(machine.original?.text||'غير متاح'));
+  const second=put('p','small','🐢 التفريغ البطيء: '+(machine.slowRecognition?.text||'غير متاح'));
+  const exact=machine.agreed&&machine.exactLesson?.text;
+  const third=put('p','small',exact?'✅ اقترح النظام مطابقة مع كلمة بالمنهج: '+machine.exactLesson.text:'⚠️ لا توجد مطابقة مؤكدة بين التفريغين وكلمة بالمنهج.');
+  box.append(first,second,third);
+  if(exact){
+   const suggest=put('button','','انسخ المقترح إلى خانة النص');suggest.type='button';
+   suggest.addEventListener('click',()=>{phrase.value=exact;phrase.focus()});
+   box.append(suggest);
+  }
+  box.append(put('p','small','التفريغ آلي وقد يخطئ. لا تؤكد صحة النص إلا بعد الاستماع بنفسك إلى التسجيلين.'));
+  card.append(box);
+ }
  const arWrap=put('div','field'),arLabel=put('label','', 'المعنى بالعربية (اختياري)'),ar=put('input');ar.type='text';ar.placeholder='ترجمة العبارة';ar.value=note?.arabic||'';arWrap.append(arLabel,ar);card.append(arWrap);
  const confirmation=put('label','review'),checked=put('input');checked.type='checkbox';checked.checked=!!note;confirmation.append(checked,put('span','', 'استمعت للتسجيل وأؤكد مطابقة النص المكتوب له'));card.append(confirmation);
  const foot=put('footer'),save=put('button','primary','حفظ المراجعة'),noteStatus=put('span','small');
