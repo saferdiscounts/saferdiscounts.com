@@ -338,3 +338,37 @@ test('Brazilian phrase matcher only accepts complete filled-in models and whole-
  assert.equal(check('Bom dia / Boa tarde','Boa noite!'),false);
  assert.equal(check('à direita','A direita.'),true);
 });
+
+
+test('Russian A1 listening quiz tests heard letters, not printed answers or sentences',()=>{
+ const html=read('russian-academy.html');
+ const match=html.match(/const RU_LETTER_NAMES=(\{[^;]+\});/);
+ assert.ok(match,'Missing Russian letter pronunciation map');
+ const names=vm.runInNewContext('('+match[1]+')',{},{timeout:1000});
+ const alphabet=vm.runInNewContext('('+bracketed(html,'const lessonContent=')+')',{}, {timeout:4000})[1].words.map(word=>word[0]);
+ assert.equal(alphabet.length,33,'Must teach the complete 33-letter Russian alphabet');
+ assert.equal(Object.keys(names).length,31,'Only 31 pronounced letters should have individual sound prompts');
+ for(const letter of alphabet){
+  if(['Ъ','Ь'].includes(letter))assert.ok(!(letter in names),'Silent sign must not be played as a sound: '+letter);
+  else assert.ok(typeof names[letter]==='string'&&names[letter].length>0,'No audio prompt for '+letter);
+ }
+ const start=html.indexOf('function setupRussianFoundation('),end=html.indexOf('function renderList()',start);
+ assert.ok(start>0&&end>start,'Missing foundation-specific assessment');
+ const code=html.slice(start,end);
+ assert.match(code,/if\(letters\.length<4\)return/,'Four-letter foundation quiz');
+ assert.match(code,/question\.textContent='السؤال '\+\(step\+1\)/,'Question must show progress without revealing the target');
+ assert.doesNotMatch(code,/question\.textContent\s*=[^\n]*targets\[step\]/,'Question may not display the answer');
+ assert.match(code,/const answer=targets\[step\]/,'Answer comes from private question state');
+ assert.match(code,/sound\.onstart=\(\)=>\{heard=true;options\.hidden=false/,'Choices must remain hidden until audio starts');
+ assert.match(code,/if\(!heard\)return/,'Do not allow scoring without listening');
+ assert.match(code,/studySections\.forEach\(section=>\{section\.hidden=active\}\)/,'Hide reference cards while testing');
+ assert.match(code,/setupRussianFoundation\(current\)/,'Connect letter-specific assessment to the active lesson');
+ assert.match(code,/لا يُطلب منك تأليف جمل/,'Do not demand sentence writing before letters');
+});
+
+test('Russian card offers the same reference and review entry point as other academy cards',()=>{
+ const catalog=read('academy-catalog-i18n.js');
+ assert.match(catalog,/'guide-german\.html','russian-academy\.html#russian-review','guide-portuguese\.html'/);
+ const russian=read('russian-review.js');
+ assert.match(russian,/panel\.id='russian-review'/,'The link must point to an existing review section');
+});
