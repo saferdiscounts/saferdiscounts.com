@@ -18,7 +18,9 @@ if(panel)panel.insertAdjacentElement('beforebegin',status);
 function play(path,phrase){
  if(!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(path))return;
  if(!player)player=new Audio();
- player.pause();player.currentTime=0;player.src=base+path;
+ player.pause();
+ if('speechSynthesis' in window)window.speechSynthesis.cancel();
+ player.currentTime=0;player.src=base+path;
  player.play().catch(()=>{status.textContent='تعذر تشغيل التسجيل المطابق: '+phrase+'؛ يمكنك استخدام زر النطق الصناعي.'});
 }
 function makeButtons(parent,record){
