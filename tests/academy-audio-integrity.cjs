@@ -25,7 +25,7 @@ test('All eight academy statuses are present and unknown is not counted as zero'
  const data=JSON.parse(read('academy-audio-audit.json'));
  assert.equal(data.schemaVersion,1);
  assert.deepEqual(Object.keys(data.languages).sort(),['de','en','es','fr','it','pt','ptbr','ru'].sort());
- for(const lang of ['ptbr','en','es','it','pt','ru']){
+ for(const lang of ['en','es','it','pt','ru']){
   const entry=data.languages[lang];
   assert.ok(entry.lessons>0,lang+' should have lessons');
   assert.equal(entry.words,null,lang+' no verified words denominator');
@@ -166,11 +166,50 @@ test('European writing feedback reports transparent rubric indicators',()=>{
  }
 });
 
-test('Brazilian audio audit lesson count follows the real course without implying audio coverage',()=>{
- const snapshot=JSON.parse(read('academy-audio-audit.json'));
- const lessons=readLessonArray(read('ptbr-academy.html'));
- assert.equal(snapshot.languages.ptbr.lessons,lessons.length,'Brazilian lesson count in audio audit must match curriculum');
- assert.equal(snapshot.languages.ptbr.words,null,'No verified word denominator exists');
- assert.equal(snapshot.languages.ptbr.exactMatches,null,'Do not treat storage objects as validated text-to-audio mapping');
- assert.equal(snapshot.storageAudit.languages.ptbr.paired,511,'Preserve last measured R2 pairs snapshot');
+
+test('Brazilian 511-pair R2 manifest source reproduces all exact matches without implying human audio review',()=>{
+ const audit=JSON.parse(read('academy-audio-audit.json')),source=JSON.parse(read('audio-text-index-ptbr.json'));
+ const snapshot=audit.languages.ptbr,lessons=readLessonArray(read('ptbr-academy.html'));
+ assert.equal(snapshot.lessons,lessons.length);
+ assert.equal(snapshot.mapping,'exact-r2-source-manifest-unreviewed');
+ assert.equal(source.schemaVersion,1);assert.equal(source.locale,'pt-BR');
+ assert.equal(source.records.length,511);assert.equal(snapshot.sourceRecords,511);
+ assert.equal(audit.storageAudit.languages.ptbr.paired,511);
+ const safe=/^(basic|advanced)\/[a-z0-9_/-]+\.mp3$/;
+ const norm=x=>String(x||'').normalize('NFC').toLocaleLowerCase('pt-BR').replace(/\s+/g,' ').trim();
+ const groups=new Map();
+ for(const row of source.records){
+  assert.ok(row.pt.trim()&&['basic','advanced'].includes(row.level));
+  assert.ok(safe.test(row.normal)&&safe.test(row.slow));
+  assert.equal(row.normal.replace(/\.mp3$/,'_slow.mp3'),row.slow);
+  assert.equal(row.level,row.normal.split('/')[0]);
+  const k=norm(row.pt);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(row);
+ }
+ assert.equal(groups.size,snapshot.sourceUnique);
+ assert.equal([...groups.values()].filter(v=>v.length>1).length,snapshot.sourceAmbiguousTexts);
+ let words=0,matched=0,ambiguous=0,dialogues=0,dialogueMatches=0;
+ function count(items){
+  const result={total:0,exact:0,ambiguous:0};
+  for(const value of items){result.total++;const n=(groups.get(norm(value))||[]).length;if(n===1)result.exact++;else if(n>1)result.ambiguous++;}
+  return result;
+ }
+ for(const [i,lesson] of lessons.entries()){
+  const w=count(lesson.words.map(x=>x[0]));
+  const d=count((lesson.dialogue||[]).map(x=>x[1]));
+  const row=snapshot.levels[i];
+  assert.equal(row.lesson,i+1);assert.equal(row.level,lesson.track.toUpperCase());
+  assert.equal(row.title,lesson.title);assert.equal(row.words,w.total);assert.equal(row.matched,w.exact);
+  assert.equal(row.ambiguous,w.ambiguous);assert.equal(row.missing,w.total-w.exact-w.ambiguous);
+  assert.equal(row.dialogue,d.total);assert.equal(row.dialogueMatched,d.exact);
+  words+=w.total;matched+=w.exact;ambiguous+=w.ambiguous;dialogues+=d.total;dialogueMatches+=d.exact;
+ }
+ assert.equal(snapshot.words,words);assert.equal(snapshot.exactMatches,matched);
+ assert.equal(snapshot.ambiguousMatches,ambiguous);
+ assert.equal(snapshot.dialogueCoverage.lines,dialogues);assert.equal(snapshot.dialogueCoverage.exactMatches,dialogueMatches);
+ const sandbox={window:{}};new vm.Script(read('ptbr-practical-data.js')).runInNewContext(sandbox);
+ const phrases=sandbox.window.SD_PTBR_PRACTICE.themes.flatMap(x=>x.phrases.map(p=>p[0]));
+ assert.equal(snapshot.practicalCoverage.phrases,phrases.length);
+ assert.equal(snapshot.practicalCoverage.exactMatches,count(phrases).exact);
+ assert.equal(snapshot.sourceManifestGlossMissing,source.records.filter(x=>!x.gl.trim()).length);
+ assert.match(snapshot.verification,/NOT verified spoken phonetics/);
 });
