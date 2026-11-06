@@ -1,0 +1,60 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>مراجعة الصوتيات البرازيلية الأصلية | Safer Discounts</title>
+<meta name="description" content="لوحة تدقيق 511 زوج تسجيل برازيلي على R2. مراجعة يدوية للنسختين العادية والبطيئة، توثيق الأعطال، وتصدير النتائج دون اعتماد آلي.">
+<style>
+:root{font:15px/1.8 Tahoma,"Segoe UI",Arial,sans-serif;color:#18384c;background:#f2f7f9}*{box-sizing:border-box}
+body{margin:0}a{color:#075c91}header{background:linear-gradient(110deg,#092f4c,#0b7380);color:#fff;padding:26px max(18px,calc((100vw - 1080px)/2))}
+header h1{margin:12px 0 5px;font-size:clamp(24px,4vw,37px)}header p{max-width:840px;color:#e2f9ff}
+header a{color:#d6f9fd}main{max-width:1080px;margin:0 auto;padding:22px 16px 60px}
+section.panel,.entry{background:#fff;border:1px solid #d7e6ec;border-radius:16px;padding:18px;margin:15px 0}
+.note{border-right:4px solid #c87626;padding:12px 15px;background:#fff8e9;border-radius:10px;margin:12px 0}
+.status{border-right:4px solid #167d76;padding:12px 15px;background:#e8f6f2;border-radius:10px;margin:15px 0}
+.controls,.row-actions,.pages{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+label{font-weight:700}input[type=search],select{border:1px solid #b7ccd8;padding:9px 11px;border-radius:9px;background:#fff;color:#173b51;max-width:100%;font:inherit}
+input[type=search]{flex:1;min-width:180px}button{padding:8px 13px;border-radius:10px;border:1px solid #99bacb;background:#e8f3f8;color:#174b68;font:inherit;font-weight:800;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #e8a14e;outline-offset:2px}
+button:disabled{opacity:.48;cursor:not-allowed}.approve{background:#e0f5e9;border-color:#72b898;color:#176347}.flag{background:#fff1e9;border-color:#dfa77b;color:#9a4e24}.undo{background:#fff}
+.entry{margin:12px 0;padding:18px;border-right:4px solid #8bb5c4}
+.entry-head{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.pt{display:block;text-align:left;font-size:clamp(17px,2.6vw,22px);color:#075888;unicode-bidi:isolate;overflow-wrap:anywhere}
+.gl{color:#3d5366;font-weight:650}.entry small{color:#647d89;display:block}
+.approved,.flagged,.unreviewed{display:inline-block;border-radius:30px;padding:3px 11px;font-weight:850;font-size:12px}
+.approved{background:#e6f5eb;color:#196747}.flagged{background:#fff0e7;color:#964a1d}.unreviewed{background:#ecf2f5;color:#516b77}
+.confirm{display:flex;gap:10px;align-items:start;background:#f5fafb;border-radius:9px;padding:9px 11px;margin:10px 0}
+.confirm input{margin-top:9px;accent-color:#116e65}
+#player{width:100%;margin:11px 0;max-width:620px}
+#playing,#loadStatus{min-height:25px}.pages{justify-content:space-between}footer{text-align:center;padding:20px 15px;color:#678091}
+@media(max-width:700px){.controls{align-items:stretch}.controls input,.controls select{flex:auto;width:100%}.entry{padding:12px}.row-actions button{flex:1}.pages{justify-content:center}}
+</style></head><body>
+<header>
+<a href="academy-audio-status.html?lang=ptbr">↩ العودة لتقرير صوتيات الأكاديميات</a>
+<h1>معمل فحص صوتيات البرازيلية</h1>
+<p>511 زوجًا من الصوتيات المخزنة على R2؛ استمع للعادي والبطيء وقارن النطق بالنص قبل اعتماد كل زوج. لا يُحتسب وجود الملفات وحده دليلًا على جودة التسجيل أو تطابقه مع العبارة.</p>
+</header>
+<main>
+<div class="note"><strong>تعليمات المراجعة:</strong> النتيجة التي تحفظها هنا تخص جهازك فقط. علامة «مراجعة مقبولة محليًا» تعني أن شخصًا أكد بعد الاستماع للنسختين، وليست شهادة جودة مستقلة. أي تسجيل لا يعمل أو يبدو غير صحيح اضغط «سجّل مشكلة». لا تُنشر أي موافقة إلى المستودع تلقائيًا.</div>
+<div id="loadStatus" class="status" role="status" aria-live="polite">جارٍ قراءة فهرس المصدر المحلي…</div>
+<section class="panel">
+<h2>إحصاء تدقيق الصوتيات</h2>
+<p id="counts" role="status">لم يبدأ التحميل.</p>
+<div class="controls">
+<label for="filter">اعرض</label>
+<select id="filter"><option value="all">كل التسجيلات</option><option value="pending">غير المراجعة</option><option value="approved">مقبولة محليًا</option><option value="flagged">تحتاج إصلاحًا</option><option value="nogloss">بدون ترجمة عربية في الفهرس</option></select>
+<label for="search">بحث</label>
+<input id="search" type="search" placeholder="ابحث بالنص أو اسم الدرس أو اسم ملف الصوت" autocomplete="off">
+</div>
+<audio id="player" controls preload="none" aria-label="مشغل التسجيلات الأصلية"></audio>
+<p id="playing" aria-live="polite">حدد التسجيل العادي أو البطيء من السطر المراد مراجعته.</p>
+<div class="row-actions"><button type="button" id="export">تصدير التقرير المحلي JSON</button><a href="ptbr-pronunciation.html">المعمل الأصلي لسماع العبارات</a></div>
+</section>
+<div class="pages"><button type="button" id="previous">السابق</button><strong id="paging">—</strong><button type="button" id="next">التالي</button></div>
+<div id="rows" aria-live="off"></div>
+<div class="pages"><button type="button" id="previous2" onclick="document.getElementById('previous').click()">السابق</button><a href="#loadStatus">العودة إلى أعلى الصفحة</a><button type="button" id="next2" onclick="document.getElementById('next').click()">التالي</button></div>
+<p class="note">لوحة المراجعة لا تنشئ تسجيلات جديدة، ولا تصحح النطق تلقائيًا، ولا ترسل بيانات المتعلمين إلى أي خادم. التصدير المحلي يحتاج مراجعة مستقلة قبل ربط أي اعتماد بالموقع.</p>
+</main>
+<footer>Safer Discounts · Brazilian Portuguese audio quality assurance</footer>
+<script src="ptbr-audio-config.js"></script>
+<script src="ptbr-audio-review.js"></script>
+</body></html>
