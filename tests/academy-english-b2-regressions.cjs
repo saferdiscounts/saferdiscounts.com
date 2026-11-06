@@ -23,7 +23,7 @@ test('English B2 is an actual fifth curriculum group with twelve lessons',()=>{
 });
 test('Existing 40 English lesson IDs are preserved and advanced audio uses honest device TTS',()=>{
  assert.match(html,/if\(i<31\)/,'first 31 original audio IDs retained');
- assert.match(html,/if\(i===0\)/);
+ assert.match(html,/i===0\?/,'original first-lesson audio path must remain');
  assert.match(html,/AMERICAN ENGLISH · TTS/);
  const code=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
  assert.ok(code,'embedded academy script missing');assert.doesNotThrow(()=>new vm.Script(code));
