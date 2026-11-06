@@ -267,3 +267,22 @@ test('All 216 European academy lesson quizzes and scenarios have distinct usable
  }
  assert.equal(checked,432,'Expected quiz and scenario for each of 216 lessons');
 });
+
+test('All 216 European lessons have usable translated conversations and writing models',()=>{
+ let count=0;
+ for(const lang of european){
+  for(const [i,l] of lessons(lang+'-academy.html').entries()){
+   const where=lang+' lesson '+(i+1);
+   assert.ok(Array.isArray(l.dialogue)&&l.dialogue.length>=2,where+' missing conversation');
+   for(const [n,turn] of l.dialogue.entries()){
+    assert.ok(Array.isArray(turn)&&turn.length>=3,where+' malformed dialogue turn '+n);
+    assert.ok(turn.slice(0,3).every(v=>typeof v==='string'&&v.trim()),where+' missing speaker, phrase or Arabic meaning at turn '+n);
+   }
+   assert.ok(l.writing.prompt.trim().length>=12,where+' writing task too short');
+   assert.ok(l.writing.model.trim().length>=12,where+' writing model too short');
+   assert.ok(l.writing.keywords.every(x=>typeof x==='string'&&x.trim()),where+' invalid writing targets');
+   count++;
+  }
+ }
+ assert.equal(count,216);
+});
