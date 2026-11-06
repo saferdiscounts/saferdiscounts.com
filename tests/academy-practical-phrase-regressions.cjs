@@ -88,5 +88,5 @@ test('All ten topics have enough distinct phrases for 5 comprehension prompts, s
  assert.match(script,/writingFinished=true/);
  assert.match(script,/if\(writingFinished\)return/);
  assert.match(script,/if\(checked\.exact\)\{score\+\+;markKnown\(writingIndex\)\}/);
- assert.match(script,/لا يصحح المعنى|لا يصحح/);
+ assert.match(script,/وليست حكمًا على جميع الصياغات الصحيحة/);
 });
