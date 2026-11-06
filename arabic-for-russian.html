@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Египетский арабский для русскоговорящих | Safer Discounts</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,Segoe UI,Tahoma,Arial,sans-serif;color:#16364c;background:#f2f7fa}*{box-sizing:border-box}body{margin:0}.wrap{width:min(1060px,calc(100% - 28px));margin:auto}header{background:linear-gradient(120deg,#083958,#086d77);color:white;padding:32px 0 35px}header a{color:#e8ffff}h1{font-size:clamp(25px,4vw,39px);margin:16px 0 10px}h2{margin:20px 0 10px}p{line-height:1.7}.sub{max-width:780px;opacity:.94}.notice{border:1px solid #cde0e5;background:#fff;padding:14px 17px;margin:20px 0;border-radius:14px}.notice p{margin:0 0 6px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin:20px 0}.card{background:#fff;border:1px solid #d8e5e9;border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:9px;box-shadow:0 5px 16px #08283e0d}.ar{font-size:28px;font-weight:800;line-height:1.65;color:#0a617a;direction:rtl;unicode-bidi:isolate;overflow-wrap:anywhere;text-align:right}.trans{font-weight:700;color:#2e5973}.meaning{font-size:15px;line-height:1.5}.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}button{background:#126b81;color:white;border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:750;cursor:pointer}button.secondary{background:#e6f3f4;color:#0b5267}button:hover{filter:brightness(.93)}button:focus-visible,a:focus-visible{outline:3px solid #fbaa42;outline-offset:3px}.muted{color:#526675;font-size:13px}.review{background:white;border:1px solid #d8e5e9;border-radius:16px;margin:18px 0 50px;padding:20px}.review button{margin:4px}#feedback{min-height:28px;font-weight:700}.links{display:flex;gap:14px;flex-wrap:wrap}footer{padding:15px 0 32px;font-size:13px;color:#557}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<nav class="links"><a href="language-academy.html">← Академии языков</a><a href="arabic-letter-sounds.html">Слушать все арабские буквы</a></nav>
+<h1>Египетский арабский — первые фразы</h1>
+<p class="sub">Урок T01 · 11 выражений для приветствия, знакомства и прощания. Арабский текст с огласовками, подсказка кириллицей и перевод на русский.</p>
+</div></header>
+<main class="wrap">
+<div class="notice" role="note">
+<p><strong>Важно:</strong> это начальный урок из предоставленного набора <code>arabic_audio_kit</code>, а не полный курс. Исходный ZIP содержит CSV и генератор, но не MP3.</p>
+<p class="muted">Кнопки звука используют синтез речи вашего браузера (если доступен арабский голос). Это не проверенные человеческие записи; египетское произношение и ударения следует уточнять по записи носителя. Для отдельно предоставленных записей букв на литературном арабском откройте <a href="arabic-letter-sounds.html">фонетический тренажёр</a>.</p>
+</div>
+<h2>Фразы урока</h2><section class="grid" id="phrases" aria-label="Фразы урока"></section>
+<section class="review" aria-labelledby="review-title"><h2 id="review-title">Быстрая проверка</h2><p id="question">Нажмите «Начать», чтобы проверить перевод.</p><div id="options"></div><p id="feedback" aria-live="polite"></p><button id="next" type="button">Начать / Следующий вопрос</button></section>
+</main><footer class="wrap">Safer Discounts · Arabic for Russian speakers · T01 (pilot)</footer>
+<script>
+'use strict';
+const entries=[["T01_001","أَهْلًا","ахлян","Привет"],["T01_002","صَباحِ الخَيْر","сабах эль-хэйр","Доброе утро"],["T01_003","صَباحِ النُّور","сабах ин-нур","Ответ на «Доброе утро»"],["T01_004","إِزَّيَّك؟","иззайяк","Как дела? (к мужчине)"],["T01_005","إِزَّيِّك؟","иззайик","Как дела? (к женщине)"],["T01_006","الحَمْدُ لِلّٰه، كُوَيِّس","эль-хамдулилля куэйс","Слава Богу, хорошо"],["T01_007","اسْمَك إِيه؟","исмак эх","Как тебя зовут?"],["T01_008","اسْمِي مُحَمَّد","исми Мухаммад","Меня зовут Мухаммад"],["T01_009","أَنا رُوسِي","ана русси","Я русский"],["T01_010","أَنا رُوسِيَّة","ана русийя","Я русская"],["T01_011","مَعَ السَّلامَة","маа с-саляма","До свидания"]];
+const host=document.getElementById('phrases');
+for(const [id,arabic,cyrillic,russian] of entries){
+ const card=document.createElement('article');card.className='card';
+ const target=document.createElement('div');target.lang='ar';target.dir='rtl';target.className='ar';target.textContent=arabic;
+ const trans=document.createElement('div');trans.className='trans';trans.textContent=cyrillic;
+ const meaning=document.createElement('div');meaning.className='meaning';meaning.textContent=russian;
+ const buttons=document.createElement('div');buttons.className='buttons';
+ for(const [label,rate] of [['▶ Обычная',.92],['🐢 Медленно',.64]]){
+  const btn=document.createElement('button');btn.type='button';btn.className=rate<.8?'secondary':'';
+  btn.textContent=label;btn.setAttribute('aria-label',label+': '+arabic);btn.addEventListener('click',()=>speak(arabic,rate));
+  buttons.append(btn);
+ }
+ card.append(target,trans,meaning,buttons);host.append(card);
+}
+function speak(text,rate){
+ if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){alert('На этом устройстве нет синтеза речи.');return}
+ speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ar-EG';u.rate=rate;
+ const voices=speechSynthesis.getVoices();const v=voices.find(x=>x.lang.toLowerCase()==='ar-eg')||voices.find(x=>x.lang.toLowerCase().startsWith('ar'));
+ if(v)u.voice=v;
+ speechSynthesis.speak(u);
+}
+let questionIndex=-1,score=0,answered=0;
+const questions=entries.filter((x,i)=>[0,1,3,6,10].includes(i));
+function showQuestion(){
+ questionIndex=(questionIndex+1)%questions.length;if(questionIndex===0){score=0;answered=0}
+ const current=questions[questionIndex];
+ document.getElementById('question').textContent='Что значит «'+current[1]+'»?';
+ document.getElementById('feedback').textContent='';
+ const choices=[current[3],questions[(questionIndex+1)%questions.length][3],questions[(questionIndex+2)%questions.length][3]].sort(()=>Math.random()-.5);
+ const options=document.getElementById('options');options.replaceChildren();
+ for(const text of choices){const b=document.createElement('button');b.type='button';b.className='secondary';b.textContent=text;b.addEventListener('click',()=>{
+ if(options.dataset.done==='yes')return;options.dataset.done='yes';answered++;const correct=text===current[3];if(correct)score++;
+ document.getElementById('feedback').textContent=(correct?'Верно!':'Ответ: '+current[3])+ ' · Счёт: '+score+'/'+answered;
+ options.querySelectorAll('button').forEach(btn=>btn.disabled=true);
+ });options.append(b)}
+ options.dataset.done='no';
+}
+document.getElementById('next').addEventListener('click',showQuestion);
+</script>
+</body></html>
