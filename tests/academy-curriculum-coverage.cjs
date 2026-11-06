@@ -31,7 +31,7 @@ test('five European academy number lessons cover 0–20 and every decade to 100'
   assert.ok(lesson.words.length>=31,lang+': too few word entries');
   const found=new Map();
   for(const word of lesson.words){
-   const match=/^(\\d+) — /.exec(word[2]);
+   const match=/^(\d+) — /.exec(word[2]);
    if(match)found.set(+match[1],word);
   }
   for(let num=0;num<=20;num++){
