@@ -74,6 +74,11 @@ test('Writing practice keys in foundation units appear in its model answer',()=>
   }
  }
 });
+test('Catalog links to each language’s independent level-zero entry',()=>{
+ const catalog=read('language-academy.html');
+ for(const [lang] of specs)assert.ok(catalog.includes('href="alphabet-foundations.html?lang='+lang+'"'),
+   'Catalog missing level-zero link: '+lang);
+});
 test('The new foundation script parses without executing browser-only APIs',()=>{
  const html=read('alphabet-foundations.html'),m=html.match(/<script>([\s\S]*?)<\/script>/);
  assert.ok(m,'Missing interactive alphabet script');
