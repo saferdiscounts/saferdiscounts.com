@@ -5,9 +5,9 @@
   "source": "Cloudflare R2 audio binary",
   "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy term match; no human listening; candidate records only",
   "reviewStatus": "automated-unverified",
-  "requested": 20,
-  "agreed": 8,
-  "exactLessonCandidates": 4,
+  "requested": 40,
+  "agreed": 13,
+  "exactLessonCandidates": 6,
   "records": [
     {
       "normal": "italian/pronunciation/basic/bas_001.mp3",
@@ -380,6 +380,372 @@
         "text": "Arrivederci",
         "lesson": 0
       }
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_021.mp3",
+      "slow": "italian/pronunciation/basic/bas_021_slow.mp3",
+      "original": {
+        "text": "Per favore.",
+        "duration": 1.2526875,
+        "logprob": -0.5415736607142857,
+        "bytes": 8109
+      },
+      "slowRecognition": {
+        "text": "Per favore",
+        "duration": 1.7006875,
+        "logprob": -0.4928385217984517,
+        "bytes": 11661
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Per favore",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_022.mp3",
+      "slow": "italian/pronunciation/basic/bas_022_slow.mp3",
+      "original": {
+        "text": "Grazie.",
+        "duration": 1.039375,
+        "logprob": -0.3279622395833333,
+        "bytes": 6693
+      },
+      "slowRecognition": {
+        "text": "Grazie.",
+        "duration": 1.3166875,
+        "logprob": -0.4316406448682149,
+        "bytes": 8637
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Grazie",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_023.mp3",
+      "slow": "italian/pronunciation/basic/bas_023_slow.mp3",
+      "original": {
+        "text": "Prego.",
+        "duration": 0.911375,
+        "logprob": -0.3131510317325592,
+        "bytes": 5613
+      },
+      "slowRecognition": {
+        "text": "Mi prego.",
+        "duration": 1.1886875,
+        "logprob": -0.4068080357142857,
+        "bytes": 7605
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_024.mp3",
+      "slow": "italian/pronunciation/basic/bas_024_slow.mp3",
+      "original": {
+        "text": "Scusa.",
+        "duration": 1.018,
+        "logprob": -0.4760044813156128,
+        "bytes": 6909
+      },
+      "slowRecognition": {
+        "text": "Escusa.",
+        "duration": 1.3166875,
+        "logprob": -0.69140625,
+        "bytes": 8613
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_025.mp3",
+      "slow": "italian/pronunciation/basic/bas_025_slow.mp3",
+      "original": {
+        "text": "Mi dispiace.",
+        "duration": 1.423375,
+        "logprob": -0.3740234449505806,
+        "bytes": 9717
+      },
+      "slowRecognition": {
+        "text": "Mami di spriare che...",
+        "duration": 1.978,
+        "logprob": -0.9133523160761053,
+        "bytes": 13797
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_026.mp3",
+      "slow": "italian/pronunciation/basic/bas_026_slow.mp3",
+      "original": {
+        "text": "Loi",
+        "duration": 0.89,
+        "logprob": -0.630859375,
+        "bytes": 5277
+      },
+      "slowRecognition": {
+        "text": "Alloio!",
+        "duration": 1.146,
+        "logprob": -1.2689295836857386,
+        "bytes": 6981
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_027.mp3",
+      "slow": "italian/pronunciation/basic/bas_027_slow.mp3",
+      "original": {
+        "text": "Lei",
+        "duration": 0.8686875,
+        "logprob": -0.6835937350988388,
+        "bytes": 5085
+      },
+      "slowRecognition": {
+        "text": "Lei",
+        "duration": 1.1246875,
+        "logprob": -1.0043487846851349,
+        "bytes": 6813
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_028.mp3",
+      "slow": "italian/pronunciation/basic/bas_028_slow.mp3",
+      "original": {
+        "text": "Noi",
+        "duration": 0.89,
+        "logprob": -0.6375,
+        "bytes": 5493
+      },
+      "slowRecognition": {
+        "text": "Noi.",
+        "duration": 1.146,
+        "logprob": -0.8684895435969034,
+        "bytes": 6957
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_029.mp3",
+      "slow": "italian/pronunciation/basic/bas_029_slow.mp3",
+      "original": {
+        "text": "Voi.",
+        "duration": 0.826,
+        "logprob": -0.500000019868215,
+        "bytes": 4917
+      },
+      "slowRecognition": {
+        "text": "E voi?",
+        "duration": 1.018,
+        "logprob": -1.0950520634651184,
+        "bytes": 6237
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_030.mp3",
+      "slow": "italian/pronunciation/basic/bas_030_slow.mp3",
+      "original": {
+        "text": "Lo orrò",
+        "duration": 0.911375,
+        "logprob": -1.0694847106933594,
+        "bytes": 5877
+      },
+      "slowRecognition": {
+        "text": "Laura",
+        "duration": 1.146,
+        "logprob": -1.0668697357177734,
+        "bytes": 7077
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_031.mp3",
+      "slow": "italian/pronunciation/basic/bas_031_slow.mp3",
+      "original": {
+        "text": "Sono",
+        "duration": 0.89,
+        "logprob": -0.7788086235523224,
+        "bytes": 5445
+      },
+      "slowRecognition": {
+        "text": "Isonua",
+        "duration": 1.082,
+        "logprob": -0.8326823016007742,
+        "bytes": 6717
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_032.mp3",
+      "slow": "italian/pronunciation/basic/bas_032_slow.mp3",
+      "original": {
+        "text": "Sì.",
+        "duration": 0.826,
+        "logprob": -0.7864583532015482,
+        "bytes": 4893
+      },
+      "slowRecognition": {
+        "text": "Nessay.",
+        "duration": 1.039375,
+        "logprob": -0.8381696258272443,
+        "bytes": 6189
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_033.mp3",
+      "slow": "italian/pronunciation/basic/bas_033_slow.mp3",
+      "original": {
+        "text": "Siamo",
+        "duration": 0.911375,
+        "logprob": -0.403515625,
+        "bytes": 5541
+      },
+      "slowRecognition": {
+        "text": "E siamo?",
+        "duration": 1.1246875,
+        "logprob": -0.8717447519302368,
+        "bytes": 6885
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_034.mp3",
+      "slow": "italian/pronunciation/basic/bas_034_slow.mp3",
+      "original": {
+        "text": "Siete.",
+        "duration": 0.9966875,
+        "logprob": -0.6699218849341074,
+        "bytes": 5997
+      },
+      "slowRecognition": {
+        "text": "Non siete?",
+        "duration": 1.231375,
+        "logprob": -0.6565755108992258,
+        "bytes": 7749
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_035.mp3",
+      "slow": "italian/pronunciation/basic/bas_035_slow.mp3",
+      "original": {
+        "text": "Isto.",
+        "duration": 0.783375,
+        "logprob": -1.23046875,
+        "bytes": 5013
+      },
+      "slowRecognition": {
+        "text": "10.",
+        "duration": 1.018,
+        "logprob": -0.636328125,
+        "bytes": 6429
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_036.mp3",
+      "slow": "italian/pronunciation/basic/bas_036_slow.mp3",
+      "original": {
+        "text": "Stai.",
+        "duration": 0.847375,
+        "logprob": -0.5491536358992258,
+        "bytes": 5181
+      },
+      "slowRecognition": {
+        "text": "E' stai.",
+        "duration": 1.1246875,
+        "logprob": -0.8847656399011612,
+        "bytes": 6957
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_037.mp3",
+      "slow": "italian/pronunciation/basic/bas_037_slow.mp3",
+      "original": {
+        "text": "Isto è.",
+        "duration": 0.8046875,
+        "logprob": -1.0110212394169398,
+        "bytes": 5157
+      },
+      "slowRecognition": {
+        "text": "Easter.",
+        "duration": 1.039375,
+        "logprob": -0.744140625,
+        "bytes": 6549
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_038.mp3",
+      "slow": "italian/pronunciation/basic/bas_038_slow.mp3",
+      "original": {
+        "text": "Vistiamo.",
+        "duration": 0.9966875,
+        "logprob": -0.8169642857142857,
+        "bytes": 6813
+      },
+      "slowRecognition": {
+        "text": "Estriamo.",
+        "duration": 1.274,
+        "logprob": -0.3526785799435207,
+        "bytes": 8637
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_039.mp3",
+      "slow": "italian/pronunciation/basic/bas_039_slow.mp3",
+      "original": {
+        "text": "Stati.",
+        "duration": 1.018,
+        "logprob": -0.7089843849341074,
+        "bytes": 6549
+      },
+      "slowRecognition": {
+        "text": "E strati.",
+        "duration": 1.295375,
+        "logprob": -0.980468784059797,
+        "bytes": 8373
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "italian/pronunciation/basic/bas_040.mp3",
+      "slow": "italian/pronunciation/basic/bas_040_slow.mp3",
+      "original": {
+        "text": "Istanno.",
+        "duration": 1.082,
+        "logprob": -0.7825520634651184,
+        "bytes": 7029
+      },
+      "slowRecognition": {
+        "text": "Istanno.",
+        "duration": 1.359375,
+        "logprob": -0.8548177282015482,
+        "bytes": 8877
+      },
+      "agreed": true,
+      "exactLesson": null
     }
   ]
 }
