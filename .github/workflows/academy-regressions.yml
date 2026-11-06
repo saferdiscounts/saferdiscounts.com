@@ -52,3 +52,5 @@ jobs:
           node-version: '22'
       - name: Run all Node.js curriculum, image, RTL and audio audits
         run: node --test tests/*.cjs
+      - name: Report measured Academy V1 curriculum coverage
+        run: node scripts/academy-v1-progress.cjs
