@@ -89,7 +89,7 @@ function quiz(){
  panel.querySelectorAll('[data-pick]').forEach(btn=>btn.onclick=()=>{
   if(locked)return;locked=true;
   const isCorrect=+btn.dataset.pick===id;
-  if(isCorrect)score++;else{mistakes.push(id);rememberError(id)}
+  if(isCorrect){score++;markKnown(id)}else{mistakes.push(id);rememberError(id)}
   panel.querySelectorAll('[data-pick]').forEach(b=>{b.disabled=true;if(+b.dataset.pick===id)b.classList.add('yes');else if(b===btn)b.classList.add('no')});
   panel.querySelector('#feedback').textContent=isCorrect?'إجابة صحيحة.':'راجع: '+pair[0]+' = '+pair[1];
   panel.querySelector('#next').hidden=false;
@@ -119,7 +119,7 @@ function ordering(){
   if(orderScored)return;
   orderScored=true;
   const correct=picked.every((token,i)=>token===i);
-  if(correct)score++;else{mistakes.push(orderIndex);rememberError(orderIndex)}
+  if(correct){score++;markKnown(orderIndex)}else{mistakes.push(orderIndex);rememberError(orderIndex)}
   startWriting();
  };
 }
@@ -152,7 +152,7 @@ function writing(){
   if(!skipped&&!String(answer).trim()){panel.querySelector('#writingFeedback').textContent='اكتب محاولة أولًا، أو اختر كشف النموذج واحتسابها خطأ.';return}
   writingFinished=true;
   const checked=skipped?{exact:false,issue:'skipped',message:'تم تجاوز الكتابة. راجع النموذج ثم جرب مرة أخرى في التدريب القادم.'}:writingCheck.compare(answer,phrase[0]);
-  if(checked.exact)score++;
+  if(checked.exact){score++;markKnown(writingIndex)}
   else {mistakes.push(writingIndex);rememberError(writingIndex)}
   input.disabled=true;panel.querySelectorAll('[data-char]').forEach(b=>b.disabled=true);
   panel.querySelector('#submitWriting').disabled=true;panel.querySelector('#skipWriting').disabled=true;
