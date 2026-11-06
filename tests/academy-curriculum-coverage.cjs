@@ -109,3 +109,30 @@ test('European lessons have valid assessable teaching and practice content at ev
   if(['french','german','portuguese'].includes(lang))assert.equal(counts.B2,12,lang+' B2 lesson count');
  }
 });
+
+test('Brazilian Portuguese lessons provide complete assessed learning tasks',()=>{
+ const items=lessons('ptbr-academy.html');
+ assert.equal(items.length,90,'Brazilian Portuguese lesson count');
+ const tracks=new Set(items.map(x=>x.track));
+ for(const track of ['a1','foundation','travel','a2','b1','b2','c1','c2'])assert.ok(tracks.has(track),'Missing track '+track);
+ for(const [i,l] of items.entries()){
+  for(const field of ['title','goal','intro','grammar'])assert.ok(typeof l[field]==='string'&&l[field].trim(),'Brazilian lesson '+i+' missing '+field);
+  assert.ok(Array.isArray(l.words)&&l.words.length>=3,'Brazilian lesson '+i+' missing vocabulary');
+  assert.ok(l.words.every(w=>Array.isArray(w)&&w.length>=3&&w.every(v=>typeof v==='string'&&v.trim())),'Brazilian lesson '+i+' invalid translation');
+  assert.ok(Array.isArray(l.dialogue)&&l.dialogue.length>=2,'Brazilian lesson '+i+' missing dialogue');
+  assert.ok(Array.isArray(l.answers)&&Number.isInteger(l.correct)&&l.correct>=0&&l.correct<l.answers.length,'Brazilian lesson '+i+' invalid quiz');
+  assert.ok(l.writing&&l.writing.prompt&&l.writing.model&&Array.isArray(l.writing.keywords)&&l.writing.keywords.length,'Brazilian lesson '+i+' missing writing task');
+ }
+});
+test('English chapters include practice, dialogue and model writing',()=>{
+ const chapters=JSON.parse(bracketed(read('english-academy.html'),'const chapters='));
+ assert.equal(chapters.length,40,'English chapter count');
+ for(const [i,ch] of chapters.entries()){
+  assert.ok(typeof ch.title==='string'&&ch.title.trim(),'English chapter '+i+' missing title');
+  assert.ok(Array.isArray(ch.blocks)&&ch.blocks.length>=2,'English chapter '+i+' missing teaching blocks');
+  const dialogue=ch.blocks.filter(b=>b.type==='dialogue');
+  const writing=ch.blocks.filter(b=>b.type==='writing');
+  assert.ok(dialogue.length&&dialogue.every(b=>Array.isArray(b.lines)&&b.lines.length>=2&&b.lines.every(line=>line.orig&&line.trans)),'English chapter '+i+' missing translated dialogue');
+  assert.ok(writing.length&&writing.every(b=>b.prompt&&b.model&&Array.isArray(b.keywords)&&b.keywords.length),'English chapter '+i+' missing model writing');
+ }
+});
