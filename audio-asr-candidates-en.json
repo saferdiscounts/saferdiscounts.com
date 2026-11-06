@@ -5,8 +5,8 @@
   "source": "Cloudflare R2 audio binary",
   "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy block text match; no human listening; candidate records only",
   "reviewStatus": "automated-unverified",
-  "requested": 20,
-  "agreed": 3,
+  "requested": 40,
+  "agreed": 4,
   "exactLessonCandidates": 3,
   "records": [
     {
@@ -377,6 +377,366 @@
         "text": "Goodbye",
         "lesson": 3
       }
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_021.mp3",
+      "slow": "english/pronunciation/basic/bas_021_slow.mp3",
+      "original": {
+        "text": "Please.",
+        "duration": 0.911375,
+        "logprob": -0.615625,
+        "bytes": 5493
+      },
+      "slowRecognition": {
+        "text": "A please.",
+        "duration": 1.1246875,
+        "logprob": -0.7916666567325592,
+        "bytes": 7365
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_022.mp3",
+      "slow": "english/pronunciation/basic/bas_022_slow.mp3",
+      "original": {
+        "text": "You're welcome.",
+        "duration": 1.21,
+        "logprob": -0.49274555274418425,
+        "bytes": 7941
+      },
+      "slowRecognition": {
+        "text": "You're welcome.",
+        "duration": 1.615375,
+        "logprob": -0.41741070577076506,
+        "bytes": 10509
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_023.mp3",
+      "slow": "english/pronunciation/basic/bas_023_slow.mp3",
+      "original": {
+        "text": "Sorry.",
+        "duration": 0.826,
+        "logprob": -0.587890625,
+        "bytes": 5037
+      },
+      "slowRecognition": {
+        "text": "Er, sorry.",
+        "duration": 1.018,
+        "logprob": -0.5410156079701015,
+        "bytes": 6381
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_024.mp3",
+      "slow": "english/pronunciation/basic/bas_024_slow.mp3",
+      "original": {
+        "text": "Excuse me.",
+        "duration": 1.338,
+        "logprob": -0.5260416865348816,
+        "bytes": 9381
+      },
+      "slowRecognition": {
+        "text": "Of excuse me",
+        "duration": 1.807375,
+        "logprob": -0.5384114384651184,
+        "bytes": 12261
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_025.mp3",
+      "slow": "english/pronunciation/basic/bas_025_slow.mp3",
+      "original": {
+        "text": "Yes.",
+        "duration": 0.826,
+        "logprob": -0.3466796875,
+        "bytes": 5061
+      },
+      "slowRecognition": {
+        "text": "Oh, yes.",
+        "duration": 1.039375,
+        "logprob": -0.5066964115415301,
+        "bytes": 6573
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_026.mp3",
+      "slow": "english/pronunciation/basic/bas_026_slow.mp3",
+      "original": {
+        "text": "No.",
+        "duration": 0.783,
+        "logprob": -0.793359375,
+        "bytes": 4845
+      },
+      "slowRecognition": {
+        "text": "I know.",
+        "duration": 0.975375,
+        "logprob": -0.8704426884651184,
+        "bytes": 5781
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_027.mp3",
+      "slow": "english/pronunciation/basic/bas_027_slow.mp3",
+      "original": {
+        "text": "Yeah.",
+        "duration": 0.683,
+        "logprob": -0.7921875,
+        "bytes": 4677
+      },
+      "slowRecognition": {
+        "text": "Tidy food.",
+        "duration": 0.8686875,
+        "logprob": -1.1842684405190604,
+        "bytes": 5181
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_028.mp3",
+      "slow": "english/pronunciation/basic/bas_028_slow.mp3",
+      "original": {
+        "text": "Hey",
+        "duration": 0.683,
+        "logprob": -0.8110351860523224,
+        "bytes": 4629
+      },
+      "slowRecognition": {
+        "text": "That's it.",
+        "duration": 0.954,
+        "logprob": -0.9748883587973458,
+        "bytes": 5565
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_029.mp3",
+      "slow": "english/pronunciation/basic/bas_029_slow.mp3",
+      "original": {
+        "text": "See",
+        "duration": 0.658,
+        "logprob": -0.9222297370433807,
+        "bytes": 4485
+      },
+      "slowRecognition": {
+        "text": "That's it.",
+        "duration": 0.8686875,
+        "logprob": -0.6584821598870414,
+        "bytes": 5469
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_030.mp3",
+      "slow": "english/pronunciation/basic/bas_030_slow.mp3",
+      "original": {
+        "text": "Wait.",
+        "duration": 0.708,
+        "logprob": -0.6890625,
+        "bytes": 4821
+      },
+      "slowRecognition": {
+        "text": "Ah, oui.",
+        "duration": 0.975375,
+        "logprob": -0.7952008928571429,
+        "bytes": 5877
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_031.mp3",
+      "slow": "english/pronunciation/basic/bas_031_slow.mp3",
+      "original": {
+        "text": "Thanks.",
+        "duration": 0.708,
+        "logprob": -0.73671875,
+        "bytes": 4197
+      },
+      "slowRecognition": {
+        "text": "The day.",
+        "duration": 0.954,
+        "logprob": -1.0690103967984517,
+        "bytes": 5949
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_032.mp3",
+      "slow": "english/pronunciation/basic/bas_032_slow.mp3",
+      "original": {
+        "text": "Let me",
+        "duration": 0.658,
+        "logprob": -0.925,
+        "bytes": 4773
+      },
+      "slowRecognition": {
+        "text": "I left him.",
+        "duration": 0.847375,
+        "logprob": -0.7885044642857143,
+        "bytes": 5205
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_033.mp3",
+      "slow": "english/pronunciation/basic/bas_033_slow.mp3",
+      "original": {
+        "text": "Light",
+        "duration": 0.633,
+        "logprob": -0.6718749850988388,
+        "bytes": 4557
+      },
+      "slowRecognition": {
+        "text": "They're not.",
+        "duration": 0.847375,
+        "logprob": -0.6283482313156128,
+        "bytes": 5205
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_034.mp3",
+      "slow": "english/pronunciation/basic/bas_034_slow.mp3",
+      "original": {
+        "text": "There's",
+        "duration": 0.683,
+        "logprob": -0.81953125,
+        "bytes": 4413
+      },
+      "slowRecognition": {
+        "text": "That is...",
+        "duration": 0.8686875,
+        "logprob": -0.749999980131785,
+        "bytes": 5085
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_035.mp3",
+      "slow": "english/pronunciation/basic/bas_035_slow.mp3",
+      "original": {
+        "text": "To speak.",
+        "duration": 1.018,
+        "logprob": -0.5413411557674408,
+        "bytes": 6645
+      },
+      "slowRecognition": {
+        "text": "And to speak.",
+        "duration": 1.274,
+        "logprob": -0.6026785714285714,
+        "bytes": 8445
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_036.mp3",
+      "slow": "english/pronunciation/basic/bas_036_slow.mp3",
+      "original": {
+        "text": "to work.",
+        "duration": 0.975375,
+        "logprob": -0.5260416865348816,
+        "bytes": 6453
+      },
+      "slowRecognition": {
+        "text": "Going to work.",
+        "duration": 1.2526875,
+        "logprob": -0.515625,
+        "bytes": 8157
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_037.mp3",
+      "slow": "english/pronunciation/basic/bas_037_slow.mp3",
+      "original": {
+        "text": "Speak.",
+        "duration": 0.829375,
+        "logprob": -0.694140625,
+        "bytes": 6117
+      },
+      "slowRecognition": {
+        "text": "I speak.",
+        "duration": 1.1246875,
+        "logprob": -0.4114583383003871,
+        "bytes": 7221
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_038.mp3",
+      "slow": "english/pronunciation/basic/bas_038_slow.mp3",
+      "original": {
+        "text": "Work.",
+        "duration": 0.758,
+        "logprob": -0.644140625,
+        "bytes": 4653
+      },
+      "slowRecognition": {
+        "text": "New work.",
+        "duration": 1.039375,
+        "logprob": -0.4752604166666667,
+        "bytes": 6573
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_039.mp3",
+      "slow": "english/pronunciation/basic/bas_039_slow.mp3",
+      "original": {
+        "text": "and speaks.",
+        "duration": 0.854375,
+        "logprob": -0.8880207935969034,
+        "bytes": 5901
+      },
+      "slowRecognition": {
+        "text": "Ah, speaks.",
+        "duration": 1.1886875,
+        "logprob": -0.6662946428571429,
+        "bytes": 8061
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_040.mp3",
+      "slow": "english/pronunciation/basic/bas_040_slow.mp3",
+      "original": {
+        "text": "works",
+        "duration": 0.858,
+        "logprob": -0.5913085788488388,
+        "bytes": 5397
+      },
+      "slowRecognition": {
+        "text": "He works.",
+        "duration": 1.146,
+        "logprob": -0.4560547073682149,
+        "bytes": 7413
+      },
+      "agreed": false,
+      "exactLesson": null
     }
   ]
 }
