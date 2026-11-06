@@ -472,11 +472,11 @@
     // A flat/apartment is a residential building or unit, not a generic detached house.
     // Resolve this specific concept before broad Arabic meaning rules and shared vocabulary.
     var apartmentMeaning=/^(?:شقة|الشقة|شقق|شقه|الشقه|عمارة سكنية|مبنى سكني)$/i.test(meaningPlain);
-    var apartmentWord=/^(?:(?:the|a|an)\\s+)?(?:apartment|apartments|flat|flats)$/i.test(rawWord)||
-      /^(?:(?:un|uno|una|il|lo|la|i|gli|le)\\s+)?(?:appartamento|appartamenti)$/i.test(rawWord)||
-      /^(?:(?:un|une)\\s+|l')?(?:appartement|appartements)$/i.test(rawWord)||
-      /^(?:(?:der|die|das|ein|eine)\\s+)?(?:wohnung|wohnungen)$/i.test(rawWord)||
-      /^(?:(?:o|a|um|uma|os|as)\\s+)?(?:apartamento|apartamentos)$/i.test(rawWord)||
+    var apartmentWord=/^(?:(?:the|a|an)\s+)?(?:apartment|apartments|flat|flats)$/i.test(rawWord)||
+      /^(?:(?:un|uno|una|il|lo|la|i|gli|le)\s+)?(?:appartamento|appartamenti)$/i.test(rawWord)||
+      /^(?:(?:un|une)\s+|l')?(?:appartement|appartements)$/i.test(rawWord)||
+      /^(?:(?:der|die|das|ein|eine)\s+)?(?:wohnung|wohnungen)$/i.test(rawWord)||
+      /^(?:(?:o|a|um|uma|os|as)\s+)?(?:apartamento|apartamentos)$/i.test(rawWord)||
       /^(?:квартира|квартиры)$/i.test(rawWord);
     if(apartmentMeaning||apartmentWord)return photos.apartmentBuilding;
     for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
