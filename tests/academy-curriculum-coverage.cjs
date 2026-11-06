@@ -224,3 +224,10 @@ test('Brazilian beginner writing feedback uses phrases demonstrated by its model
   for(const keyword of lesson.writing.keywords)assert.ok(model.includes(keyword.toLocaleLowerCase('pt-BR')),'Model does not demonstrate feedback phrase '+keyword+' in '+title);
  }
 });
+
+test('Brazilian writing feedback supports fill-in phrase templates and slash alternatives',()=>{
+ const html=read('ptbr-academy.html');
+ assert.match(html,/const writingPhraseMatches=/);
+ assert.match(html,/const placeholder=/);
+ assert.match(html,/const matched=l\.writing\.keywords\.filter\(k=>writingPhraseMatches/);
+});
