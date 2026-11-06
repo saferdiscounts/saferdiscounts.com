@@ -27,7 +27,7 @@ test('Practical lab has navigation from home, catalog, Brazilian academy and tou
  }
  const page=read('ptbr-practical-lab.html');
  for(const script of ['ptbr-practical-data.js','ptbr-practical-lab.js','academy-mastery.js'])assert.ok(page.includes('src="'+script+'"'),script+' not loaded');
- assert.match(page,/80 عبارة/);assert.match(page,/ليس تسجيلًا بشريًا/);
+ assert.match(page,/80 عبارة/);assert.match(page,/لا نحتسبه تسجيلًا بشريًا/);
 });
 test('Drills do not show correct answers before response; speech remains optional and cannot count as human audio',()=>{
  const src=read('ptbr-practical-lab.js');assert.doesNotThrow(()=>new vm.Script(src));
