@@ -88,3 +88,24 @@ test('Arabic letter audio and Egyptian Arabic pilot are discoverable from catalo
  assert.match(pilot,/T01_011/);
  assert.match(pilot,/speechSynthesis/);
 });
+
+test('European lessons have valid assessable teaching and practice content at every level',()=>{
+ for(const lang of european){
+  const items=lessons(lang+'-academy.html');
+  const counts={};
+  for(const [index,l] of items.entries()){
+   counts[l.level]=(counts[l.level]||0)+1;
+   for(const field of ['title','goal','intro','grammar'])assert.ok(typeof l[field]==='string'&&l[field].trim(),lang+' lesson '+index+' missing '+field);
+   assert.ok(Array.isArray(l.words)&&l.words.length>=3,lang+' lesson '+index+' insufficient vocabulary');
+   for(const [n,w] of l.words.entries())assert.ok(Array.isArray(w)&&w.length>=3&&w.every(v=>typeof v==='string'&&v.trim()),lang+' lesson '+index+' invalid word '+n);
+   assert.ok(Array.isArray(l.answers)&&Number.isInteger(l.correct)&&l.correct>=0&&l.correct<l.answers.length,lang+' lesson '+index+' invalid quiz');
+   assert.ok(l.scenario&&Array.isArray(l.scenario.options)&&l.scenario.options.length>=3&&Number.isInteger(l.scenario.correct)&&l.scenario.correct>=0&&l.scenario.correct<l.scenario.options.length,lang+' lesson '+index+' invalid scenario');
+   assert.ok(Array.isArray(l.scenario.turns)&&l.scenario.turns.length>=2,lang+' lesson '+index+' missing scenario conversation');
+   assert.ok(l.writing&&typeof l.writing.prompt==='string'&&l.writing.prompt.trim()&&typeof l.writing.model==='string'&&l.writing.model.trim()&&Array.isArray(l.writing.keywords)&&l.writing.keywords.length,lang+' lesson '+index+' missing writing practice');
+  }
+  assert.equal(counts.A1,12,lang+' A1 lesson count');
+  assert.equal(counts.A2,12,lang+' A2 lesson count');
+  assert.equal(counts.B1,12,lang+' B1 lesson count');
+  if(['french','german','portuguese'].includes(lang))assert.equal(counts.B2,12,lang+' B2 lesson count');
+ }
+});
