@@ -186,7 +186,25 @@ function updatePtbrAudioConnection(lesson){
 function hostedAudioButtons(phrase){const item=findPtbrAudio(phrase);if(!item)return '';return '<span class="hosted-audio-actions"><button type="button" data-ptbr-human-audio="'+esc(item.normal||'')+'" data-ptbr-label="'+esc(item.pt||phrase)+'" '+(!item.normal?'disabled':'')+'>🔊 طبيعي</button><button type="button" data-ptbr-human-audio="'+esc(item.slow||'')+'" data-ptbr-label="'+esc(item.pt||phrase)+'" '+(!item.slow?'disabled':'')+'>🐢 بطيء</button></span>'}
 function playPtbrHostedPath(path,label){if(!path||!ptbrAudioBase||!ptbrHumanAudio||!safePtbrAudioPath.test(path))return false;ptbrHumanAudio.pause();ptbrHumanAudio.onended=null;ptbrHumanAudio.src=ptbrAudioBase+path.split('/').map(encodeURIComponent).join('/');ptbrHumanAudio.load();ptbrHumanAudio.play().catch(()=>{const note=document.getElementById('ptbrAudioConnection');if(note)note.textContent='تعذر تشغيل التسجيل الصوتي. تحقق من اتصال الصوتيات ثم حاول مرة أخرى.'});return true}
 function playPtbrHostedDialogue(lines,slow){if(!ptbrAudioReady)return false;const matched=lines.map(line=>findPtbrAudio(line[1]));if(!matched.length||matched.some(item=>!item||!safePtbrAudioPath.test(slow?item.slow:item.normal)))return false;ptbrAudioQueue=matched.map(item=>slow?item.slow:item.normal);ptbrAudioQueueIndex=0;function next(){if(ptbrAudioQueueIndex>=ptbrAudioQueue.length){ptbrHumanAudio.onended=null;return}const path=ptbrAudioQueue[ptbrAudioQueueIndex++];ptbrHumanAudio.src=ptbrAudioBase+path.split('/').map(encodeURIComponent).join('/');ptbrHumanAudio.load();ptbrHumanAudio.play().catch(()=>{ptbrHumanAudio.onended=null;const note=document.getElementById('ptbrAudioConnection');if(note)note.textContent='تعذر تشغيل أحد التسجيلات الصوتية المفهرسة. جرّب زر الاستماع مرة أخرى.'})}ptbrHumanAudio.pause();ptbrHumanAudio.onended=next;next();return true}
-function initPtbrHostedAudio(){if(!ptbrAudioBase||!ptbrAudioBridge)return;try{if(new URL(ptbrAudioBase).protocol!=='https:')throw new Error('HTTPS required')}catch(e){const note=document.getElementById('ptbrAudioConnection');if(note)note.textContent='رابط مكتبة التسجيلات غير صالح.';return}ptbrAudioBridge.src=ptbrAudioBase+'bridge.html'}
+function initPtbrHostedAudio(){
+ if(!ptbrAudioBase)return;
+ try{if(new URL(ptbrAudioBase).protocol!=='https:')throw new Error('HTTPS required')}
+ catch(e){const note=document.getElementById('ptbrAudioConnection');if(note)note.textContent='رابط مكتبة التسجيلات غير صالح.';return}
+ // A same-origin, source-verified snapshot prevents cross-origin bridge failures from hiding valid audio.
+ // The JSON contains R2 manifest text and keys, not claims about human voice or actual playback.
+ fetch('audio-text-index-ptbr.json',{cache:'no-cache'}).then(response=>{
+  if(!response.ok)throw Error('Audio source index unavailable: '+response.status);
+  return response.json();
+ }).then(index=>{
+  if(index.schemaVersion!==1||index.locale!=='pt-BR'||!Array.isArray(index.records)||index.records.length!==511)throw Error('Unexpected Brazilian source index');
+  if(index.records.some(item=>!item||typeof item.pt!=='string'||!safePtbrAudioPath.test(item.normal||'')||!safePtbrAudioPath.test(item.slow||'')||item.normal.replace(/\\.mp3$/,'_slow.mp3')!==item.slow))throw Error('Unsafe Brazilian source mapping');
+  ptbrAudioItems=index.records;makePtbrAudioIndex(ptbrAudioItems);
+  ptbrAudioReady=true;ptbrAudioFailed=false;render(current);
+ }).catch(()=>{
+  if(ptbrAudioBridge){ptbrAudioBridge.src=ptbrAudioBase+'bridge.html';return}
+  ptbrAudioFailed=true;updatePtbrAudioConnection(lessons[current]);
+ });
+}
 window.addEventListener('message',function(event){if(!ptbrAudioBase||event.source!==ptbrAudioBridge.contentWindow)return;let origin;try{origin=new URL(ptbrAudioBase).origin}catch(e){return}if(event.origin!==origin)return;const data=event.data||{};if(data.type==='ptbr-audio-manifest-error-v1'){ptbrAudioFailed=true;updatePtbrAudioConnection(lessons[current]);return}if(data.type!=='ptbr-audio-manifest-v1'||!data.manifest||!data.manifest.levels)return;const basic=data.manifest.levels.basic,advanced=data.manifest.levels.advanced;if(!basic||!advanced||!Array.isArray(basic.items)||!Array.isArray(advanced.items))return;ptbrAudioItems=basic.items.concat(advanced.items);makePtbrAudioIndex(ptbrAudioItems);ptbrAudioReady=true;ptbrAudioFailed=false;render(current)});
 const foundationOrder=[21,22,23,24,25,26,27,28,29,30,31,32,33,34,5];
 // Keep original lesson IDs for audio indexes, saved progress and historical exam results.
