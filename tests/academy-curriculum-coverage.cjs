@@ -136,3 +136,11 @@ test('English chapters include practice, dialogue and model writing',()=>{
   assert.ok(writing.length&&writing.every(b=>b.prompt&&b.model&&Array.isArray(b.keywords)&&b.keywords.length),'English chapter '+i+' missing model writing');
  }
 });
+
+test('English pronunciation notes accurately compare th and w with Arabic sounds',()=>{
+ const html=read('english-academy.html');
+ assert.doesNotMatch(html,/صوت الـth مش موجود في العربي/);
+ assert.doesNotMatch(html,/صوت الـw بالشفايف، مش موجود في العربي/);
+ assert.match(html,/في كلمة thank يُنطق th مثل «ث» العربية/);
+ assert.match(html,/صوت w قريب من «و» العربية/);
+});
