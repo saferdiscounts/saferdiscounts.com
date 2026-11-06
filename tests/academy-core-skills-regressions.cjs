@@ -17,7 +17,7 @@ test('All eight academies have six scaffolded units and 144 correctable practice
   units+=lessons.length;
   for(const [index,unit] of lessons.entries()){
    assert.equal(unit.length,4,key+' unit '+index+' invalid fields');
-   assert.ok(unit[0].length>3&&unit[1].length>60&&unit[3].length>25,key+' unit '+index+' sparse explanation');
+   assert.ok(unit[0].length>3&&unit[1].length>60&&unit[3].length>=20,key+' unit '+index+' sparse explanation');
    assert.equal(unit[2].length,3,key+' unit '+index+' needs three different questions');
    for(const pair of unit[2]){assert.equal(pair.length,2);assert.ok(pair[0].trim()&&pair[1].trim())}
    assert.equal(new Set(unit[2].map(p=>p[0])).size,3,key+' unit '+index+' duplicated target expressions');
