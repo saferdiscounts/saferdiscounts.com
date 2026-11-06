@@ -152,3 +152,12 @@ test('Brazilian greeting lesson teaches regional and nasal pronunciation without
  assert.match(greeting.grammar,/صوتًا أنفيًا/);
  assert.match(greeting.grammar,/لا تعتمد على كتابة الحروف العربية وحدها/);
 });
+
+test('Brazilian lessons offer interactive five-question active recall practice',()=>{
+ const html=read('ptbr-academy.html');
+ assert.match(html,/تحدي التذكر السريع/);
+ assert.match(html,/queue=shuffled\(vocab\)\.slice\(0,Math\.min\(5,vocab\.length\)\)/);
+ assert.match(html,/w===target/);
+ assert.match(html,/تحدي جديد/);
+ assert.match(html,/aria-live','polite/);
+});
