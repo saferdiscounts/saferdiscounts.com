@@ -44,6 +44,21 @@ test('five European academy number lessons cover 0–20 and every decade to 100'
   for(const key of lesson.writing.keywords)assert.ok(lesson.writing.model.includes(key),lang+': writing sample mismatch '+key);
  }
 });
+test('English foundation lists every number from zero through one hundred',()=>{
+ const chapters=JSON.parse(bracketed(read('english-academy.html'),'const chapters='));
+ const chapter=chapters.find(x=>x.title.includes('الأرقام من 0'));
+ assert.ok(chapter,'Missing English numbers chapter');
+ const numbers=new Map();
+ for(const block of chapter.blocks.filter(x=>x.type==='table')){
+  for(const row of block.rows){
+   if(row[0].t!=='')numbers.set(+row[0].t,row[1].t);
+   if(row[2].t!=='')numbers.set(+row[2].t,row[3].t);
+  }
+ }
+ assert.equal(numbers.size,101,'Not every number appears exactly once');
+ for(let n=0;n<=100;n++)assert.ok(numbers.has(n),'Missing English number '+n);
+ for(const [num,spelling] of [[21,'twenty-one'],[40,'forty'],[47,'forty-seven'],[80,'eighty'],[99,'ninety-nine'],[100,'one hundred']])assert.equal(numbers.get(num),spelling);
+});
 test('Russian foundations contain all 33 letters and full numeric range',()=>{
  const array=bracketed(read('russian-academy.html'),'const lessonContent=');
  const content=vm.runInNewContext('('+array+')',{}, {timeout:4000});
