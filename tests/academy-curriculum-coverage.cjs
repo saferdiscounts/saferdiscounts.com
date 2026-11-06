@@ -106,7 +106,7 @@ test('European lessons have valid assessable teaching and practice content at ev
   assert.equal(counts.A1,12,lang+' A1 lesson count');
   assert.equal(counts.A2,12,lang+' A2 lesson count');
   assert.equal(counts.B1,12,lang+' B1 lesson count');
-  if(['french','german','portuguese'].includes(lang))assert.equal(counts.B2,12,lang+' B2 lesson count');
+  assert.equal(counts.B2,12,lang+' B2 lesson count');
  }
 });
 
@@ -246,7 +246,7 @@ test('All 97 Brazilian lesson quizzes have valid distinct choices and explanatio
  }
 });
 
-test('All 216 European academy lesson quizzes and scenarios have distinct usable answers',()=>{
+test('All 240 European academy lesson quizzes and scenarios have distinct usable answers',()=>{
  let checked=0;
  for(const lang of european){
   const items=lessons(lang+'-academy.html');
@@ -265,10 +265,10 @@ test('All 216 European academy lesson quizzes and scenarios have distinct usable
    }
   }
  }
- assert.equal(checked,432,'Expected quiz and scenario for each of 216 lessons');
+ assert.equal(checked,480,'Expected quiz and scenario for each of 240 lessons');
 });
 
-test('All 216 European lessons have usable translated conversations and writing models',()=>{
+test('All 240 European lessons have usable translated conversations and writing models',()=>{
  let count=0;
  for(const lang of european){
   for(const [i,l] of lessons(lang+'-academy.html').entries()){
@@ -284,7 +284,7 @@ test('All 216 European lessons have usable translated conversations and writing 
    count++;
   }
  }
- assert.equal(count,216);
+ assert.equal(count,240);
 });
 
 test('Brazilian travel writing rubrics use phrases shown in lesson models',()=>{
