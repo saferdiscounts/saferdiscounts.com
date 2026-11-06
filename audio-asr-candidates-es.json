@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "lang": "es",
+  "model": "@cf/openai/whisper-large-v3-turbo",
+  "source": "Cloudflare R2 audio binary",
+  "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy term match; no human listening; candidate records only",
+  "reviewStatus": "automated-unverified",
+  "requested": 20,
+  "agreed": 7,
+  "exactLessonCandidates": 4,
+  "records": [
+    {
+      "normal": "spanish/pronunciation/basic/bas_001.mp3",
+      "slow": "spanish/pronunciation/basic/bas_001_slow.mp3",
+      "original": {
+        "text": "Gracias.",
+        "duration": 0.826,
+        "logprob": -0.99921875,
+        "bytes": 4893
+      },
+      "slowRecognition": {
+        "text": "Y casa.",
+        "duration": 1.082,
+        "logprob": -0.9479167064030966,
+        "bytes": 6597
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_002.mp3",
+      "slow": "spanish/pronunciation/basic/bas_002_slow.mp3",
+      "original": {
+        "text": "¡Golag!",
+        "duration": 0.762,
+        "logprob": -0.5043945237994194,
+        "bytes": 4557
+      },
+      "slowRecognition": {
+        "text": "Me voy a la...",
+        "duration": 0.975375,
+        "logprob": -1.1484375,
+        "bytes": 5541
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_003.mp3",
+      "slow": "spanish/pronunciation/basic/bas_003_slow.mp3",
+      "original": {
+        "text": "que eso",
+        "duration": 0.826,
+        "logprob": -0.65546875,
+        "bytes": 4917
+      },
+      "slowRecognition": {
+        "text": "En que es lo...",
+        "duration": 1.082,
+        "logprob": -0.7646484151482582,
+        "bytes": 6693
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_004.mp3",
+      "slow": "spanish/pronunciation/basic/bas_004_slow.mp3",
+      "original": {
+        "text": "Guerra.",
+        "duration": 0.8046875,
+        "logprob": -0.66015625,
+        "bytes": 4869
+      },
+      "slowRecognition": {
+        "text": "Guerra.",
+        "duration": 1.039375,
+        "logprob": -0.8546875,
+        "bytes": 6309
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_005.mp3",
+      "slow": "spanish/pronunciation/basic/bas_005_slow.mp3",
+      "original": {
+        "text": "Baños.",
+        "duration": 0.847375,
+        "logprob": -0.5660807092984518,
+        "bytes": 5061
+      },
+      "slowRecognition": {
+        "text": "¡Zbanio!",
+        "duration": 1.1246875,
+        "logprob": -0.7954101338982582,
+        "bytes": 7029
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_006.mp3",
+      "slow": "spanish/pronunciation/basic/bas_006_slow.mp3",
+      "original": {
+        "text": "Pero...",
+        "duration": 0.762,
+        "logprob": -0.69765625,
+        "bytes": 4557
+      },
+      "slowRecognition": {
+        "text": "¿En Pero?",
+        "duration": 0.9966875,
+        "logprob": -1.0478516072034836,
+        "bytes": 6117
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_007.mp3",
+      "slow": "spanish/pronunciation/basic/bas_007_slow.mp3",
+      "original": {
+        "text": "Cielo.",
+        "duration": 0.826,
+        "logprob": -0.3116629549435207,
+        "bytes": 4869
+      },
+      "slowRecognition": {
+        "text": "Hacielo.",
+        "duration": 1.039375,
+        "logprob": -0.67333984375,
+        "bytes": 6141
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_008.mp3",
+      "slow": "spanish/pronunciation/basic/bas_008_slow.mp3",
+      "original": {
+        "text": "Sepa tu.",
+        "duration": 1.018,
+        "logprob": -0.8314731972558158,
+        "bytes": 6717
+      },
+      "slowRecognition": {
+        "text": "Y se ha batido.",
+        "duration": 1.2526875,
+        "logprob": -1.1085069444444444,
+        "bytes": 8157
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_009.mp3",
+      "slow": "spanish/pronunciation/basic/bas_009_slow.mp3",
+      "original": {
+        "text": "Gente.",
+        "duration": 0.89,
+        "logprob": -0.81953125,
+        "bytes": 5325
+      },
+      "slowRecognition": {
+        "text": "¡Oye, gente!",
+        "duration": 1.146,
+        "logprob": -1.0434977213541667,
+        "bytes": 7029
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_010.mp3",
+      "slow": "spanish/pronunciation/basic/bas_010_slow.mp3",
+      "original": {
+        "text": "Jamón.",
+        "duration": 0.868375,
+        "logprob": -0.6373698016007742,
+        "bytes": 5205
+      },
+      "slowRecognition": {
+        "text": "El jamón.",
+        "duration": 1.103375,
+        "logprob": -0.3035714200564793,
+        "bytes": 6717
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_011.mp3",
+      "slow": "spanish/pronunciation/basic/bas_011_slow.mp3",
+      "original": {
+        "text": "Llamar.",
+        "duration": 0.847375,
+        "logprob": -0.3724888392857143,
+        "bytes": 5085
+      },
+      "slowRecognition": {
+        "text": "Y llamar.",
+        "duration": 1.082,
+        "logprob": -0.3716517857142857,
+        "bytes": 6933
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_012.mp3",
+      "slow": "spanish/pronunciation/basic/bas_012_slow.mp3",
+      "original": {
+        "text": "Buenos días.",
+        "duration": 1.231375,
+        "logprob": -0.3201497346162796,
+        "bytes": 8541
+      },
+      "slowRecognition": {
+        "text": "Buenos días.",
+        "duration": 1.658,
+        "logprob": -0.3678385416666667,
+        "bytes": 10893
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Buenos días",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_013.mp3",
+      "slow": "spanish/pronunciation/basic/bas_013_slow.mp3",
+      "original": {
+        "text": "Buenas tardes.",
+        "duration": 1.3166875,
+        "logprob": -0.1280517615377903,
+        "bytes": 9045
+      },
+      "slowRecognition": {
+        "text": "Buenas tardes.",
+        "duration": 1.658,
+        "logprob": -0.109375,
+        "bytes": 11349
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Buenas tardes",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_014.mp3",
+      "slow": "spanish/pronunciation/basic/bas_014_slow.mp3",
+      "original": {
+        "text": "Buenas noches.",
+        "duration": 1.359375,
+        "logprob": -0.1477050818502903,
+        "bytes": 9117
+      },
+      "slowRecognition": {
+        "text": "Buenas noches.",
+        "duration": 1.743375,
+        "logprob": -0.2351074181497097,
+        "bytes": 11901
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Buenas noches",
+        "lesson": 0
+      }
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_015.mp3",
+      "slow": "spanish/pronunciation/basic/bas_015_slow.mp3",
+      "original": {
+        "text": "¿Cómo está?",
+        "duration": 1.1246875,
+        "logprob": -0.298828125,
+        "bytes": 6957
+      },
+      "slowRecognition": {
+        "text": "¿Y cómo está?",
+        "duration": 1.5086875,
+        "logprob": -0.3598632775247097,
+        "bytes": 9789
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_016.mp3",
+      "slow": "spanish/pronunciation/basic/bas_016_slow.mp3",
+      "original": {
+        "text": "¿Qué tal?",
+        "duration": 0.9966875,
+        "logprob": -0.17327008928571427,
+        "bytes": 5925
+      },
+      "slowRecognition": {
+        "text": "¿En qué está el loop?",
+        "duration": 1.2526875,
+        "logprob": -0.6210937678813935,
+        "bytes": 8301
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_017.mp3",
+      "slow": "spanish/pronunciation/basic/bas_017_slow.mp3",
+      "original": {
+        "text": "Muy bien, gracias.",
+        "duration": 1.5086875,
+        "logprob": -0.3688964918255806,
+        "bytes": 10461
+      },
+      "slowRecognition": {
+        "text": "Muy bien, gracias.",
+        "duration": 2.0846875,
+        "logprob": -0.3762206956744194,
+        "bytes": 13965
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_018.mp3",
+      "slow": "spanish/pronunciation/basic/bas_018_slow.mp3",
+      "original": {
+        "text": "Encantado.",
+        "duration": 1.1886875,
+        "logprob": -0.27483259780066355,
+        "bytes": 7749
+      },
+      "slowRecognition": {
+        "text": "¡Encantado!",
+        "duration": 1.53,
+        "logprob": -0.3875868055555556,
+        "bytes": 10053
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_019.mp3",
+      "slow": "spanish/pronunciation/basic/bas_019_slow.mp3",
+      "original": {
+        "text": "Encantada.",
+        "duration": 1.167375,
+        "logprob": -0.3376116156578064,
+        "bytes": 7197
+      },
+      "slowRecognition": {
+        "text": "¡Encantadas!",
+        "duration": 1.551375,
+        "logprob": -0.5525173611111112,
+        "bytes": 10293
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "spanish/pronunciation/basic/bas_020.mp3",
+      "slow": "spanish/pronunciation/basic/bas_020_slow.mp3",
+      "original": {
+        "text": "Hasta luego.",
+        "duration": 1.1886875,
+        "logprob": -0.4443359375,
+        "bytes": 7653
+      },
+      "slowRecognition": {
+        "text": "¡Hasta luego!",
+        "duration": 1.551375,
+        "logprob": -0.4201660230755806,
+        "bytes": 10533
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Hasta luego",
+        "lesson": 0
+      }
+    }
+  ]
+}
