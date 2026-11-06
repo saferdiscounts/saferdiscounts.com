@@ -17,7 +17,9 @@ test('Stable readiness baseline preserves exact level coverage and does not coun
  assert.equal(count,snapshot.covered);
  assert.equal(snapshot.audio.pairs,3506);
  assert.equal(snapshot.langs.reduce((n,l)=>n+l[2],0),437);
- assert.equal(snapshot.langs.find(l=>l[0]==='en')[3].B1,8);
+ assert.equal(snapshot.langs.find(l=>l[0]==='en')[3].B1,12);
+ assert.equal(snapshot.covered,384);
+ assert.match(page,/اكتمال 100% من العدد المطلوب لا يعني اكتمال جودة التعليم/);
 });
 test('Snapshot matches current basic course lesson counts, preventing stale publication',()=>{
  const m={ptbr:'ptbr-academy.html',en:'english-academy.html',it:'italian-academy.html',es:'spanish-academy.html',fr:'french-academy.html',de:'german-academy.html',ru:'russian-academy.html',pt:'portuguese-academy.html'};
@@ -27,5 +29,7 @@ test('Snapshot matches current basic course lesson counts, preventing stale publ
   const html=read(file),row=snap.langs.find(x=>x[0]===key);
   const lessons=parseArray(html,key==='en'?'const chapters=':'const lessons=');
   assert.equal(row[2],lessons.length,key+' snapshot is stale');
+  const sourceCount=require('../scripts/academy-v1-progress.cjs').report().byLanguage[key];
+  assert.deepEqual(row[3],sourceCount.cefrCounts,key+' source level counts do not match dashboard');
  }
 });
