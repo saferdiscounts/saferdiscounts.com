@@ -82,7 +82,7 @@ test('All ten topics have enough distinct phrases for 5 comprehension prompts, s
     assert.equal(available.length,6);
    }
   }
-  assert.ok(phrases.every(p=>p[0].trim().split(/\\s+/).length>=4),t.id+' cannot support distinct sentence ordering');
+  assert.ok(phrases.every(p=>p[0].trim().split(/\s+/).length>=4),t.id+' cannot support distinct sentence ordering');
  }
  const script=read('ptbr-practical-lab.js');
  assert.match(script,/writingFinished=true/);
