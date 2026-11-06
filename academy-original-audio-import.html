@@ -1,0 +1,150 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>استيراد فهارس النطق الأصلية | Safer Discounts</title>
+<meta name="description" content="استخراج فهرس النص والتسجيل من HTML الأصلي داخل أرشيفات اللغة، والتحقق من وجود كل ملف عادي وبطيء في R2 دون تخمين.">
+<style>
+:root{color-scheme:light;--blue:#075a7a;--green:#10725f;--line:#d2e3e9;--ink:#1d3c50;--bg:#f4f8fa}*{box-sizing:border-box}
+body{margin:0;font:15px/1.95 Tahoma,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1020px;margin:auto;padding:0 18px}
+header{padding:29px 0;background:linear-gradient(120deg,#092e4b,#11746f);color:#fff}h1{font-size:clamp(25px,4vw,36px);margin:4px 0}h2{font-size:20px;margin:5px 0 14px}
+nav{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}nav a{color:#e6fafb}header p{max-width:850px;margin:5px 0;color:#e0f4f7}
+.card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:20px;margin:18px 0;box-shadow:0 6px 17px #14394a0b}
+.warning{background:#fff8e6;border:1px solid #ebd6ac;border-radius:11px;padding:13px;margin:14px 0;font-size:14px;color:#63522b}
+.inputs{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:15px 0}
+select,input,button{font:inherit;border-radius:10px;padding:9px 13px}
+select,input{border:1px solid #abc7d2;background:#fff;color:#1e3b50}
+input[type=file]{width:min(100%,650px)}button{background:var(--blue);color:#fff;border:1px solid var(--blue);font-weight:bold;cursor:pointer}
+button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #d49c45;outline-offset:2px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:9px;margin:14px 0}
+.stat{background:#f4f9fb;border:1px solid var(--line);border-radius:10px;padding:12px}.stat strong{display:block;color:var(--blue);font-size:25px}.stat span{font-size:12px}
+.status{min-height:25px;color:#245f6b;font-size:13px}
+.tablebox{max-height:410px;overflow:auto;border:1px solid var(--line);border-radius:11px}
+table{width:100%;min-width:600px;border-collapse:collapse;font-size:13px}th,td{padding:10px;border-bottom:1px solid #dfe9ee;text-align:right}th{position:sticky;top:0;background:#e9f2f7}
+td.ltr{direction:ltr;text-align:left;unicode-bidi:isolate;overflow-wrap:anywhere}
+.good{color:var(--green);font-weight:bold}.bad{color:#9c481c;font-weight:bold}.muted{color:#587182;font-size:13px}
+footer{text-align:center;padding:25px;color:#607483}
+@media(max-width:600px){.card{padding:12px}.inputs select,.inputs input{width:100%}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head><body>
+<header><div class="wrap"><nav><a href="academy-audio-status.html">← تقرير الصوتيات</a><a href="audio-review-workbench.html">معمل الاستماع</a><a href="language-academy.html">الأكاديميات</a></nav>
+<h1>📂 استيراد فهرس التسجيلات من المصدر الأصلي</h1>
+<p>بدل ما نخمن معنى ملف اسمه <span dir="ltr">bas_001.mp3</span>، بنقرأ النص الموجود بجوار زر التسجيل في ملف <span dir="ltr">index.html</span> الأصلي، ونتأكد إن مساري الصوت العادي والبطيء موجودين بالفعل في جرد Cloudflare R2.</p></div></header>
+<main class="wrap"><div class="warning"><strong>خصوصية وأمان:</strong> الملف اللي تختاره بيتفتح في متصفحك فقط؛ الصفحة لا ترفعه إلى الخادم ولا تنفّذ أي كود JavaScript موجود داخله. هيُستخدم لاستخراج نصوص وصفوف الصوت فقط. بعد الفحص، نزّل ملف JSON وشاركه للمراجعة قبل اعتماد الصوتيات على الموقع. مطابقة المصدر والملف لا تغني عن اختبار النطق بالاستماع.</div>
+<section class="card"><h2>اختَر اللغة وملف المصدر</h2>
+<div class="inputs"><label for="lang">اللغة</label><select id="lang">
+<option value="en">🇬🇧 الإنجليزية</option><option value="it">🇮🇹 الإيطالية</option><option value="es">🇪🇸 الإسبانية</option><option value="ru">🇷🇺 الروسية</option><option value="pt">🇵🇹 البرتغالية الأوروبية</option>
+</select></div>
+<div class="inputs"><input type="file" id="file" accept=".zip,.html,text/html,application/zip" aria-label="ملف ZIP أو index.html الأصلي"><button id="read" type="button">🔎 استخراج والتحقق من المصدر</button></div>
+<p class="muted">يمكنك استخدام الأرشيف الذي يحتوي على ملفات MP3 و<span dir="ltr">index.html</span>، أو رفع <span dir="ltr">index.html</span> مباشرة. لا تحتاج إلى رفع ملفات الصوت مرة أخرى.</p>
+<div class="status" id="status" aria-live="polite">لم يتم اختيار ملف بعد.</div></section>
+<section class="card" id="report" hidden><h2>نتيجة المطابقة</h2>
+<div class="stats" id="stats"></div>
+<p class="muted" id="details"></p>
+<button id="export" type="button" disabled>⬇️ تصدير فهرس النص والتسجيلات المطابقة</button>
+<p class="muted">تنزيل JSON لا ينشره تلقائيًا. بعد فحصه، يمكن إضافته إلى GitHub لتمكين الأزرار المسجلة المؤكدة المصدر في الأكاديمية.</p>
+<div class="tablebox"><table><thead><tr><th>النص الأصلي</th><th>التسجيل العادي</th><th>البطيء</th></tr></thead><tbody id="examples"></tbody></table></div>
+</section>
+</main><footer>Safer Discounts · تدقيق المصدر الأصلي قبل تفعيل ربط الصوتيات</footer>
+<script>
+'use strict';
+const prefix={en:'english/',it:'italian/',es:'spanish/',ru:'russian/',pt:'portuguese/'};
+const selection=document.getElementById('lang'),file=document.getElementById('file'),status=document.getElementById('status'),report=document.getElementById('report');
+const stats=document.getElementById('stats'),details=document.getElementById('details'),tbody=document.getElementById('examples'),exportButton=document.getElementById('export');
+let result=null,inventoryCache=new Map();
+const norm=s=>String(s||'').normalize('NFC').toLocaleLowerCase().replace(/\s+/g,' ').trim();
+function elem(tag,text,cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
+async function getInventory(code){
+ if(inventoryCache.has(code))return inventoryCache.get(code);
+ const res=await fetch('audio-review-inventory-'+code+'.json',{cache:'force-cache'});
+ if(!res.ok)throw Error('تعذر تحميل جرد R2: '+res.status);
+ const data=await res.json();
+ if(data.lang!==code||data.schemaVersion!==1||!Array.isArray(data.items))throw Error('بيانات الجرد غير صالحة');
+ const map=new Map(data.items.map(pair=>[pair[0],pair[1]]));
+ inventoryCache.set(code,map);return map;
+}
+async function getOriginalHTML(upload){
+ if(upload.size>120000000)throw Error('حجم الأرشيف كبير جدًا لهذه الأداة');
+ const ext=upload.name.toLowerCase();
+ if(/\.html?$/.test(ext))return {html:await upload.text(),sourceName:upload.name};
+ if(!/\.zip$/.test(ext))throw Error('اختَر ملف ZIP أو HTML');
+ if(typeof JSZip==='undefined')throw Error('مكتبة ZIP غير متاحة. استخرج index.html من الأرشيف ثم اختَره مباشرة');
+ const zip=await JSZip.loadAsync(upload);
+ const names=Object.values(zip.files).filter(f=>!f.dir&&/(^|\/)index\.html$/i.test(f.name)&&!f.name.startsWith('__MACOSX/')).sort((a,b)=>a.name.length-b.name.length);
+ if(!names.length)throw Error('لا يوجد index.html داخل ZIP. لا يمكن استنتاج الكلمات من أسماء MP3 وحدها');
+ const file=names[0];
+ return {html:await file.async('string'),sourceName:upload.name+' → '+file.name};
+}
+function analyze(raw,code,inventory){
+ const documentOriginal=new DOMParser().parseFromString(raw,'text/html');
+ const rows=[...documentOriginal.querySelectorAll('.it')];
+ const details={totalRows:rows.length,missingText:0,missingAudio:0,unsafe:0,duplicates:0,withSingle:0};
+ const matched=[];
+ for(const row of rows){
+  const text=String(row.querySelector('.en')?.textContent||'').normalize('NFC').trim();
+  if(!text){details.missingText++;continue;}
+  const paths=[...row.querySelectorAll('button[onclick]')].map(b=>{
+   const code=b.getAttribute('onclick')||'';
+   const match=code.match(/(?:^|[^\w])p\(\s*['"]([^'"]+\.mp3)['"]\s*\)/i);
+   return match?.[1]||'';
+  }).filter(Boolean).map(p=>p.replace(/^\.\//,'').replace(/^pronunciation\//,''));
+  const normal=paths.find(p=>!p.endsWith('_slow.mp3'));
+  if(!normal){details.missingAudio++;continue;}
+  const expectedSlow=normal.replace(/\.mp3$/,'_slow.mp3');
+  if(!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(normal)||!paths.includes(expectedSlow)){details.unsafe++;continue;}
+  const absolute=prefix[code]+'pronunciation/'+normal;
+  if(!inventory.has(absolute)||inventory.get(absolute)!==prefix[code]+'pronunciation/'+expectedSlow){
+   details.missingAudio++;continue;
+  }
+  matched.push({text,normal,slow:expectedSlow});
+ }
+ const byText=new Map();
+ for(const row of matched){
+  const key=norm(row.text);if(!byText.has(key))byText.set(key,[]);
+  byText.get(key).push(row);
+ }
+ const unique=[];
+ for(const rows of byText.values()){
+  if(rows.length!==1){details.duplicates+=rows.length;continue;}
+  unique.push(rows[0]);
+ }
+ const pairedKeys=new Set(),safe=[];
+ for(const row of unique){
+  if(pairedKeys.has(row.normal)){details.duplicates++;continue;}
+  pairedKeys.add(row.normal);safe.push(row);
+ }
+ return {safe,details};
+}
+function updateReport(output,code,sourceName){
+ report.hidden=false;result=output.safe.length?{schemaVersion:1,language:code,source:'Locally supplied original HTML: '+sourceName,matching:'Original .it row .en phrase and onclick p(relative normal/slow paths; exactly verified R2 object keys in committed inventory; ambiguous phrase and MP3 pairs excluded',humanAudioReviewed:false,records:output.safe}:null;
+ const nums=[['صفوف المصدر',output.details.totalRows],['روابط صحيحة فريدة',output.safe.length],['متكرر مستبعد',output.details.duplicates],['ناقص / مختلف',output.details.missingAudio+output.details.unsafe+output.details.missingText]];
+ stats.replaceChildren();for(const [key,num] of nums){const card=elem('div',null,'stat');card.append(elem('strong',String(num)),elem('span',key));stats.append(card);}
+ details.textContent='المصدر: '+sourceName+' · الغير آمن: '+output.details.unsafe+' · بدون نص: '+output.details.missingText+' · صوت غير موجود في الجرد: '+output.details.missingAudio+'. يُعرض أول 40 سجلًا في الجدول.';
+ tbody.replaceChildren();
+ for(const row of output.safe.slice(0,40)){
+  const tr=document.createElement('tr'),phrase=elem('td',row.text,'ltr'),normal=elem('td',row.normal,'ltr'),slow=elem('td',row.slow,'ltr');
+  tr.append(phrase,normal,slow);tbody.append(tr);
+ }
+ exportButton.disabled=!result;
+}
+document.getElementById('read').addEventListener('click',async ()=>{
+ const source=file.files?.[0],lang=selection.value;if(!source){status.textContent='اختَر أرشيف ZIP أو ملف HTML الأصلي أولًا.';return;}
+ status.textContent='جارٍ فحص المصدر ومطابقة الملفات مع R2...';report.hidden=true;result=null;exportButton.disabled=true;
+ try{
+  const [inventory,doc]=await Promise.all([getInventory(lang),getOriginalHTML(source)]);
+  const found=analyze(doc.html,lang,inventory);
+  updateReport(found,lang,doc.sourceName);
+  status.textContent=found.safe.length?'اكتمل الفحص: '+found.safe.length+' عبارة مرتبطة بملفين موجودين بنفس اسم المصدر. جودة الصوت ما زالت تحتاج سماعًا.':'لم نجد سجلات مصدرية قابلة للاعتماد في الملف. تحقق أن الأرشيف يحتوي على index.html وربط p(...) مع span.en.';
+ }catch(e){status.textContent='تعذر إكمال الاستيراد: '+(e.message||String(e));}
+});
+selection.addEventListener('change',()=>{report.hidden=true;result=null;status.textContent='اختَر مصدر اللغة الجديدة ثم اضغط على استخراج.'});
+exportButton.addEventListener('click',()=>{
+ if(!result||!result.records.length)return;
+ const blob=new Blob([JSON.stringify(result,null,2)+'\n'],{type:'application/json;charset=utf-8'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='audio-text-index-'+result.language+'.json';a.click();
+ setTimeout(()=>URL.revokeObjectURL(url),1000);
+ status.textContent='تم إعداد ملف JSON في جهازك. ما زال يحتاج الاعتماد في المستودع.';
+});
+</script></body></html>
