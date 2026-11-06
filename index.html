@@ -1101,6 +1101,7 @@ window.SITE_CONFIG = {
     contactBtns:{wa:"WhatsApp",fb:"Facebook",ph:"Позвонить",em:"Эл. почта"},
     footerCopyright:"© 2026 Safer Discounts. Все права защищены."
   };
+  cfg.i18n.es={"brand":"Safer Discounts","nav":{"services":"Servicios","destinations":"Destinos","reviews":"Opiniones","how":"Cómo reservar","faq":"Preguntas","blog":"Blog de Sara","academy":"Academias de idiomas","cta":"Reservar por WhatsApp"},"hero":{"eyebrow":"✦ VUELOS · HOTELES · EVENTOS","titleLine1":"Viaja por menos,","titleHighlight":"sin complicaciones","subtitle":"Te ayudamos a reservar vuelos, hoteles y entradas para eventos y museos. Consulta opciones y precios directamente por WhatsApp.","ctaWa":"Hablar por WhatsApp","ctaFb":"Síguenos en Facebook","strip":["Vuelos","Hoteles","Eventos y museos","Atención personal"]},"journeyStops":["Vuelo","Hotel","Traslado","Evento","Crucero"],"servicesHead":{"tag":"Servicios","h2":"Todo para tu viaje en un solo lugar","p":"Desde el vuelo y el hotel hasta las entradas para eventos: te ayudamos con la solicitud."},"destinationsHead":{"tag":"Destinos","h2":"Egipto y el mundo","p":"Algunos destinos sobre los que puedes consultarnos."},"destinationGroups":{"in":"En Egipto","out":"Fuera de Egipto","holy":"Ciudades sagradas"},"destinationFinder":{"label":"Elige tu destino","search":"Buscar destinos...","book":"Consultar reserva","selected":"Destino seleccionado","go":"Ver destino"},"reviewsHead":{"tag":"Opiniones de clientes","h2":"Lo que dicen nuestros clientes","p":"Opiniones de nuestra página oficial de Facebook, en el idioma original de cada cliente."},"statsLabels":{"followers":"Seguidores","reviews":"Recomendaciones","recommend":"Recomiendan"},"reviewsCta":"Ver opiniones en Facebook","howHead":{"tag":"Cómo reservar","h2":"Tres pasos sencillos","p":"Contacta directamente por WhatsApp."},"whyHead":{"tag":"Por qué Safer Discounts","h2":"Opciones adecuadas y asistencia personal"},"faqHead":{"tag":"Preguntas frecuentes","h2":"¿Tienes preguntas?","p":"Si no encuentras la respuesta, escríbenos por WhatsApp."},"contactHead":{"h2":"¿Quieres reservar? Contacta con nosotros","p":"Consulta por WhatsApp, Facebook, teléfono o correo electrónico."},"contactBtns":{"wa":"WhatsApp","fb":"Facebook","ph":"Llamar","em":"Correo"},"footerCopyright":"© 2026 Safer Discounts. Todos los derechos reservados."};
   const services=[
     ["Авиабилеты","Помощь с поиском и бронированием внутренних и международных перелётов."],
     ["Отели и проживание","Бронирование гостиниц и апартаментов в выбранном направлении."],
@@ -1129,6 +1130,20 @@ window.SITE_CONFIG = {
     ["За сколько времени нужно бронировать?","Чем раньше вы отправите запрос, тем больше вариантов может быть доступно. Можно обращаться и по срочным поездкам."]
   ];
   cfg.faq.forEach((item,i)=>{if(faqs[i]){item.ru_q=faqs[i][0];item.ru_a=faqs[i][1]}});
+
+  cfg.contact.whatsappNumberByLang.es=cfg.contact.whatsappNumberByLang.ar;
+  cfg.contact.whatsappDefaultMessage.es="¡Hola! Me gustaría consultar una reserva.";
+  cfg.contact.emailSubjectByLang.es="Consulta sobre viajes - Safer Discounts";
+  const esServices=[["Billetes de avión","Ayuda para buscar y reservar vuelos nacionales e internacionales."],["Hoteles y alojamientos","Reservas de hoteles y apartamentos en el destino elegido."],["Eventos y museos","Entradas para conciertos, museos y otras actividades."]];
+  cfg.services.forEach((item,i)=>{if(esServices[i]){item.es_title=esServices[i][0];item.es_desc=esServices[i][1]}});
+  const esNames={dubai:"Dubái",paris:"París",istanbul:"Estambul",giza:"Pirámides de Guiza",sharm:"Sharm el-Sheij",luxor:"Luxor",makkah:"La Meca",madinah:"Medina",cairo:"El Cairo",london:"Londres",berlin:"Berlín",rome:"Roma",lisbon:"Lisboa",rio:"Río de Janeiro",madrid:"Madrid"};
+  cfg.destinations.forEach(d=>{if(esNames[d.id])d.es_name=esNames[d.id]});
+  const esWhy=[["Precios competitivos","Comparamos las ofertas disponibles para ayudarte a elegir."],["Comunicación directa","Contacta con nosotros por WhatsApp o Facebook."],["Asistencia personal","Te ayudamos a entender las condiciones antes de confirmar."]];
+  cfg.why.forEach((d,i)=>{if(esWhy[i]){d.es_title=esWhy[i][0];d.es_desc=esWhy[i][1]}});
+  const esSteps=[["Cuéntanos tu viaje","Destino, fechas y número de viajeros, por WhatsApp o Facebook."],["Recibe opciones","Comparamos las opciones disponibles e indicamos precio y condiciones."],["Confirma la reserva","Tras acordar los detalles, te ayudamos a completar la reserva."]];
+  cfg.steps.forEach((d,i)=>{if(esSteps[i]){d.es_title=esSteps[i][0];d.es_desc=esSteps[i][1]}});
+  const esFaq=[["¿Por qué varían los precios?","Comparamos ofertas de proveedores. El precio final depende de fechas, disponibilidad y condiciones."],["¿Cómo puedo pagar?","Confirmamos los medios de pago y las condiciones antes de completar la reserva."],["¿La reserva estará a mi nombre?","Sí, utilizamos los datos del viajero que nos proporciones."],["¿Se puede cancelar?","Las condiciones de cancelación dependen del vuelo, hotel o servicio. Consúltalas antes de pagar."],["¿Con cuánta antelación debo reservar?","Reservar con antelación suele ofrecer más opciones. También puedes consultar viajes urgentes."]];
+  cfg.faq.forEach((d,i)=>{if(esFaq[i]){d.es_q=esFaq[i][0];d.es_a=esFaq[i][1]}});
 })(window.SITE_CONFIG);
 </script>
 <!-- ============================================================================
@@ -1157,6 +1172,7 @@ window.SITE_CONFIG = {
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
         <button class="lang-btn" data-lang="de" type="button">DE</button>
+        <button class="lang-btn" data-lang="es" type="button">ES</button>
         <button class="lang-btn" data-lang="ru" type="button">RU</button>
       </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
@@ -1500,7 +1516,8 @@ window.SITE_CONFIG = {
       pt:"Olá, gostaria de reservar uma viagem para "+name+" ✈️",
       ptbr:"Oi, eu queria reservar uma viagem para "+name+" ✈️",
       de:"Hallo, ich möchte eine Reise nach "+name+" buchen ✈️",
-      ru:"Здравствуйте! Я хочу забронировать поездку в "+name+" ✈️"
+      ru:"Здравствуйте! Я хочу забронировать поездку в "+name+" ✈️",
+      es:"¡Hola! Me gustaría reservar un viaje a "+name+" ✈️"
     };
     return 'https://wa.me/'+num+'?text='+encodeURIComponent(msgMap[lang] || msgMap.en);
   }
@@ -1701,7 +1718,9 @@ window.SITE_CONFIG = {
   };
   academyCopy.ru={"kicker":"БРАЗИЛЬСКИЙ ПОРТУГАЛЬСКИЙ · ДВА ПУТИ","title":"Собираетесь в Бразилию или хотите там жить?","intro":"Выберите быстрый туристический разговорник или полноценную академию с объяснениями на арабском.","tourBadge":"ДЛЯ ТУРИСТОВ","tourTitle":"Нужны фразы для поездки?","tourCopy":"Практические выражения для аэропорта, транспорта, отелей, ресторанов и экстренных ситуаций.","tourFeatures":["Готовые фразы для путешествий","Арабские объяснения и аудио","Поиск по ситуациям"],"tourButton":"Открыть туристический справочник","courseBadge":"ДЛЯ УЧЁБЫ, РАБОТЫ И ЖИЗНИ","courseTitle":"Хотите изучать язык системно?","courseCopy":"75 академических уроков от звуков и грамматики до разговорной практики и письма. Объяснения на арабском.","courseFeatures":["75 уроков от нуля до C2","Грамматика и тесты","Разговорные ситуации"],"courseButton":"Открыть академию на арабском","audioCopy":"Хотите послушать больше примеров?","audioLink":"Открыть библиотеку аудиофраз"};
   englishAcademyCopy.ru={"kicker":"АНГЛИЙСКИЙ ДЛЯ АРАБОГОВОРЯЩИХ","title":"Изучайте английский с понятной целью","copy":"Выберите короткие туристические фразы или структурированный учебный курс с объяснениями на арабском.","tourTitle":"Английский в поездке","tourCopy":"Аэропорт, отель, транспорт, рестораны, магазины и экстренные ситуации.","tourLink":"Быстрый разговорник","courseTitle":"Полный курс английского","courseCopy":"40 учебных модулей: произношение, грамматика, общение и письмо. Объяснения на арабском.","courseLink":"Открыть академию"};
-    function renderEnglishAcademy(lang){
+    academyCopy.es={"kicker":"PORTUGUÉS BRASILEÑO · DOS OPCIONES","title":"¿Viajas a Brasil o quieres vivir allí?","intro":"Elige un guía breve para turistas o una academia completa explicada en árabe.","tourBadge":"PARA TURISTAS","tourTitle":"¿Viajas a Brasil?","tourCopy":"Frases para aeropuerto, transporte, hoteles, restaurantes y situaciones comunes.","tourFeatures":["Frases listas para viajar","Explicaciones en árabe y audio","Búsqueda por situación"],"tourButton":"Abrir guía de viaje","courseBadge":"PARA ESTUDIAR Y VIVIR","courseTitle":"¿Quieres aprender paso a paso?","courseCopy":"75 lecciones de academia hasta C2, con explicaciones en árabe.","courseFeatures":["75 lecciones","Gramática y ejercicios","Situaciones cotidianas"],"courseButton":"Abrir academia en árabe","audioCopy":"¿Quieres más ejemplos con audio?","audioLink":"Abrir biblioteca de audio"};
+  englishAcademyCopy.es={"kicker":"INGLÉS PARA ARABÓFONOS","title":"Inglés para viajar o curso completo","copy":"Elige frases rápidas para viajar o una academia de inglés con explicaciones en árabe.","tourTitle":"Inglés para viajar","tourCopy":"Frases de aeropuerto, hoteles, transporte, restaurantes y emergencias.","tourLink":"Abrir guía rápida","courseTitle":"Academia de inglés desde cero","courseCopy":"40 unidades: pronunciación, gramática, conversación y escritura, explicadas en árabe.","courseLink":"Abrir academia"};
+  function renderEnglishAcademy(lang){
     var c=englishAcademyCopy[lang]||englishAcademyCopy.en;
     [['kicker','kicker'],['title','title'],['copy','copy'],['tour-title','tourTitle'],['tour-copy','tourCopy'],['tour-link','tourLink'],['course-title','courseTitle'],['course-copy','courseCopy'],['course-link','courseLink']].forEach(function(pair){
       var el=document.getElementById('academy-en-'+pair[0]);if(el)el.textContent=c[pair[1]]||'';
