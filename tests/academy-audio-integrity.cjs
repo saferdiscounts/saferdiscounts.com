@@ -155,3 +155,13 @@ test('European writing exercises preserve and clear local drafts by lesson',()=>
   assert.match(html,/تُحفظ مسودتك تلقائيًا على هذا الجهاز فقط/,lang+' privacy disclosure');
  }
 });
+
+test('European writing feedback reports transparent rubric indicators',()=>{
+ for(const lang of ['italian','spanish','french','german','portuguese']){
+  const html=read(lang+'-academy.html');
+  assert.match(html,/const sentences=answer\.split/,lang+' sentence count');
+  assert.match(html,/const coverage=l\.writing\.keywords\.length/,lang+' target vocabulary coverage');
+  assert.match(html,/مراجعة تدريبية/,lang+' honest label');
+  assert.match(html,/لا تثبت صحة المعنى أو القواعد أو الإملاء/,lang+' limitations');
+ }
+});
