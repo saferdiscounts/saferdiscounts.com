@@ -29,7 +29,7 @@ nav{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;font-weight:bold}.sectio
 </main><footer>Safer Discounts · تقرير آلي مبني على المحتوى المحفوظ في المستودع</footer>
 <script>
 'use strict';
-const summaries={ptbr:'الربط داخل أكاديمية البرازيل يعتمد على جسر فهرس صوتي منفصل؛ لم نتحقق من تغطيته ببيانات محلية قابلة للمقارنة.',en:'قد تتوفر ملفات أو تشغيل صوتي في الأكاديمية، لكن لا يوجد فهرس نصي محلي يمكن به إحصاء مطابقة كل كلمة.',it:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',es:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',ru:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',pt:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.'};
+const summaries={ptbr:'تمت مطابقة النصوص بفهرس مصدر برازيلي مأخوذ من R2 ومراجعة أسماء ملفات التسجيلات؛ جودة النطق والصوت لم تُراجع بشريًا بعد.',en:'قد تتوفر ملفات أو تشغيل صوتي في الأكاديمية، لكن لا يوجد فهرس نصي محلي يمكن به إحصاء مطابقة كل كلمة.',it:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',es:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',ru:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',pt:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.'};
 const select=document.getElementById('language'),box=document.getElementById('detail'),summary=document.getElementById('summary');
 const params=new URLSearchParams(location.search);
 if([...select.options].some(o=>o.value===params.get('lang')))select.value=params.get('lang');
@@ -45,11 +45,16 @@ function render(data){
  if(storage){const phrase='📦 الجرد الفعلي على R2: '+storage.mp3+' ملف MP3، منها '+storage.paired+' زوجًا طبيعيًا وبطيئًا'+(storage.solo?'، و'+storage.solo+' ملفًا فرديًا بلا نسخة بطيئة':'')+'.';box.append(node('p','',phrase));}
  const proposals=data.asrProvisionalAudit?.languages?.[code];
  if(proposals)box.append(node('p','small','🧪 تحليل آلي تجريبي: '+proposals.analyzedPairs+' زوجًا صوتيًا · '+proposals.agreeingTranscripts+' متفقين في التفريغ · '+proposals.exactCourseProposals+' مقترحًا مطابقًا لعبارات الدرس، لم يُعتمد أي منها باستماع بشري بعد.'));
- if(item.mapping!=='exact-index'){
+ if(item.mapping!=='exact-index'&&item.mapping!=='exact-r2-source-manifest-unreviewed'){
   const p=node('div','empty',(summaries[code]||'لم يُعتمد فهرس نصي مستقل لهذا المسار.')+' النسبة هنا غير معروفة؛ لا يصح اعتبارها 0%.');box.append(p);return;
  }
  const intro=node('p','',item.exactMatches+' من '+item.words+' مدخلًا تعليميًا في دروس هذه اللغة لها مطابقة فريدة: '+pct(item.exactMatches,item.words)+'. عدد مدخلات فهرس المصدر '+item.sourceRecords+'، والنصوص المختلفة '+item.sourceUnique+'.');box.append(intro);
- const info=node('p','small','النسبة تخص مفردات الدروس فقط، ولا تشمل جميع الحوارات أو الأصوات المعروضة في دروس أخرى. التكرارات النصية الملتبسة في الفهرس: '+item.sourceAmbiguousTexts+' نصًا.');box.append(info);
+ const info=node('p','small','هذه نسبة تطابق نصوص ملفات R2 فقط؛ لا تثبت جودة نطق التسجيل ولا تشغيله في متصفح الطالب. النصوص المكررة الملتبسة: '+item.sourceAmbiguousTexts+' نصًا.');box.append(info);
+ if(code==='ptbr'&&item.dialogueCoverage&&item.practicalCoverage){
+  box.append(node('p','','💬 من '+item.dialogueCoverage.lines+' دورًا حواريًا في الدروس، يوجد '+item.dialogueCoverage.exactMatches+' مطابقًا نصيًا فريدًا. ومن '+item.practicalCoverage.phrases+' عبارة في معمل المواقف، يوجد '+item.practicalCoverage.exactMatches+' مطابقًا صوتيًا حرفيًا في التسجيلات القديمة.'));
+  box.append(node('p','small','الفهرس البرازيلي يضم '+item.sourceRecords+' زوجًا، منها '+item.sourceManifestGlossMissing+' سجلًا لا يحتوي على ترجمة عربية داخل الفهرس؛ الترجمة التعليمية في الدرس موجودة منفصلة. المطابقة الملتبسة تُستبعد من التشغيل المباشر.'));
+  box.append(node('p','small','الخطوة التالية: توثيق العبارات ذات الأولوية وتسجيل الجديد اللازم، ثم الاستماع والتحقق من النطق العادي والبطيء.'));
+ }
  const bar=node('div','progress'),fill=node('span');fill.style.width=pct(item.exactMatches,item.words);bar.append(fill);box.append(bar);
  const tableWrap=node('div','table-wrap'),table=node('table','table'),thead=node('thead'),tr=node('tr');
  for(const label of ['الدرس / المستوى','عدد الكلمات','المطابق للتسجيل','التغطية','نماذج تحتاج ربطًا']){
@@ -70,11 +75,11 @@ function render(data){
 function cards(data){
  summary.replaceChildren();
  for(const code of ['ptbr','en','it','es','fr','de','ru','pt']){
-  const record=data.languages[code];const item=node('div','metric'+(record.mapping!=='exact-index'?' unknown':''));
+  const record=data.languages[code];const measured=record.mapping==='exact-index'||record.mapping==='exact-r2-source-manifest-unreviewed';const item=node('div','metric'+(!measured?' unknown':''));
   const label=node('span','',record.name);
-  const value=node('strong','',record.mapping==='exact-index'?pct(record.exactMatches,record.words):'غير مقاس');
+  const value=node('strong','',measured?pct(record.exactMatches,record.words):'غير مقاس');
   const storage=data.storageAudit?.languages?.[code];
-  const detail=node('span','',record.mapping==='exact-index'?record.exactMatches+' / '+record.words+' كلمة/عبارة في الدروس':record.lessons+' درسًا · لا توجد نسبة موثوقة');
+  const detail=node('span','',measured?record.exactMatches+' / '+record.words+' مطابقة نصية فقط في مفردات الدروس':record.lessons+' درسًا · لا توجد نسبة موثوقة');
   const storageLine=node('span','',storage?' · في R2: '+storage.paired+' زوجًا صوتيًا':' · لم يتم قياس الجرد');
   const machine=data.asrProvisionalAudit?.languages?.[code];
   const machineLine=node('span','',machine?' · '+machine.exactCourseProposals+' ربطًا تجريبيًا (آليًا)':'');
