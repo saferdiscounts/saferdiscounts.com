@@ -52,11 +52,17 @@ if(l.writing){
  const heading=document.createElement("h3");heading.textContent="✍️ تدريب كتابة · "+(l.level||"A1");
  const prompt=document.createElement("p");prompt.textContent=l.writing.prompt;
  const area=document.createElement("textarea");area.rows=5;area.placeholder="اكتب إجابتك باللغة التي تتعلمها...";area.style.width="100%";area.style.padding="12px";area.style.borderRadius="12px";area.style.border="1px solid #cbd5e1";area.style.fontSize="16px";
+ const draftKey="sd_writing_draft_german_"+i;
+ const draftStatus=document.createElement("p");draftStatus.className="muted";draftStatus.setAttribute("aria-live","polite");
+ try{area.value=localStorage.getItem(draftKey)||""}catch(e){}
+ draftStatus.textContent=area.value?"تم استرجاع مسودتك المحفوظة على هذا الجهاز.":"تُحفظ مسودتك تلقائيًا على هذا الجهاز فقط.";
+ area.addEventListener("input",()=>{try{localStorage.setItem(draftKey,area.value);draftStatus.textContent="تم حفظ المسودة على هذا الجهاز."}catch(e){draftStatus.textContent="تعذر حفظ المسودة على هذا الجهاز."}});
+ const clearDraft=document.createElement("button");clearDraft.type="button";clearDraft.className="btn alt";clearDraft.textContent="مسح المسودة";clearDraft.onclick=()=>{area.value="";try{localStorage.removeItem(draftKey)}catch(e){}draftStatus.textContent="تم مسح المسودة.";feedback.textContent="";sample.hidden=true};
  const check=document.createElement("button");check.className="btn";check.textContent="راجع إجابتي";
  const feedback=document.createElement("p");feedback.className="feedback";
  const sample=document.createElement("p");sample.className="muted";sample.hidden=true;
  check.onclick=()=>{const answer=area.value.trim();if(answer.length<35){feedback.textContent="اكتب جملتين أو ثلاثًا على الأقل قبل المراجعة.";return}const normalize=value=>String(value||"").normalize("NFC").toLocaleLowerCase().replace(/[\p{P}\p{S}]/gu," ").replace(/\s+/g," ").trim();const lower=" "+normalize(answer)+" ";const matched=l.writing.keywords.filter(k=>{const term=normalize(k);return term&&lower.includes(" "+term+" ")});const missing=l.writing.keywords.filter(k=>!matched.includes(k));feedback.textContent="فحص مفردات فقط: استخدمت "+matched.length+" من "+l.writing.keywords.length+" عبارات مستهدفة. "+(missing.length?"جرّب استخدام: "+missing.join("، ")+". ":"راجِع ترابط الجمل وعلامات الترقيم.")+" هذا ليس تصحيحًا للقواعد أو الإملاء أو تقييمًا لمستواك؛ قارن كتابتك بالنموذج وعدّلها بنفسك.";sample.hidden=false;sample.textContent="نموذج للمقارنة: "+l.writing.model;};
- panel.append(heading,prompt,area,check,feedback,sample);document.getElementById("lessonContent").appendChild(panel);
+ panel.append(heading,prompt,area,draftStatus,check,clearDraft,feedback,sample);document.getElementById("lessonContent").appendChild(panel);
 }
 document.querySelectorAll("[data-scenario]").forEach(b=>b.onclick=()=>{const ok=+b.dataset.scenario===l.scenario.correct;document.querySelectorAll("[data-scenario]").forEach(x=>{x.disabled=true;if(+x.dataset.scenario===l.scenario.correct)x.classList.add("correct")});if(!ok)b.classList.add("wrong");document.getElementById("scenarioFeedback").textContent=ok?"إجابة صحيحة!":"الإجابة الصحيحة: "+l.scenario.options[l.scenario.correct]});
 document.getElementById("complete").onclick=()=>{if(!done.includes(i))done.push(i);localStorage.setItem(key,JSON.stringify(done));progress();render(i)};
