@@ -5,8 +5,8 @@
   "source": "Cloudflare R2 audio binary",
   "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy term match; no human listening; candidate records only",
   "reviewStatus": "automated-unverified",
-  "requested": 20,
-  "agreed": 16,
+  "requested": 40,
+  "agreed": 33,
   "exactLessonCandidates": 6,
   "records": [
     {
@@ -385,6 +385,366 @@
         "bytes": 3837
       },
       "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_021.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_021_slow.mp3",
+      "original": {
+        "text": "Он.",
+        "duration": 0.5225,
+        "logprob": -0.462890625,
+        "bytes": 4365
+      },
+      "slowRecognition": {
+        "text": "Ой.",
+        "duration": 0.54575,
+        "logprob": -0.561328125,
+        "bytes": 4653
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_022.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_022_slow.mp3",
+      "original": {
+        "text": "Она.",
+        "duration": 0.638625,
+        "logprob": -0.458984375,
+        "bytes": 5373
+      },
+      "slowRecognition": {
+        "text": "она",
+        "duration": 0.824375,
+        "logprob": -0.6420898586511612,
+        "bytes": 6813
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_023.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_023_slow.mp3",
+      "original": {
+        "text": "Мы...",
+        "duration": 0.4528125,
+        "logprob": -0.7953125,
+        "bytes": 4149
+      },
+      "slowRecognition": {
+        "text": "Мы…",
+        "duration": 0.60375,
+        "logprob": -0.8265625,
+        "bytes": 4941
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_024.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_024_slow.mp3",
+      "original": {
+        "text": "Вы…",
+        "duration": 0.4644375,
+        "logprob": -0.4671875,
+        "bytes": 4005
+      },
+      "slowRecognition": {
+        "text": "Вы…",
+        "duration": 0.592125,
+        "logprob": -0.698046875,
+        "bytes": 5349
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_025.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_025_slow.mp3",
+      "original": {
+        "text": "Они.",
+        "duration": 0.49925,
+        "logprob": -0.73828125,
+        "bytes": 4149
+      },
+      "slowRecognition": {
+        "text": "Они...",
+        "duration": 0.7430625,
+        "logprob": -0.518359375,
+        "bytes": 6165
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_026.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_026_slow.mp3",
+      "original": {
+        "text": "Он студент.",
+        "duration": 0.836,
+        "logprob": -0.13504463859966823,
+        "bytes": 7509
+      },
+      "slowRecognition": {
+        "text": "Он студент.",
+        "duration": 1.2306875,
+        "logprob": -0.11077008502823966,
+        "bytes": 9813
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_027.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_027_slow.mp3",
+      "original": {
+        "text": "Она врач.",
+        "duration": 0.9636875,
+        "logprob": -0.20647321854318892,
+        "bytes": 7989
+      },
+      "slowRecognition": {
+        "text": "Она врач.",
+        "duration": 1.37,
+        "logprob": -0.24999999148505075,
+        "bytes": 10413
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_028.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_028_slow.mp3",
+      "original": {
+        "text": "У меня есть брат.",
+        "duration": 1.28875,
+        "logprob": -0.1845703125,
+        "bytes": 10845
+      },
+      "slowRecognition": {
+        "text": "У меня есть брат.",
+        "duration": 1.5441875,
+        "logprob": -0.17126465030014515,
+        "bytes": 12381
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_029.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_029_slow.mp3",
+      "original": {
+        "text": "Я работаю.",
+        "duration": 1.068125,
+        "logprob": -0.18359374574252538,
+        "bytes": 8421
+      },
+      "slowRecognition": {
+        "text": "Я работаю.",
+        "duration": 1.37,
+        "logprob": -0.15304129038538253,
+        "bytes": 10101
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_030.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_030_slow.mp3",
+      "original": {
+        "text": "Ты работаешь.",
+        "duration": 0.97525,
+        "logprob": -0.15792411140033177,
+        "bytes": 7749
+      },
+      "slowRecognition": {
+        "text": "«Ты работаешь».",
+        "duration": 1.381625,
+        "logprob": -0.2575683481991291,
+        "bytes": 10461
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_031.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_031_slow.mp3",
+      "original": {
+        "text": "Он работает.",
+        "duration": 1.2075,
+        "logprob": -0.3606770932674408,
+        "bytes": 10245
+      },
+      "slowRecognition": {
+        "text": "Он работает.",
+        "duration": 1.7066875,
+        "logprob": -0.3408203025658925,
+        "bytes": 13437
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_032.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_032_slow.mp3",
+      "original": {
+        "text": "Мы работаем.",
+        "duration": 0.9985,
+        "logprob": -0.18694196002823965,
+        "bytes": 7965
+      },
+      "slowRecognition": {
+        "text": "Мы работаем.",
+        "duration": 1.3235625,
+        "logprob": -0.18331473214285715,
+        "bytes": 10101
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_033.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_033_slow.mp3",
+      "original": {
+        "text": "Вы работаете.",
+        "duration": 1.486125,
+        "logprob": -0.25864955357142855,
+        "bytes": 11589
+      },
+      "slowRecognition": {
+        "text": "«Вы работаете».",
+        "duration": 2.055,
+        "logprob": -0.3103027306497097,
+        "bytes": 15501
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_034.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_034_slow.mp3",
+      "original": {
+        "text": "Они работают.",
+        "duration": 1.07975,
+        "logprob": -0.16727120109966823,
+        "bytes": 8781
+      },
+      "slowRecognition": {
+        "text": "Они работают.",
+        "duration": 1.381625,
+        "logprob": -0.15359933035714285,
+        "bytes": 10821
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_035.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_035_slow.mp3",
+      "original": {
+        "text": "Я говорю.",
+        "duration": 1.02175,
+        "logprob": -0.2662760516007741,
+        "bytes": 7941
+      },
+      "slowRecognition": {
+        "text": "Я говорю.",
+        "duration": 1.358375,
+        "logprob": -0.3168945262829463,
+        "bytes": 10221
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_036.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_036_slow.mp3",
+      "original": {
+        "text": "Ты говоришь.",
+        "duration": 0.7430625,
+        "logprob": -0.16252790604318892,
+        "bytes": 6261
+      },
+      "slowRecognition": {
+        "text": "Ты говоришь.",
+        "duration": 1.02175,
+        "logprob": -0.333984375,
+        "bytes": 8085
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_037.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_037_slow.mp3",
+      "original": {
+        "text": "Он говорит.",
+        "duration": 0.928875,
+        "logprob": -0.25634765625,
+        "bytes": 7701
+      },
+      "slowRecognition": {
+        "text": "Он говорит...",
+        "duration": 1.45125,
+        "logprob": -0.2501627554496129,
+        "bytes": 11445
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_038.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_038_slow.mp3",
+      "original": {
+        "text": "Мы говорим.",
+        "duration": 0.801125,
+        "logprob": -0.17773437074252538,
+        "bytes": 6477
+      },
+      "slowRecognition": {
+        "text": "Мы говорим.",
+        "duration": 1.068125,
+        "logprob": -0.2321428656578064,
+        "bytes": 8421
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_039.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_039_slow.mp3",
+      "original": {
+        "text": "Вы говорите.",
+        "duration": 1.172625,
+        "logprob": -0.22154017005647933,
+        "bytes": 9309
+      },
+      "slowRecognition": {
+        "text": "Вы говорите.",
+        "duration": 1.567375,
+        "logprob": -0.23116628612790788,
+        "bytes": 11901
+      },
+      "agreed": true,
+      "exactLesson": null
+    },
+    {
+      "normal": "russian/pronunciation/basic/ru_bas_040.mp3",
+      "slow": "russian/pronunciation/basic/ru_bas_040_slow.mp3",
+      "original": {
+        "text": "Они говорят.",
+        "duration": 0.894,
+        "logprob": -0.3030598908662796,
+        "bytes": 7605
+      },
+      "slowRecognition": {
+        "text": "Они говорят.",
+        "duration": 1.3468125,
+        "logprob": -0.3041992088158925,
+        "bytes": 10461
+      },
+      "agreed": true,
       "exactLesson": null
     }
   ]
