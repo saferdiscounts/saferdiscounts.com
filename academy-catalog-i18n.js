@@ -4,7 +4,7 @@ var COPY={"ar":{"tag":"الأكاديميات الثماني · شرح عربي"
 var NAMES={"ar":["البرتغالية البرازيلية","الإنجليزية","الإيطالية","الإسبانية","الفرنسية","الألمانية","الروسية","البرتغالية الأوروبية"],"en":["Brazilian Portuguese","English","Italian","Spanish","French","German","Russian","European Portuguese"],"de":["Brasilianisches Portugiesisch","Englisch","Italienisch","Spanisch","Französisch","Deutsch","Russisch","Europäisches Portugiesisch"],"ru":["Бразильский португальский","Английский","Итальянский","Испанский","Французский","Немецкий","Русский","Европейский португальский"],"it":["Portoghese brasiliano","Inglese","Italiano","Spagnolo","Francese","Tedesco","Russo","Portoghese europeo"],"fr":["Portugais brésilien","Anglais","Italien","Espagnol","Français","Allemand","Russe","Portugais européen"],"pt":["Português brasileiro","Inglês","Italiano","Espanhol","Francês","Alemão","Russo","Português europeu"],"ptbr":["Português brasileiro","Inglês","Italiano","Espanhol","Francês","Alemão","Russo","Português europeu"],"es":["Portugués brasileño","Inglés","Italiano","Español","Francés","Alemán","Ruso","Portugués europeo"]};
 var IDS=["ptbr","en","it","es","fr","de","ru","pt"];
 var PATHS=["ptbr-academy.html","english-academy.html","italian-academy.html","spanish-academy.html","french-academy.html","german-academy.html","russian-academy.html","portuguese-academy.html"];
-var LESSONS=[75,40,36,36,36,48,48,36];
+var LESSONS=[75,40,36,36,48,48,48,48];
 function getLocale(lang){return COPY[lang]?lang:'en'}
 function byIdHref(h){return PATHS.indexOf(h)}
 function makeArabicLinks(){
