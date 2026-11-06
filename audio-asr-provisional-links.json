@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "status": "provisional-automated",
+  "confidencePolicy": "Require both normal and slower recording transcriptions to match each other and exact academy vocabulary/phrase text after NFC, lowercase and punctuation normalization. Paths sourced from real Cloudflare R2. May still be wrong: no human listener approved these.",
+  "languages": {
+    "en": {
+      "academy": "english-academy.html",
+      "count": 3,
+      "records": [
+        {
+          "text": "Thank you",
+          "normal": "english/pronunciation/basic/bas_003.mp3",
+          "slow": "english/pronunciation/basic/bas_003_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 3
+        },
+        {
+          "text": "Nice to meet you",
+          "normal": "english/pronunciation/basic/bas_017.mp3",
+          "slow": "english/pronunciation/basic/bas_017_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 3
+        },
+        {
+          "text": "Goodbye",
+          "normal": "english/pronunciation/basic/bas_020.mp3",
+          "slow": "english/pronunciation/basic/bas_020_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 3
+        }
+      ]
+    },
+    "it": {
+      "academy": "italian-academy.html",
+      "count": 6,
+      "records": [
+        {
+          "text": "Ciao",
+          "normal": "italian/pronunciation/basic/bas_002.mp3",
+          "slow": "italian/pronunciation/basic/bas_002_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Buonasera",
+          "normal": "italian/pronunciation/basic/bas_012.mp3",
+          "slow": "italian/pronunciation/basic/bas_012_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Buonanotte",
+          "normal": "italian/pronunciation/basic/bas_013.mp3",
+          "slow": "italian/pronunciation/basic/bas_013_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Arrivederci",
+          "normal": "italian/pronunciation/basic/bas_020.mp3",
+          "slow": "italian/pronunciation/basic/bas_020_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Per favore",
+          "normal": "italian/pronunciation/basic/bas_021.mp3",
+          "slow": "italian/pronunciation/basic/bas_021_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Grazie",
+          "normal": "italian/pronunciation/basic/bas_022.mp3",
+          "slow": "italian/pronunciation/basic/bas_022_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        }
+      ]
+    },
+    "es": {
+      "academy": "spanish-academy.html",
+      "count": 6,
+      "records": [
+        {
+          "text": "Buenos días",
+          "normal": "spanish/pronunciation/basic/bas_012.mp3",
+          "slow": "spanish/pronunciation/basic/bas_012_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Buenas tardes",
+          "normal": "spanish/pronunciation/basic/bas_013.mp3",
+          "slow": "spanish/pronunciation/basic/bas_013_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Buenas noches",
+          "normal": "spanish/pronunciation/basic/bas_014.mp3",
+          "slow": "spanish/pronunciation/basic/bas_014_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Hasta luego",
+          "normal": "spanish/pronunciation/basic/bas_020.mp3",
+          "slow": "spanish/pronunciation/basic/bas_020_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Gracias",
+          "normal": "spanish/pronunciation/basic/bas_024.mp3",
+          "slow": "spanish/pronunciation/basic/bas_024_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "De nada",
+          "normal": "spanish/pronunciation/basic/bas_025.mp3",
+          "slow": "spanish/pronunciation/basic/bas_025_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        }
+      ]
+    },
+    "ru": {
+      "academy": "russian-academy.html",
+      "count": 6,
+      "records": [
+        {
+          "text": "Привет",
+          "normal": "russian/pronunciation/basic/ru_bas_001.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_001_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Здравствуйте",
+          "normal": "russian/pronunciation/basic/ru_bas_002.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_002_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "До свидания",
+          "normal": "russian/pronunciation/basic/ru_bas_005.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_005_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 1
+        },
+        {
+          "text": "Спасибо",
+          "normal": "russian/pronunciation/basic/ru_bas_009.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_009_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Пожалуйста",
+          "normal": "russian/pronunciation/basic/ru_bas_010.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_010_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Меня зовут…",
+          "normal": "russian/pronunciation/basic/ru_bas_014.mp3",
+          "slow": "russian/pronunciation/basic/ru_bas_014_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 1
+        }
+      ]
+    },
+    "pt": {
+      "academy": "portuguese-academy.html",
+      "count": 3,
+      "records": [
+        {
+          "text": "Bom dia",
+          "normal": "portuguese/pronunciation/basic/bas_015.mp3",
+          "slow": "portuguese/pronunciation/basic/bas_015_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Boa noite",
+          "normal": "portuguese/pronunciation/basic/bas_017.mp3",
+          "slow": "portuguese/pronunciation/basic/bas_017_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        },
+        {
+          "text": "Até logo",
+          "normal": "portuguese/pronunciation/basic/bas_022.mp3",
+          "slow": "portuguese/pronunciation/basic/bas_022_slow.mp3",
+          "source": "two-speed-whisper-exact-transcript-consensus",
+          "reviewedByHuman": false,
+          "lessonIndex": 0
+        }
+      ]
+    }
+  }
+}
