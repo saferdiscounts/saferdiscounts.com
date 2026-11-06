@@ -5,7 +5,7 @@
     "ptbr": {
       "name": "البرتغالية البرازيلية",
       "academy": "ptbr-academy.html",
-      "lessons": 90,
+      "lessons": 97,
       "mapping": "separate-bridge-unmeasured",
       "sourceRecords": null,
       "sourceUnique": null,
@@ -14,7 +14,8 @@
       "exactMatches": null,
       "ambiguousMatches": null,
       "levels": [],
-      "priorityMissing": []
+      "priorityMissing": [],
+      "note": "Course now has 97 lessons (15 foundation, 15 travel, 12 A1, 12 A2, 14 B1, 12 B2, 9 C1, 8 C2). The 511 stored normal/slow pairs are an R2 inventory and remain unverified for lesson phrase alignment and human voice."
     },
     "en": {
       "name": "الإنجليزية",
