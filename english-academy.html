@@ -260,4 +260,5 @@ if(groupExam){
 document.querySelectorAll('[data-say]').forEach(b=>b.addEventListener('click',()=>speak(b.dataset.say)));document.querySelectorAll('[data-writing-check]').forEach(b=>b.addEventListener('click',()=>{const box=b.closest('.writing-practice'),area=box.querySelector('[data-writing-input]'),feedback=box.querySelector('[data-writing-feedback]'),sample=box.querySelector('[data-writing-model]'),answer=area.value.trim();if(answer.length<45){feedback.textContent='اكتب 45 حرفًا على الأقل حتى يكون هناك نص كافٍ للفحص.';return}const keys=b.dataset.keywords.split('|').filter(Boolean),hits=keys.filter(k=>answer.toLowerCase().includes(k.toLowerCase())).length;feedback.textContent='عثر الفحص على '+hits+' من '+keys.length+' مفردات أو تعبيرات مستهدفة. هذا فحص للمفردات وطول النص فقط، وليس تصحيحًا للقواعد أو جودة الأسلوب.';sample.hidden=false;sample.textContent='نموذج للمقارنة: '+b.dataset.model;}));renderList();progress();window.scrollTo({top:document.getElementById('curriculum').offsetTop-10,behavior:'smooth'})}
 document.getElementById('search').addEventListener('input',renderList);renderList();progress();renderExamHistory();render(0);
 })();
-</script></body></html>
+</script><script src="academy-asr-provisional-audio.js" data-language="en"></script>
+</body></html>
