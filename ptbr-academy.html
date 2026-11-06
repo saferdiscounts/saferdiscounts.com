@@ -237,7 +237,7 @@ function setupPtbrListeningQuiz(lesson,index){
   const choices=dialog.querySelector('#ptbrListeningChoices'),status=dialog.querySelector('#ptbrListeningStatus'),progress=dialog.querySelector('#ptbrListeningProgress');
   const sound=dialog.querySelector('#ptbrPlayExamSound'),next=dialog.querySelector('#ptbrNextListening'),player=dialog.querySelector('#ptbrExamAudio');
   let step=0,score=0,heard=false,answered=false,closed=false;
-  function stopAudio(){player.pause();player.removeAttribute('src');player.load();if('speechSynthesis' in window)window.speechSynthesis.cancel()}
+  function stopAudio(){player.pause();player.onplaying=null;player.onerror=null;player.removeAttribute('src');player.load();if('speechSynthesis' in window)window.speechSynthesis.cancel()}
   dialog.addEventListener('close',()=>{closed=true;stopAudio();dialog.remove()});
   dialog.querySelector('#ptbrCloseListening').addEventListener('click',()=>dialog.close());
   function playbackAvailable(){
@@ -247,8 +247,10 @@ function setupPtbrListeningQuiz(lesson,index){
    player.pause();player.onplaying=null;player.onerror=null;
    if('speechSynthesis' in window)window.speechSynthesis.cancel();
    const clip=findPtbrAudio(target.spoken);
+   const expectedStep=step;let fallbackStarted=false;
    function browserVoice(){
-    if(closed)return;
+    if(closed||expectedStep!==step||fallbackStarted)return;
+    fallbackStarted=true;
     if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){
      status.textContent='لا توجد وسيلة تشغيل صوتي. لن يُحتسب السؤال.';return;
     }
@@ -258,12 +260,12 @@ function setupPtbrListeningQuiz(lesson,index){
     }
     const utterance=new SpeechSynthesisUtterance(target.spoken);
     utterance.lang='pt-BR';utterance.voice=voice;utterance.rate=.80;
-    utterance.onstart=()=>{if(!closed&&!answered){heard=true;setChoiceEnabled(true);status.textContent='اختر الرمز أو الكلمة التي سمعتها. (نطق صناعي من المتصفح.)'}};
-    utterance.onerror=()=>{heard=false;setChoiceEnabled(false);status.textContent='فشل تشغيل النطق البرازيلي؛ أعد الاستماع قبل الإجابة.'};
+    utterance.onstart=()=>{if(!closed&&!answered&&expectedStep===step){heard=true;setChoiceEnabled(true);status.textContent='اختر الرمز أو الكلمة التي سمعتها. (نطق صناعي من المتصفح.)'}};
+    utterance.onerror=()=>{if(expectedStep!==step||closed)return;heard=false;setChoiceEnabled(false);status.textContent='فشل تشغيل النطق البرازيلي؛ أعد الاستماع قبل الإجابة.'};
     window.speechSynthesis.speak(utterance);
    }
    if(clip&&clip.normal&&ptbrAudioBase&&safePtbrAudioPath.test(clip.normal)){
-    player.onplaying=()=>{if(!closed&&!answered){heard=true;setChoiceEnabled(true);status.textContent='اختر الرمز أو الكلمة التي سمعتها. (تسجيل صوتي مفهرس.)'}};
+    player.onplaying=()=>{if(!closed&&!answered&&expectedStep===step){heard=true;setChoiceEnabled(true);status.textContent='اختر الرمز أو الكلمة التي سمعتها. (تسجيل صوتي مفهرس.)'}};
     player.onerror=()=>{if(!heard)browserVoice()};
     player.src=ptbrAudioBase+clip.normal;
     const attempt=player.play();
