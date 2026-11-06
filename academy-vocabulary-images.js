@@ -507,30 +507,12 @@
     }
     return false;
   }
-  for(var i=0;i<rules.length;i++)if(wholeArabicConcept(rules[i][0],s))return photos[rules[i][1]];
-    // Shared semantic vocabulary: one concept uses one existing photo across every academy.
-    // Match the source-language word only after the Arabic meaning has had priority.
-    var target=String(word||'');
+  var target=String(word||'');
     // Normalize common leading articles so the same real-world object photo is selected for phrases such as 'the tomato', 'la tomate', 'der Apfel', or 'o tomate'.
     var targetTrimmed=target.trim().replace(/^(?:(?:the|a|an|el|la|los|las|un|una|unos|unas|o|os|as|um|uma|uns|umas|il|lo|i|gli|le|der|die|das|ein|eine|les|des|du|de la|de l')\s+|l')/i,'');
     // Hotel vocabulary in these courses means a booked room, not a generic house or bedroom.
-    if((lang==='pt-BR'||lang==='pt-PT')&&/^(?:o quarto|um quarto|quarto)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='it'&&/^(?:una camera|la camera|camera)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='es'&&/^(?:una habitación|la habitación|habitación)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='fr'&&/^(?:une chambre|la chambre|chambre)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='de'&&/^(?:ein Zimmer|das Zimmer|Zimmer)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='en'&&/^(?:room|the room)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if(lang==='ru'&&/^(?:комната|номер)$/i.test(targetTrimmed))return photos.hotelRoom;
-    if((lang==='en'&&/^(?:broken|damaged|out of order)$/i.test(targetTrimmed))||
-       (lang==='it'&&/^(?:rotto|guasto)$/i.test(targetTrimmed))||
-       (lang==='es'&&/^(?:estropeado|averiado)$/i.test(targetTrimmed))||
-       (lang==='fr'&&/^(?:en panne|cassé|cassée)$/i.test(targetTrimmed))||
-       (lang==='de'&&/^(?:kaputt|defekt)$/i.test(targetTrimmed))||
-       (lang==='ru'&&/^(?:сломанный|сломалась|сломался|не работает)$/i.test(targetTrimmed))||
-       (lang==='pt-BR'&&/^(?:quebrado|quebrada|estragado|estragada)$/i.test(targetTrimmed))||
-       (lang==='pt-PT'&&/^(?:avariado|avariada|estragado|estragada)$/i.test(targetTrimmed)))return photos.brokenItem;
-    // Prefer an exact, dedicated photo for a concrete food item before broad category fallbacks.
-    // This prevents words such as tomato or chicken from receiving a generic vegetables/meal image.
+    
+    // Prefer the exact concrete food photo to a broad vegetables/fruit category.
     var specificFoodTargetRules=[
       [/^(?:tomato|tomatoes|tomate|tomates|pomodoro|pomodori|tomate|tomates|Tomate|Tomaten|помидор|помидоры)$/i,'tomato'],
       [/^(?:onion|onions|cebola|cebolas|cipolla|cipolle|cebolla|cebollas|oignon|oignons|Zwiebel|Zwiebeln|лук)$/i,'onion'],
@@ -569,7 +551,28 @@
       [/^(?:spinach|espinafre|espinafres|spinaci|espinaca|espinacas|épinards|Spinat|шпинат)$/i,'spinach'],
       [/^(?:cabbage|repolho|repolhos|cavolo|cavoli|col|coles|chou|choux|Kohl|капуста)$/i,'cabbage']
     ];
-    for(var sf=0;sf<specificFoodTargetRules.length;sf++)if(specificFoodTargetRules[sf][0].test(targetTrimmed))return photos[specificFoodTargetRules[sf][1]];
+    for(var sf=0;sf<specificFoodTargetRules.length;sf++){var rule=specificFoodTargetRules[sf],isColor=rule[1]==='orange'&&/(?:لون|برتقالي)/.test(meaningPlain);if(!isColor&&rule[0].test(targetTrimmed))return photos[rule[1]];}
+    for(var i=0;i<rules.length;i++)if(wholeArabicConcept(rules[i][0],s))return photos[rules[i][1]];
+    // Shared semantic vocabulary: one concept uses one existing photo across every academy.
+    // Match the source-language word only after the Arabic meaning has had priority.
+    if((lang==='pt-BR'||lang==='pt-PT')&&/^(?:o quarto|um quarto|quarto)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='it'&&/^(?:una camera|la camera|camera)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='es'&&/^(?:una habitación|la habitación|habitación)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='fr'&&/^(?:une chambre|la chambre|chambre)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='de'&&/^(?:ein Zimmer|das Zimmer|Zimmer)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='en'&&/^(?:room|the room)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if(lang==='ru'&&/^(?:комната|номер)$/i.test(targetTrimmed))return photos.hotelRoom;
+    if((lang==='en'&&/^(?:broken|damaged|out of order)$/i.test(targetTrimmed))||
+       (lang==='it'&&/^(?:rotto|guasto)$/i.test(targetTrimmed))||
+       (lang==='es'&&/^(?:estropeado|averiado)$/i.test(targetTrimmed))||
+       (lang==='fr'&&/^(?:en panne|cassé|cassée)$/i.test(targetTrimmed))||
+       (lang==='de'&&/^(?:kaputt|defekt)$/i.test(targetTrimmed))||
+       (lang==='ru'&&/^(?:сломанный|сломалась|сломался|не работает)$/i.test(targetTrimmed))||
+       (lang==='pt-BR'&&/^(?:quebrado|quebrada|estragado|estragada)$/i.test(targetTrimmed))||
+       (lang==='pt-PT'&&/^(?:avariado|avariada|estragado|estragada)$/i.test(targetTrimmed)))return photos.brokenItem;
+    // Prefer an exact, dedicated photo for a concrete food item before broad category fallbacks.
+    // This prevents words such as tomato or chicken from receiving a generic vegetables/meal image.
+    
     var sharedMeaningRules=[
       [/^(?:car|coche|voiture|auto|машина|macchina|carro)$/i,'car'],
       [/^(?:motorcycle|motorbike|moto|motocicleta|motorrad|мотоцикл|motocicletta|motociclo)$/i,'motorcycle'],
