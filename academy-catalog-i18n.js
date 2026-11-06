@@ -7,7 +7,7 @@ var PATHS=["ptbr-academy.html","english-academy.html","italian-academy.html","sp
 var LESSONS=[75,40,36,36,48,48,48,48];
 function getLocale(lang){return COPY[lang]?lang:'en'}
 function byIdHref(h){return PATHS.indexOf(h)}
-var GUIDE_PATHS=['guide-portuguese-brazilian.html','guide-english.html','guide-italian.html','guide-spanish.html','guide-french.html','guide-german.html',null,'guide-portuguese.html'];
+var GUIDE_PATHS=['guide-portuguese-brazilian.html','guide-english.html','guide-italian.html','guide-spanish.html','guide-french.html','guide-german.html','russian-academy.html#russian-review','guide-portuguese.html'];
 var LEVELS_AR=['من الصفر إلى C2 · دليل سفر منفصل','من الصفر · أربع مراحل تعليمية','A1 إلى B1','A1 إلى B1','A1 إلى B2','A1 إلى B2','A1 إلى B2','A1 إلى B2'];
 function makeArabicLinks(){
   return '<nav class="sd-arabic-course-links" aria-label="مسارات تعليم اللغات بالعربية">'+PATHS.map(function(path,i){
