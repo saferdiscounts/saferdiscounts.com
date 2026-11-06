@@ -292,10 +292,49 @@ test('Brazilian travel writing rubrics use phrases shown in lesson models',()=>{
  for(const title of ['تسأل عن مكان شيء','الاتجاهات وفهم الطريق','الأيام والوقت والمواعيد','الأسعار والدفع','تطلب أكلًا ومشروبًا']){
   const lesson=items.find(x=>x.title===title);
   assert.ok(lesson,'Missing travel lesson '+title);
-  const model=lesson.writing.model.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
+  const normalize=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim().toLocaleLowerCase();
+  const model=normalize(lesson.writing.model);
   for(const key of lesson.writing.keywords){
-   const stem=key.replace(/\.{3}|…/g,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().trim();
-   assert.ok(model.includes(stem),'Writing model lacks target '+key+' in '+title);
+   const stems=key.split(/\s+\/\s+/).map(part=>normalize(part.replace(/\.{3}|…/g,'')));
+   assert.ok(stems.some(stem=>stem&&model.includes(stem)),'Writing model lacks target '+key+' in '+title);
   }
  }
+});
+
+
+test('Brazilian travel and foundation practice models explicitly demonstrate every writing target',()=>{
+ const items=lessons('ptbr-academy.html');
+ const priority=[12,13,14,15,16,17,18,19,20,21,25,26,28,31,33,34,35,38];
+ const normalize=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim().toLocaleLowerCase();
+ for(const i of priority){
+  const l=items[i],where='Brazilian lesson '+(i+1)+' '+l.title;
+  assert.ok(l.writing.prompt.length>=75,where+' missing contextual writing assignment');
+  assert.ok(l.writing.model.length>=45,where+' missing authentic example');
+  const model=normalize(l.writing.model);
+  for(const key of l.writing.keywords){
+   const alternatives=key.split(/\s+\/\s+/).map(x=>normalize(x.replace(/\.{3}|…/g,'')));
+   assert.ok(alternatives.some(stem=>stem&&model.includes(stem)),where+' target absent from example: '+key);
+  }
+ }
+ assert.equal(priority.length,18);
+});
+
+test('Brazilian phrase matcher only accepts complete filled-in models and whole-word terms',()=>{
+ const html=read('ptbr-academy.html');
+ const start=html.indexOf('const normalizeWritingText=value=>');
+ const middle=html.indexOf(';const normalizedAnswer=',start);
+ const matcher=html.indexOf('const writingPhraseMatches=',middle);
+ const end=html.indexOf(';const matched=',matcher);
+ assert.ok(start>=0&&middle>start&&matcher>middle&&end>matcher,'Missing writing matcher functions');
+ const source=html.slice(start,middle)+';'+html.slice(matcher,end)+';({check:(k,v)=>writingPhraseMatches(k," "+normalizeWritingText(v)+" ")})';
+ const check=vm.runInNewContext(source,{}, {timeout:2000}).check;
+ assert.equal(check('Meu nome é…','Meu nome é Ahmed'),true);
+ assert.equal(check('Meu nome é…','Meu nome é'),false);
+ assert.equal(check('Onde fica...?','Onde fica o banheiro?'),true);
+ assert.equal(check('Onde fica...?','Onde fica?'),false);
+ assert.equal(check('Oi','Oi! Bom dia!'),true);
+ assert.equal(check('Oi','Dois livros.'),false);
+ assert.equal(check('Bom dia / Boa tarde','Boa tarde!'),true);
+ assert.equal(check('Bom dia / Boa tarde','Boa noite!'),false);
+ assert.equal(check('à direita','A direita.'),true);
 });
