@@ -15,7 +15,7 @@ function ensureArabicAccess(parent){
   var marker=parent.querySelector('.sd-always-arabic');
   if(marker)return;
   var node=document.createElement('aside');
-  node.className='sd-always-arabic';node.lang='ar';node.dir='rtl';
+  node.className='sd-always-arabic';node.id='arabic-academies';node.lang='ar';node.dir='rtl';
   node.innerHTML='<h3>🇪🇬 مسار التعلم الكامل للناطقين بالعربية — متاح دائمًا</h3><p>اختار اللغة وابدأ المنهج من الحروف والنطق والقواعد وصولًا للمحادثة والاختبارات. هذا القسم لا يختفي عند تغيير لغة عرض الموقع.</p>'+makeArabicLinks();
   parent.insertAdjacentElement('afterend',node);
 }
