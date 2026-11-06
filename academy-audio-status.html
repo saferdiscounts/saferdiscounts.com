@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="تقرير واضح عن تغطية التسجيلات الصوتية وارتباط الكلمات بالصوت داخل أكاديميات Safer Discounts الثماني.">
+<title>تقرير تغطية الصوتيات | Safer Discounts</title>
+<style>
+:root{color-scheme:light;--ink:#17354c;--brand:#09617b;--line:#d6e5eb;--muted:#506979;--bg:#f5f9fb}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 Tahoma,Arial,sans-serif}a{color:#00618a}.wrap{max-width:1150px;margin:auto;padding:0 18px}
+header{background:linear-gradient(115deg,#063b59,#0c6e77);color:#fff;padding:32px 0}header a{color:#e5faff}h1{font-size:clamp(25px,4vw,38px);margin:8px 0}header p{max-width:900px;margin:0;color:#e4f4fa}
+nav{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;font-weight:bold}.section{padding-top:20px}
+.notice{border-radius:14px;padding:15px 17px;margin:18px 0;background:#eaf5f7;border:1px solid #c6e0e5}.notice strong{color:#0a506e}.notice p{margin:6px 0 0}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.metric{background:white;border:1px solid var(--line);border-radius:14px;padding:15px}.metric strong{display:block;color:#086782;font-size:27px;line-height:1.5}.metric span{font-size:13px;color:var(--muted)}.metric.unknown strong{font-size:18px}
+.controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:20px 0 15px}.controls label{font-weight:800}select{font:inherit;padding:10px 12px;border:1px solid #a6c5d3;border-radius:9px;background:#fff;max-width:100%}
+.panel{border:1px solid var(--line);background:#fff;padding:18px;border-radius:16px;margin-bottom:20px}.panel h2{margin:0 0 8px;font-size:23px}.panel p{margin:7px 0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.actions a{background:#0b6b83;color:#fff;padding:8px 14px;border-radius:9px;text-decoration:none;font-weight:800;font-size:14px}.actions a.alt{background:#e5f3f6;color:#08617a}
+.progress{height:12px;background:#e6eff3;border-radius:20px;overflow:hidden;margin:5px 0 7px}.progress span{display:block;height:100%;background:#12846e;border-radius:20px;max-width:100%}.table-wrap{overflow-x:auto}.table{width:100%;border-collapse:collapse;min-width:650px}.table th,.table td{padding:11px 9px;border-bottom:1px solid #e6eef2;text-align:right;vertical-align:top;font-size:14px}.table th{background:#edf5f7;color:#22516a}.table small{display:block;color:#637787;font-size:12px;overflow-wrap:anywhere}.table td[dir="ltr"]{text-align:left}.empty{color:#6a7680;border:1px dashed #bacfdb;border-radius:12px;padding:18px;background:#fbfdfe}.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:11px;margin-bottom:34px}.legend>div{padding:14px;border:1px solid var(--line);border-radius:13px;background:#fff}.legend strong{color:#085e78}.legend p{margin:4px 0;font-size:13px}.small{font-size:13px;color:#526a7b}footer{font-size:13px;text-align:center;color:#657a89;padding:22px}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid #dc9c36;outline-offset:3px}@media(max-width:650px){.table{min-width:560px}.panel{padding:12px}header{padding:24px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a href="language-academy.html">← الأكاديميات</a><a href="pronunciation-audio-library.html">مكتبة الصوتيات</a><a href="pronunciation-lab.html">معمل النطق</a></nav>
+<h1>🎧 تقرير الصوتيات داخل الكورسات</h1>
+<p>خريطة للربط النصي الدقيق بين كلمات الدروس والفهارس الصوتية المعروفة، مع توضيح الفرق بين ملف موجود، وكلمة لها تسجيل مرتبط، وتسجيل تم سماعه والتحقق من جودته.</p></div></header>
+<main class="wrap">
+<div class="notice"><strong>مهم: ده تدقيق للفهارس الموجودة في GitHub، مش اختبارًا مباشرًا لكل ملف صوتي.</strong><p>في الفرنسية والألمانية، بنحسب المطابقة للنص نفسه بعد توحيد شكل Unicode والمسافات وحالة الحروف فقط. لا نعتبر التشابه في المعنى مطابقة، ونستبعد النصوص المكررة الملتبسة. باقي اللغات لا تظهر بنسبة صفر: التغطية «لم تُقَس محليًا» حتى يتوفر فهرس موثوق للكلمات في المستودع. نجاح الفهرس لا يضمن جودة النطق أو تشغيل R2.</p></div>
+<div class="metrics" id="summary" aria-live="polite"></div>
+<div class="controls"><label for="language">تفاصيل الأكاديمية:</label><select id="language"><option value="ptbr">🇧🇷 البرتغالية البرازيلية</option><option value="en">🇬🇧 الإنجليزية</option><option value="it">🇮🇹 الإيطالية</option><option value="es">🇪🇸 الإسبانية</option><option value="fr">🇫🇷 الفرنسية</option><option value="de">🇩🇪 الألمانية</option><option value="ru">🇷🇺 الروسية</option><option value="pt">🇵🇹 البرتغالية الأوروبية</option></select></div>
+<section class="panel" id="detail" aria-live="polite"><h2>تحميل التقرير...</h2></section>
+<h2>ما معنى الحالات؟</h2>
+<div class="legend"><div><strong>مطابقة نصية فريدة</strong><p>الكلمة في الدرس تطابق مدخلًا واحدًا في فهرس المصدر، وله مساران: عادي وبطيء.</p></div><div><strong>لم يُقَس</strong><p>المكتبة قد تحتوي على ملفات صوت فعلًا، لكننا لا نملك مرجعًا محليًا موثوقًا يثبت عدد الكلمات المطابقة في الدروس.</p></div><div><strong>استماع وتقييم الجودة</strong><p>عمل منفصل عن مطابقة الفهرس؛ يتطلب فتح الملفات وتشغيلها وسماع نطقها وسرعتها وصحتها.</p></div></div>
+</main><footer>Safer Discounts · تقرير آلي مبني على المحتوى المحفوظ في المستودع</footer>
+<script>
+'use strict';
+const summaries={ptbr:'الربط داخل أكاديمية البرازيل يعتمد على جسر فهرس صوتي منفصل؛ لم نتحقق من تغطيته ببيانات محلية قابلة للمقارنة.',en:'قد تتوفر ملفات أو تشغيل صوتي في الأكاديمية، لكن لا يوجد فهرس نصي محلي يمكن به إحصاء مطابقة كل كلمة.',it:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',es:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',ru:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.',pt:'تسجيلات اللغة تحتاج فهرسًا موثوقًا يربط نص الكلمة بمسار الصوت.'};
+const select=document.getElementById('language'),box=document.getElementById('detail'),summary=document.getElementById('summary');
+const params=new URLSearchParams(location.search);
+if([...select.options].some(o=>o.value===params.get('lang')))select.value=params.get('lang');
+function node(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!=null)el.textContent=text;return el}
+function link(href,label,alt){const a=node('a',alt?'alt':'',label);a.href=href;return a}
+function pct(part,total){return total?((part/total)*100).toFixed(1)+'%':'0%'}
+function render(data){
+ const code=select.value,item=data.languages[code];if(!item){box.textContent='لا تتوفر بيانات لهذه اللغة.';return;}
+ box.replaceChildren();
+ const name=node('h2','',item.name+' · '+item.lessons+' درسًا');box.append(name);
+ const actions=node('div','actions');actions.append(link(item.academy,'فتح الأكاديمية'),link('pronunciation-audio-library.html?lang='+code,'المكتبة الصوتية',true));box.append(actions);
+ if(item.mapping!=='exact-index'){
+  const p=node('div','empty',(summaries[code]||'لم يُعتمد فهرس نصي مستقل لهذا المسار.')+' النسبة هنا غير معروفة؛ لا يصح اعتبارها 0%.');box.append(p);return;
+ }
+ const intro=node('p','',item.exactMatches+' من '+item.words+' مدخلًا تعليميًا في دروس هذه اللغة لها مطابقة فريدة: '+pct(item.exactMatches,item.words)+'. عدد مدخلات فهرس المصدر '+item.sourceRecords+'، والنصوص المختلفة '+item.sourceUnique+'.');box.append(intro);
+ const info=node('p','small','النسبة تخص مفردات الدروس فقط، ولا تشمل جميع الحوارات أو الأصوات المعروضة في دروس أخرى. التكرارات النصية الملتبسة في الفهرس: '+item.sourceAmbiguousTexts+' نصًا.');box.append(info);
+ const bar=node('div','progress'),fill=node('span');fill.style.width=pct(item.exactMatches,item.words);bar.append(fill);box.append(bar);
+ const tableWrap=node('div','table-wrap'),table=node('table','table'),thead=node('thead'),tr=node('tr');
+ for(const label of ['الدرس / المستوى','عدد الكلمات','المطابق للتسجيل','التغطية','نماذج تحتاج ربطًا']){
+  tr.append(node('th','',label));
+ }
+ thead.append(tr);table.append(thead);
+ const tbody=node('tbody');
+ for(const row of item.levels){
+  const tr=node('tr'),name=node('td'),heading=node('strong','',row.lesson+'. '+row.title),lvl=node('small','',row.level||'');
+  name.append(heading,lvl);tr.append(name,node('td','',String(row.words)),node('td','',String(row.matched)),node('td','',pct(row.matched,row.words)));
+  const miss=node('td');const samples=row.missingSamples||[];
+  if(samples.length){const b=node('div','',samples.join(' · '));b.dir='ltr';b.style.unicodeBidi='isolate';miss.append(b);}
+  else miss.textContent='كل كلمات الدرس لها مطابقة فريدة';
+  tr.append(miss);tbody.append(tr);
+ }
+ table.append(tbody);tableWrap.append(table);box.append(tableWrap);
+}
+function cards(data){
+ summary.replaceChildren();
+ for(const code of ['ptbr','en','it','es','fr','de','ru','pt']){
+  const record=data.languages[code];const item=node('div','metric'+(record.mapping!=='exact-index'?' unknown':''));
+  const label=node('span','',record.name);
+  const value=node('strong','',record.mapping==='exact-index'?pct(record.exactMatches,record.words):'غير مقاس');
+  const detail=node('span','',record.mapping==='exact-index'?record.exactMatches+' / '+record.words+' كلمة/عبارة في الدروس':record.lessons+' درسًا · لا توجد نسبة موثوقة');
+  item.append(label,value,detail);
+  item.addEventListener('click',()=>{select.value=code;render(data);select.scrollIntoView({behavior:'smooth',block:'start'})});
+  item.style.cursor='pointer';item.tabIndex=0;item.setAttribute('role','button');
+  item.setAttribute('aria-label','عرض حالة '+record.name);
+  item.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();item.click();}});
+  summary.append(item);
+ }
+}
+fetch('academy-audio-audit.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{
+ if(data.schemaVersion!==1||!data.languages)throw Error('Unexpected data format');
+ cards(data);render(data);
+ select.addEventListener('change',()=>{render(data);history.replaceState(null,'','?lang='+encodeURIComponent(select.value))});
+}).catch(()=>{summary.textContent='تعذر تحميل بيانات الإحصاء.';box.textContent='فشل تحميل التقرير الحالي؛ افتح الأكاديمية أو مكتبة الصوتيات مباشرة.';});
+</script>
+</body></html>
