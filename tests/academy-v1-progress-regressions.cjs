@@ -16,5 +16,5 @@ test('V1 progress has a stable 384-slot denominator and counts gaps without doub
 test('Brazilian foundations and English B1+ are not miscounted as B2',()=>{
  const r=report();
  assert.ok(r.byLanguage.ptbr.cefrCounts.A1>=12,'Brazilian A1 practice has reached the V1 minimum without counting 15 foundation lessons');
- assert.equal(r.byLanguage.en.cefrCounts.B2,0,'Do not relabel English B1+ as B2');
+ assert.equal(r.byLanguage.en.cefrCounts.B2,12,'English B2 must be a new level group, not relabeled B1+');
 });
