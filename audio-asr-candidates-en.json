@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "lang": "en",
+  "model": "@cf/openai/whisper-large-v3-turbo",
+  "source": "Cloudflare R2 audio binary",
+  "method": "two distinct audio clips transcribed independently; exact normalized consensus and exact academy block text match; no human listening; candidate records only",
+  "reviewStatus": "automated-unverified",
+  "requested": 20,
+  "agreed": 3,
+  "exactLessonCandidates": 3,
+  "records": [
+    {
+      "normal": "english/pronunciation/basic/bas_001.mp3",
+      "slow": "english/pronunciation/basic/bas_001_slow.mp3",
+      "original": {
+        "text": "House.",
+        "duration": 0.847375,
+        "logprob": -0.78671875,
+        "bytes": 5229
+      },
+      "slowRecognition": {
+        "text": "A house.",
+        "duration": 1.146,
+        "logprob": -0.5582682291666666,
+        "bytes": 6909
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_002.mp3",
+      "slow": "english/pronunciation/basic/bas_002_slow.mp3",
+      "original": {
+        "text": "Hello.",
+        "duration": 0.89,
+        "logprob": -0.748046875,
+        "bytes": 5181
+      },
+      "slowRecognition": {
+        "text": "Oh, hello.",
+        "duration": 1.082,
+        "logprob": -0.8113839115415301,
+        "bytes": 6669
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_003.mp3",
+      "slow": "english/pronunciation/basic/bas_003_slow.mp3",
+      "original": {
+        "text": "Thank you.",
+        "duration": 1.103375,
+        "logprob": -0.3168945262829463,
+        "bytes": 7005
+      },
+      "slowRecognition": {
+        "text": "Thank you.",
+        "duration": 1.3806875,
+        "logprob": -0.3990885366996129,
+        "bytes": 8733
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Thank you",
+        "lesson": 3
+      }
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_004.mp3",
+      "slow": "english/pronunciation/basic/bas_004_slow.mp3",
+      "original": {
+        "text": "Cattle",
+        "duration": 0.733,
+        "logprob": -0.90078125,
+        "bytes": 4917
+      },
+      "slowRecognition": {
+        "text": "A cat.",
+        "duration": 0.975375,
+        "logprob": -0.7259114583333334,
+        "bytes": 7173
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_005.mp3",
+      "slow": "english/pronunciation/basic/bas_005_slow.mp3",
+      "original": {
+        "text": "Light.",
+        "duration": 0.779375,
+        "logprob": -0.59453125,
+        "bytes": 4701
+      },
+      "slowRecognition": {
+        "text": "Zdai.",
+        "duration": 0.954,
+        "logprob": -0.7371651956013271,
+        "bytes": 5853
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_006.mp3",
+      "slow": "english/pronunciation/basic/bas_006_slow.mp3",
+      "original": {
+        "text": "Bye.",
+        "duration": 0.804375,
+        "logprob": -0.5484375,
+        "bytes": 4797
+      },
+      "slowRecognition": {
+        "text": "Zboy",
+        "duration": 0.9966875,
+        "logprob": -0.775390625,
+        "bytes": 6213
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_007.mp3",
+      "slow": "english/pronunciation/basic/bas_007_slow.mp3",
+      "original": {
+        "text": "Water.",
+        "duration": 0.9326875,
+        "logprob": -0.616796875,
+        "bytes": 5973
+      },
+      "slowRecognition": {
+        "text": "He water.",
+        "duration": 1.146,
+        "logprob": -0.701171855131785,
+        "bytes": 7605
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_008.mp3",
+      "slow": "english/pronunciation/basic/bas_008_slow.mp3",
+      "original": {
+        "text": "Like...",
+        "duration": 0.729375,
+        "logprob": -0.78203125,
+        "bytes": 5037
+      },
+      "slowRecognition": {
+        "text": "A leg.",
+        "duration": 0.9326875,
+        "logprob": -0.6510416666666666,
+        "bytes": 5781
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_009.mp3",
+      "slow": "english/pronunciation/basic/bas_009_slow.mp3",
+      "original": {
+        "text": "Wind.",
+        "duration": 0.858,
+        "logprob": -0.573828125,
+        "bytes": 5661
+      },
+      "slowRecognition": {
+        "text": "The wine.",
+        "duration": 1.0606875,
+        "logprob": -0.8235677083333334,
+        "bytes": 6909
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_010.mp3",
+      "slow": "english/pronunciation/basic/bas_010_slow.mp3",
+      "original": {
+        "text": "So",
+        "duration": 0.758,
+        "logprob": -1.0175781548023224,
+        "bytes": 4869
+      },
+      "slowRecognition": {
+        "text": "Let's do it.",
+        "duration": 0.975375,
+        "logprob": -0.9316406697034836,
+        "bytes": 5877
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_011.mp3",
+      "slow": "english/pronunciation/basic/bas_011_slow.mp3",
+      "original": {
+        "text": "That's it.",
+        "duration": 0.754375,
+        "logprob": -1.0499485220227922,
+        "bytes": 4941
+      },
+      "slowRecognition": {
+        "text": "You don't",
+        "duration": 1.018,
+        "logprob": -0.6516926983992258,
+        "bytes": 5997
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_012.mp3",
+      "slow": "english/pronunciation/basic/bas_012_slow.mp3",
+      "original": {
+        "text": "Good mornings.",
+        "duration": 1.2526875,
+        "logprob": -0.4573567708333333,
+        "bytes": 8157
+      },
+      "slowRecognition": {
+        "text": "A good morning.",
+        "duration": 1.7646875,
+        "logprob": -0.41796875851494925,
+        "bytes": 11613
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_013.mp3",
+      "slow": "english/pronunciation/basic/bas_013_slow.mp3",
+      "original": {
+        "text": "Good evening.",
+        "duration": 1.21,
+        "logprob": -0.2791341145833333,
+        "bytes": 8253
+      },
+      "slowRecognition": {
+        "text": "A good evening.",
+        "duration": 1.7646875,
+        "logprob": -0.47405132225581575,
+        "bytes": 12741
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_014.mp3",
+      "slow": "english/pronunciation/basic/bas_014_slow.mp3",
+      "original": {
+        "text": "Hi.",
+        "duration": 0.804375,
+        "logprob": -0.694921875,
+        "bytes": 4821
+      },
+      "slowRecognition": {
+        "text": "That's high.",
+        "duration": 0.975375,
+        "logprob": -0.8521205357142857,
+        "bytes": 5541
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_015.mp3",
+      "slow": "english/pronunciation/basic/bas_015_slow.mp3",
+      "original": {
+        "text": "How are you?",
+        "duration": 1.2526875,
+        "logprob": -0.32979910714285715,
+        "bytes": 8373
+      },
+      "slowRecognition": {
+        "text": "How are you today?",
+        "duration": 1.786,
+        "logprob": -0.51611328125,
+        "bytes": 11805
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_016.mp3",
+      "slow": "english/pronunciation/basic/bas_016_slow.mp3",
+      "original": {
+        "text": "I'm fine, thank you.",
+        "duration": 1.5726875,
+        "logprob": -0.1666015639901161,
+        "bytes": 10629
+      },
+      "slowRecognition": {
+        "text": "As I'm fine, thank you.",
+        "duration": 2.234,
+        "logprob": -0.2034801109270616,
+        "bytes": 15189
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_017.mp3",
+      "slow": "english/pronunciation/basic/bas_017_slow.mp3",
+      "original": {
+        "text": "Nice to meet you.",
+        "duration": 1.487375,
+        "logprob": -0.2795410118997097,
+        "bytes": 10389
+      },
+      "slowRecognition": {
+        "text": "Nice to meet you.",
+        "duration": 2.106,
+        "logprob": -0.4062499888241291,
+        "bytes": 14373
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Nice to meet you",
+        "lesson": 3
+      }
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_018.mp3",
+      "slow": "english/pronunciation/basic/bas_018_slow.mp3",
+      "original": {
+        "text": "See you soon.",
+        "duration": 1.3166875,
+        "logprob": -0.2233538031578064,
+        "bytes": 8253
+      },
+      "slowRecognition": {
+        "text": "I'll see you soon.",
+        "duration": 1.807375,
+        "logprob": -0.22526041666666666,
+        "bytes": 11541
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_019.mp3",
+      "slow": "english/pronunciation/basic/bas_019_slow.mp3",
+      "original": {
+        "text": "See you tomorrow.",
+        "duration": 1.466,
+        "logprob": -0.31250000851494925,
+        "bytes": 9549
+      },
+      "slowRecognition": {
+        "text": "S.E.U. tomorrow.",
+        "duration": 2.063375,
+        "logprob": -0.4282670400359414,
+        "bytes": 13509
+      },
+      "agreed": false,
+      "exactLesson": null
+    },
+    {
+      "normal": "english/pronunciation/basic/bas_020.mp3",
+      "slow": "english/pronunciation/basic/bas_020_slow.mp3",
+      "original": {
+        "text": "Goodbye.",
+        "duration": 0.954,
+        "logprob": -0.7421875,
+        "bytes": 6333
+      },
+      "slowRecognition": {
+        "text": "Goodbye.",
+        "duration": 1.21,
+        "logprob": -0.738671875,
+        "bytes": 7893
+      },
+      "agreed": true,
+      "exactLesson": {
+        "text": "Goodbye",
+        "lesson": 3
+      }
+    }
+  ]
+}
