@@ -79,5 +79,5 @@ test('The new foundation script parses without executing browser-only APIs',()=>
  assert.ok(m,'Missing interactive alphabet script');
  assert.doesNotThrow(()=>new vm.Script(m[1]));
  assert.match(m[1],/speechSynthesis/);
- assert.match(m[1],/\\.rate=rate/);
+ assert.match(m[1],/\.rate=rate/);
 });
