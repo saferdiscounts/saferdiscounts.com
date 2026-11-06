@@ -2046,7 +2046,8 @@ window.SITE_CONFIG = {
     fr:{label:'Français',flag:'🇫🇷'},
     pt:{label:'Português',flag:'🇵🇹'},
     ptbr:{label:'Português (BR)',flag:'🇧🇷'},
-    ru:{label:'Русский',flag:'🇷🇺'}
+    ru:{label:'Русский',flag:'🇷🇺'},
+    es:{label:'Español',flag:'🇪🇸'}
   };
   var SERVICES={
     ar:[['flight','✈️ تذاكر طيران'],['hotel','🏨 فندق / إقامة'],['event','🎟️ فعالية / متحف'],['package','🧳 رحلة كاملة']],
@@ -2083,6 +2084,8 @@ window.SITE_CONFIG = {
 
   SERVICES.ru=[['flight','✈️ Авиабилеты'],['hotel','🏨 Отель / проживание'],['event','🎟️ Мероприятие / музей'],['package','🧳 Путешествие под ключ']];
   TXT.ru={"online":"На связи · помощь путешественникам","welcome":"Здравствуйте! Я Сара 👋 Расскажите, чем могу помочь, и я подскажу следующий шаг.","choose":"Что вас интересует?","book":"Отлично! Начнём с выбора услуги.","destination":"Выберите направление или напишите город.","origin":"Из какого города вы отправляетесь?","date":"Укажите дату поездки, например 20/12/2026.","travelers":"Сколько путешественников?","nights":"Сколько ночей вы планируете?","eventDate":"Когда состоится мероприятие?","summary":"Проверьте детали перед отправкой:","send":"Отправить запрос в WhatsApp","options":"Быстрые действия","placeholder":"Напишите вопрос, город или дату...","back":"← Назад","restart":"Начать сначала","destInfo":"Я помогу подготовить запрос по этому направлению.","human":"💬 Связаться с менеджером","learn":"🗣️ Изучать языки","destBtn":"🗺️ Направления","faqBtn":"❓ Вопросы","bookingBtn":"📅 Забронировать","languageBtn":"🗣️ Языковые курсы","price":"💰 Узнать цену","pay":"💳 Оплата","cancel":"↩️ Отмена","name":"Имя","home":"🏠 Сайт"};
+  SERVICES.es=[['flight','✈️ Vuelos'],['hotel','🏨 Hotel / alojamiento'],['event','🎟️ Evento / museo'],['package','🧳 Viaje completo']];
+  TXT.es={"online":"Disponible · Ayuda para viajar","welcome":"¡Hola! Soy Sara 👋 Cuéntame qué necesitas y te ayudaré paso a paso.","choose":"¿En qué puedo ayudarte?","book":"Perfecto, elige primero el servicio.","destination":"Elige un destino o escribe el nombre de la ciudad.","origin":"¿Desde qué ciudad viajas?","date":"¿Cuál es la fecha de tu viaje? Por ejemplo, 20/12/2026.","travelers":"¿Cuántos viajeros?","nights":"¿Cuántas noches te quedarás?","eventDate":"¿Cuál es la fecha del evento?","summary":"Revisa los datos antes de enviarlos:","send":"Enviar solicitud por WhatsApp","options":"Opciones rápidas","placeholder":"Pregunta, ciudad o fecha...","back":"← Volver","restart":"Empezar de nuevo","destInfo":"Puedo preparar una solicitud para ese destino.","human":"💬 Hablar con una persona","learn":"🗣️ Aprender idiomas","destBtn":"🗺️ Destinos","faqBtn":"❓ Preguntas","bookingBtn":"📅 Reservar","languageBtn":"🗣️ Academia de idiomas","price":"💰 Consultar precio","pay":"💳 Pago","cancel":"↩️ Cancelación","name":"Nombre","home":"🏠 Sitio"};
   function lang(){return document.documentElement.lang||'ar'}
   function t(){return TXT[lang()]||TXT.en}
   function norm(s){
@@ -2208,7 +2211,8 @@ window.SITE_CONFIG = {
       fr:'Bonjour, je souhaite demander une réservation via Sara :\\nService : '+svc+'\\nDépart : '+(state.origin||'Non précisé')+'\\nDestination : '+name+'\\nDate : '+state.date+'\\n'+(state.nights?'Nuits : '+state.nights+'\\n':'')+'Voyageurs : '+state.travelers,
       pt:'Olá, gostaria de solicitar uma reserva através da Sara:\\nServiço: '+svc+'\\nOrigem: '+(state.origin||'Não informado')+'\\nDestino: '+name+'\\nData: '+state.date+'\\n'+(state.nights?'Noites: '+state.nights+'\\n':'')+'Viajantes: '+state.travelers,
       ptbr:'Oi, eu queria solicitar uma reserva pela Sara:\\nServiço: '+svc+'\\nOrigem: '+(state.origin||'Não informado')+'\\nDestino: '+name+'\\nData: '+state.date+'\\n'+(state.nights?'Noites: '+state.nights+'\\n':'')+'Viajantes: '+state.travelers,
-      ru:'Здравствуйте! Хочу отправить запрос на бронирование через Сару:\\nУслуга: '+svc+'\\nОткуда: '+(state.origin||'Не указано')+'\\nНаправление: '+name+'\\nДата: '+state.date+'\\n'+(state.nights?'Ночей: '+state.nights+'\\n':'')+'Путешественников: '+state.travelers
+      ru:'Здравствуйте! Хочу отправить запрос на бронирование через Сару:\\nУслуга: '+svc+'\\nОткуда: '+(state.origin||'Не указано')+'\\nНаправление: '+name+'\\nДата: '+state.date+'\\n'+(state.nights?'Ночей: '+state.nights+'\\n':'')+'Путешественников: '+state.travelers,
+      es:'¡Hola! Quiero solicitar una reserva a través de Sara:\\nServicio: '+svc+'\\nSalida: '+(state.origin||'No indicado')+'\\nDestino: '+name+'\\nFecha: '+state.date+'\\n'+(state.nights?'Noches: '+state.nights+'\\n':'')+'Viajeros: '+state.travelers
     };
     return 'https://wa.me/'+num+'?text='+encodeURIComponent(parts[l]||parts.en)
   }
@@ -2228,7 +2232,7 @@ window.SITE_CONFIG = {
   }
   function priceHelp(){
     addMsg(t().price,true);
-    var msg={ar:'السعر بيتحدد حسب الخدمة والتاريخ والوجهة. اختار الخدمة وسارة تجمع البيانات وتبعتها للفريق عشان يرجعلك بأفضل عرض متاح.',en:'Pricing depends on the service, date, and destination. Start a booking and Sara will collect the details needed for the available offer.',de:'Der Preis hängt von Leistung, Datum und Reiseziel ab. Starte eine Buchung, damit Sara die nötigen Angaben sammelt.',it:'Il prezzo dipende da servizio, data e destinazione. Inizia una prenotazione e Sara raccoglierà i dati necessari.',fr:'Le prix dépend du service, de la date et de la destination. Commencez une réservation et Sara recueillera les informations nécessaires.',pt:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara recolherá os dados necessários.',ptbr:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara vai coletar os dados necessários.',ru:'Цена зависит от услуги, даты и направления. Начните запрос, и Сара соберёт нужные данные.'};
+    var msg={ar:'السعر بيتحدد حسب الخدمة والتاريخ والوجهة. اختار الخدمة وسارة تجمع البيانات وتبعتها للفريق عشان يرجعلك بأفضل عرض متاح.',en:'Pricing depends on the service, date, and destination. Start a booking and Sara will collect the details needed for the available offer.',de:'Der Preis hängt von Leistung, Datum und Reiseziel ab. Starte eine Buchung, damit Sara die nötigen Angaben sammelt.',it:'Il prezzo dipende da servizio, data e destinazione. Inizia una prenotazione e Sara raccoglierà i dati necessari.',fr:'Le prix dépend du service, de la date et de la destination. Commencez une réservation et Sara recueillera les informations nécessaires.',pt:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara recolherá os dados necessários.',ptbr:'O preço depende do serviço, data e destino. Comece uma reserva e a Sara vai coletar os dados necessários.',ru:'Цена зависит от услуги, даты и направления. Начните запрос, и Сара соберёт нужные данные.',es:'El precio depende del servicio, la fecha y el destino. Inicia una solicitud y Sara recogerá los datos necesarios.'};
     reply(msg[lang()]||msg.en,[{label:t().bookingBtn,action:startBooking},{label:t().human,wa:true,action:function(){window.open(makeSimpleWa(msg[lang()]||msg.en),'_blank')}},{label:t().back,action:root}],360)
   }
   function findDestination(raw){
