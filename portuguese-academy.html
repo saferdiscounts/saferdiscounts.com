@@ -111,4 +111,5 @@ function startExam(g){
  show();
 }
 document.getElementById("lessonList").innerHTML=lessons.map((l,i)=>'<button class="lessonpick" data-i="'+i+'">'+(l.level||"A1")+' · '+(i+1)+". "+l.title+'</button>').join("");document.querySelectorAll(".lessonpick").forEach(b=>b.onclick=()=>render(+b.dataset.i));progress();history();render(0);
-</script></body></html>
+</script><script src="academy-asr-provisional-audio.js" data-language="pt"></script>
+</body></html>
