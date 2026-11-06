@@ -128,7 +128,7 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 .academy-grid .pathway-card.full:hover .academy-culture-photo img{transform:scale(1.055);filter:saturate(1.08)}
 .academy-culture-photo span{position:absolute;inset:auto 10px 10px;padding:7px 10px;border-radius:9px;background:rgba(2,35,58,.76);color:#fff;font-size:11px;font-weight:800;backdrop-filter:blur(5px)}
 @media(max-width:640px){.academy-culture-photo{aspect-ratio:16/9}}
-.image-fallback{background:linear-gradient(135deg,#0b3554,#1478a5 58%,#d46a32)}.image-fallback:after{content:'Safer Discounts · Language & Culture';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(15px,2vw,22px);font-weight:900;text-align:center;padding:20px;letter-spacing:.3px}.academy-culture-photo img{object-position:50% 33%;object-fit:cover}</style>
+.image-fallback{background:linear-gradient(135deg,#0b3554,#1478a5 58%,#d46a32)}.image-fallback:after{content:'Safer Discounts · Language & Culture';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(15px,2vw,22px);font-weight:900;text-align:center;padding:20px;letter-spacing:.3px}.academy-culture-photo img{object-position:50% 33%;object-fit:cover}.phrase .say-word{border:1px solid #b5d4e6;background:#eaf4fb;color:#075b9a;padding:5px 10px;border-radius:10px;font-size:12px;font-weight:800;cursor:pointer;margin-top:7px}.phrase .say-word:hover,.phrase .say-word:focus-visible{background:#d5ecfa;outline:2px solid #95c7ed}.phrase strong[dir=ltr]{direction:ltr;unicode-bidi:isolate;text-align:left}.phrase strong[dir=rtl]{direction:rtl;unicode-bidi:plaintext}.lab-hint{margin:12px 0;color:#536d80;font-size:13px}.lang-entry{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 24px}.lang-entry a{background:#fff;border:1px solid #dce6eb;border-radius:10px;padding:9px 12px;color:#075b9a;font-weight:800}.lang-entry a:hover{border-color:#075b9a}</style>
 </head>
 <body>
 <header>
@@ -207,7 +207,7 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 <div><h3 id="practice-title"></h3><div id="practice-copy" style="font-size:12px;color:#667983;"></div></div>
 <span class="practice-badge" id="practice-badge"></span>
 </div>
-<div class="phrases" id="phrases"></div>
+<p class="lab-hint" id="practice-audio-hint">🔊 اضغط زر الاستماع لسماع العبارة باللغة المستهدفة. النطق يعتمد على أصوات المتصفح وقد يختلف حسب الجهاز.</p><div class="phrases" id="phrases"></div>
 </div>
 </div>
 
@@ -243,6 +243,20 @@ var LANG={
 ar:{label:'العربية',flag:'🇪🇬'},en:{label:'English',flag:'🇬🇧'},de:{label:'Deutsch',flag:'🇩🇪'},it:{label:'Italiano',flag:'🇮🇹'},fr:{label:'Français',flag:'🇫🇷'},pt:{label:'Português',flag:'🇵🇹'},ptbr:{label:'Português (BR)',flag:'🇧🇷'},es:{label:'Español',flag:'🇪🇸'}
 };
 var WORDS=[
+
+['yes',{ar:'نعم',en:'Yes',de:'Ja',it:'Sì',fr:'Oui',pt:'Sim',ptbr:'Sim',es:'Sí'}],
+['no',{ar:'لا',en:'No',de:'Nein',it:'No',fr:'Non',pt:'Não',ptbr:'Não',es:'No'}],
+['goodmorning',{ar:'صباح الخير',en:'Good morning',de:'Guten Morgen',it:'Buongiorno',fr:'Bonjour',pt:'Bom dia',ptbr:'Bom dia',es:'Buenos días'}],
+['goodnight',{ar:'تصبح على خير',en:'Good night',de:'Gute Nacht',it:'Buonanotte',fr:'Bonne nuit',pt:'Boa noite',ptbr:'Boa noite',es:'Buenas noches'}],
+['myname',{ar:'اسمي سارة.',en:'My name is Sara.',de:'Ich heiße Sara.',it:'Mi chiamo Sara.',fr:'Je m’appelle Sara.',pt:'Chamo-me Sara.',ptbr:'Meu nome é Sara.',es:'Me llamo Sara.'}],
+['speakslow',{ar:'من فضلك، تكلم ببطء.',en:'Please speak slowly.',de:'Sprechen Sie bitte langsam.',it:'Parli lentamente, per favore.',fr:'Parlez lentement, s’il vous plaît.',pt:'Fale devagar, por favor.',ptbr:'Fale devagar, por favor.',es:'Hable despacio, por favor.'}],
+['repeat',{ar:'هل يمكنك التكرار؟',en:'Can you repeat that?',de:'Können Sie das wiederholen?',it:'Può ripetere, per favore?',fr:'Pouvez-vous répéter ?',pt:'Pode repetir, por favor?',ptbr:'Pode repetir, por favor?',es:'¿Puede repetirlo, por favor?'}],
+['water',{ar:'ماء، من فضلك.',en:'Water, please.',de:'Wasser, bitte.',it:'Acqua, per favore.',fr:'De l’eau, s’il vous plaît.',pt:'Água, por favor.',ptbr:'Água, por favor.',es:'Agua, por favor.'}],
+['hospital',{ar:'أين المستشفى؟',en:'Where is the hospital?',de:'Wo ist das Krankenhaus?',it:'Dov’è l’ospedale?',fr:'Où est l’hôpital ?',pt:'Onde fica o hospital?',ptbr:'Onde fica o hospital?',es:'¿Dónde está el hospital?'}],
+['left',{ar:'إلى اليسار.',en:'To the left.',de:'Nach links.',it:'A sinistra.',fr:'À gauche.',pt:'À esquerda.',ptbr:'À esquerda.',es:'A la izquierda.'}],
+['right',{ar:'إلى اليمين.',en:'To the right.',de:'Nach rechts.',it:'A destra.',fr:'À droite.',pt:'À direita.',ptbr:'À direita.',es:'A la derecha.'}],
+['thankyouverymuch',{ar:'شكرًا جزيلًا.',en:'Thank you very much.',de:'Vielen Dank.',it:'Grazie mille.',fr:'Merci beaucoup.',pt:'Muito obrigado / obrigada.',ptbr:'Muito obrigado / obrigada.',es:'Muchas gracias.'}],
+
 ['hello',{ar:'مرحبًا',en:'Hello',de:'Hallo',it:'Ciao',fr:'Bonjour',pt:'Olá',ptbr:'Olá',es:'Hola'}],
 ['thanks',{ar:'شكرًا',en:'Thank you',de:'Danke',it:'Grazie',fr:'Merci',pt:'Obrigado / Obrigada',ptbr:'Obrigado / Obrigada',es:'Gracias'}],
 ['please',{ar:'من فضلك',en:'Please',de:'Bitte',it:'Per favore',fr:'S’il vous plaît',pt:'Por favor',ptbr:'Por favor',es:'Por favor'}],
@@ -307,13 +321,32 @@ function fillSelects(){
  var text=c.direction.replace('{target}',LANG[target].label).replace('{source}',LANG[source].label);
  document.getElementById('direction').innerHTML=text;
 }
+var SPEECH_LANG={ar:'ar-EG',en:'en-GB',de:'de-DE',it:'it-IT',fr:'fr-FR',pt:'pt-PT',ptbr:'pt-BR',es:'es-ES'};
+function speakTarget(value,slow){
+ if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){alert('Audio pronunciation is not available in this browser.');return}
+ window.speechSynthesis.cancel();
+ var utterance=new SpeechSynthesisUtterance(value);
+ utterance.lang=SPEECH_LANG[target]||'en-US';
+ utterance.rate=slow?0.68:0.9;
+ window.speechSynthesis.speak(utterance);
+}
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,function(char){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]})}
 function renderPractice(){
  var box=document.getElementById('phrases');
  box.innerHTML=WORDS.map(function(w,i){
-   var src=w[1][source],dst=w[1][target];
-   return '<div class="phrase"><div class="num">'+String(i+1).padStart(2,'0')+'</div><div><div class="lang-pill">'+LANG[source].flag+' '+LANG[source].label+'</div><strong>'+src+'</strong></div><div class="target"><div class="lang-pill">'+LANG[target].flag+' '+LANG[target].label+'</div><strong>'+dst+'</strong></div></div>';
+   var src=escapeHtml(w[1][source]),dst=escapeHtml(w[1][target]);
+   var srcDir=source==='ar'?'rtl':'ltr',dstDir=target==='ar'?'rtl':'ltr';
+   return '<div class="phrase"><div class="num">'+String(i+1).padStart(2,'0')+'</div><div><div class="lang-pill">'+LANG[source].flag+' '+LANG[source].label+'</div><strong dir="'+srcDir+'">'+src+'</strong></div><div class="target"><div class="lang-pill">'+LANG[target].flag+' '+LANG[target].label+'</div><strong dir="'+dstDir+'">'+dst+'</strong><button class="say-word" type="button" data-say-index="'+i+'" data-slow="false" aria-label="Listen">🔊</button> <button class="say-word" type="button" data-say-index="'+i+'" data-slow="true" aria-label="Listen slowly">🐢</button></div></div>';
  }).join('');
+ document.getElementById('practice-badge').textContent=WORDS.length+' '+(ui==='ar'?'عبارة': 'phrases');
 }
+document.getElementById('phrases').addEventListener('click',function(event){
+ var button=event.target.closest('[data-say-index]');
+ if(!button)return;
+ var index=Number(button.dataset.sayIndex);
+ if(!Number.isInteger(index)||!WORDS[index])return;
+ speakTarget(WORDS[index][1][target],button.dataset.slow==='true');
+});
 function renderGuides(){
  var box=document.getElementById('guide-links');
  var c=COPY[ui];
