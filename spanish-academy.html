@@ -94,7 +94,7 @@ function startExam(g){
   const options=shuffle([{text:w[2],correct:true},...distractors.map(text=>({text,correct:false}))]);
   return {q:"ما معنى "+w[0]+"؟",options};
  }));
- const qs=shuffle(bank).slice(0,Math.min(6,bank.length));let n=0,score=0;const box=document.getElementById("examBox");
+ const qs=shuffle(bank).slice(0,Math.min(12,bank.length));let n=0,score=0;const box=document.getElementById("examBox");
  function show(){
   if(n>=qs.length){
    const pct=Math.round(score/qs.length*100);let s={};try{s=JSON.parse(localStorage.getItem(scoreKey)||"{}")}catch(e){}
