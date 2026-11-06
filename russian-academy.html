@@ -33,7 +33,8 @@ footer{text-align:center;color:var(--muted);padding:22px}
 .culture-hero img{width:100%;height:100%;object-fit:cover;object-position:center 36%;display:block}
 .culture-hero figcaption{position:absolute;inset:auto 14px 14px;padding:9px 14px;border-radius:11px;background:rgba(2,35,58,.76);color:#fff;font-weight:800;font-size:14px;backdrop-filter:blur(6px)}
 @media(max-width:600px){.culture-hero{width:calc(100% - 22px);height:250px;margin:12px auto 16px;border-radius:14px}}
-.image-fallback{background:linear-gradient(135deg,#0b3554,#1478a5 58%,#d46a32)}.image-fallback:after{content:'Safer Discounts · Language & Culture';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(15px,2vw,22px);font-weight:900;text-align:center;padding:20px;letter-spacing:.3px}</style></head>
+.image-fallback{background:linear-gradient(135deg,#0b3554,#1478a5 58%,#d46a32)}.image-fallback:after{content:'Safer Discounts · Language & Culture';position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:clamp(15px,2vw,22px);font-weight:900;text-align:center;padding:20px;letter-spacing:.3px}.ru-audio-quiz .quiz-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:13px 0}.ru-audio-quiz .ru-letter-option{font-size:25px;text-align:center;min-height:58px;font-weight:900}.ru-audio-quiz #ruLetterStatus{line-height:1.8}@media(max-width:600px){.ru-audio-quiz .quiz-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head>
 <body>
 <header><div class="wrap"><h1>🇷🇺 أكاديمية اللغة الروسية</h1><p>من الصفر إلى التواصل بثقة — مسار تعليمي مصمم للناطقين بالعربية</p><div class="stats"><span class="stat">48 درسًا متدرجًا</span><span class="stat">A1 · A2 · B1 · B2</span><span class="stat">333 زوج تسجيل محفوظًا · الربط قيد التحقق</span><span class="stat">كتابة واختبارات وتقدم محفوظ</span></div><a href="language-academy.html" style="display:inline-flex;margin-top:18px;padding:9px 15px;border-radius:999px;background:#fff;color:#075b91;font-weight:800;text-decoration:none">🌐 كل الأكاديميات</a> <a href="#russian-review" style="display:inline-flex;margin-top:18px;padding:9px 15px;border-radius:999px;background:#d8f3ff;color:#075b91;font-weight:800;text-decoration:none">📚 راجع مفردات الروسية واختبر نفسك</a></div></header>
 <section class="wrap" aria-label="تعلم لغة أخرى" style="margin:16px auto;padding:15px 18px;background:#fff;border:1px solid #dce6ee;border-radius:16px;box-shadow:0 8px 24px #0828440b;line-height:1.8"><div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px"><div style="flex:1 1 320px"><strong style="display:block;color:#082844;font-size:17px">🌍 من لغتك إلى باقي اللغات <span dir="ltr" style="display:inline-block;font-size:12px;color:#58738d">(Русский → другие языки)</span></strong><p style="margin:4px 0;color:#566d80;font-size:13px">ابدأ بعبارات أساسية مترجمة من لغتك الحالية إلى أي لغة أخرى، مع نطق مسموع عادي وبطيء. هذا مسار تمهيدي مستقل عن منهج الأكاديمية الكامل.</p></div><a href="language-academy.html?source=ru&amp;target=en#lab" style="display:inline-block;background:#075b9a;color:white;text-decoration:none;padding:10px 17px;border-radius:10px;font-weight:800;white-space:nowrap">ابدأ التعلّم بين اللغات ←</a></div></section>
@@ -131,6 +132,89 @@ const lessonGrammarDrills = [["انطق الحرف В وحدد صوته.","В","
 const completed=new Set(JSON.parse(localStorage.getItem("sd_ru_done")||"[]"));
 let current=0,filter="all",quizChoice=null;
 function speak(t,rate){if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){alert('ميزة النطق الصوتي غير مدعومة في المتصفح.');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(t||''));u.lang='ru-RU';u.rate=rate===undefined?Number(document.getElementById('speed').value):Number(rate);speechSynthesis.speak(u)}
+
+const RU_LETTER_NAMES={'А':'а','Б':'бэ','В':'вэ','Г':'гэ','Д':'дэ','Е':'е','Ё':'ё','Ж':'жэ','З':'зэ','И':'и','Й':'и краткое','К':'ка','Л':'эл','М':'эм','Н':'эн','О':'о','П':'пэ','Р':'эр','С':'эс','Т':'тэ','У':'у','Ф':'эф','Х':'ха','Ц':'цэ','Ч':'че','Ш':'ша','Щ':'ща','Ы':'ы','Э':'э','Ю':'ю','Я':'я'};
+function setupRussianFoundation(unit){
+ const panel=document.getElementById('lessonPanel');
+ const letters=[...new Set(lessonContent[unit].words.map(w=>w[0]).filter(c=>Object.prototype.hasOwnProperty.call(RU_LETTER_NAMES,c)))];
+ if(letters.length<4)return;
+ const heads=[...panel.querySelectorAll('.section > h3')];
+ const writing=heads.find(h=>h.textContent.includes('تدريب كتابة'))?.parentElement;
+ const quiz=heads.find(h=>h.textContent.includes('اختبار سريع'))?.parentElement;
+ if(!writing||!quiz)return;
+ // Formative alphabet practice is not a sentence-writing assignment.
+ const practiceLetters=unit===1?letters.slice(0,8):letters;
+ writing.innerHTML='<h3>✍️ كتابة الحروف من الذاكرة</h3><p>تدرّب على رسم '+practiceLetters.length+' حروف من بطاقات الدرس. لا يُطلب منك تأليف جمل قبل تعلّم تكوين الكلمات. بعد المحاولة يمكنك مراجعة القائمة.</p><div class="writing"><textarea id="writingAnswer" lang="ru" dir="ltr" spellcheck="false" aria-label="اكتب الحروف الروسية من الذاكرة" placeholder="اكتب الحروف الروسية التي حفظتها، وبين كل حرف وآخر مسافة"></textarea><button type="button" id="checkWriting">احفظ وراجع الحروف</button><p id="writingFeedback" class="feedback" role="status"></p><p id="ruLetterWritingReference" hidden dir="ltr" lang="ru"></p></div>';
+ const saved=localStorage.getItem('sd_ru_writing_'+(unit+1))||'';
+ const textarea=writing.querySelector('#writingAnswer');textarea.value=saved;
+ writing.querySelector('#checkWriting').addEventListener('click',()=>{
+   const answer=textarea.value.trim();localStorage.setItem('sd_ru_writing_'+(unit+1),answer);
+   const found=practiceLetters.filter(c=>answer.toLocaleUpperCase('ru-RU').includes(c));
+   writing.querySelector('#writingFeedback').textContent=answer?'كتبت '+found.length+' من '+practiceLetters.length+' حروف في تدريب الكتابة. هذا فحص لوجود الرموز فقط، وليس تقييمًا لشكل الخط أو صحة النطق.':'اكتب الحروف التي تتذكرها أولًا ثم راجع.';
+   const ref=writing.querySelector('#ruLetterWritingReference');ref.hidden=!answer;ref.textContent='حروف التدريب للمقارنة: '+practiceLetters.join('   ');
+ });
+ // The answer must be heard, not printed in the question or in the audio button.
+ quiz.classList.add('ru-audio-quiz');
+ quiz.innerHTML='<h3>🎧 اختبر سمعك: أي حرف سمعته؟</h3><p>اضغط للاستماع لاسم الحرف الروسي، ثم اختر رمزه من الأزرار. لا يظهر رمز الإجابة في نص السؤال. أجب بعد مراجعة الدرس، دون النظر إلى بطاقات الحروف.</p><p class="muted">الصوت من صوت روسي في المتصفح، وليس تسجيلًا بشريًا موثقًا. إذا لم يتوفر صوت روسي فلن نحتسب اختبارًا سمعيًا. '+(unit===1?'الحرفان Ъ وЬ بلا صوت مستقل، ولذلك لا يُختبران كصوت منفرد.':'')+'</p><button id="ruStartLetters" type="button" class="primary">ابدأ اختبار الاستماع</button><div id="ruLetterExam" hidden><p id="ruLetterQuestion" class="muted"></p><button type="button" id="ruListenLetter">🔊 استمع إلى الحرف</button><div id="ruLetterOptions" class="quiz-options" role="group" aria-label="اختر رمز الحرف المسموع"></div><p id="ruLetterStatus" class="feedback" role="status" aria-live="polite"></p></div>';
+ const start=quiz.querySelector('#ruStartLetters');
+ const exam=quiz.querySelector('#ruLetterExam');
+ const question=quiz.querySelector('#ruLetterQuestion');
+ const options=quiz.querySelector('#ruLetterOptions');
+ const status=quiz.querySelector('#ruLetterStatus');
+ const listen=quiz.querySelector('#ruListenLetter');
+ const shuffle=items=>{for(let i=items.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[items[i],items[j]]=[items[j],items[i]]}return items};
+ let targets=[],step=0,right=0,heard=false;
+ function playLetter(){
+   if(!('speechSynthesis' in window)||!('SpeechSynthesisUtterance' in window)){
+     status.textContent='لا يدعم المتصفح تشغيل الأصوات؛ لا يمكن إجراء هذا الاختبار السمعي.';options.hidden=true;heard=false;return;
+   }
+   const russianVoice=speechSynthesis.getVoices().find(v=>/^ru(?:[-_]|$)/i.test(v.lang||''));
+   if(!russianVoice){
+     status.textContent='لا يوجد صوت روسي مثبت على هذا المتصفح. فعّل صوتًا روسيًا ثم أعد الاستماع. لن تُحتسب الإجابة بدون صوت.';options.hidden=true;heard=false;return;
+   }
+   const sound=new SpeechSynthesisUtterance(RU_LETTER_NAMES[targets[step]]);
+   sound.lang='ru-RU';sound.voice=russianVoice;sound.rate=.82;
+   sound.onerror=()=>{heard=false;options.hidden=true;status.textContent='تعذّر تشغيل الصوت الروسي. أعد الاستماع قبل اختيار الإجابة.'};
+   speechSynthesis.cancel();speechSynthesis.speak(sound);
+   heard=true;options.hidden=false;status.textContent='استمع جيدًا ثم اختر أحد الرموز الأربعة.';
+ }
+ function renderQuestion(){
+   if(step>=targets.length){
+     question.textContent='انتهى التدريب السمعي';
+     listen.hidden=true;options.replaceChildren();
+     const percent=Math.round(right/targets.length*100);
+     status.textContent='نتيجتك: '+right+' من '+targets.length+' ('+percent+'%). '+(percent>=75?'أحسنت! جرّب التذكر مرة أخرى غدًا.':'راجع الحروف التي التبست عليك ثم أعد المحاولة.')+' هذه نتيجة تدريب على هذا الجهاز وليست شهادة مستوى.';
+     try{localStorage.setItem('sd_ru_listening_letters_'+(unit+1),String(percent))}catch(e){}
+     start.hidden=false;start.textContent='أعد الاختبار';return;
+   }
+   heard=false;options.hidden=true;listen.hidden=false;options.replaceChildren();
+   question.textContent='السؤال '+(step+1)+' من '+targets.length;
+   status.textContent='اضغط زر الاستماع أولًا، ثم اختر الرمز.';
+   const answer=targets[step];
+   const choices=shuffle([answer,...shuffle(letters.filter(c=>c!==answer)).slice(0,3)]);
+   choices.forEach(letter=>{
+     const button=document.createElement('button');
+     button.type='button';button.textContent=letter;button.lang='ru';button.dir='ltr';button.className='ru-letter-option';
+     button.addEventListener('click',()=>{
+       if(!heard)return;
+       const yes=letter===answer;if(yes)right++;
+       options.querySelectorAll('button').forEach(b=>b.disabled=true);
+       status.textContent=yes?'صحيح، هذا صوت الحرف '+answer+'.':'الإجابة الصحيحة هي '+answer+'. استمع للصوت مرة أخرى عند المراجعة.';
+       heard=false;
+       const next=document.createElement('button');next.type='button';next.className='primary';next.textContent=step+1===targets.length?'اعرض نتيجتي':'السؤال التالي';
+       next.addEventListener('click',()=>{step++;renderQuestion()});options.insertAdjacentElement('afterend',next);
+       next.addEventListener('click',()=>next.remove(),{once:true});
+     });
+     options.appendChild(button);
+   });
+ }
+ start.addEventListener('click',()=>{
+   targets=shuffle(letters.slice()).slice(0,unit===1?10:4);
+   step=0;right=0;start.hidden=true;exam.hidden=false;renderQuestion();
+ });
+ listen.addEventListener('click',playLetter);
+}
+
 function renderList(){const q=document.getElementById("search").value.trim().toLowerCase();document.getElementById("lessonList").innerHTML=lessons.filter(x=>(filter==="all"||x.level===filter)&&x.title.toLowerCase().includes(q)).map(x=>'<button class="lesson-item '+(x.unit-1===current?'active':'')+'" data-unit="'+(x.unit-1)+'"><b>'+(completed.has(x.unit)?'✓ ':'')+x.unit+'. '+x.title+'</b><small>'+x.level+' · '+(x.level==="A1"?"تأسيس":x.level==="A2"?"مواقف يومية":"تواصل مستقل")+'</small></button>').join("");document.querySelectorAll(".lesson-item").forEach(b=>b.addEventListener("click",()=>{current=Number(b.dataset.unit);renderList();renderLesson()}))}
 function updateProgress(){document.getElementById("progressText").textContent=completed.size+" من 48 درسًا مكتملًا";document.getElementById("progressFill").style.width=(completed.size/48*100)+"%"}
 function renderLesson(){const l=lessons[current],data=lessonContent[current],set=data.words.concat(lessonExtraWords[current]), g=data.grammar, ex=[data.example,data.translation],quizWord=set.find(w=>w[2]===data.quiz)||set[0];quizChoice=null;const quizChoices=[quizWord[2],...set.filter(w=>w[2]!==quizWord[2]).slice(0,2).map(w=>w[2])].sort(()=>Math.random()-.5);const quizCorrect=quizChoices.indexOf(quizWord[2]);
@@ -142,6 +226,7 @@ document.getElementById("checkWriting").onclick=()=>{const v=document.getElement
 document.getElementById("writingAnswer").value=localStorage.getItem("sd_ru_writing_"+l.unit)||"";
 document.getElementById("markDone").onclick=()=>{completed.has(l.unit)?completed.delete(l.unit):completed.add(l.unit);localStorage.setItem("sd_ru_done",JSON.stringify([...completed]));renderList();renderLesson();updateProgress()};
 document.getElementById("prevLesson").onclick=()=>{current--;renderList();renderLesson()};document.getElementById("nextLesson").onclick=()=>{current++;renderList();renderLesson()};
+if(current<4)setupRussianFoundation(current);
 }
 document.querySelectorAll(".level-btn").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.level;document.querySelectorAll(".level-btn").forEach(x=>x.classList.toggle("active",x===b));renderList()}));
 document.getElementById("search").addEventListener("input",renderList);
