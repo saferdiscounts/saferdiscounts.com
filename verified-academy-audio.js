@@ -68,7 +68,7 @@ function sync(){
 fetch(indexFile,{cache:'force-cache'}).then(response=>{if(!response.ok)throw new Error('Index HTTP '+response.status);return response.json()}).then(data=>{
  if(!data||data.language!==lang||!Array.isArray(data.records))throw new Error('Invalid index');
  const seen=new Map();for(const row of data.records){
-   if(typeof row.text!=='string'||typeof row.normal!=='string'||typeof row.slow!=='string'||!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(row.normal)||!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(row.slow))continue;
+   if(typeof row.text!=='string'||typeof row.normal!=='string'||typeof row.slow!=='string'||!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(row.normal)||!/^(basic|advanced)\/[a-z0-9_]+\.mp3$/.test(row.slow)||row.slow!==row.normal.replace(/\.mp3$/,'_slow.mp3'))continue;
    const key=normalize(row.text);
    if(!seen.has(key))seen.set(key,[]);
    seen.get(key).push(row);
