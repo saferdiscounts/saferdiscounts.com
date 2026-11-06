@@ -677,6 +677,15 @@ window.BLOG_CONFIG = {
     }
   ]
 };
+
+(function(cfg){
+ cfg.contact.whatsappNumberByLang={ar:"201116666306",en:"201116666306",it:"393801991992",fr:"201116666306",pt:"201116666306",ptbr:"201116666306",de:"201116666306",ru:"201116666306"};
+ cfg.contact.whatsappDefaultMessage.ru="Здравствуйте! Я хотел(а) бы узнать о бронировании.";
+ cfg.contact.emailSubjectByLang={ar:"استفسار عن السفر",en:"Travel enquiry",it:"Richiesta di viaggio",fr:"Demande de voyage",pt:"Pedido de informação",ptbr:"Informações de viagem",de:"Reiseanfrage",ru:"Запрос о поездке"};
+ cfg.i18n.ru={"brand":"Safer Discounts","nav":{"services":"Услуги","destinations":"Направления","reviews":"Отзывы","how":"Как бронировать","faq":"Вопросы","blog":"Блог Сары","cta":"Написать в WhatsApp"},"contactBtns":{"wa":"WhatsApp","fb":"Facebook","ph":"Позвонить","em":"Эл. почта"},"footerCopyright":"© 2026 Safer Discounts. Все права защищены.","blogHero":{"eyebrow":"✦ БЛОГ · САРА","h1":"Блог Сары","p":"Советы по бронированию, идеи для путешествий, достопримечательности и вводные материалы по языкам."},"categories":{"booking":"Советы по бронированию","destinations":"Направления и достопримечательности","languages":"Изучение языков","diet":"Рецепты и питание"},"readMore":"Читать статью","readGuide":"Открыть справочник","comingSoon":"Скоро","fullGuide":"Полный справочник","byline":"Автор: Сара"};
+ const names={"guide-italian.html":"Полный справочник по итальянскому","guide-french.html":"Полный справочник по французскому","guide-portuguese-brazilian.html":"Бразильский португальский: справочник","blog-italian-phrases.html":"Полезные фразы на итальянском","guide-booking-whatsapp.html":"Как бронировать через WhatsApp","guide-giza-pyramids.html":"Пирамиды Гизы: путеводитель","blog-dinner-plan.html":"Идеи для ужина","blog-middle-eastern-dinner-plan.html":"Ближневосточная кухня","blog-brazilian-diet-plan.html":"Бразильская кухня","blog-egyptian-diet-plan.html":"Египетская кухня","blog-american-diet-plan.html":"Американская кухня","blog-french-diet-plan.html":"Французская кухня","blog-spanish-diet-plan.html":"Испанская кухня","guide-spanish.html":"Справочник по испанскому","guide-portuguese.html":"Справочник по европейскому португальскому","guide-english.html":"Справочник по английскому","guide-german.html":"Справочник по немецкому","guide-istanbul.html":"Стамбул: путеводитель"};
+ cfg.posts.forEach(function(p){if(names[p.url])p.ru_title=names[p.url];if(names[p.url])p.ru_excerpt="Материал по теме «"+names[p.url]+"». Статья может быть написана на арабском или другом языке — выберите подходящий материал."});
+})(window.BLOG_CONFIG);
 </script>
 <!-- ============================================================================
      🚫 من هنا لتحت، ده تصميم صفحة البلوج نفسها — عدّل المحتوى من فوق بس.
@@ -702,12 +711,14 @@ window.BLOG_CONFIG = {
         <button class="lang-btn" data-lang="pt" type="button">PT</button>
         <button class="lang-btn" data-lang="ptbr" type="button">PT-BR</button>
         <button class="lang-btn" data-lang="de" type="button">DE</button>
+        <button class="lang-btn" data-lang="ru" type="button">RU</button>
       </div>
       <a class="nav-cta" data-wa href="#" id="nav-cta-text">💬</a>
     </div>
   </nav>
 </header>
 
+<aside lang="ar" dir="rtl" style="max-width:1120px;width:calc(100% - 32px);margin:14px auto;background:#eaf5fc;border:1px solid #bcdce9;border-radius:12px;padding:12px 16px;color:#075b9a;font-weight:800;text-align:right">🇪🇬 مسار تعليم اللغات بالعربية متاح في كل وقت — <a href="language-academy.html#arabic-academies" style="text-decoration:underline">افتح الأكاديميات الثماني للناطقين بالعربية</a></aside>
 <section class="blog-hero">
   <div class="wrap blog-hero-inner">
     <div class="blog-hero-photo"><img src="images/sara.jpg" alt="Sara"></div>
@@ -755,7 +766,7 @@ window.BLOG_CONFIG = {
 
   function waLink(lang){
     var msg = cfg.contact.whatsappDefaultMessage[lang] || cfg.contact.whatsappDefaultMessage.ar;
-    return "https://wa.me/" + cfg.contact.whatsappNumber + "?text=" + encodeURIComponent(msg);
+    return "https://wa.me/" + (cfg.contact.whatsappNumberByLang[lang] || cfg.contact.whatsappNumber) + "?text=" + encodeURIComponent(msg);
   }
 
   function pick(obj, field, lang){
@@ -824,7 +835,7 @@ window.BLOG_CONFIG = {
     document.querySelectorAll('[data-wa]').forEach(function(el){ el.href = waLink(lang); });
     document.querySelectorAll('[data-fb]').forEach(function(el){ el.href = cfg.contact.facebook; });
     document.querySelectorAll('[data-phone]').forEach(function(el){ el.href = 'tel:' + cfg.contact.phoneDial; });
-    document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email; });
+    document.querySelectorAll('[data-email]').forEach(function(el){ el.href = 'mailto:' + cfg.contact.email + '?subject=' + encodeURIComponent(cfg.contact.emailSubjectByLang[lang] || cfg.contact.emailSubjectByLang.en); });
 
     document.querySelector('[data-nav="services"]').textContent = t.nav.services;
     document.querySelector('[data-nav="destinations"]').textContent = t.nav.destinations;
