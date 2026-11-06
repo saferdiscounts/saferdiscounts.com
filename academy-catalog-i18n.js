@@ -7,17 +7,23 @@ var PATHS=["ptbr-academy.html","english-academy.html","italian-academy.html","sp
 var LESSONS=[75,40,36,36,48,48,48,48];
 function getLocale(lang){return COPY[lang]?lang:'en'}
 function byIdHref(h){return PATHS.indexOf(h)}
+var GUIDE_PATHS=['guide-portuguese-brazilian.html','guide-english.html','guide-italian.html','guide-spanish.html','guide-french.html','guide-german.html',null,'guide-portuguese.html'];
+var LEVELS_AR=['من الصفر إلى C2 · دليل سفر منفصل','من الصفر · أربع مراحل تعليمية','A1 إلى B1','A1 إلى B1','A1 إلى B2','A1 إلى B2','A1 إلى B2','A1 إلى B2'];
 function makeArabicLinks(){
-  return '<nav class="sd-arabic-course-links" aria-label="روابط الدورات بالعربية">'+PATHS.map(function(path,i){return '<a href="'+path+'" lang="ar" dir="rtl">'+NAMES.ar[i]+' ←</a>'}).join('')+'</nav>';
+  return '<nav class="sd-arabic-course-links" aria-label="مسارات تعليم اللغات بالعربية">'+PATHS.map(function(path,i){
+    var guide=GUIDE_PATHS[i]?'<a class="sd-arabic-guide-link" href="'+GUIDE_PATHS[i]+'">📖 مرجع ومراجعة</a>':'';
+    return '<div class="sd-arabic-course"><strong>'+NAMES.ar[i]+'</strong><small>'+LEVELS_AR[i]+' · '+(i===0?'75 درسًا أكاديميًا':LESSONS[i]+' درسًا')+'</small><div><a href="'+path+'">ابدأ الدروس ←</a>'+guide+'</div></div>';
+  }).join('')+'</nav>';
 }
 function ensureArabicAccess(parent){
   if(!parent)return;
-  var marker=parent.querySelector('.sd-always-arabic');
+  var marker=parent.parentNode&&parent.parentNode.querySelector('.sd-always-arabic');
   if(marker)return;
   var node=document.createElement('aside');
   node.className='sd-always-arabic';node.id='arabic-academies';node.lang='ar';node.dir='rtl';
-  node.innerHTML='<h3>🇪🇬 مسار التعلم الكامل للناطقين بالعربية — متاح دائمًا</h3><p>اختار اللغة وابدأ المنهج من الحروف والنطق والقواعد وصولًا للمحادثة والاختبارات. هذا القسم لا يختفي عند تغيير لغة عرض الموقع.</p>'+makeArabicLinks();
+  node.innerHTML='<h3>🇪🇬 مسار التعلم الكامل للناطقين بالعربية — متاح دائمًا</h3><p>ابدأ بالدروس من الصفر، تعلّم الحروف والنطق والقواعد، ثم استعمل المفردات في حوارات واختبارات. المراجع الإضافية اختيارية وليست شرطًا لبدء الكورس. المسار العربي يظل موجودًا عند تغيير لغة الموقع.</p>'+makeArabicLinks();
   parent.insertAdjacentElement('afterend',node);
+  if(window.location&&window.location.hash==='#arabic-academies'&&window.requestAnimationFrame){window.requestAnimationFrame(function(){node.scrollIntoView({block:'start'})})}
 }
 function render(lang){
   var l=getLocale(lang),t=COPY[l],labels=NAMES[l];
@@ -61,7 +67,7 @@ function render(lang){
     ensureArabicAccess(acad);
   }
 }
-var css='.sd-always-arabic{max-width:1120px;width:calc(100% - 32px);margin:20px auto 32px;padding:18px;border-radius:18px;border:1px solid #b9d8e9;background:#edf7fd;color:#153951;box-shadow:0 8px 20px #0b35540c;text-align:right}.sd-always-arabic h3{font-size:19px;margin:0 0 7px;font-weight:900;color:#06365b}.sd-always-arabic p{font-size:13px;margin:0 0 12px;line-height:1.8}.sd-arabic-course-links{display:flex;flex-wrap:wrap;gap:9px}.sd-arabic-course-links a{display:inline-block;padding:8px 11px;background:white;border:1px solid #b7d3e4;border-radius:10px;color:#075b9a;font-weight:800;font-size:13px;text-decoration:none}.sd-arabic-course-links a:hover,.sd-arabic-course-links a:focus-visible{background:#075b9a;color:white}';
+var css=".sd-always-arabic{max-width:1120px;width:calc(100% - 32px);margin:20px auto 32px;padding:18px;border-radius:18px;border:1px solid #b9d8e9;background:#edf7fd;color:#153951;box-shadow:0 8px 20px #0b35540c;text-align:right;scroll-margin-top:100px}.sd-always-arabic h3{font-size:19px;margin:0 0 7px;font-weight:900;color:#06365b}.sd-always-arabic p{font-size:13px;margin:0 0 12px;line-height:1.8}.sd-arabic-course-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.sd-arabic-course{min-width:0;padding:14px;border:1px solid #bfd9e8;background:#fff;border-radius:13px}.sd-arabic-course strong,.sd-arabic-course small{display:block}.sd-arabic-course strong{font-size:14px;color:#0b3554}.sd-arabic-course small{font-size:11px;color:#5b7380;margin:4px 0 8px}.sd-arabic-course>div{display:flex;flex-wrap:wrap;gap:7px}.sd-arabic-course a{display:inline-block;padding:7px 9px;background:#edf7fd;border:1px solid #b7d3e4;border-radius:8px;color:#075b9a;font-weight:800;font-size:12px;text-decoration:none}.sd-arabic-course a:hover,.sd-arabic-course a:focus-visible{background:#075b9a;color:white}.sd-arabic-course .sd-arabic-guide-link{background:#fff8ef;color:#96500d;border-color:#edcda9}@media(max-width:850px){.sd-arabic-course-links{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:450px){.sd-arabic-course-links{grid-template-columns:1fr}}";
 if(typeof document!=='undefined'&&!document.getElementById('sd-catalog-style')){var style=document.createElement('style');style.id='sd-catalog-style';style.textContent=css;document.head.appendChild(style)}
 window.SDAcademyCatalog={render:render,locales:Object.keys(COPY),courseCount:PATHS.length};
 })();
