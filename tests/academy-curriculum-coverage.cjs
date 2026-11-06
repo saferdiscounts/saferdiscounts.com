@@ -214,3 +214,13 @@ test('Brazilian number and conjugation writing targets match their model respons
   }
  }
 });
+
+test('Brazilian beginner writing feedback uses phrases demonstrated by its model dialogues',()=>{
+ const items=lessons('ptbr-academy.html');
+ for(const title of ['التحية والتوديع','كلمات الأدب الأساسية','تسأل عن اللغة']){
+  const lesson=items.find(l=>l.title===title);
+  assert.ok(lesson,'Missing beginner lesson '+title);
+  const model=lesson.writing.model.toLocaleLowerCase('pt-BR');
+  for(const keyword of lesson.writing.keywords)assert.ok(model.includes(keyword.toLocaleLowerCase('pt-BR')),'Model does not demonstrate feedback phrase '+keyword+' in '+title);
+ }
+});
