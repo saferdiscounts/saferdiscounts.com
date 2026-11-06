@@ -2026,7 +2026,8 @@ window.SITE_CONFIG = {
     it:{label:'Italiano',flag:'🇮🇹'},
     fr:{label:'Français',flag:'🇫🇷'},
     pt:{label:'Português',flag:'🇵🇹'},
-    ptbr:{label:'Português (BR)',flag:'🇧🇷'}
+    ptbr:{label:'Português (BR)',flag:'🇧🇷'},
+    ru:{label:'Русский',flag:'🇷🇺'}
   };
   var SERVICES={
     ar:[['flight','✈️ تذاكر طيران'],['hotel','🏨 فندق / إقامة'],['event','🎟️ فعالية / متحف'],['package','🧳 رحلة كاملة']],
@@ -2061,6 +2062,8 @@ window.SITE_CONFIG = {
       choose:'Com o que você precisa de ajuda?',book:'Ótimo — vou montar seu pedido de reserva passo a passo. Comece pelo serviço.',destination:'Escolha o destino ou digite o nome da cidade.',origin:'De qual cidade você vai sair? Pode digitar.',date:'Qual é a data da viagem? Exemplo: 20/12/2026',travelers:'Quantos viajantes? Digite o número.',nights:'Quantas noites você vai ficar?',eventDate:'Qual é a data do evento ou da visita?',summary:'Perfeito. Confira estes dados antes de enviar:',send:'Enviar pedido no WhatsApp',options:'Ações rápidas',placeholder:'Pergunte algo ou digite cidade/data...',back:'← Voltar',restart:'Começar de novo',destInfo:'Esse destino está disponível. Posso preparar a mensagem de reserva.',human:'💬 Falar com uma pessoa',learn:'🗣️ Aprender um idioma de viagem',destBtn:'🗺️ Destinos',faqBtn:'❓ FAQ',bookingBtn:'📅 Começar reserva',languageBtn:'🗣️ Academia de idiomas',price:'💰 Perguntar o preço',pay:'💳 Pagamento',cancel:'↩️ Cancelamento',name:'Nome',home:'🏠 Site'}
   };
 
+  SERVICES.ru=[['flight','✈️ Авиабилеты'],['hotel','🏨 Отель / проживание'],['event','🎟️ Мероприятие / музей'],['package','🧳 Путешествие под ключ']];
+  TXT.ru={"online":"На связи · помощь путешественникам","welcome":"Здравствуйте! Я Сара 👋 Расскажите, чем могу помочь, и я подскажу следующий шаг.","choose":"Что вас интересует?","book":"Отлично! Начнём с выбора услуги.","destination":"Выберите направление или напишите город.","origin":"Из какого города вы отправляетесь?","date":"Укажите дату поездки, например 20/12/2026.","travelers":"Сколько путешественников?","nights":"Сколько ночей вы планируете?","eventDate":"Когда состоится мероприятие?","summary":"Проверьте детали перед отправкой:","send":"Отправить запрос в WhatsApp","options":"Быстрые действия","placeholder":"Напишите вопрос, город или дату...","back":"← Назад","restart":"Начать сначала","destInfo":"Я помогу подготовить запрос по этому направлению.","human":"💬 Связаться с менеджером","learn":"🗣️ Изучать языки","destBtn":"🗺️ Направления","faqBtn":"❓ Вопросы","bookingBtn":"📅 Забронировать","languageBtn":"🗣️ Языковые курсы","price":"💰 Узнать цену","pay":"💳 Оплата","cancel":"↩️ Отмена","name":"Имя","home":"🏠 Сайт"};
   function lang(){return document.documentElement.lang||'ar'}
   function t(){return TXT[lang()]||TXT.en}
   function norm(s){
