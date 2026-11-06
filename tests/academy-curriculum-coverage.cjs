@@ -194,3 +194,11 @@ test('Brazilian writing keyword checks normalize accents and require full phrase
  assert.ok(!includes('Eu sou do Egito.','sou doze'),'unrelated phrases must not match');
  assert.match(html,/normalizedAnswer\.includes\(' '\+term\+' '\)/,'keyword matching must use phrase boundaries');
 });
+
+test('Brazilian consonant writing exercise asks for exactly eight words',()=>{
+ const lesson=lessons('ptbr-academy.html').find(l=>l.title.includes('الحروف الساكنة والتركيبات'));
+ assert.ok(lesson,'Consonant lesson missing');
+ assert.match(lesson.writing.prompt,/اكتب 8 كلمات/);
+ assert.match(lesson.writing.prompt,/وكلمة واحدة لـ R/);
+ assert.equal(lesson.writing.model.split(',').length,8,'Consonant model answer must have eight examples');
+});
