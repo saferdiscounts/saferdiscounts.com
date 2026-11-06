@@ -156,8 +156,20 @@ test('Brazilian greeting lesson teaches regional and nasal pronunciation without
 test('Brazilian lessons offer interactive five-question active recall practice',()=>{
  const html=read('ptbr-academy.html');
  assert.match(html,/تحدي التذكر السريع/);
- assert.match(html,/queue=shuffled\(vocab\)\.slice\(0,Math\.min\(5,vocab\.length\)\)/);
+ assert.match(html,/begin\(shuffled\(vocab\)\.slice\(0,Math\.min\(5,vocab\.length\)\),false\)/);
  assert.match(html,/w===target/);
  assert.match(html,/تحدي جديد/);
  assert.match(html,/aria-live','polite/);
+});
+
+test('Brazilian recall challenge provides audio with explicit TTS fallback and a missed-word review round',()=>{
+ const html=read('ptbr-academy.html');
+ assert.match(html,/findPtbrAudio\(target\[0\]\)/,'uses indexed audio when available');
+ assert.match(html,/playPtbrHostedPath\(clip\.normal,target\[0\]\)/,'plays mapped audio');
+ assert.match(html,/speakPortuguese\(source\)/,'synthetic fallback');
+ assert.match(html,/نطق صناعي من المتصفح، وليس تسجيلًا صوتيًا بشريًا موثقًا/,'does not mislabel TTS');
+ assert.match(html,/else if\(!missed\.includes\(target\)\)missed\.push\(target\)/,'collects missed questions');
+ assert.match(html,/retryMissed\.addEventListener\('click',\(\)=>begin\(missed,true\)\)/,'retries missed questions only');
+ assert.match(html,/button\.classList\.add\('wrong'\)/,'marks incorrect selection');
+ assert.match(html,/b\.classList\.add\('correct'\)/,'reveals the correct answer');
 });
