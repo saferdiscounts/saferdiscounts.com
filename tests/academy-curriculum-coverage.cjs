@@ -155,7 +155,7 @@ test('Brazilian greeting lesson teaches regional and nasal pronunciation without
 
 test('Brazilian lessons offer interactive five-question active recall practice',()=>{
  const html=read('ptbr-academy.html');
- assert.match(html,/تحدي التذكر السريع/);
+ assert.match(html,/تحدي قراءة المفردات وفهم معناها/);
  assert.match(html,/begin\(shuffled\(vocab\)\.slice\(0,Math\.min\(5,vocab\.length\)\),false\)/);
  assert.match(html,/w===target/);
  assert.match(html,/تحدي جديد/);
@@ -371,4 +371,63 @@ test('Russian card offers the same reference and review entry point as other aca
  assert.match(catalog,/'guide-german\.html','russian-academy\.html#russian-review','guide-portuguese\.html'/);
  const russian=read('russian-review.js');
  assert.match(russian,/panel\.id='russian-review'/,'The link must point to an existing review section');
+});
+
+
+test('Brazilian zero level follows alphabet, sounds, grammar, verbs and only then numbers',()=>{
+ const html=read('ptbr-academy.html'),items=lessons('ptbr-academy.html');
+ const begin=html.indexOf('const foundationOrder='),end=html.indexOf(';function lessonNumber(',begin);
+ assert.ok(begin>0&&end>begin,'Need explicit curriculum sequence separate from original IDs');
+ const order=vm.runInNewContext(html.slice(begin,end)+';lessonOrder',{lessons:items},{timeout:2000});
+ assert.equal(order.length,90);
+ assert.equal(new Set(order).size,90,'All 90 lessons appear exactly once');
+ const initial=[21,22,23,24,25,26,27,28,29,30,31,32,33,34,5];
+ assert.deepEqual(Array.from(order.slice(0,15)),initial,'Numbers must follow letters, pronouns and verbs');
+ assert.deepEqual(Array.from(order.slice(15,20)),[0,1,2,3,4],'A1 conversation comes after the zero-level foundation');
+ assert.equal(items[initial[0]].title,'الحروف الأبجدية البرتغالية');
+ assert.equal(items[initial[14]].title,'الأرقام من الصفر إلى الألف والعمر');
+ for(const i of initial)assert.equal(items[i].track,'foundation');
+ for(let i=0;i<20;i++)assert.ok(items[order[i]].writing.mode,'Newcomers should have skill-specific guided writing');
+ assert.match(html,/const lessonNumber\(i\)/);
+ assert.match(html,/data-track="foundation"/,'Zero level accessible from curriculum navigation');
+ assert.match(html,/render\(21\);progress\(\)/,'Initial page opens the alphabet and preserves the stable lesson ID');
+});
+
+test('Every Brazilian lesson offers an honest audio-only question with no written prompt spoiler',()=>{
+ const html=read('ptbr-academy.html'),items=lessons('ptbr-academy.html');
+ const begin=html.indexOf('function ptbrListeningCandidates(');
+ const end=html.indexOf('function setupPtbrListeningQuiz(',begin);
+ assert.ok(begin>=0&&end>begin,'Missing sound-target data construction');
+ const fn=vm.runInNewContext(html.slice(begin,end)+';ptbrListeningCandidates',{}, {timeout:2000});
+ for(const [i,lesson] of items.entries()){
+  const candidates=fn(lesson,i);
+  assert.ok(candidates.length>=4,'Fewer than four listening choices for lesson '+i+' '+lesson.title);
+  assert.equal(new Set(candidates.map(c=>c.label.toLocaleLowerCase('pt-BR'))).size,candidates.length,'Repeated choices in lesson '+i);
+  assert.ok(candidates.every(c=>c.spoken&&c.label),'Invalid audio target in lesson '+i);
+ }
+ const letters=fn(items[21],21);
+ assert.equal(letters.length,26,'Listen to the 26 independent Latin alphabet letter names; Ç is not the 27th');
+ assert.ok(letters.every(c=>/^[A-Z]$/.test(c.label)&&c.spoken!==c.label));
+ const logic=html.slice(end,html.indexOf('function render(i)',end));
+ assert.match(logic,/dialog\.showModal\(\)/,'Hide source lesson during audio testing');
+ assert.match(logic,/question/,'Sound rounds should track progress and question state');
+ assert.match(logic,/player\.onplaying=\(\)=>\{if\(!closed&&!answered\)\{heard=true/,'Unlock only on real recorded sound');
+ assert.match(logic,/utterance\.onstart=\(\)=>\{if\(!closed&&!answered\)\{heard=true/,'Unlock only when speech begins');
+ assert.match(logic,/if\(!heard\|\|answered\)return/,'Do not score unheard prompts');
+ assert.match(logic,/button\.disabled=true/,'Question choices must initially be unavailable');
+ assert.match(logic,/getVoices\(\)\.find\(v=>\/\^pt\[-_\]BR\$\/i/,'Use Brazilian Portuguese voice rather than a default unknown accent');
+ assert.match(html,/setupPtbrListeningQuiz\(l,i\)/,'Wire listening into every lesson rather than just the alphabet');
+ assert.match(html,/i===21\?'<div class="quiz"/,'Do not show first-alphabet written-answer quiz');
+});
+
+test('Beginner Brazilian writing practice starts with symbols and short guided forms, not forced essays',()=>{
+ const items=lessons('ptbr-academy.html'),html=read('ptbr-academy.html');
+ assert.equal(items[21].writing.mode,'alphabet');
+ assert.match(items[21].writing.prompt,/لا تحتاج إلى تأليف جملة/);
+ for(const i of [22,23,24,25,26])assert.equal(items[i].writing.mode,'sounds','Phonetics and punctuation must target symbols or words');
+ for(const i of [27,28,29,30,31,32,33,34,5,0,1,2,3,4])assert.equal(items[i].writing.mode,'guided','Grammar, numbers and early communication must be scaffolded');
+ assert.match(html,/writingMinimum=l\.writing\.mode==='sounds'\?7/,'Feedback minimum must match task type');
+ assert.match(html,/if\(i===21\)/,'Alphabet must have letter-specific review');
+ assert.match(html,/هذه نتيجة تدريب على التمييز السمعي، وليست شهادة/,'Results should not imply official proficiency');
+ assert.match(html,/اختبار القراءة والفهم/,'Reading and listening must not be conflated');
 });
