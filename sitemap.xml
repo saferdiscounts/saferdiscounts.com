@@ -18,6 +18,11 @@
   <url><loc>https://saferdiscounts.com/pronunciation-lab.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://saferdiscounts.com/ptbr-pronunciation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
+  <!-- Public audio-learning reference pages -->
+  <url><loc>https://saferdiscounts.com/alphabet-foundations.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://saferdiscounts.com/pronunciation-audio-library.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://saferdiscounts.com/academy-audio-status.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
   <!-- Travel guides -->
   <url><loc>https://saferdiscounts.com/ptbr-travel-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://saferdiscounts.com/english-travel-guide.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
