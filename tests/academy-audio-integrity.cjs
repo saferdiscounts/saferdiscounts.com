@@ -114,6 +114,10 @@ test('Brazilian audio bridge excludes ambiguous or malformed sound paths and upd
  assert.match(html,/rows\.length===1/);
  assert.match(html,/updatePtbrAudioConnection\(l\)/);
  assert.match(html,/ptbrAudioFailed/);
+ assert.match(html,/fetch\('audio-text-index-ptbr\.json'/);
+ assert.match(html,/index\.schemaVersion!==1/);
+ assert.match(html,/ptbrAudioBridge\.src=ptbrAudioBase\+'bridge\.html'/);
+ assert.match(html,/makePtbrAudioIndex\(ptbrAudioItems\)/);
 });
 
 test('Russian lesson quiz randomizes answer positions and checks the actual correct choice',()=>{
