@@ -180,3 +180,17 @@ test('Brazilian academy inline lesson scripts parse as valid JavaScript',()=>{
  assert.ok(scripts.length,'Missing inline lesson script');
  scripts.forEach((source,index)=>assert.doesNotThrow(()=>new vm.Script(source,{filename:'ptbr-academy-inline-'+index+'.js'})));
 });
+
+test('Brazilian writing keyword checks normalize accents and require full phrases',()=>{
+ const html=read('ptbr-academy.html');
+ const found=html.match(/const normalizeWritingText=value=>([^;]+);const normalizedAnswer=/);
+ assert.ok(found,'Brazilian writing normalizer missing');
+ const normalize=vm.runInNewContext('(value)=>'+found[1]);
+ const includes=(answer,term)=>(' '+normalize(answer)+' ').includes(' '+normalize(term)+' ');
+ assert.equal(normalize('Olá,   você!'),'ola voce');
+ assert.ok(includes('Oi! Bom dia.','Oi'));
+ assert.ok(includes('Meu nome é Ana.','Meu nome é'));
+ assert.ok(!includes('Dois livros.','Oi'),'partial words must not count as target vocabulary');
+ assert.ok(!includes('Eu sou do Egito.','sou doze'),'unrelated phrases must not match');
+ assert.match(html,/normalizedAnswer\.includes\(' '\+term\+' '\)/,'keyword matching must use phrase boundaries');
+});
