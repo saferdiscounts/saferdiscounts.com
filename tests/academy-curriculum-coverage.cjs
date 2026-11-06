@@ -202,3 +202,15 @@ test('Brazilian consonant writing exercise asks for exactly eight words',()=>{
  assert.match(lesson.writing.prompt,/وكلمة واحدة لـ R/);
  assert.equal(lesson.writing.model.split(',').length,8,'Consonant model answer must have eight examples');
 });
+
+test('Brazilian number and conjugation writing targets match their model responses',()=>{
+ const items=lessons('ptbr-academy.html');
+ for(const title of ['الأرقام من الصفر إلى الألف والعمر','تصريف الأفعال المنتظمة في المضارع: -ar و-er و-ir']){
+  const lesson=items.find(l=>l.title===title);
+  assert.ok(lesson,'Missing writing lesson '+title);
+  const model=lesson.writing.model.toLocaleLowerCase('pt-BR');
+  for(const keyword of lesson.writing.keywords){
+   assert.ok(model.includes(keyword.toLocaleLowerCase('pt-BR')),'Writing target absent from model: '+title+' / '+keyword);
+  }
+ }
+});
