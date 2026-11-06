@@ -144,3 +144,11 @@ test('English pronunciation notes accurately compare th and w with Arabic sounds
  assert.match(html,/في كلمة thank يُنطق th مثل «ث» العربية/);
  assert.match(html,/صوت w قريب من «و» العربية/);
 });
+
+test('Brazilian greeting lesson teaches regional and nasal pronunciation without overclaiming transliteration',()=>{
+ const greeting=lessons('ptbr-academy.html')[0];
+ assert.equal(greeting.title,'التحية والتوديع');
+ assert.match(greeting.grammar,/لهجات برازيلية كثيرة/);
+ assert.match(greeting.grammar,/صوتًا أنفيًا/);
+ assert.match(greeting.grammar,/لا تعتمد على كتابة الحروف العربية وحدها/);
+});
