@@ -237,7 +237,7 @@ test('Brazilian writing template matcher accepts filled answers and rejects part
  const start=html.indexOf('const writingPhraseMatches=');
  const end=html.indexOf(';const matched=l.writing.keywords.filter',start);
  assert.ok(start>=0&&end>start,'Writing phrase matcher not found');
- const normalize=value=>String(value||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').replace(/[.…]+/g,' ').replace(/[^\\p{L}\\p{N}\\s]/gu,' ').replace(/\\s+/g,' ').trim().toLocaleLowerCase();
+ const normalize=value=>String(value||'').normalize('NFD').replace(new RegExp('[\\u0300-\\u036f]','g'),'').replace(/[.…]+/g,' ').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim().toLocaleLowerCase();
  const fn=vm.runInNewContext('(normalizeWritingText)=>{'+html.slice(start,end)+';return writingPhraseMatches}',{ })(normalize);
  const answer=value=>' '+normalize(value)+' ';
  assert.equal(fn('Meu nome é…',answer('Meu nome é Ahmed.')),true);
