@@ -100,7 +100,12 @@ function startExam(g){
   const options=shuffle(x.options.map((text,i)=>({text,correct:i===x.correct})));
   return [{q:"فهم موقف عملي: "+x.question,options}];
  });
- const qs=shuffle([...shuffle(bank).slice(0,6),...shuffle(scenarioBank).slice(0,6)]);let n=0,score=0;const box=document.getElementById("examBox");
+ // Listening section uses browser-generated speech, clearly labeled; not a human recording.
+ const listeningBank=lessons.filter((l,i)=>group(i)===g).flatMap(l=>l.words.map(w=>{
+  const alternatives=shuffle([...new Set(allWords.map(x=>x.meaning).filter(x=>x!==w[2]))]).slice(0,2);
+  return alternatives.length===2?{q:"استماع (صوت المتصفح): اضغط استمع ثم اختر معنى ما تسمعه.",audioText:w[0],options:shuffle([{text:w[2],correct:true},...alternatives.map(text=>({text,correct:false}))])}:null;
+ })).filter(Boolean);
+ const qs=shuffle([...shuffle(bank).slice(0,4),...shuffle(scenarioBank).slice(0,4),...shuffle(listeningBank).slice(0,4)]);let n=0,score=0;const box=document.getElementById("examBox");
  function show(){
   if(n>=qs.length){
    const pct=Math.round(score/qs.length*100);let s={};try{s=JSON.parse(localStorage.getItem(scoreKey)||"{}")}catch(e){}
@@ -108,7 +113,8 @@ function startExam(g){
    box.innerHTML="<h3>نتيجتك: "+score+" من "+qs.length+" ("+pct+"%)</h3><button class='btn' id='again'>إعادة الامتحان بترتيب مختلف</button>";
    document.getElementById("again").onclick=()=>startExam(g);history();return;
   }
-  const q=qs[n];box.innerHTML="<p>السؤال "+(n+1)+" من "+qs.length+": "+q.q+"</p>"+q.options.map((o,i)=>"<button class='answer' data-ex='"+i+"'>"+o.text+"</button>").join("");
+  const q=qs[n];box.innerHTML="<p>السؤال "+(n+1)+" من "+qs.length+": "+q.q+"</p>"+(q.audioText?"<button type='button' class='btn alt' id='examListen'>🔊 استمع مجددًا</button><p class='muted'>صوت صناعي من المتصفح، وليس تسجيلًا بشريًا.</p>":"")+q.options.map((o,i)=>"<button class='answer' data-ex='"+i+"'>"+o.text+"</button>").join("");
+  if(q.audioText){document.getElementById("examListen").onclick=()=>{if(!('speechSynthesis' in window))return alert("النطق غير متاح في هذا المتصفح");speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(q.audioText);u.lang="es-ES";u.rate=.85;speechSynthesis.speak(u)};}
   box.querySelectorAll("[data-ex]").forEach(b=>b.onclick=()=>{
    const selected=q.options[+b.dataset.ex];if(selected.correct)score++;
    box.querySelectorAll("[data-ex]").forEach(x=>{x.disabled=true;if(q.options[+x.dataset.ex].correct)x.classList.add("correct")});
