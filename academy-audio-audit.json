@@ -1,0 +1,1724 @@
+{
+  "schemaVersion": 1,
+  "method": "static exact NFC/case-insensitive/whitespace-normalized match of academy word text to locally committed audio-text-index-{fr,de}.json; a unique match requires a normal/slow pair and safe relative paths. Does not verify live URLs, audio quality, playback, or whether the speech is human.",
+  "languages": {
+    "ptbr": {
+      "name": "البرتغالية البرازيلية",
+      "academy": "ptbr-academy.html",
+      "lessons": 90,
+      "mapping": "separate-bridge-unmeasured",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    },
+    "en": {
+      "name": "الإنجليزية",
+      "academy": "english-academy.html",
+      "lessons": 40,
+      "mapping": "no-local-text-index",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    },
+    "it": {
+      "name": "الإيطالية",
+      "academy": "italian-academy.html",
+      "lessons": 36,
+      "mapping": "no-local-text-index",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    },
+    "es": {
+      "name": "الإسبانية",
+      "academy": "spanish-academy.html",
+      "lessons": 36,
+      "mapping": "no-local-text-index",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    },
+    "fr": {
+      "name": "الفرنسية",
+      "academy": "french-academy.html",
+      "lessons": 48,
+      "mapping": "exact-index",
+      "sourceRecords": 421,
+      "sourceUnique": 398,
+      "sourceAmbiguousTexts": 23,
+      "words": 289,
+      "exactMatches": 44,
+      "ambiguousMatches": 0,
+      "levels": [
+        {
+          "lesson": 1,
+          "level": "A1",
+          "title": "الحروف وأساسيات النطق",
+          "words": 8,
+          "matched": 7,
+          "ambiguous": 0,
+          "missing": 1,
+          "missingSamples": [
+            "Bonne nuit"
+          ]
+        },
+        {
+          "lesson": 2,
+          "level": "A1",
+          "title": "التعارف وتقديم النفس",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "missingSamples": [
+            "Je m'appelle…",
+            "Je viens d'Égypte.",
+            "Enchanté.",
+            "Comment vous appelez-vous ?",
+            "Comment tu t'appelles ?",
+            "Je suis égyptien / égyptienne."
+          ]
+        },
+        {
+          "lesson": 3,
+          "level": "A1",
+          "title": "الأرقام من الصفر إلى 100 والأسعار",
+          "words": 35,
+          "matched": 29,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "vingt et un",
+            "trente-cinq",
+            "soixante et onze",
+            "quatre-vingt-un",
+            "quatre-vingt-onze",
+            "Combien ça coûte ?"
+          ]
+        },
+        {
+          "lesson": 4,
+          "level": "A1",
+          "title": "في المقهى والمطعم",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "missingSamples": [
+            "Un café, s'il vous plaît.",
+            "La carte, s'il vous plaît.",
+            "L'addition, s'il vous plaît.",
+            "Je voudrais de l'eau plate.",
+            "Une table pour deux, s'il vous plaît.",
+            "Sans sucre, s'il vous plaît."
+          ]
+        },
+        {
+          "lesson": 5,
+          "level": "A1",
+          "title": "الاتجاهات والمواصلات",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "Où est la gare ?",
+            "à droite",
+            "Allez tout droit.",
+            "Tournez à gauche.",
+            "Tournez à droite.",
+            "C'est loin ?"
+          ]
+        },
+        {
+          "lesson": 6,
+          "level": "A1",
+          "title": "الفندق والإقامة",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "missingSamples": [
+            "J'ai une réservation.",
+            "une chambre",
+            "la clé",
+            "À quel nom ?",
+            "Le petit déjeuner est-il inclus ?",
+            "À quelle heure est le départ ?"
+          ]
+        },
+        {
+          "lesson": 7,
+          "level": "A1",
+          "title": "الاحتياجات والطوارئ",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "Au secours !",
+            "J'ai besoin d'un médecin.",
+            "Où est la pharmacie ?",
+            "Appelez une ambulance !",
+            "Où est l'hôpital ?",
+            "Je suis allergique."
+          ]
+        },
+        {
+          "lesson": 8,
+          "level": "A1",
+          "title": "الماضي والخطط القريبة",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "hier",
+            "demain",
+            "Je voudrais…",
+            "aujourd'hui",
+            "la semaine prochaine",
+            "À quelle heure ?"
+          ]
+        },
+        {
+          "lesson": 9,
+          "level": "A1",
+          "title": "العائلة والملكية · La famille",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "la mère",
+            "le père",
+            "Voici ma mère.",
+            "ma sœur",
+            "mon frère",
+            "mes parents"
+          ]
+        },
+        {
+          "lesson": 10,
+          "level": "A1",
+          "title": "روتين اليوم والوقت · La routine",
+          "words": 7,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 5,
+          "missingSamples": [
+            "prendre le petit-déjeuner",
+            "Je me lève à sept heures.",
+            "prendre une douche",
+            "aller au travail",
+            "Je rentre à six heures."
+          ]
+        },
+        {
+          "lesson": 11,
+          "level": "A1",
+          "title": "المنزل والغرف · À la maison",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "la cuisine",
+            "la chambre",
+            "La cuisine est à côté de la salle de bains.",
+            "le salon",
+            "la salle de bains",
+            "le balcon"
+          ]
+        },
+        {
+          "lesson": 12,
+          "level": "A1",
+          "title": "التسوق والكميات · Faire les courses",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "un kilo",
+            "bon marché",
+            "Je voudrais un kilo de pommes.",
+            "un demi-kilo",
+            "un litre de lait",
+            "Combien ça coûte ?"
+          ]
+        },
+        {
+          "lesson": 13,
+          "level": "A2",
+          "title": "الماضي المركب passé composé · Hier",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "hier",
+            "visité",
+            "J'ai visité le musée hier.",
+            "j'ai mangé",
+            "je suis allé / allée",
+            "j'ai acheté"
+          ]
+        },
+        {
+          "lesson": 14,
+          "level": "A2",
+          "title": "المواعيد والخطط · Rendez-vous et projets",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "demain",
+            "un rendez-vous",
+            "Je vais voir le médecin demain.",
+            "On peut se retrouver ?",
+            "à neuf heures",
+            "Je dois déplacer le rendez-vous."
+          ]
+        },
+        {
+          "lesson": 15,
+          "level": "A2",
+          "title": "الصحة وحجز موعد · Chez le médecin",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "un mal de tête",
+            "un rhume",
+            "J'ai mal à la tête depuis deux jours.",
+            "j'ai mal à la tête",
+            "j'ai de la fièvre",
+            "depuis hier"
+          ]
+        },
+        {
+          "lesson": 16,
+          "level": "A2",
+          "title": "المقارنة وإبداء الرأي · Comparer et donner son avis",
+          "words": 7,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "plus grand",
+            "Le train est plus rapide que le bus.",
+            "moins cher",
+            "plus rapide",
+            "à mon avis",
+            "Je préfère le train."
+          ]
+        },
+        {
+          "lesson": 17,
+          "level": "A2",
+          "title": "الماضي · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "hier",
+            "d'abord",
+            "ensuite"
+          ]
+        },
+        {
+          "lesson": 18,
+          "level": "A2",
+          "title": "العمل · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "l'expérience",
+            "la tâche",
+            "le stage"
+          ]
+        },
+        {
+          "lesson": 19,
+          "level": "A2",
+          "title": "السفر · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "le retard",
+            "la réservation",
+            "les bagages"
+          ]
+        },
+        {
+          "lesson": 20,
+          "level": "A2",
+          "title": "الشكوى · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "en panne",
+            "échanger",
+            "le reçu"
+          ]
+        },
+        {
+          "lesson": 21,
+          "level": "A2",
+          "title": "الصحة · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "la douleur",
+            "étourdi",
+            "l'examen"
+          ]
+        },
+        {
+          "lesson": 22,
+          "level": "A2",
+          "title": "الوصف · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "accueillant",
+            "calme",
+            "le quartier"
+          ]
+        },
+        {
+          "lesson": 23,
+          "level": "A2",
+          "title": "السبب والشرط · تطبيق A2",
+          "words": 3,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 1,
+          "missingSamples": [
+            "si"
+          ]
+        },
+        {
+          "lesson": 24,
+          "level": "A2",
+          "title": "المستقبل · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "la semaine prochaine",
+            "probablement",
+            "prévoir"
+          ]
+        },
+        {
+          "lesson": 25,
+          "level": "B1",
+          "title": "Raconter une expérience · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "une expérience",
+            "soudain",
+            "finalement"
+          ]
+        },
+        {
+          "lesson": 26,
+          "level": "B1",
+          "title": "Donner son opinion · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "à mon avis",
+            "un avantage",
+            "en revanche"
+          ]
+        },
+        {
+          "lesson": 27,
+          "level": "B1",
+          "title": "Entretien d'embauche · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "une candidature",
+            "une compétence",
+            "fiable"
+          ]
+        },
+        {
+          "lesson": 28,
+          "level": "B1",
+          "title": "Logement et quartier · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "le voisinage",
+            "le loyer",
+            "préférer"
+          ]
+        },
+        {
+          "lesson": 29,
+          "level": "B1",
+          "title": "Médias et technologie · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "une source",
+            "fiable",
+            "partager"
+          ]
+        },
+        {
+          "lesson": 30,
+          "level": "B1",
+          "title": "Résoudre un conflit · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "un malentendu",
+            "s'excuser",
+            "clarifier"
+          ]
+        },
+        {
+          "lesson": 31,
+          "level": "B1",
+          "title": "Environnement · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "l'environnement",
+            "éviter",
+            "le gaspillage"
+          ]
+        },
+        {
+          "lesson": 32,
+          "level": "B1",
+          "title": "Services et démarches · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "un dossier",
+            "un justificatif",
+            "renouveler"
+          ]
+        },
+        {
+          "lesson": 33,
+          "level": "B1",
+          "title": "Hypothèses · B1",
+          "words": 3,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 2,
+          "missingSamples": [
+            "une possibilité",
+            "probablement"
+          ]
+        },
+        {
+          "lesson": 34,
+          "level": "B1",
+          "title": "Rapporter des propos · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "une déclaration",
+            "raconter",
+            "selon"
+          ]
+        },
+        {
+          "lesson": 35,
+          "level": "B1",
+          "title": "Courriel formel · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "une demande",
+            "concernant",
+            "à l'avance"
+          ]
+        },
+        {
+          "lesson": 36,
+          "level": "B1",
+          "title": "Présenter un argument · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "tout d'abord",
+            "en outre",
+            "en conclusion"
+          ]
+        },
+        {
+          "lesson": 37,
+          "level": "B2",
+          "title": "Défendre une opinion",
+          "words": 7,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "un point de vue",
+            "un argument",
+            "nuancer",
+            "certes",
+            "convaincant",
+            "une objection"
+          ]
+        },
+        {
+          "lesson": 38,
+          "level": "B2",
+          "title": "Correspondance administrative",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "une demande",
+            "un justificatif",
+            "veuillez trouver",
+            "ci-joint",
+            "dans les meilleurs délais",
+            "une pièce complémentaire"
+          ]
+        },
+        {
+          "lesson": 39,
+          "level": "B2",
+          "title": "Médias et vérification des sources",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "une source fiable",
+            "recouper",
+            "une rumeur",
+            "un témoignage",
+            "vérifier les faits",
+            "biaisé"
+          ]
+        },
+        {
+          "lesson": 40,
+          "level": "B2",
+          "title": "Hypothèses et scénarios alternatifs",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "une hypothèse",
+            "à condition que",
+            "à moins que",
+            "un scénario",
+            "envisager",
+            "une conséquence"
+          ]
+        },
+        {
+          "lesson": 41,
+          "level": "B2",
+          "title": "Voix passive et style institutionnel",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "être mis en place",
+            "être pris en compte",
+            "une mesure",
+            "une réglementation",
+            "être tenu de",
+            "une échéance"
+          ]
+        },
+        {
+          "lesson": 42,
+          "level": "B2",
+          "title": "Verbes prépositionnels et précision",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "participer à",
+            "dépendre de",
+            "s'attendre à",
+            "renoncer à",
+            "profiter de",
+            "faire face à"
+          ]
+        },
+        {
+          "lesson": 43,
+          "level": "B2",
+          "title": "Exprimer la probabilité et la déduction",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "vraisemblable",
+            "il se peut que",
+            "sans doute",
+            "à première vue",
+            "déduire",
+            "une certitude"
+          ]
+        },
+        {
+          "lesson": 44,
+          "level": "B2",
+          "title": "Négociation et résolution des conflits",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "un compromis",
+            "une contrepartie",
+            "une concession",
+            "un délai",
+            "négocier",
+            "un désaccord"
+          ]
+        },
+        {
+          "lesson": 45,
+          "level": "B2",
+          "title": "Société, culture et intégration",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "la diversité",
+            "l'intégration",
+            "un enjeu",
+            "la cohésion sociale",
+            "un préjugé",
+            "s'impliquer"
+          ]
+        },
+        {
+          "lesson": 46,
+          "level": "B2",
+          "title": "Parcours professionnel et entretien",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "un parcours",
+            "une compétence transférable",
+            "prendre en charge",
+            "un résultat mesurable",
+            "un défi",
+            "évoluer"
+          ]
+        },
+        {
+          "lesson": 47,
+          "level": "B2",
+          "title": "Synthèse et reformulation",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "une synthèse",
+            "reformuler",
+            "un propos",
+            "souligner",
+            "en somme",
+            "une nuance"
+          ]
+        },
+        {
+          "lesson": 48,
+          "level": "B2",
+          "title": "Projet intégré · Présenter et convaincre",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "une proposition",
+            "un objectif",
+            "une faisabilité",
+            "une échéance",
+            "un indicateur",
+            "mettre en œuvre"
+          ]
+        }
+      ],
+      "priorityMissing": [
+        {
+          "lesson": 2,
+          "level": "A1",
+          "title": "التعارف وتقديم النفس",
+          "words": 8
+        },
+        {
+          "lesson": 4,
+          "level": "A1",
+          "title": "في المقهى والمطعم",
+          "words": 8
+        },
+        {
+          "lesson": 6,
+          "level": "A1",
+          "title": "الفندق والإقامة",
+          "words": 8
+        },
+        {
+          "lesson": 7,
+          "level": "A1",
+          "title": "الاحتياجات والطوارئ",
+          "words": 7
+        },
+        {
+          "lesson": 8,
+          "level": "A1",
+          "title": "الماضي والخطط القريبة",
+          "words": 7
+        },
+        {
+          "lesson": 9,
+          "level": "A1",
+          "title": "العائلة والملكية · La famille",
+          "words": 7
+        },
+        {
+          "lesson": 11,
+          "level": "A1",
+          "title": "المنزل والغرف · À la maison",
+          "words": 7
+        },
+        {
+          "lesson": 12,
+          "level": "A1",
+          "title": "التسوق والكميات · Faire les courses",
+          "words": 7
+        },
+        {
+          "lesson": 13,
+          "level": "A2",
+          "title": "الماضي المركب passé composé · Hier",
+          "words": 7
+        },
+        {
+          "lesson": 14,
+          "level": "A2",
+          "title": "المواعيد والخطط · Rendez-vous et projets",
+          "words": 7
+        }
+      ],
+      "validUniquePairs": 375
+    },
+    "de": {
+      "name": "الألمانية",
+      "academy": "german-academy.html",
+      "lessons": 48,
+      "mapping": "exact-index",
+      "sourceRecords": 421,
+      "sourceUnique": 409,
+      "sourceAmbiguousTexts": 12,
+      "words": 289,
+      "exactMatches": 65,
+      "ambiguousMatches": 0,
+      "levels": [
+        {
+          "lesson": 1,
+          "level": "A1",
+          "title": "الحروف وأصوات الألماني",
+          "words": 9,
+          "matched": 9,
+          "ambiguous": 0,
+          "missing": 0,
+          "missingSamples": []
+        },
+        {
+          "lesson": 2,
+          "level": "A1",
+          "title": "التعارف وتقديم النفس",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "Ich heiße…",
+            "Freut mich.",
+            "Wie heißen Sie?",
+            "Wie heißt du?",
+            "Ich wohne in Berlin.",
+            "Ich spreche ein bisschen Deutsch."
+          ]
+        },
+        {
+          "lesson": 3,
+          "level": "A1",
+          "title": "الأرقام من الصفر إلى 100 والأسعار",
+          "words": 34,
+          "matched": 30,
+          "ambiguous": 0,
+          "missing": 4,
+          "missingSamples": [
+            "einundzwanzig",
+            "dreiundzwanzig",
+            "fünfunddreißig",
+            "neunundneunzig"
+          ]
+        },
+        {
+          "lesson": 4,
+          "level": "A1",
+          "title": "في المقهى والمطعم",
+          "words": 8,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 8,
+          "missingSamples": [
+            "Einen Kaffee, bitte.",
+            "Die Speisekarte, bitte.",
+            "Zahlen, bitte.",
+            "Einen Tee, bitte.",
+            "Einen Tisch für zwei, bitte.",
+            "Ohne Zucker, bitte."
+          ]
+        },
+        {
+          "lesson": 5,
+          "level": "A1",
+          "title": "الاتجاهات والمواصلات",
+          "words": 8,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "links",
+            "rechts",
+            "Gehen Sie geradeaus.",
+            "Biegen Sie links ab.",
+            "Biegen Sie rechts ab.",
+            "Ist das weit?"
+          ]
+        },
+        {
+          "lesson": 6,
+          "level": "A1",
+          "title": "الفندق والإقامة",
+          "words": 8,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "Ich habe eine Reservierung.",
+            "ein Zimmer",
+            "Auf welchen Namen?",
+            "Ist das Frühstück inbegriffen?",
+            "Wo ist der Aufzug?",
+            "Ich brauche ein Handtuch."
+          ]
+        },
+        {
+          "lesson": 7,
+          "level": "A1",
+          "title": "الاحتياجات والطوارئ",
+          "words": 7,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "Ich brauche einen Arzt.",
+            "Wo ist die Apotheke?",
+            "Rufen Sie einen Krankenwagen!",
+            "Wo ist das Krankenhaus?",
+            "Ich habe eine Allergie.",
+            "Mir ist schlecht."
+          ]
+        },
+        {
+          "lesson": 8,
+          "level": "A1",
+          "title": "الماضي والخطط القريبة",
+          "words": 7,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 4,
+          "missingSamples": [
+            "Ich möchte…",
+            "nächste Woche",
+            "Um wie viel Uhr?",
+            "Morgen habe ich einen Termin."
+          ]
+        },
+        {
+          "lesson": 9,
+          "level": "A1",
+          "title": "العائلة والملكية · Familie",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "Mutter",
+            "Vater",
+            "Das ist meine Mutter.",
+            "meine Schwester",
+            "mein Bruder",
+            "meine Eltern"
+          ]
+        },
+        {
+          "lesson": 10,
+          "level": "A1",
+          "title": "روتين اليوم والوقت · Tagesablauf",
+          "words": 7,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 5,
+          "missingSamples": [
+            "frühstücken",
+            "duschen",
+            "zur Arbeit gehen",
+            "zu Mittag essen",
+            "Ich komme um sechs Uhr nach Hause."
+          ]
+        },
+        {
+          "lesson": 11,
+          "level": "A1",
+          "title": "المنزل والغرف · Zu Hause",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Küche",
+            "das Schlafzimmer",
+            "Die Küche ist neben dem Bad.",
+            "das Wohnzimmer",
+            "das Bad",
+            "der Balkon"
+          ]
+        },
+        {
+          "lesson": 12,
+          "level": "A1",
+          "title": "التسوق والكميات · Einkaufen",
+          "words": 7,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "ein Kilo",
+            "billig",
+            "Ich hätte gern ein Kilo Äpfel.",
+            "ein halbes Kilo",
+            "ein Liter Milch",
+            "Kann ich bar bezahlen?"
+          ]
+        },
+        {
+          "lesson": 13,
+          "level": "A2",
+          "title": "الماضي القريب Perfekt · Gestern",
+          "words": 7,
+          "matched": 4,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "gemacht",
+            "Ich habe gestern Deutsch gelernt.",
+            "Wir sind gestern angekommen."
+          ]
+        },
+        {
+          "lesson": 14,
+          "level": "A2",
+          "title": "المواعيد والخطط · Termine und Pläne",
+          "words": 7,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 6,
+          "missingSamples": [
+            "der Termin",
+            "Ich werde morgen zum Arzt gehen.",
+            "Können wir uns treffen?",
+            "um neun Uhr",
+            "Ich muss den Termin verschieben.",
+            "Ich habe morgen Zeit."
+          ]
+        },
+        {
+          "lesson": 15,
+          "level": "A2",
+          "title": "الصحة وحجز موعد · Beim Arzt",
+          "words": 7,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 5,
+          "missingSamples": [
+            "Kopfschmerzen",
+            "die Erkältung",
+            "Ich habe seit zwei Tagen Kopfschmerzen.",
+            "seit gestern",
+            "Ich möchte einen Termin vereinbaren."
+          ]
+        },
+        {
+          "lesson": 16,
+          "level": "A2",
+          "title": "المقارنة وإبداء الرأي · Meinungen",
+          "words": 7,
+          "matched": 3,
+          "ambiguous": 0,
+          "missing": 4,
+          "missingSamples": [
+            "Der Zug ist schneller als der Bus.",
+            "günstiger",
+            "meiner Meinung nach",
+            "Ich fahre lieber mit dem Zug."
+          ]
+        },
+        {
+          "lesson": 17,
+          "level": "A2",
+          "title": "سرد الماضي · تطبيق A2",
+          "words": 3,
+          "matched": 1,
+          "ambiguous": 0,
+          "missing": 2,
+          "missingSamples": [
+            "zuerst",
+            "danach"
+          ]
+        },
+        {
+          "lesson": 18,
+          "level": "A2",
+          "title": "العمل والخبرة · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Erfahrung",
+            "die Aufgabe",
+            "zuständig"
+          ]
+        },
+        {
+          "lesson": 19,
+          "level": "A2",
+          "title": "مشكلة السفر · تطبيق A2",
+          "words": 3,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 1,
+          "missingSamples": [
+            "die Reservierung"
+          ]
+        },
+        {
+          "lesson": 20,
+          "level": "A2",
+          "title": "شكوى واستبدال · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "kaputt",
+            "umtauschen",
+            "die Rechnung"
+          ]
+        },
+        {
+          "lesson": 21,
+          "level": "A2",
+          "title": "الصحة والأعراض · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Schmerzen",
+            "schwindelig",
+            "die Untersuchung"
+          ]
+        },
+        {
+          "lesson": 22,
+          "level": "A2",
+          "title": "وصف الأماكن · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "freundlich",
+            "ruhig",
+            "die Umgebung"
+          ]
+        },
+        {
+          "lesson": 23,
+          "level": "A2",
+          "title": "السبب والشرط · تطبيق A2",
+          "words": 3,
+          "matched": 2,
+          "ambiguous": 0,
+          "missing": 1,
+          "missingSamples": [
+            "obwohl"
+          ]
+        },
+        {
+          "lesson": 24,
+          "level": "A2",
+          "title": "الخطط المستقبلية · تطبيق A2",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "nächste Woche",
+            "wahrscheinlich",
+            "vorhaben"
+          ]
+        },
+        {
+          "lesson": 25,
+          "level": "B1",
+          "title": "Erlebnisse erzählen · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "Erfahrung",
+            "plötzlich",
+            "schließlich"
+          ]
+        },
+        {
+          "lesson": 26,
+          "level": "B1",
+          "title": "الرأي والحجج · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Meinung",
+            "der Vorteil",
+            "dagegen"
+          ]
+        },
+        {
+          "lesson": 27,
+          "level": "B1",
+          "title": "مقابلة العمل · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Bewerbung",
+            "die Stärke",
+            "zuverlässig"
+          ]
+        },
+        {
+          "lesson": 28,
+          "level": "B1",
+          "title": "السكن والحي · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Umgebung",
+            "die Miete",
+            "bevorzugen"
+          ]
+        },
+        {
+          "lesson": 29,
+          "level": "B1",
+          "title": "الإعلام والتقنية · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Nachricht",
+            "die Quelle",
+            "herunterladen"
+          ]
+        },
+        {
+          "lesson": 30,
+          "level": "B1",
+          "title": "الخلاف والتفاهم · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "das Missverständnis",
+            "sich entschuldigen",
+            "klären"
+          ]
+        },
+        {
+          "lesson": 31,
+          "level": "B1",
+          "title": "البيئة · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Umwelt",
+            "vermeiden",
+            "die Verschwendung"
+          ]
+        },
+        {
+          "lesson": 32,
+          "level": "B1",
+          "title": "الخدمات والإجراءات · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "der Antrag",
+            "die Unterlage",
+            "beantragen"
+          ]
+        },
+        {
+          "lesson": 33,
+          "level": "B1",
+          "title": "الافتراض والاحتمال · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Möglichkeit",
+            "vermutlich",
+            "falls"
+          ]
+        },
+        {
+          "lesson": 34,
+          "level": "B1",
+          "title": "نقل الكلام · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Aussage",
+            "berichten",
+            "angeblich"
+          ]
+        },
+        {
+          "lesson": 35,
+          "level": "B1",
+          "title": "رسالة رسمية · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "die Anfrage",
+            "bezüglich",
+            "im Voraus"
+          ]
+        },
+        {
+          "lesson": 36,
+          "level": "B1",
+          "title": "عرض وتقديم · B1",
+          "words": 3,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 3,
+          "missingSamples": [
+            "der Zusammenhang",
+            "zunächst",
+            "zusammenfassen"
+          ]
+        },
+        {
+          "lesson": 37,
+          "level": "B2",
+          "title": "Eine Position überzeugend vertreten · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "der Standpunkt",
+            "das Argument",
+            "abwägen",
+            "überzeugend",
+            "der Einwand",
+            "allerdings"
+          ]
+        },
+        {
+          "lesson": 38,
+          "level": "B2",
+          "title": "Formelle Korrespondenz · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Anfrage",
+            "die Anlage",
+            "die Frist",
+            "sich erkundigen nach",
+            "bezüglich",
+            "die Bearbeitung"
+          ]
+        },
+        {
+          "lesson": 39,
+          "level": "B2",
+          "title": "Medienkompetenz und Quellenprüfung · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Quelle",
+            "die Berichterstattung",
+            "überprüfen",
+            "die Behauptung",
+            "voreingenommen",
+            "die Auswirkung"
+          ]
+        },
+        {
+          "lesson": 40,
+          "level": "B2",
+          "title": "Irreale Bedingungen und Folgen · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Voraussetzung",
+            "andernfalls",
+            "vorausgesetzt",
+            "der Umstand",
+            "verhindern",
+            "rückblickend"
+          ]
+        },
+        {
+          "lesson": 41,
+          "level": "B2",
+          "title": "Passiv und sachlicher Berichtsstil · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "der Vorgang",
+            "die Genehmigung",
+            "bearbeitet werden",
+            "festgelegt",
+            "die Maßnahme",
+            "die Zuständigkeit"
+          ]
+        },
+        {
+          "lesson": 42,
+          "level": "B2",
+          "title": "Verben mit festen Präpositionen · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "sich bewerben um",
+            "bestehen aus",
+            "sich beziehen auf",
+            "teilnehmen an",
+            "verfügen über",
+            "abhängig von"
+          ]
+        },
+        {
+          "lesson": 43,
+          "level": "B2",
+          "title": "Vermutungen und abgestufte Sicherheit · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "vermutlich",
+            "offenbar",
+            "ausschließen",
+            "die Wahrscheinlichkeit",
+            "naheliegend",
+            "der Hinweis"
+          ]
+        },
+        {
+          "lesson": 44,
+          "level": "B2",
+          "title": "Verhandeln und Konflikte lösen · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "der Kompromiss",
+            "entgegenkommen",
+            "im Gegenzug",
+            "die Bedingung",
+            "vereinbaren",
+            "der Spielraum"
+          ]
+        },
+        {
+          "lesson": 45,
+          "level": "B2",
+          "title": "Gesellschaft, Vielfalt und Integration · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Teilhabe",
+            "die Vielfalt",
+            "die Zugehörigkeit",
+            "die Benachteiligung",
+            "sich engagieren",
+            "die Voraussetzung"
+          ]
+        },
+        {
+          "lesson": 46,
+          "level": "B2",
+          "title": "Berufliche Entwicklung und Bewerbung · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "die Berufserfahrung",
+            "die Führungskompetenz",
+            "verantwortlich sein für",
+            "die Herausforderung",
+            "umsetzen",
+            "die Leistung"
+          ]
+        },
+        {
+          "lesson": 47,
+          "level": "B2",
+          "title": "Zusammenfassen und präzise umformulieren · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "zusammenfassen",
+            "wiedergeben",
+            "im Wesentlichen",
+            "demnach",
+            "die Kernaussage",
+            "präzisieren"
+          ]
+        },
+        {
+          "lesson": 48,
+          "level": "B2",
+          "title": "Abschlussprojekt · Planen und präsentieren · B2",
+          "words": 7,
+          "matched": 0,
+          "ambiguous": 0,
+          "missing": 7,
+          "missingSamples": [
+            "der Vorschlag",
+            "die Umsetzung",
+            "die Machbarkeit",
+            "der Meilenstein",
+            "die Kennzahl",
+            "die Auswertung"
+          ]
+        }
+      ],
+      "priorityMissing": [
+        {
+          "lesson": 4,
+          "level": "A1",
+          "title": "في المقهى والمطعم",
+          "words": 8
+        },
+        {
+          "lesson": 9,
+          "level": "A1",
+          "title": "العائلة والملكية · Familie",
+          "words": 7
+        },
+        {
+          "lesson": 11,
+          "level": "A1",
+          "title": "المنزل والغرف · Zu Hause",
+          "words": 7
+        },
+        {
+          "lesson": 18,
+          "level": "A2",
+          "title": "العمل والخبرة · تطبيق A2",
+          "words": 3
+        },
+        {
+          "lesson": 20,
+          "level": "A2",
+          "title": "شكوى واستبدال · تطبيق A2",
+          "words": 3
+        },
+        {
+          "lesson": 21,
+          "level": "A2",
+          "title": "الصحة والأعراض · تطبيق A2",
+          "words": 3
+        },
+        {
+          "lesson": 22,
+          "level": "A2",
+          "title": "وصف الأماكن · تطبيق A2",
+          "words": 3
+        },
+        {
+          "lesson": 24,
+          "level": "A2",
+          "title": "الخطط المستقبلية · تطبيق A2",
+          "words": 3
+        },
+        {
+          "lesson": 25,
+          "level": "B1",
+          "title": "Erlebnisse erzählen · B1",
+          "words": 3
+        },
+        {
+          "lesson": 26,
+          "level": "B1",
+          "title": "الرأي والحجج · B1",
+          "words": 3
+        }
+      ],
+      "validUniquePairs": 397
+    },
+    "ru": {
+      "name": "الروسية",
+      "academy": "russian-academy.html",
+      "lessons": 48,
+      "mapping": "no-local-text-index",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    },
+    "pt": {
+      "name": "البرتغالية الأوروبية",
+      "academy": "portuguese-academy.html",
+      "lessons": 48,
+      "mapping": "no-local-text-index",
+      "sourceRecords": null,
+      "sourceUnique": null,
+      "sourceAmbiguousTexts": null,
+      "words": null,
+      "exactMatches": null,
+      "ambiguousMatches": null,
+      "levels": [],
+      "priorityMissing": []
+    }
+  }
+}
