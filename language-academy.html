@@ -410,8 +410,15 @@ document.getElementById('source').addEventListener('change',function(){source=th
 document.getElementById('target').addEventListener('change',function(){target=this.value; if(source===target){source=Object.keys(LANG).find(function(k){return k!==target})||'ar'} fillSelects();renderPractice();resetMiniQuiz();updateUrl()});
 document.getElementById('swap').addEventListener('click',function(){var x=source;source=target;target=x;fillSelects();renderPractice();resetMiniQuiz();updateUrl()});
 document.querySelectorAll('.lang-btn').forEach(function(b){b.addEventListener('click',function(){ui=b.dataset.ui;try{localStorage.setItem('sd_lang',ui)}catch(e){};renderStatic()})});
-var params=new URLSearchParams(location.search);if(LANG[params.get('source')])source=params.get('source');if(LANG[params.get('target')])target=params.get('target');if(source===target)target=source==='de'?'en':'de';
-pickUi();renderStatic();updateUrl();
+var params=new URLSearchParams(location.search);
+pickUi();
+// Default explanations follow the chosen site language; explicit Arabic learning links always override this.
+if(!params.has('source')&&LANG[ui])source=ui;
+if(LANG[params.get('source')])source=params.get('source');
+if(!params.has('target'))target=source==='en'?'de':'en';
+if(LANG[params.get('target')])target=params.get('target');
+if(source===target)target=source==='en'?'de':'en';
+renderStatic();updateUrl();
 })();
 </script>
 </body>
