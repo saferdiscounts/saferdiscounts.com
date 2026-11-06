@@ -165,3 +165,12 @@ test('European writing feedback reports transparent rubric indicators',()=>{
   assert.match(html,/لا تثبت صحة المعنى أو القواعد أو الإملاء/,lang+' limitations');
  }
 });
+
+test('Brazilian audio audit lesson count follows the real course without implying audio coverage',()=>{
+ const snapshot=JSON.parse(read('academy-audio-audit.json'));
+ const lessons=readLessonArray(read('ptbr-academy.html'));
+ assert.equal(snapshot.languages.ptbr.lessons,lessons.length,'Brazilian lesson count in audio audit must match curriculum');
+ assert.equal(snapshot.languages.ptbr.words,null,'No verified word denominator exists');
+ assert.equal(snapshot.languages.ptbr.exactMatches,null,'Do not treat storage objects as validated text-to-audio mapping');
+ assert.equal(snapshot.storageAudit.languages.ptbr.paired,511,'Preserve last measured R2 pairs snapshot');
+});
