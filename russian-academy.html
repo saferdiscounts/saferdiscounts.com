@@ -146,4 +146,4 @@ document.getElementById("prevLesson").onclick=()=>{current--;renderList();render
 document.querySelectorAll(".level-btn").forEach(b=>b.addEventListener("click",()=>{filter=b.dataset.level;document.querySelectorAll(".level-btn").forEach(x=>x.classList.toggle("active",x===b));renderList()}));
 document.getElementById("search").addEventListener("input",renderList);
 renderList();renderLesson();updateProgress();
-</script></body></html>
+</script><script src="russian-review.js" defer></script></body></html>
