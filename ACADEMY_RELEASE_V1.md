@@ -72,3 +72,17 @@ New material in the current close-out: seven Brazilian A1 lessons, twelve Englis
 - **Release:** Content CI green and Pages deployment green for the *same release SHA* plus recorded browser checks; then mark V1 reliable and archive new requests for V2.
 
 **Status: CONTENT STRUCTURE COMPLETE; FULL LEARNING-QUALITY / AUDIO / IMAGE APPROVAL PENDING.** The overall quality-readiness percentage is intentionally not invented until those independent sample denominators have been audited. Current 100% does **not** mean the academy is ready to certify learners.
+
+## Practical Brazilian phrase trainer benchmark (2026-11-07)
+
+A focused, *original-content* extension was built after reviewing two competing patterns:
+- LingoHut: short themed vocabulary sessions and varied retrieval games; source: https://www.lingohut.com/ar/l66/%D8%AA%D8%B9%D9%84%D9%85-%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D8%AA%D8%BA%D8%A7%D9%84%D9%8A%D8%A9 (125 topic lessons advertised).
+- 50LANGUAGES: situation-based phrasebook, bilingual audio/phrase practice; source: https://50languages.com/ar/learn/phrasebook/px (100 themes advertised).
+
+**Implemented:** `ptbr-practical-lab.html`, `ptbr-practical-data.js`, `ptbr-practical-lab.js` and reusable `academy-mastery.js`; 10 topics × 8 original Portuguese-BR/Arabic phrases = 80 phrases. Supports reveal-on-demand flashcards, 5 randomized comprehension questions with alternating translation direction, one sentence-order exercise per topic, per-topic mistake bank and 1-day/7-day/30-day review ladder. Links now exist from `index.html`, `language-academy.html`, `ptbr-academy.html` and `ptbr-travel-guide.html`.
+
+**Pass criterion for a practice round:** 6/6 correct (five recognition items and one ordering challenge), with three *date-separated* perfect rounds before claiming spaced-recall completion of that topic. This is **not** speech production, grammatical free-writing verification, human audio QA or CEFR proficiency. Audio buttons activate only when a local pt-BR browser voice is available and are labeled as synthetic; absence of a voice must never be reported as a completed listening test. No third-party course text or recordings were imported.
+
+**Remaining release blockers:** Verify natural and slowed MP3 alignment against displayed words, language-expert review of translations and examples, end-to-end mobile/desktop browser smoke tests, and real learner comprehension/production tests. A GitHub Actions pass is automation evidence, not pedagogical certification. The 80 phrase items are *supplementary* and not counted twice toward the 384 CEFR core lesson slots.
+
+**Practical Brazilian phrase trainer benchmark** is a bounded release enhancement, not a commitment to reproduce the competitors' 100/125 topics. Continue the quality gates before adding further subject catalogs.
