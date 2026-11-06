@@ -26,7 +26,7 @@ test('Practical lab has navigation from home, catalog, Brazilian academy and tou
   assert.ok(read(file).includes('href="ptbr-practical-lab.html"'),file+' missing trainer route');
  }
  const page=read('ptbr-practical-lab.html');
- for(const script of ['ptbr-practical-data.js','ptbr-practical-lab.js','academy-mastery.js'])assert.ok(page.includes('src="'+script+'"'),script+' not loaded');
+ for(const script of ['ptbr-practical-data.js','ptbr-practical-lab.js','academy-mastery.js','ptbr-writing-check.js'])assert.ok(page.includes('src="'+script+'"'),script+' not loaded');
  assert.match(page,/80 عبارة/);assert.match(page,/لا نحتسبه تسجيلًا بشريًا/);
 });
 test('Drills do not show correct answers before response; speech remains optional and cannot count as human audio',()=>{
@@ -36,8 +36,13 @@ test('Drills do not show correct answers before response; speech remains optiona
  assert.match(src,/if\(locked\)return/);
  assert.match(src,/mistakes\.push\(id\)/);
  assert.match(src,/orderIndex/);
- assert.match(src,/if\(correct\)score\+\+/);
- assert.match(src,/score===6/);
+ assert.match(src,/if\(correct\)\{score\+\+;markKnown\(orderIndex\)\}/);
+ assert.match(src,/score===7/);
+ assert.match(src,/stage='write'/);
+ assert.match(src,/writingCheck\.compare\(/);
+ assert.match(src,/!round\.includes\(x\.i\)/);
+ assert.match(src,/!round\.includes\(i\)&&i!==orderIndex/);
+ assert.match(src,/sd_ptbr_practical_mastery_v2/);
  assert.match(src,/mastery\.record/);
  assert.match(src,/\^pt\[-_\]BR\$/i);
  assert.match(src,/window\.speechSynthesis\.getVoices\(\)/);
@@ -55,4 +60,33 @@ test('Spaced review requires 3 perfect sessions on different scheduled dates',()
  assert.equal(m.state(x,'2026-11-14').retained,true);
  x=m.record(x,2,[1],'2026-11-15');assert.equal(x.streak,0);assert.equal(x.due,'2026-11-16');
  assert.equal(m.state(x,'2026-11-16').retained,false);
+});
+
+test('Writing recall compares target text without erasing meaningful Portuguese accents',()=>{
+ const check=require('../ptbr-writing-check.js');
+ assert.equal(check.compare('OI, EU ME CHAMO LAILA!', 'Oi! Eu me chamo Laila.').exact,true);
+ assert.equal(check.compare('  Oi!   Eu me chamo Laila. ', 'Oi! Eu me chamo Laila.').exact,true);
+ assert.equal(check.compare('Nao consigo entender', 'Não consigo entender').issue,'accents');
+ assert.equal(check.compare('voce', 'você').exact,false);
+ assert.equal(check.compare('Eu sou do Egito', 'do Egito Eu sou').issue,'order');
+ assert.equal(check.compare('Tenho um bilhete', 'Tenho uma reserva').issue,'different');
+ assert.equal(check.compare('', 'Tenho uma reserva').issue,'empty');
+ assert.throws(()=>check.compare('a', ''),TypeError);
+});
+test('All ten topics have enough distinct phrases for 5 comprehension prompts, separate ordering and separate unprompted writing',()=>{
+ for(const t of data().themes){
+  const phrases=t.phrases;
+  for(let i=0;i<phrases.length;i++){
+   for(let j=i+1;j<phrases.length;j++){
+    const available=phrases.map((p,k)=>k).filter(k=>k!==i&&k!==j);
+    assert.equal(available.length,6);
+   }
+  }
+  assert.ok(phrases.every(p=>p[0].trim().split(/\\s+/).length>=4),t.id+' cannot support distinct sentence ordering');
+ }
+ const script=read('ptbr-practical-lab.js');
+ assert.match(script,/writingFinished=true/);
+ assert.match(script,/if\(writingFinished\)return/);
+ assert.match(script,/if\(checked\.exact\)\{score\+\+;markKnown\(writingIndex\)\}/);
+ assert.match(script,/لا يصحح المعنى|لا يصحح/);
 });
