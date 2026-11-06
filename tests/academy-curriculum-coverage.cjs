@@ -286,3 +286,16 @@ test('All 216 European lessons have usable translated conversations and writing 
  }
  assert.equal(count,216);
 });
+
+test('Brazilian travel writing rubrics use phrases shown in lesson models',()=>{
+ const items=lessons('ptbr-academy.html');
+ for(const title of ['تسأل عن مكان شيء','الاتجاهات وفهم الطريق','الأيام والوقت والمواعيد','الأسعار والدفع','تطلب أكلًا ومشروبًا']){
+  const lesson=items.find(x=>x.title===title);
+  assert.ok(lesson,'Missing travel lesson '+title);
+  const model=lesson.writing.model.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
+  for(const key of lesson.writing.keywords){
+   const stem=key.replace(/\.{3}|…/g,'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase().trim();
+   assert.ok(model.includes(stem),'Writing model lacks target '+key+' in '+title);
+  }
+ }
+});
