@@ -41,7 +41,7 @@ test('Comprehension hides dialogue; writing model is shown only after draft',()=
  assert.doesNotThrow(()=>new vm.Script(script[0],{filename:'context-lab-inline.js'}));
  assert.match(script[0],/phase='quiz'/);
  assert.match(script[0],/function quiz\(\)/);
- assert.match(script[0],/paper\.innerHTML='<span class="tag"'/);
+ assert.match(script[0],/paper\.innerHTML='<span class="tag">/);
  assert.match(script[0],/a\.length<8/);
  assert.match(script[0],/mdl\.classList\.remove\('hidden'\)/);
  assert.match(script[0],/لا يصحّح|لم يتم تقييم صحة قواعد جملتك تلقائيًا/);
