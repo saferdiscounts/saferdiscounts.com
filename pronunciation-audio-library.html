@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>مكتبة التسجيلات الصوتية | Safer Discounts</title>
-<meta name="description" content="مكتبة تسجيلات نطق طبيعية وبطيئة لتعليم الإنجليزية والإسبانية والإيطالية والفرنسية للناطقين بالعربية.">
+<meta name="description" content="مكتبة التسجيلات المفهرسة بالنص للبرتغالية البرازيلية والفرنسية، مع النطق العادي والبطيء وروابط بقية الأكاديميات.">
 <style>
 :root{--navy:#092d49;--blue:#0876aa;--orange:#f16a25;--ink:#203545;--muted:#657988;--line:#dce7ed;--paper:#f4f8fb}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
@@ -26,7 +26,7 @@ button:disabled{opacity:.45;cursor:not-allowed}
 a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-size:12px}
 </style></head>
 <body>
-<header><div class="wrap"><h1>🎧 مكتبة النطق المسجّل</h1><p>تسجيلات طبيعية وبطيئة، مع النص والترجمة العربية — للمتحدثين بالعربية.</p></div></header>
+<header><div class="wrap"><h1>🎧 مكتبة النطق المسجّل</h1><p>تسجيلات عادية وبطيئة من فهارس مصدرها معروف، مع النص والترجمة المتاحة بالعربية.</p></div></header>
 <main class="wrap">
 <div class="toolbar">
 <select id="language" aria-label="اختيار اللغة">
@@ -35,7 +35,7 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 <input id="search" type="search" placeholder="ابحث بالكلمة أو الترجمة العربية أو رقم الملف">
 </div>
 <div id="status" class="meta">جاري تحميل فهرس التسجيلات…</div>
-<div class="notice">اختر «طبيعي» لسماع التسجيل الأصلي، أو «بطيء» للتدريب على النطق. بعض تسجيلات الإنجليزية تتضمن مثالًا صوتيًا إضافيًا لأصوات الحروف.</div>
+<div class="notice">البرازيلية والفرنسية مفهرستان الآن بالنص والملف، لكن التسجيلات لم تخضع كلها لمراجعة استماع بشرية مستقلة. الملفات المرفوعة للغات الأخرى لم تُربط هنا حتى يتم إثبات مطابقة الكلمة للتسجيل؛ الدروس تستمر بنطق المتصفح عند الحاجة.</div>
 <section id="list" class="list" aria-live="polite"></section>
 </main>
 <footer>Safer Discounts · Audio learning for Arabic speakers</footer>
@@ -44,16 +44,17 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 const MANIFEST_URL='https://audio.saferdiscounts.com/language-pronunciation/manifest.json';
 const BASE='https://audio.saferdiscounts.com/';
 const labels={ptbr:'البرتغالية البرازيلية',en:'الإنجليزية',it:'الإيطالية',es:'الإسبانية',fr:'الفرنسية',de:'الألمانية',ru:'الروسية',pt:'البرتغالية الأوروبية'};
+const courses={ptbr:'ptbr-academy.html',en:'english-academy.html',it:'italian-academy.html',es:'spanish-academy.html',fr:'french-academy.html',de:'german-academy.html',ru:'russian-academy.html',pt:'portuguese-academy.html'};
 const lang=document.getElementById('language'), search=document.getElementById('search'), list=document.getElementById('list'), status=document.getElementById('status');
 let data=null, audio=new Audio();
 const params=new URLSearchParams(location.search); if(labels[params.get('lang')]) lang.value=params.get('lang');
 function play(path){if(!path)return;audio.pause();audio=new Audio(BASE+path);audio.play().catch(()=>{status.textContent='تعذر تشغيل التسجيل. تأكد من اكتمال رفع الملفات إلى مكتبة الصوت.';});}
 function render(){
  if(!data)return;
- const code=lang.value, pack=data.languages[code]; if(!pack){list.innerHTML='<div class="empty">لا توجد تسجيلات لهذه اللغة.</div>';return;}
+ const code=lang.value, pack=data.languages[code]; if(!pack||!Array.isArray(pack.records)){status.textContent=labels[code]+' · تسجيلات مرفوعة، لكن مطابقتها بالكلمات لم تُعتمد بعد';list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>لسه بنراجع فهرسة هذه اللغة.</strong><p>ملفات الصوت موجودة في R2، لكن من غير مرجع نصي موثوق لكل ملف مش هنعرض أي تسجيل باسم كلمة قد تكون مختلفة. تقدر تبدأ الدروس الآن بالنطق المتاح داخل الأكاديمية.</p><p><a href="'+courses[code]+'">افتح الأكاديمية ←</a></p></div>';return;}
  const q=search.value.trim().toLocaleLowerCase();
  const rows=pack.records.filter(r=>(r.text+' '+r.arabic+' '+r.id).toLocaleLowerCase().includes(q));
- status.textContent=labels[code]+' · '+pack.records.length+' تسجيلًا أساسيًا · المعروض '+rows.length;
+ status.textContent=labels[code]+' · '+pack.records.length+' تسجيلًا مفهرسًا بالنص · المعروض '+rows.length+' · لم تُراجع كل التسجيلات سمعيًا';
  if(!rows.length){list.innerHTML='<div class="empty">لا توجد نتائج مطابقة لبحثك.</div>';return;}
  list.innerHTML=rows.slice(0,180).map((r,i)=>'<article class="item"><div class="phrase" dir="ltr">'+escapeHtml(r.text||r.id)+'</div><div class="arabic">'+escapeHtml(r.arabic||'')+'</div><div class="actions"><button data-path="'+escapeAttr(r.normal)+'">▶ طبيعي</button><button class="slow" '+(r.slow?'':'disabled')+' data-path="'+escapeAttr(r.slow||'')+'">🐢 بطيء</button>'+(r.example?'<button class="slow" data-path="'+escapeAttr(r.example)+'">مثال صوتي</button>':'')+(r.exampleSlow?'<button class="slow" data-path="'+escapeAttr(r.exampleSlow)+'">مثال بطيء</button>':'')+'</div></article>').join('');
  if(rows.length>180)status.textContent+=' · يتم عرض أول 180 نتيجة؛ ضيّق البحث لرؤية المزيد.';
@@ -62,6 +63,6 @@ function escapeHtml(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'
 function escapeAttr(s){return escapeHtml(s).replace(/'/g,'&#39;');}
 list.addEventListener('click',e=>{const b=e.target.closest('button[data-path]');if(b&&b.dataset.path)play(b.dataset.path);});
 lang.addEventListener('change',render); search.addEventListener('input',render);
-fetch(MANIFEST_URL).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(json=>{data=json;render();}).catch(err=>{status.textContent='مكتبة التسجيلات المفهرسة غير متاحة حاليًا؛ يمكنك الدخول مباشرة إلى الأكاديميات الثماني. لم يتم تشغيل أو اختبار أي ملف صوتي من هذه الصفحة بعد.';const academies=[['ptbr','🇧🇷','البرتغالية البرازيلية','ptbr-academy.html'],['en','🇬🇧','الإنجليزية','english-academy.html'],['it','🇮🇹','الإيطالية','italian-academy.html'],['es','🇪🇸','الإسبانية','spanish-academy.html'],['fr','🇫🇷','الفرنسية','french-academy.html'],['de','🇩🇪','الألمانية','german-academy.html'],['ru','🇷🇺','الروسية','russian-academy.html'],['pt','🇵🇹','البرتغالية الأوروبية','portuguese-academy.html']];list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>التسجيلات قيد التنظيم والربط.</strong><p>اختر الأكاديمية لمتابعة الدروس الحالية. ستظهر أزرار التسجيل الطبيعي والبطيء هنا بعد تجهيز فهرس موثوق يربط كل ملف بنصه وترجمته، دون تغيير الدروس أو ملفات الصوت الحالية.</p><div class="academy-links">'+academies.map(a=>'<a href="'+a[3]+'">'+a[1]+' '+a[2]+' ←</a>').join('')+'</div><p style="margin-top:12px"><a href="language-academy.html">عرض صفحة جميع الأكاديميات</a></p></div>';});
+fetch(MANIFEST_URL).then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(json=>{if(!json||json.schemaVersion!==1||!json.languages)throw new Error('Invalid manifest');data=json;render();}).catch(err=>{status.textContent='مكتبة التسجيلات المفهرسة غير متاحة حاليًا؛ يمكنك الدخول مباشرة إلى الأكاديميات الثماني. لم يتم تشغيل أو اختبار أي ملف صوتي من هذه الصفحة بعد.';const academies=[['ptbr','🇧🇷','البرتغالية البرازيلية','ptbr-academy.html'],['en','🇬🇧','الإنجليزية','english-academy.html'],['it','🇮🇹','الإيطالية','italian-academy.html'],['es','🇪🇸','الإسبانية','spanish-academy.html'],['fr','🇫🇷','الفرنسية','french-academy.html'],['de','🇩🇪','الألمانية','german-academy.html'],['ru','🇷🇺','الروسية','russian-academy.html'],['pt','🇵🇹','البرتغالية الأوروبية','portuguese-academy.html']];list.innerHTML='<div class="empty" style="grid-column:1/-1;text-align:right"><strong>التسجيلات قيد التنظيم والربط.</strong><p>اختر الأكاديمية لمتابعة الدروس الحالية. ستظهر أزرار التسجيل الطبيعي والبطيء هنا بعد تجهيز فهرس موثوق يربط كل ملف بنصه وترجمته، دون تغيير الدروس أو ملفات الصوت الحالية.</p><div class="academy-links">'+academies.map(a=>'<a href="'+a[3]+'">'+a[1]+' '+a[2]+' ←</a>').join('')+'</div><p style="margin-top:12px"><a href="language-academy.html">عرض صفحة جميع الأكاديميات</a></p></div>';});
 })();
 </script></body></html>
