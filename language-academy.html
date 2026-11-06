@@ -207,7 +207,7 @@ footer{background:var(--brand-blue-dark);color:#C9DCE8;padding:34px 0}
 <div><h3 id="practice-title"></h3><div id="practice-copy" style="font-size:12px;color:#667983;"></div></div>
 <span class="practice-badge" id="practice-badge"></span>
 </div>
-<p class="lab-hint" id="practice-audio-hint">🔊 اضغط زر الاستماع لسماع العبارة باللغة المستهدفة. النطق يعتمد على أصوات المتصفح وقد يختلف حسب الجهاز.</p><div class="phrases" id="phrases"></div>
+<p class="lab-hint" id="practice-audio-hint">🔊 اضغط زر الاستماع لسماع العبارة باللغة المستهدفة. النطق يعتمد على أصوات المتصفح وقد يختلف حسب الجهاز.</p><div class="phrases" id="phrases"></div><section class="panel" id="mini-quiz" aria-labelledby="mini-quiz-title" style="margin-top:18px"><h3 id="mini-quiz-title">🧠 اختبار سريع · Quick practice</h3><p id="mini-quiz-info" style="font-size:13px;color:#647684">اختبر فهمك لعبارات اللغة المستهدفة. خمسة أسئلة في كل محاولة.</p><div id="mini-quiz-content" aria-live="polite"></div><button type="button" class="btn" id="mini-quiz-start" style="margin-top:12px">ابدأ اختبارًا من 5 أسئلة</button></section>
 </div>
 </div>
 
@@ -311,6 +311,7 @@ function renderStatic(){
  var n=document.getElementById('nav-book');n.textContent='💬 '+c.ctaBtn;n.href='https://wa.me/201116666306?text='+encodeURIComponent(c.ctaBtn);
  fillSelects();
  renderPractice();
+ resetMiniQuiz();
  renderGuides();
 }
 function fillSelects(){
@@ -349,6 +350,44 @@ document.getElementById('phrases').addEventListener('click',function(event){
  if(!Number.isInteger(index)||!WORDS[index])return;
  speakTarget(WORDS[index][1][target],button.dataset.slow==='true');
 });
+var QUIZ_STATE=null;
+function safeQuizText(v){return escapeHtml(v)}
+function resetMiniQuiz(){
+ QUIZ_STATE=null;
+ var b=document.getElementById('mini-quiz-content');if(b)b.innerHTML='';
+ var start=document.getElementById('mini-quiz-start');if(start){start.hidden=false;start.textContent=ui==='ar'?'ابدأ اختبارًا من 5 أسئلة':ui==='ru'?'Начать тест: 5 вопросов':ui==='es'?'Empezar: 5 preguntas':'Start a 5-question quiz'}
+ var heading=document.getElementById('mini-quiz-title');if(heading)heading.textContent=ui==='ar'?'🧠 اختبر نفسك':ui==='ru'?'🧠 Проверьте себя':ui==='es'?'🧠 Practica':'🧠 Quick quiz';
+ var info=document.getElementById('mini-quiz-info');if(info)info.textContent=ui==='ar'?'اقرأ العبارة باللغة المستهدفة، واختار معناها بلغتك.':ui==='ru'?'Прочитайте фразу и выберите значение на своём языке.':ui==='es'?'Lee la frase y elige su significado en tu idioma.':'Read the target phrase and choose its meaning in your language.';
+}
+function beginMiniQuiz(){
+ var indexes=WORDS.map(function(_,i){return i}).sort(function(){return Math.random()-.5}).slice(0,5);
+ QUIZ_STATE={indexes:indexes,step:0,score:0,source:source,target:target};
+ document.getElementById('mini-quiz-start').hidden=true;
+ showMiniQuizQuestion();
+}
+function showMiniQuizQuestion(){
+ var q=QUIZ_STATE;if(!q||q.source!==source||q.target!==target){resetMiniQuiz();return}
+ var area=document.getElementById('mini-quiz-content');
+ if(q.step>=q.indexes.length){
+  area.innerHTML='<p><strong>'+q.score+' / '+q.indexes.length+'</strong> · '+(ui==='ar'?'انتهى الاختبار!':ui==='ru'?'Тест завершён!':ui==='es'?'¡Prueba completada!':'Quiz complete!')+'</p>';
+  var s=document.getElementById('mini-quiz-start');s.hidden=false;s.textContent=ui==='ar'?'حاول مرة أخرى':ui==='ru'?'Повторить':ui==='es'?'Repetir':'Try again';return;
+ }
+ var index=q.indexes[q.step],row=WORDS[index][1],candidates=[index];
+ for(var i=0;i<WORDS.length&&candidates.length<4;i++){var pick=(index+i+3)%WORDS.length;if(!candidates.includes(pick)&&WORDS[pick][1][source]!==row[source])candidates.push(pick)}
+ candidates.sort(function(){return Math.random()-.5});
+ var dir=target==='ar'?'rtl':'ltr';
+ area.innerHTML='<p style="font-weight:800">'+(q.step+1)+' / 5: <span dir="'+dir+'" style="unicode-bidi:isolate">'+safeQuizText(row[target])+'</span></p><div class="answers">'+candidates.map(function(n){return '<button class="answer" type="button" data-quiz-choice="'+n+'">'+safeQuizText(WORDS[n][1][source])+'</button>'}).join('')+'</div><p id="mini-quiz-feedback" style="font-size:13px;font-weight:800"></p>';
+ area.querySelectorAll('[data-quiz-choice]').forEach(function(button){button.addEventListener('click',function(){
+  if(area.dataset.answered==='yes')return;
+  area.dataset.answered='yes';var selected=Number(button.dataset.quizChoice);
+  if(selected===index)q.score++;
+  area.querySelectorAll('[data-quiz-choice]').forEach(function(b){b.disabled=true;if(Number(b.dataset.quizChoice)===index)b.style.background='#dcfce7';else if(b===button)b.style.background='#fee2e2'});
+  document.getElementById('mini-quiz-feedback').textContent=selected===index?'✓':(ui==='ar'?'الإجابة الصحيحة: ':ui==='ru'?'Правильный ответ: ':ui==='es'?'Respuesta correcta: ':'Correct answer: ')+row[source];
+  var next=document.createElement('button');next.type='button';next.className='btn';next.style.marginTop='10px';next.textContent=ui==='ar'?'التالي':ui==='ru'?'Далее':ui==='es'?'Siguiente':'Next';
+  next.addEventListener('click',function(){q.step++;area.dataset.answered='no';showMiniQuizQuestion()});area.appendChild(next);
+ })});
+}
+document.getElementById('mini-quiz-start').addEventListener('click',beginMiniQuiz);
 function renderGuides(){
  var box=document.getElementById('guide-links');
  var c=COPY[ui];
@@ -363,9 +402,9 @@ function renderGuides(){
 function updateUrl(){
  var u=new URL(window.location.href);u.searchParams.set('source',source);u.searchParams.set('target',target);history.replaceState({},'',u);
 }
-document.getElementById('source').addEventListener('change',function(){source=this.value; if(source===target){target=Object.keys(LANG).find(function(k){return k!==source})||'de'} fillSelects();renderPractice();updateUrl()});
-document.getElementById('target').addEventListener('change',function(){target=this.value; if(source===target){source=Object.keys(LANG).find(function(k){return k!==target})||'ar'} fillSelects();renderPractice();updateUrl()});
-document.getElementById('swap').addEventListener('click',function(){var x=source;source=target;target=x;fillSelects();renderPractice();updateUrl()});
+document.getElementById('source').addEventListener('change',function(){source=this.value; if(source===target){target=Object.keys(LANG).find(function(k){return k!==source})||'de'} fillSelects();renderPractice();resetMiniQuiz();updateUrl()});
+document.getElementById('target').addEventListener('change',function(){target=this.value; if(source===target){source=Object.keys(LANG).find(function(k){return k!==target})||'ar'} fillSelects();renderPractice();resetMiniQuiz();updateUrl()});
+document.getElementById('swap').addEventListener('click',function(){var x=source;source=target;target=x;fillSelects();renderPractice();resetMiniQuiz();updateUrl()});
 document.querySelectorAll('.lang-btn').forEach(function(b){b.addEventListener('click',function(){ui=b.dataset.ui;try{localStorage.setItem('sd_lang',ui)}catch(e){};renderStatic()})});
 var params=new URLSearchParams(location.search);if(LANG[params.get('source')])source=params.get('source');if(LANG[params.get('target')])target=params.get('target');if(source===target)target=source==='de'?'en':'de';
 pickUi();renderStatic();updateUrl();
