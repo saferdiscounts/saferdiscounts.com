@@ -1,0 +1,157 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>معمل مطابقة الصوتيات بالمفردات | Safer Discounts</title>
+<meta name="description" content="فحص أصوات R2 الأصلية للإنجليزية والإيطالية والإسبانية والروسية والبرتغالية الأوروبية وربط النص بالتسجيل بعد الاستماع البشري فقط.">
+<style>
+:root{color-scheme:light;--navy:#12334e;--blue:#075c81;--teal:#087e75;--line:#d6e5ed;--bg:#f5f9fb;--soft:#e9f3f8;--ink:#243b4f}
+*{box-sizing:border-box}body{margin:0;font:16px/1.8 Tahoma,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:linear-gradient(112deg,#082c4a,#087278);color:#fff;padding:28px 0}.wrap{width:min(1130px,calc(100% - 28px));margin:auto}
+header h1{font-size:clamp(24px,3.2vw,38px);margin:8px 0}header p{margin:0;color:#e3f6f6;max-width:900px}
+nav{display:flex;gap:15px;flex-wrap:wrap;font-size:13px}nav a{color:#e2feff}
+h2{font-size:21px;color:var(--navy);margin:5px 0 12px}h3{font-size:17px;margin:5px 0}
+.disclaimer{background:#eaf4f7;border:1px solid #bfdae2;border-radius:14px;padding:14px 17px;margin:18px 0;color:#23516b}
+.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:20px 0 12px}
+label{font-weight:750}select,input{font:inherit;border:1px solid #b4cbd8;border-radius:10px;padding:10px;background:#fff;color:var(--ink)}
+select{max-width:100%}input[type=search]{flex:1;min-width:200px}.stats{font-size:13px;color:#4d6575;margin:10px 0}
+button,.action{font:inherit;cursor:pointer;border:1px solid #bad5e0;background:#fff;border-radius:10px;padding:9px 13px;color:var(--blue);font-weight:800}
+button.primary,.action.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+button:disabled{opacity:.5;cursor:not-allowed}
+button:hover:not(:disabled){filter:brightness(.95)}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #d89b3b;outline-offset:2px}
+.status{font-size:13px;color:#32647c;min-height:26px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:11px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px;box-shadow:0 5px 14px #0628420b;min-width:0}
+.path{display:block;font:600 13px/1.7 Consolas,"Courier New",monospace;direction:ltr;text-align:left;overflow-wrap:anywhere;color:#075e7c;margin:7px 0}
+.pill{display:inline-block;background:#eef3f8;color:#5b7080;border-radius:20px;padding:2px 9px;font-size:12px}
+.pill.complete{background:#dff2e7;color:#186846}.pill.single{background:#fff2df;color:#805927}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 12px}.actions button{font-size:13px;padding:7px 11px}
+.field{margin:8px 0}.field label{display:block;font-size:12px;color:#536778;margin-bottom:3px}
+.field input{display:block;width:100%;font:inherit;font-size:14px;min-width:0}
+.field input[data-kind=text]{direction:ltr;text-align:left;unicode-bidi:isolate}
+.review{display:flex;align-items:center;gap:7px;font-size:12px;margin:11px 0}.review input{accent-color:#117164;width:18px;height:18px}
+.card footer{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.card footer button{padding:7px 11px;font-size:13px}
+.player-wrap{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0}
+.player-wrap audio{width:100%}.small{color:#536878;font-size:12px}
+.paging{display:flex;gap:12px;align-items:center;justify-content:center;margin:25px 0 40px}
+.placeholder{background:#fff;border:1px dashed #b8d1df;border-radius:12px;padding:20px;margin:20px 0}
+.export-actions{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 14px}
+@media(max-width:510px){.grid{grid-template-columns:1fr}.toolbar{align-items:stretch}.toolbar select,.toolbar input{width:100%}.export-actions button{flex:1}}
+</style></head><body>
+<header><div class="wrap"><nav><a href="language-academy.html">← الأكاديميات</a><a href="academy-audio-status.html">تقرير تغطية الصوت</a><a href="pronunciation-audio-library.html">المكتبة الصوتية</a></nav>
+<h1>🎧 معمل مراجعة التسجيلات غير المفهرسة بالنص</h1>
+<p>استمع إلى ملف MP3 الحقيقي بالسرعة الأصلية أو البطيئة، واكتب الكلمة التي سمعتها فقط عند التأكد. يمكن حفظ نتيجة المراجعة محليًا وتصديرها ملف JSON لاستخدامها في ربط الكورس بالتسجيل الصحيح.</p></div></header>
+<main class="wrap">
+<div class="disclaimer"><strong>الفرق بين الملف والكلمة:</strong> جميع المسارات في هذه الأداة مأخوذة من جرد فعلي لملفات Cloudflare R2، لكن أسماء الملفات مثل (bas_001.mp3) ليست نصوصًا موثوقة لما يقال فيها. إضافة النص تتطلب استماعًا حقيقيًا. هذه الصفحة لا تكتب شيئًا في Cloudflare أو GitHub تلقائيًا، ولا تسمّي ملفًا دون مراجعة.</div>
+<div class="toolbar"><label for="lang">اللغة</label><select id="lang"><option value="en">🇬🇧 الإنجليزية</option><option value="it">🇮🇹 الإيطالية</option><option value="es">🇪🇸 الإسبانية</option><option value="ru">🇷🇺 الروسية</option><option value="pt">🇵🇹 البرتغالية الأوروبية</option></select>
+<label for="filter">عرض</label><select id="filter"><option value="all">جميع الملفات</option><option value="pending">لم يُراجع</option><option value="reviewed">تم توثيق النص</option><option value="single">بلا ملف بطيء</option></select>
+<input id="search" type="search" placeholder="ابحث باسم الملف أو النص المدخَل..." aria-label="ابحث في الملفات">
+</div>
+<div id="info" class="stats" aria-live="polite">جارٍ تحميل قائمة الملفات...</div>
+<div class="player-wrap"><strong>مشغّل الاستماع</strong><audio controls preload="none" id="audio">متصفحك لا يدعم الصوت.</audio><div id="playStatus" role="status" aria-live="polite" class="small">اختَر تسجيلًا من القائمة. نجاح الاستماع يعتمد على اتصالك ومشغّل المتصفح.</div></div>
+<div class="export-actions"><button id="export" type="button" class="primary">📤 تصدير النصوص التي راجعتها</button><button id="import" type="button">📥 استيراد مراجعة سابقة</button><input id="importFile" type="file" accept="application/json,.json" hidden></div>
+<p class="small">يُحفظ تقدّمك في متصفحك فقط. لتكملة المراجعة على جهاز آخر، صدّر ملف JSON واستورده هناك. لا يُربط أي نص بالكورسات تلقائيًا قبل اعتماده.</p>
+<h2>ملفات اللغة المختارة</h2>
+<div class="grid" id="list"></div><div id="empty" class="placeholder" hidden>لا توجد ملفات تطابق شروط البحث.</div>
+<div class="paging"><button id="previous" type="button">السابق</button><span id="pageText" aria-live="polite"></span><button id="next" type="button">التالي</button></div>
+</main>
+<script>
+'use strict';
+const R2='https://audio.saferdiscounts.com/';
+const languages={en:'english/',it:'italian/',es:'spanish/',ru:'russian/',pt:'portuguese/'};
+const lang=document.getElementById('lang'),filter=document.getElementById('filter'),search=document.getElementById('search'),grid=document.getElementById('list'),audio=document.getElementById('audio');
+const info=document.getElementById('info'),status=document.getElementById('playStatus');
+const previous=document.getElementById('previous'),next=document.getElementById('next'),pageText=document.getElementById('pageText');
+const maxPerPage=18;const cache=new Map();let inventory=null,page=0,shown=[],saved={};
+const localKey='sd_audio_manual_review_v1';
+try{saved=JSON.parse(localStorage.getItem(localKey)||'{}')||{}}catch(e){saved={};}
+const urlCode=new URLSearchParams(location.search).get('lang');if(languages[urlCode])lang.value=urlCode;
+function put(tag,cls,content){const el=document.createElement(tag);if(cls)el.className=cls;if(content!==undefined)el.textContent=content;return el}
+function safePath(path,code){return typeof path==='string'&&path.startsWith(languages[code])&&/^[a-z0-9/_-]+\.mp3$/.test(path);}
+function savedNote(path){return saved[path]&&saved[path].reviewed===true?saved[path]:null}
+function store(){try{localStorage.setItem(localKey,JSON.stringify(saved));return true}catch(e){status.textContent='لم يتمكن المتصفح من حفظ المراجعة محليًا؛ صدّر البيانات قبل إغلاق الصفحة.';return false}}
+function rank(path){return path.includes('/lessons/')?0:path.includes('/basic/')?1:path.includes('/advanced/')?2:3}
+async function load(code){
+ inventory=null;page=0;grid.replaceChildren();info.textContent='جارٍ تحميل الجرد لهذه اللغة...';
+ try{
+  let data=cache.get(code);
+  if(!data){const response=await fetch('audio-review-inventory-'+code+'.json',{cache:'force-cache'});if(!response.ok)throw Error('HTTP '+response.status);data=await response.json();if(data.schemaVersion!==1||data.lang!==code||!Array.isArray(data.items))throw Error('Invalid audio inventory');cache.set(code,data)}
+  if(lang.value!==code)return;
+  for(const pair of data.items)if(!Array.isArray(pair)||!safePath(pair[0],code)||pair[1]!==null&&!safePath(pair[1],code))throw Error('Unexpected audio path');
+  inventory={...data,items:data.items.slice().sort((a,b)=>rank(a[0])-rank(b[0])||a[0].localeCompare(b[0]))};
+  draw();
+ }catch(err){if(lang.value===code){info.textContent='تعذر تحميل فهرس الملفات: '+err.message;grid.replaceChildren();pageText.textContent='';}}
+}
+function pairs(){if(!inventory)return[];const q=search.value.trim().toLowerCase();return inventory.items.filter(pair=>{
+ const path=pair[0],note=savedNote(path),statusValue=filter.value;
+ if(statusValue==='reviewed'&&!note)return false;
+ if(statusValue==='pending'&&note)return false;
+ if(statusValue==='single'&&pair[1])return false;
+ return !q||path.toLowerCase().includes(q)||(note&&[note.text,note.arabic].join(' ').toLowerCase().includes(q));
+});}
+function draw(){
+ if(!inventory)return;
+ shown=pairs();const totalPages=Math.max(1,Math.ceil(shown.length/maxPerPage));page=Math.max(0,Math.min(page,totalPages-1));
+ const count=inventory.items.filter(pair=>savedNote(pair[0])).length;
+ info.textContent='اللغة: '+inventory.items.length+' ملفًا عاديًا، منها '+inventory.paired+' لها نسخة بطيئة و'+inventory.unpairedNormal+' بلا نسخة بطيئة. النصوص التي وثّقتها محليًا: '+count+'. المعروض بعد التصفية: '+shown.length+'.';
+ grid.replaceChildren();
+ const segment=shown.slice(page*maxPerPage,(page+1)*maxPerPage);
+ for(const pair of segment)grid.append(renderCard(pair));
+ document.getElementById('empty').hidden=shown.length!==0;previous.disabled=page===0;next.disabled=page>=totalPages-1;pageText.textContent='صفحة '+(page+1)+' من '+totalPages;
+}
+function play(path){
+ if(!safePath(path,lang.value)){status.textContent='مسار غير صالح؛ لم يُشغل التسجيل.';return;}
+ audio.pause();audio.src=R2+path;audio.load();
+ status.textContent='محاولة تشغيل: '+path+' — لا يعد الجرد ضمانًا للتشغيل أو جودة الصوت.';
+ audio.play().catch(()=>{status.textContent='تعذر تشغيل الملف. قد توجد مشكلة في إتاحة R2 أو الاتصال.';});
+}
+audio.addEventListener('error',()=>{status.textContent='لم يستطع مشغّل المتصفح تحميل التسجيل المطلوب.';});
+function renderCard(pair){
+ const [normal,slow]=pair,note=savedNote(normal),card=put('article','card'),head=put('div');
+ head.append(put('span','pill'+(note?' complete':''),note?'✓ نص مُراجع':'لم يُراجع'));
+ if(!slow)head.append(put('span','pill single','لا توجد نسخة بطيئة منفصلة'));
+ card.append(head,put('span','path',normal));
+ const actions=put('div','actions'),original=put('button','primary','▶️ الطبيعي');original.type='button';original.addEventListener('click',()=>play(normal));actions.append(original);
+ if(slow){const s=put('button','','🐢 البطيء');s.type='button';s.addEventListener('click',()=>play(slow));actions.append(s);}
+ card.append(actions);
+ const phraseWrap=put('div','field'),phraseLabel=put('label','', 'النص الأجنبي الذي تسمعه'),phrase=put('input');phrase.type='text';phrase.dataset.kind='text';phrase.autocomplete='off';phrase.placeholder='اكتب النص بعد التأكد من الاستماع';phrase.value=note?.text||'';
+ phraseWrap.append(phraseLabel,phrase);card.append(phraseWrap);
+ const arWrap=put('div','field'),arLabel=put('label','', 'المعنى بالعربية (اختياري)'),ar=put('input');ar.type='text';ar.placeholder='ترجمة العبارة';ar.value=note?.arabic||'';arWrap.append(arLabel,ar);card.append(arWrap);
+ const confirmation=put('label','review'),checked=put('input');checked.type='checkbox';checked.checked=!!note;confirmation.append(checked,put('span','', 'استمعت للتسجيل وأؤكد مطابقة النص المكتوب له'));card.append(confirmation);
+ const foot=put('footer'),save=put('button','primary','حفظ المراجعة'),noteStatus=put('span','small');
+ save.type='button';save.addEventListener('click',()=>{
+  const text=phrase.value.normalize('NFC').trim(),arabic=ar.value.trim();
+  if(!text||text.length<2||!checked.checked){noteStatus.textContent='اكتب نصًا صحيحًا وأكد أنك استمعت للتسجيل.';return;}
+  saved[normal]={reviewed:true,text,arabic,normal,slow,language:lang.value,reviewedAt:new Date().toISOString()};
+  if(store()){noteStatus.textContent='تم الحفظ في هذا المتصفح.';draw();}
+ });foot.append(save,noteStatus);card.append(foot);
+ return card;
+}
+function download(name,text){
+ const blob=new Blob([text],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob);
+ const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+document.getElementById('export').addEventListener('click',()=>{
+ const code=lang.value,records=inventory?.items.map(row=>savedNote(row[0])).filter(Boolean)||[];
+ if(!records.length){status.textContent='مفيش نصوص مراجعة متاحة للتصدير في هذه اللغة بعد.';return;}
+ const result={schemaVersion:1,language:code,source:'Manual listening confirmations from Safer Discounts review workbench; not independently validated',exportedAt:new Date().toISOString(),records};
+ download('saferdiscounts-audio-reviewed-'+code+'.json',JSON.stringify(result,null,2));status.textContent='تم تجهيز تصدير '+records.length+' مراجعة من هذه اللغة.';
+});
+document.getElementById('import').addEventListener('click',()=>document.getElementById('importFile').click());
+document.getElementById('importFile').addEventListener('change',async event=>{
+ const file=event.target.files?.[0];if(!file)return;
+ try{
+  if(file.size>4000000)throw Error('الملف كبير جدًا');
+  const payload=JSON.parse(await file.text());
+  if(payload.schemaVersion!==1||!languages[payload.language]||!Array.isArray(payload.records))throw Error('صيغة غير مدعومة');
+  let imported=0;
+  for(const record of payload.records){
+   const code=payload.language;
+   if(record.reviewed!==true||!safePath(record.normal,code)||record.slow!==null&&!safePath(record.slow,code)||typeof record.text!=='string'||record.text.trim().length<2)continue;
+   saved[record.normal]={reviewed:true,text:record.text.trim(),arabic:String(record.arabic||''),normal:record.normal,slow:record.slow,language:code,reviewedAt:record.reviewedAt||''};imported++;
+  }
+  store();draw();status.textContent='تم استيراد '+imported+' مراجعة بصيغة صحيحة. تأكد من تطابق قائمة الملفات مع المصدر.';
+ }catch(err){status.textContent='فشل الاستيراد: '+err.message;}event.target.value='';
+});
+lang.addEventListener('change',()=>{audio.pause();audio.removeAttribute('src');audio.load();const code=lang.value;history.replaceState(null,'','?lang='+encodeURIComponent(code));load(code)});
+filter.addEventListener('change',()=>{page=0;draw()});search.addEventListener('input',()=>{page=0;draw()});
+previous.addEventListener('click',()=>{page--;draw();document.getElementById('list').scrollIntoView({block:'start',behavior:'smooth'})});
+next.addEventListener('click',()=>{page++;draw();document.getElementById('list').scrollIntoView({block:'start',behavior:'smooth'})});
+load(lang.value);
+</script></body></html>
