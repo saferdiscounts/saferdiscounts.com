@@ -75,6 +75,10 @@ test('French and German counts reproduce from exact unique source mappings, not 
 test('Playback remains restricted to valid relative MP3 paths and reviewed text mappings',()=>{
  const verified=read('verified-academy-audio.js');
  assert.match(verified,/entries\.get\(normalize\(word\.textContent\)\)/);
+ assert.match(verified,/speechSynthesis\.cancel\(\)/);
+ assert.match(verified,/row\.slow!==row\.normal\.replace/);
+ assert.match(verified,/card\.dataset\.sdVerifiedAudio===key/);
+ assert.match(verified,/control\.dataset\.sdVerifiedAudio===key/);
  assert.match(verified,/items\.length===1/);
  assert.match(verified,/record\.normal/);
  assert.match(verified,/record\.slow/);
