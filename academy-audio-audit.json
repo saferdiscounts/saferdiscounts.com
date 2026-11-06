@@ -1788,5 +1788,48 @@
         "inventory": "audio-review-inventory-pt.json"
       }
     }
+  },
+  "asrProvisionalAudit": {
+    "asOf": "2026-11-06",
+    "source": "Cloudflare Workers AI whisper-large-v3-turbo on independent normal and slowed MP3 clips fetched directly from R2",
+    "policy": "Only two transcriptions agreeing after punctuation/case normalization and exact matching one course phrase may appear as an explicitly provisional playback; never equate with human-reviewed audio.",
+    "reviewStatus": "not-human-validated",
+    "languages": {
+      "en": {
+        "analyzedPairs": 40,
+        "agreeingTranscripts": 4,
+        "exactCourseProposals": 3,
+        "reviewedByHuman": 0,
+        "sourceFile": "audio-asr-candidates-en.json"
+      },
+      "it": {
+        "analyzedPairs": 40,
+        "agreeingTranscripts": 13,
+        "exactCourseProposals": 6,
+        "reviewedByHuman": 0,
+        "sourceFile": "audio-asr-candidates-it.json"
+      },
+      "es": {
+        "analyzedPairs": 40,
+        "agreeingTranscripts": 14,
+        "exactCourseProposals": 6,
+        "reviewedByHuman": 0,
+        "sourceFile": "audio-asr-candidates-es.json"
+      },
+      "ru": {
+        "analyzedPairs": 40,
+        "agreeingTranscripts": 33,
+        "exactCourseProposals": 6,
+        "reviewedByHuman": 0,
+        "sourceFile": "audio-asr-candidates-ru.json"
+      },
+      "pt": {
+        "analyzedPairs": 40,
+        "agreeingTranscripts": 10,
+        "exactCourseProposals": 3,
+        "reviewedByHuman": 0,
+        "sourceFile": "audio-asr-candidates-pt.json"
+      }
+    }
   }
 }
