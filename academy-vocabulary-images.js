@@ -466,6 +466,8 @@
     var pronounMeaning=/^(?:أنا|أنت|أنتَ|أنتِ|انت|انتا|إنت|إنتَ|إنتِ|هو|هي|نحن|احنا|إحنا|هم|هن|هما|أنتم|أنتما|إياي|إياك|إياه|إياها)$/i.test(meaningPlain);
     var pronounWord=/^(?:i|me|my|mine|myself|you|your|yours|yourself|he|him|his|himself|she|her|hers|herself|we|us|our|ours|ourselves|they|them|their|theirs|themselves|eu|meu|minha|nós|nos|nosso|nossa|ele|ela|eles|elas|seu|sua|io|mi|mio|mia|noi|ci|nostro|nostra|lui|lei|yo|me|mi|mío|mía|nosotros|nosotras|él|ella|ellos|ellas|usted|ustedes|tú|vosotros|vosotras|je|me|moi|mon|ma|nous|notre|il|elle|ils|elles|vous|tu|ich|mich|mein|meine|wir|uns|unser|er|ihn|sie|ihr|es|du|dich|я|меня|мне|мой|моя|мы|нас|наш|он|она|они|его|её|вы|ты|тебя|тебе|вас|você|vocês|te|ti|voi)$/i.test(rawWord);
     if(pronounMeaning||pronounWord||(lang==='it'&&/^loro$/i.test(rawWord)))return null;
+    // Abstract evaluative terms are better left unillustrated than shown as unrelated objects.
+    if(/^(?:جيد|جيدًا|حسن|حسنًا)$/i.test(meaningPlain))return null;
     // Brazilian Portuguese: avoid reusing a stationery photo for the literal word “mão”.
     if(lang==='pt-BR'&&/^(?:irmão|irmã|irmãos|irmãs)$/i.test(rawWord))return photos.family;
     var s=String(meaning||'');
@@ -479,7 +481,30 @@
       /^(?:(?:o|a|um|uma|os|as)\s+)?(?:apartamento|apartamentos)$/i.test(rawWord)||
       /^(?:квартира|квартиры)$/i.test(rawWord);
     if(apartmentMeaning||apartmentWord)return photos.apartmentBuilding;
-    for(var i=0;i<rules.length;i++)if(rules[i][0].test(s))return photos[rules[i][1]];
+    function wholeArabicConcept(rule,value){
+    // Never match concept fragments within a different Arabic word (جد/نجدة، يد/يدقق، ماء/انتماء).
+    var letter=/[\u0621-\u064a\u0671-\u06d3]/,match;
+    var regex=new RegExp(rule.source,(rule.flags||'').replace(/[gy]/g,'')+'g');
+    while((match=regex.exec(value))!==null){
+      if(!match[0]){regex.lastIndex++;continue;}
+      var before=value.slice(0,match.index),after=value.charAt(match.index+match[0].length);
+      var article=/(?:^|[^\u0621-\u064a\u0671-\u06d3])(?:ال|وال|بال|لل)$/.test(before);
+      if((!letter.test(before.slice(-1))||article)&&!letter.test(after))return true;
+    }
+    return false;
+  }
+  function wholeForeignWord(rule,value){
+    // Never match a short foreign word buried inside a longer term (Zug/Zugehörigkeit).
+    var letter=/[\p{L}\p{M}]/u,match;
+    var regex=new RegExp(rule.source,(rule.flags||'').replace(/[gy]/g,'')+'g');
+    while((match=regex.exec(value))!==null){
+      if(!match[0]){regex.lastIndex++;continue;}
+      var start=match.index,end=start+match[0].length;
+      if(!letter.test(value.charAt(start-1))&&!letter.test(value.charAt(end)))return true;
+    }
+    return false;
+  }
+  for(var i=0;i<rules.length;i++)if(wholeArabicConcept(rules[i][0],s))return photos[rules[i][1]];
     // Shared semantic vocabulary: one concept uses one existing photo across every academy.
     // Match the source-language word only after the Arabic meaning has had priority.
     var target=String(word||'');
@@ -864,12 +889,12 @@
     if(lang==='ru'&&russianPassportRules[0].test(target))return photos.passport;
     if((lang==='pt-BR'&&brazilianPassportRules[0].test(target))||(lang==='pt-PT'&&europeanPassportRules[0].test(target)))return photos.passport;
 
-    if(lang==='it')for(var k=0;k<italianRules.length;k++)if(italianRules[k][0].test(target))return photos[italianRules[k][1]];
-    if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(spanishRules[q][0].test(target))return photos[spanishRules[q][1]];
-    if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(frenchRules[f][0].test(target))return photos[frenchRules[f][1]];
-    if(lang==='de')for(var d=0;d<germanRules.length;d++)if(germanRules[d][0].test(target))return photos[germanRules[d][1]];
+    if(lang==='it')for(var k=0;k<italianRules.length;k++)if(wholeForeignWord(italianRules[k][0],target))return photos[italianRules[k][1]];
+    if(lang==='es')for(var q=0;q<spanishRules.length;q++)if(wholeForeignWord(spanishRules[q][0],target))return photos[spanishRules[q][1]];
+    if(lang==='fr')for(var f=0;f<frenchRules.length;f++)if(wholeForeignWord(frenchRules[f][0],target))return photos[frenchRules[f][1]];
+    if(lang==='de')for(var d=0;d<germanRules.length;d++)if(wholeForeignWord(germanRules[d][0],target))return photos[germanRules[d][1]];
     if(lang==='ru'&&/^учёба$/i.test(target.trim()))return photos.school;
-    if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(russianRules[r][0].test(target))return photos[russianRules[r][1]];
+    if(lang==='ru')for(var r=0;r<russianRules.length;r++)if(wholeForeignWord(russianRules[r][0],target))return photos[russianRules[r][1]];
     if(lang==='pt-BR'&&/(?:reembolso|cobrança indevida|dinheiro|pagamento|cobrança)/i.test(target))return photos.money;
     if(lang==='pt-BR'&&/(?:na sua situação|não era bem isso|puxar assunto|falar pelos cotovelos|na ponta da língua|me manda)/i.test(target))return photos.conversation;
     if(lang==='pt-BR'&&/^(?:aqui|ali|perto)$/i.test(target.trim()))return photos.directions;
@@ -881,8 +906,8 @@
     if(lang==='pt-BR'&&/^(?:abrir|eu abro|vocês abrem)$/i.test(target.trim()))return photos.door;
     if(lang==='pt-BR'&&/^(?:os amigos|as amigas|somos amigos|amigos|amigas)$/i.test(target.trim()))return photos.friends;
     
-    if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(brazilianPortugueseRules[b][0].test(target))return photos[brazilianPortugueseRules[b][1]];
-    if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(europeanPortugueseRules[p][0].test(target))return photos[europeanPortugueseRules[p][1]];
+    if(lang==='pt-BR')for(var b=0;b<brazilianPortugueseRules.length;b++)if(wholeForeignWord(brazilianPortugueseRules[b][0],target))return photos[brazilianPortugueseRules[b][1]];
+    if(lang==='pt-PT')for(var p=0;p<europeanPortugueseRules.length;p++)if(wholeForeignWord(europeanPortugueseRules[p][0],target))return photos[europeanPortugueseRules[p][1]];
 
     var newPhotoRules=[
       [/(?:bakery|padaria|panetteria|panadería|boulangerie|Bäckerei|пекарня)/i,'bakery'],
@@ -915,7 +940,7 @@
       [/(?:\bdocument(?:s)?\b|documento|documenti|documentos|pièce complémentaire|pièce jointe|Anlage|Anhang|anexo|anexa|вложение|документ(?:ы)?|\battachment\b|\bcontract\b|\bresume\b|\brésumé\b|\bcv\b|\breport\b|rapport|relatório|relatorio|Bericht|отчёт|отчет|договор|контракт|резюме|свидетельство|ci-joint|im Anhang|in allegato)/i,'document'],
       [/^(?:photo|photograph|photography|a photo|foto|a foto|fotografia|fotografía|photographie|Foto|фото)$/i,'camera']
     ];
-    for(var nr=0;nr<newPhotoRules.length;nr++)if(newPhotoRules[nr][0].test(target))return photos[newPhotoRules[nr][1]];
+    for(var nr=0;nr<newPhotoRules.length;nr++)if(wholeForeignWord(newPhotoRules[nr][0],target))return photos[newPhotoRules[nr][1]];
     var distinctPhotoRules=[
       [/(?:pharmacy|farmácia|farmacia|pharmacie|Apotheke|аптека)/i,'pharmacy'],
       [/(?:hospital building|hospital|hôpital|Krankenhaus|больница)/i,'hospitalBuilding'],
@@ -942,7 +967,7 @@
       [/(?:shower|chuveiro|doccia|ducha|douche|Dusche|душ)/i,'shower'],
       [/(?:bathtub|bath tub|banheira|vasca da bagno|bañera|baignoire|Badewanne|ванна)/i,'bathtub']
     ];
-    for(var dx=0;dx<distinctPhotoRules.length;dx++)if(distinctPhotoRules[dx][0].test(target))return photos[distinctPhotoRules[dx][1]];
+    for(var dx=0;dx<distinctPhotoRules.length;dx++)if(wholeForeignWord(distinctPhotoRules[dx][0],target))return photos[distinctPhotoRules[dx][1]];
     var multilingualExtraRules=[
       [/(?:check.?in|boarding pass|check-in counter|embarque|cartão de embarque|facturación|mostrador de facturación|enregistrement|comptoir d'enregistrement|Einchecken|Check-in-Schalter|регистрация на рейс|стойка регистрации)/i,'airportCheckin'],
       [/(?:dentist|dental|toothache|dentista|dente doendo|diente|dentiste|mal aux dents|Zahnarzt|Zahnärztin|стоматолог|зуб болит)/i,'dentist'],
@@ -1005,7 +1030,7 @@
       [/(?:spinach|espinafre|spinaci|espinaca|épinards|Spinat|шпинат)/i,'spinach'],
       [/(?:cabbage|repolho|cavolo|col|chou|Kohl|капуста)/i,'cabbage']
     ];
-    for(var mx=0;mx<multilingualExtraRules.length;mx++)if(multilingualExtraRules[mx][0].test(target))return photos[multilingualExtraRules[mx][1]];
+    for(var mx=0;mx<multilingualExtraRules.length;mx++)if(wholeForeignWord(multilingualExtraRules[mx][0],target))return photos[multilingualExtraRules[mx][1]];
 
     var householdNatureRules=[
       [/(?:toothbrush|escova de dentes|spazzolino|cepillo de dientes|brosse à dents|Zahnbürste|зубная щётка)/i,'toothbrush'],
@@ -1030,7 +1055,7 @@
       [/(?:sunrise|nascer do sol|alba|amanecer|lever du soleil|Sonnenaufgang|восход)/i,'sunrise'],
       [/(?:ocean wave|wave|onda do mar|onda|vague|Meereswelle|морская волна)/i,'oceanWave'],
     ];
-    for(var hn=0;hn<householdNatureRules.length;hn++)if(householdNatureRules[hn][0].test(target))return photos[householdNatureRules[hn][1]];
+    for(var hn=0;hn<householdNatureRules.length;hn++)if(wholeForeignWord(householdNatureRules[hn][0],target))return photos[householdNatureRules[hn][1]];
 
     var activityPhotoRules=[
       [/(?:camera|câmera|macchina fotografica|cámara|appareil photo|Kamera|фотоаппарат)/i,'camera'],
@@ -1040,7 +1065,7 @@
       [/(?:gloves|luvas|guanti|guantes|gants|Handschuhe|перчатки)/i,'gloves'],
       [/(?:bicycle|bike|bicicleta|bicicletta|bicicleta|vélo|Fahrrad|велосипед)/i,'bicycle']
     ];
-    for(var ap=0;ap<activityPhotoRules.length;ap++)if(activityPhotoRules[ap][0].test(target))return photos[activityPhotoRules[ap][1]];
+    for(var ap=0;ap<activityPhotoRules.length;ap++)if(wholeForeignWord(activityPhotoRules[ap][0],target))return photos[activityPhotoRules[ap][1]];
 
     var freshFoodStyleRules=[
       [/(?:shoes|shoe|sapatos|sapato|scarpe|scarpa|zapatos|chaussures|Schuhe|обувь)/i,'shoes'],
@@ -1054,7 +1079,7 @@
       [/(?:lemon|limão|limone|limón|citron|Zitrone|лимон)/i,'lemon'],
       [/^(?:eggs?|ovos?|uov[oa]|huevos?|œufs?|oeufs?|ei|eier|яйцо|яйца)$/i,'egg'],
     ];
-    for(var fs=0;fs<freshFoodStyleRules.length;fs++)if(freshFoodStyleRules[fs][0].test(target))return photos[freshFoodStyleRules[fs][1]];
+    for(var fs=0;fs<freshFoodStyleRules.length;fs++)if(wholeForeignWord(freshFoodStyleRules[fs][0],target))return photos[freshFoodStyleRules[fs][1]];
     var englishRules=[
       [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
       [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
@@ -1085,7 +1110,7 @@
     if(lang==='en'&&/^leak$/i.test(target.trim()))return photos.water;
     if(lang==='en'&&/^arrange a repair$/i.test(target.trim()))return photos.tools;
     if(lang==='en'&&/^(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|one hundred)$/i.test(target.trim()))return photos.numbers;
-    for(var j=0;j<englishRules.length;j++)if(englishRules[j][0].test(target))return photos[englishRules[j][1]];
+    for(var j=0;j<englishRules.length;j++)if(wholeForeignWord(englishRules[j][0],target))return photos[englishRules[j][1]];
     return null;
   }
   function card(word,meaning,lang,kind){
