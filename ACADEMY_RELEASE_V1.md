@@ -48,3 +48,9 @@ Latest committed `academy-audio-audit.json` reports **3,506 normal/slow pairs** 
 `V1: [covered]/384 ([percent]%). [N] CEFR gaps remaining. Audio: [verified]/[checked] samples. Visuals: [valid]/[checked]. CI: [status + run URL]. Pages: [status + run URL]. Next: [specific deliverable].`
 
 **Stop rule:** Once all six gates are met, freeze V1; do not pursue more picture quantity, more peripheral features, or indefinite optimization. Separate any future features into V2.
+
+## Progress checkpoint — same day, after Brazilian A1 expansion
+
+The Brazilian A1 track has been expanded by **7 real lessons** (57 additional word/phrase cards, 28 dialogue turns, specific grammar guidance, contextual quiz and guided writing per lesson), appended without changing the original 90 lesson indexes. The original 90-lesson audio and progress IDs remain in place; the academy now has 97 lessons total.
+
+**Updated structural coverage: 348/384 = 90.6%; remaining gaps 36, specifically 12 B2 English + 12 B2 Italian + 12 B2 Spanish.** This percentage describes minimum CEFR core lesson distribution, **not** validated learner outcomes or audio correctness. Do not expand beyond these 36 structural slots before starting the formal quality/audio/image gates.
