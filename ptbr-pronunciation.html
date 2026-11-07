@@ -36,7 +36,29 @@ function applySearch(){var q=(search.value||'').trim().toLocaleLowerCase(),visib
 async function play(path,label){if(!path||(!directMode&&!zip))return;var entry=(!directMode&&zip)?zip.file(path):null;if(!directMode&&!entry){setStatus('التسجيل غير موجود داخل ملف ZIP: '+path,'error');return}var buttons=lessons.querySelectorAll('button.play');Array.prototype.forEach.call(buttons,function(b){b.disabled=true});now.textContent='جاري تجهيز التسجيل: '+label;try{if(directMode){audio.src=audioBaseUrl+path.split('/').map(encodeURIComponent).join('/');audio.load()}else{var blob=await entry.async('blob');if(currentUrl)URL.revokeObjectURL(currentUrl);currentUrl=URL.createObjectURL(blob);audio.src=currentUrl;audio.load()}now.textContent=label;await audio.play()}catch(e){setStatus('تعذر تشغيل الصوت. تأكد من تفعيل نطاق الصوتيات أو جرّب رفع ملف ZIP محليًا.','error')}finally{Array.prototype.forEach.call(buttons,function(b){b.disabled=false})}}
 input.addEventListener('change',function(){openZip(input.files&&input.files[0])});document.querySelectorAll('.tab').forEach(function(tab){tab.addEventListener('click',function(){currentLevel=tab.dataset.level;document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('active',t===tab)});render()})});search.addEventListener('input',applySearch);window.addEventListener('beforeunload',function(){if(currentUrl)URL.revokeObjectURL(currentUrl)});
 window.addEventListener('message',function(event){if(!audioBaseUrl||event.source!==bridge.contentWindow)return;var allowedOrigin;try{allowedOrigin=new URL(audioBaseUrl).origin}catch(e){return}if(event.origin!==allowedOrigin)return;var data=event.data||{};if(data.type==='ptbr-audio-manifest-error-v1'){if(bridgeTimer)clearTimeout(bridgeTimer);setStatus('لم أستطع تحميل فهرس الصوتيات من R2. تأكد من النطاق وصلاحية الوصول، أو استخدم ZIP مؤقتًا.','error');return}if(data.type!=='ptbr-audio-manifest-v1'||!data.manifest||!data.manifest.levels)return;var basic=data.manifest.levels.basic,advanced=data.manifest.levels.advanced;if(!basic||!advanced||!Array.isArray(basic.items)||!Array.isArray(advanced.items))return;if(bridgeTimer)clearTimeout(bridgeTimer);allItems.basic=basic.items;allItems.advanced=advanced.items;zip=null;directMode=true;updateCounts();panel.hidden=false;render();setStatus('تم الاتصال بمكتبة الصوتيات. الدروس تعمل مباشرة من الموقع من غير رفع ZIP.','ok');document.getElementById('uploadNote').textContent='متصل باستضافة الصوتيات؛ اختار أي عبارة واستمع فورًا بالسرعة العادية أو البطيئة.'});
-function initDirectAudio(){if(!audioBaseUrl)return;try{var parsed=new URL(audioBaseUrl);if(parsed.protocol!=='https:')throw new Error('Audio base URL must use HTTPS')}catch(e){setStatus('رابط استضافة الصوتيات في ptbr-audio-config.js غير صحيح.','error');return}setStatus('جاري الاتصال بمكتبة الصوتيات على R2...');document.getElementById('uploadNote').textContent='جاري تحميل فهرس الدروس من استضافة الصوتيات.';bridgeTimer=setTimeout(function(){if(!directMode)setStatus('استضافة الصوتيات لا تستجيب بعد. تأكد من اكتمال الرفع وتفعيل الوصول العام؛ ويمكن استخدام ZIP مؤقتًا.','error')},12000);bridge.src=audioBaseUrl+'bridge.html'}
+function initDirectAudio(){
+ if(!audioBaseUrl)return;
+ try{var parsed=new URL(audioBaseUrl);if(parsed.protocol!=='https:')throw new Error('Audio base URL must use HTTPS')}
+ catch(e){setStatus('رابط استضافة الصوتيات في ptbr-audio-config.js غير صحيح.','error');return}
+ setStatus('جاري تحميل فهرس 511 عبارة وترجمتها العربية من موقع الأكاديمية...');
+ fetch('audio-text-index-ptbr.json',{cache:'no-cache'}).then(function(response){
+  if(!response.ok)throw new Error('Index HTTP '+response.status);
+  return response.json();
+ }).then(function(index){
+  var safe=/^(basic|advanced)\/[a-z0-9_/-]+\.mp3$/;
+  if(index.schemaVersion!==1||index.locale!=='pt-BR'||!Array.isArray(index.records)||index.records.length!==511)throw new Error('Unexpected source index');
+  if(index.records.some(function(item){return !item||typeof item.pt!=='string'||!item.pt.trim()||typeof item.gl!=='string'||!item.gl.trim()||!safe.test(item.normal||'')||!safe.test(item.slow||'')||item.normal.replace(/\.mp3$/,'_slow.mp3')!==item.slow}))throw new Error('Incomplete audio text or unsafe sound path');
+  allItems.basic=index.records.filter(function(item){return item.level==='basic'});
+  allItems.advanced=index.records.filter(function(item){return item.level==='advanced'});
+  directMode=true;zip=null;updateCounts();panel.hidden=false;render();
+  setStatus('جاهز: 511 عبارة برتغالية، وكل عبارة أمامها معناها العربي وتسجيلان عادي وبطيء. الترجمات المستكملة تحتاج تدقيقًا لغويًا متخصصًا.','ok');
+  document.getElementById('uploadNote').textContent='يُشغّل الصوت من R2 مباشرة، ويُعرض النص والمعنى من فهرس الأكاديمية المكتمل.';
+ }).catch(function(){
+  setStatus('تعذر تحميل فهرس الموقع المكتمل؛ جاري تجربة مكتبة R2 القديمة. قد تكون بعض الترجمات العربية غائبة في المصدر الاحتياطي.');
+  bridgeTimer=setTimeout(function(){if(!directMode)setStatus('تعذر الاتصال بمكتبة الصوتيات. يمكن تجربة ZIP المحلي.','error')},12000);
+  bridge.src=audioBaseUrl+'bridge.html';
+ });
+}
 initDirectAudio();
 })();
 </script></body></html>
