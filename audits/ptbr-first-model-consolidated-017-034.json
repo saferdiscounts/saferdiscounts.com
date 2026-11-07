@@ -1,0 +1,4328 @@
+{
+  "schemaVersion": 1,
+  "model": "@cf/openai/whisper",
+  "sourceFiles": [
+    "audits/ptbr-asr-evidence-batch-017.json",
+    "audits/ptbr-asr-evidence-batch-018.json",
+    "audits/ptbr-asr-evidence-batch-019.json",
+    "audits/ptbr-asr-evidence-batch-020.json",
+    "audits/ptbr-asr-evidence-batch-021.json",
+    "audits/ptbr-asr-evidence-batch-022.json",
+    "audits/ptbr-asr-evidence-batch-023.json",
+    "audits/ptbr-asr-evidence-batch-024.json",
+    "audits/ptbr-asr-evidence-batch-025.json",
+    "audits/ptbr-asr-evidence-batch-026.json",
+    "audits/ptbr-asr-evidence-batch-027.json",
+    "audits/ptbr-asr-evidence-batch-028.json",
+    "audits/ptbr-asr-evidence-batch-029.json",
+    "audits/ptbr-asr-evidence-batch-030.json",
+    "audits/ptbr-asr-evidence-batch-031.json",
+    "audits/ptbr-asr-evidence-batch-032.json",
+    "audits/ptbr-asr-evidence-batch-033.json",
+    "audits/ptbr-asr-evidence-batch-034.json"
+  ],
+  "records": [
+    {
+      "path": "advanced/adv_16_273.mp3",
+      "observations": [
+        {
+          "transcript": "سبير",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_273_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Não saber.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_274.mp3",
+      "observations": [
+        {
+          "transcript": "So be.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_274_slow.mp3",
+      "observations": [
+        {
+          "transcript": "That's all, B.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_275.mp3",
+      "observations": [
+        {
+          "transcript": "Sobemos.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_275_slow.mp3",
+      "observations": [
+        {
+          "transcript": "É só o bem-os.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_276.mp3",
+      "observations": [
+        {
+          "transcript": "Soberum.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_276_slow.mp3",
+      "observations": [
+        {
+          "transcript": "This is so bad, eh?",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_277.mp3",
+      "observations": [
+        {
+          "transcript": "G-Z.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_277_slow.mp3",
+      "observations": [
+        {
+          "transcript": "T'as de vous dire.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_278.mp3",
+      "observations": [
+        {
+          "transcript": "수고하셨습니다.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_278_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Adjuí-se, se eu...",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_279.mp3",
+      "observations": [
+        {
+          "transcript": "Dicemos.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_279_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Adicemos.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_280.mp3",
+      "observations": [
+        {
+          "transcript": "disseram",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_280_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Deixe-se ser um.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_281.mp3",
+      "observations": [
+        {
+          "transcript": "Ver.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_281_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Alweer.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_282.mp3",
+      "observations": [
+        {
+          "transcript": "Wir.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_282_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I've read it.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_283.mp3",
+      "observations": [
+        {
+          "transcript": "View",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_283_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Au revoir.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_284.mp3",
+      "observations": [
+        {
+          "transcript": "Vimos!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_284_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Havimos.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_285.mp3",
+      "observations": [
+        {
+          "transcript": "Wiederhund.",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_285_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Viver, ángãos!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_286.mp3",
+      "observations": [
+        {
+          "transcript": "Vira!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_286_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Aweer de...",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_287.mp3",
+      "observations": [
+        {
+          "transcript": "VING!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_287_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A vinga!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_288.mp3",
+      "observations": [
+        {
+          "transcript": "Veio!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_288_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Veio!",
+          "source": "audits/ptbr-asr-evidence-batch-017.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_289.mp3",
+      "observations": [
+        {
+          "transcript": "Viem-os!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_289_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Abreiemos.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_290.mp3",
+      "observations": [
+        {
+          "transcript": "Viajão.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_290_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Viaira, honra!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_291.mp3",
+      "observations": [
+        {
+          "transcript": "Dóriga.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_291_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Dindar.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_292.mp3",
+      "observations": [
+        {
+          "transcript": "Day.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_292_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Tadei!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_293.mp3",
+      "observations": [
+        {
+          "transcript": "Deal.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_293_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Adeu!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_294.mp3",
+      "observations": [
+        {
+          "transcript": "Demos.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_294_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ademos.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_295.mp3",
+      "observations": [
+        {
+          "transcript": "Deraan hond.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_295_slow.mp3",
+      "observations": [
+        {
+          "transcript": "De erros.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_296.mp3",
+      "observations": [
+        {
+          "transcript": "Board.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_296_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'm bored.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_297.mp3",
+      "observations": [
+        {
+          "transcript": "Bullseye.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_297_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Após!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_298.mp3",
+      "observations": [
+        {
+          "transcript": "Bullets.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_298_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Impose.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_299.mp3",
+      "observations": [
+        {
+          "transcript": "Pusemos!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_299_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Aposemos.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_300.mp3",
+      "observations": [
+        {
+          "transcript": "Puseram!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_300_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Papuzeram!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_301.mp3",
+      "observations": [
+        {
+          "transcript": "for your heal-on-ting.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_16_301_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Fui ouw hio onteing.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_302.mp3",
+      "observations": [
+        {
+          "transcript": "Bye, see ya!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_302_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Hoe gaat het zien?",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_303.mp3",
+      "observations": [
+        {
+          "transcript": "Komm, ihr!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_303_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Akklamir.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_304.mp3",
+      "observations": [
+        {
+          "transcript": "FLAVE IT!",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_304_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Diferá Lavas.",
+          "source": "audits/ptbr-asr-evidence-batch-018.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_305.mp3",
+      "observations": [
+        {
+          "transcript": "Partíamos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_305_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e barratíamos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_306.mp3",
+      "observations": [
+        {
+          "transcript": "Comemos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_306_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Acormi-mos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_307.mp3",
+      "observations": [
+        {
+          "transcript": "Falávermos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_307_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e falávamos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_308.mp3",
+      "observations": [
+        {
+          "transcript": "Batião.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_308_slow.mp3",
+      "observations": [
+        {
+          "transcript": "The Baratillo.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_309.mp3",
+      "observations": [
+        {
+          "transcript": "¡Comíos!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_309_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Accombe your own.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_310.mp3",
+      "observations": [
+        {
+          "transcript": "Falavon!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_310_slow.mp3",
+      "observations": [
+        {
+          "transcript": "It's for a live-room.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_311.mp3",
+      "observations": [
+        {
+          "transcript": "Thank you very much.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_311_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nailed it us.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_312.mp3",
+      "observations": [
+        {
+          "transcript": "Era músculo.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_312_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E éramos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_313.mp3",
+      "observations": [
+        {
+          "transcript": "Czyń, ja...",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_313_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Patrzyj niej.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_314.mp3",
+      "observations": [
+        {
+          "transcript": "Tchinyamos!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_314_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Tachinha-mos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_315.mp3",
+      "observations": [
+        {
+          "transcript": "Vinha!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_315_slow.mp3",
+      "observations": [
+        {
+          "transcript": "В Виня!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_316.mp3",
+      "observations": [
+        {
+          "transcript": "Víneamos!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_316_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A vinhamos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_317.mp3",
+      "observations": [
+        {
+          "transcript": "Poo-n-yat!",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_317_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A pool of jazz.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_318.mp3",
+      "observations": [
+        {
+          "transcript": "Błynie mózg.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_318_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Apluñemos.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_319.mp3",
+      "observations": [
+        {
+          "transcript": "Quando eu era criança, morava no caíro.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_319_slow.mp3",
+      "observations": [
+        {
+          "transcript": "de quando eu era criança morava no caíro.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_320.mp3",
+      "observations": [
+        {
+          "transcript": "Ele trabalhava todos os dias.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_17_320_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ele trabalhava todos os dias.",
+          "source": "audits/ptbr-asr-evidence-batch-019.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_321.mp3",
+      "observations": [
+        {
+          "transcript": "Fuller.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_321_slow.mp3",
+      "observations": [
+        {
+          "transcript": "be followed.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_322.mp3",
+      "observations": [
+        {
+          "transcript": "Follady.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_322_slow.mp3",
+      "observations": [
+        {
+          "transcript": "فلا رئيز",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_323.mp3",
+      "observations": [
+        {
+          "transcript": "Follow the day.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_323_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Thank you for letting us.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_324.mp3",
+      "observations": [
+        {
+          "transcript": "Falaremos.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_324_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e falaremos.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_325.mp3",
+      "observations": [
+        {
+          "transcript": "Fala aí, irmão.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_325_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Fala adeus!",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_326.mp3",
+      "observations": [
+        {
+          "transcript": "Ghostar",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_326_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You can go star.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_327.mp3",
+      "observations": [
+        {
+          "transcript": "Falaria.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_327_slow.mp3",
+      "observations": [
+        {
+          "transcript": "بفغة لارية",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_328.mp3",
+      "observations": [
+        {
+          "transcript": "Gostaria.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_328_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Gostaria!",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_329.mp3",
+      "observations": [
+        {
+          "transcript": "Falaríamos.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_329_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e falaríamos.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_330.mp3",
+      "observations": [
+        {
+          "transcript": "Gostaríamos.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_330_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Gostaríamos!",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_331.mp3",
+      "observations": [
+        {
+          "transcript": "e a demonstrão.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_331_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Lei à demostão.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_332.mp3",
+      "observations": [
+        {
+          "transcript": "Eu gostaria de reservar uma mesa.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_332_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu gostaria de reservar uma mesa.",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_333.mp3",
+      "observations": [
+        {
+          "transcript": "Você poderia me ajudar?",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_18_333_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Você poderia me ajudar?",
+          "source": "audits/ptbr-asr-evidence-batch-020.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_334.mp3",
+      "observations": [
+        {
+          "transcript": "By the take.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_334_slow.mp3",
+      "observations": [
+        {
+          "transcript": "He barges to it.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_335.mp3",
+      "observations": [
+        {
+          "transcript": "C'mon mate.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_335_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You're cool, man.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_336.mp3",
+      "observations": [
+        {
+          "transcript": "Falei.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_336_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Bye-bye.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_337.mp3",
+      "observations": [
+        {
+          "transcript": "Partemos!",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_337_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e partamos.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_338.mp3",
+      "observations": [
+        {
+          "transcript": "Como émos?",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_338_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E como émos?",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_339.mp3",
+      "observations": [
+        {
+          "transcript": "Falemos!",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_339_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e falemos.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_340.mp3",
+      "observations": [
+        {
+          "transcript": "Bye for town!",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_340_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Die Partizoon.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_341.mp3",
+      "observations": [
+        {
+          "transcript": "Comeu!",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_341_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Because man, we won't lose.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_342.mp3",
+      "observations": [
+        {
+          "transcript": "Falling!",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_342_slow.mp3",
+      "observations": [
+        {
+          "transcript": "to following.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_343.mp3",
+      "observations": [
+        {
+          "transcript": "Espero que...",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_343_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Alice Beruqui.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_344.mp3",
+      "observations": [
+        {
+          "transcript": "Espero que você esteja bem.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_344_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu espero que você esteja bem.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_345.mp3",
+      "observations": [
+        {
+          "transcript": "Talvez ele vinha amanhã.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_345_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Talvez ele venha amanhã.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_346.mp3",
+      "observations": [
+        {
+          "transcript": "Quero que isso.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_346_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu quero o que ir.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_347.mp3",
+      "observations": [
+        {
+          "transcript": "Quero que você me ajude.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_347_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Quero que você me ajude.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_348.mp3",
+      "observations": [
+        {
+          "transcript": "É possível que...",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_348_slow.mp3",
+      "observations": [
+        {
+          "transcript": "É possível que...",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_349.mp3",
+      "observations": [
+        {
+          "transcript": "É possível que chova.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_349_slow.mp3",
+      "observations": [
+        {
+          "transcript": "É possível que chova.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_350.mp3",
+      "observations": [
+        {
+          "transcript": "Embora eu esteja cansado, vou trabalhar.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_19_350_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E embora eu esteja cansado, vou trabalhar.",
+          "source": "audits/ptbr-asr-evidence-batch-021.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_351.mp3",
+      "observations": [
+        {
+          "transcript": "misciamo",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_351_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu me chamo.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_352.mp3",
+      "observations": [
+        {
+          "transcript": "Mi levanto.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_352_slow.mp3",
+      "observations": [
+        {
+          "transcript": "To me, live on to.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_353.mp3",
+      "observations": [
+        {
+          "transcript": "Me, V-Store.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_353_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Amei visto!",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_354.mp3",
+      "observations": [
+        {
+          "transcript": "See Shama.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_354_slow.mp3",
+      "observations": [
+        {
+          "transcript": "עשי שרמה.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_355.mp3",
+      "observations": [
+        {
+          "transcript": "si levanta",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_355_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e se levanta.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_356.mp3",
+      "observations": [
+        {
+          "transcript": "See you next time.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_356_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'll see you next time.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_357.mp3",
+      "observations": [
+        {
+          "transcript": "Nos chamamos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_357_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E nós se chamamos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_358.mp3",
+      "observations": [
+        {
+          "transcript": "Nós levantamos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_358_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e nos levantamos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_359.mp3",
+      "observations": [
+        {
+          "transcript": "Nos vestimos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_359_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nos vestimos.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_360.mp3",
+      "observations": [
+        {
+          "transcript": "S'y charmant.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_360_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Lá se chama um.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_361.mp3",
+      "observations": [
+        {
+          "transcript": "s'il est ventant.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_361_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e se levantam.",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_362.mp3",
+      "observations": [
+        {
+          "transcript": "See you next time!",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_362_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'll see vesting!",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_363.mp3",
+      "observations": [
+        {
+          "transcript": "Como você se chama?",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_20_363_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Como você se chama?",
+          "source": "audits/ptbr-asr-evidence-batch-022.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_364.mp3",
+      "observations": [
+        {
+          "transcript": "I'm here.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_364_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'm a yes.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_365.mp3",
+      "observations": [
+        {
+          "transcript": "You",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_365_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Are you?",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_366.mp3",
+      "observations": [
+        {
+          "transcript": "No, sir.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_366_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Anos!",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_367.mp3",
+      "observations": [
+        {
+          "transcript": "Lua-se!",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_367_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Угу, а здесь?",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_368.mp3",
+      "observations": [
+        {
+          "transcript": "Nice.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_368_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Don'tice.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_369.mp3",
+      "observations": [
+        {
+          "transcript": "US.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_369_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Are you?",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_370.mp3",
+      "observations": [
+        {
+          "transcript": "Volver você amanhã.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_370_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Vou ver você amanhã.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_371.mp3",
+      "observations": [
+        {
+          "transcript": "Vou de contar uma coisa.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_21_371_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e vou de contar uma coisa.",
+          "source": "audits/ptbr-asr-evidence-batch-023.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_372.mp3",
+      "observations": [
+        {
+          "transcript": "Maizo",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_372_slow.mp3",
+      "observations": [
+        {
+          "transcript": "My's old.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_373.mp3",
+      "observations": [
+        {
+          "transcript": "Miser",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_373_slow.mp3",
+      "observations": [
+        {
+          "transcript": "My's Earth.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_374.mp3",
+      "observations": [
+        {
+          "transcript": "Miserus",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_374_slow.mp3",
+      "observations": [
+        {
+          "transcript": "היא מי זעוס.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_375.mp3",
+      "observations": [
+        {
+          "transcript": "Mize us.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_375_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Emise S.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_376.mp3",
+      "observations": [
+        {
+          "transcript": "Thanks for watching.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_376_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ador!",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_377.mp3",
+      "observations": [
+        {
+          "transcript": "Thank you.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_377_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You're there.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_378.mp3",
+      "observations": [
+        {
+          "transcript": "doce.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_378_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Adouce.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_379.mp3",
+      "observations": [
+        {
+          "transcript": "That's it.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_379_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nudaz.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_380.mp3",
+      "observations": [
+        {
+          "transcript": "No.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_380_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Pannur.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_381.mp3",
+      "observations": [
+        {
+          "transcript": "Nah.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_381_slow.mp3",
+      "observations": [
+        {
+          "transcript": "We know.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_382.mp3",
+      "observations": [
+        {
+          "transcript": "NASA",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_382_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nina's.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_383.mp3",
+      "observations": [
+        {
+          "transcript": "Now it's",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_383_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You know.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_384.mp3",
+      "observations": [
+        {
+          "transcript": "I'll see you next time.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_384_slow.mp3",
+      "observations": [
+        {
+          "transcript": "He knows.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_385.mp3",
+      "observations": [
+        {
+          "transcript": "Nice.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_385_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You know, it's...",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_386.mp3",
+      "observations": [
+        {
+          "transcript": "Beirut.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_386_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Apele-lo.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_387.mp3",
+      "observations": [
+        {
+          "transcript": "Bella",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_387_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Isabella",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_388.mp3",
+      "observations": [
+        {
+          "transcript": "Pelos.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_388_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Appelus.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_389.mp3",
+      "observations": [
+        {
+          "transcript": "Belas.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_389_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Impay-lars.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_390.mp3",
+      "observations": [
+        {
+          "transcript": "Vou ao mercado.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_390_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e vou ao mercado.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_391.mp3",
+      "observations": [
+        {
+          "transcript": "Estou na praia.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_391_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Estou na praia.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_392.mp3",
+      "observations": [
+        {
+          "transcript": "O livro é do professor.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_22_392_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O livro é do professor.",
+          "source": "audits/ptbr-asr-evidence-batch-024.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_393.mp3",
+      "observations": [
+        {
+          "transcript": "Mais aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_393_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Mais aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_394.mp3",
+      "observations": [
+        {
+          "transcript": "Menos like you",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_394_slow.mp3",
+      "observations": [
+        {
+          "transcript": "My men know this is like it.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_395.mp3",
+      "observations": [
+        {
+          "transcript": "Sounds quantum.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_395_slow.mp3",
+      "observations": [
+        {
+          "transcript": "J'étends en ce qu'on touche.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_396.mp3",
+      "observations": [
+        {
+          "transcript": "Um mais.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_396_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ooh, mice.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_397.mp3",
+      "observations": [
+        {
+          "transcript": "Amai's",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_397_slow.mp3",
+      "observations": [
+        {
+          "transcript": "He got mice.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_398.mp3",
+      "observations": [
+        {
+          "transcript": "ます",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_398_slow.mp3",
+      "observations": [
+        {
+          "transcript": "います",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_399.mp3",
+      "observations": [
+        {
+          "transcript": "Puttings",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_399_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Report Aings.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_400.mp3",
+      "observations": [
+        {
+          "transcript": "Kom till och då!",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_400_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I can't do it.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_401.mp3",
+      "observations": [
+        {
+          "transcript": "for censored.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_401_slow.mp3",
+      "observations": [
+        {
+          "transcript": "He poor has done too.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_402.mp3",
+      "observations": [
+        {
+          "transcript": "Part A Keith",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_402_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'm part of the key.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_403.mp3",
+      "observations": [
+        {
+          "transcript": "Já aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_403_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ajudá aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_404.mp3",
+      "observations": [
+        {
+          "transcript": "Sim, bota!",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_404_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E se embora.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_405.mp3",
+      "observations": [
+        {
+          "transcript": "Apesar de...",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_405_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Um apesar de...",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_406.mp3",
+      "observations": [
+        {
+          "transcript": "Kazut.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_406_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e grazo.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_407.mp3",
+      "observations": [
+        {
+          "transcript": "Tchau, uns comuns!",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_23_407_slow.mp3",
+      "observations": [
+        {
+          "transcript": "esternos como ele.",
+          "source": "audits/ptbr-asr-evidence-batch-025.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_408.mp3",
+      "observations": [
+        {
+          "transcript": "Passa por ti.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_408_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Passa a borda aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_409.mp3",
+      "observations": [
+        {
+          "transcript": "V-Store.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_409_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A vristo.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_410.mp3",
+      "observations": [
+        {
+          "transcript": "Passage in.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_410_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O passagem.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_411.mp3",
+      "observations": [
+        {
+          "transcript": "Zimbara aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_411_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Zimbara aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_412.mp3",
+      "observations": [
+        {
+          "transcript": "Bagaging",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_412_slow.mp3",
+      "observations": [
+        {
+          "transcript": "do barragem.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_413.mp3",
+      "observations": [
+        {
+          "transcript": "Bagagem de mão.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_413_slow.mp3",
+      "observations": [
+        {
+          "transcript": "do bagagente de mão.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_414.mp3",
+      "observations": [
+        {
+          "transcript": "Check in!",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_414_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu sei que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_415.mp3",
+      "observations": [
+        {
+          "transcript": "Portão de embarque.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_415_slow.mp3",
+      "observations": [
+        {
+          "transcript": "do portão de embarque.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_416.mp3",
+      "observations": [
+        {
+          "transcript": "Wygląda.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_416_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You vote.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_417.mp3",
+      "observations": [
+        {
+          "transcript": "Atraso.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_417_slow.mp3",
+      "observations": [
+        {
+          "transcript": "em atraso.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_418.mp3",
+      "observations": [
+        {
+          "transcript": "Cancelado.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_418_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E cancelado.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_419.mp3",
+      "observations": [
+        {
+          "transcript": "Auf undige!",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_419_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Isso é o fã diga!",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_420.mp3",
+      "observations": [
+        {
+          "transcript": "Send you out with the Clara.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_420_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Senho algo a declarar.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_421.mp3",
+      "observations": [
+        {
+          "transcript": "Não tenho nada a declarar.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_24_421_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Não tenho nada a declarar.",
+          "source": "audits/ptbr-asr-evidence-batch-026.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_422.mp3",
+      "observations": [
+        {
+          "transcript": "O ar condicionado não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_422_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e o ar condicionado não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_423.mp3",
+      "observations": [
+        {
+          "transcript": "Não tem água quente.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_423_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Não tem água quente.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_424.mp3",
+      "observations": [
+        {
+          "transcript": "Quero mudar de quarto.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_424_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e quero mudar de quarto.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_425.mp3",
+      "observations": [
+        {
+          "transcript": "A chave não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_425_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Trachave não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_426.mp3",
+      "observations": [
+        {
+          "transcript": "Podem limpar o quarto.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_426_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Podem limpar o cuartos.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_427.mp3",
+      "observations": [
+        {
+          "transcript": "Aqui horas eu checo-te.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_427_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Aqui o oras é o checocho.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_428.mp3",
+      "observations": [
+        {
+          "transcript": "Essa é a clamação.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_428_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Deteclamação.",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_429.mp3",
+      "observations": [
+        {
+          "transcript": "Deserva!",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_25_429_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Muito exerro, vô!",
+          "source": "audits/ptbr-asr-evidence-batch-027.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_430.mp3",
+      "observations": [
+        {
+          "transcript": "Médico",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_430_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A meds de escurros.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_431.mp3",
+      "observations": [
+        {
+          "transcript": "Ospitał.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_431_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ingospital.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_432.mp3",
+      "observations": [
+        {
+          "transcript": "farmacia",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_432_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e farmácia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_433.mp3",
+      "observations": [
+        {
+          "transcript": "Door.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_433_slow.mp3",
+      "observations": [
+        {
+          "transcript": "DORED!",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_434.mp3",
+      "observations": [
+        {
+          "transcript": "Preciso de um médico.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_434_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Apreciso de um médico.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_435.mp3",
+      "observations": [
+        {
+          "transcript": "Now he's still being.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_435_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Now we're still being.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_436.mp3",
+      "observations": [
+        {
+          "transcript": "Febre.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_436_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Fébrio!",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_437.mp3",
+      "observations": [
+        {
+          "transcript": "Dour de cabeça.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_437_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Dour de cabeça.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_438.mp3",
+      "observations": [
+        {
+          "transcript": "Dorgi, stomago.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_438_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Dorgi, estou amago.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_439.mp3",
+      "observations": [
+        {
+          "transcript": "Receita Médica.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_439_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O Receita Médica",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_440.mp3",
+      "observations": [
+        {
+          "transcript": "amb ul·lància.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_440_slow.mp3",
+      "observations": [
+        {
+          "transcript": "i gambuolansia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_441.mp3",
+      "observations": [
+        {
+          "transcript": "Emergencia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_441_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O demergência.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_442.mp3",
+      "observations": [
+        {
+          "transcript": "szamiomanbulansja.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_442_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Sham Yumanbulansia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_443.mp3",
+      "observations": [
+        {
+          "transcript": "Alegia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_443_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Um valor de energia.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_444.mp3",
+      "observations": [
+        {
+          "transcript": "I'll see you next time.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_26_444_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I'll see you next time.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_445.mp3",
+      "observations": [
+        {
+          "transcript": "Banthur",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_445_slow.mp3",
+      "observations": [
+        {
+          "transcript": "That bangs cool.",
+          "source": "audits/ptbr-asr-evidence-batch-028.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_446.mp3",
+      "observations": [
+        {
+          "transcript": "Come, beauty.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_446_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I calm you.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_447.mp3",
+      "observations": [
+        {
+          "transcript": "Sacar dinheiro.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_447_slow.mp3",
+      "observations": [
+        {
+          "transcript": "do sacarr de dinheiro.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_448.mp3",
+      "observations": [
+        {
+          "transcript": "Cartão de crédito.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_448_slow.mp3",
+      "observations": [
+        {
+          "transcript": "o cartão de crédito.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_449.mp3",
+      "observations": [
+        {
+          "transcript": "Kai še elektroniku.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_449_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Кайша електронику.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_450.mp3",
+      "observations": [
+        {
+          "transcript": "delegacia de polícia.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_450_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Delegacia de Polícia.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_451.mp3",
+      "observations": [
+        {
+          "transcript": "Voegelbad.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_451_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Fui-go-badu",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_452.mp3",
+      "observations": [
+        {
+          "transcript": "Perdi o meu passaporte.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_452_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Perdi-g o meu passaporte.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_453.mp3",
+      "observations": [
+        {
+          "transcript": "Documento de identidade.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_453_slow.mp3",
+      "observations": [
+        {
+          "transcript": "documento de identidade.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_454.mp3",
+      "observations": [
+        {
+          "transcript": "Bem-vai, Shada!",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_27_454_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Embaixada.",
+          "source": "audits/ptbr-asr-evidence-batch-029.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_455.mp3",
+      "observations": [
+        {
+          "transcript": "é lugar um cajo.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_455_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Se alugar um carro.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_456.mp3",
+      "observations": [
+        {
+          "transcript": "carteira de motorista.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_456_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Em carteira de motorista.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_457.mp3",
+      "observations": [
+        {
+          "transcript": "Seguro!",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_457_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Passegure.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_458.mp3",
+      "observations": [
+        {
+          "transcript": "Gasolina.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_458_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Gasolina",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_459.mp3",
+      "observations": [
+        {
+          "transcript": "Estacionamiento.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_459_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Lestacionamiento",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_460.mp3",
+      "observations": [
+        {
+          "transcript": "Vire a direita.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_460_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Virei a direita.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_461.mp3",
+      "observations": [
+        {
+          "transcript": "Esquerda!",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_461_slow.mp3",
+      "observations": [
+        {
+          "transcript": "ويسكير دى",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_462.mp3",
+      "observations": [
+        {
+          "transcript": "Siga em frente.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_462_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O siga em frente.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_463.mp3",
+      "observations": [
+        {
+          "transcript": "Sema foru.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_463_slow.mp3",
+      "observations": [
+        {
+          "transcript": "This is my photo.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_464.mp3",
+      "observations": [
+        {
+          "transcript": "ご視聴ありがとうございました",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_464_slow.mp3",
+      "observations": [
+        {
+          "transcript": "¡Rotas, Dorias!",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_465.mp3",
+      "observations": [
+        {
+          "transcript": "Kodowia.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_465_slow.mp3",
+      "observations": [
+        {
+          "transcript": "O rodo vinha.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_466.mp3",
+      "observations": [
+        {
+          "transcript": "Pedagio.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_466_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e pedaço.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_467.mp3",
+      "observations": [
+        {
+          "transcript": "Metro",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_467_slow.mp3",
+      "observations": [
+        {
+          "transcript": "You met the role.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_468.mp3",
+      "observations": [
+        {
+          "transcript": "Estação",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_28_468_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e restação.",
+          "source": "audits/ptbr-asr-evidence-batch-030.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_469.mp3",
+      "observations": [
+        {
+          "transcript": "Pode fazer um desconto.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_469_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Pode fazer um desconto.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_470.mp3",
+      "observations": [
+        {
+          "transcript": "Está muito caro.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_470_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Está muito caro.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_471.mp3",
+      "observations": [
+        {
+          "transcript": "Promoção.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_471_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e promosação.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_472.mp3",
+      "observations": [
+        {
+          "transcript": "Nota Fiscal.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_472_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nota a fiscal.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_473.mp3",
+      "observations": [
+        {
+          "transcript": "Sony own.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_473_slow.mp3",
+      "observations": [
+        {
+          "transcript": "¡Es el unizón!",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_474.mp3",
+      "observations": [
+        {
+          "transcript": "Negosu!",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_474_slow.mp3",
+      "observations": [
+        {
+          "transcript": "The next boss you.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_475.mp3",
+      "observations": [
+        {
+          "transcript": "Empresa!",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_475_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Não tem empresa.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_476.mp3",
+      "observations": [
+        {
+          "transcript": "Clearing to",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_476_slow.mp3",
+      "observations": [
+        {
+          "transcript": "A Glee-Aing-Chu.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_477.mp3",
+      "observations": [
+        {
+          "transcript": "コントラーツ",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_477_slow.mp3",
+      "observations": [
+        {
+          "transcript": "di contrarso",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_478.mp3",
+      "observations": [
+        {
+          "transcript": "prazo!",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_29_478_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e pra azul.",
+          "source": "audits/ptbr-asr-evidence-batch-031.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_479.mp3",
+      "observations": [
+        {
+          "transcript": "Quem não xota, não mama.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_479_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E queim, não chora, não mama.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_480.mp3",
+      "observations": [
+        {
+          "transcript": "Pagar o passo.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_480_slow.mp3",
+      "observations": [
+        {
+          "transcript": "de pagar o parço.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_481.mp3",
+      "observations": [
+        {
+          "transcript": "Em share linguiça.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_481_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Aê, enxerva, linguiça!",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_482.mp3",
+      "observations": [
+        {
+          "transcript": "Dar um jeito.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_482_slow.mp3",
+      "observations": [
+        {
+          "transcript": "dar um jeito.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_483.mp3",
+      "observations": [
+        {
+          "transcript": "Ficar de olho.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_483_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Ficar de olho.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_484.mp3",
+      "observations": [
+        {
+          "transcript": "quebrar o galho.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_484_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e che brava ugalio.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_485.mp3",
+      "observations": [
+        {
+          "transcript": "Calir a ficha.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_30_485_slow.mp3",
+      "observations": [
+        {
+          "transcript": "E cá, ir à fície.",
+          "source": "audits/ptbr-asr-evidence-batch-032.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_486.mp3",
+      "observations": [
+        {
+          "transcript": "Boa tarde, o meu voo para o rio está atrasado.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_486_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Boa tarde, o meu voo para o rio está atrasado.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_487.mp3",
+      "observations": [
+        {
+          "transcript": "Sim, infelizmente está atrasado uma hora.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_487_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Sim, infelizmente está atrasado uma hora.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_488.mp3",
+      "observations": [
+        {
+          "transcript": "Nossa, vou perder a conexão para São Paulo.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_488_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Nossa, vou perder a conexão para São Paulo.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_489.mp3",
+      "observations": [
+        {
+          "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_489_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_490.mp3",
+      "observations": [
+        {
+          "transcript": "Desculpa o ar condicionado do meu quarto não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_490_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Desculpa, o ar condicionado do meu quarto não funciona.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_491.mp3",
+      "observations": [
+        {
+          "transcript": "Sinto muito, vou mandar alguém já.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_491_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Sinto muito, vou mandar alguém já.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_492.mp3",
+      "observations": [
+        {
+          "transcript": "Valeu, eu também queria trocar de quarto ceder.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_492_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Valeu, eu também queria trocar de quarto ceder.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_493.mp3",
+      "observations": [
+        {
+          "transcript": "Claro, vou verificar a disponibilidade.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_493_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Claro, vou verificar a disponibilidade.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_494.mp3",
+      "observations": [
+        {
+          "transcript": "Boa tarde não estou bem. Estou com dor de cabeça e febre.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_494_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Boa tarde não estou bem, estou com dor de cabeça e febre.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_495.mp3",
+      "observations": [
+        {
+          "transcript": "A quanto tempo você está com esses sintomas?",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_495_slow.mp3",
+      "observations": [
+        {
+          "transcript": "há quanto tempo você está com esses sintomas.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_496.mp3",
+      "observations": [
+        {
+          "transcript": "Desde ontem a noite.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_496_slow.mp3",
+      "observations": [
+        {
+          "transcript": "desde ontem a noite.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_497.mp3",
+      "observations": [
+        {
+          "transcript": "Toma esse remédio de 8 em 8 horas.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_497_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Toma esse remédio de 8 em 8 horas.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_498.mp3",
+      "observations": [
+        {
+          "transcript": "Eu queria lugar um carro por três dias.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_498_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Eu queria alugar um carro por três dias.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_499.mp3",
+      "observations": [
+        {
+          "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_499_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_500.mp3",
+      "observations": [
+        {
+          "transcript": "Aqui está o seguro está incluído.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_500_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Aqui está o seguro está incluído.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_501.mp3",
+      "observations": [
+        {
+          "transcript": "Está sim o seguro básico já vem incluído.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_501_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Esta sim, o seguro básico já vem incluído.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_502.mp3",
+      "observations": [
+        {
+          "transcript": "Desculpa como eu chego no pão de açúcar.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_502_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Desculpa como eu chego no pão de açúcar.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_503.mp3",
+      "observations": [
+        {
+          "transcript": "Tiga em frente e depois virei a direita na segunda rua.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_503_slow.mp3",
+      "observations": [
+        {
+          "transcript": "siga em frente e depois vire a direita na segunda rua.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_504.mp3",
+      "observations": [
+        {
+          "transcript": "É muito longe daqui.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_504_slow.mp3",
+      "observations": [
+        {
+          "transcript": "É muito longe dar aqui.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_505.mp3",
+      "observations": [
+        {
+          "transcript": "Não ficam uns 10 minutos a pé.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_31_505_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Não fica uns 10 minutos a pé.",
+          "source": "audits/ptbr-asr-evidence-batch-033.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_506.mp3",
+      "observations": [
+        {
+          "transcript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um taxi até o hotel. Depois do chequinho, fomos ao pão de açúcar para ver a vista. A tarde caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_506_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Pronto, em fui ao Rio de Janeiro, com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um taxi até o hotel. Depois do check-in, fomos ao pão de açúcar para ver a vista. A tarde caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_507.mp3",
+      "observations": [
+        {
+          "transcript": "Bigar!",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_507_slow.mp3",
+      "observations": [
+        {
+          "transcript": "to pay guards.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_508.mp3",
+      "observations": [
+        {
+          "transcript": "Pão de açúcar.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_508_slow.mp3",
+      "observations": [
+        {
+          "transcript": "e pão de açúcar.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_509.mp3",
+      "observations": [
+        {
+          "transcript": "スークジコーク",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_509_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Suco G. Calco.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_510.mp3",
+      "observations": [
+        {
+          "transcript": "Inescacivel.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_32_510_slow.mp3",
+      "observations": [
+        {
+          "transcript": "I mean, let's get C-Vill.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_33_511.mp3",
+      "observations": [
+        {
+          "transcript": "Boa Sarchi Força.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    },
+    {
+      "path": "advanced/adv_33_511_slow.mp3",
+      "observations": [
+        {
+          "transcript": "Boa Sarchi Fortisett.",
+          "source": "audits/ptbr-asr-evidence-batch-034.json"
+        }
+      ]
+    }
+  ]
+}
