@@ -127,7 +127,17 @@ function ordering(){
   orderScored=true;
   const correct=picked.every((token,i)=>token===i);
   if(correct){score++;markKnown(orderIndex)}else{mistakes.push(orderIndex);rememberError(orderIndex)}
-  startWriting();
+  // Show actionable feedback before advancing; the learner must choose to continue.
+  panel.querySelectorAll('[data-token]').forEach(b=>b.disabled=true);
+  panel.querySelector('#undo').disabled=true;
+  panel.querySelector('#check').disabled=true;
+  const message=panel.querySelector('#orderMessage');
+  message.textContent=correct?'ترتيب صحيح! ممتاز.':'الترتيب غير صحيح. النموذج: '+pair[0];
+  const next=document.createElement('button');
+  next.type='button';next.className='primary';next.id='continueToWriting';
+  next.textContent='انتقل إلى تمرين الكتابة';
+  next.addEventListener('click',startWriting,{once:true});
+  message.after(next);
  };
 }
 function startWriting(){
