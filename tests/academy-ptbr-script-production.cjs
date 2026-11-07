@@ -47,3 +47,17 @@ test('Portuguese template and grammatical alternatives are explicitly read, not 
  assert.ok(scripts.items.every(x=>x.recordingTakes.every(v=>v.text.trim())));
  assert.ok(scripts.items.every(x=>!x.editorialNote||x.reviewStatus==='draft-unreviewed'));
 });
+
+test('Recording manuscript browse page gives reviewers Arabic context, separate speaking variants and honest draft status',()=>{
+ const page=read('ptbr-recording-scripts.html'),audio=read('academy-audio-status.html');
+ const script=page.match(/<script>([\s\S]*?)<\/script>/);
+ assert.ok(script&&script[1],'Script browser JS missing');
+ const vm=require('node:vm');
+ assert.doesNotThrow(()=>new vm.Script(script[1],{filename:'ptbr-recording-scripts.html'}));
+ assert.match(page,/fetch\('ptbr-voice-scripts-v1\.json'/);
+ assert.match(page,/navigator\.clipboard\.writeText\(t\.text\)/);
+ assert.match(page,/isHumanReviewed/);
+ assert.match(page,/164 قراءة مستقلة/);
+ assert.match(page,/328 ملف صوت مخطط/);
+ assert.ok(audio.includes("link('ptbr-recording-scripts.html'"));
+});
