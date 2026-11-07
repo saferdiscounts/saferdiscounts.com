@@ -86,7 +86,17 @@ function startQuiz(){stage='quiz';question=0;score=0;mistakes=[];resultSaved=fal
 function quiz(){
  const t=unit();if(question>=round.length){startOrdering();return}
  const id=round[question],pair=t.phrases[id],reverse=question%2===1;
- const alternatives=shuffle([id,...shuffle(t.phrases.map((_,i)=>i).filter(i=>i!==id)).slice(0,3)]);
+ // Exclude duplicate visible answer labels: otherwise two buttons could both be linguistically correct.
+ const answerColumn=reverse?1:0;
+ const correctLabel=pair[answerColumn].trim().normalize('NFC').toLocaleLowerCase();
+ const seen=new Set([correctLabel]);
+ const distractors=shuffle(t.phrases.map((_,i)=>i).filter(i=>i!==id)).filter(i=>{
+  const label=t.phrases[i][answerColumn].trim().normalize('NFC').toLocaleLowerCase();
+  if(seen.has(label))return false;
+  seen.add(label);return true;
+ }).slice(0,3);
+ if(distractors.length<3)throw Error('Quiz needs three distinct distractors for '+t.id);
+ const alternatives=shuffle([id,...distractors]);
  locked=false;
  panel.innerHTML='<span class="level">'+esc(t.level)+'</span><h2>اختبار الفهم · '+(question+1)+' من 5</h2>'+
  '<p class="small">الخطوة 2 من 4. لا تظهر البطاقة أو ترجمتها كاملة قبل الإجابة.</p><div class="exam"><p><b>'+(reverse?'اختر المعنى العربي الصحيح:':'اختر العبارة البرازيلية المناسبة:')+'</b></p>'+
