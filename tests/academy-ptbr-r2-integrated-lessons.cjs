@@ -28,8 +28,8 @@ test('recorded phrase lessons render a real audio player and refresh its referen
  const start=html.indexOf('function renderR2Lesson(i)');
  const end=html.indexOf('function buildLessonList()',start);
  const block=html.slice(start,end);
- assert.match(block,/<audio id=\\"ptbrHumanAudio\\"/);
+ assert.match(block,/<audio id="ptbrHumanAudio\\"/);
  assert.match(block,/ptbrHumanAudio=document\.getElementById\('ptbrHumanAudio'\)/);
- assert.match(block,/id=\\"ptbrAudioConnection\\"/);
+ assert.match(block,/id="ptbrAudioConnection\\"/);
  assert.match(html,/let ptbrHumanAudio=document\.getElementById/);
 });
