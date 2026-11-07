@@ -247,13 +247,33 @@ function renderR2Lesson(i){
  const content=document.getElementById('lessonContent');if(!content)return;
  document.querySelectorAll('.lessonpick').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});
  const chosen=document.querySelector('[data-r2-lesson="'+i+'"]');if(chosen){chosen.classList.add('active');chosen.setAttribute('aria-pressed','true')}
- const rows=group.items.map((item,n)=>'<article class="r2-phrase" style="border:1px solid #dce6ee;border-radius:12px;padding:14px;margin:12px 0;background:#fff"><strong dir="ltr" lang="pt-BR" style="display:block;text-align:left;font-size:20px">'+esc(item.pt)+'</strong><p dir="rtl" class="arabic-copy">'+rtlText(item.gl)+'</p><div class="listen-controls"><button type="button" class="btn" data-ptbr-human-audio="'+esc(item.normal)+'" data-ptbr-label="'+esc(item.pt)+'">▶ التسجيل العادي</button> <button type="button" class="btn alt" data-ptbr-human-audio="'+esc(item.slow)+'" data-ptbr-label="'+esc(item.pt)+'">🐢 التسجيل البطيء</button> <button type="button" class="btn alt" data-r2-hide="'+n+'">اختبر نفسك: أخفِ المعنى</button></div></article>').join('');
+  const quizCandidates=group.items.filter(x=>x.pt&&x.gl&&x.normal&&safePtbrAudioPath.test(x.normal));
+ const quizHtml=quizCandidates.length>=4?'<section class="quiz" id="r2ListeningExam" dir="rtl"><h4>🎧 اختبار استماع بدون عرض النص</h4><p>اسمع التسجيل ثم اختر المعنى الصحيح. الإجابة والنص مخفيان حتى تختار.</p><button type="button" class="btn" id="r2StartListening">ابدأ اختبار 5 أسئلة</button><div id="r2Question"></div></section>':'<p>عدد العبارات غير كافٍ لاختبار متعدد الاختيارات.</p>';
+const rows=group.items.map((item,n)=>'<article class="r2-phrase" style="border:1px solid #dce6ee;border-radius:12px;padding:14px;margin:12px 0;background:#fff"><strong dir="ltr" lang="pt-BR" style="display:block;text-align:left;font-size:20px">'+esc(item.pt)+'</strong><p dir="rtl" class="arabic-copy">'+rtlText(item.gl)+'</p><div class="listen-controls"><button type="button" class="btn" data-ptbr-human-audio="'+esc(item.normal)+'" data-ptbr-label="'+esc(item.pt)+'">▶ التسجيل العادي</button> <button type="button" class="btn alt" data-ptbr-human-audio="'+esc(item.slow)+'" data-ptbr-label="'+esc(item.pt)+'">🐢 التسجيل البطيء</button> <button type="button" class="btn alt" data-r2-hide="'+n+'">اختبر نفسك: أخفِ المعنى</button></div></article>').join('');
  content.innerHTML='<h3>🎧 '+rtlText(group.title)+'</h3><p class="arabic-copy">درس من تسجيلات R2 الموجودة بالفعل: اقرأ العبارة، اسمعها عاديًا وببطء، كررها بصوتك، ثم أخفِ المعنى وحاول استرجاعه. النصوص مترابطة مع مسارات الملفات في فهرس المصدر؛ جودة التسجيل لم تُراجع سماعيًا بالكامل.</p><audio id="ptbrHumanAudio" class="human-audio-player" controls preload="none" aria-label="مشغل تسجيلات R2"></audio><p id="ptbrAudioConnection" class="audio-connection" role="status" aria-live="polite"></p>'+rows;
  ptbrHumanAudio=document.getElementById('ptbrHumanAudio');
  content.querySelectorAll('[data-r2-hide]').forEach(button=>button.addEventListener('click',()=>{
   const article=button.closest('.r2-phrase'),meaning=article.querySelector('.arabic-copy');
   meaning.hidden=!meaning.hidden;button.textContent=meaning.hidden?'اكشف المعنى':'اختبر نفسك: أخفِ المعنى';
  }));
+ const startQuiz=content.querySelector('#r2StartListening');
+ if(startQuiz){startQuiz.addEventListener('click',()=>{
+  const pool=quizCandidates.slice().sort(()=>Math.random()-.5).slice(0,Math.min(5,quizCandidates.length));let pos=0,score=0;
+  const host=content.querySelector('#r2Question');startQuiz.hidden=true;
+  function show(){if(pos>=pool.length){host.innerHTML='<p><b>نتيجتك: '+score+' / '+pool.length+'</b></p><p>اختبار الاستماع يقيس الفهم، ولا يقيس دقة النطق. كرر التسجيل ثم سجل صوتك للمقارنة الذاتية.</p>';return}
+   const item=pool[pos];const wrong=quizCandidates.filter(x=>x.gl!==item.gl).sort(()=>Math.random()-.5).slice(0,3);
+   const options=[item,...wrong].sort(()=>Math.random()-.5);
+   host.innerHTML='<p>السؤال '+(pos+1)+' من '+pool.length+'</p><button type="button" class="btn" data-listen>🔊 استمع للتسجيل دون قراءة النص</button><div class="answers">'+options.map((o,i)=>'<button type="button" class="answer" data-answer="'+i+'">'+rtlText(o.gl)+'</button>').join('')+'</div><p data-feedback aria-live="polite"></p>';
+   host.querySelector('[data-listen]').onclick=()=>playPtbrHostedPath(item.normal,item.pt);
+   host.querySelectorAll('[data-answer]').forEach((button,i)=>button.onclick=()=>{
+    host.querySelectorAll('[data-answer]').forEach(b=>b.disabled=true);
+    const correct=options[i]===item;if(correct)score++;
+    const feedback=host.querySelector('[data-feedback]');feedback.textContent=(correct?'إجابة صحيحة. ':'الإجابة غير صحيحة. ')+'النص المسموع: '+item.pt+' — المعنى: '+item.gl;
+    const next=document.createElement('button');next.type='button';next.className='btn';next.textContent='السؤال التالي';next.onclick=()=>{pos++;show()};host.appendChild(next);
+   });
+  }
+  show();
+ })}
  content.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function buildLessonList(){const list=document.getElementById('lessonList');let previous='';const filtered=lessonOrder.filter(i=>lessonMatchesTrack(i,activeTrack));list.innerHTML=filtered.map((lessonIndex,pos)=>{const l=lessons[lessonIndex],groupName=lessonGroup(lessonIndex),group=groupName!==previous?'<div class="lesson-group">'+groupName+'</div>':'';previous=groupName;return group+'<button type="button" class="lessonpick" data-lesson="'+lessonIndex+'" aria-pressed="false">'+lessonNumber(lessonIndex)+'. '+esc(l.title)+'</button>'}).join('');list.querySelectorAll('.lessonpick').forEach(b=>b.addEventListener('click',()=>render(Number(b.dataset.lesson))));addR2LessonsToList()}
