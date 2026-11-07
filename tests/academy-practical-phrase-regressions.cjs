@@ -26,7 +26,7 @@ test('Practical lab has navigation from home, catalog, Brazilian academy and tou
   assert.ok(read(file).includes('href="ptbr-practical-lab.html"'),file+' missing trainer route');
  }
  const page=read('ptbr-practical-lab.html');
- for(const script of ['ptbr-practical-data.js','ptbr-practical-lab.js','academy-mastery.js','ptbr-writing-check.js'])assert.ok(page.includes('src="'+script+'"'),script+' not loaded');
+ for(const script of ['ptbr-practical-data.js','ptbr-practical-dialogues.js','ptbr-practical-lab.js','academy-mastery.js','ptbr-writing-check.js'])assert.ok(page.includes('src="'+script+'"'),script+' not loaded');
  assert.match(page,/80 عبارة/);assert.match(page,/لا نحتسبه تسجيلًا بشريًا/);
 });
 test('Drills do not show correct answers before response; speech remains optional and cannot count as human audio',()=>{
@@ -89,4 +89,32 @@ test('All ten topics have enough distinct phrases for 5 comprehension prompts, s
  assert.match(script,/if\(writingFinished\)return/);
  assert.match(script,/if\(checked\.exact\)\{score\+\+;markKnown\(writingIndex\)\}/);
  assert.match(script,/وليست حكمًا على جميع الصياغات الصحيحة/);
+});
+
+test('Ten original Brazilian dialogues contain 40 contextual Portuguese/Arabic turns, shown only before assessment',()=>{
+ const sandbox={window:{}};new vm.Script(read('ptbr-practical-dialogues.js')).runInNewContext(sandbox);
+ const contextData=sandbox.window.SD_PTBR_DIALOGUES;
+ assert.equal(contextData.version,1);assert.equal(contextData.locale,'pt-BR');
+ assert.equal(contextData.dialogues.length,10);
+ const content=data().themes,ids=new Set(content.map(x=>x.id));
+ const phrases=new Set(content.flatMap(x=>x.phrases.map(p=>p[0].trim().toLocaleLowerCase('pt-BR'))));
+ const added=new Set();
+ for(const d of contextData.dialogues){
+  assert.ok(ids.has(d.id),'dialogue is not linked to actual practice theme '+d.id);
+  assert.ok(d.scene.length>=9);
+  assert.equal(d.turns.length,4);
+  for(const turn of d.turns){
+   assert.ok(['A','B'].includes(turn[0]));
+   assert.ok(turn[1].trim().length>10&&turn[2].trim().length>5);
+   const key=turn[1].trim().toLocaleLowerCase('pt-BR');
+   assert.ok(!phrases.has(key)&&!added.has(key),'new dialogue was copied/duplicated: '+turn[1]);
+   added.add(key);
+  }
+ }
+ assert.equal(added.size,40);
+ const src=read('ptbr-practical-lab.js');
+ assert.match(src,/function contextDialogue\(t\)/);
+ assert.match(src,/contextDialogue\(t\)/);
+ assert.match(src,/if\(stage==='cards'\)return cards\(\)/);
+ assert.doesNotMatch(src.slice(src.indexOf('function quiz(){'),src.indexOf('function startOrdering(){')),/contextDialogue/);
 });
