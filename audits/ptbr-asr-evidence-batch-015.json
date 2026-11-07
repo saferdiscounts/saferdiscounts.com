@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR observations only; short words can be incorrectly language-detected. Not certified pronunciation.",
+  "range": {
+    "start": 225,
+    "end": 256
+  },
+  "results": [
+    {
+      "path": "advanced/adv_15_225.mp3",
+      "transcript": "Cummings.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_225_slow.mp3",
+      "transcript": "Accomings",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_226.mp3",
+      "transcript": "發了一張",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_226_slow.mp3",
+      "transcript": "Esfala, Lânion!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_227.mp3",
+      "transcript": "estaar",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_227_slow.mp3",
+      "transcript": "Whistar",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_228.mp3",
+      "transcript": "See out of it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_228_slow.mp3",
+      "transcript": "Não se erra.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_229.mp3",
+      "transcript": "Estou...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_229_slow.mp3",
+      "transcript": "And it's so.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_230.mp3",
+      "transcript": "so",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_230_slow.mp3",
+      "transcript": "So",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_231.mp3",
+      "transcript": "It's time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_231_slow.mp3",
+      "transcript": "¡Wyster!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_232.mp3",
+      "transcript": "¡Estamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_232_slow.mp3",
+      "transcript": "Nós estamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_233.mp3",
+      "transcript": "Somos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_233_slow.mp3",
+      "transcript": "É sómos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_234.mp3",
+      "transcript": "Estão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_234_slow.mp3",
+      "transcript": "O estão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_235.mp3",
+      "transcript": "So...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_235_slow.mp3",
+      "transcript": "This is our home.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_236.mp3",
+      "transcript": "把他吸引",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_236_slow.mp3",
+      "transcript": "都把他吃贏",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_237.mp3",
+      "transcript": "Come with me.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_237_slow.mp3",
+      "transcript": "Accombs.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_238.mp3",
+      "transcript": "Falei.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_238_slow.mp3",
+      "transcript": "Bye bye.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_239.mp3",
+      "transcript": "Tchau!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_239_slow.mp3",
+      "transcript": "I'm about to see you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_240.mp3",
+      "transcript": "Komm, euth!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_240_slow.mp3",
+      "transcript": "e comeu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_241.mp3",
+      "transcript": "Follow",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_241_slow.mp3",
+      "transcript": "If I lose.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_242.mp3",
+      "transcript": "Partirão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_242_slow.mp3",
+      "transcript": "Departure to you, don't.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_243.mp3",
+      "transcript": "Commitons!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_243_slow.mp3",
+      "transcript": "Det kommer med det här hans.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_244.mp3",
+      "transcript": "Falado!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_244_slow.mp3",
+      "transcript": "He fell out of homes.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_245.mp3",
+      "transcript": "Meera.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_245_slow.mp3",
+      "transcript": "Amir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_246.mp3",
+      "transcript": "for you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_246_slow.mp3",
+      "transcript": "Eu fui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_247.mp3",
+      "transcript": "Bye!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_247_slow.mp3",
+      "transcript": "Before you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_248.mp3",
+      "transcript": "Fomos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_248_slow.mp3",
+      "transcript": "E vamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_249.mp3",
+      "transcript": "Foda-on!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_249_slow.mp3",
+      "transcript": "Before the demos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_250.mp3",
+      "transcript": "Estiveu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_250_slow.mp3",
+      "transcript": "Oeste Chivu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_251.mp3",
+      "transcript": "Esteve.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_251_slow.mp3",
+      "transcript": "always stay with you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_252.mp3",
+      "transcript": "estivemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_252_slow.mp3",
+      "transcript": "O que estivemos?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_253.mp3",
+      "transcript": "Estiveram.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_253_slow.mp3",
+      "transcript": "Listes tiveram.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_254.mp3",
+      "transcript": "Stay out of it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_254_slow.mp3",
+      "transcript": "Tot de heren.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_255.mp3",
+      "transcript": "Chewie!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_255_slow.mp3",
+      "transcript": "A ci wy!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_256.mp3",
+      "transcript": "See you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_256_slow.mp3",
+      "transcript": "I'll tell you everything.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
