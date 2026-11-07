@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only; not pronunciation verification.",
+  "range": {
+    "start": 289,
+    "end": 304
+  },
+  "results": [
+    {
+      "path": "advanced/adv_16_289.mp3",
+      "transcript": "Viem-os!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_289_slow.mp3",
+      "transcript": "Abreiemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_290.mp3",
+      "transcript": "Viajão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_290_slow.mp3",
+      "transcript": "Viaira, honra!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_291.mp3",
+      "transcript": "Dóriga.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_291_slow.mp3",
+      "transcript": "Dindar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_292.mp3",
+      "transcript": "Day.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_292_slow.mp3",
+      "transcript": "Tadei!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_293.mp3",
+      "transcript": "Deal.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_293_slow.mp3",
+      "transcript": "Adeu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_294.mp3",
+      "transcript": "Demos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_294_slow.mp3",
+      "transcript": "Ademos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_295.mp3",
+      "transcript": "Deraan hond.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_295_slow.mp3",
+      "transcript": "De erros.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_296.mp3",
+      "transcript": "Board.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_296_slow.mp3",
+      "transcript": "I'm bored.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_297.mp3",
+      "transcript": "Bullseye.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_297_slow.mp3",
+      "transcript": "Após!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_298.mp3",
+      "transcript": "Bullets.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_298_slow.mp3",
+      "transcript": "Impose.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_299.mp3",
+      "transcript": "Pusemos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_299_slow.mp3",
+      "transcript": "Aposemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_300.mp3",
+      "transcript": "Puseram!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_300_slow.mp3",
+      "transcript": "Papuzeram!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_301.mp3",
+      "transcript": "for your heal-on-ting.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_301_slow.mp3",
+      "transcript": "Fui ouw hio onteing.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_302.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_302.mp3 returned HTTP 404 (Ray ID a56b5c465acb1591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_16_302_slow.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_302_slow.mp3 returned HTTP 404 (Ray ID a56b5c48dcd81591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_16_303.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_303.mp3 returned HTTP 404 (Ray ID a56b5c4aff311591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_16_303_slow.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_303_slow.mp3 returned HTTP 404 (Ray ID a56b5c4d098c1591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_16_304.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_304.mp3 returned HTTP 404 (Ray ID a56b5c4f6c041591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_16_304_slow.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_16_304_slow.mp3 returned HTTP 404 (Ray ID a56b5c517da61591-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    }
+  ]
+}
