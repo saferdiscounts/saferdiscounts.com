@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "method": "Cross-model ASR verification with Whisper Large V3 Turbo; not native-speaker review.",
+  "results": [
+    {
+      "item": 393,
+      "speed": "normal",
+      "path": "advanced/adv_23_393.mp3",
+      "transcript": "Mais aqui",
+      "duration": 1.103375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "mais... que",
+      "exactMatch": false
+    },
+    {
+      "item": 393,
+      "speed": "slow",
+      "path": "advanced/adv_23_393_slow.mp3",
+      "transcript": "Mais aqui.",
+      "duration": 1.4446875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "mais... que",
+      "exactMatch": false
+    },
+    {
+      "item": 394,
+      "speed": "normal",
+      "path": "advanced/adv_23_394.mp3",
+      "transcript": "Menos like you",
+      "duration": 1.167375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "menos... que",
+      "exactMatch": false
+    },
+    {
+      "item": 394,
+      "speed": "slow",
+      "path": "advanced/adv_23_394_slow.mp3",
+      "transcript": "Menos, Zaiqie.",
+      "duration": 1.5086875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "menos... que",
+      "exactMatch": false
+    },
+    {
+      "item": 395,
+      "speed": "normal",
+      "path": "advanced/adv_23_395.mp3",
+      "transcript": "Tens quanto.",
+      "duration": 1.21,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "tão... quanto",
+      "exactMatch": false
+    },
+    {
+      "item": 395,
+      "speed": "slow",
+      "path": "advanced/adv_23_395_slow.mp3",
+      "transcript": "Dita 11. Quanto?",
+      "duration": 1.551375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "tão... quanto",
+      "exactMatch": false
+    },
+    {
+      "item": 396,
+      "speed": "normal",
+      "path": "advanced/adv_23_396.mp3",
+      "transcript": "O mais.",
+      "duration": 0.9326875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "o mais",
+      "exactMatch": true
+    },
+    {
+      "item": 396,
+      "speed": "slow",
+      "path": "advanced/adv_23_396_slow.mp3",
+      "transcript": "Ooh, mice.",
+      "duration": 1.167375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "o mais",
+      "exactMatch": false
+    },
+    {
+      "item": 397,
+      "speed": "normal",
+      "path": "advanced/adv_23_397.mp3",
+      "transcript": "A mais.",
+      "duration": 0.954,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "a mais",
+      "exactMatch": true
+    },
+    {
+      "item": 397,
+      "speed": "slow",
+      "path": "advanced/adv_23_397_slow.mp3",
+      "transcript": "Jamais.",
+      "duration": 1.21,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "a mais",
+      "exactMatch": false
+    },
+    {
+      "item": 398,
+      "speed": "normal",
+      "path": "advanced/adv_23_398.mp3",
+      "transcript": "Más.",
+      "duration": 0.718375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "mas",
+      "exactMatch": true
+    },
+    {
+      "item": 398,
+      "speed": "slow",
+      "path": "advanced/adv_23_398_slow.mp3",
+      "transcript": "Y más.",
+      "duration": 0.9326875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "mas",
+      "exactMatch": false
+    }
+  ]
+}
