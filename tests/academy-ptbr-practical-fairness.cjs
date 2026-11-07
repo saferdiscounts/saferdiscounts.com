@@ -43,3 +43,10 @@ test('learner flashcards offer normal and slow Brazilian speech separately',()=>
   assert.match(lab,/data-play="'\+cardIndex\+'" data-slow="yes"/);
   assert.match(lab,/x\.rate=slow\?\.62:\.90/);
 });
+
+test('practical lab links to original R2-backed listening library and distinguishes synthetic speech',()=>{
+  const html=fs.readFileSync(path.join(root,'ptbr-practical-lab.html'),'utf8');
+  assert.match(html,/href="ptbr-pronunciation\.html"/);
+  assert.match(html,/href="academy-audio-status\.html\?lang=ptbr"/);
+  assert.match(html,/أزرارها تستخدم صوت المتصفح الآلي/);
+});
