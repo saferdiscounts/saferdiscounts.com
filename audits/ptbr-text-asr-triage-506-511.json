@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "scope": "ptbr items 506-511",
+  "method": "Compare expected text to initial Whisper transcripts after case/accent/punctuation normalization. Not independent audio verification.",
+  "independentAudioVerification": "blocked: whisper-large-v3 access denied; whisper-large-v3-turbo input rejected",
+  "items": [
+    {
+      "item": 506,
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "normal": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um taxi até o hotel. Depois do chequinho, fomos ao pão de açúcar para ver a vista. A tarde caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "slow": "Pronto, em fui ao Rio de Janeiro, com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um taxi até o hotel. Depois do check-in, fomos ao pão de açúcar para ver a vista. A tarde caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "normalExact": false,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    },
+    {
+      "item": 507,
+      "expected": "pegar",
+      "normal": "Bigar!",
+      "slow": "to pay guards.",
+      "normalExact": false,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    },
+    {
+      "item": 508,
+      "expected": "Pão de Açúcar",
+      "normal": "Pão de açúcar.",
+      "slow": "e pão de açúcar.",
+      "normalExact": true,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    },
+    {
+      "item": 509,
+      "expected": "suco de coco",
+      "normal": "スークジコーク",
+      "slow": "Suco G. Calco.",
+      "normalExact": false,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    },
+    {
+      "item": 510,
+      "expected": "inesquecível",
+      "normal": "Inescacivel.",
+      "slow": "I mean, let's get C-Vill.",
+      "normalExact": false,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    },
+    {
+      "item": 511,
+      "expected": "Boa sorte e força!",
+      "normal": "Boa Sarchi Força.",
+      "slow": "Boa Sarchi Fortisett.",
+      "normalExact": false,
+      "slowExact": false,
+      "status": "needs_independent_audio_review"
+    }
+  ]
+}
