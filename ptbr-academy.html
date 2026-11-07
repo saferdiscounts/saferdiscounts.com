@@ -234,6 +234,7 @@ function addR2LessonsToList(){
  if(!groups.length)return;
  const heading=document.createElement('div');heading.className='lesson-group';heading.textContent='🎧 دروس العبارات المسجلة من R2 — نص + معنى + نطق';
  list.appendChild(heading);
+ const auditLink=document.createElement('a');auditLink.href='ptbr-r2-audio-audit.html';auditLink.textContent='🔎 تدقيق تسجيلات R2 والترجمات';auditLink.style.display='block';auditLink.style.padding='10px';list.appendChild(auditLink);
  for(const {g,i} of groups){
   const button=document.createElement('button');button.type='button';button.className='lessonpick';
   button.textContent=g.title+' ('+g.items.length+' عبارة مسجلة)';
