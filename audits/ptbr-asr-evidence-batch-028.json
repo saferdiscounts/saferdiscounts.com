@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 430,
+    "end": 445
+  },
+  "results": [
+    {
+      "path": "advanced/adv_26_430.mp3",
+      "transcript": "Médico",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_430_slow.mp3",
+      "transcript": "A meds de escurros.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_431.mp3",
+      "transcript": "Ospitał.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_431_slow.mp3",
+      "transcript": "Ingospital.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_432.mp3",
+      "transcript": "farmacia",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_432_slow.mp3",
+      "transcript": "e farmácia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_433.mp3",
+      "transcript": "Door.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_433_slow.mp3",
+      "transcript": "DORED!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_434.mp3",
+      "transcript": "Preciso de um médico.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_434_slow.mp3",
+      "transcript": "Apreciso de um médico.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_435.mp3",
+      "transcript": "Now he's still being.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_435_slow.mp3",
+      "transcript": "Now we're still being.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_436.mp3",
+      "transcript": "Febre.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_436_slow.mp3",
+      "transcript": "Fébrio!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_437.mp3",
+      "transcript": "Dour de cabeça.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_437_slow.mp3",
+      "transcript": "Dour de cabeça.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_438.mp3",
+      "transcript": "Dorgi, stomago.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_438_slow.mp3",
+      "transcript": "Dorgi, estou amago.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_439.mp3",
+      "transcript": "Receita Médica.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_439_slow.mp3",
+      "transcript": "O Receita Médica",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_440.mp3",
+      "transcript": "amb ul·lància.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_440_slow.mp3",
+      "transcript": "i gambuolansia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_441.mp3",
+      "transcript": "Emergencia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_441_slow.mp3",
+      "transcript": "O demergência.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_442.mp3",
+      "transcript": "szamiomanbulansja.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_442_slow.mp3",
+      "transcript": "Sham Yumanbulansia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_443.mp3",
+      "transcript": "Alegia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_443_slow.mp3",
+      "transcript": "Um valor de energia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_444.mp3",
+      "transcript": "I'll see you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_444_slow.mp3",
+      "transcript": "I'll see you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_26_445.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_26_445.mp3 returned HTTP 404 (Ray ID a56ba6711959bf4c-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    },
+    {
+      "path": "advanced/adv_26_445_slow.mp3",
+      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_26_445_slow.mp3 returned HTTP 404 (Ray ID a56ba67359b0bf4c-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+    }
+  ]
+}
