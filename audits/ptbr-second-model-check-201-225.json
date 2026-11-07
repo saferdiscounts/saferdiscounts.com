@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 201,
+      "speed": "normal",
+      "path": "advanced/adv_14_201.mp3",
+      "transcript": "Ele levanta-se cedo.",
+      "duration": 1.679375,
+      "expected": "Ele levanta-se cedo.",
+      "exactMatch": true
+    },
+    {
+      "item": 201,
+      "speed": "slow",
+      "path": "advanced/adv_14_201_slow.mp3",
+      "transcript": "E ele levanta-se cedo.",
+      "duration": 2.319375,
+      "expected": "Ele levanta-se cedo.",
+      "exactMatch": false
+    },
+    {
+      "item": 202,
+      "speed": "normal",
+      "path": "advanced/adv_14_202.mp3",
+      "transcript": "Exceção.",
+      "duration": 1.146,
+      "expected": "receção",
+      "exactMatch": false
+    },
+    {
+      "item": 202,
+      "speed": "slow",
+      "path": "advanced/adv_14_202_slow.mp3",
+      "transcript": "De exceção.",
+      "duration": 1.4446875,
+      "expected": "receção",
+      "exactMatch": false
+    },
+    {
+      "item": 203,
+      "speed": "normal",
+      "path": "advanced/adv_14_203.mp3",
+      "transcript": "Recepção.",
+      "duration": 1.167375,
+      "expected": "recepção",
+      "exactMatch": true
+    },
+    {
+      "item": 203,
+      "speed": "slow",
+      "path": "advanced/adv_14_203_slow.mp3",
+      "transcript": "A recepção.",
+      "duration": 1.487375,
+      "expected": "recepção",
+      "exactMatch": false
+    },
+    {
+      "item": 204,
+      "speed": "normal",
+      "path": "advanced/adv_14_204.mp3",
+      "transcript": "Contacto.",
+      "duration": 1.1886875,
+      "expected": "contacto",
+      "exactMatch": true
+    },
+    {
+      "item": 204,
+      "speed": "slow",
+      "path": "advanced/adv_14_204_slow.mp3",
+      "transcript": "E CONTRACTO.",
+      "duration": 1.466,
+      "expected": "contacto",
+      "exactMatch": false
+    },
+    {
+      "item": 205,
+      "speed": "normal",
+      "path": "advanced/adv_14_205.mp3",
+      "transcript": "Contato.",
+      "duration": 1.1246875,
+      "expected": "contato",
+      "exactMatch": true
+    },
+    {
+      "item": 205,
+      "speed": "slow",
+      "path": "advanced/adv_14_205_slow.mp3",
+      "transcript": "E contrato.",
+      "duration": 1.466,
+      "expected": "contato",
+      "exactMatch": false
+    },
+    {
+      "item": 206,
+      "speed": "normal",
+      "path": "advanced/adv_14_206.mp3",
+      "transcript": "オチム",
+      "duration": 0.954,
+      "expected": "ótimo",
+      "exactMatch": false
+    },
+    {
+      "item": 206,
+      "speed": "slow",
+      "path": "advanced/adv_14_206_slow.mp3",
+      "transcript": "É ótimo.",
+      "duration": 1.2526875,
+      "expected": "ótimo",
+      "exactMatch": false
+    },
+    {
+      "item": 207,
+      "speed": "normal",
+      "path": "advanced/adv_15_207.mp3",
+      "transcript": "Nailed.",
+      "duration": 0.718375,
+      "expected": "eu",
+      "exactMatch": false
+    },
+    {
+      "item": 207,
+      "speed": "slow",
+      "path": "advanced/adv_15_207_slow.mp3",
+      "transcript": "Nailed",
+      "duration": 0.911375,
+      "expected": "eu",
+      "exactMatch": false
+    },
+    {
+      "item": 208,
+      "speed": "normal",
+      "path": "advanced/adv_15_208.mp3",
+      "transcript": "Você.",
+      "duration": 0.9326875,
+      "expected": "você",
+      "exactMatch": true
+    },
+    {
+      "item": 208,
+      "speed": "slow",
+      "path": "advanced/adv_15_208_slow.mp3",
+      "transcript": "Você.",
+      "duration": 1.1886875,
+      "expected": "você",
+      "exactMatch": true
+    },
+    {
+      "item": 209,
+      "speed": "normal",
+      "path": "advanced/adv_15_209.mp3",
+      "transcript": "They leave.",
+      "duration": 0.762,
+      "expected": "ele",
+      "exactMatch": false
+    },
+    {
+      "item": 209,
+      "speed": "slow",
+      "path": "advanced/adv_15_209_slow.mp3",
+      "transcript": "Ozeio, Luís.",
+      "duration": 1.018,
+      "expected": "ele",
+      "exactMatch": false
+    },
+    {
+      "item": 210,
+      "speed": "normal",
+      "path": "advanced/adv_15_210.mp3",
+      "transcript": "Say hello.",
+      "duration": 0.826,
+      "expected": "ela",
+      "exactMatch": false
+    },
+    {
+      "item": 210,
+      "speed": "slow",
+      "path": "advanced/adv_15_210_slow.mp3",
+      "transcript": "Nelas.",
+      "duration": 1.039375,
+      "expected": "ela",
+      "exactMatch": false
+    },
+    {
+      "item": 211,
+      "speed": "normal",
+      "path": "advanced/adv_15_211.mp3",
+      "transcript": "Nos.",
+      "duration": 0.8046875,
+      "expected": "nós",
+      "exactMatch": true
+    },
+    {
+      "item": 211,
+      "speed": "slow",
+      "path": "advanced/adv_15_211_slow.mp3",
+      "transcript": "He knows.",
+      "duration": 1.0606875,
+      "expected": "nós",
+      "exactMatch": false
+    },
+    {
+      "item": 212,
+      "speed": "normal",
+      "path": "advanced/adv_15_212.mp3",
+      "transcript": "¡Vocés!",
+      "duration": 1.039375,
+      "expected": "vocês",
+      "exactMatch": true
+    },
+    {
+      "item": 212,
+      "speed": "slow",
+      "path": "advanced/adv_15_212_slow.mp3",
+      "transcript": "Of all says",
+      "duration": 1.21,
+      "expected": "vocês",
+      "exactMatch": false
+    },
+    {
+      "item": 213,
+      "speed": "normal",
+      "path": "advanced/adv_15_213.mp3",
+      "transcript": "Eles.",
+      "duration": 0.847,
+      "expected": "eles",
+      "exactMatch": true
+    },
+    {
+      "item": 213,
+      "speed": "slow",
+      "path": "advanced/adv_15_213_slow.mp3",
+      "transcript": "Ok, Luiz.",
+      "duration": 1.039375,
+      "expected": "eles",
+      "exactMatch": false
+    },
+    {
+      "item": 214,
+      "speed": "normal",
+      "path": "advanced/adv_15_214.mp3",
+      "transcript": "Bartitude.",
+      "duration": 0.911375,
+      "expected": "parto",
+      "exactMatch": false
+    },
+    {
+      "item": 214,
+      "speed": "slow",
+      "path": "advanced/adv_15_214_slow.mp3",
+      "transcript": "It's a part of the tour.",
+      "duration": 1.1886875,
+      "expected": "parto",
+      "exactMatch": false
+    },
+    {
+      "item": 215,
+      "speed": "normal",
+      "path": "advanced/adv_15_215.mp3",
+      "transcript": "Come wait.",
+      "duration": 0.847375,
+      "expected": "como",
+      "exactMatch": false
+    },
+    {
+      "item": 215,
+      "speed": "slow",
+      "path": "advanced/adv_15_215_slow.mp3",
+      "transcript": "Bir kalmeli.",
+      "duration": 1.0606875,
+      "expected": "como",
+      "exactMatch": false
+    },
+    {
+      "item": 216,
+      "speed": "normal",
+      "path": "advanced/adv_15_216.mp3",
+      "transcript": "Falou!",
+      "duration": 0.868375,
+      "expected": "falo",
+      "exactMatch": false
+    },
+    {
+      "item": 216,
+      "speed": "slow",
+      "path": "advanced/adv_15_216_slow.mp3",
+      "transcript": "Desfalou!",
+      "duration": 1.103375,
+      "expected": "falo",
+      "exactMatch": false
+    },
+    {
+      "item": 217,
+      "speed": "normal",
+      "path": "advanced/adv_15_217.mp3",
+      "transcript": "巴的气",
+      "duration": 0.9326875,
+      "expected": "parte",
+      "exactMatch": false
+    },
+    {
+      "item": 217,
+      "speed": "slow",
+      "path": "advanced/adv_15_217_slow.mp3",
+      "transcript": "I'll part it shoe.",
+      "duration": 1.2526875,
+      "expected": "parte",
+      "exactMatch": false
+    },
+    {
+      "item": 218,
+      "speed": "normal",
+      "path": "advanced/adv_15_218.mp3",
+      "transcript": "Comis.",
+      "duration": 0.8046875,
+      "expected": "come",
+      "exactMatch": false
+    },
+    {
+      "item": 218,
+      "speed": "slow",
+      "path": "advanced/adv_15_218_slow.mp3",
+      "transcript": "Call me.",
+      "duration": 1.082,
+      "expected": "come",
+      "exactMatch": false
+    },
+    {
+      "item": 219,
+      "speed": "normal",
+      "path": "advanced/adv_15_219.mp3",
+      "transcript": "Falei.",
+      "duration": 0.847375,
+      "expected": "fala",
+      "exactMatch": false
+    },
+    {
+      "item": 219,
+      "speed": "slow",
+      "path": "advanced/adv_15_219_slow.mp3",
+      "transcript": "If I look.",
+      "duration": 1.1246875,
+      "expected": "fala",
+      "exactMatch": false
+    },
+    {
+      "item": 220,
+      "speed": "normal",
+      "path": "advanced/adv_15_220.mp3",
+      "transcript": "Partimos!",
+      "duration": 1.146,
+      "expected": "partimos",
+      "exactMatch": true
+    },
+    {
+      "item": 220,
+      "speed": "slow",
+      "path": "advanced/adv_15_220_slow.mp3",
+      "transcript": "Aparecimos.",
+      "duration": 1.423375,
+      "expected": "partimos",
+      "exactMatch": false
+    },
+    {
+      "item": 221,
+      "speed": "normal",
+      "path": "advanced/adv_15_221.mp3",
+      "transcript": "Comemos.",
+      "duration": 1.082,
+      "expected": "comemos",
+      "exactMatch": true
+    },
+    {
+      "item": 221,
+      "speed": "slow",
+      "path": "advanced/adv_15_221_slow.mp3",
+      "transcript": "Recomemos.",
+      "duration": 1.3166875,
+      "expected": "comemos",
+      "exactMatch": false
+    },
+    {
+      "item": 222,
+      "speed": "normal",
+      "path": "advanced/adv_15_222.mp3",
+      "transcript": "Falamos!",
+      "duration": 1.082,
+      "expected": "falamos",
+      "exactMatch": true
+    },
+    {
+      "item": 222,
+      "speed": "slow",
+      "path": "advanced/adv_15_222_slow.mp3",
+      "transcript": "E falamos.",
+      "duration": 1.3806875,
+      "expected": "falamos",
+      "exactMatch": false
+    },
+    {
+      "item": 223,
+      "speed": "normal",
+      "path": "advanced/adv_15_223.mp3",
+      "transcript": "Elas.",
+      "duration": 0.8686875,
+      "expected": "elas",
+      "exactMatch": true
+    },
+    {
+      "item": 223,
+      "speed": "slow",
+      "path": "advanced/adv_15_223_slow.mp3",
+      "transcript": "E melas.",
+      "duration": 1.039375,
+      "expected": "elas",
+      "exactMatch": false
+    },
+    {
+      "item": 224,
+      "speed": "normal",
+      "path": "advanced/adv_15_224.mp3",
+      "transcript": "By the thing.",
+      "duration": 1.039375,
+      "expected": "partem",
+      "exactMatch": false
+    },
+    {
+      "item": 224,
+      "speed": "slow",
+      "path": "advanced/adv_15_224_slow.mp3",
+      "transcript": "The part of the thing.",
+      "duration": 1.274,
+      "expected": "partem",
+      "exactMatch": false
+    },
+    {
+      "item": 225,
+      "speed": "normal",
+      "path": "advanced/adv_15_225.mp3",
+      "transcript": "Comments.",
+      "duration": 0.975375,
+      "expected": "comem",
+      "exactMatch": false
+    },
+    {
+      "item": 225,
+      "speed": "slow",
+      "path": "advanced/adv_15_225_slow.mp3",
+      "transcript": "a call means",
+      "duration": 1.21,
+      "expected": "comem",
+      "exactMatch": false
+    }
+  ]
+}
