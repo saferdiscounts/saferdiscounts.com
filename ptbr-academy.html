@@ -228,8 +228,8 @@ function buildR2LessonGroups(){
 }
 function addR2LessonsToList(){
  const list=document.getElementById('lessonList');
- if(!list||!ptbrAudioReady||!r2LessonGroups.length||!['a1','a2','b1','b2','travel'].includes(activeTrack))return;
- const advanced=['b1','b2'].includes(activeTrack);
+ if(!list||!ptbrAudioReady||!r2LessonGroups.length||!['a1','a2','b1','b2','c1','c2','travel'].includes(activeTrack))return;
+ const advanced=['b1','b2','c1','c2'].includes(activeTrack);
  const groups=r2LessonGroups.map((g,i)=>({g,i})).filter(({g})=>advanced?g.level==='advanced':g.level==='basic');
  if(!groups.length)return;
  const heading=document.createElement('div');heading.className='lesson-group';heading.textContent='🎧 دروس العبارات المسجلة من R2 — نص + معنى + نطق';
