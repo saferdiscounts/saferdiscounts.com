@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct Cloudflare R2 GET + Workers AI @cf/openai/whisper",
+  "note": "32 independent ASR observations, not certified pronunciation or text matches. 404 attempts on non-index keys bas_01_013..016 excluded because those keys do not exist in the index.",
+  "results": [
+    {
+      "path": "basic/bas_01_007.mp3",
+      "transcript": "e menta.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_007_slow.mp3",
+      "transcript": "E de mentas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_008.mp3",
+      "transcript": "كردا بيو",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_008_slow.mp3",
+      "transcript": "Encara-te da apio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_009.mp3",
+      "transcript": "Elke took zou goed.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_009_slow.mp3",
+      "transcript": "Εινάω τρόξα αγχου.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_010.mp3",
+      "transcript": "Ony, booze.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_010_slow.mp3",
+      "transcript": "Hang on, eBoos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_011.mp3",
+      "transcript": "Tell him more, Veil.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_011_slow.mp3",
+      "transcript": "אצל למורביו",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_012.mp3",
+      "transcript": "¡Celular!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_012_slow.mp3",
+      "transcript": "em celular.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_013.mp3",
+      "transcript": "noito.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_013_slow.mp3",
+      "transcript": "Good boys!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_014.mp3",
+      "transcript": "All last.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_014_slow.mp3",
+      "transcript": "Ooh, what a lasker.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_015.mp3",
+      "transcript": "Bom dia!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_015_slow.mp3",
+      "transcript": "A bom dia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_016.mp3",
+      "transcript": "Boa tarde!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_016_slow.mp3",
+      "transcript": "Boa tarde!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_017.mp3",
+      "transcript": "Boa noite!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_017_slow.mp3",
+      "transcript": "Бо-бо-о-но-ид-ши.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_018.mp3",
+      "transcript": "Como vai?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_018_slow.mp3",
+      "transcript": "E como vai?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_019.mp3",
+      "transcript": "To the bang!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_019_slow.mp3",
+      "transcript": "Tá tudo, bens?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_020.mp3",
+      "transcript": "to the bong.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_020_slow.mp3",
+      "transcript": "tattooed bones",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
