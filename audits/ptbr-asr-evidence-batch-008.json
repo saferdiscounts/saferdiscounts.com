@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Raw ASR observations; one pathological Japanese repeated hallucination shortened and marked truncated. Not verified pronunciation.",
+  "results": [
+    {
+      "path": "basic/bas_05_097.mp3",
+      "transcript": "Desoi-to.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_097_slow.mp3",
+      "transcript": "Desoi, tu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_098.mp3",
+      "transcript": "ご視聴いただきましてくださって… [ASR repeated Japanese text; truncated in evidence]",
+      "engine": "@cf/openai/whisper",
+      "truncated": true
+    },
+    {
+      "path": "basic/bas_05_098_slow.mp3",
+      "transcript": "E vou ir tudo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_099.mp3",
+      "transcript": "Dezenovie.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_099_slow.mp3",
+      "transcript": "Desenove.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_100.mp3",
+      "transcript": "Nave.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_100_slow.mp3",
+      "transcript": "Navi.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_101.mp3",
+      "transcript": "Vim, tchau!",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_101_slow.mp3",
+      "transcript": "I've been to you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_102.mp3",
+      "transcript": "That's...",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_102_slow.mp3",
+      "transcript": "You're dead.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_103.mp3",
+      "transcript": "Tsirinta.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_103_slow.mp3",
+      "transcript": "Let's ring the bell.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_104.mp3",
+      "transcript": "Quarenta.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_104_slow.mp3",
+      "transcript": "e quarenta",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_105.mp3",
+      "transcript": "Oitenta.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_105_slow.mp3",
+      "transcript": "Lvojí tějínské.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_106.mp3",
+      "transcript": "50.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_106_slow.mp3",
+      "transcript": "A cinquenta.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_107.mp3",
+      "transcript": "Noventa.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_107_slow.mp3",
+      "transcript": "de noventas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_108.mp3",
+      "transcript": "Se senta!",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_108_slow.mp3",
+      "transcript": "Não se senta.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_109.mp3",
+      "transcript": "saying",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_109_slow.mp3",
+      "transcript": "I'm saying",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_110.mp3",
+      "transcript": "setenta.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_05_110_slow.mp3",
+      "transcript": "No setenta.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_111.mp3",
+      "transcript": "Segunda-feira.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_06_111_slow.mp3",
+      "transcript": "Segunda Afeira.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_112.mp3",
+      "transcript": "There's a feta.",
+      "engine": "@cf/openai/whisper",
+      "truncated": false
+    },
+    {
+      "path": "basic/bas_06_112_slow.mp3",
+      "transcript": "Deirça a feira.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
