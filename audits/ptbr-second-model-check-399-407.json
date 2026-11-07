@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR cross-check, not independent phonetic certification.",
+  "results": [
+    {
+      "item": 399,
+      "speed": "normal",
+      "path": "advanced/adv_23_399.mp3",
+      "transcript": "Puddings.",
+      "duration": 0.954,
+      "expected": "porém",
+      "exactMatch": false
+    },
+    {
+      "item": 399,
+      "speed": "slow",
+      "path": "advanced/adv_23_399_slow.mp3",
+      "transcript": "A poor dayings.",
+      "duration": 1.1886875,
+      "expected": "porém",
+      "exactMatch": false
+    },
+    {
+      "item": 400,
+      "speed": "normal",
+      "path": "advanced/adv_23_400.mp3",
+      "transcript": "Contudo.",
+      "duration": 1.039375,
+      "expected": "contudo",
+      "exactMatch": true
+    },
+    {
+      "item": 400,
+      "speed": "slow",
+      "path": "advanced/adv_23_400_slow.mp3",
+      "transcript": "Jeg kommer til at do det.",
+      "duration": 1.423375,
+      "expected": "contudo",
+      "exactMatch": false
+    },
+    {
+      "item": 401,
+      "speed": "normal",
+      "path": "advanced/adv_23_401.mp3",
+      "transcript": "Portanto,",
+      "duration": 1.082,
+      "expected": "portanto",
+      "exactMatch": true
+    },
+    {
+      "item": 401,
+      "speed": "slow",
+      "path": "advanced/adv_23_401_slow.mp3",
+      "transcript": "E por restante...",
+      "duration": 1.4446875,
+      "expected": "portanto",
+      "exactMatch": false
+    },
+    {
+      "item": 402,
+      "speed": "normal",
+      "path": "advanced/adv_23_402.mp3",
+      "transcript": "Portakeet",
+      "duration": 0.911375,
+      "expected": "porque",
+      "exactMatch": false
+    },
+    {
+      "item": 402,
+      "speed": "slow",
+      "path": "advanced/adv_23_402_slow.mp3",
+      "transcript": "A port a key",
+      "duration": 1.21,
+      "expected": "porque",
+      "exactMatch": false
+    },
+    {
+      "item": 403,
+      "speed": "normal",
+      "path": "advanced/adv_23_403.mp3",
+      "transcript": "Já aqui.",
+      "duration": 0.8686875,
+      "expected": "já que",
+      "exactMatch": false
+    },
+    {
+      "item": 403,
+      "speed": "slow",
+      "path": "advanced/adv_23_403_slow.mp3",
+      "transcript": "Eu vou girar aqui.",
+      "duration": 1.1246875,
+      "expected": "já que",
+      "exactMatch": false
+    },
+    {
+      "item": 404,
+      "speed": "normal",
+      "path": "advanced/adv_23_404.mp3",
+      "transcript": "Simbora!",
+      "duration": 1.039375,
+      "expected": "embora",
+      "exactMatch": false
+    },
+    {
+      "item": 404,
+      "speed": "slow",
+      "path": "advanced/adv_23_404_slow.mp3",
+      "transcript": "E se embora",
+      "duration": 1.338,
+      "expected": "embora",
+      "exactMatch": false
+    },
+    {
+      "item": 405,
+      "speed": "normal",
+      "path": "advanced/adv_23_405.mp3",
+      "transcript": "Apesar de...",
+      "duration": 1.21,
+      "expected": "apesar de",
+      "exactMatch": true
+    },
+    {
+      "item": 405,
+      "speed": "slow",
+      "path": "advanced/adv_23_405_slow.mp3",
+      "transcript": "Apesar de...",
+      "duration": 1.594,
+      "expected": "apesar de",
+      "exactMatch": true
+    },
+    {
+      "item": 406,
+      "speed": "normal",
+      "path": "advanced/adv_23_406.mp3",
+      "transcript": "KASU",
+      "duration": 0.911375,
+      "expected": "caso",
+      "exactMatch": false
+    },
+    {
+      "item": 406,
+      "speed": "slow",
+      "path": "advanced/adv_23_406_slow.mp3",
+      "transcript": "E caso...",
+      "duration": 1.146,
+      "expected": "caso",
+      "exactMatch": false
+    },
+    {
+      "item": 407,
+      "speed": "normal",
+      "path": "advanced/adv_23_407.mp3",
+      "transcript": "Sounds common.",
+      "duration": 1.103375,
+      "expected": "tão... como",
+      "exactMatch": false
+    },
+    {
+      "item": 407,
+      "speed": "slow",
+      "path": "advanced/adv_23_407_slow.mp3",
+      "transcript": "Estão se comuns.",
+      "duration": 1.5086875,
+      "expected": "tão... como",
+      "exactMatch": false
+    }
+  ]
+}
