@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Unprompted ASR, not pronunciation verification; short utterances frequently misrecognized.",
+  "results": [
+    {
+      "path": "basic/bas_03_033.mp3",
+      "transcript": "Thank you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_033_slow.mp3",
+      "transcript": "Nailed.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_034.mp3",
+      "transcript": "Você!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_034_slow.mp3",
+      "transcript": "Eu vou ser.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_035.mp3",
+      "transcript": "Dei-lhe.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_035_slow.mp3",
+      "transcript": "Auxê-lo, lixo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_036.mp3",
+      "transcript": "Zeyla!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_036_slow.mp3",
+      "transcript": "Nailers.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_037.mp3",
+      "transcript": "Nos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_037_slow.mp3",
+      "transcript": "He knows.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_038.mp3",
+      "transcript": "Vocês!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_038_slow.mp3",
+      "transcript": "But what says?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_039.mp3",
+      "transcript": "Elyse.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_039_slow.mp3",
+      "transcript": "Ovelis.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_040.mp3",
+      "transcript": "Nellus.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_040_slow.mp3",
+      "transcript": "e-mail us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_041.mp3",
+      "transcript": "so",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_041_slow.mp3",
+      "transcript": "So",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_042.mp3",
+      "transcript": "Somos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_042_slow.mp3",
+      "transcript": "É sómos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_043.mp3",
+      "transcript": "So...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_043_slow.mp3",
+      "transcript": "This is our home.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_044.mp3",
+      "transcript": "Estou...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_044_slow.mp3",
+      "transcript": "And it's so.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_045.mp3",
+      "transcript": "It's time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_045_slow.mp3",
+      "transcript": "¡Wyster!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_046.mp3",
+      "transcript": "¡Estamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_046_slow.mp3",
+      "transcript": "Nós estamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_047.mp3",
+      "transcript": "Estão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_047_slow.mp3",
+      "transcript": "O estão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_048.mp3",
+      "transcript": "Eu sou Egípcio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_048_slow.mp3",
+      "transcript": "Eu sou Egipcio.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
