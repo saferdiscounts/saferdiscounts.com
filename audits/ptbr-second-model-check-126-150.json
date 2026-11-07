@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 126,
+      "speed": "normal",
+      "path": "basic/bas_06_126.mp3",
+      "transcript": "My youth.",
+      "duration": 0.847,
+      "expected": "maio",
+      "exactMatch": false
+    },
+    {
+      "item": 126,
+      "speed": "slow",
+      "path": "basic/bas_06_126_slow.mp3",
+      "transcript": "Smile.",
+      "duration": 1.082,
+      "expected": "maio",
+      "exactMatch": false
+    },
+    {
+      "item": 127,
+      "speed": "normal",
+      "path": "basic/bas_06_127.mp3",
+      "transcript": "Novembro",
+      "duration": 1.082,
+      "expected": "novembro",
+      "exactMatch": true
+    },
+    {
+      "item": 127,
+      "speed": "slow",
+      "path": "basic/bas_06_127_slow.mp3",
+      "transcript": "em novembro.",
+      "duration": 1.402,
+      "expected": "novembro",
+      "exactMatch": false
+    },
+    {
+      "item": 128,
+      "speed": "normal",
+      "path": "basic/bas_06_128.mp3",
+      "transcript": "ジョン・ヨーグ",
+      "duration": 0.9326875,
+      "expected": "junho",
+      "exactMatch": false
+    },
+    {
+      "item": 128,
+      "speed": "slow",
+      "path": "basic/bas_06_128_slow.mp3",
+      "transcript": "这时候你又有了",
+      "duration": 1.3166875,
+      "expected": "junho",
+      "exactMatch": false
+    },
+    {
+      "item": 129,
+      "speed": "normal",
+      "path": "basic/bas_06_129.mp3",
+      "transcript": "Dezembro.",
+      "duration": 1.039375,
+      "expected": "dezembro",
+      "exactMatch": true
+    },
+    {
+      "item": 129,
+      "speed": "slow",
+      "path": "basic/bas_06_129_slow.mp3",
+      "transcript": "A dezembro.",
+      "duration": 1.3806875,
+      "expected": "dezembro",
+      "exactMatch": false
+    },
+    {
+      "item": 130,
+      "speed": "normal",
+      "path": "basic/bas_07_130.mp3",
+      "transcript": "Vermelho.",
+      "duration": 1.0606875,
+      "expected": "vermelho",
+      "exactMatch": true
+    },
+    {
+      "item": 130,
+      "speed": "slow",
+      "path": "basic/bas_07_130_slow.mp3",
+      "transcript": "To wear a mail you.",
+      "duration": 1.359375,
+      "expected": "vermelho",
+      "exactMatch": false
+    },
+    {
+      "item": 131,
+      "speed": "normal",
+      "path": "basic/bas_07_131.mp3",
+      "transcript": "Azul.",
+      "duration": 0.89,
+      "expected": "azul",
+      "exactMatch": true
+    },
+    {
+      "item": 131,
+      "speed": "slow",
+      "path": "basic/bas_07_131_slow.mp3",
+      "transcript": "Azul.",
+      "duration": 1.1246875,
+      "expected": "azul",
+      "exactMatch": true
+    },
+    {
+      "item": 132,
+      "speed": "normal",
+      "path": "basic/bas_07_132.mp3",
+      "transcript": "Where'd you?",
+      "duration": 1.018,
+      "expected": "verde",
+      "exactMatch": false
+    },
+    {
+      "item": 132,
+      "speed": "slow",
+      "path": "basic/bas_07_132_slow.mp3",
+      "transcript": "Averro de Ju",
+      "duration": 1.274,
+      "expected": "verde",
+      "exactMatch": false
+    },
+    {
+      "item": 133,
+      "speed": "normal",
+      "path": "basic/bas_07_133.mp3",
+      "transcript": "A Marcelo.",
+      "duration": 0.9966875,
+      "expected": "amarelo",
+      "exactMatch": false
+    },
+    {
+      "item": 133,
+      "speed": "slow",
+      "path": "basic/bas_07_133_slow.mp3",
+      "transcript": "Zé Marcelo",
+      "duration": 1.2526875,
+      "expected": "amarelo",
+      "exactMatch": false
+    },
+    {
+      "item": 134,
+      "speed": "normal",
+      "path": "basic/bas_07_134.mp3",
+      "transcript": "Prezo.",
+      "duration": 0.89,
+      "expected": "preto",
+      "exactMatch": false
+    },
+    {
+      "item": 134,
+      "speed": "slow",
+      "path": "basic/bas_07_134_slow.mp3",
+      "transcript": "o preço.",
+      "duration": 1.146,
+      "expected": "preto",
+      "exactMatch": false
+    },
+    {
+      "item": 135,
+      "speed": "normal",
+      "path": "basic/bas_07_135.mp3",
+      "transcript": "Bráncút",
+      "duration": 0.9326875,
+      "expected": "branco",
+      "exactMatch": false
+    },
+    {
+      "item": 135,
+      "speed": "slow",
+      "path": "basic/bas_07_135_slow.mp3",
+      "transcript": "Brancur",
+      "duration": 1.274,
+      "expected": "branco",
+      "exactMatch": false
+    },
+    {
+      "item": 136,
+      "speed": "normal",
+      "path": "basic/bas_07_136.mp3",
+      "transcript": "Laranja.",
+      "duration": 1.103375,
+      "expected": "laranja",
+      "exactMatch": true
+    },
+    {
+      "item": 136,
+      "speed": "slow",
+      "path": "basic/bas_07_136_slow.mp3",
+      "transcript": "E larângeras.",
+      "duration": 1.487375,
+      "expected": "laranja",
+      "exactMatch": false
+    },
+    {
+      "item": 137,
+      "speed": "normal",
+      "path": "basic/bas_07_137.mp3",
+      "transcript": "Oh, shoot.",
+      "duration": 0.89,
+      "expected": "roxo",
+      "exactMatch": false
+    },
+    {
+      "item": 137,
+      "speed": "slow",
+      "path": "basic/bas_07_137_slow.mp3",
+      "transcript": "Uma flor xirub.",
+      "duration": 1.167375,
+      "expected": "roxo",
+      "exactMatch": false
+    },
+    {
+      "item": 138,
+      "speed": "normal",
+      "path": "basic/bas_07_138.mp3",
+      "transcript": "What was it?",
+      "duration": 0.8686875,
+      "expected": "rosa",
+      "exactMatch": false
+    },
+    {
+      "item": 138,
+      "speed": "slow",
+      "path": "basic/bas_07_138_slow.mp3",
+      "transcript": "Info Z",
+      "duration": 1.167375,
+      "expected": "rosa",
+      "exactMatch": false
+    },
+    {
+      "item": 139,
+      "speed": "normal",
+      "path": "basic/bas_07_139.mp3",
+      "transcript": "things up",
+      "duration": 0.954,
+      "expected": "cinza",
+      "exactMatch": false
+    },
+    {
+      "item": 139,
+      "speed": "slow",
+      "path": "basic/bas_07_139_slow.mp3",
+      "transcript": "A scene is there.",
+      "duration": 1.2526875,
+      "expected": "cinza",
+      "exactMatch": false
+    },
+    {
+      "item": 140,
+      "speed": "normal",
+      "path": "basic/bas_07_140.mp3",
+      "transcript": "Mahong.",
+      "duration": 0.9326875,
+      "expected": "marrom",
+      "exactMatch": false
+    },
+    {
+      "item": 140,
+      "speed": "slow",
+      "path": "basic/bas_07_140_slow.mp3",
+      "transcript": "Die Machung.",
+      "duration": 1.21,
+      "expected": "marrom",
+      "exactMatch": false
+    },
+    {
+      "item": 141,
+      "speed": "normal",
+      "path": "basic/bas_08_141.mp3",
+      "transcript": "My",
+      "duration": 0.89,
+      "expected": "mãe",
+      "exactMatch": false
+    },
+    {
+      "item": 141,
+      "speed": "slow",
+      "path": "basic/bas_08_141_slow.mp3",
+      "transcript": "This is my age.",
+      "duration": 1.231375,
+      "expected": "mãe",
+      "exactMatch": false
+    },
+    {
+      "item": 142,
+      "speed": "normal",
+      "path": "basic/bas_08_142.mp3",
+      "transcript": "Pai.",
+      "duration": 0.783375,
+      "expected": "pai",
+      "exactMatch": true
+    },
+    {
+      "item": 142,
+      "speed": "slow",
+      "path": "basic/bas_08_142_slow.mp3",
+      "transcript": "Goodbye.",
+      "duration": 0.975375,
+      "expected": "pai",
+      "exactMatch": false
+    },
+    {
+      "item": 143,
+      "speed": "normal",
+      "path": "basic/bas_08_143.mp3",
+      "transcript": "Here's my home.",
+      "duration": 1.146,
+      "expected": "irmão",
+      "exactMatch": false
+    },
+    {
+      "item": 143,
+      "speed": "slow",
+      "path": "basic/bas_08_143_slow.mp3",
+      "transcript": "She's eating her mouth.",
+      "duration": 1.6366875,
+      "expected": "irmão",
+      "exactMatch": false
+    },
+    {
+      "item": 144,
+      "speed": "normal",
+      "path": "basic/bas_08_144.mp3",
+      "transcript": "Irre-mains.",
+      "duration": 1.018,
+      "expected": "irmã",
+      "exactMatch": false
+    },
+    {
+      "item": 144,
+      "speed": "slow",
+      "path": "basic/bas_08_144_slow.mp3",
+      "transcript": "Eater's mind.",
+      "duration": 1.295375,
+      "expected": "irmã",
+      "exactMatch": false
+    },
+    {
+      "item": 145,
+      "speed": "normal",
+      "path": "basic/bas_08_145.mp3",
+      "transcript": "It's failure.",
+      "duration": 0.89,
+      "expected": "filho",
+      "exactMatch": false
+    },
+    {
+      "item": 145,
+      "speed": "slow",
+      "path": "basic/bas_08_145_slow.mp3",
+      "transcript": "I feel your",
+      "duration": 1.1246875,
+      "expected": "filho",
+      "exactMatch": false
+    },
+    {
+      "item": 146,
+      "speed": "normal",
+      "path": "basic/bas_08_146.mp3",
+      "transcript": "Filia",
+      "duration": 0.9326875,
+      "expected": "filha",
+      "exactMatch": false
+    },
+    {
+      "item": 146,
+      "speed": "slow",
+      "path": "basic/bas_08_146_slow.mp3",
+      "transcript": "I feel you.",
+      "duration": 1.167375,
+      "expected": "filha",
+      "exactMatch": false
+    },
+    {
+      "item": 147,
+      "speed": "normal",
+      "path": "basic/bas_08_147.mp3",
+      "transcript": "A volta.",
+      "duration": 0.762,
+      "expected": "avô",
+      "exactMatch": false
+    },
+    {
+      "item": 147,
+      "speed": "slow",
+      "path": "basic/bas_08_147_slow.mp3",
+      "transcript": "É na voz.",
+      "duration": 0.9326875,
+      "expected": "avô",
+      "exactMatch": false
+    },
+    {
+      "item": 148,
+      "speed": "normal",
+      "path": "basic/bas_08_148.mp3",
+      "transcript": "Er wurde.",
+      "duration": 0.762,
+      "expected": "avó",
+      "exactMatch": false
+    },
+    {
+      "item": 148,
+      "speed": "slow",
+      "path": "basic/bas_08_148_slow.mp3",
+      "transcript": "É na voz.",
+      "duration": 0.975375,
+      "expected": "avó",
+      "exactMatch": false
+    },
+    {
+      "item": 149,
+      "speed": "normal",
+      "path": "basic/bas_08_149.mp3",
+      "transcript": "Marido.",
+      "duration": 0.975375,
+      "expected": "marido",
+      "exactMatch": true
+    },
+    {
+      "item": 149,
+      "speed": "slow",
+      "path": "basic/bas_08_149_slow.mp3",
+      "transcript": "É marido.",
+      "duration": 1.274,
+      "expected": "marido",
+      "exactMatch": false
+    },
+    {
+      "item": 150,
+      "speed": "normal",
+      "path": "basic/bas_08_150.mp3",
+      "transcript": "Esposa.",
+      "duration": 1.146,
+      "expected": "esposa",
+      "exactMatch": true
+    },
+    {
+      "item": 150,
+      "speed": "slow",
+      "path": "basic/bas_08_150_slow.mp3",
+      "transcript": "E esposa.",
+      "duration": 1.4446875,
+      "expected": "esposa",
+      "exactMatch": false
+    }
+  ]
+}
