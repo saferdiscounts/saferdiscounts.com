@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR cross-check, not independent phonetic certification.",
+  "results": [
+    {
+      "item": 422,
+      "speed": "normal",
+      "path": "advanced/adv_25_422.mp3",
+      "transcript": "O ar-condicionado não funciona.",
+      "duration": 2.2766875,
+      "expected": "O ar condicionado não funciona",
+      "exactMatch": true
+    },
+    {
+      "item": 422,
+      "speed": "slow",
+      "path": "advanced/adv_25_422_slow.mp3",
+      "transcript": "E o ar condicionado não funciona.",
+      "duration": 3.151375,
+      "expected": "O ar condicionado não funciona",
+      "exactMatch": false
+    },
+    {
+      "item": 423,
+      "speed": "normal",
+      "path": "advanced/adv_25_423.mp3",
+      "transcript": "Não tem água quente.",
+      "duration": 1.722,
+      "expected": "Não tem água quente",
+      "exactMatch": true
+    },
+    {
+      "item": 423,
+      "speed": "slow",
+      "path": "advanced/adv_25_423_slow.mp3",
+      "transcript": "Não tem água quente.",
+      "duration": 2.4046875,
+      "expected": "Não tem água quente",
+      "exactMatch": true
+    },
+    {
+      "item": 424,
+      "speed": "normal",
+      "path": "advanced/adv_25_424.mp3",
+      "transcript": "Quero mudar de quarto.",
+      "duration": 1.7006875,
+      "expected": "Quero mudar de quarto",
+      "exactMatch": true
+    },
+    {
+      "item": 424,
+      "speed": "slow",
+      "path": "advanced/adv_25_424_slow.mp3",
+      "transcript": "Quero mudar de quarto.",
+      "duration": 2.383375,
+      "expected": "Quero mudar de quarto",
+      "exactMatch": true
+    },
+    {
+      "item": 425,
+      "speed": "normal",
+      "path": "advanced/adv_25_425.mp3",
+      "transcript": "A chave não funciona.",
+      "duration": 1.6366875,
+      "expected": "A chave não funciona",
+      "exactMatch": true
+    },
+    {
+      "item": 425,
+      "speed": "slow",
+      "path": "advanced/adv_25_425_slow.mp3",
+      "transcript": "A chave não funciona.",
+      "duration": 2.191375,
+      "expected": "A chave não funciona",
+      "exactMatch": true
+    },
+    {
+      "item": 426,
+      "speed": "normal",
+      "path": "advanced/adv_25_426.mp3",
+      "transcript": "Podem limpar o quarto.",
+      "duration": 1.807375,
+      "expected": "Podem limpar o quarto?",
+      "exactMatch": true
+    },
+    {
+      "item": 426,
+      "speed": "slow",
+      "path": "advanced/adv_25_426_slow.mp3",
+      "transcript": "Podem limpar o quartos.",
+      "duration": 2.511375,
+      "expected": "Podem limpar o quarto?",
+      "exactMatch": false
+    },
+    {
+      "item": 427,
+      "speed": "normal",
+      "path": "advanced/adv_25_427.mp3",
+      "transcript": "A que horas é o check-out?",
+      "duration": 1.871375,
+      "expected": "A que horas é o check-out?",
+      "exactMatch": true
+    },
+    {
+      "item": 427,
+      "speed": "slow",
+      "path": "advanced/adv_25_427_slow.mp3",
+      "transcript": "Há que horas é o She Coach?",
+      "duration": 2.618,
+      "expected": "A que horas é o check-out?",
+      "exactMatch": false
+    },
+    {
+      "item": 428,
+      "speed": "normal",
+      "path": "advanced/adv_25_428.mp3",
+      "transcript": "Reclamação.",
+      "duration": 1.274,
+      "expected": "reclamação",
+      "exactMatch": true
+    },
+    {
+      "item": 428,
+      "speed": "slow",
+      "path": "advanced/adv_25_428_slow.mp3",
+      "transcript": "DECLAMAÇÃO",
+      "duration": 1.786,
+      "expected": "reclamação",
+      "exactMatch": false
+    },
+    {
+      "item": 429,
+      "speed": "normal",
+      "path": "advanced/adv_25_429.mp3",
+      "transcript": "It's a Zerva.",
+      "duration": 1.167375,
+      "expected": "reserva",
+      "exactMatch": false
+    },
+    {
+      "item": 429,
+      "speed": "slow",
+      "path": "advanced/adv_25_429_slow.mp3",
+      "transcript": "Muito reserva.",
+      "duration": 1.402,
+      "expected": "reserva",
+      "exactMatch": false
+    }
+  ]
+}
