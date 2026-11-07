@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 422,
+    "end": 429
+  },
+  "results": [
+    {
+      "path": "advanced/adv_25_422.mp3",
+      "transcript": "O ar condicionado não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_422_slow.mp3",
+      "transcript": "e o ar condicionado não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_423.mp3",
+      "transcript": "Não tem água quente.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_423_slow.mp3",
+      "transcript": "Não tem água quente.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_424.mp3",
+      "transcript": "Quero mudar de quarto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_424_slow.mp3",
+      "transcript": "e quero mudar de quarto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_425.mp3",
+      "transcript": "A chave não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_425_slow.mp3",
+      "transcript": "Trachave não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_426.mp3",
+      "transcript": "Podem limpar o quarto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_426_slow.mp3",
+      "transcript": "Podem limpar o cuartos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_427.mp3",
+      "transcript": "Aqui horas eu checo-te.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_427_slow.mp3",
+      "transcript": "Aqui o oras é o checocho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_428.mp3",
+      "transcript": "Essa é a clamação.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_428_slow.mp3",
+      "transcript": "Deteclamação.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_429.mp3",
+      "transcript": "Deserva!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_25_429_slow.mp3",
+      "transcript": "Muito exerro, vô!",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
