@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 486,
+    "end": 505
+  },
+  "results": [
+    {
+      "path": "advanced/adv_31_486.mp3",
+      "transcript": "Boa tarde, o meu voo para o rio está atrasado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_486_slow.mp3",
+      "transcript": "Boa tarde, o meu voo para o rio está atrasado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_487.mp3",
+      "transcript": "Sim, infelizmente está atrasado uma hora.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_487_slow.mp3",
+      "transcript": "Sim, infelizmente está atrasado uma hora.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_488.mp3",
+      "transcript": "Nossa, vou perder a conexão para São Paulo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_488_slow.mp3",
+      "transcript": "Nossa, vou perder a conexão para São Paulo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_489.mp3",
+      "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_489_slow.mp3",
+      "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_490.mp3",
+      "transcript": "Desculpa o ar condicionado do meu quarto não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_490_slow.mp3",
+      "transcript": "Desculpa, o ar condicionado do meu quarto não funciona.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_491.mp3",
+      "transcript": "Sinto muito, vou mandar alguém já.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_491_slow.mp3",
+      "transcript": "Sinto muito, vou mandar alguém já.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_492.mp3",
+      "transcript": "Valeu, eu também queria trocar de quarto ceder.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_492_slow.mp3",
+      "transcript": "Valeu, eu também queria trocar de quarto ceder.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_493.mp3",
+      "transcript": "Claro, vou verificar a disponibilidade.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_493_slow.mp3",
+      "transcript": "Claro, vou verificar a disponibilidade.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_494.mp3",
+      "transcript": "Boa tarde não estou bem. Estou com dor de cabeça e febre.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_494_slow.mp3",
+      "transcript": "Boa tarde não estou bem, estou com dor de cabeça e febre.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_495.mp3",
+      "transcript": "A quanto tempo você está com esses sintomas?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_495_slow.mp3",
+      "transcript": "há quanto tempo você está com esses sintomas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_496.mp3",
+      "transcript": "Desde ontem a noite.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_496_slow.mp3",
+      "transcript": "desde ontem a noite.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_497.mp3",
+      "transcript": "Toma esse remédio de 8 em 8 horas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_497_slow.mp3",
+      "transcript": "Toma esse remédio de 8 em 8 horas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_498.mp3",
+      "transcript": "Eu queria lugar um carro por três dias.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_498_slow.mp3",
+      "transcript": "Eu queria alugar um carro por três dias.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_499.mp3",
+      "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_499_slow.mp3",
+      "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_500.mp3",
+      "transcript": "Aqui está o seguro está incluído.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_500_slow.mp3",
+      "transcript": "Aqui está o seguro está incluído.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_501.mp3",
+      "transcript": "Está sim o seguro básico já vem incluído.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_501_slow.mp3",
+      "transcript": "Esta sim, o seguro básico já vem incluído.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_502.mp3",
+      "transcript": "Desculpa como eu chego no pão de açúcar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_502_slow.mp3",
+      "transcript": "Desculpa como eu chego no pão de açúcar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_503.mp3",
+      "transcript": "Tiga em frente e depois virei a direita na segunda rua.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_503_slow.mp3",
+      "transcript": "siga em frente e depois vire a direita na segunda rua.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_504.mp3",
+      "transcript": "É muito longe daqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_504_slow.mp3",
+      "transcript": "É muito longe dar aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_505.mp3",
+      "transcript": "Não ficam uns 10 minutos a pé.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_31_505_slow.mp3",
+      "transcript": "Não fica uns 10 minutos a pé.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
