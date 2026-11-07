@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>مكتبة التسجيلات الصوتية | Safer Discounts</title>
-<meta name="description" content="مكتبة النطق العادي والبطيء للبرتغالية البرازيلية والفرنسية والألمانية، بفهرس عام وفهرسين محليين موثوقين عند تعذر الفهرس العام.">
+<meta name="description" content="مكتبة النطق العادي والبطيء للبرتغالية البرازيلية والفرنسية والألمانية، بفهرس عام وفهارس محلية موثوقة عند تعذر الفهرس العام.">
 <style>
 :root{--navy:#092d49;--blue:#0876aa;--orange:#f16a25;--ink:#203545;--muted:#657988;--line:#dce7ed;--paper:#f4f8fb}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.8}
@@ -35,7 +35,7 @@ a{color:inherit}footer{text-align:center;padding:25px;color:var(--muted);font-si
 <input id="search" type="search" placeholder="ابحث بالكلمة أو الترجمة العربية أو رقم الملف">
 </div>
 <div id="status" class="meta">جاري تحميل فهرس التسجيلات…</div>
-<div class="notice">في حالة تعذر الفهرس العام، تستمر مكتبة الفرنسية والألمانية باستخدام فهرسيهما المحليين مع استبعاد النصوص الملتبسة. وجود ملف في الفهرس لا يضمن تشغيله أو أنه تسجيل بشري؛ التسجيلات الأخرى تُعرض فقط بعد تأكيد ربط النص بالملف. <a href="academy-audio-status.html">راجع تقرير التغطية لكل لغة.</a> <a href="audio-review-workbench.html">وافتح معمل مراجعة التسجيلات للغات غير المفهرسة.</a></div>
+<div class="notice">في حالة تعذر الفهرس العام، تستمر مكتبة البرازيلية والفرنسية والألمانية باستخدام فهارسها المحلية مع استبعاد النصوص الملتبسة. وجود ملف في الفهرس لا يضمن تشغيله أو أنه تسجيل بشري؛ التسجيلات الأخرى تُعرض فقط بعد تأكيد ربط النص بالملف. <a href="academy-audio-status.html">راجع تقرير التغطية لكل لغة.</a> <a href="audio-review-workbench.html">وافتح معمل مراجعة التسجيلات للغات غير المفهرسة.</a></div>
 <section id="list" class="list" aria-live="polite"></section>
 </main>
 <footer>Safer Discounts · Audio learning for Arabic speakers</footer>
@@ -46,7 +46,7 @@ const MANIFEST_URL='https://audio.saferdiscounts.com/language-pronunciation/mani
 const BASE='https://audio.saferdiscounts.com/';
 const labels={ptbr:'البرتغالية البرازيلية',en:'الإنجليزية',it:'الإيطالية',es:'الإسبانية',fr:'الفرنسية',de:'الألمانية',ru:'الروسية',pt:'البرتغالية الأوروبية'};
 const courses={ptbr:'ptbr-academy.html',en:'english-academy.html',it:'italian-academy.html',es:'spanish-academy.html',fr:'french-academy.html',de:'german-academy.html',ru:'russian-academy.html',pt:'portuguese-academy.html'};
-const prefixes={fr:'french/pronunciation/',de:'german/pronunciation/'};
+const prefixes={ptbr:'ptbr/',fr:'french/pronunciation/',de:'german/pronunciation/'};
 const safePart=/^(basic|advanced)\/[a-z0-9_]+\.mp3$/;
 const safeRemote=/^[a-zA-Z0-9_/-]+\.mp3$/;
 const lang=document.getElementById('language'),search=document.getElementById('search'),list=document.getElementById('list'),status=document.getElementById('status');
@@ -62,11 +62,11 @@ function ensureLocal(code){
   if(!r.ok)throw Error('Local index HTTP '+r.status);
   return r.json();
  }).then(index=>{
-  if(!index||index.language!==code||!Array.isArray(index.records))throw Error('Invalid audio text index');
+  if(!index||!Array.isArray(index.records)||(code==='ptbr'?index.locale!=='pt-BR':index.language!==code))throw Error('Invalid audio text index');
   const groups=new Map();
   for(const rec of index.records){
-   if(!rec||typeof rec.text!=='string'||!safePart.test(rec.normal||'')||!safePart.test(rec.slow||''))continue;
-   const key=normalize(rec.text);if(!key)continue;
+   if(!rec||typeof (code==='ptbr'?rec.pt:rec.text)!=='string'||!safePart.test(rec.normal||'')||!safePart.test(rec.slow||''))continue;
+   const key=normalize(code==='ptbr'?rec.pt:rec.text);if(!key)continue;
    if(!groups.has(key))groups.set(key,[]);
    groups.get(key).push(rec);
   }
@@ -74,7 +74,7 @@ function ensureLocal(code){
   for(const entries of groups.values()){
    if(entries.length!==1)continue;
    const entry=entries[0];
-   records.push({text:entry.text,id:entry.text,arabic:'',normal:prefixes[code]+entry.normal,slow:prefixes[code]+entry.slow});
+   records.push({text:code==='ptbr'?entry.pt:entry.text,id:code==='ptbr'?entry.pt:entry.text,arabic:code==='ptbr'?entry.gl||'':'',normal:prefixes[code]+entry.normal,slow:prefixes[code]+entry.slow});
   }
   local[code]={records,source:'local'};
   return local[code];
