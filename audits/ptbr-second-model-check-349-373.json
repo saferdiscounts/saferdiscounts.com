@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo ASR cross-check; not phonetic certification.",
+  "results": [
+    {
+      "item": 349,
+      "speed": "normal",
+      "path": "advanced/adv_19_349.mp3",
+      "transcript": "É possível que chova.",
+      "duration": 1.658,
+      "expected": "É possível que chova.",
+      "exactMatch": true
+    },
+    {
+      "item": 349,
+      "speed": "slow",
+      "path": "advanced/adv_19_349_slow.mp3",
+      "transcript": "É possível que chova.",
+      "duration": 2.3406875,
+      "expected": "É possível que chova.",
+      "exactMatch": true
+    },
+    {
+      "item": 350,
+      "speed": "normal",
+      "path": "advanced/adv_19_350.mp3",
+      "transcript": "Embora eu esteja cansado, vou trabalhar.",
+      "duration": 2.703375,
+      "expected": "Embora eu esteja cansado, vou trabalhar.",
+      "exactMatch": true
+    },
+    {
+      "item": 350,
+      "speed": "slow",
+      "path": "advanced/adv_19_350_slow.mp3",
+      "transcript": "E embora eu esteja cansado, vou trabalhar.",
+      "duration": 3.8766875,
+      "expected": "Embora eu esteja cansado, vou trabalhar.",
+      "exactMatch": false
+    },
+    {
+      "item": 351,
+      "speed": "normal",
+      "path": "advanced/adv_20_351.mp3",
+      "transcript": "Me chamo",
+      "duration": 1.018,
+      "expected": "me chamo",
+      "exactMatch": true
+    },
+    {
+      "item": 351,
+      "speed": "slow",
+      "path": "advanced/adv_20_351_slow.mp3",
+      "transcript": "Me chamo",
+      "duration": 1.3166875,
+      "expected": "me chamo",
+      "exactMatch": true
+    },
+    {
+      "item": 352,
+      "speed": "normal",
+      "path": "advanced/adv_20_352.mp3",
+      "transcript": "Me levanto.",
+      "duration": 1.167375,
+      "expected": "me levanto",
+      "exactMatch": true
+    },
+    {
+      "item": 352,
+      "speed": "slow",
+      "path": "advanced/adv_20_352_slow.mp3",
+      "transcript": "Me levanto.",
+      "duration": 1.53,
+      "expected": "me levanto",
+      "exactMatch": true
+    },
+    {
+      "item": 353,
+      "speed": "normal",
+      "path": "advanced/adv_20_353.mp3",
+      "transcript": "Me visto.",
+      "duration": 1.0606875,
+      "expected": "me visto",
+      "exactMatch": true
+    },
+    {
+      "item": 353,
+      "speed": "slow",
+      "path": "advanced/adv_20_353_slow.mp3",
+      "transcript": "Ami visto.",
+      "duration": 1.3806875,
+      "expected": "me visto",
+      "exactMatch": false
+    },
+    {
+      "item": 354,
+      "speed": "normal",
+      "path": "advanced/adv_20_354.mp3",
+      "transcript": "Se chama",
+      "duration": 1.0606875,
+      "expected": "se chama",
+      "exactMatch": true
+    },
+    {
+      "item": 354,
+      "speed": "slow",
+      "path": "advanced/adv_20_354_slow.mp3",
+      "transcript": "Ela se chama",
+      "duration": 1.3166875,
+      "expected": "se chama",
+      "exactMatch": false
+    },
+    {
+      "item": 355,
+      "speed": "normal",
+      "path": "advanced/adv_20_355.mp3",
+      "transcript": "Se levanta.",
+      "duration": 1.21,
+      "expected": "se levanta",
+      "exactMatch": true
+    },
+    {
+      "item": 355,
+      "speed": "slow",
+      "path": "advanced/adv_20_355_slow.mp3",
+      "transcript": "E se levanta.",
+      "duration": 1.5726875,
+      "expected": "se levanta",
+      "exactMatch": false
+    },
+    {
+      "item": 356,
+      "speed": "normal",
+      "path": "advanced/adv_20_356.mp3",
+      "transcript": "Se vestiu.",
+      "duration": 1.082,
+      "expected": "se veste",
+      "exactMatch": false
+    },
+    {
+      "item": 356,
+      "speed": "slow",
+      "path": "advanced/adv_20_356_slow.mp3",
+      "transcript": "I'll see Vest you",
+      "duration": 1.402,
+      "expected": "se veste",
+      "exactMatch": false
+    },
+    {
+      "item": 357,
+      "speed": "normal",
+      "path": "advanced/adv_20_357.mp3",
+      "transcript": "Nos chamamos.",
+      "duration": 1.1886875,
+      "expected": "nos chamamos",
+      "exactMatch": true
+    },
+    {
+      "item": 357,
+      "speed": "slow",
+      "path": "advanced/adv_20_357_slow.mp3",
+      "transcript": "Inúcia, te amamos.",
+      "duration": 1.6366875,
+      "expected": "nos chamamos",
+      "exactMatch": false
+    },
+    {
+      "item": 358,
+      "speed": "normal",
+      "path": "advanced/adv_20_358.mp3",
+      "transcript": "Nos levantamos.",
+      "duration": 1.402,
+      "expected": "nos levantamos",
+      "exactMatch": true
+    },
+    {
+      "item": 358,
+      "speed": "slow",
+      "path": "advanced/adv_20_358_slow.mp3",
+      "transcript": "E nos levantamos.",
+      "duration": 1.978,
+      "expected": "nos levantamos",
+      "exactMatch": false
+    },
+    {
+      "item": 359,
+      "speed": "normal",
+      "path": "advanced/adv_20_359.mp3",
+      "transcript": "Nos vestimos.",
+      "duration": 1.274,
+      "expected": "nos vestimos",
+      "exactMatch": true
+    },
+    {
+      "item": 359,
+      "speed": "slow",
+      "path": "advanced/adv_20_359_slow.mp3",
+      "transcript": "Nos vestimos.",
+      "duration": 1.743375,
+      "expected": "nos vestimos",
+      "exactMatch": true
+    },
+    {
+      "item": 360,
+      "speed": "normal",
+      "path": "advanced/adv_20_360.mp3",
+      "transcript": "Se chamam",
+      "duration": 1.039375,
+      "expected": "se chamam",
+      "exactMatch": true
+    },
+    {
+      "item": 360,
+      "speed": "slow",
+      "path": "advanced/adv_20_360_slow.mp3",
+      "transcript": "se chamam",
+      "duration": 1.423375,
+      "expected": "se chamam",
+      "exactMatch": true
+    },
+    {
+      "item": 361,
+      "speed": "normal",
+      "path": "advanced/adv_20_361.mp3",
+      "transcript": "Se levantam.",
+      "duration": 1.2526875,
+      "expected": "se levantam",
+      "exactMatch": true
+    },
+    {
+      "item": 361,
+      "speed": "slow",
+      "path": "advanced/adv_20_361_slow.mp3",
+      "transcript": "E se levantam.",
+      "duration": 1.615375,
+      "expected": "se levantam",
+      "exactMatch": false
+    },
+    {
+      "item": 362,
+      "speed": "normal",
+      "path": "advanced/adv_20_362.mp3",
+      "transcript": "See vesting",
+      "duration": 1.1246875,
+      "expected": "se vestem",
+      "exactMatch": false
+    },
+    {
+      "item": 362,
+      "speed": "slow",
+      "path": "advanced/adv_20_362_slow.mp3",
+      "transcript": "I'll see vesting",
+      "duration": 1.4446875,
+      "expected": "se vestem",
+      "exactMatch": false
+    },
+    {
+      "item": 363,
+      "speed": "normal",
+      "path": "advanced/adv_20_363.mp3",
+      "transcript": "Como você se chama?",
+      "duration": 1.615375,
+      "expected": "Como você se chama?",
+      "exactMatch": true
+    },
+    {
+      "item": 363,
+      "speed": "slow",
+      "path": "advanced/adv_20_363_slow.mp3",
+      "transcript": "Como você se chama?",
+      "duration": 2.255375,
+      "expected": "Como você se chama?",
+      "exactMatch": true
+    },
+    {
+      "item": 364,
+      "speed": "normal",
+      "path": "advanced/adv_21_364.mp3",
+      "transcript": "Мет.",
+      "duration": 0.593375,
+      "expected": "me",
+      "exactMatch": false
+    },
+    {
+      "item": 364,
+      "speed": "slow",
+      "path": "advanced/adv_21_364_slow.mp3",
+      "transcript": "Estamos aí.",
+      "duration": 0.762,
+      "expected": "me",
+      "exactMatch": false
+    },
+    {
+      "item": 365,
+      "speed": "normal",
+      "path": "advanced/adv_21_365.mp3",
+      "transcript": "Dieu.",
+      "duration": 0.643375,
+      "expected": "lhe",
+      "exactMatch": false
+    },
+    {
+      "item": 365,
+      "speed": "slow",
+      "path": "advanced/adv_21_365_slow.mp3",
+      "transcript": "Айу.",
+      "duration": 0.762,
+      "expected": "lhe",
+      "exactMatch": false
+    },
+    {
+      "item": 366,
+      "speed": "normal",
+      "path": "advanced/adv_21_366.mp3",
+      "transcript": "No sé.",
+      "duration": 0.719375,
+      "expected": "nos",
+      "exactMatch": false
+    },
+    {
+      "item": 366,
+      "speed": "slow",
+      "path": "advanced/adv_21_366_slow.mp3",
+      "transcript": "Enos.",
+      "duration": 0.89,
+      "expected": "nos",
+      "exactMatch": false
+    },
+    {
+      "item": 367,
+      "speed": "normal",
+      "path": "advanced/adv_21_367.mp3",
+      "transcript": "ご視聴ありがとうございました",
+      "duration": 0.693375,
+      "expected": "os",
+      "exactMatch": false
+    },
+    {
+      "item": 367,
+      "speed": "slow",
+      "path": "advanced/adv_21_367_slow.mp3",
+      "transcript": "Google, let's just...",
+      "duration": 0.89,
+      "expected": "os",
+      "exactMatch": false
+    },
+    {
+      "item": 368,
+      "speed": "normal",
+      "path": "advanced/adv_21_368.mp3",
+      "transcript": "Nice.",
+      "duration": 0.719375,
+      "expected": "as",
+      "exactMatch": false
+    },
+    {
+      "item": 368,
+      "speed": "slow",
+      "path": "advanced/adv_21_368_slow.mp3",
+      "transcript": "Lnaz",
+      "duration": 0.954,
+      "expected": "as",
+      "exactMatch": false
+    },
+    {
+      "item": 369,
+      "speed": "normal",
+      "path": "advanced/adv_21_369.mp3",
+      "transcript": "US",
+      "duration": 0.7406875,
+      "expected": "lhes",
+      "exactMatch": false
+    },
+    {
+      "item": 369,
+      "speed": "slow",
+      "path": "advanced/adv_21_369_slow.mp3",
+      "transcript": "I'll use",
+      "duration": 0.9326875,
+      "expected": "lhes",
+      "exactMatch": false
+    },
+    {
+      "item": 370,
+      "speed": "normal",
+      "path": "advanced/adv_21_370.mp3",
+      "transcript": "Vou ver você amanhã.",
+      "duration": 1.786,
+      "expected": "Vou ver você amanhã",
+      "exactMatch": true
+    },
+    {
+      "item": 370,
+      "speed": "slow",
+      "path": "advanced/adv_21_370_slow.mp3",
+      "transcript": "E vou ver você amanhã.",
+      "duration": 2.447375,
+      "expected": "Vou ver você amanhã",
+      "exactMatch": false
+    },
+    {
+      "item": 371,
+      "speed": "normal",
+      "path": "advanced/adv_21_371.mp3",
+      "transcript": "Vou te contar uma coisa.",
+      "duration": 1.8286875,
+      "expected": "Vou lhe contar uma coisa.",
+      "exactMatch": false
+    },
+    {
+      "item": 371,
+      "speed": "slow",
+      "path": "advanced/adv_21_371_slow.mp3",
+      "transcript": "E vou de contar uma coisa.",
+      "duration": 2.5966875,
+      "expected": "Vou lhe contar uma coisa.",
+      "exactMatch": false
+    },
+    {
+      "item": 372,
+      "speed": "normal",
+      "path": "advanced/adv_22_372.mp3",
+      "transcript": "Maisel",
+      "duration": 1.018,
+      "expected": "+ o",
+      "exactMatch": false
+    },
+    {
+      "item": 372,
+      "speed": "slow",
+      "path": "advanced/adv_22_372_slow.mp3",
+      "transcript": "Mais oh",
+      "duration": 1.3166875,
+      "expected": "+ o",
+      "exactMatch": false
+    },
+    {
+      "item": 373,
+      "speed": "normal",
+      "path": "advanced/adv_22_373.mp3",
+      "transcript": "Miser.",
+      "duration": 1.039375,
+      "expected": "+ a",
+      "exactMatch": false
+    },
+    {
+      "item": 373,
+      "speed": "slow",
+      "path": "advanced/adv_22_373_slow.mp3",
+      "transcript": "Mize Earth",
+      "duration": 1.359375,
+      "expected": "+ a",
+      "exactMatch": false
+    }
+  ]
+}
