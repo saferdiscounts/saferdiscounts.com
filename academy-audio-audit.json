@@ -1874,7 +1874,7 @@
           "words": 8
         }
       ],
-      "note": "Manifest text matches 94/857 academy vocabulary rows (17 ambiguous) and 1/384 dialogue lines; the 80 new trainer phrases have no identical old recording. Other phrase matches remain unknown until recorded/reviewed.",
+      "note": "Manifest text matches 94/857 academy vocabulary rows (17 ambiguous) and 1/384 dialogue lines; the 80 new trainer phrases have no identical old recording. Other phrase matches remain unknown until recorded/reviewed. All 511 pairs now have written Portuguese and Arabic in the GitHub-enriched index (277 original R2 meanings + 234 authored Arabic educational glosses pending review); this is NOT an update of the remote R2 manifest or a human confirmation of the recordings.",
       "dialogueCoverage": {
         "lines": 384,
         "exactMatches": 1,
@@ -1888,7 +1888,16 @@
         "missing": 80
       },
       "sourceManifestGlossMissing": 234,
-      "verification": "Real R2 object-key and source-text match, NOT verified spoken phonetics, human pronunciation, browser playback or CEFR mastery"
+      "verification": "Real R2 object-key and source-text match, NOT verified spoken phonetics, human pronunciation, browser playback or CEFR mastery",
+      "arabicGlossCoverage": {
+        "audioPairs": 511,
+        "portugueseTranscriptPresent": 511,
+        "arabicMeaningPresent": 511,
+        "originalR2ArabicGloss": 277,
+        "locallyAuthoredArabicGlossDraft": 234,
+        "originalRemoteManifestStillMissingArabic": 234,
+        "linguistReviewed": false
+      }
     },
     "en": {
       "name": "الإنجليزية",
