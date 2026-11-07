@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 393,
+    "end": 407
+  },
+  "results": [
+    {
+      "path": "advanced/adv_23_393.mp3",
+      "transcript": "Mais aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_393_slow.mp3",
+      "transcript": "Mais aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_394.mp3",
+      "transcript": "Menos like you",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_394_slow.mp3",
+      "transcript": "My men know this is like it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_395.mp3",
+      "transcript": "Sounds quantum.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_395_slow.mp3",
+      "transcript": "J'étends en ce qu'on touche.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_396.mp3",
+      "transcript": "Um mais.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_396_slow.mp3",
+      "transcript": "Ooh, mice.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_397.mp3",
+      "transcript": "Amai's",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_397_slow.mp3",
+      "transcript": "He got mice.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_398.mp3",
+      "transcript": "ます",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_398_slow.mp3",
+      "transcript": "います",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_399.mp3",
+      "transcript": "Puttings",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_399_slow.mp3",
+      "transcript": "Report Aings.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_400.mp3",
+      "transcript": "Kom till och då!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_400_slow.mp3",
+      "transcript": "I can't do it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_401.mp3",
+      "transcript": "for censored.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_401_slow.mp3",
+      "transcript": "He poor has done too.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_402.mp3",
+      "transcript": "Part A Keith",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_402_slow.mp3",
+      "transcript": "I'm part of the key.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_403.mp3",
+      "transcript": "Já aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_403_slow.mp3",
+      "transcript": "Ajudá aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_404.mp3",
+      "transcript": "Sim, bota!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_404_slow.mp3",
+      "transcript": "E se embora.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_405.mp3",
+      "transcript": "Apesar de...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_405_slow.mp3",
+      "transcript": "Um apesar de...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_406.mp3",
+      "transcript": "Kazut.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_406_slow.mp3",
+      "transcript": "e grazo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_407.mp3",
+      "transcript": "Tchau, uns comuns!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_23_407_slow.mp3",
+      "transcript": "esternos como ele.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
