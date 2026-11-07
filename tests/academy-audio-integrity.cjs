@@ -214,6 +214,43 @@ test('Brazilian 511-pair R2 manifest source reproduces all exact matches without
  const phrases=sandbox.window.SD_PTBR_PRACTICE.themes.flatMap(x=>x.phrases.map(p=>p[0]));
  assert.equal(snapshot.practicalCoverage.phrases,phrases.length);
  assert.equal(snapshot.practicalCoverage.exactMatches,count(phrases).exact);
- assert.equal(snapshot.sourceManifestGlossMissing,source.records.filter(x=>!x.gl.trim()).length);
+ const sourceOriginalMissing=source.records.filter(x=>x.glProvenance==='saferdiscounts-arabic-editorial-draft');
+ assert.equal(snapshot.sourceManifestGlossMissing,234,'Original remote source still had 234 unglossed rows');
+ assert.equal(sourceOriginalMissing.length,234);
+ assert.equal(source.records.filter(x=>x.glProvenance==='r2-original-manifest').length,277);
+ assert.equal(source.records.filter(x=>!x.gl||!x.gl.trim()).length,0,'Every audio item needs Arabic meaning');
+ assert.equal(source.records.filter(x=>!x.pt||!x.pt.trim()).length,0,'Every audio item needs Portuguese transcript');
+ assert.equal(source.arabicGlossCoverage.withArabic,511);
+ assert.equal(source.arabicGlossCoverage.addedBySaferDiscountsDraft,234);
+ assert.equal(snapshot.arabicGlossCoverage.arabicMeaningPresent,511);
+ assert.equal(snapshot.arabicGlossCoverage.linguistReviewed,false);
  assert.match(snapshot.verification,/NOT verified spoken phonetics/);
+});
+
+test('Every unglossed Brazilian R2 item received a traceable Arabic teaching draft, without changing source audio paths',()=>{
+ const index=JSON.parse(read('audio-text-index-ptbr.json')),glossary=JSON.parse(read('ptbr-audio-glossary-supplement.json'));
+ const map=new Map(glossary.entries.map(x=>[x.pt,x]));
+ assert.equal(glossary.humanLinguistVerified,false);
+ assert.equal(glossary.voiceVerified,false);
+ assert.equal(glossary.entries.length,215);
+ let count=0;
+ for(const row of index.records){
+  assert.ok(typeof row.pt==='string'&&row.pt.trim());
+  assert.ok(typeof row.gl==='string'&&row.gl.trim());
+  if(row.glProvenance==='saferdiscounts-arabic-editorial-draft'){
+   count++;
+   assert.equal(row.gl,map.get(row.pt)?.arabic,'Arabic meaning must follow the explicitly authored text');
+  }else assert.equal(row.glProvenance,'r2-original-manifest');
+ }
+ assert.equal(count,234);
+ const sourceCount=glossary.entries.reduce((sum,row)=>sum+row.sourceMissingRows,0);
+ assert.equal(sourceCount,234);
+ const page=read('ptbr-pronunciation.html');
+ assert.match(page,/fetch\('audio-text-index-ptbr\.json'/);
+ assert.match(page,/!item\.gl\.trim\(\)/);
+ assert.match(page,/allItems\.basic=index\.records\.filter/);
+ assert.match(page,/allItems\.advanced=index\.records\.filter/);
+ assert.match(page,/bridge\.src=audioBaseUrl\+'bridge\.html'/);
+ const embedded=[...page.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(x=>x[1]).filter(Boolean);
+ for(const js of embedded)assert.doesNotThrow(()=>new vm.Script(js));
 });
