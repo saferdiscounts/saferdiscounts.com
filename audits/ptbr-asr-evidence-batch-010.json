@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Unverified automatic transcripts, not certification of pronunciation. Short clips frequently hallucinate non-Portuguese speech.",
+  "results": [
+    {
+      "path": "basic/bas_06_129.mp3",
+      "transcript": "Desembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_129_slow.mp3",
+      "transcript": "A dezembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_130.mp3",
+      "transcript": "vermelho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_130_slow.mp3",
+      "transcript": "De vermerioot.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_131.mp3",
+      "transcript": "As-u !",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_131_slow.mp3",
+      "transcript": "Azo!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_132.mp3",
+      "transcript": "Where did you?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_132_slow.mp3",
+      "transcript": "Averga de você.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_133.mp3",
+      "transcript": "Kamar selu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_133_slow.mp3",
+      "transcript": "Desammar-se-lo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_134.mp3",
+      "transcript": "Прецук.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_134_slow.mp3",
+      "transcript": "Apreia-se do...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_135.mp3",
+      "transcript": "Branko",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_135_slow.mp3",
+      "transcript": "Branku.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_136.mp3",
+      "transcript": "Plada Ângia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_136_slow.mp3",
+      "transcript": "E laranja, Jesus.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_137.mp3",
+      "transcript": "I'll find shoes.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_137_slow.mp3",
+      "transcript": "and I'll fire you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_138.mp3",
+      "transcript": "Fosic!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_138_slow.mp3",
+      "transcript": "Inforz-se.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_139.mp3",
+      "transcript": "See you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_139_slow.mp3",
+      "transcript": "Assinza!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_140.mp3",
+      "transcript": "מה חיונג?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_07_140_slow.mp3",
+      "transcript": "Die machen uns.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_141.mp3",
+      "transcript": "my",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_141_slow.mp3",
+      "transcript": "It's my age.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_142.mp3",
+      "transcript": "Bye!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_142_slow.mp3",
+      "transcript": "Bye.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_143.mp3",
+      "transcript": "Kirsmaa on.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_143_slow.mp3",
+      "transcript": "İzirte mağol.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_144.mp3",
+      "transcript": "إِرَّمًا",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_144_slow.mp3",
+      "transcript": "Eat it up a month.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
