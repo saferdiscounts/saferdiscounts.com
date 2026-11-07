@@ -1,0 +1,21 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const html=fs.readFileSync(path.resolve(__dirname,'../ptbr-academy.html'),'utf8');
+const index=JSON.parse(fs.readFileSync(path.resolve(__dirname,'../audio-text-index-ptbr.json'),'utf8'));
+const marker='const lessons=';
+const start=html.indexOf(marker);
+if(start<0)throw Error('Academy lesson source not found');
+const source=html.slice(start+marker.length);
+let depth=0,inString=false,escaped=false,end=-1;
+for(let i=0;i<source.length;i++){const ch=source[i];if(inString){if(escaped)escaped=false;else if(ch==='\\')escaped=true;else if(ch==='"')inString=false;continue}if(ch==='"'){inString=true;continue}if(ch==='[')depth++;if(ch===']'&&--depth===0){end=i+1;break}}
+if(end<0)throw Error('Unclosed lesson array');
+const lessons=JSON.parse(source.slice(0,end));
+const tracks=['foundation','a1','a2','b1','b2','c1','c2','travel'];
+const counts=Object.fromEntries(tracks.map(x=>[x,0]));
+const issues=[];
+lessons.forEach((l,i)=>{counts[l.track]=(counts[l.track]||0)+1;if(!l.title||!l.goal||!l.intro)issues.push({lesson:i,issue:'missing title/goal/intro'});if(!Array.isArray(l.words)||!l.words.length)issues.push({lesson:i,issue:'no vocabulary'});if(!Array.isArray(l.dialogue)||!l.dialogue.length)issues.push({lesson:i,issue:'no dialogue'});if(!Array.isArray(l.answers)||!l.answers.length)issues.push({lesson:i,issue:'no quiz answers'});});
+const glosses={};for(const row of index.records)glosses[row.glProvenance]=(glosses[row.glProvenance]||0)+1;
+const report={generatedAt:new Date().toISOString(),lessonCount:lessons.length,trackCounts:counts,recordedPhraseCount:index.records.length,glossProvenance:glosses,missingFields:issues,limitations:['This is a structural curriculum audit, not a CEFR certification','No human review of translations or pronunciation is implied','Audio path presence is not audio playback verification']};
+console.log(JSON.stringify(report,null,2));
+if(process.argv.includes('--strict')&&(issues.length||tracks.some(x=>!counts[x])))process.exitCode=1;
