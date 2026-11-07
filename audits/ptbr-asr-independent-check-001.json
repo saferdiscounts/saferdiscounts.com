@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct R2 objects and independent Whisper Large V3 Turbo inference",
+  "note": "No pronunciation verified. Model auto-detected language, potentially unreliable for short clips. Compare with previous Whisper evidence.",
+  "results": [
+    {
+      "path": "basic/bas_02_013.mp3",
+      "transcript": "Bye.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.43701171875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_02_013_slow.mp3",
+      "transcript": "The noise.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.81201171875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_02_014.mp3",
+      "transcript": "or less",
+      "detectedLanguage": "en",
+      "languageProbability": 0.462158203125,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_02_014_slow.mp3",
+      "transcript": "Or less.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.8076171875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_02_031.mp3",
+      "transcript": "Sing.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.56201171875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_02_031_slow.mp3",
+      "transcript": "Async.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.301513671875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_03_033.mp3",
+      "transcript": "Nailed.",
+      "detectedLanguage": "en",
+      "languageProbability": 0.78759765625,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_03_033_slow.mp3",
+      "transcript": "Nailed",
+      "detectedLanguage": "en",
+      "languageProbability": 0.82568359375,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_03_034.mp3",
+      "transcript": "Você.",
+      "detectedLanguage": "pt",
+      "languageProbability": 0.95263671875,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    },
+    {
+      "path": "basic/bas_03_034_slow.mp3",
+      "transcript": "Você.",
+      "detectedLanguage": "pt",
+      "languageProbability": 0.6396484375,
+      "engine": "@cf/openai/whisper-large-v3-turbo"
+    }
+  ]
+}
