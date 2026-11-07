@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 479,
+    "end": 485
+  },
+  "results": [
+    {
+      "path": "advanced/adv_30_479.mp3",
+      "transcript": "Quem não xota, não mama.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_479_slow.mp3",
+      "transcript": "E queim, não chora, não mama.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_480.mp3",
+      "transcript": "Pagar o passo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_480_slow.mp3",
+      "transcript": "de pagar o parço.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_481.mp3",
+      "transcript": "Em share linguiça.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_481_slow.mp3",
+      "transcript": "Aê, enxerva, linguiça!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_482.mp3",
+      "transcript": "Dar um jeito.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_482_slow.mp3",
+      "transcript": "dar um jeito.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_483.mp3",
+      "transcript": "Ficar de olho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_483_slow.mp3",
+      "transcript": "Ficar de olho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_484.mp3",
+      "transcript": "quebrar o galho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_484_slow.mp3",
+      "transcript": "e che brava ugalio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_485.mp3",
+      "transcript": "Calir a ficha.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_30_485_slow.mp3",
+      "transcript": "E cá, ir à fície.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
