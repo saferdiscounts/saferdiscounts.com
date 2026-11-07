@@ -13,7 +13,7 @@ function element(tag,cls,content){
  return result;
 }
 function check(item){
- return Boolean(item&&typeof item.pt==='string'&&item.pt.trim()&&allowed.test(item.normal||'')&&allowed.test(item.slow||'')&&item.normal.replace(/\.mp3$/,'_slow.mp3')===item.slow);
+ return Boolean(item&&typeof item.pt==='string'&&item.pt.trim()&&typeof item.gl==='string'&&item.gl.trim()&&allowed.test(item.normal||'')&&allowed.test(item.slow||'')&&item.normal.replace(/\.mp3$/,'_slow.mp3')===item.slow);
 }
 function reviewFor(item){
  const value=reviews[item.normal];
@@ -46,7 +46,7 @@ function allFiltered(){
  const q=search.value.trim().toLocaleLowerCase('pt-BR'),type=filter.value;
  return catalogue.filter(item=>{
   const r=reviewFor(item);
-  if(type==='pending'&&r||type==='approved'&&r?.status!=='approved'||type==='flagged'&&r?.status!=='flagged'||type==='nogloss'&&item.gl.trim())return false;
+  if(type==='pending'&&r||type==='approved'&&r?.status!=='approved'||type==='flagged'&&r?.status!=='flagged'||type==='draftgloss'&&item.glProvenance!=='saferdiscounts-arabic-editorial-draft')return false;
   return !q||[item.pt,item.gl,item.section,item.normal].join(' ').toLocaleLowerCase('pt-BR').includes(q);
  });
 }
@@ -56,7 +56,8 @@ function button(label,action,cls,disabled){
 function makeRow(item){
  const row=element('section','entry'),head=element('div','entry-head');
  const title=element('div'),pt=element('strong','pt',item.pt);pt.lang='pt-BR';pt.dir='ltr';title.append(pt);
- title.append(element('div','gl',item.gl||'⚠ ترجمة عربية غير موجودة في فهرس الصوت'));
+ title.append(element('div','gl',item.gl));
+ if(item.glProvenance==='saferdiscounts-arabic-editorial-draft')title.append(element('small','gl-draft','✍ معنى عربي مستكمل من Safer Discounts — مسودة تحتاج تدقيقًا لغويًا'));
  title.append(element('small','',item.level+' · '+(item.section||'قسم غير مسمى')));
  head.append(title);
  const review=reviewFor(item),tag=element('span',review?.status==='approved'?'approved':review?.status==='flagged'?'flagged':'unreviewed',review?.status==='approved'?'مراجعة مقبولة محليًا':review?.status==='flagged'?'مشكلة موثقة':'غير مراجع');
@@ -91,7 +92,7 @@ function makeRow(item){
 }
 function render(){
  const valid=catalogue.filter(check),approved=valid.filter(x=>reviewFor(x)?.status==='approved').length,flagged=valid.filter(x=>reviewFor(x)?.status==='flagged').length;
- counts.textContent='المصدر: '+valid.length+' زوجًا صوتيًا · مراجعات مقبولة محليًا: '+approved+' · مشكلات موثقة: '+flagged+' · لم يُراجع: '+(valid.length-approved-flagged)+'. هذه مراجعة محلية وليست اعتمادًا آليًا للمنهج.';
+ counts.textContent='المصدر: '+valid.length+' زوجًا صوتيًا · النص البرتغالي والمعنى العربي متاحان لكل زوج · 234 ترجمة مستكملة بانتظار تدقيق متخصص · مراجعات مقبولة محليًا: '+approved+' · مشكلات موثقة: '+flagged+' · لم يُراجع: '+(valid.length-approved-flagged)+'. هذه مراجعة محلية وليست اعتمادًا آليًا للمنهج.';
  const selected=allFiltered(),pages=Math.max(1,Math.ceil(selected.length/15));
  page=Math.max(0,Math.min(page,pages-1));
  paging.textContent='صفحة '+(page+1)+' من '+pages+' · '+selected.length+' نتيجة';
