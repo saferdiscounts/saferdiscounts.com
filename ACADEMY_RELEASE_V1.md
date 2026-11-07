@@ -114,3 +114,15 @@ A matching text string does **not** establish that the MP3 says it correctly, us
 **Evidence limit:** We have not personally verified the audio by listening to all 511 clips; speech correctness, browser-playback success, and full mobile UX remain unapproved.
 
 **Storage sanity check:** all 511 slow MP3 files are larger in bytes than their paired normal MP3s (observed size ratios 1.07×–1.59×). This is *not* evidence of slower speaking rate: actual duration, listening quality, pronunciation, and suitability still require verification.
+
+## Brazilian authored phrases and narrator manuscripts — 2026-11-07
+
+This batch shifts from merely *counting audio assets* to **producing actual new Brazilian Portuguese teaching text**.
+
+- Authored **40 new original Portuguese-BR conversation turns**, ten four-turn contextual dialogues in `ptbr-practical-dialogues.js` aligned with the ten existing practice themes. Every turn includes a clear Arabic interpretation. The dialogues appear only on learner flashcard/lesson stages, not while test answers are selected.
+- Preserved **80 original daily-practice phrases** and the bounded **160 missing-audio source phrase** backlog. Published a separate **reader-friendly recording manuscript** `PTBR_RECORDING_SCRIPTS_V1.md` and a **structured recording manuscript** `ptbr-voice-scripts-v1.json`, with unique IDs, level, scenario, spoken text, Arabic, and editorial notes.
+- The manuscript contains 160 source items and **164 separately pronounceable takes** (4 items need two variant readings; one template has a spoken example). At two speeds per take, the *planned* production is **328 audio files**, not existing files.
+- Recording manuscripts are **drafts**: `isHumanReviewed:false`, `hasAudio:false`, `readyForLearnerAudio:false`. A native-level Brazilian Portuguese editor must resolve notes, accents, gender, style and context before commissioned recording or automatic word-to-audio routing.
+- Tests assert exact matching to the 160 authoring targets, no duplicate IDs or old recorded source texts, no unspeakable slash/ellipsis in final takes, and 40 nonduplicate new conversation turns.
+
+**Deliberate boundary:** The 40 new contextual dialogue sentences improve learner pedagogy. They are **not represented as already-recorded speech**, and not silently added to the fixed 160-source voice-production pack. The 164 takes are scripts for production, not a license to call synthetic TTS "human".
