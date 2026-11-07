@@ -1,0 +1,3078 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "sourceFile": "ptbr-audio-recording-priority.json",
+  "scope": "160 original authored source texts, four entries with two spoken alternatives and one template instantiated as a sample",
+  "quality": "Draft recording scripts pending Brazilian Portuguese specialist editorial approval",
+  "isHumanReviewed": false,
+  "hasAudio": false,
+  "readyForLearnerAudio": false,
+  "voiceTakeCount": 164,
+  "sourceCount": 160,
+  "items": [
+    {
+      "id": "BR-001",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Oi! Eu me chamo Laila.",
+      "arabic": "أهلًا! اسمي ليلى.",
+      "recordingTakes": [
+        {
+          "id": "BR-001",
+          "text": "Oi! Eu me chamo Laila.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-002",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "É um prazer conhecer você.",
+      "arabic": "تشرفت بالتعرف عليك.",
+      "recordingTakes": [
+        {
+          "id": "BR-002",
+          "text": "É um prazer conhecer você.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-003",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Eu sou do Egito.",
+      "arabic": "أنا من مصر.",
+      "recordingTakes": [
+        {
+          "id": "BR-003",
+          "text": "Eu sou do Egito.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-004",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Estou aprendendo português brasileiro.",
+      "arabic": "أنا أتعلم البرتغالية البرازيلية.",
+      "recordingTakes": [
+        {
+          "id": "BR-004",
+          "text": "Estou aprendendo português brasileiro.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-005",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Você pode falar mais devagar?",
+      "arabic": "هل يمكنك التحدث ببطء أكثر؟",
+      "recordingTakes": [
+        {
+          "id": "BR-005",
+          "text": "Você pode falar mais devagar?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-006",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Desculpe, não entendi a última palavra.",
+      "arabic": "معذرة، لم أفهم الكلمة الأخيرة.",
+      "recordingTakes": [
+        {
+          "id": "BR-006",
+          "text": "Desculpe, não entendi a última palavra.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-007",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Como você prefere ser chamado?",
+      "arabic": "كيف تحب أن يناديك الآخرون؟",
+      "recordingTakes": [
+        {
+          "id": "BR-007",
+          "text": "Como você prefere ser chamado?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-008",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "التعارف واللباقة",
+      "displayText": "Muito obrigado pela ajuda.",
+      "arabic": "شكرًا جزيلًا على المساعدة.",
+      "recordingTakes": [
+        {
+          "id": "BR-008",
+          "text": "Muito obrigado pela ajuda.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-009",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "Que horas são agora?",
+      "arabic": "كم الساعة الآن؟",
+      "recordingTakes": [
+        {
+          "id": "BR-009",
+          "text": "Que horas são agora?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-010",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "A aula começa às nove.",
+      "arabic": "تبدأ الحصة الساعة التاسعة.",
+      "recordingTakes": [
+        {
+          "id": "BR-010",
+          "text": "A aula começa às nove.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-011",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "Podemos nos encontrar amanhã?",
+      "arabic": "هل يمكننا أن نلتقي غدًا؟",
+      "recordingTakes": [
+        {
+          "id": "BR-011",
+          "text": "Podemos nos encontrar amanhã?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-012",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "Tenho um compromisso na sexta-feira.",
+      "arabic": "عندي موعد يوم الجمعة.",
+      "recordingTakes": [
+        {
+          "id": "BR-012",
+          "text": "Tenho um compromisso na sexta-feira.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-013",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "Chego em cerca de dez minutos.",
+      "arabic": "سأصل خلال نحو عشر دقائق.",
+      "recordingTakes": [
+        {
+          "id": "BR-013",
+          "text": "Chego em cerca de dez minutos.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-014",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "A loja fecha às seis da tarde.",
+      "arabic": "يغلق المتجر الساعة السادسة مساءً.",
+      "recordingTakes": [
+        {
+          "id": "BR-014",
+          "text": "A loja fecha às seis da tarde.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-015",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "O atendimento começa pela manhã.",
+      "arabic": "تبدأ الخدمة في الصباح.",
+      "recordingTakes": [
+        {
+          "id": "BR-015",
+          "text": "O atendimento começa pela manhã.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-016",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الوقت والمواعيد",
+      "displayText": "Pode confirmar o horário por mensagem?",
+      "arabic": "هل يمكنك تأكيد الموعد برسالة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-016",
+          "text": "Pode confirmar o horário por mensagem?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-017",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Onde fica o balcão de check-in?",
+      "arabic": "أين مكتب تسجيل الوصول؟",
+      "recordingTakes": [
+        {
+          "id": "BR-017",
+          "text": "Onde fica o balcão de check-in?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-018",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Preciso despachar esta mala.",
+      "arabic": "أحتاج إلى شحن حقيبة السفر هذه.",
+      "recordingTakes": [
+        {
+          "id": "BR-018",
+          "text": "Preciso despachar esta mala.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-019",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Meu voo foi adiado.",
+      "arabic": "تم تأجيل رحلتي الجوية.",
+      "recordingTakes": [
+        {
+          "id": "BR-019",
+          "text": "Meu voo foi adiado.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-020",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Qual é o portão de embarque?",
+      "arabic": "ما رقم بوابة الصعود للطائرة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-020",
+          "text": "Qual é o portão de embarque?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-021",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Posso levar esta mochila na cabine?",
+      "arabic": "هل يمكنني اصطحاب حقيبة الظهر هذه داخل المقصورة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-021",
+          "text": "Posso levar esta mochila na cabine?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-022",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Não encontrei minha bagagem.",
+      "arabic": "لم أجد أمتعتي.",
+      "recordingTakes": [
+        {
+          "id": "BR-022",
+          "text": "Não encontrei minha bagagem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-023",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Tenho o comprovante da bagagem.",
+      "arabic": "معي إيصال الأمتعة.",
+      "recordingTakes": [
+        {
+          "id": "BR-023",
+          "text": "Tenho o comprovante da bagagem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-024",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطار والأمتعة",
+      "displayText": "Onde posso informar uma mala extraviada?",
+      "arabic": "أين يمكنني الإبلاغ عن حقيبة مفقودة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-024",
+          "text": "Onde posso informar uma mala extraviada?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-025",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Estou viajando a turismo.",
+      "arabic": "أنا أسافر بغرض السياحة.",
+      "recordingTakes": [
+        {
+          "id": "BR-025",
+          "text": "Estou viajando a turismo.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-026",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Esta é minha primeira visita ao Brasil.",
+      "arabic": "هذه أول زيارة لي إلى البرازيل.",
+      "recordingTakes": [
+        {
+          "id": "BR-026",
+          "text": "Esta é minha primeira visita ao Brasil.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-027",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Vou ficar aqui por uma semana.",
+      "arabic": "سأبقى هنا لمدة أسبوع.",
+      "recordingTakes": [
+        {
+          "id": "BR-027",
+          "text": "Vou ficar aqui por uma semana.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-028",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Tenho uma reserva de hotel confirmada.",
+      "arabic": "لدي حجز فندق مؤكد.",
+      "recordingTakes": [
+        {
+          "id": "BR-028",
+          "text": "Tenho uma reserva de hotel confirmada.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-029",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Este é meu endereço de hospedagem.",
+      "arabic": "هذا عنوان مكان إقامتي.",
+      "recordingTakes": [
+        {
+          "id": "BR-029",
+          "text": "Este é meu endereço de hospedagem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-030",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Minha passagem de volta está aqui.",
+      "arabic": "تذكرة عودتي هنا.",
+      "recordingTakes": [
+        {
+          "id": "BR-030",
+          "text": "Minha passagem de volta está aqui.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-031",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Posso mostrar o comprovante no celular?",
+      "arabic": "هل يمكنني عرض الإثبات على الهاتف؟",
+      "recordingTakes": [
+        {
+          "id": "BR-031",
+          "text": "Posso mostrar o comprovante no celular?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-032",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الوصول والجوازات",
+      "displayText": "Preciso de ajuda para entender a pergunta.",
+      "arabic": "أحتاج مساعدة لفهم السؤال.",
+      "recordingTakes": [
+        {
+          "id": "BR-032",
+          "text": "Preciso de ajuda para entender a pergunta.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-033",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Tenho uma reserva em meu nome.",
+      "arabic": "لدي حجز باسمي.",
+      "recordingTakes": [
+        {
+          "id": "BR-033",
+          "text": "Tenho uma reserva em meu nome.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-034",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Gostaria de fazer o check-in.",
+      "arabic": "أود إتمام تسجيل الدخول.",
+      "recordingTakes": [
+        {
+          "id": "BR-034",
+          "text": "Gostaria de fazer o check-in.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-035",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "O café da manhã está incluído?",
+      "arabic": "هل الإفطار مشمول؟",
+      "recordingTakes": [
+        {
+          "id": "BR-035",
+          "text": "O café da manhã está incluído?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-036",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Qual é o horário do check-out?",
+      "arabic": "ما موعد تسجيل المغادرة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-036",
+          "text": "Qual é o horário do check-out?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-037",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Meu quarto ainda não está pronto.",
+      "arabic": "غرفتي ليست جاهزة بعد.",
+      "recordingTakes": [
+        {
+          "id": "BR-037",
+          "text": "Meu quarto ainda não está pronto.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-038",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "O ar-condicionado não está funcionando.",
+      "arabic": "مكيف الهواء لا يعمل.",
+      "recordingTakes": [
+        {
+          "id": "BR-038",
+          "text": "O ar-condicionado não está funcionando.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-039",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Preciso de outra toalha, por favor.",
+      "arabic": "أحتاج منشفة أخرى، من فضلك.",
+      "recordingTakes": [
+        {
+          "id": "BR-039",
+          "text": "Preciso de outra toalha, por favor.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-040",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "الفندق والإقامة",
+      "displayText": "Pode me enviar a confirmação da reserva?",
+      "arabic": "هل يمكنك إرسال تأكيد الحجز لي؟",
+      "recordingTakes": [
+        {
+          "id": "BR-040",
+          "text": "Pode me enviar a confirmação da reserva?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-041",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Posso ver o cardápio, por favor?",
+      "arabic": "هل يمكنني رؤية قائمة الطعام من فضلك؟",
+      "recordingTakes": [
+        {
+          "id": "BR-041",
+          "text": "Posso ver o cardápio, por favor?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-042",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Gostaria de pedir arroz e frango.",
+      "arabic": "أود طلب الأرز والدجاج.",
+      "recordingTakes": [
+        {
+          "id": "BR-042",
+          "text": "Gostaria de pedir arroz e frango.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-043",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Este prato tem frutos do mar?",
+      "arabic": "هل يحتوي هذا الطبق على مأكولات بحرية؟",
+      "recordingTakes": [
+        {
+          "id": "BR-043",
+          "text": "Este prato tem frutos do mar?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-044",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Tenho alergia a amendoim.",
+      "arabic": "لدي حساسية من الفول السوداني.",
+      "recordingTakes": [
+        {
+          "id": "BR-044",
+          "text": "Tenho alergia a amendoim.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-045",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Pode preparar sem leite?",
+      "arabic": "هل يمكن إعداده بدون حليب؟",
+      "recordingTakes": [
+        {
+          "id": "BR-045",
+          "text": "Pode preparar sem leite?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-046",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Quero água sem gás, por favor.",
+      "arabic": "أريد ماءً غير غازي، من فضلك.",
+      "recordingTakes": [
+        {
+          "id": "BR-046",
+          "text": "Quero água sem gás, por favor.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-047",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "A comida está muito apimentada?",
+      "arabic": "هل الطعام حار جدًا؟",
+      "recordingTakes": [
+        {
+          "id": "BR-047",
+          "text": "A comida está muito apimentada?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-048",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المطعم واحتياجات الطعام",
+      "displayText": "Pode trazer a conta quando puder?",
+      "arabic": "هل يمكنك إحضار الحساب عندما تستطيع؟",
+      "recordingTakes": [
+        {
+          "id": "BR-048",
+          "text": "Pode trazer a conta quando puder?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-049",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Como chego ao centro da cidade?",
+      "arabic": "كيف أصل إلى وسط المدينة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-049",
+          "text": "Como chego ao centro da cidade?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-050",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Onde fica a estação de metrô?",
+      "arabic": "أين تقع محطة المترو؟",
+      "recordingTakes": [
+        {
+          "id": "BR-050",
+          "text": "Onde fica a estação de metrô?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-051",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Este ônibus vai para o aeroporto?",
+      "arabic": "هل تذهب هذه الحافلة إلى المطار؟",
+      "recordingTakes": [
+        {
+          "id": "BR-051",
+          "text": "Este ônibus vai para o aeroporto?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-052",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Preciso comprar um bilhete.",
+      "arabic": "أحتاج إلى شراء تذكرة.",
+      "recordingTakes": [
+        {
+          "id": "BR-052",
+          "text": "Preciso comprar um bilhete.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-053",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Pode parar nesta esquina, por favor?",
+      "arabic": "هل يمكنك التوقف عند هذا الركن من فضلك؟",
+      "recordingTakes": [
+        {
+          "id": "BR-053",
+          "text": "Pode parar nesta esquina, por favor?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-054",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "Quanto custa a corrida até o hotel?",
+      "arabic": "كم تكلفة الرحلة إلى الفندق؟",
+      "recordingTakes": [
+        {
+          "id": "BR-054",
+          "text": "Quanto custa a corrida até o hotel?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-055",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "É possível pagar pelo aplicativo?",
+      "arabic": "هل يمكن الدفع عبر التطبيق؟",
+      "recordingTakes": [
+        {
+          "id": "BR-055",
+          "text": "É possível pagar pelo aplicativo?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-056",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A1",
+      "lesson": "المواصلات والاتجاهات",
+      "displayText": "A entrada fica do outro lado da rua.",
+      "arabic": "المدخل على الجانب الآخر من الشارع.",
+      "recordingTakes": [
+        {
+          "id": "BR-056",
+          "text": "A entrada fica do outro lado da rua.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-057",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Quanto custa esta camiseta?",
+      "arabic": "كم ثمن هذا القميص؟",
+      "recordingTakes": [
+        {
+          "id": "BR-057",
+          "text": "Quanto custa esta camiseta?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-058",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Você tem um tamanho maior?",
+      "arabic": "هل لديك مقاس أكبر؟",
+      "recordingTakes": [
+        {
+          "id": "BR-058",
+          "text": "Você tem um tamanho maior?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-059",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Posso experimentar esta roupa?",
+      "arabic": "هل يمكنني تجربة هذه القطعة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-059",
+          "text": "Posso experimentar esta roupa?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-060",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Existe outra cor disponível?",
+      "arabic": "هل يوجد لون آخر متاح؟",
+      "recordingTakes": [
+        {
+          "id": "BR-060",
+          "text": "Existe outra cor disponível?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-061",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Aceitam cartão de crédito?",
+      "arabic": "هل تقبلون بطاقة الائتمان؟",
+      "recordingTakes": [
+        {
+          "id": "BR-061",
+          "text": "Aceitam cartão de crédito?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-062",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Quero pagar em dinheiro.",
+      "arabic": "أريد الدفع نقدًا.",
+      "recordingTakes": [
+        {
+          "id": "BR-062",
+          "text": "Quero pagar em dinheiro.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-063",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Posso trocar se não servir?",
+      "arabic": "هل يمكنني الاستبدال إن لم يناسب المقاس؟",
+      "recordingTakes": [
+        {
+          "id": "BR-063",
+          "text": "Posso trocar se não servir?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-064",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "التسوق والدفع",
+      "displayText": "Preciso da nota fiscal, por favor.",
+      "arabic": "أحتاج إلى الفاتورة، من فضلك.",
+      "recordingTakes": [
+        {
+          "id": "BR-064",
+          "text": "Preciso da nota fiscal, por favor.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-065",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Preciso encontrar uma farmácia aberta.",
+      "arabic": "أحتاج إلى إيجاد صيدلية مفتوحة.",
+      "recordingTakes": [
+        {
+          "id": "BR-065",
+          "text": "Preciso encontrar uma farmácia aberta.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-066",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Estou com dor de cabeça.",
+      "arabic": "أعاني صداعًا.",
+      "recordingTakes": [
+        {
+          "id": "BR-066",
+          "text": "Estou com dor de cabeça.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-067",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Preciso falar com um médico.",
+      "arabic": "أحتاج إلى التحدث إلى طبيب.",
+      "recordingTakes": [
+        {
+          "id": "BR-067",
+          "text": "Preciso falar com um médico.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-068",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Onde fica o hospital mais próximo?",
+      "arabic": "أين يقع أقرب مستشفى؟",
+      "recordingTakes": [
+        {
+          "id": "BR-068",
+          "text": "Onde fica o hospital mais próximo?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-069",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Por favor, chame uma ambulância.",
+      "arabic": "من فضلك، اتصل بالإسعاف.",
+      "recordingTakes": [
+        {
+          "id": "BR-069",
+          "text": "Por favor, chame uma ambulância.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-070",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Perdi meu documento de identidade.",
+      "arabic": "فقدت وثيقة هويتي.",
+      "recordingTakes": [
+        {
+          "id": "BR-070",
+          "text": "Perdi meu documento de identidade.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-071",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Pode me ajudar a ligar para a polícia?",
+      "arabic": "هل يمكنك مساعدتي في الاتصال بالشرطة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-071",
+          "text": "Pode me ajudar a ligar para a polícia?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-072",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "A2",
+      "lesson": "الصيدلية والمساعدة الطارئة",
+      "displayText": "Não estou conseguindo falar bem.",
+      "arabic": "لا أستطيع التحدث جيدًا.",
+      "recordingTakes": [
+        {
+          "id": "BR-072",
+          "text": "Não estou conseguindo falar bem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-073",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Estou procurando um apartamento para alugar.",
+      "arabic": "أبحث عن شقة للإيجار.",
+      "recordingTakes": [
+        {
+          "id": "BR-073",
+          "text": "Estou procurando um apartamento para alugar.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-074",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "O aluguel inclui água e energia?",
+      "arabic": "هل الإيجار يشمل الماء والكهرباء؟",
+      "recordingTakes": [
+        {
+          "id": "BR-074",
+          "text": "O aluguel inclui água e energia?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-075",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Gostaria de conhecer as condições do contrato.",
+      "arabic": "أود الاطلاع على شروط العقد.",
+      "recordingTakes": [
+        {
+          "id": "BR-075",
+          "text": "Gostaria de conhecer as condições do contrato.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-076",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "A torneira da cozinha está vazando.",
+      "arabic": "صنبور المطبخ يسرب المياه.",
+      "recordingTakes": [
+        {
+          "id": "BR-076",
+          "text": "A torneira da cozinha está vazando.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-077",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Pode informar quando virá o técnico?",
+      "arabic": "هل يمكنك إبلاغي بموعد مجيء الفني؟",
+      "recordingTakes": [
+        {
+          "id": "BR-077",
+          "text": "Pode informar quando virá o técnico?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-078",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Estou procurando oportunidades de trabalho.",
+      "arabic": "أبحث عن فرص عمل.",
+      "recordingTakes": [
+        {
+          "id": "BR-078",
+          "text": "Estou procurando oportunidades de trabalho.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-079",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Tenho experiência em atendimento ao cliente.",
+      "arabic": "لدي خبرة في خدمة العملاء.",
+      "recordingTakes": [
+        {
+          "id": "BR-079",
+          "text": "Tenho experiência em atendimento ao cliente.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-080",
+      "sourceGroup": "practical-trainer",
+      "priority": "P0",
+      "level": "B1",
+      "lesson": "السكن والعمل والحياة اليومية",
+      "displayText": "Podemos marcar uma entrevista para amanhã?",
+      "arabic": "هل يمكننا تحديد مقابلة غدًا؟",
+      "recordingTakes": [
+        {
+          "id": "BR-080",
+          "text": "Podemos marcar uma entrevista para amanhã?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-081",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Meu nome é…",
+      "arabic": "اسمي…",
+      "recordingTakes": [
+        {
+          "id": "BR-081",
+          "text": "Meu nome é Ahmed.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "قالب متغير: النص المنطوق هنا مثال باسم أحمد. لا تربطه ببطاقة القالب الأصلية تلقائيًا.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-082",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Prazer",
+      "arabic": "تشرفت بمعرفتك",
+      "recordingTakes": [
+        {
+          "id": "BR-082",
+          "text": "Prazer",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-083",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Eu sou do Egito",
+      "arabic": "أنا من مصر",
+      "recordingTakes": [
+        {
+          "id": "BR-083",
+          "text": "Eu sou do Egito",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-084",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "displayText": "Com licença",
+      "arabic": "بعد إذنك / لو سمحت للمرور",
+      "recordingTakes": [
+        {
+          "id": "BR-084",
+          "text": "Com licença",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-085",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "displayText": "Eu falo um pouco de português",
+      "arabic": "أتكلم قليلًا من البرتغالية",
+      "recordingTakes": [
+        {
+          "id": "BR-085",
+          "text": "Eu falo um pouco de português",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-086",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "displayText": "Pode falar devagar?",
+      "arabic": "ممكن تتكلم ببطء؟",
+      "recordingTakes": [
+        {
+          "id": "BR-086",
+          "text": "Pode falar devagar?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-087",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "displayText": "Não entendi",
+      "arabic": "لم أفهم",
+      "recordingTakes": [
+        {
+          "id": "BR-087",
+          "text": "Não entendi",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-088",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Tudo bem.",
+      "arabic": "أنا بخير / تمام",
+      "recordingTakes": [
+        {
+          "id": "BR-088",
+          "text": "Tudo bem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-089",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "E você?",
+      "arabic": "وأنت؟",
+      "recordingTakes": [
+        {
+          "id": "BR-089",
+          "text": "E você?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-090",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "estudamos",
+      "arabic": "نحن ندرس",
+      "recordingTakes": [
+        {
+          "id": "BR-090",
+          "text": "estudamos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-091",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "trabalha",
+      "arabic": "يعمل / تعمل (مع você أو ele/ela)",
+      "recordingTakes": [
+        {
+          "id": "BR-091",
+          "text": "trabalha",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-092",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Sou egípcio.",
+      "arabic": "أنا مصري (متحدث رجل).",
+      "recordingTakes": [
+        {
+          "id": "BR-092",
+          "text": "Sou egípcio.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-093",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Sou egípcia.",
+      "arabic": "أنا مصرية (متحدثة).",
+      "recordingTakes": [
+        {
+          "id": "BR-093",
+          "text": "Sou egípcia.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-094",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Ela é professora.",
+      "arabic": "هي معلمة.",
+      "recordingTakes": [
+        {
+          "id": "BR-094",
+          "text": "Ela é professora.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-095",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Ele é médico.",
+      "arabic": "هو طبيب.",
+      "recordingTakes": [
+        {
+          "id": "BR-095",
+          "text": "Ele é médico.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-096",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "De onde você é?",
+      "arabic": "من أين أنت؟",
+      "recordingTakes": [
+        {
+          "id": "BR-096",
+          "text": "De onde você é?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-097",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Qual é sua profissão?",
+      "arabic": "ما مهنتك؟",
+      "recordingTakes": [
+        {
+          "id": "BR-097",
+          "text": "Qual é sua profissão?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-098",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الجنسية والمهنة والفعل ser",
+      "displayText": "Eu sou estudante.",
+      "arabic": "أنا طالب / طالبة.",
+      "recordingTakes": [
+        {
+          "id": "BR-098",
+          "text": "Eu sou estudante.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-099",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+      "displayText": "Estou bem.",
+      "arabic": "أنا بخير.",
+      "recordingTakes": [
+        {
+          "id": "BR-099",
+          "text": "Estou bem.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-100",
+      "sourceGroup": "a1-vocabulary",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: وصف الحالة والمكان بفعل estar",
+      "displayText": "Estou cansado.",
+      "arabic": "أنا متعب (متحدث رجل).",
+      "recordingTakes": [
+        {
+          "id": "BR-100",
+          "text": "Estou cansado.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-101",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "um / uma",
+      "arabic": "1 — واحد / واحدة؛ يتغير حسب الاسم",
+      "recordingTakes": [
+        {
+          "id": "BR-101-A",
+          "text": "um",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        },
+        {
+          "id": "BR-101-B",
+          "text": "uma",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "بديلان صحيحان: سَجّل كل بديل منفصلًا بنسختيه العادية والبطيئة، ولا تنطق الشرطة المائلة.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-102",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "dois / duas",
+      "arabic": "2 — اثنان / اثنتان",
+      "recordingTakes": [
+        {
+          "id": "BR-102-A",
+          "text": "dois",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        },
+        {
+          "id": "BR-102-B",
+          "text": "duas",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "بديلان صحيحان: سَجّل كل بديل منفصلًا بنسختيه العادية والبطيئة، ولا تنطق الشرطة المائلة.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-103",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "quatorze / catorze",
+      "arabic": "14 — أربعة عشر",
+      "recordingTakes": [
+        {
+          "id": "BR-103-A",
+          "text": "quatorze",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        },
+        {
+          "id": "BR-103-B",
+          "text": "catorze",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "بديلان صحيحان: سَجّل كل بديل منفصلًا بنسختيه العادية والبطيئة، ولا تنطق الشرطة المائلة.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-104",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "vinte e um",
+      "arabic": "21 — واحد وعشرون",
+      "recordingTakes": [
+        {
+          "id": "BR-104",
+          "text": "vinte e um",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-105",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "vinte e três",
+      "arabic": "23 — ثلاثة وعشرون",
+      "recordingTakes": [
+        {
+          "id": "BR-105",
+          "text": "vinte e três",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-106",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "cento e um",
+      "arabic": "101 — مئة وواحد",
+      "recordingTakes": [
+        {
+          "id": "BR-106",
+          "text": "cento e um",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-107",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "duzentos / duzentas",
+      "arabic": "200 — مئتان؛ يتغير الجنس",
+      "recordingTakes": [
+        {
+          "id": "BR-107-A",
+          "text": "duzentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        },
+        {
+          "id": "BR-107-B",
+          "text": "duzentas",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "بديلان صحيحان: سَجّل كل بديل منفصلًا بنسختيه العادية والبطيئة، ولا تنطق الشرطة المائلة.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-108",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "trezentos",
+      "arabic": "300 — ثلاثمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-108",
+          "text": "trezentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-109",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "quatrocentos",
+      "arabic": "400 — أربعمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-109",
+          "text": "quatrocentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-110",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "quinhentos",
+      "arabic": "500 — خمسمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-110",
+          "text": "quinhentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-111",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "seiscentos",
+      "arabic": "600 — ستمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-111",
+          "text": "seiscentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-112",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "setecentos",
+      "arabic": "700 — سبعمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-112",
+          "text": "setecentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-113",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "oitocentos",
+      "arabic": "800 — ثمانمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-113",
+          "text": "oitocentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-114",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "novecentos",
+      "arabic": "900 — تسعمئة",
+      "recordingTakes": [
+        {
+          "id": "BR-114",
+          "text": "novecentos",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-115",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "mil",
+      "arabic": "1,000 — ألف",
+      "recordingTakes": [
+        {
+          "id": "BR-115",
+          "text": "mil",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-116",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "cento e quarenta e cinco",
+      "arabic": "145 — مئة وخمسة وأربعون",
+      "recordingTakes": [
+        {
+          "id": "BR-116",
+          "text": "cento e quarenta e cinco",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-117",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "duzentos e vinte",
+      "arabic": "220 — مئتان وعشرون",
+      "recordingTakes": [
+        {
+          "id": "BR-117",
+          "text": "duzentos e vinte",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-118",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "Quantos anos você tem?",
+      "arabic": "كم عمرك؟",
+      "recordingTakes": [
+        {
+          "id": "BR-118",
+          "text": "Quantos anos você tem?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-119",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "Tenho 28 anos.",
+      "arabic": "عمري 28 سنة.",
+      "recordingTakes": [
+        {
+          "id": "BR-119",
+          "text": "Tenho 28 anos.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-120",
+      "sourceGroup": "foundation-vocabulary",
+      "priority": "P1",
+      "level": "foundation",
+      "lesson": "الأرقام من الصفر إلى الألف والعمر",
+      "displayText": "Quanto custa?",
+      "arabic": "بكم السعر؟",
+      "recordingTakes": [
+        {
+          "id": "BR-120",
+          "text": "Quanto custa?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-121",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "displayText": "Oi! Bom dia!",
+      "arabic": "أهلًا! صباح الخير!",
+      "recordingTakes": [
+        {
+          "id": "BR-121",
+          "text": "Oi! Bom dia!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-122",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "displayText": "Bom dia! Tudo bem?",
+      "arabic": "صباح النور! كل شيء تمام؟",
+      "recordingTakes": [
+        {
+          "id": "BR-122",
+          "text": "Bom dia! Tudo bem?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-123",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "التحية والتوديع",
+      "displayText": "Tudo bem, obrigado. Tchau!",
+      "arabic": "تمام، شكرًا. مع السلامة!",
+      "recordingTakes": [
+        {
+          "id": "BR-123",
+          "text": "Tudo bem, obrigado. Tchau!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-124",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Oi! Como você se chama?",
+      "arabic": "أهلًا! اسمك إيه؟",
+      "recordingTakes": [
+        {
+          "id": "BR-124",
+          "text": "Oi! Como você se chama?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-125",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Meu nome é Ahmed. E você?",
+      "arabic": "اسمي أحمد. وإنت؟",
+      "recordingTakes": [
+        {
+          "id": "BR-125",
+          "text": "Meu nome é Ahmed. E você?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-126",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تقول اسمك وتتعرف",
+      "displayText": "Eu sou a Ana. Prazer!",
+      "arabic": "أنا آنا. تشرفت بيك!",
+      "recordingTakes": [
+        {
+          "id": "BR-126",
+          "text": "Eu sou a Ana. Prazer!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-127",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "displayText": "Um café, por favor.",
+      "arabic": "قهوة من فضلك.",
+      "recordingTakes": [
+        {
+          "id": "BR-127",
+          "text": "Um café, por favor.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-128",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "displayText": "Claro!",
+      "arabic": "طبعًا!",
+      "recordingTakes": [
+        {
+          "id": "BR-128",
+          "text": "Claro!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-129",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "كلمات الأدب الأساسية",
+      "displayText": "Obrigado!",
+      "arabic": "شكرًا!",
+      "recordingTakes": [
+        {
+          "id": "BR-129",
+          "text": "Obrigado!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-130",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "displayText": "Um pouco.",
+      "arabic": "قليلًا.",
+      "recordingTakes": [
+        {
+          "id": "BR-130",
+          "text": "Um pouco.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-131",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "تسأل عن اللغة",
+      "displayText": "Tudo bem. Pode falar devagar?",
+      "arabic": "لا بأس. ممكن تتكلم ببطء؟",
+      "recordingTakes": [
+        {
+          "id": "BR-131",
+          "text": "Tudo bem. Pode falar devagar?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-132",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Oi! Tudo bem?",
+      "arabic": "أهلًا! عامل إيه؟",
+      "recordingTakes": [
+        {
+          "id": "BR-132",
+          "text": "Oi! Tudo bem?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-133",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Tudo bem, e você?",
+      "arabic": "تمام، وإنت؟",
+      "recordingTakes": [
+        {
+          "id": "BR-133",
+          "text": "Tudo bem, e você?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-134",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Tudo bem. Meu nome é Lucas.",
+      "arabic": "تمام. اسمي لوكاس.",
+      "recordingTakes": [
+        {
+          "id": "BR-134",
+          "text": "Tudo bem. Meu nome é Lucas.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-135",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Prazer! Eu sou Sara.",
+      "arabic": "تشرفت! أنا سارة.",
+      "recordingTakes": [
+        {
+          "id": "BR-135",
+          "text": "Prazer! Eu sou Sara.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-136",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "أول حوار قصير",
+      "displayText": "Muito prazer!",
+      "arabic": "سعيد جدًا بمعرفتك!",
+      "recordingTakes": [
+        {
+          "id": "BR-136",
+          "text": "Muito prazer!",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-137",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "Você estuda português?",
+      "arabic": "هل تدرس البرتغالية؟",
+      "recordingTakes": [
+        {
+          "id": "BR-137",
+          "text": "Você estuda português?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-138",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "Sim, eu estudo português.",
+      "arabic": "نعم، أنا أدرس البرتغالية.",
+      "recordingTakes": [
+        {
+          "id": "BR-138",
+          "text": "Sim, eu estudo português.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-139",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "E seus amigos?",
+      "arabic": "وماذا عن أصدقائك؟",
+      "recordingTakes": [
+        {
+          "id": "BR-139",
+          "text": "E seus amigos?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-140",
+      "sourceGroup": "a1-dialogues",
+      "priority": "P1",
+      "level": "a1",
+      "lesson": "A1 تطبيقي: الضمائر في المواقف اليومية",
+      "displayText": "Nós estudamos juntos.",
+      "arabic": "نحن ندرس معًا.",
+      "recordingTakes": [
+        {
+          "id": "BR-140",
+          "text": "Nós estudamos juntos.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-141",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "تسأل عن مكان شيء",
+      "displayText": "Com licença, onde fica o banheiro?",
+      "arabic": "بعد إذنك، الحمّام فين؟",
+      "recordingTakes": [
+        {
+          "id": "BR-141",
+          "text": "Com licença, onde fica o banheiro?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-142",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "تسأل عن مكان شيء",
+      "displayText": "Fica ali, à direita.",
+      "arabic": "هناك، على اليمين.",
+      "recordingTakes": [
+        {
+          "id": "BR-142",
+          "text": "Fica ali, à direita.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-143",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "displayText": "Como chego à estação?",
+      "arabic": "أوصل للمحطة إزاي؟",
+      "recordingTakes": [
+        {
+          "id": "BR-143",
+          "text": "Como chego à estação?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-144",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "displayText": "Siga reto e vire à direita na esquina.",
+      "arabic": "امشِ على طول وانعطف يمين عند الناصية.",
+      "recordingTakes": [
+        {
+          "id": "BR-144",
+          "text": "Siga reto e vire à direita na esquina.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-145",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "displayText": "É longe?",
+      "arabic": "هي بعيدة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-145",
+          "text": "É longe?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-146",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الاتجاهات وفهم الطريق",
+      "displayText": "Não, é perto.",
+      "arabic": "لا، قريبة.",
+      "recordingTakes": [
+        {
+          "id": "BR-146",
+          "text": "Não, é perto.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-147",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "displayText": "Que horas são?",
+      "arabic": "الساعة كام؟",
+      "recordingTakes": [
+        {
+          "id": "BR-147",
+          "text": "Que horas são?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-148",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "displayText": "São três horas.",
+      "arabic": "الساعة الثالثة.",
+      "recordingTakes": [
+        {
+          "id": "BR-148",
+          "text": "São três horas.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-149",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "displayText": "E que dia é hoje?",
+      "arabic": "والنهارده يوم إيه؟",
+      "recordingTakes": [
+        {
+          "id": "BR-149",
+          "text": "E que dia é hoje?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-150",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأيام والوقت والمواعيد",
+      "displayText": "Hoje é segunda-feira.",
+      "arabic": "النهارده يوم الاثنين.",
+      "recordingTakes": [
+        {
+          "id": "BR-150",
+          "text": "Hoje é segunda-feira.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-151",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "displayText": "Quanto custa esta água?",
+      "arabic": "المياه دي بكام؟",
+      "recordingTakes": [
+        {
+          "id": "BR-151",
+          "text": "Quanto custa esta água?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-152",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "displayText": "Custa cinco reais.",
+      "arabic": "سعرها خمسة ريالات برازيلية.",
+      "recordingTakes": [
+        {
+          "id": "BR-152",
+          "text": "Custa cinco reais.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-153",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "displayText": "Aceita cartão?",
+      "arabic": "بتقبلوا البطاقة؟",
+      "recordingTakes": [
+        {
+          "id": "BR-153",
+          "text": "Aceita cartão?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-154",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "الأسعار والدفع",
+      "displayText": "Sim, aceita.",
+      "arabic": "أيوه، بنقبلها.",
+      "recordingTakes": [
+        {
+          "id": "BR-154",
+          "text": "Sim, aceita.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "يحتاج فحص طبيعية الصياغة بلسان البائع؛ قد يكون Sim, aceitamos. أنسب.",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-155",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "displayText": "Estou procurando uma camiseta.",
+      "arabic": "أنا بدوّر على تيشيرت.",
+      "recordingTakes": [
+        {
+          "id": "BR-155",
+          "text": "Estou procurando uma camiseta.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-156",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "displayText": "Qual tamanho?",
+      "arabic": "مقاس إيه؟",
+      "recordingTakes": [
+        {
+          "id": "BR-156",
+          "text": "Qual tamanho?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-157",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "displayText": "Tem um tamanho maior?",
+      "arabic": "في مقاس أكبر؟",
+      "recordingTakes": [
+        {
+          "id": "BR-157",
+          "text": "Tem um tamanho maior?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-158",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "التسوق والمقاسات والألوان",
+      "displayText": "Sim, vou pegar para você.",
+      "arabic": "أيوه، هجيبهولك.",
+      "recordingTakes": [
+        {
+          "id": "BR-158",
+          "text": "Sim, vou pegar para você.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-159",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "تطلب أكلًا ومشروبًا",
+      "displayText": "Boa tarde! Eu queria um suco, por favor.",
+      "arabic": "مساء الخير! كنت عايز عصير من فضلك.",
+      "recordingTakes": [
+        {
+          "id": "BR-159",
+          "text": "Boa tarde! Eu queria um suco, por favor.",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    },
+    {
+      "id": "BR-160",
+      "sourceGroup": "travel-dialogues",
+      "priority": "P1",
+      "level": "travel",
+      "lesson": "تطلب أكلًا ومشروبًا",
+      "displayText": "Com açúcar ou sem açúcar?",
+      "arabic": "بسُكر ولا من غير سكر؟",
+      "recordingTakes": [
+        {
+          "id": "BR-160",
+          "text": "Com açúcar ou sem açúcar?",
+          "normal": "TO_RECORD",
+          "slow": "TO_RECORD"
+        }
+      ],
+      "editorialNote": "",
+      "reviewStatus": "draft-unreviewed"
+    }
+  ]
+}
