@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo ASR cross-check; not phonetic certification.",
+  "results": [
+    {
+      "item": 324,
+      "speed": "normal",
+      "path": "advanced/adv_18_324.mp3",
+      "transcript": "Falaremos!",
+      "duration": 1.146,
+      "expected": "falaremos",
+      "exactMatch": true
+    },
+    {
+      "item": 324,
+      "speed": "slow",
+      "path": "advanced/adv_18_324_slow.mp3",
+      "transcript": "E falaremos.",
+      "duration": 1.487375,
+      "expected": "falaremos",
+      "exactMatch": false
+    },
+    {
+      "item": 325,
+      "speed": "normal",
+      "path": "advanced/adv_18_325.mp3",
+      "transcript": "Falarão.",
+      "duration": 1.167375,
+      "expected": "falarão",
+      "exactMatch": true
+    },
+    {
+      "item": 325,
+      "speed": "slow",
+      "path": "advanced/adv_18_325_slow.mp3",
+      "transcript": "Falarão.",
+      "duration": 1.487375,
+      "expected": "falarão",
+      "exactMatch": true
+    },
+    {
+      "item": 326,
+      "speed": "normal",
+      "path": "advanced/adv_18_326.mp3",
+      "transcript": "Gostar",
+      "duration": 0.9966875,
+      "expected": "gostar",
+      "exactMatch": true
+    },
+    {
+      "item": 326,
+      "speed": "slow",
+      "path": "advanced/adv_18_326_slow.mp3",
+      "transcript": "Gostar",
+      "duration": 1.231375,
+      "expected": "gostar",
+      "exactMatch": true
+    },
+    {
+      "item": 327,
+      "speed": "normal",
+      "path": "advanced/adv_18_327.mp3",
+      "transcript": "Falaria.",
+      "duration": 1.082,
+      "expected": "falaria",
+      "exactMatch": true
+    },
+    {
+      "item": 327,
+      "speed": "slow",
+      "path": "advanced/adv_18_327_slow.mp3",
+      "transcript": "falaria",
+      "duration": 1.402,
+      "expected": "falaria",
+      "exactMatch": true
+    },
+    {
+      "item": 328,
+      "speed": "normal",
+      "path": "advanced/adv_18_328.mp3",
+      "transcript": "Gostaria.",
+      "duration": 1.167375,
+      "expected": "gostaria",
+      "exactMatch": true
+    },
+    {
+      "item": 328,
+      "speed": "slow",
+      "path": "advanced/adv_18_328_slow.mp3",
+      "transcript": "Gostaria.",
+      "duration": 1.466,
+      "expected": "gostaria",
+      "exactMatch": true
+    },
+    {
+      "item": 329,
+      "speed": "normal",
+      "path": "advanced/adv_18_329.mp3",
+      "transcript": "Falaríamos.",
+      "duration": 1.1886875,
+      "expected": "falaríamos",
+      "exactMatch": true
+    },
+    {
+      "item": 329,
+      "speed": "slow",
+      "path": "advanced/adv_18_329_slow.mp3",
+      "transcript": "O que falaríamos?",
+      "duration": 1.5726875,
+      "expected": "falaríamos",
+      "exactMatch": false
+    },
+    {
+      "item": 330,
+      "speed": "normal",
+      "path": "advanced/adv_18_330.mp3",
+      "transcript": "Gostaríamos.",
+      "duration": 1.2526875,
+      "expected": "gostaríamos",
+      "exactMatch": true
+    },
+    {
+      "item": 330,
+      "speed": "slow",
+      "path": "advanced/adv_18_330_slow.mp3",
+      "transcript": "Gostaríamos.",
+      "duration": 1.7006875,
+      "expected": "gostaríamos",
+      "exactMatch": true
+    },
+    {
+      "item": 331,
+      "speed": "normal",
+      "path": "advanced/adv_18_331.mp3",
+      "transcript": "E a demosão.",
+      "duration": 1.5086875,
+      "expected": "ei, á, emos, ão",
+      "exactMatch": false
+    },
+    {
+      "item": 331,
+      "speed": "slow",
+      "path": "advanced/adv_18_331_slow.mp3",
+      "transcript": "Lei-a-demos-dão",
+      "duration": 1.9566875,
+      "expected": "ei, á, emos, ão",
+      "exactMatch": false
+    },
+    {
+      "item": 332,
+      "speed": "normal",
+      "path": "advanced/adv_18_332.mp3",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "duration": 2.49,
+      "expected": "Eu gostaria de reservar uma mesa.",
+      "exactMatch": true
+    },
+    {
+      "item": 332,
+      "speed": "slow",
+      "path": "advanced/adv_18_332_slow.mp3",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "duration": 3.4286875,
+      "expected": "Eu gostaria de reservar uma mesa.",
+      "exactMatch": true
+    },
+    {
+      "item": 333,
+      "speed": "normal",
+      "path": "advanced/adv_18_333.mp3",
+      "transcript": "Você poderia me ajudar.",
+      "duration": 1.871375,
+      "expected": "Você poderia me ajudar?",
+      "exactMatch": true
+    },
+    {
+      "item": 333,
+      "speed": "slow",
+      "path": "advanced/adv_18_333_slow.mp3",
+      "transcript": "Você poderia me ajudar.",
+      "duration": 2.6606875,
+      "expected": "Você poderia me ajudar?",
+      "exactMatch": true
+    },
+    {
+      "item": 334,
+      "speed": "normal",
+      "path": "advanced/adv_19_334.mp3",
+      "transcript": "Spider-takes.",
+      "duration": 0.911375,
+      "expected": "parta",
+      "exactMatch": false
+    },
+    {
+      "item": 334,
+      "speed": "slow",
+      "path": "advanced/adv_19_334_slow.mp3",
+      "transcript": "一般是",
+      "duration": 1.1886875,
+      "expected": "parta",
+      "exactMatch": false
+    },
+    {
+      "item": 335,
+      "speed": "normal",
+      "path": "advanced/adv_19_335.mp3",
+      "transcript": "Call my head.",
+      "duration": 0.826,
+      "expected": "coma",
+      "exactMatch": false
+    },
+    {
+      "item": 335,
+      "speed": "slow",
+      "path": "advanced/adv_19_335_slow.mp3",
+      "transcript": "I kommer.",
+      "duration": 1.103375,
+      "expected": "coma",
+      "exactMatch": false
+    },
+    {
+      "item": 336,
+      "speed": "normal",
+      "path": "advanced/adv_19_336.mp3",
+      "transcript": "Falei.",
+      "duration": 0.868375,
+      "expected": "fale",
+      "exactMatch": false
+    },
+    {
+      "item": 336,
+      "speed": "slow",
+      "path": "advanced/adv_19_336_slow.mp3",
+      "transcript": "If I leave",
+      "duration": 1.082,
+      "expected": "fale",
+      "exactMatch": false
+    },
+    {
+      "item": 337,
+      "speed": "normal",
+      "path": "advanced/adv_19_337.mp3",
+      "transcript": "Partamos!",
+      "duration": 1.167375,
+      "expected": "partamos",
+      "exactMatch": true
+    },
+    {
+      "item": 337,
+      "speed": "slow",
+      "path": "advanced/adv_19_337_slow.mp3",
+      "transcript": "E partamos!",
+      "duration": 1.487375,
+      "expected": "partamos",
+      "exactMatch": false
+    },
+    {
+      "item": 338,
+      "speed": "normal",
+      "path": "advanced/adv_19_338.mp3",
+      "transcript": "Comamos!",
+      "duration": 1.103375,
+      "expected": "comamos",
+      "exactMatch": true
+    },
+    {
+      "item": 338,
+      "speed": "slow",
+      "path": "advanced/adv_19_338_slow.mp3",
+      "transcript": "E comamos!",
+      "duration": 1.402,
+      "expected": "comamos",
+      "exactMatch": false
+    },
+    {
+      "item": 339,
+      "speed": "normal",
+      "path": "advanced/adv_19_339.mp3",
+      "transcript": "Falemos!",
+      "duration": 1.0606875,
+      "expected": "falemos",
+      "exactMatch": true
+    },
+    {
+      "item": 339,
+      "speed": "slow",
+      "path": "advanced/adv_19_339_slow.mp3",
+      "transcript": "E falemos!",
+      "duration": 1.3166875,
+      "expected": "falemos",
+      "exactMatch": false
+    },
+    {
+      "item": 340,
+      "speed": "normal",
+      "path": "advanced/adv_19_340.mp3",
+      "transcript": "Bye. It's a long time. Bye.",
+      "duration": 1.018,
+      "expected": "partam",
+      "exactMatch": false
+    },
+    {
+      "item": 340,
+      "speed": "slow",
+      "path": "advanced/adv_19_340_slow.mp3",
+      "transcript": "Deparação.",
+      "duration": 1.231375,
+      "expected": "partam",
+      "exactMatch": false
+    },
+    {
+      "item": 341,
+      "speed": "normal",
+      "path": "advanced/adv_19_341.mp3",
+      "transcript": "Comment ?",
+      "duration": 0.9966875,
+      "expected": "comam",
+      "exactMatch": false
+    },
+    {
+      "item": 341,
+      "speed": "slow",
+      "path": "advanced/adv_19_341_slow.mp3",
+      "transcript": "Come on",
+      "duration": 1.3806875,
+      "expected": "comam",
+      "exactMatch": false
+    },
+    {
+      "item": 342,
+      "speed": "normal",
+      "path": "advanced/adv_19_342.mp3",
+      "transcript": "Falem.",
+      "duration": 0.9326875,
+      "expected": "falem",
+      "exactMatch": true
+    },
+    {
+      "item": 342,
+      "speed": "slow",
+      "path": "advanced/adv_19_342_slow.mp3",
+      "transcript": "The following.",
+      "duration": 1.167375,
+      "expected": "falem",
+      "exactMatch": false
+    },
+    {
+      "item": 343,
+      "speed": "normal",
+      "path": "advanced/adv_19_343.mp3",
+      "transcript": "Espero que.",
+      "duration": 1.0606875,
+      "expected": "espero que",
+      "exactMatch": true
+    },
+    {
+      "item": 343,
+      "speed": "slow",
+      "path": "advanced/adv_19_343_slow.mp3",
+      "transcript": "Eu espero que",
+      "duration": 1.466,
+      "expected": "espero que",
+      "exactMatch": false
+    },
+    {
+      "item": 344,
+      "speed": "normal",
+      "path": "advanced/adv_19_344.mp3",
+      "transcript": "Espero que você esteja bem.",
+      "duration": 2.106,
+      "expected": "Espero que você esteja bem.",
+      "exactMatch": true
+    },
+    {
+      "item": 344,
+      "speed": "slow",
+      "path": "advanced/adv_19_344_slow.mp3",
+      "transcript": "Eu espero que você esteja bem.",
+      "duration": 2.938,
+      "expected": "Espero que você esteja bem.",
+      "exactMatch": false
+    },
+    {
+      "item": 345,
+      "speed": "normal",
+      "path": "advanced/adv_19_345.mp3",
+      "transcript": "Talvez ele venha amanhã.",
+      "duration": 1.978,
+      "expected": "Talvez ele venha amanhã.",
+      "exactMatch": true
+    },
+    {
+      "item": 345,
+      "speed": "slow",
+      "path": "advanced/adv_19_345_slow.mp3",
+      "transcript": "Talvez ele venha amanhã.",
+      "duration": 2.81,
+      "expected": "Talvez ele venha amanhã.",
+      "exactMatch": true
+    },
+    {
+      "item": 346,
+      "speed": "normal",
+      "path": "advanced/adv_19_346.mp3",
+      "transcript": "Quero que...",
+      "duration": 0.89,
+      "expected": "quero que",
+      "exactMatch": true
+    },
+    {
+      "item": 346,
+      "speed": "slow",
+      "path": "advanced/adv_19_346_slow.mp3",
+      "transcript": "Eu quero que...",
+      "duration": 1.1886875,
+      "expected": "quero que",
+      "exactMatch": false
+    },
+    {
+      "item": 347,
+      "speed": "normal",
+      "path": "advanced/adv_19_347.mp3",
+      "transcript": "Quero que você me ajude.",
+      "duration": 1.8286875,
+      "expected": "Quero que você me ajude.",
+      "exactMatch": true
+    },
+    {
+      "item": 347,
+      "speed": "slow",
+      "path": "advanced/adv_19_347_slow.mp3",
+      "transcript": "Quero que você me ajude.",
+      "duration": 2.703375,
+      "expected": "Quero que você me ajude.",
+      "exactMatch": true
+    },
+    {
+      "item": 348,
+      "speed": "normal",
+      "path": "advanced/adv_19_348.mp3",
+      "transcript": "É possível que",
+      "duration": 1.338,
+      "expected": "é possível que",
+      "exactMatch": true
+    },
+    {
+      "item": 348,
+      "speed": "slow",
+      "path": "advanced/adv_19_348_slow.mp3",
+      "transcript": "É possível que...",
+      "duration": 1.7006875,
+      "expected": "é possível que",
+      "exactMatch": true
+    }
+  ]
+}
