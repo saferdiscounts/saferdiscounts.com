@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow"><title>سكريبت عبارات البرتغالية البرازيلية | Safer Discounts</title>
+<meta name="description" content="160 عبارة أصلية مترجمة، 164 قراءة مستقلة، جاهزة للمراجعة التحريرية قبل تسجيل صوت طبيعي عادي وبطيء.">
+<style>
+:root{font:16px/1.8 Tahoma,"Segoe UI",Arial,sans-serif;color:#173b50;background:#f5f9fb}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(120deg,#07324a,#0e766f);color:white;padding:28px max(16px,calc((100vw - 1050px)/2))}header a{color:#e2f9fb}header h1{margin:9px 0 4px;font-size:clamp(25px,4vw,36px)}header p{max-width:850px;color:#d6f4f2}main{max-width:1050px;margin:0 auto;padding:20px 15px 70px}.warning{border:1px solid #e5c694;background:#fff7e9;padding:13px 16px;border-radius:13px;margin:0 0 15px}.stats{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}.stats span{background:#e2f3ec;border:1px solid #c2dfd2;padding:5px 11px;border-radius:22px;color:#18634e;font-size:13px;font-weight:800}.controls{display:flex;flex-wrap:wrap;gap:10px;margin:17px 0;align-items:center}.controls input,.controls select{min-height:42px;border:1px solid #b2ccd7;border-radius:9px;padding:8px 12px;color:#173b50;background:white;font:inherit}.controls input{flex:1;min-width:180px}.controls label{font-weight:800}.results{font-size:13px;color:#5c7889;margin:8px 0 13px}.entry{background:white;border:1px solid #d3e4eb;border-radius:15px;padding:16px;margin:12px 0;box-shadow:0 5px 14px #153f5108}.meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#547284;font-size:12px;font-weight:800}.pt{font-size:clamp(20px,2.3vw,24px);font-weight:800;text-align:left;color:#075e89;unicode-bidi:isolate;overflow-wrap:anywhere;margin:10px 0 2px}.ar{font-size:16px;overflow-wrap:anywhere;margin:5px 0}.take{border-right:3px solid #48a194;background:#f0f9f5;border-radius:9px;padding:9px 12px;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}.spoken{text-align:left;font-weight:800;font-size:17px;overflow-wrap:anywhere;unicode-bidi:isolate;flex:1;min-width:160px}button{font:inherit;border-radius:8px;border:1px solid #8bb7bf;background:#e5f4f0;padding:7px 11px;color:#075b54;cursor:pointer;font-weight:700}.notice{padding:9px 12px;background:#fff2e4;border-right:3px solid #bf762f;border-radius:8px;font-size:13px}.muted{font-size:13px;color:#526f80}.status{padding:12px;border-radius:10px;background:#e7f3f7;margin:15px 0}a{color:#076b7b}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid orange;outline-offset:3px}@media(max-width:620px){.controls{display:grid}.controls input,.controls select{width:100%}}
+</style></head><body>
+<header><a href="academy-audio-status.html?lang=ptbr">↩ تقرير صوتيات الأكاديمية البرازيلية</a><h1>نصوص العبارات البرازيلية للتسجيل</h1>
+<p>الجملة البرازيلية، معناها بالعربي، والموقف الذي تستخدم فيه؛ مرتبة لصناعة صوت بشري طبيعي وعادي وبطيء. لا نُسجل شرطة مائلة أو نموذجًا ناقصًا كما هو.</p></header>
+<main>
+<div class="warning"><strong>حالة المحتوى:</strong> مسودة إنتاج تعليمية لم تُعتمد بعد من مدقق برتغالي برازيلي مختص. لا يوجد صوت جديد في هذه الصفحة، ولا يُنشر منها أي تسجيل تلقائيًا. القراءة العادية والبطيئة المطلوبتان لاحقًا للنص نفسه.</div>
+<div class="stats"><span>160 مدخلًا</span><span>164 قراءة مستقلة</span><span>328 ملف صوت مخطط لاحقًا</span><span>التراخيص والصوت البشري بحاجة اعتماد</span></div>
+<div class="controls"><label for="source">المجموعة</label><select id="source"><option value="">كل النصوص</option><option value="practical-trainer">مواقف الحياة اليومية</option><option value="a1-vocabulary">مفردات A1</option><option value="foundation-vocabulary">الأساسيات والأرقام</option><option value="a1-dialogues">حوارات A1</option><option value="travel-dialogues">حوارات السفر</option></select><label for="q">ابحث</label><input type="search" id="q" placeholder="برتغالي أو عربي أو رقم النص"></div>
+<p class="results" id="results">جارٍ تحميل النصوص...</p><p id="feedback" role="status" class="status">اختر العبارة واضغط «نسخ النص المنطوق» لاستخدامه في استوديو التسجيل.</p>
+<div id="list"></div>
+<p class="muted">ملف السكريبت الأصلي: <a href="https://github.com/saferdiscounts/saferdiscounts.com/blob/main/PTBR_RECORDING_SCRIPTS_V1.md">نصوص القراءة والتسجيل كاملة على GitHub</a>. وللتعليم المباشر شاهد <a href="ptbr-practical-lab.html">المعمل البرازيلي والحوار</a>.</p>
+</main>
+<script>
+'use strict';
+const $=x=>document.getElementById(x),list=$('list'),q=$('q'),group=$('source'),results=$('results'),status=$('feedback');
+let rows=[];
+function node(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+function draw(){
+ const word=q.value.trim().toLocaleLowerCase('pt-BR'),source=group.value;
+ const shown=rows.filter(x=>(!source||x.sourceGroup===source)&&(!word||[x.id,x.lesson,x.displayText,x.arabic,...x.recordingTakes.map(t=>t.text)].join(' ').toLocaleLowerCase('pt-BR').includes(word)));
+ results.textContent='نتائج البحث: '+shown.length+' من '+rows.length+' مدخلًا. أرقام النصوص ثابتة للمراجعة والتسجيل.';
+ list.replaceChildren();
+ for(const x of shown){
+  const card=node('article','entry'),meta=node('div','meta');
+  meta.append(node('span','',x.id+' · '+x.level+' · '+x.sourceGroup),node('span','',x.lesson||''));
+  card.append(meta);
+  const pt=node('div','pt',x.displayText);pt.dir='ltr';pt.lang='pt-BR';card.append(pt,node('p','ar',x.arabic));
+  for(const t of x.recordingTakes){
+   const div=node('div','take'),span=node('span','spoken',t.text),b=node('button','',x.recordingTakes.length>1?'نسخ البديل '+t.id:'نسخ النص المنطوق');
+   span.dir='ltr';span.lang='pt-BR';b.type='button';
+   b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(t.text);status.textContent='نُسخ النص '+t.id+'؛ سجّله لاحقًا بالسرعتين العادية والبطيئة بعد المراجعة اللغوية.'}catch(e){status.textContent='تعذر النسخ الآلي. حدد النص المنطوق وانسخه يدويًا.'}});
+   div.append(span,b);card.append(div);
+  }
+  if(x.editorialNote)card.append(node('p','notice','⚠ '+x.editorialNote));
+  card.append(node('p','muted','مسودة لم تخضع للاعتماد البشري · لم يتم تسجيل النص بعد.'));
+  list.append(card);
+ }
+ if(!shown.length)list.append(node('p','status','لا توجد عبارة مطابقة للبحث الحالي.'));
+}
+fetch('ptbr-voice-scripts-v1.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(d=>{
+ if(d.schemaVersion!==1||d.language!=='pt-BR'||d.sourceCount!==160||d.voiceTakeCount!==164||!Array.isArray(d.items)||d.items.length!==160||d.hasAudio||d.isHumanReviewed)throw Error('Unexpected manuscript format');
+ rows=d.items;draw();q.addEventListener('input',draw);group.addEventListener('change',draw);
+}).catch(e=>{results.textContent='تعذر تحميل النصوص: '+e.message;status.textContent='يمكن فتح ملف السكريبت الأساسي على GitHub.'});
+</script>
+</body></html>
