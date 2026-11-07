@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 76,
+      "speed": "normal",
+      "path": "basic/bas_04_076.mp3",
+      "transcript": "Querer",
+      "duration": 0.911375,
+      "expected": "querer",
+      "exactMatch": true
+    },
+    {
+      "item": 76,
+      "speed": "slow",
+      "path": "basic/bas_04_076_slow.mp3",
+      "transcript": "I don't care if I live.",
+      "duration": 1.103375,
+      "expected": "querer",
+      "exactMatch": false
+    },
+    {
+      "item": 77,
+      "speed": "normal",
+      "path": "basic/bas_04_077.mp3",
+      "transcript": "Save.",
+      "duration": 0.7406875,
+      "expected": "sei",
+      "exactMatch": false
+    },
+    {
+      "item": 77,
+      "speed": "slow",
+      "path": "basic/bas_04_077_slow.mp3",
+      "transcript": "I'll say.",
+      "duration": 0.9326875,
+      "expected": "sei",
+      "exactMatch": false
+    },
+    {
+      "item": 78,
+      "speed": "normal",
+      "path": "basic/bas_04_078.mp3",
+      "transcript": "Sabi.",
+      "duration": 0.826,
+      "expected": "sabe",
+      "exactMatch": false
+    },
+    {
+      "item": 78,
+      "speed": "slow",
+      "path": "basic/bas_04_078_slow.mp3",
+      "transcript": "Sabi",
+      "duration": 1.0606875,
+      "expected": "sabe",
+      "exactMatch": false
+    },
+    {
+      "item": 79,
+      "speed": "normal",
+      "path": "basic/bas_04_079.mp3",
+      "transcript": "Saber.",
+      "duration": 0.89,
+      "expected": "saber",
+      "exactMatch": true
+    },
+    {
+      "item": 79,
+      "speed": "slow",
+      "path": "basic/bas_04_079_slow.mp3",
+      "transcript": "Não saber.",
+      "duration": 1.103375,
+      "expected": "saber",
+      "exactMatch": false
+    },
+    {
+      "item": 80,
+      "speed": "normal",
+      "path": "basic/bas_05_080.mp3",
+      "transcript": "Zero.",
+      "duration": 0.847,
+      "expected": "zero",
+      "exactMatch": true
+    },
+    {
+      "item": 80,
+      "speed": "slow",
+      "path": "basic/bas_05_080_slow.mp3",
+      "transcript": "Zero.",
+      "duration": 1.0606875,
+      "expected": "zero",
+      "exactMatch": true
+    },
+    {
+      "item": 81,
+      "speed": "normal",
+      "path": "basic/bas_05_081.mp3",
+      "transcript": "Onzi",
+      "duration": 0.8686875,
+      "expected": "onze",
+      "exactMatch": false
+    },
+    {
+      "item": 81,
+      "speed": "slow",
+      "path": "basic/bas_05_081_slow.mp3",
+      "transcript": "Abonzi",
+      "duration": 1.167375,
+      "expected": "onze",
+      "exactMatch": false
+    },
+    {
+      "item": 82,
+      "speed": "normal",
+      "path": "basic/bas_05_082.mp3",
+      "transcript": "中文字幕志愿者 杨茜茜",
+      "duration": 0.7406875,
+      "expected": "um",
+      "exactMatch": false
+    },
+    {
+      "item": 82,
+      "speed": "slow",
+      "path": "basic/bas_05_082_slow.mp3",
+      "transcript": "the dongs",
+      "duration": 0.9326875,
+      "expected": "um",
+      "exactMatch": false
+    },
+    {
+      "item": 83,
+      "speed": "normal",
+      "path": "basic/bas_05_083.mp3",
+      "transcript": "Do my",
+      "duration": 0.762,
+      "expected": "uma",
+      "exactMatch": false
+    },
+    {
+      "item": 83,
+      "speed": "slow",
+      "path": "basic/bas_05_083_slow.mp3",
+      "transcript": "It's all mad.",
+      "duration": 0.954,
+      "expected": "uma",
+      "exactMatch": false
+    },
+    {
+      "item": 84,
+      "speed": "normal",
+      "path": "basic/bas_05_084.mp3",
+      "transcript": "Dosi",
+      "duration": 0.911375,
+      "expected": "doze",
+      "exactMatch": false
+    },
+    {
+      "item": 84,
+      "speed": "slow",
+      "path": "basic/bas_05_084_slow.mp3",
+      "transcript": "Adolze.",
+      "duration": 1.146,
+      "expected": "doze",
+      "exactMatch": false
+    },
+    {
+      "item": 85,
+      "speed": "normal",
+      "path": "basic/bas_05_085.mp3",
+      "transcript": "Dois.",
+      "duration": 0.8046875,
+      "expected": "dois",
+      "exactMatch": true
+    },
+    {
+      "item": 85,
+      "speed": "slow",
+      "path": "basic/bas_05_085_slow.mp3",
+      "transcript": "Dois",
+      "duration": 1.0606875,
+      "expected": "dois",
+      "exactMatch": true
+    },
+    {
+      "item": 86,
+      "speed": "normal",
+      "path": "basic/bas_05_086.mp3",
+      "transcript": "Do us",
+      "duration": 0.89,
+      "expected": "duas",
+      "exactMatch": false
+    },
+    {
+      "item": 86,
+      "speed": "slow",
+      "path": "basic/bas_05_086_slow.mp3",
+      "transcript": "I do was",
+      "duration": 1.103375,
+      "expected": "duas",
+      "exactMatch": false
+    },
+    {
+      "item": 87,
+      "speed": "normal",
+      "path": "basic/bas_05_087.mp3",
+      "transcript": "13.",
+      "duration": 0.911375,
+      "expected": "treze",
+      "exactMatch": false
+    },
+    {
+      "item": 87,
+      "speed": "slow",
+      "path": "basic/bas_05_087_slow.mp3",
+      "transcript": "A treze.",
+      "duration": 1.21,
+      "expected": "treze",
+      "exactMatch": false
+    },
+    {
+      "item": 88,
+      "speed": "normal",
+      "path": "basic/bas_05_088.mp3",
+      "transcript": "That is.",
+      "duration": 0.826,
+      "expected": "três",
+      "exactMatch": false
+    },
+    {
+      "item": 88,
+      "speed": "slow",
+      "path": "basic/bas_05_088_slow.mp3",
+      "transcript": "Another day.",
+      "duration": 1.082,
+      "expected": "três",
+      "exactMatch": false
+    },
+    {
+      "item": 89,
+      "speed": "normal",
+      "path": "basic/bas_05_089.mp3",
+      "transcript": "Quatorze.",
+      "duration": 1.146,
+      "expected": "quatorze",
+      "exactMatch": true
+    },
+    {
+      "item": 89,
+      "speed": "slow",
+      "path": "basic/bas_05_089_slow.mp3",
+      "transcript": "Em quatorze.",
+      "duration": 1.5086875,
+      "expected": "quatorze",
+      "exactMatch": false
+    },
+    {
+      "item": 90,
+      "speed": "normal",
+      "path": "basic/bas_05_090.mp3",
+      "transcript": "Cuatro.",
+      "duration": 0.911375,
+      "expected": "quatro",
+      "exactMatch": false
+    },
+    {
+      "item": 90,
+      "speed": "slow",
+      "path": "basic/bas_05_090_slow.mp3",
+      "transcript": "Em quatro.",
+      "duration": 1.1886875,
+      "expected": "quatro",
+      "exactMatch": false
+    },
+    {
+      "item": 91,
+      "speed": "normal",
+      "path": "basic/bas_05_091.mp3",
+      "transcript": "15",
+      "duration": 0.9326875,
+      "expected": "quinze",
+      "exactMatch": false
+    },
+    {
+      "item": 91,
+      "speed": "slow",
+      "path": "basic/bas_05_091_slow.mp3",
+      "transcript": "A quinze.",
+      "duration": 1.167375,
+      "expected": "quinze",
+      "exactMatch": false
+    },
+    {
+      "item": 92,
+      "speed": "normal",
+      "path": "basic/bas_05_092.mp3",
+      "transcript": "Cinco.",
+      "duration": 0.89,
+      "expected": "cinco",
+      "exactMatch": true
+    },
+    {
+      "item": 92,
+      "speed": "slow",
+      "path": "basic/bas_05_092_slow.mp3",
+      "transcript": "A cinco.",
+      "duration": 1.1886875,
+      "expected": "cinco",
+      "exactMatch": false
+    },
+    {
+      "item": 93,
+      "speed": "normal",
+      "path": "basic/bas_05_093.mp3",
+      "transcript": "16.",
+      "duration": 1.167375,
+      "expected": "dezesseis",
+      "exactMatch": false
+    },
+    {
+      "item": 93,
+      "speed": "slow",
+      "path": "basic/bas_05_093_slow.mp3",
+      "transcript": "Dezesseis.",
+      "duration": 1.551375,
+      "expected": "dezesseis",
+      "exactMatch": true
+    },
+    {
+      "item": 94,
+      "speed": "normal",
+      "path": "basic/bas_05_094.mp3",
+      "transcript": "Says.",
+      "duration": 0.8046875,
+      "expected": "seis",
+      "exactMatch": false
+    },
+    {
+      "item": 94,
+      "speed": "slow",
+      "path": "basic/bas_05_094_slow.mp3",
+      "transcript": "I'll say he's.",
+      "duration": 1.039375,
+      "expected": "seis",
+      "exactMatch": false
+    },
+    {
+      "item": 95,
+      "speed": "normal",
+      "path": "basic/bas_05_095.mp3",
+      "transcript": "17.",
+      "duration": 1.2526875,
+      "expected": "dezessete",
+      "exactMatch": false
+    },
+    {
+      "item": 95,
+      "speed": "slow",
+      "path": "basic/bas_05_095_slow.mp3",
+      "transcript": "Dezessete",
+      "duration": 1.6366875,
+      "expected": "dezessete",
+      "exactMatch": true
+    },
+    {
+      "item": 96,
+      "speed": "normal",
+      "path": "basic/bas_05_096.mp3",
+      "transcript": "Setsu",
+      "duration": 0.8686875,
+      "expected": "sete",
+      "exactMatch": false
+    },
+    {
+      "item": 96,
+      "speed": "slow",
+      "path": "basic/bas_05_096_slow.mp3",
+      "transcript": "I'll set you",
+      "duration": 1.146,
+      "expected": "sete",
+      "exactMatch": false
+    },
+    {
+      "item": 97,
+      "speed": "normal",
+      "path": "basic/bas_05_097.mp3",
+      "transcript": "18.",
+      "duration": 1.103375,
+      "expected": "dezoito",
+      "exactMatch": false
+    },
+    {
+      "item": 97,
+      "speed": "slow",
+      "path": "basic/bas_05_097_slow.mp3",
+      "transcript": "Dezoito.",
+      "duration": 1.3806875,
+      "expected": "dezoito",
+      "exactMatch": true
+    },
+    {
+      "item": 98,
+      "speed": "normal",
+      "path": "basic/bas_05_098.mp3",
+      "transcript": "おいつう",
+      "duration": 0.8686875,
+      "expected": "oito",
+      "exactMatch": false
+    },
+    {
+      "item": 98,
+      "speed": "slow",
+      "path": "basic/bas_05_098_slow.mp3",
+      "transcript": "And what are you to do?",
+      "duration": 1.103375,
+      "expected": "oito",
+      "exactMatch": false
+    },
+    {
+      "item": 99,
+      "speed": "normal",
+      "path": "basic/bas_05_099.mp3",
+      "transcript": "19.",
+      "duration": 1.167375,
+      "expected": "dezenove",
+      "exactMatch": false
+    },
+    {
+      "item": 99,
+      "speed": "slow",
+      "path": "basic/bas_05_099_slow.mp3",
+      "transcript": "19",
+      "duration": 1.4446875,
+      "expected": "dezenove",
+      "exactMatch": false
+    },
+    {
+      "item": 100,
+      "speed": "normal",
+      "path": "basic/bas_05_100.mp3",
+      "transcript": "9.",
+      "duration": 0.8686875,
+      "expected": "nove",
+      "exactMatch": false
+    },
+    {
+      "item": 100,
+      "speed": "slow",
+      "path": "basic/bas_05_100_slow.mp3",
+      "transcript": "Na'vi",
+      "duration": 1.082,
+      "expected": "nove",
+      "exactMatch": false
+    }
+  ]
+}
