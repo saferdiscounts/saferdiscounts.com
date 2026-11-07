@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 101,
+      "speed": "normal",
+      "path": "basic/bas_05_101.mp3",
+      "transcript": "20 anos.",
+      "duration": 0.911375,
+      "expected": "vinte",
+      "exactMatch": false
+    },
+    {
+      "item": 101,
+      "speed": "slow",
+      "path": "basic/bas_05_101_slow.mp3",
+      "transcript": "Avincio!",
+      "duration": 1.1886875,
+      "expected": "vinte",
+      "exactMatch": false
+    },
+    {
+      "item": 102,
+      "speed": "normal",
+      "path": "basic/bas_05_102.mp3",
+      "transcript": "10.",
+      "duration": 0.826,
+      "expected": "dez",
+      "exactMatch": false
+    },
+    {
+      "item": 102,
+      "speed": "slow",
+      "path": "basic/bas_05_102_slow.mp3",
+      "transcript": "Eu desço.",
+      "duration": 1.018,
+      "expected": "dez",
+      "exactMatch": false
+    },
+    {
+      "item": 103,
+      "speed": "normal",
+      "path": "basic/bas_05_103.mp3",
+      "transcript": "30.",
+      "duration": 1.018,
+      "expected": "trinta",
+      "exactMatch": false
+    },
+    {
+      "item": 103,
+      "speed": "slow",
+      "path": "basic/bas_05_103_slow.mp3",
+      "transcript": "Let's drink, hello.",
+      "duration": 1.295375,
+      "expected": "trinta",
+      "exactMatch": false
+    },
+    {
+      "item": 104,
+      "speed": "normal",
+      "path": "basic/bas_05_104.mp3",
+      "transcript": "Quarenta.",
+      "duration": 1.082,
+      "expected": "quarenta",
+      "exactMatch": true
+    },
+    {
+      "item": 104,
+      "speed": "slow",
+      "path": "basic/bas_05_104_slow.mp3",
+      "transcript": "E quarentas.",
+      "duration": 1.423375,
+      "expected": "quarenta",
+      "exactMatch": false
+    },
+    {
+      "item": 105,
+      "speed": "normal",
+      "path": "basic/bas_05_105.mp3",
+      "transcript": "Koi zähnter.",
+      "duration": 1.146,
+      "expected": "oitenta",
+      "exactMatch": false
+    },
+    {
+      "item": 105,
+      "speed": "slow",
+      "path": "basic/bas_05_105_slow.mp3",
+      "transcript": "Ройт деймстер.",
+      "duration": 1.466,
+      "expected": "oitenta",
+      "exactMatch": false
+    },
+    {
+      "item": 106,
+      "speed": "normal",
+      "path": "basic/bas_05_106.mp3",
+      "transcript": "Cinquenta.",
+      "duration": 1.231375,
+      "expected": "cinquenta",
+      "exactMatch": true
+    },
+    {
+      "item": 106,
+      "speed": "slow",
+      "path": "basic/bas_05_106_slow.mp3",
+      "transcript": "A 50",
+      "duration": 1.615375,
+      "expected": "cinquenta",
+      "exactMatch": false
+    },
+    {
+      "item": 107,
+      "speed": "normal",
+      "path": "basic/bas_05_107.mp3",
+      "transcript": "90.",
+      "duration": 1.1246875,
+      "expected": "noventa",
+      "exactMatch": false
+    },
+    {
+      "item": 107,
+      "speed": "slow",
+      "path": "basic/bas_05_107_slow.mp3",
+      "transcript": "De 90.",
+      "duration": 1.466,
+      "expected": "noventa",
+      "exactMatch": false
+    },
+    {
+      "item": 108,
+      "speed": "normal",
+      "path": "basic/bas_05_108.mp3",
+      "transcript": "Sessenta.",
+      "duration": 1.103375,
+      "expected": "sessenta",
+      "exactMatch": true
+    },
+    {
+      "item": 108,
+      "speed": "slow",
+      "path": "basic/bas_05_108_slow.mp3",
+      "transcript": "O 60.",
+      "duration": 1.4446875,
+      "expected": "sessenta",
+      "exactMatch": false
+    },
+    {
+      "item": 109,
+      "speed": "normal",
+      "path": "basic/bas_05_109.mp3",
+      "transcript": "Saying",
+      "duration": 0.8046875,
+      "expected": "cem",
+      "exactMatch": false
+    },
+    {
+      "item": 109,
+      "speed": "slow",
+      "path": "basic/bas_05_109_slow.mp3",
+      "transcript": "by saying,",
+      "duration": 1.018,
+      "expected": "cem",
+      "exactMatch": false
+    },
+    {
+      "item": 110,
+      "speed": "normal",
+      "path": "basic/bas_05_110.mp3",
+      "transcript": "70.",
+      "duration": 1.1246875,
+      "expected": "setenta",
+      "exactMatch": false
+    },
+    {
+      "item": 110,
+      "speed": "slow",
+      "path": "basic/bas_05_110_slow.mp3",
+      "transcript": "O setenta.",
+      "duration": 1.4446875,
+      "expected": "setenta",
+      "exactMatch": false
+    },
+    {
+      "item": 111,
+      "speed": "normal",
+      "path": "basic/bas_06_111.mp3",
+      "transcript": "Segunda-feira.",
+      "duration": 1.359375,
+      "expected": "segunda-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 111,
+      "speed": "slow",
+      "path": "basic/bas_06_111_slow.mp3",
+      "transcript": "Segunda-feira.",
+      "duration": 1.8286875,
+      "expected": "segunda-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 112,
+      "speed": "normal",
+      "path": "basic/bas_06_112.mp3",
+      "transcript": "Terça-feira.",
+      "duration": 1.2526875,
+      "expected": "terça-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 112,
+      "speed": "slow",
+      "path": "basic/bas_06_112_slow.mp3",
+      "transcript": "Terça-feira.",
+      "duration": 1.722,
+      "expected": "terça-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 113,
+      "speed": "normal",
+      "path": "basic/bas_06_113.mp3",
+      "transcript": "Quarta-feira.",
+      "duration": 1.2526875,
+      "expected": "quarta-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 113,
+      "speed": "slow",
+      "path": "basic/bas_06_113_slow.mp3",
+      "transcript": "Quarta-feiras.",
+      "duration": 1.743375,
+      "expected": "quarta-feira",
+      "exactMatch": false
+    },
+    {
+      "item": 114,
+      "speed": "normal",
+      "path": "basic/bas_06_114.mp3",
+      "transcript": "Quinta-feira.",
+      "duration": 1.231375,
+      "expected": "quinta-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 114,
+      "speed": "slow",
+      "path": "basic/bas_06_114_slow.mp3",
+      "transcript": "Quinta-feira.",
+      "duration": 1.615375,
+      "expected": "quinta-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 115,
+      "speed": "normal",
+      "path": "basic/bas_06_115.mp3",
+      "transcript": "Sexta-feira.",
+      "duration": 1.21,
+      "expected": "sexta-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 115,
+      "speed": "slow",
+      "path": "basic/bas_06_115_slow.mp3",
+      "transcript": "Sexta-feira",
+      "duration": 1.594,
+      "expected": "sexta-feira",
+      "exactMatch": true
+    },
+    {
+      "item": 116,
+      "speed": "normal",
+      "path": "basic/bas_06_116.mp3",
+      "transcript": "Sábado.",
+      "duration": 0.9966875,
+      "expected": "sábado",
+      "exactMatch": true
+    },
+    {
+      "item": 116,
+      "speed": "slow",
+      "path": "basic/bas_06_116_slow.mp3",
+      "transcript": "This is sábado.",
+      "duration": 1.274,
+      "expected": "sábado",
+      "exactMatch": false
+    },
+    {
+      "item": 117,
+      "speed": "normal",
+      "path": "basic/bas_06_117.mp3",
+      "transcript": "Domingo.",
+      "duration": 1.039375,
+      "expected": "domingo",
+      "exactMatch": true
+    },
+    {
+      "item": 117,
+      "speed": "slow",
+      "path": "basic/bas_06_117_slow.mp3",
+      "transcript": "É domingo.",
+      "duration": 1.338,
+      "expected": "domingo",
+      "exactMatch": false
+    },
+    {
+      "item": 118,
+      "speed": "normal",
+      "path": "basic/bas_06_118.mp3",
+      "transcript": "janeiro",
+      "duration": 1.039375,
+      "expected": "janeiro",
+      "exactMatch": true
+    },
+    {
+      "item": 118,
+      "speed": "slow",
+      "path": "basic/bas_06_118_slow.mp3",
+      "transcript": "janeiro",
+      "duration": 1.338,
+      "expected": "janeiro",
+      "exactMatch": true
+    },
+    {
+      "item": 119,
+      "speed": "normal",
+      "path": "basic/bas_06_119.mp3",
+      "transcript": "Júlio.",
+      "duration": 0.8686875,
+      "expected": "julho",
+      "exactMatch": false
+    },
+    {
+      "item": 119,
+      "speed": "slow",
+      "path": "basic/bas_06_119_slow.mp3",
+      "transcript": "a Júlio.",
+      "duration": 1.103375,
+      "expected": "julho",
+      "exactMatch": false
+    },
+    {
+      "item": 120,
+      "speed": "normal",
+      "path": "basic/bas_06_120.mp3",
+      "transcript": "Fevereiro.",
+      "duration": 1.1246875,
+      "expected": "fevereiro",
+      "exactMatch": true
+    },
+    {
+      "item": 120,
+      "speed": "slow",
+      "path": "basic/bas_06_120_slow.mp3",
+      "transcript": "Fevereiro",
+      "duration": 1.4446875,
+      "expected": "fevereiro",
+      "exactMatch": true
+    },
+    {
+      "item": 121,
+      "speed": "normal",
+      "path": "basic/bas_06_121.mp3",
+      "transcript": "Agosto.",
+      "duration": 1.103375,
+      "expected": "agosto",
+      "exactMatch": true
+    },
+    {
+      "item": 121,
+      "speed": "slow",
+      "path": "basic/bas_06_121_slow.mp3",
+      "transcript": "And that goes to",
+      "duration": 1.3806875,
+      "expected": "agosto",
+      "exactMatch": false
+    },
+    {
+      "item": 122,
+      "speed": "normal",
+      "path": "basic/bas_06_122.mp3",
+      "transcript": "Mar azul.",
+      "duration": 0.9326875,
+      "expected": "março",
+      "exactMatch": false
+    },
+    {
+      "item": 122,
+      "speed": "slow",
+      "path": "basic/bas_06_122_slow.mp3",
+      "transcript": "Imaraçu",
+      "duration": 1.2526875,
+      "expected": "março",
+      "exactMatch": false
+    },
+    {
+      "item": 123,
+      "speed": "normal",
+      "path": "basic/bas_06_123.mp3",
+      "transcript": "SETEMBRO",
+      "duration": 1.082,
+      "expected": "setembro",
+      "exactMatch": true
+    },
+    {
+      "item": 123,
+      "speed": "slow",
+      "path": "basic/bas_06_123_slow.mp3",
+      "transcript": "Em setembro.",
+      "duration": 1.3806875,
+      "expected": "setembro",
+      "exactMatch": false
+    },
+    {
+      "item": 124,
+      "speed": "normal",
+      "path": "basic/bas_06_124.mp3",
+      "transcript": "Abriu.",
+      "duration": 0.911375,
+      "expected": "abril",
+      "exactMatch": false
+    },
+    {
+      "item": 124,
+      "speed": "slow",
+      "path": "basic/bas_06_124_slow.mp3",
+      "transcript": "Abril",
+      "duration": 1.167375,
+      "expected": "abril",
+      "exactMatch": true
+    },
+    {
+      "item": 125,
+      "speed": "normal",
+      "path": "basic/bas_06_125.mp3",
+      "transcript": "Outubro",
+      "duration": 1.0606875,
+      "expected": "outubro",
+      "exactMatch": true
+    },
+    {
+      "item": 125,
+      "speed": "slow",
+      "path": "basic/bas_06_125_slow.mp3",
+      "transcript": "He's all too, bruh.",
+      "duration": 1.402,
+      "expected": "outubro",
+      "exactMatch": false
+    }
+  ]
+}
