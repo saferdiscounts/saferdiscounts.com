@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only; not pronunciation verification. Ambiguous transcripts require independent review.",
+  "range": {
+    "start": 273,
+    "end": 288
+  },
+  "results": [
+    {
+      "path": "advanced/adv_16_273.mp3",
+      "transcript": "سبير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_273_slow.mp3",
+      "transcript": "Não saber.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_274.mp3",
+      "transcript": "So be.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_274_slow.mp3",
+      "transcript": "That's all, B.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_275.mp3",
+      "transcript": "Sobemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_275_slow.mp3",
+      "transcript": "É só o bem-os.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_276.mp3",
+      "transcript": "Soberum.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_276_slow.mp3",
+      "transcript": "This is so bad, eh?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_277.mp3",
+      "transcript": "G-Z.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_277_slow.mp3",
+      "transcript": "T'as de vous dire.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_278.mp3",
+      "transcript": "수고하셨습니다.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_278_slow.mp3",
+      "transcript": "Adjuí-se, se eu...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_279.mp3",
+      "transcript": "Dicemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_279_slow.mp3",
+      "transcript": "Adicemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_280.mp3",
+      "transcript": "disseram",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_280_slow.mp3",
+      "transcript": "Deixe-se ser um.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_281.mp3",
+      "transcript": "Ver.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_281_slow.mp3",
+      "transcript": "Alweer.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_282.mp3",
+      "transcript": "Wir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_282_slow.mp3",
+      "transcript": "I've read it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_283.mp3",
+      "transcript": "View",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_283_slow.mp3",
+      "transcript": "Au revoir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_284.mp3",
+      "transcript": "Vimos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_284_slow.mp3",
+      "transcript": "Havimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_285.mp3",
+      "transcript": "Wiederhund.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_285_slow.mp3",
+      "transcript": "Viver, ángãos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_286.mp3",
+      "transcript": "Vira!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_286_slow.mp3",
+      "transcript": "Aweer de...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_287.mp3",
+      "transcript": "VING!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_287_slow.mp3",
+      "transcript": "A vinga!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_288.mp3",
+      "transcript": "Veio!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_288_slow.mp3",
+      "transcript": "Veio!",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
