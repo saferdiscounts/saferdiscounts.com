@@ -1,0 +1,1086 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "source": "Safer Discounts original Arabic pedagogical gloss editorial draft, covering missing R2 source-manifest glosses",
+  "createdOn": "2026-11-07",
+  "humanLinguistVerified": false,
+  "voiceVerified": false,
+  "translationStatus": "authored-draft-needs-human-ptbr-linguistic-review",
+  "entries": [
+    {
+      "pt": "sou",
+      "arabic": "أنا أكون / أنا (تصريف ser للحالة أو الهوية الثابتة)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "somos",
+      "arabic": "نحن نكون / نحن (تصريف ser)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "são",
+      "arabic": "هم أو هنّ أو أنتم يكونون / هم (تصريف ser)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "estou",
+      "arabic": "أنا موجود / أنا في حالة مؤقتة (تصريف estar)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "está",
+      "arabic": "هو أو هي أو أنت موجود / في حالة مؤقتة (تصريف estar)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "estamos",
+      "arabic": "نحن موجودون / نحن في حالة مؤقتة (تصريف estar)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "estão",
+      "arabic": "هم أو هنّ أو أنتم موجودون (تصريف estar)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "Eu sou egípcio",
+      "arabic": "أنا مصري (المتحدث رجل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Estou no Rio de Janeiro",
+      "arabic": "أنا في ريو دي جانيرو",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "parto",
+      "arabic": "أنا أغادر (من الفعل partir)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "como",
+      "arabic": "أنا آكل (من الفعل comer)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "falo",
+      "arabic": "أنا أتحدث (من الفعل falar)",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "parte",
+      "arabic": "هو أو هي أو أنت يغادر",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "come",
+      "arabic": "هو أو هي أو أنت يأكل",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "fala",
+      "arabic": "هو أو هي أو أنت يتحدث",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "partimos",
+      "arabic": "نحن نغادر",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "comemos",
+      "arabic": "نحن نأكل",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "falamos",
+      "arabic": "نحن نتحدث",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "partem",
+      "arabic": "هم أو أنتم يغادرون",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "comem",
+      "arabic": "هم أو أنتم يأكلون",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "falam",
+      "arabic": "هم أو أنتم يتحدثون",
+      "sourceMissingRows": 2
+    },
+    {
+      "pt": "zero",
+      "arabic": "صفر (0)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "onze",
+      "arabic": "أحد عشر (11)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "um",
+      "arabic": "واحد، للمذكر (1)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "uma",
+      "arabic": "واحدة، للمؤنث (1)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "doze",
+      "arabic": "اثنا عشر (12)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dois",
+      "arabic": "اثنان، للمذكر (2)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "duas",
+      "arabic": "اثنتان، للمؤنث (2)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "treze",
+      "arabic": "ثلاثة عشر (13)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "três",
+      "arabic": "ثلاثة (3)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quatorze",
+      "arabic": "أربعة عشر (14)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quatro",
+      "arabic": "أربعة (4)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quinze",
+      "arabic": "خمسة عشر (15)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "cinco",
+      "arabic": "خمسة (5)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dezesseis",
+      "arabic": "ستة عشر (16)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "seis",
+      "arabic": "ستة (6)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dezessete",
+      "arabic": "سبعة عشر (17)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "sete",
+      "arabic": "سبعة (7)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dezoito",
+      "arabic": "ثمانية عشر (18)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "oito",
+      "arabic": "ثمانية (8)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dezenove",
+      "arabic": "تسعة عشر (19)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nove",
+      "arabic": "تسعة (9)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vinte",
+      "arabic": "عشرون (20)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dez",
+      "arabic": "عشرة (10)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "trinta",
+      "arabic": "ثلاثون (30)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quarenta",
+      "arabic": "أربعون (40)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "oitenta",
+      "arabic": "ثمانون (80)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "cinquenta",
+      "arabic": "خمسون (50)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "noventa",
+      "arabic": "تسعون (90)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "sessenta",
+      "arabic": "ستون (60)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "cem",
+      "arabic": "مئة (100)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "setenta",
+      "arabic": "سبعون (70)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Boa sorte!",
+      "arabic": "بالتوفيق!",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "eu",
+      "arabic": "أنا",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "você",
+      "arabic": "أنت / حضرتك (مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ele",
+      "arabic": "هو",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ela",
+      "arabic": "هي",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nós",
+      "arabic": "نحن",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vocês",
+      "arabic": "أنتم / حضراتكم",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "eles",
+      "arabic": "هم (جمع مذكر أو مختلط)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "elas",
+      "arabic": "هنّ (جمع مؤنث)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "parti",
+      "arabic": "غادرتُ / رحلتُ (الماضي البسيط، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comi",
+      "arabic": "أكلتُ (الماضي البسيط، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falei",
+      "arabic": "تحدثتُ (الماضي البسيط، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partiu",
+      "arabic": "غادرَ أو غادرتْ (الماضي، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comeu",
+      "arabic": "أكلَ أو أكلتْ (الماضي، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falou",
+      "arabic": "تحدثَ أو تحدثتْ (الماضي، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partiram",
+      "arabic": "غادروا (الماضي، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comeram",
+      "arabic": "أكلوا (الماضي، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falaram",
+      "arabic": "تحدثوا (الماضي، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ir",
+      "arabic": "الذهاب (مصدر الفعل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fui",
+      "arabic": "ذهبتُ / كنتُ (ماضي ir أو ser، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "foi",
+      "arabic": "ذهب أو ذهبت / كان أو كانت (ماضي ir أو ser، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fomos",
+      "arabic": "ذهبنا / كنا (ماضي ir أو ser، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "foram",
+      "arabic": "ذهبوا / كانوا (ماضي ir أو ser، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "estive",
+      "arabic": "كنتُ موجودًا أو في حالة معينة (ماضي estar، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "esteve",
+      "arabic": "كان موجودًا أو في حالة معينة (ماضي estar، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "estivemos",
+      "arabic": "كنا موجودين أو في حالة معينة (ماضي estar، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "estiveram",
+      "arabic": "كانوا موجودين أو في حالة معينة (ماضي estar، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ter",
+      "arabic": "أن يكون لديه / يملك (مصدر ter)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tive",
+      "arabic": "كان عندي / امتلكتُ (ماضي ter، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "teve",
+      "arabic": "كان عنده أو عندها (ماضي ter، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tivemos",
+      "arabic": "كان عندنا (ماضي ter، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tiveram",
+      "arabic": "كان عندهم (ماضي ter، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fazer",
+      "arabic": "أن يفعل / يصنع (مصدر fazer)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fiz",
+      "arabic": "فعلتُ / صنعتُ (ماضي fazer، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fez",
+      "arabic": "فعل أو فعلت / صنع أو صنعت (ماضي fazer، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fizemos",
+      "arabic": "فعلنا / صنعنا (ماضي fazer، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fizeram",
+      "arabic": "فعلوا / صنعوا (ماضي fazer، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "poder",
+      "arabic": "أن يستطيع (مصدر poder)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pude",
+      "arabic": "استطعتُ (ماضي poder، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pôde",
+      "arabic": "استطاع أو استطاعت (ماضي poder، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pudemos",
+      "arabic": "استطعنا (ماضي poder، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "puderam",
+      "arabic": "استطاعوا (ماضي poder، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "querer",
+      "arabic": "أن يريد (مصدر querer)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quis",
+      "arabic": "أردتُ (ماضي querer، أنا أو هو أو هي بحسب السياق)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quisemos",
+      "arabic": "أردنا (ماضي querer، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quiseram",
+      "arabic": "أرادوا (ماضي querer، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "saber",
+      "arabic": "أن يعرف / يعلم (مصدر saber)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "soube",
+      "arabic": "عرفتُ / علمتُ (ماضي saber، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "soubemos",
+      "arabic": "عرفنا / علمنا (ماضي saber، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "souberam",
+      "arabic": "عرفوا / علموا (ماضي saber، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dizer",
+      "arabic": "أن يقول (مصدر dizer)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "disse",
+      "arabic": "قلتُ / قال أو قالت (ماضي dizer بحسب السياق)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dissemos",
+      "arabic": "قلنا (ماضي dizer، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "disseram",
+      "arabic": "قالوا (ماضي dizer، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ver",
+      "arabic": "أن يرى (مصدر ver)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vi",
+      "arabic": "رأيتُ (ماضي ver، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "viu",
+      "arabic": "رأى أو رأت (ماضي ver، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vimos",
+      "arabic": "رأينا (ماضي ver، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "viram",
+      "arabic": "رأوا (ماضي ver، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vir",
+      "arabic": "أن يأتي (مصدر vir)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vim",
+      "arabic": "أتيتُ / جئتُ (ماضي vir، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "veio",
+      "arabic": "جاء أو جاءت (ماضي vir، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "viemos",
+      "arabic": "جئنا (ماضي vir، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vieram",
+      "arabic": "جاءوا (ماضي vir، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dar",
+      "arabic": "أن يعطي (مصدر dar)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dei",
+      "arabic": "أعطيتُ (ماضي dar، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "deu",
+      "arabic": "أعطى أو أعطت (ماضي dar، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "demos",
+      "arabic": "أعطينا (ماضي dar، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "deram",
+      "arabic": "أعطوا (ماضي dar، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pôr",
+      "arabic": "أن يضع (مصدر pôr)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pus",
+      "arabic": "وضعتُ (ماضي pôr، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pôs",
+      "arabic": "وضع أو وضعت (ماضي pôr، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pusemos",
+      "arabic": "وضعنا (ماضي pôr، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "puseram",
+      "arabic": "وضعوا (ماضي pôr، هم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Fui ao Rio ontem",
+      "arabic": "ذهبتُ إلى ريو أمس",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partia",
+      "arabic": "كنتُ أغادر / كان يغادر عادة (الماضي الناقص، بحسب الفاعل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comia",
+      "arabic": "كنتُ آكل / كان يأكل عادة (الماضي الناقص)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falava",
+      "arabic": "كنتُ أتحدث / كان يتحدث عادة (الماضي الناقص)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partíamos",
+      "arabic": "كنا نغادر (الماضي الناقص، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comíamos",
+      "arabic": "كنا نأكل (الماضي الناقص، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falávamos",
+      "arabic": "كنا نتحدث (الماضي الناقص، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partiam",
+      "arabic": "كانوا يغادرون / كنتم تغادرون (الماضي الناقص)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comiam",
+      "arabic": "كانوا يأكلون / كنتم تأكلون (الماضي الناقص)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falavam",
+      "arabic": "كانوا يتحدثون / كنتم تتحدثون (الماضي الناقص)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "era",
+      "arabic": "كنتُ أو كان أو كانت (الماضي الناقص من ser)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "éramos",
+      "arabic": "كنا (الماضي الناقص من ser)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tinha",
+      "arabic": "كان عندي / كان عنده أو عندها (الماضي الناقص من ter)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tínhamos",
+      "arabic": "كان عندنا (الماضي الناقص من ter)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vinha",
+      "arabic": "كنتُ آتي / كان يأتي (الماضي الناقص من vir)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "vínhamos",
+      "arabic": "كنا نأتي (الماضي الناقص من vir)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "punha",
+      "arabic": "كنتُ أضع / كان يضع (الماضي الناقص من pôr)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "púnhamos",
+      "arabic": "كنا نضع (الماضي الناقص من pôr)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Quando eu era criança, morava no Cairo.",
+      "arabic": "عندما كنت طفلًا، كنت أعيش في القاهرة.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Ele trabalhava todos os dias.",
+      "arabic": "كان يعمل كل يوم.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falarei",
+      "arabic": "سأتحدث (مستقبل falar، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falará",
+      "arabic": "سيتحدث أو ستتحدث (مستقبل falar، هو أو هي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falaremos",
+      "arabic": "سنتحدث (مستقبل falar، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falarão",
+      "arabic": "سيتحدثون أو ستتحدثون (مستقبل falar، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falaria",
+      "arabic": "كنتُ سأتحدث / كنتُ لأتحدث (الصيغة الشرطية، أنا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "gostaria",
+      "arabic": "أودّ / كنت أودّ (صيغة مهذبة من gostar)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falaríamos",
+      "arabic": "كنا سنتحدث / كنا لنتحدث (الصيغة الشرطية، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "gostaríamos",
+      "arabic": "كنا سنودّ / كنا نودّ (الصيغة الشرطية، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ei, á, emos, ão",
+      "arabic": "نهايات أمثلة لتصريف المستقبل في البرتغالية: -ei و-á و-emos و-ão",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Eu gostaria de reservar uma mesa.",
+      "arabic": "أودّ حجز طاولة.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Você poderia me ajudar?",
+      "arabic": "هل يمكنك مساعدتي؟ (صيغة طلب مهذبة)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "parta",
+      "arabic": "أن أغادر / ليغادر (صيغة المضارع التابع من partir بحسب الفاعل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "coma",
+      "arabic": "أن آكل / ليأكل (صيغة المضارع التابع من comer بحسب الفاعل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "fale",
+      "arabic": "أن أتحدث / ليتحدث (صيغة المضارع التابع من falar بحسب الفاعل)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partamos",
+      "arabic": "أن نغادر (صيغة المضارع التابع، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comamos",
+      "arabic": "أن نأكل (صيغة المضارع التابع، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falemos",
+      "arabic": "أن نتحدث (صيغة المضارع التابع، نحن)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "partam",
+      "arabic": "أن يغادروا (صيغة المضارع التابع، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "comam",
+      "arabic": "أن يأكلوا (صيغة المضارع التابع، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "falem",
+      "arabic": "أن يتحدثوا (صيغة المضارع التابع، هم أو أنتم)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "espero que",
+      "arabic": "آمل أن...",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Espero que você esteja bem.",
+      "arabic": "أتمنى أن تكون بخير.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Talvez ele venha amanhã.",
+      "arabic": "ربما يأتي غدًا.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "quero que",
+      "arabic": "أريد أن...",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Quero que você me ajude.",
+      "arabic": "أريد منك أن تساعدني.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "é possível que",
+      "arabic": "من الممكن أن...",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "É possível que chova.",
+      "arabic": "من الممكن أن تمطر.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Embora eu esteja cansado, vou trabalhar.",
+      "arabic": "رغم أنني متعب، سأذهب إلى العمل.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "me chamo",
+      "arabic": "اسمي... / أُدعى... (عن نفسي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "me levanto",
+      "arabic": "أنهض / أستيقظ من الفراش (عن نفسي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "me visto",
+      "arabic": "أرتدي ملابسي (عن نفسي)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se chama",
+      "arabic": "اسمه أو اسمها... / يُدعى أو تُدعى...",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se levanta",
+      "arabic": "ينهض أو تنهض من الفراش",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se veste",
+      "arabic": "يرتدي أو ترتدي ملابسه أو ملابسها",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nos chamamos",
+      "arabic": "أسماؤنا... / نُدعى...",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nos levantamos",
+      "arabic": "ننهض من الفراش",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nos vestimos",
+      "arabic": "نرتدي ملابسنا",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se chamam",
+      "arabic": "أسماؤهم... / يُدعون أو يُدعين",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se levantam",
+      "arabic": "ينهضون من الفراش",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "se vestem",
+      "arabic": "يرتدون ملابسهم",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Como você se chama?",
+      "arabic": "ما اسمك؟",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "me",
+      "arabic": "ني / لي (ضمير مفعول بحسب السياق)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "lhe",
+      "arabic": "له أو لها / لحضرتك (ضمير مفعول غير مباشر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nos",
+      "arabic": "نا / لنا (ضمير مفعول)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "os",
+      "arabic": "هم (ضمير مفعول به لجمع المذكر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "as",
+      "arabic": "هنّ (ضمير مفعول به لجمع المؤنث)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "lhes",
+      "arabic": "لهم أو لهنّ / لكم (ضمير مفعول غير مباشر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Vou ver você amanhã",
+      "arabic": "سأراك غدًا.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Vou lhe contar uma coisa.",
+      "arabic": "سأخبرك بشيء. (بصيغة محترمة في البرتغالية)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "do",
+      "arabic": "من الـ (de + o، مذكر مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "da",
+      "arabic": "من الـ (de + a، مؤنث مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "dos",
+      "arabic": "من الـ (de + os، جمع مذكر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "das",
+      "arabic": "من الـ (de + as، جمع مؤنث)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "no",
+      "arabic": "في الـ (em + o، مذكر مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "na",
+      "arabic": "في الـ (em + a، مؤنث مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "nas",
+      "arabic": "في الـ (em + as، جمع مؤنث)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "ao",
+      "arabic": "إلى الـ (a + o، مذكر مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "aos",
+      "arabic": "إلى الـ (a + os، جمع مذكر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "às",
+      "arabic": "إلى الـ (a + as، جمع مؤنث؛ وتستخدم مع الوقت أيضًا)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pelo",
+      "arabic": "عبر الـ / بواسطة الـ (por + o، مذكر مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pela",
+      "arabic": "عبر الـ / بواسطة الـ (por + a، مؤنث مفرد)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pelos",
+      "arabic": "عبر الـ / بواسطة الـ (por + os، جمع مذكر)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "pelas",
+      "arabic": "عبر الـ / بواسطة الـ (por + as، جمع مؤنث)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Vou ao mercado.",
+      "arabic": "سأذهب إلى السوق.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Estou na praia.",
+      "arabic": "أنا على الشاطئ.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "O livro é do professor.",
+      "arabic": "الكتاب ملك الأستاذ / كتاب الأستاذ.",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "tão... como",
+      "arabic": "بنفس درجة... مثل... (للمقارنة المتساوية)",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "arabic": "أمس ذهبتُ إلى ريو دي جانيرو مع عائلتي. وصلنا إلى المطار في الصباح الباكر وأخذنا سيارة أجرة إلى الفندق. بعد تسجيل الدخول، ذهبنا إلى جبل باو دي أسوكار لنستمتع بالمنظر. وفي فترة بعد الظهر تمشّينا على شاطئ كوباكابانا وشربنا ماء جوز الهند. وفي المساء تناولنا العشاء في مطعم قريب من الشاطئ واستمعنا إلى موسيقى حية. كان يومًا لا يُنسى!",
+      "sourceMissingRows": 1
+    },
+    {
+      "pt": "Boa sorte e força!",
+      "arabic": "بالتوفيق والقوة!",
+      "sourceMissingRows": 1
+    }
+  ]
+}
