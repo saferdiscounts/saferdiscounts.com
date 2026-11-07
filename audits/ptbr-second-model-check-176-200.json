@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 176,
+      "speed": "normal",
+      "path": "basic/bas_10_176.mp3",
+      "transcript": "Você fala inglês.",
+      "duration": 1.5086875,
+      "expected": "Você fala inglês?",
+      "exactMatch": true
+    },
+    {
+      "item": 176,
+      "speed": "slow",
+      "path": "basic/bas_10_176_slow.mp3",
+      "transcript": "Você fala inglês.",
+      "duration": 2.1486875,
+      "expected": "Você fala inglês?",
+      "exactMatch": true
+    },
+    {
+      "item": 177,
+      "speed": "normal",
+      "path": "basic/bas_10_177.mp3",
+      "transcript": "Quero reservar um quarto.",
+      "duration": 1.8286875,
+      "expected": "Quero reservar um quarto",
+      "exactMatch": true
+    },
+    {
+      "item": 177,
+      "speed": "slow",
+      "path": "basic/bas_10_177_slow.mp3",
+      "transcript": "Quero reservar um quarto.",
+      "duration": 2.618,
+      "expected": "Quero reservar um quarto",
+      "exactMatch": true
+    },
+    {
+      "item": 178,
+      "speed": "normal",
+      "path": "basic/bas_10_178.mp3",
+      "transcript": "A que horas sai o trem?",
+      "duration": 1.6366875,
+      "expected": "A que horas sai o trem?",
+      "exactMatch": true
+    },
+    {
+      "item": 178,
+      "speed": "slow",
+      "path": "basic/bas_10_178_slow.mp3",
+      "transcript": "Aqui horas saiu trein.",
+      "duration": 2.3406875,
+      "expected": "A que horas sai o trem?",
+      "exactMatch": false
+    },
+    {
+      "item": 179,
+      "speed": "normal",
+      "path": "basic/bas_10_179.mp3",
+      "transcript": "Onde posso pegar um táxi?",
+      "duration": 2.127375,
+      "expected": "Onde posso pegar um táxi?",
+      "exactMatch": true
+    },
+    {
+      "item": 179,
+      "speed": "slow",
+      "path": "basic/bas_10_179_slow.mp3",
+      "transcript": "Onde posso pegar um táxi?",
+      "duration": 2.895375,
+      "expected": "Onde posso pegar um táxi?",
+      "exactMatch": true
+    },
+    {
+      "item": 180,
+      "speed": "normal",
+      "path": "basic/bas_11_180.mp3",
+      "transcript": "Beleza.",
+      "duration": 1.0606875,
+      "expected": "Beleza!",
+      "exactMatch": true
+    },
+    {
+      "item": 180,
+      "speed": "slow",
+      "path": "basic/bas_11_180_slow.mp3",
+      "transcript": "Beleza.",
+      "duration": 1.466,
+      "expected": "Beleza!",
+      "exactMatch": true
+    },
+    {
+      "item": 181,
+      "speed": "normal",
+      "path": "basic/bas_11_181.mp3",
+      "transcript": "Lekal.",
+      "duration": 0.911375,
+      "expected": "Legal",
+      "exactMatch": false
+    },
+    {
+      "item": 181,
+      "speed": "slow",
+      "path": "basic/bas_11_181_slow.mp3",
+      "transcript": "Legal.",
+      "duration": 1.1246875,
+      "expected": "Legal",
+      "exactMatch": true
+    },
+    {
+      "item": 182,
+      "speed": "normal",
+      "path": "basic/bas_11_182.mp3",
+      "transcript": "Nossi",
+      "duration": 0.954,
+      "expected": "Nossa!",
+      "exactMatch": false
+    },
+    {
+      "item": 182,
+      "speed": "slow",
+      "path": "basic/bas_11_182_slow.mp3",
+      "transcript": "Innocent.",
+      "duration": 1.295375,
+      "expected": "Nossa!",
+      "exactMatch": false
+    },
+    {
+      "item": 183,
+      "speed": "normal",
+      "path": "basic/bas_11_183.mp3",
+      "transcript": "Cotted.",
+      "duration": 0.8046875,
+      "expected": "Cara",
+      "exactMatch": false
+    },
+    {
+      "item": 183,
+      "speed": "slow",
+      "path": "basic/bas_11_183_slow.mp3",
+      "transcript": "E caras",
+      "duration": 1.082,
+      "expected": "Cara",
+      "exactMatch": false
+    },
+    {
+      "item": 184,
+      "speed": "normal",
+      "path": "basic/bas_11_184.mp3",
+      "transcript": "Tipo assim.",
+      "duration": 1.167375,
+      "expected": "Tipo assim",
+      "exactMatch": true
+    },
+    {
+      "item": 184,
+      "speed": "slow",
+      "path": "basic/bas_11_184_slow.mp3",
+      "transcript": "Tipo assim.",
+      "duration": 1.551375,
+      "expected": "Tipo assim",
+      "exactMatch": true
+    },
+    {
+      "item": 185,
+      "speed": "normal",
+      "path": "basic/bas_11_185.mp3",
+      "transcript": "Poxa",
+      "duration": 0.89,
+      "expected": "Poxa",
+      "exactMatch": true
+    },
+    {
+      "item": 185,
+      "speed": "slow",
+      "path": "basic/bas_11_185_slow.mp3",
+      "transcript": "O Porsche é...",
+      "duration": 1.1246875,
+      "expected": "Poxa",
+      "exactMatch": false
+    },
+    {
+      "item": 186,
+      "speed": "normal",
+      "path": "basic/bas_11_186.mp3",
+      "transcript": "Bacana, é?",
+      "duration": 1.0606875,
+      "expected": "Bacana",
+      "exactMatch": false
+    },
+    {
+      "item": 186,
+      "speed": "slow",
+      "path": "basic/bas_11_186_slow.mp3",
+      "transcript": "BACANAS",
+      "duration": 1.359375,
+      "expected": "Bacana",
+      "exactMatch": false
+    },
+    {
+      "item": 187,
+      "speed": "normal",
+      "path": "basic/bas_11_187.mp3",
+      "transcript": "Manos",
+      "duration": 0.911375,
+      "expected": "Mano",
+      "exactMatch": false
+    },
+    {
+      "item": 187,
+      "speed": "slow",
+      "path": "basic/bas_11_187_slow.mp3",
+      "transcript": "Irmãos.",
+      "duration": 1.1886875,
+      "expected": "Mano",
+      "exactMatch": false
+    },
+    {
+      "item": 188,
+      "speed": "normal",
+      "path": "basic/bas_11_188.mp3",
+      "transcript": "Caramba!",
+      "duration": 1.018,
+      "expected": "Caramba",
+      "exactMatch": true
+    },
+    {
+      "item": 188,
+      "speed": "slow",
+      "path": "basic/bas_11_188_slow.mp3",
+      "transcript": "E carambas!",
+      "duration": 1.338,
+      "expected": "Caramba",
+      "exactMatch": false
+    },
+    {
+      "item": 189,
+      "speed": "normal",
+      "path": "basic/bas_12_189.mp3",
+      "transcript": "Oi, bem-vindo, o que você vai querer?",
+      "duration": 2.4046875,
+      "expected": "Oi! Bem-vindo. O que você vai querer?",
+      "exactMatch": true
+    },
+    {
+      "item": 189,
+      "speed": "slow",
+      "path": "basic/bas_12_189_slow.mp3",
+      "transcript": "Oi, bem-vindo, o que você vai querer?",
+      "duration": 3.386,
+      "expected": "Oi! Bem-vindo. O que você vai querer?",
+      "exactMatch": true
+    },
+    {
+      "item": 190,
+      "speed": "normal",
+      "path": "basic/bas_12_190.mp3",
+      "transcript": "Oi, eu queria um cafezinho, por favor.",
+      "duration": 2.4046875,
+      "expected": "Oi! Eu queria um cafezinho, por favor.",
+      "exactMatch": true
+    },
+    {
+      "item": 190,
+      "speed": "slow",
+      "path": "basic/bas_12_190_slow.mp3",
+      "transcript": "Loi, eu queria um cafezinho, por favor.",
+      "duration": 3.343375,
+      "expected": "Oi! Eu queria um cafezinho, por favor.",
+      "exactMatch": false
+    },
+    {
+      "item": 191,
+      "speed": "normal",
+      "path": "basic/bas_12_191.mp3",
+      "transcript": "Soli issu.",
+      "duration": 1.082,
+      "expected": "Só isso?",
+      "exactMatch": false
+    },
+    {
+      "item": 191,
+      "speed": "slow",
+      "path": "basic/bas_12_191_slow.mp3",
+      "transcript": "It's all easy to do.",
+      "duration": 1.466,
+      "expected": "Só isso?",
+      "exactMatch": false
+    },
+    {
+      "item": 192,
+      "speed": "normal",
+      "path": "basic/bas_12_192.mp3",
+      "transcript": "Sim e a conta por favor.",
+      "duration": 1.8926875,
+      "expected": "Sim, e a conta, por favor.",
+      "exactMatch": true
+    },
+    {
+      "item": 192,
+      "speed": "slow",
+      "path": "basic/bas_12_192_slow.mp3",
+      "transcript": "Sim, e a conta, por favor.",
+      "duration": 2.639375,
+      "expected": "Sim, e a conta, por favor.",
+      "exactMatch": true
+    },
+    {
+      "item": 193,
+      "speed": "normal",
+      "path": "basic/bas_12_193.mp3",
+      "transcript": "São dois reais, valeu.",
+      "duration": 1.7646875,
+      "expected": "São dois reais. Valeu!",
+      "exactMatch": true
+    },
+    {
+      "item": 193,
+      "speed": "slow",
+      "path": "basic/bas_12_193_slow.mp3",
+      "transcript": "São dois reais, valeu.",
+      "duration": 2.5326875,
+      "expected": "São dois reais. Valeu!",
+      "exactMatch": true
+    },
+    {
+      "item": 194,
+      "speed": "normal",
+      "path": "basic/bas_12_194.mp3",
+      "transcript": "Valeu, até mais.",
+      "duration": 1.5726875,
+      "expected": "Valeu, até mais!",
+      "exactMatch": true
+    },
+    {
+      "item": 194,
+      "speed": "slow",
+      "path": "basic/bas_12_194_slow.mp3",
+      "transcript": "E valeu, até mais.",
+      "duration": 2.127375,
+      "expected": "Valeu, até mais!",
+      "exactMatch": false
+    },
+    {
+      "item": 195,
+      "speed": "normal",
+      "path": "basic/bas_13_195.mp3",
+      "transcript": "Boa sorte.",
+      "duration": 1.21,
+      "expected": "Boa sorte!",
+      "exactMatch": true
+    },
+    {
+      "item": 195,
+      "speed": "slow",
+      "path": "basic/bas_13_195_slow.mp3",
+      "transcript": "Boa sorte!",
+      "duration": 1.679375,
+      "expected": "Boa sorte!",
+      "exactMatch": true
+    },
+    {
+      "item": 196,
+      "speed": "normal",
+      "path": "advanced/adv_14_196.mp3",
+      "transcript": "Te vejo amanhã.",
+      "duration": 1.5086875,
+      "expected": "Te vejo amanhã.",
+      "exactMatch": true
+    },
+    {
+      "item": 196,
+      "speed": "slow",
+      "path": "advanced/adv_14_196_slow.mp3",
+      "transcript": "Eu te vejo amanhã.",
+      "duration": 2.063375,
+      "expected": "Te vejo amanhã.",
+      "exactMatch": false
+    },
+    {
+      "item": 197,
+      "speed": "normal",
+      "path": "advanced/adv_14_197.mp3",
+      "transcript": "Vejo-te amanhã.",
+      "duration": 1.466,
+      "expected": "Vejo-te amanhã.",
+      "exactMatch": true
+    },
+    {
+      "item": 197,
+      "speed": "slow",
+      "path": "advanced/adv_14_197_slow.mp3",
+      "transcript": "Vejo-te amanhã.",
+      "duration": 2.063375,
+      "expected": "Vejo-te amanhã.",
+      "exactMatch": true
+    },
+    {
+      "item": 198,
+      "speed": "normal",
+      "path": "advanced/adv_14_198.mp3",
+      "transcript": "Eu me chamo Ahmed.",
+      "duration": 1.5086875,
+      "expected": "Eu me chamo Ahmed.",
+      "exactMatch": true
+    },
+    {
+      "item": 198,
+      "speed": "slow",
+      "path": "advanced/adv_14_198_slow.mp3",
+      "transcript": "Eu me chamo Ahmed.",
+      "duration": 2.127375,
+      "expected": "Eu me chamo Ahmed.",
+      "exactMatch": true
+    },
+    {
+      "item": 199,
+      "speed": "normal",
+      "path": "advanced/adv_14_199.mp3",
+      "transcript": "Chamo minha MED.",
+      "duration": 1.274,
+      "expected": "Chamo-me Ahmed.",
+      "exactMatch": false
+    },
+    {
+      "item": 199,
+      "speed": "slow",
+      "path": "advanced/adv_14_199_slow.mp3",
+      "transcript": "Chamo-me a merda.",
+      "duration": 1.743375,
+      "expected": "Chamo-me Ahmed.",
+      "exactMatch": false
+    },
+    {
+      "item": 200,
+      "speed": "normal",
+      "path": "advanced/adv_14_200.mp3",
+      "transcript": "Ele se levanta cedo.",
+      "duration": 1.615375,
+      "expected": "Ele se levanta cedo.",
+      "exactMatch": true
+    },
+    {
+      "item": 200,
+      "speed": "slow",
+      "path": "advanced/adv_14_200_slow.mp3",
+      "transcript": "E ele se levanta cedo.",
+      "duration": 2.298,
+      "expected": "Ele se levanta cedo.",
+      "exactMatch": false
+    }
+  ]
+}
