@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct Cloudflare R2 object API + Workers AI @cf/openai/whisper",
+  "note": "Unprompted ASR output; unexpected languages and spelling are ASR observations, not proof of incorrect audio. No pronunciation or human verification.",
+  "results": [
+    {
+      "path": "basic/bas_01_001.mp3",
+      "transcript": "Caza de banho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_001_slow.mp3",
+      "transcript": "e causa de banho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_002.mp3",
+      "transcript": "bañero.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_002_slow.mp3",
+      "transcript": "Сбай, Невирус!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_003.mp3",
+      "transcript": "Come, boy, you...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_003_slow.mp3",
+      "transcript": "To come, boy youth.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_004.mp3",
+      "transcript": "スライン",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_004_slow.mp3",
+      "transcript": "That's the ratings.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_005.mp3",
+      "transcript": "Pequeno almoço.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_005_slow.mp3",
+      "transcript": "Pequeno almoço.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_006.mp3",
+      "transcript": "Café da Manhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_01_006_slow.mp3",
+      "transcript": "e café da manhãs.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
