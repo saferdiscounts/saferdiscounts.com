@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 364,
+    "end": 371
+  },
+  "results": [
+    {
+      "path": "advanced/adv_21_364.mp3",
+      "transcript": "I'm here.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_364_slow.mp3",
+      "transcript": "I'm a yes.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_365.mp3",
+      "transcript": "You",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_365_slow.mp3",
+      "transcript": "Are you?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_366.mp3",
+      "transcript": "No, sir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_366_slow.mp3",
+      "transcript": "Anos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_367.mp3",
+      "transcript": "Lua-se!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_367_slow.mp3",
+      "transcript": "Угу, а здесь?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_368.mp3",
+      "transcript": "Nice.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_368_slow.mp3",
+      "transcript": "Don'tice.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_369.mp3",
+      "transcript": "US.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_369_slow.mp3",
+      "transcript": "Are you?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_370.mp3",
+      "transcript": "Volver você amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_370_slow.mp3",
+      "transcript": "Vou ver você amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_371.mp3",
+      "transcript": "Vou de contar uma coisa.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_21_371_slow.mp3",
+      "transcript": "e vou de contar uma coisa.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
