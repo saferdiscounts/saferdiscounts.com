@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Second ASR Whisper Large V3 Turbo; textual match is not pronunciation certification.",
+  "results": [
+    {
+      "item": 51,
+      "speed": "normal",
+      "path": "basic/bas_04_051.mp3",
+      "transcript": "Come wait.",
+      "duration": 0.847375,
+      "expected": "como",
+      "exactMatch": false
+    },
+    {
+      "item": 51,
+      "speed": "slow",
+      "path": "basic/bas_04_051_slow.mp3",
+      "transcript": "Bir kalmeli.",
+      "duration": 1.0606875,
+      "expected": "como",
+      "exactMatch": false
+    },
+    {
+      "item": 52,
+      "speed": "normal",
+      "path": "basic/bas_04_052.mp3",
+      "transcript": "Falou!",
+      "duration": 0.868375,
+      "expected": "falo",
+      "exactMatch": false
+    },
+    {
+      "item": 52,
+      "speed": "slow",
+      "path": "basic/bas_04_052_slow.mp3",
+      "transcript": "Desfalou!",
+      "duration": 1.103375,
+      "expected": "falo",
+      "exactMatch": false
+    },
+    {
+      "item": 53,
+      "speed": "normal",
+      "path": "basic/bas_04_053.mp3",
+      "transcript": "巴的气",
+      "duration": 0.9326875,
+      "expected": "parte",
+      "exactMatch": false
+    },
+    {
+      "item": 53,
+      "speed": "slow",
+      "path": "basic/bas_04_053_slow.mp3",
+      "transcript": "I'll part it shoe.",
+      "duration": 1.2526875,
+      "expected": "parte",
+      "exactMatch": false
+    },
+    {
+      "item": 54,
+      "speed": "normal",
+      "path": "basic/bas_04_054.mp3",
+      "transcript": "Comis.",
+      "duration": 0.8046875,
+      "expected": "come",
+      "exactMatch": false
+    },
+    {
+      "item": 54,
+      "speed": "slow",
+      "path": "basic/bas_04_054_slow.mp3",
+      "transcript": "Call me.",
+      "duration": 1.082,
+      "expected": "come",
+      "exactMatch": false
+    },
+    {
+      "item": 55,
+      "speed": "normal",
+      "path": "basic/bas_04_055.mp3",
+      "transcript": "Falei.",
+      "duration": 0.847375,
+      "expected": "fala",
+      "exactMatch": false
+    },
+    {
+      "item": 55,
+      "speed": "slow",
+      "path": "basic/bas_04_055_slow.mp3",
+      "transcript": "If I look.",
+      "duration": 1.1246875,
+      "expected": "fala",
+      "exactMatch": false
+    },
+    {
+      "item": 56,
+      "speed": "normal",
+      "path": "basic/bas_04_056.mp3",
+      "transcript": "Partimos!",
+      "duration": 1.146,
+      "expected": "partimos",
+      "exactMatch": true
+    },
+    {
+      "item": 56,
+      "speed": "slow",
+      "path": "basic/bas_04_056_slow.mp3",
+      "transcript": "Aparecimos.",
+      "duration": 1.423375,
+      "expected": "partimos",
+      "exactMatch": false
+    },
+    {
+      "item": 57,
+      "speed": "normal",
+      "path": "basic/bas_04_057.mp3",
+      "transcript": "Comemos.",
+      "duration": 1.082,
+      "expected": "comemos",
+      "exactMatch": true
+    },
+    {
+      "item": 57,
+      "speed": "slow",
+      "path": "basic/bas_04_057_slow.mp3",
+      "transcript": "Recomemos.",
+      "duration": 1.3166875,
+      "expected": "comemos",
+      "exactMatch": false
+    },
+    {
+      "item": 58,
+      "speed": "normal",
+      "path": "basic/bas_04_058.mp3",
+      "transcript": "Falamos!",
+      "duration": 1.082,
+      "expected": "falamos",
+      "exactMatch": true
+    },
+    {
+      "item": 58,
+      "speed": "slow",
+      "path": "basic/bas_04_058_slow.mp3",
+      "transcript": "E falamos.",
+      "duration": 1.3806875,
+      "expected": "falamos",
+      "exactMatch": false
+    },
+    {
+      "item": 59,
+      "speed": "normal",
+      "path": "basic/bas_04_059.mp3",
+      "transcript": "By the thing.",
+      "duration": 1.039375,
+      "expected": "partem",
+      "exactMatch": false
+    },
+    {
+      "item": 59,
+      "speed": "slow",
+      "path": "basic/bas_04_059_slow.mp3",
+      "transcript": "The part of the thing.",
+      "duration": 1.274,
+      "expected": "partem",
+      "exactMatch": false
+    },
+    {
+      "item": 60,
+      "speed": "normal",
+      "path": "basic/bas_04_060.mp3",
+      "transcript": "Comments.",
+      "duration": 0.975375,
+      "expected": "comem",
+      "exactMatch": false
+    },
+    {
+      "item": 60,
+      "speed": "slow",
+      "path": "basic/bas_04_060_slow.mp3",
+      "transcript": "a call means",
+      "duration": 1.21,
+      "expected": "comem",
+      "exactMatch": false
+    },
+    {
+      "item": 61,
+      "speed": "normal",
+      "path": "basic/bas_04_061.mp3",
+      "transcript": "Falando.",
+      "duration": 1.082,
+      "expected": "falam",
+      "exactMatch": false
+    },
+    {
+      "item": 61,
+      "speed": "slow",
+      "path": "basic/bas_04_061_slow.mp3",
+      "transcript": "Just follow him.",
+      "duration": 1.338,
+      "expected": "falam",
+      "exactMatch": false
+    },
+    {
+      "item": 62,
+      "speed": "normal",
+      "path": "basic/bas_04_062.mp3",
+      "transcript": "Señor.",
+      "duration": 0.783375,
+      "expected": "tenho",
+      "exactMatch": false
+    },
+    {
+      "item": 62,
+      "speed": "slow",
+      "path": "basic/bas_04_062_slow.mp3",
+      "transcript": "Atenio.",
+      "duration": 0.9966875,
+      "expected": "tenho",
+      "exactMatch": false
+    },
+    {
+      "item": 63,
+      "speed": "normal",
+      "path": "basic/bas_04_063.mp3",
+      "transcript": "Zang",
+      "duration": 0.8046875,
+      "expected": "tem",
+      "exactMatch": false
+    },
+    {
+      "item": 63,
+      "speed": "slow",
+      "path": "basic/bas_04_063_slow.mp3",
+      "transcript": "What a thing.",
+      "duration": 1.039375,
+      "expected": "tem",
+      "exactMatch": false
+    },
+    {
+      "item": 64,
+      "speed": "normal",
+      "path": "basic/bas_04_064.mp3",
+      "transcript": "there",
+      "duration": 0.718375,
+      "expected": "ter",
+      "exactMatch": false
+    },
+    {
+      "item": 64,
+      "speed": "slow",
+      "path": "basic/bas_04_064_slow.mp3",
+      "transcript": "Tot de eerder.",
+      "duration": 0.911375,
+      "expected": "ter",
+      "exactMatch": false
+    },
+    {
+      "item": 65,
+      "speed": "normal",
+      "path": "basic/bas_04_065.mp3",
+      "transcript": "Vote.",
+      "duration": 0.783375,
+      "expected": "vou",
+      "exactMatch": false
+    },
+    {
+      "item": 65,
+      "speed": "slow",
+      "path": "basic/bas_04_065_slow.mp3",
+      "transcript": "evolves",
+      "duration": 1.018,
+      "expected": "vou",
+      "exactMatch": false
+    },
+    {
+      "item": 66,
+      "speed": "normal",
+      "path": "basic/bas_04_066.mp3",
+      "transcript": "Vai.",
+      "duration": 0.762,
+      "expected": "vai",
+      "exactMatch": true
+    },
+    {
+      "item": 66,
+      "speed": "slow",
+      "path": "basic/bas_04_066_slow.mp3",
+      "transcript": "Zwei.",
+      "duration": 0.975375,
+      "expected": "vai",
+      "exactMatch": false
+    },
+    {
+      "item": 67,
+      "speed": "normal",
+      "path": "basic/bas_04_067.mp3",
+      "transcript": "Мир.",
+      "duration": 0.719375,
+      "expected": "ir",
+      "exactMatch": false
+    },
+    {
+      "item": 67,
+      "speed": "slow",
+      "path": "basic/bas_04_067_slow.mp3",
+      "transcript": "And here's it.",
+      "duration": 0.911375,
+      "expected": "ir",
+      "exactMatch": false
+    },
+    {
+      "item": 68,
+      "speed": "normal",
+      "path": "basic/bas_04_068.mp3",
+      "transcript": "Faço o que...",
+      "duration": 0.911375,
+      "expected": "faço",
+      "exactMatch": false
+    },
+    {
+      "item": 68,
+      "speed": "slow",
+      "path": "basic/bas_04_068_slow.mp3",
+      "transcript": "E fala, Suzu.",
+      "duration": 1.167375,
+      "expected": "faço",
+      "exactMatch": false
+    },
+    {
+      "item": 69,
+      "speed": "normal",
+      "path": "basic/bas_04_069.mp3",
+      "transcript": "¡Faz!",
+      "duration": 0.8046875,
+      "expected": "faz",
+      "exactMatch": true
+    },
+    {
+      "item": 69,
+      "speed": "slow",
+      "path": "basic/bas_04_069_slow.mp3",
+      "transcript": "Em frase.",
+      "duration": 1.0606875,
+      "expected": "faz",
+      "exactMatch": false
+    },
+    {
+      "item": 70,
+      "speed": "normal",
+      "path": "basic/bas_04_070.mp3",
+      "transcript": "Fazer.",
+      "duration": 0.9326875,
+      "expected": "fazer",
+      "exactMatch": true
+    },
+    {
+      "item": 70,
+      "speed": "slow",
+      "path": "basic/bas_04_070_slow.mp3",
+      "transcript": "o fazer.",
+      "duration": 1.103375,
+      "expected": "fazer",
+      "exactMatch": false
+    },
+    {
+      "item": 71,
+      "speed": "normal",
+      "path": "basic/bas_04_071.mp3",
+      "transcript": "Boss suit",
+      "duration": 0.89,
+      "expected": "posso",
+      "exactMatch": false
+    },
+    {
+      "item": 71,
+      "speed": "slow",
+      "path": "basic/bas_04_071_slow.mp3",
+      "transcript": "E pra lá, Suzuki.",
+      "duration": 1.1246875,
+      "expected": "posso",
+      "exactMatch": false
+    },
+    {
+      "item": 72,
+      "speed": "normal",
+      "path": "basic/bas_04_072.mp3",
+      "transcript": "Pode.",
+      "duration": 0.9326875,
+      "expected": "pode",
+      "exactMatch": true
+    },
+    {
+      "item": 72,
+      "speed": "slow",
+      "path": "basic/bas_04_072_slow.mp3",
+      "transcript": "Pode.",
+      "duration": 1.1886875,
+      "expected": "pode",
+      "exactMatch": true
+    },
+    {
+      "item": 73,
+      "speed": "normal",
+      "path": "basic/bas_04_073.mp3",
+      "transcript": "Poder",
+      "duration": 0.89,
+      "expected": "poder",
+      "exactMatch": true
+    },
+    {
+      "item": 73,
+      "speed": "slow",
+      "path": "basic/bas_04_073_slow.mp3",
+      "transcript": "O poder.",
+      "duration": 1.082,
+      "expected": "poder",
+      "exactMatch": false
+    },
+    {
+      "item": 74,
+      "speed": "normal",
+      "path": "basic/bas_04_074.mp3",
+      "transcript": "Quero",
+      "duration": 0.8046875,
+      "expected": "quero",
+      "exactMatch": true
+    },
+    {
+      "item": 74,
+      "speed": "slow",
+      "path": "basic/bas_04_074_slow.mp3",
+      "transcript": "Quero.",
+      "duration": 1.082,
+      "expected": "quero",
+      "exactMatch": true
+    },
+    {
+      "item": 75,
+      "speed": "normal",
+      "path": "basic/bas_04_075.mp3",
+      "transcript": "Quero.",
+      "duration": 0.7406875,
+      "expected": "quer",
+      "exactMatch": false
+    },
+    {
+      "item": 75,
+      "speed": "slow",
+      "path": "basic/bas_04_075_slow.mp3",
+      "transcript": "Kill.",
+      "duration": 0.954,
+      "expected": "quer",
+      "exactMatch": false
+    }
+  ]
+}
