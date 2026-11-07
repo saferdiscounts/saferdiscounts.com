@@ -215,7 +215,9 @@ test('Brazilian 511-pair R2 manifest source reproduces all exact matches without
  assert.equal(snapshot.practicalCoverage.phrases,phrases.length);
  assert.equal(snapshot.practicalCoverage.exactMatches,count(phrases).exact);
  const sourceOriginalMissing=source.records.filter(x=>x.glProvenance==='saferdiscounts-arabic-editorial-draft');
- assert.equal(snapshot.sourceManifestGlossMissing,234,'Original remote source still had 234 unglossed rows');
+ assert.equal(snapshot.sourceManifestGlossMissingAtBaseline,234,'The backed-up original R2 manifest had 234 empty Arabic meanings');
+ assert.equal(snapshot.sourceManifestGlossMissing,0,'After successful R2 sync the remote has no blank Arabic meaning');
+ assert.equal(snapshot.arabicGlossCoverage.r2ManifestArabicSynchronized,true);
  assert.equal(sourceOriginalMissing.length,234);
  assert.equal(source.records.filter(x=>x.glProvenance==='r2-original-manifest').length,277);
  assert.equal(source.records.filter(x=>!x.gl||!x.gl.trim()).length,0,'Every audio item needs Arabic meaning');
@@ -267,4 +269,24 @@ test('Brazilian 511-pair learning lab offers optional listen-before-reveal witho
  assert.match(html,/استرجاع النص بعد الاستماع، وليس امتحانًا معتمدًا/);
  const code=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
  assert.ok(code);assert.doesNotThrow(()=>new vm.Script(code));
+});
+
+test('Cloudflare pre-sync manifest backup matches 511 exact source phrases and records the historical 234 Arabic gaps',()=>{
+ const original=JSON.parse(read('ops/backups/ptbr-r2-original-manifest-before-arabic-sync-2026-11-07.json'));
+ const enriched=JSON.parse(read('audio-text-index-ptbr.json'));
+ const before=[...original.levels.basic.items,...original.levels.advanced.items];
+ const maps=new Map(enriched.records.map(x=>[x.normal,x]));
+ assert.equal(original.course,'pt-BR');assert.equal(before.length,511);
+ assert.equal(before.filter(x=>!x.gl?.trim()).length,234);
+ for(const item of before){
+  const present=maps.get(item.normal);
+  assert.ok(present,'Missing original R2 recording path');
+  assert.equal(item.pt,present.pt,'Original transcript must remain unchanged');
+  assert.equal(item.slow,present.slow,'Original slow recording key must remain unchanged');
+  if(item.gl?.trim())assert.equal(item.gl,present.gl,'Existing Arabic glossary text must remain unchanged');
+  else assert.equal(present.glProvenance,'saferdiscounts-arabic-editorial-draft');
+ }
+ assert.equal(enriched.arabicGlossCoverage.currentR2ArabicMissing,0);
+ assert.equal(enriched.arabicGlossCoverage.originalR2ArabicMissingAtBaseline,234);
+ assert.equal(enriched.arabicGlossCoverage.remoteVerifiedAfterSync,true);
 });
