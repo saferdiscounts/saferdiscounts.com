@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "method": "Second ASR model Whisper Large V3 Turbo, raw MP3 binary, compared with original text. Different model, same Whisper family; not independent human phonetic certification.",
+  "results": [
+    {
+      "item": 506,
+      "speed": "normal",
+      "path": "advanced/adv_32_506.mp3",
+      "transcript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar pra ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "duration": 19.258,
+      "language": "pt",
+      "languageProbability": 0.99853515625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "exactMatch": false
+    },
+    {
+      "item": 506,
+      "speed": "slow",
+      "path": "advanced/adv_32_506_slow.mp3",
+      "transcript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "duration": 27.3646875,
+      "language": "pt",
+      "languageProbability": 0.99853515625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "exactMatch": true
+    },
+    {
+      "item": 507,
+      "speed": "normal",
+      "path": "advanced/adv_32_507.mp3",
+      "transcript": "Pegar.",
+      "duration": 0.911375,
+      "language": "pt",
+      "languageProbability": 0.99462890625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "pegar",
+      "exactMatch": true
+    },
+    {
+      "item": 507,
+      "speed": "slow",
+      "path": "advanced/adv_32_507_slow.mp3",
+      "transcript": "Tu pegar",
+      "duration": 1.103375,
+      "language": "pt",
+      "languageProbability": 0.947265625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "pegar",
+      "exactMatch": false
+    },
+    {
+      "item": 508,
+      "speed": "normal",
+      "path": "advanced/adv_32_508.mp3",
+      "transcript": "Pão de açúcar.",
+      "duration": 1.3806875,
+      "language": "pt",
+      "languageProbability": 0.9990234375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Pão de Açúcar",
+      "exactMatch": true
+    },
+    {
+      "item": 508,
+      "speed": "slow",
+      "path": "advanced/adv_32_508_slow.mp3",
+      "transcript": "E pão de açúcar.",
+      "duration": 1.7006875,
+      "language": "pt",
+      "languageProbability": 0.9990234375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Pão de Açúcar",
+      "exactMatch": false
+    },
+    {
+      "item": 509,
+      "speed": "normal",
+      "path": "advanced/adv_32_509.mp3",
+      "transcript": "Suco de coco.",
+      "duration": 1.3806875,
+      "language": "pt",
+      "languageProbability": 0.91259765625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "suco de coco",
+      "exactMatch": true
+    },
+    {
+      "item": 509,
+      "speed": "slow",
+      "path": "advanced/adv_32_509_slow.mp3",
+      "transcript": "Suco de coco.",
+      "duration": 1.807375,
+      "language": "pt",
+      "languageProbability": 0.94873046875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "suco de coco",
+      "exactMatch": true
+    },
+    {
+      "item": 510,
+      "speed": "normal",
+      "path": "advanced/adv_32_510.mp3",
+      "transcript": "Inesquecível.",
+      "duration": 1.274,
+      "language": "pt",
+      "languageProbability": 0.59130859375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "inesquecível",
+      "exactMatch": true
+    },
+    {
+      "item": 510,
+      "speed": "slow",
+      "path": "advanced/adv_32_510_slow.mp3",
+      "transcript": "É inesquecível.",
+      "duration": 1.722,
+      "language": "pt",
+      "languageProbability": 0.98583984375,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "inesquecível",
+      "exactMatch": false
+    },
+    {
+      "item": 511,
+      "speed": "normal",
+      "path": "advanced/adv_33_511.mp3",
+      "transcript": "Boa sorte e força.",
+      "duration": 1.658,
+      "language": "pt",
+      "languageProbability": 0.99560546875,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Boa sorte e força!",
+      "exactMatch": true
+    },
+    {
+      "item": 511,
+      "speed": "slow",
+      "path": "advanced/adv_33_511_slow.mp3",
+      "transcript": "Boa sorte e força.",
+      "duration": 2.383375,
+      "language": "pt",
+      "languageProbability": 0.9853515625,
+      "model": "@cf/openai/whisper-large-v3-turbo",
+      "expected": "Boa sorte e força!",
+      "exactMatch": true
+    }
+  ]
+}
