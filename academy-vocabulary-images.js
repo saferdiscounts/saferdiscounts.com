@@ -1087,20 +1087,20 @@
     ];
     for(var fs=0;fs<freshFoodStyleRules.length;fs++)if(wholeForeignWord(freshFoodStyleRules[fs][0],target))return photos[freshFoodStyleRules[fs][1]];
     var englishRules=[
-      [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/\b(?:water|drink)\b/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
-      [/\b(?:money|cash|price|cost|bill|pay|payment|buy|sell)\b/i,'money'],[/\b(?:phone|mobile|telephone|call|message)\b/i,'phone'],
-      [/\b(?:bread|loaf|toast)\b/i,'bread'],[/\beggs?\b/i,'egg'],[/\b(?:shoe|shoes|sneaker|sneakers)\b/i,'shoes'],[/\b(?:write|writing|pen|notebook|paper)\b/i,'writing'],
-      [/\bapples?\b/i,'apple'],[/\b(?:house|home|apartment|flat)\b/i,'house'],
-      [/\b(?:airplane|aircraft|plane|airport|flight)\b/i,'airplane'],[/\b(?:taxi|cab|uber|driver)\b/i,'taxi'],[/\b(?:luggage|suitcase|baggage)\b/i,'luggage'],
+      [/\b(?:coffee|espresso|latte)\b/i,'coffee'],[/\btea\b/i,'tea'],[/^water$/i,'water'],[/\b(?:juice|orange juice)\b/i,'juice'],
+      [/^(?:money|cash|banknotes?|coins?)$/i,'money'],[/^(?:phone|mobile phone|telephone|smartphone)$/i,'phone'],
+      [/\b(?:bread|loaf|toast)\b/i,'bread'],[/\beggs?\b/i,'egg'],[/\b(?:shoe|shoes|sneaker|sneakers)\b/i,'shoes'],[/^(?:pen|notebook|paper)$/i,'writing'],
+      [/\bapples?\b/i,'apple'],[/^(?:house|home)$/i,'house'],
+      [/^(?:airplane|aircraft|plane)$/i,'airplane'],[/\b(?:taxi|cab|uber|driver)\b/i,'taxi'],[/\b(?:luggage|suitcase|baggage)\b/i,'luggage'],
       [/\b(?:train|metro|subway)\b/i,'train'],[/\b(?:bus|coach)\b/i,'bus'],[/\b(?:beach|sea|ocean|island|coast)\b/i,'beach'],
-      [/\b(?:food|meal|breakfast|lunch|dinner|restaurant|meat|dish)\b/i,'meal'],[/\bcity\b/i,'city'],
-      [/\b(?:doctor|nurse|hospital|clinic|pharmacy|medicine|pain|headache)\b/i,'doctor'],[/\bcats?\b/i,'cat'],[/\b(?:dogs?|puppies)\b/i,'dog'],
+      [/^(?:food|meal)$/i,'meal'],[/\bcity\b/i,'city'],
+      [/^(?:doctor|physician)$/i,'doctor'],[/\bcats?\b/i,'cat'],[/\b(?:dogs?|puppies)\b/i,'dog'],
       [/\b(?:peanuts?|nuts)\b/i,'peanuts'],[/\b(?:milk)\b/i,'milk'],[/\b(?:lemon|lemons|lemonade)\b/i,'lemon'],[/\bheart\b/i,'heart'],
-      [/\b(?:family|mother|father|parents|sister|brother)\b/i,'family'],[/\b(?:clock|time|watch|minute|minutes)\b/i,'clock'],
-      [/\b(?:right|left|turn|direction|map|intersection|entrance|exit)\b/i,'directions'],[/\b(?:ambulance|emergency|accident)\b/i,'ambulance'],
-      [/\b(?:clothes|clothing|shirt|trousers|pants|dress|skirt|jacket|socks|size)\b/i,'clothing'],[/\b(?:book|books|reading|library|study)\b/i,'books']
+      [/\b(?:family|mother|father|parents|sister|brother)\b/i,'family'],[/^(?:clock|wall clock)$/i,'clock'],
+      [/^(?:directions|road map|street map)$/i,'directions'],[/^ambulance$/i,'ambulance'],
+      [/^(?:clothes|clothing)$/i,'clothing'],[/\b(?:book|books|reading|library|study)\b/i,'books']
     ];
-    if(lang==='en'&&/^(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday)$/i.test(target.trim()))return photos.clock;
+    // Weekdays are abstract calendar concepts; do not substitute a clock photograph.
     if(lang==='en'&&/^where is\.\.\.$/i.test(target.trim()))return photos.directions;
     if(lang==='en'&&/^nothing to declare$/i.test(target.trim()))return photos.customs;
     if(lang==='en'&&/^(?:the room isn't ready|i would like to change rooms)$/i.test(target.trim()))return photos.hotelRoom;
