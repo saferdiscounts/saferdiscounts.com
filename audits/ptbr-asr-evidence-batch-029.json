@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 446,
+    "end": 454
+  },
+  "results": [
+    {
+      "path": "advanced/adv_27_446.mp3",
+      "transcript": "Come, beauty.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_446_slow.mp3",
+      "transcript": "I calm you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_447.mp3",
+      "transcript": "Sacar dinheiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_447_slow.mp3",
+      "transcript": "do sacarr de dinheiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_448.mp3",
+      "transcript": "Cartão de crédito.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_448_slow.mp3",
+      "transcript": "o cartão de crédito.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_449.mp3",
+      "transcript": "Kai še elektroniku.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_449_slow.mp3",
+      "transcript": "Кайша електронику.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_450.mp3",
+      "transcript": "delegacia de polícia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_450_slow.mp3",
+      "transcript": "Delegacia de Polícia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_451.mp3",
+      "transcript": "Voegelbad.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_451_slow.mp3",
+      "transcript": "Fui-go-badu",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_452.mp3",
+      "transcript": "Perdi o meu passaporte.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_452_slow.mp3",
+      "transcript": "Perdi-g o meu passaporte.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_453.mp3",
+      "transcript": "Documento de identidade.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_453_slow.mp3",
+      "transcript": "documento de identidade.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_454.mp3",
+      "transcript": "Bem-vai, Shada!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_27_454_slow.mp3",
+      "transcript": "Embaixada.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
