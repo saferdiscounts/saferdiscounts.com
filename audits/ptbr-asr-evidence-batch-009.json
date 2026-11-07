@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct Cloudflare R2 + Workers AI Whisper",
+  "note": "ASR evidence, not verified pronunciation or text matching; unexpected languages can be model errors.",
+  "results": [
+    {
+      "path": "basic/bas_06_113.mp3",
+      "transcript": "Quarta-feira.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_113_slow.mp3",
+      "transcript": "Quarta-feiras.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_114.mp3",
+      "transcript": "Quinta-feira.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_114_slow.mp3",
+      "transcript": "Quinta ofereiras.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_115.mp3",
+      "transcript": "Se está feita.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_115_slow.mp3",
+      "transcript": "Não sei se está feira.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_116.mp3",
+      "transcript": "Sábra do...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_116_slow.mp3",
+      "transcript": "Se sabe, Badu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_117.mp3",
+      "transcript": "Domingo!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_117_slow.mp3",
+      "transcript": "Adormingos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_118.mp3",
+      "transcript": "Zanejru.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_118_slow.mp3",
+      "transcript": "de janeiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_119.mp3",
+      "transcript": "جوليو",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_119_slow.mp3",
+      "transcript": "Tá joelho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_120.mp3",
+      "transcript": "Fevereiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_120_slow.mp3",
+      "transcript": "Fevereiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_121.mp3",
+      "transcript": "Agostoo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_121_slow.mp3",
+      "transcript": "And that goes to...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_122.mp3",
+      "transcript": "मार سوٹ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_122_slow.mp3",
+      "transcript": "e mar de su.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_123.mp3",
+      "transcript": "setembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_123_slow.mp3",
+      "transcript": "No setembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_124.mp3",
+      "transcript": "Abriu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_124_slow.mp3",
+      "transcript": "Собрею!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_125.mp3",
+      "transcript": "Отсюбро!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_125_slow.mp3",
+      "transcript": "En zo'n broer.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_126.mp3",
+      "transcript": "my youth",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_126_slow.mp3",
+      "transcript": "Smile!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_127.mp3",
+      "transcript": "novembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_127_slow.mp3",
+      "transcript": "Se novembro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_128.mp3",
+      "transcript": "Dzień, Joga.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_06_128_slow.mp3",
+      "transcript": "I just don't want to hear you all about it.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
