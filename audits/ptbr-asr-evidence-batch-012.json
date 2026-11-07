@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Raw automatic ASR evidence; not final verification. Short recordings may trigger language detection errors.",
+  "results": [
+    {
+      "path": "basic/bas_09_161.mp3",
+      "transcript": "悲劇",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_161_slow.mp3",
+      "transcript": "Apesse-se.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_162.mp3",
+      "transcript": "Queijo!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_162_slow.mp3",
+      "transcript": "Okay, here's the rule.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_163.mp3",
+      "transcript": "Frutäk!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_163_slow.mp3",
+      "transcript": "Förut är!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_164.mp3",
+      "transcript": "לגומס.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_164_slow.mp3",
+      "transcript": "Alegumis.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_165.mp3",
+      "transcript": "Dawseys!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_165_slow.mp3",
+      "transcript": "Adolescees",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_166.mp3",
+      "transcript": "Almoço!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_166_slow.mp3",
+      "transcript": "Era um morso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_167.mp3",
+      "transcript": "Jantar",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_167_slow.mp3",
+      "transcript": "de jantar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_168.mp3",
+      "transcript": "onde fica.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_168_slow.mp3",
+      "transcript": "Onde eu fico?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_169.mp3",
+      "transcript": "Quanto custa isso?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_169_slow.mp3",
+      "transcript": "É quanto custa isso?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_170.mp3",
+      "transcript": "Posso ver o cardápio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_170_slow.mp3",
+      "transcript": "Posso ver o cardápio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_171.mp3",
+      "transcript": "Aconte, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_171_slow.mp3",
+      "transcript": "E aconte, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_172.mp3",
+      "transcript": "Onde é o banheiro?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_172_slow.mp3",
+      "transcript": "Onde é o banheiro?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_173.mp3",
+      "transcript": "Preciso de ajuda.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_173_slow.mp3",
+      "transcript": "Apreciso de ajuda.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_174.mp3",
+      "transcript": "Não entendo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_174_slow.mp3",
+      "transcript": "se não entendo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_175.mp3",
+      "transcript": "Pode repetir, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_175_slow.mp3",
+      "transcript": "Pode repetir, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_176.mp3",
+      "transcript": "Você fala inglês.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_10_176_slow.mp3",
+      "transcript": "Você fala em inglês.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
