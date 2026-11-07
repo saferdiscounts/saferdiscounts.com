@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 455,
+    "end": 468
+  },
+  "results": [
+    {
+      "path": "advanced/adv_28_455.mp3",
+      "transcript": "é lugar um cajo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_455_slow.mp3",
+      "transcript": "Se alugar um carro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_456.mp3",
+      "transcript": "carteira de motorista.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_456_slow.mp3",
+      "transcript": "Em carteira de motorista.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_457.mp3",
+      "transcript": "Seguro!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_457_slow.mp3",
+      "transcript": "Passegure.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_458.mp3",
+      "transcript": "Gasolina.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_458_slow.mp3",
+      "transcript": "Gasolina",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_459.mp3",
+      "transcript": "Estacionamiento.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_459_slow.mp3",
+      "transcript": "Lestacionamiento",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_460.mp3",
+      "transcript": "Vire a direita.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_460_slow.mp3",
+      "transcript": "Virei a direita.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_461.mp3",
+      "transcript": "Esquerda!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_461_slow.mp3",
+      "transcript": "ويسكير دى",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_462.mp3",
+      "transcript": "Siga em frente.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_462_slow.mp3",
+      "transcript": "O siga em frente.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_463.mp3",
+      "transcript": "Sema foru.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_463_slow.mp3",
+      "transcript": "This is my photo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_464.mp3",
+      "transcript": "ご視聴ありがとうございました",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_464_slow.mp3",
+      "transcript": "¡Rotas, Dorias!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_465.mp3",
+      "transcript": "Kodowia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_465_slow.mp3",
+      "transcript": "O rodo vinha.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_466.mp3",
+      "transcript": "Pedagio.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_466_slow.mp3",
+      "transcript": "e pedaço.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_467.mp3",
+      "transcript": "Metro",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_467_slow.mp3",
+      "transcript": "You met the role.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_468.mp3",
+      "transcript": "Estação",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_28_468_slow.mp3",
+      "transcript": "e restação.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
