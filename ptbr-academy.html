@@ -198,14 +198,14 @@ function initPtbrHostedAudio(){
  }).then(index=>{
   if(index.schemaVersion!==1||index.locale!=='pt-BR'||!Array.isArray(index.records)||index.records.length!==511)throw Error('Unexpected Brazilian source index');
   if(index.records.some(item=>!item||typeof item.pt!=='string'||!safePtbrAudioPath.test(item.normal||'')||!safePtbrAudioPath.test(item.slow||'')||item.normal.replace(/\\.mp3$/,'_slow.mp3')!==item.slow))throw Error('Unsafe Brazilian source mapping');
-  ptbrAudioItems=index.records;makePtbrAudioIndex(ptbrAudioItems);
-  ptbrAudioReady=true;ptbrAudioFailed=false;render(current);
+  ptbrAudioItems=index.records;makePtbrAudioIndex(ptbrAudioItems);buildR2LessonGroups();
+  ptbrAudioReady=true;ptbrAudioFailed=false;buildLessonList();render(current);
  }).catch(()=>{
   if(ptbrAudioBridge){ptbrAudioBridge.src=ptbrAudioBase+'bridge.html';return}
   ptbrAudioFailed=true;updatePtbrAudioConnection(lessons[current]);
  });
 }
-window.addEventListener('message',function(event){if(!ptbrAudioBase||event.source!==ptbrAudioBridge.contentWindow)return;let origin;try{origin=new URL(ptbrAudioBase).origin}catch(e){return}if(event.origin!==origin)return;const data=event.data||{};if(data.type==='ptbr-audio-manifest-error-v1'){ptbrAudioFailed=true;updatePtbrAudioConnection(lessons[current]);return}if(data.type!=='ptbr-audio-manifest-v1'||!data.manifest||!data.manifest.levels)return;const basic=data.manifest.levels.basic,advanced=data.manifest.levels.advanced;if(!basic||!advanced||!Array.isArray(basic.items)||!Array.isArray(advanced.items))return;ptbrAudioItems=basic.items.concat(advanced.items);makePtbrAudioIndex(ptbrAudioItems);ptbrAudioReady=true;ptbrAudioFailed=false;render(current)});
+window.addEventListener('message',function(event){if(!ptbrAudioBase||event.source!==ptbrAudioBridge.contentWindow)return;let origin;try{origin=new URL(ptbrAudioBase).origin}catch(e){return}if(event.origin!==origin)return;const data=event.data||{};if(data.type==='ptbr-audio-manifest-error-v1'){ptbrAudioFailed=true;updatePtbrAudioConnection(lessons[current]);return}if(data.type!=='ptbr-audio-manifest-v1'||!data.manifest||!data.manifest.levels)return;const basic=data.manifest.levels.basic,advanced=data.manifest.levels.advanced;if(!basic||!advanced||!Array.isArray(basic.items)||!Array.isArray(advanced.items))return;ptbrAudioItems=basic.items.concat(advanced.items);makePtbrAudioIndex(ptbrAudioItems);buildR2LessonGroups();ptbrAudioReady=true;ptbrAudioFailed=false;buildLessonList();render(current)});
 const foundationOrder=[21,22,23,24,25,26,27,28,29,30,31,32,33,34,5];
 // Keep original lesson IDs for audio indexes, saved progress and historical exam results.
 const lessonOrder=lessons.map((l,i)=>i).sort((a,b)=>{const rank=i=>lessons[i].track==='foundation'?0:lessons[i].track==='a1'?1:lessons[i].track==='a2'?2:lessons[i].track==='b1'?3:lessons[i].track==='b2'?4:lessons[i].track==='c1'?5:lessons[i].track==='c2'?6:lessons[i].track==='travel'?7:8;return rank(a)-rank(b)||(rank(a)===0?foundationOrder.indexOf(a)-foundationOrder.indexOf(b):a-b)});
@@ -214,7 +214,48 @@ let activeTrack='foundation';
 function lessonMatchesTrack(i,track){if(track==='all')return true;return String(lessons[i].track||'')===track}
 function selectTrack(track,shouldScroll=true){activeTrack=track;document.querySelectorAll('.level[data-track]').forEach(card=>{const active=card.dataset.track===track;card.classList.toggle('current',active);card.setAttribute('aria-pressed',active?'true':'false')});buildLessonList();const first=lessonOrder.find(i=>lessonMatchesTrack(i,track));if(first!==undefined)render(first);else{const content=document.getElementById('lessonContent');if(content)content.innerHTML='<p class="arabic-copy" dir="rtl">لا توجد دروس مسجلة لهذا المستوى حاليًا.</p>'}const layout=document.querySelector('.lessonlayout');if(shouldScroll&&layout)layout.scrollIntoView({behavior:'smooth',block:'start'})}
 function lessonGroup(i){if(lessons[i].track==='travel')return 'دليل السفر · مواقف عملية في البرازيل';if(lessons[i].track==='a1')return 'A1 · أساسيات التواصل اليومي';if(lessons[i].track==='foundation')return 'المستوى التمهيدي · الحروف والنطق والكتابة';if(lessons[i].track==='a2')return 'A2 · الاستقلال في الحياة والسفر بالبرازيل';if(lessons[i].track==='b1')return 'B1 · التواصل المستقل والحكي';if(lessons[i].track==='b2')return 'B2 · العامية والنقاش وفهم الكلام الطبيعي';if(lessons[i].track==='c1')return 'C1 · الإتقان والاحتراف';if(lessons[i].track==='c2')return 'C2 · الدقة والطلاقة والمشروع الختامي';return 'مراجعة وتطبيق'}
-function buildLessonList(){const list=document.getElementById('lessonList');let previous='';const filtered=lessonOrder.filter(i=>lessonMatchesTrack(i,activeTrack));list.innerHTML=filtered.map((lessonIndex,pos)=>{const l=lessons[lessonIndex],groupName=lessonGroup(lessonIndex),group=groupName!==previous?'<div class="lesson-group">'+groupName+'</div>':'';previous=groupName;return group+'<button type="button" class="lessonpick" data-lesson="'+lessonIndex+'" aria-pressed="false">'+lessonNumber(lessonIndex)+'. '+esc(l.title)+'</button>'}).join('');list.querySelectorAll('.lessonpick').forEach(b=>b.addEventListener('click',()=>render(Number(b.dataset.lesson))))}
+// R2 source-text lessons are a real part of the A1 course list, not just a library link.
+let r2LessonGroups=[];
+function buildR2LessonGroups(){
+ const groups=new Map();
+ for(const item of ptbrAudioItems){
+  if(!item||!item.section||!item.pt||!item.gl||!safePtbrAudioPath.test(item.normal||'')||!safePtbrAudioPath.test(item.slow||''))continue;
+  const group=(item.level||'basic')+'|'+item.section;
+  if(!groups.has(group))groups.set(group,{title:item.section,level:item.level,items:[]});
+  groups.get(group).items.push(item);
+ }
+ r2LessonGroups=[...groups.values()];
+}
+function addR2LessonsToList(){
+ const list=document.getElementById('lessonList');
+ if(!list||!ptbrAudioReady||!r2LessonGroups.length||!['a1','a2','b1','b2','travel'].includes(activeTrack))return;
+ const advanced=['b1','b2'].includes(activeTrack);
+ const groups=r2LessonGroups.map((g,i)=>({g,i})).filter(({g})=>advanced?g.level==='advanced':g.level==='basic');
+ if(!groups.length)return;
+ const heading=document.createElement('div');heading.className='lesson-group';heading.textContent='🎧 دروس العبارات المسجلة من R2 — نص + معنى + نطق';
+ list.appendChild(heading);
+ for(const {g,i} of groups){
+  const button=document.createElement('button');button.type='button';button.className='lessonpick';
+  button.textContent=g.title+' ('+g.items.length+' عبارة مسجلة)';
+  button.dataset.r2Lesson=String(i);
+  button.addEventListener('click',()=>renderR2Lesson(i));
+  list.appendChild(button);
+ }
+}
+function renderR2Lesson(i){
+ const group=r2LessonGroups[i];if(!group)return;
+ const content=document.getElementById('lessonContent');if(!content)return;
+ document.querySelectorAll('.lessonpick').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});
+ const chosen=document.querySelector('[data-r2-lesson="'+i+'"]');if(chosen){chosen.classList.add('active');chosen.setAttribute('aria-pressed','true')}
+ const rows=group.items.map((item,n)=>'<article class="r2-phrase" style="border:1px solid #dce6ee;border-radius:12px;padding:14px;margin:12px 0;background:#fff"><strong dir="ltr" lang="pt-BR" style="display:block;text-align:left;font-size:20px">'+esc(item.pt)+'</strong><p dir="rtl" class="arabic-copy">'+rtlText(item.gl)+'</p><div class="listen-controls"><button type="button" class="btn" data-ptbr-human-audio="'+esc(item.normal)+'" data-ptbr-label="'+esc(item.pt)+'">▶ التسجيل العادي</button> <button type="button" class="btn alt" data-ptbr-human-audio="'+esc(item.slow)+'" data-ptbr-label="'+esc(item.pt)+'">🐢 التسجيل البطيء</button> <button type="button" class="btn alt" data-r2-hide="'+n+'">اختبر نفسك: أخفِ المعنى</button></div></article>').join('');
+ content.innerHTML='<h3>🎧 '+rtlText(group.title)+'</h3><p class="arabic-copy">درس من تسجيلات R2 الموجودة بالفعل: اقرأ العبارة، اسمعها عاديًا وببطء، كررها بصوتك، ثم أخفِ المعنى وحاول استرجاعه. النصوص مترابطة مع مسارات الملفات في فهرس المصدر؛ جودة التسجيل لم تُراجع سماعيًا بالكامل.</p><audio id="ptbrHumanAudio" controls preload="none" aria-label="مشغل تسجيلات R2"></audio>'+rows;
+ content.querySelectorAll('[data-r2-hide]').forEach(button=>button.addEventListener('click',()=>{
+  const article=button.closest('.r2-phrase'),meaning=article.querySelector('.arabic-copy');
+  meaning.hidden=!meaning.hidden;button.textContent=meaning.hidden?'اكشف المعنى':'اختبر نفسك: أخفِ المعنى';
+ }));
+ content.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function buildLessonList(){const list=document.getElementById('lessonList');let previous='';const filtered=lessonOrder.filter(i=>lessonMatchesTrack(i,activeTrack));list.innerHTML=filtered.map((lessonIndex,pos)=>{const l=lessons[lessonIndex],groupName=lessonGroup(lessonIndex),group=groupName!==previous?'<div class="lesson-group">'+groupName+'</div>':'';previous=groupName;return group+'<button type="button" class="lessonpick" data-lesson="'+lessonIndex+'" aria-pressed="false">'+lessonNumber(lessonIndex)+'. '+esc(l.title)+'</button>'}).join('');list.querySelectorAll('.lessonpick').forEach(b=>b.addEventListener('click',()=>render(Number(b.dataset.lesson))));addR2LessonsToList()}
 function visualForMeaning(value){const s=String(value||'');const rules=[[/بيت|منزل|سكن|غرفة|باب|مفتاح/,'🏠'],[/قطة/,'🐈'],[/كلب/,'🐕'],[/ماء|ميه|مياه|عطش/,'💧'],[/قهوة/,'☕'],[/شاي/,'🍵'],[/طعام|أكل|وجبة|مطعم|غداء|عشاء/,'🍽️'],[/خبز/,'🍞'],[/تفاح|فاكهة|موز/,'🍎'],[/سيارة|عربية|تاكسي/,'🚗'],[/حافلة|أتوبيس/,'🚌'],[/قطار/,'🚆'],[/طائرة|طيران|مطار|رحلة/,'✈️'],[/فندق/,'🏨'],[/شارع|طريق/,'🛣️'],[/مدينة/,'🏙️'],[/مدرسة/,'🏫'],[/جامعة|تعليم|دراسة/,'🎓'],[/كتاب|قراءة/,'📚'],[/قلم|كتابة/,'✏️'],[/عمل|وظيفة|مكتب/,'💼'],[/طبيب|دكتور|صحة|مرض/,'🩺'],[/صيدلية|دواء|حبوب/,'💊'],[/مستشفى/,'🏥'],[/أسرة|عائلة|أم|أب|أخ|أخت/,'👨‍👩‍👧'],[/صديق|صداقة/,'🤝'],[/حب/,'❤️'],[/سعيد|فرح|سعادة/,'😊'],[/حزين/,'😢'],[/وقت|ساعة|موعد/,'🕒'],[/يوم|صباح/,'🌞'],[/ليل|مساء/,'🌙'],[/شمس/,'☀️'],[/مطر|طقس|جو/,'🌦️'],[/بحر|محيط/,'🌊'],[/شاطئ/,'🏖️'],[/شجرة|حديقة|نبات/,'🌳'],[/مال|نقود|سعر|شراء|بيع/,'💰'],[/هاتف|تليفون|اتصال/,'📱'],[/حاسوب|كمبيوتر/,'💻'],[/موسيقى|أغنية/,'🎵'],[/رياضة|كرة/,'⚽'],[/ملابس|قميص|حذاء|جزمة/,'👕']];const hit=rules.find(([re])=>re.test(s));const emoji=hit?hit[1]:'🖼️';const code=Array.from(emoji).map(ch=>ch.codePointAt(0).toString(16)).join('-');return '<img class="word-picture" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/'+code+'.svg" alt="صورة توضيحية: '+s.replace(/[<>&"]/g,'')+'" loading="lazy" decoding="async">'}
 function renderPtbrVisual(l){const words=(l.words||[]).slice(0,3);const title=esc(l.title);const nodes=words.map((w,i)=>'<g><circle cx="'+(100+i*150)+'" cy="65" r="27" fill="'+(i===0?'#08734f':i===1?'#d5a02b':'#2879a7')+'"/><text x="'+(100+i*150)+'" y="72" text-anchor="middle" fill="#fff" font-size="19" font-weight="700">'+(i+1)+'</text></g>').join('');const chips=words.map(w=>'<div class="ptbr-visual-card"><b dir="ltr" lang="pt-BR">'+esc(w[0])+'</b><strong>'+esc(w[2])+'</strong><small>راجع الصورة والنطق في جدول المفردات بالأسفل</small></div>').join('');return '<section class="ptbr-lesson-visual" aria-label="خريطة كلمات الدرس: '+title+'"><div class="ptbr-visual-head"><span>🇧🇷 APRENDA VISUALMENTE</span><h4>خريطة كلمات الدرس</h4><p>'+title+'</p></div><svg class="ptbr-visual-svg" viewBox="0 0 500 100" role="img" aria-label="'+words.map(w=>esc(w[0])).join('، ')+'"><path d="M100 65 H400" stroke="#cbded5" stroke-width="5"/>'+nodes+'</svg><div class="ptbr-visual-grid">'+chips+'</div><p class="ptbr-visual-tip">💡 الصور الفوتوغرافية لكل مفردة موجودة مرة واحدة في جدول الكلمات بالأسفل؛ اضغط على الكلمة لسماع النطق البرازيلي.</p></section>'}
 
