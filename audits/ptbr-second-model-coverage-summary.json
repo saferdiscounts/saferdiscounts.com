@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "method": "Complete coverage reconciliation of second-model ASR",
+  "note": "ASR exact match is not pronunciation certification; non-match is not proof of defective audio.",
+  "stats": {
+    "totalExpected": 1022,
+    "totalRows": 1022,
+    "unique": 1022,
+    "duplicates": [],
+    "missing": [],
+    "exact": 425,
+    "notExact": 597,
+    "errors": 0,
+    "slowNotLonger": []
+  },
+  "parts": [
+    "audits/ptbr-coverage-part-001-200.json",
+    "audits/ptbr-coverage-part-201-392.json",
+    "audits/ptbr-coverage-part-393-511.json"
+  ]
+}
