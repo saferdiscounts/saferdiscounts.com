@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo ASR cross-check; not phonetic certification.",
+  "results": [
+    {
+      "item": 299,
+      "speed": "normal",
+      "path": "advanced/adv_16_299.mp3",
+      "transcript": "Pusemos.",
+      "duration": 1.103375,
+      "expected": "pusemos",
+      "exactMatch": true
+    },
+    {
+      "item": 299,
+      "speed": "slow",
+      "path": "advanced/adv_16_299_slow.mp3",
+      "transcript": "Apusemos!",
+      "duration": 1.3166875,
+      "expected": "pusemos",
+      "exactMatch": false
+    },
+    {
+      "item": 300,
+      "speed": "normal",
+      "path": "advanced/adv_16_300.mp3",
+      "transcript": "puseram.",
+      "duration": 1.039375,
+      "expected": "puseram",
+      "exactMatch": true
+    },
+    {
+      "item": 300,
+      "speed": "slow",
+      "path": "advanced/adv_16_300_slow.mp3",
+      "transcript": "Puseram.",
+      "duration": 1.295375,
+      "expected": "puseram",
+      "exactMatch": true
+    },
+    {
+      "item": 301,
+      "speed": "normal",
+      "path": "advanced/adv_16_301.mp3",
+      "transcript": "Voor jouw gielronding.",
+      "duration": 1.423375,
+      "expected": "Fui ao Rio ontem",
+      "exactMatch": false
+    },
+    {
+      "item": 301,
+      "speed": "slow",
+      "path": "advanced/adv_16_301_slow.mp3",
+      "transcript": "Three out here one thing",
+      "duration": 1.978,
+      "expected": "Fui ao Rio ontem",
+      "exactMatch": false
+    },
+    {
+      "item": 302,
+      "speed": "normal",
+      "path": "advanced/adv_17_302.mp3",
+      "transcript": "Partia!",
+      "duration": 1.039375,
+      "expected": "partia",
+      "exactMatch": true
+    },
+    {
+      "item": 302,
+      "speed": "slow",
+      "path": "advanced/adv_17_302_slow.mp3",
+      "transcript": "A part of this year.",
+      "duration": 1.359375,
+      "expected": "partia",
+      "exactMatch": false
+    },
+    {
+      "item": 303,
+      "speed": "normal",
+      "path": "advanced/adv_17_303.mp3",
+      "transcript": "Komm hier!",
+      "duration": 0.9326875,
+      "expected": "comia",
+      "exactMatch": false
+    },
+    {
+      "item": 303,
+      "speed": "slow",
+      "path": "advanced/adv_17_303_slow.mp3",
+      "transcript": "Come here",
+      "duration": 1.21,
+      "expected": "comia",
+      "exactMatch": false
+    },
+    {
+      "item": 304,
+      "speed": "normal",
+      "path": "advanced/adv_17_304.mp3",
+      "transcript": "Falava.",
+      "duration": 0.9966875,
+      "expected": "falava",
+      "exactMatch": true
+    },
+    {
+      "item": 304,
+      "speed": "slow",
+      "path": "advanced/adv_17_304_slow.mp3",
+      "transcript": "The falavas.",
+      "duration": 1.3166875,
+      "expected": "falava",
+      "exactMatch": false
+    },
+    {
+      "item": 305,
+      "speed": "normal",
+      "path": "advanced/adv_17_305.mp3",
+      "transcript": "Partíamos!",
+      "duration": 1.231375,
+      "expected": "partíamos",
+      "exactMatch": true
+    },
+    {
+      "item": 305,
+      "speed": "slow",
+      "path": "advanced/adv_17_305_slow.mp3",
+      "transcript": "E para ti, amos.",
+      "duration": 1.594,
+      "expected": "partíamos",
+      "exactMatch": false
+    },
+    {
+      "item": 306,
+      "speed": "normal",
+      "path": "advanced/adv_17_306.mp3",
+      "transcript": "Comíamos.",
+      "duration": 1.103375,
+      "expected": "comíamos",
+      "exactMatch": true
+    },
+    {
+      "item": 306,
+      "speed": "slow",
+      "path": "advanced/adv_17_306_slow.mp3",
+      "transcript": "A comíamos.",
+      "duration": 1.4446875,
+      "expected": "comíamos",
+      "exactMatch": false
+    },
+    {
+      "item": 307,
+      "speed": "normal",
+      "path": "advanced/adv_17_307.mp3",
+      "transcript": "Falávamos.",
+      "duration": 1.146,
+      "expected": "falávamos",
+      "exactMatch": true
+    },
+    {
+      "item": 307,
+      "speed": "slow",
+      "path": "advanced/adv_17_307_slow.mp3",
+      "transcript": "e falávamos",
+      "duration": 1.487375,
+      "expected": "falávamos",
+      "exactMatch": false
+    },
+    {
+      "item": 308,
+      "speed": "normal",
+      "path": "advanced/adv_17_308.mp3",
+      "transcript": "Partião.",
+      "duration": 1.103375,
+      "expected": "partiam",
+      "exactMatch": false
+    },
+    {
+      "item": 308,
+      "speed": "slow",
+      "path": "advanced/adv_17_308_slow.mp3",
+      "transcript": "Aparatilhão.",
+      "duration": 1.466,
+      "expected": "partiam",
+      "exactMatch": false
+    },
+    {
+      "item": 309,
+      "speed": "normal",
+      "path": "advanced/adv_17_309.mp3",
+      "transcript": "Comiam.",
+      "duration": 1.103375,
+      "expected": "comiam",
+      "exactMatch": true
+    },
+    {
+      "item": 309,
+      "speed": "slow",
+      "path": "advanced/adv_17_309_slow.mp3",
+      "transcript": "A-C-O-M-E-O-O",
+      "duration": 1.487375,
+      "expected": "comiam",
+      "exactMatch": false
+    },
+    {
+      "item": 310,
+      "speed": "normal",
+      "path": "advanced/adv_17_310.mp3",
+      "transcript": "falavam",
+      "duration": 1.103375,
+      "expected": "falavam",
+      "exactMatch": true
+    },
+    {
+      "item": 310,
+      "speed": "slow",
+      "path": "advanced/adv_17_310_slow.mp3",
+      "transcript": "Eles falavam.",
+      "duration": 1.402,
+      "expected": "falavam",
+      "exactMatch": false
+    },
+    {
+      "item": 311,
+      "speed": "normal",
+      "path": "advanced/adv_17_311.mp3",
+      "transcript": "Better.",
+      "duration": 0.7406875,
+      "expected": "era",
+      "exactMatch": false
+    },
+    {
+      "item": 311,
+      "speed": "slow",
+      "path": "advanced/adv_17_311_slow.mp3",
+      "transcript": "Netherlands",
+      "duration": 1.018,
+      "expected": "era",
+      "exactMatch": false
+    },
+    {
+      "item": 312,
+      "speed": "normal",
+      "path": "advanced/adv_17_312.mp3",
+      "transcript": "Éramos...",
+      "duration": 0.954,
+      "expected": "éramos",
+      "exactMatch": true
+    },
+    {
+      "item": 312,
+      "speed": "slow",
+      "path": "advanced/adv_17_312_slow.mp3",
+      "transcript": "E éramos.",
+      "duration": 1.167375,
+      "expected": "éramos",
+      "exactMatch": false
+    },
+    {
+      "item": 313,
+      "speed": "normal",
+      "path": "advanced/adv_17_313.mp3",
+      "transcript": "Tinha.",
+      "duration": 0.89,
+      "expected": "tinha",
+      "exactMatch": true
+    },
+    {
+      "item": 313,
+      "speed": "slow",
+      "path": "advanced/adv_17_313_slow.mp3",
+      "transcript": "Atchínia.",
+      "duration": 1.167375,
+      "expected": "tinha",
+      "exactMatch": false
+    },
+    {
+      "item": 314,
+      "speed": "normal",
+      "path": "advanced/adv_17_314.mp3",
+      "transcript": "Tínhamos.",
+      "duration": 1.0606875,
+      "expected": "tínhamos",
+      "exactMatch": true
+    },
+    {
+      "item": 314,
+      "speed": "slow",
+      "path": "advanced/adv_17_314_slow.mp3",
+      "transcript": "Atinhamos.",
+      "duration": 1.274,
+      "expected": "tínhamos",
+      "exactMatch": false
+    },
+    {
+      "item": 315,
+      "speed": "normal",
+      "path": "advanced/adv_17_315.mp3",
+      "transcript": "Vinha.",
+      "duration": 0.8046875,
+      "expected": "vinha",
+      "exactMatch": true
+    },
+    {
+      "item": 315,
+      "speed": "slow",
+      "path": "advanced/adv_17_315_slow.mp3",
+      "transcript": "Винья.",
+      "duration": 1.082,
+      "expected": "vinha",
+      "exactMatch": false
+    },
+    {
+      "item": 316,
+      "speed": "normal",
+      "path": "advanced/adv_17_316.mp3",
+      "transcript": "Vinhamos.",
+      "duration": 1.0606875,
+      "expected": "vínhamos",
+      "exactMatch": true
+    },
+    {
+      "item": 316,
+      "speed": "slow",
+      "path": "advanced/adv_17_316_slow.mp3",
+      "transcript": "Vinhemos.",
+      "duration": 1.295375,
+      "expected": "vínhamos",
+      "exactMatch": false
+    },
+    {
+      "item": 317,
+      "speed": "normal",
+      "path": "advanced/adv_17_317.mp3",
+      "transcript": "Porn yet?",
+      "duration": 0.911375,
+      "expected": "punha",
+      "exactMatch": false
+    },
+    {
+      "item": 317,
+      "speed": "slow",
+      "path": "advanced/adv_17_317_slow.mp3",
+      "transcript": "A-poo-n-yes.",
+      "duration": 1.231375,
+      "expected": "punha",
+      "exactMatch": false
+    },
+    {
+      "item": 318,
+      "speed": "normal",
+      "path": "advanced/adv_17_318.mp3",
+      "transcript": "Punhamos!",
+      "duration": 1.082,
+      "expected": "púnhamos",
+      "exactMatch": true
+    },
+    {
+      "item": 318,
+      "speed": "slow",
+      "path": "advanced/adv_17_318_slow.mp3",
+      "transcript": "Apulhemos.",
+      "duration": 1.423375,
+      "expected": "púnhamos",
+      "exactMatch": false
+    },
+    {
+      "item": 319,
+      "speed": "normal",
+      "path": "advanced/adv_17_319.mp3",
+      "transcript": "Quando eu era criança, morava no Cairo.",
+      "duration": 2.426,
+      "expected": "Quando eu era criança, morava no Cairo.",
+      "exactMatch": true
+    },
+    {
+      "item": 319,
+      "speed": "slow",
+      "path": "advanced/adv_17_319_slow.mp3",
+      "transcript": "De quando eu era criança, morava no Cairo.",
+      "duration": 3.471375,
+      "expected": "Quando eu era criança, morava no Cairo.",
+      "exactMatch": false
+    },
+    {
+      "item": 320,
+      "speed": "normal",
+      "path": "advanced/adv_17_320.mp3",
+      "transcript": "Ele trabalhava todos os dias.",
+      "duration": 2.426,
+      "expected": "Ele trabalhava todos os dias.",
+      "exactMatch": true
+    },
+    {
+      "item": 320,
+      "speed": "slow",
+      "path": "advanced/adv_17_320_slow.mp3",
+      "transcript": "Ele trabalhava todos os dias.",
+      "duration": 3.386,
+      "expected": "Ele trabalhava todos os dias.",
+      "exactMatch": true
+    },
+    {
+      "item": 321,
+      "speed": "normal",
+      "path": "advanced/adv_18_321.mp3",
+      "transcript": "FALER",
+      "duration": 0.9326875,
+      "expected": "falar",
+      "exactMatch": false
+    },
+    {
+      "item": 321,
+      "speed": "slow",
+      "path": "advanced/adv_18_321_slow.mp3",
+      "transcript": "E falar.",
+      "duration": 1.1246875,
+      "expected": "falar",
+      "exactMatch": false
+    },
+    {
+      "item": 322,
+      "speed": "normal",
+      "path": "advanced/adv_18_322.mp3",
+      "transcript": "Falarei.",
+      "duration": 1.0606875,
+      "expected": "falarei",
+      "exactMatch": true
+    },
+    {
+      "item": 322,
+      "speed": "slow",
+      "path": "advanced/adv_18_322_slow.mp3",
+      "transcript": "Falarei",
+      "duration": 1.338,
+      "expected": "falarei",
+      "exactMatch": true
+    },
+    {
+      "item": 323,
+      "speed": "normal",
+      "path": "advanced/adv_18_323.mp3",
+      "transcript": "Falarei.",
+      "duration": 0.975375,
+      "expected": "falará",
+      "exactMatch": false
+    },
+    {
+      "item": 323,
+      "speed": "slow",
+      "path": "advanced/adv_18_323_slow.mp3",
+      "transcript": "F-A-L-E-D-A-S",
+      "duration": 1.2526875,
+      "expected": "falará",
+      "exactMatch": false
+    }
+  ]
+}
