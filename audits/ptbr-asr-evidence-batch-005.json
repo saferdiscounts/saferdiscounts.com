@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct R2 object API and Workers AI @cf/openai/whisper",
+  "note": "ASR observations only; short words can be misrecognized or hallucinated. Paths cross-checked with audio-text-index-ptbr.json.",
+  "results": [
+    {
+      "path": "basic/bas_03_049.mp3",
+      "transcript": "Estou no Rio de Janeiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_03_049_slow.mp3",
+      "transcript": "Estou no Rio de Janeiro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_050.mp3",
+      "transcript": "Bye, Tzu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_050_slow.mp3",
+      "transcript": "Die Partizu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_051.mp3",
+      "transcript": "Come with it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_051_slow.mp3",
+      "transcript": "Det kommer ut.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_052.mp3",
+      "transcript": "Follow",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_052_slow.mp3",
+      "transcript": "Desfile-lo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_053.mp3",
+      "transcript": "Bye to you!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_053_slow.mp3",
+      "transcript": "I'll bar the two.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_054.mp3",
+      "transcript": "Call me.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_054_slow.mp3",
+      "transcript": "You call me you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_055.mp3",
+      "transcript": "File it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_055_slow.mp3",
+      "transcript": "If I'll live.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_056.mp3",
+      "transcript": "Partimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_056_slow.mp3",
+      "transcript": "A parte de Chimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_057.mp3",
+      "transcript": "Comemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_057_slow.mp3",
+      "transcript": "É como vemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_058.mp3",
+      "transcript": "Falamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_058_slow.mp3",
+      "transcript": "E falamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_059.mp3",
+      "transcript": "part of the team.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_059_slow.mp3",
+      "transcript": "to part of things.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_060.mp3",
+      "transcript": "Cummings.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_060_slow.mp3",
+      "transcript": "Accomings",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_061.mp3",
+      "transcript": "發了一張",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_061_slow.mp3",
+      "transcript": "Esfala, Lânion!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_062.mp3",
+      "transcript": "謝謝觀看",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_062_slow.mp3",
+      "transcript": "とてあげよう",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_063.mp3",
+      "transcript": "saying",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_063_slow.mp3",
+      "transcript": "That's it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_064.mp3",
+      "transcript": "Stay out of it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_064_slow.mp3",
+      "transcript": "Tot de heren.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
