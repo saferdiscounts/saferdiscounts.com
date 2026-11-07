@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 408,
+    "end": 421
+  },
+  "results": [
+    {
+      "path": "advanced/adv_24_408.mp3",
+      "transcript": "Passa por ti.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_408_slow.mp3",
+      "transcript": "Passa a borda aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_409.mp3",
+      "transcript": "V-Store.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_409_slow.mp3",
+      "transcript": "A vristo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_410.mp3",
+      "transcript": "Passage in.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_410_slow.mp3",
+      "transcript": "O passagem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_411.mp3",
+      "transcript": "Zimbara aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_411_slow.mp3",
+      "transcript": "Zimbara aqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_412.mp3",
+      "transcript": "Bagaging",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_412_slow.mp3",
+      "transcript": "do barragem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_413.mp3",
+      "transcript": "Bagagem de mão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_413_slow.mp3",
+      "transcript": "do bagagente de mão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_414.mp3",
+      "transcript": "Check in!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_414_slow.mp3",
+      "transcript": "Eu sei que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_415.mp3",
+      "transcript": "Portão de embarque.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_415_slow.mp3",
+      "transcript": "do portão de embarque.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_416.mp3",
+      "transcript": "Wygląda.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_416_slow.mp3",
+      "transcript": "You vote.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_417.mp3",
+      "transcript": "Atraso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_417_slow.mp3",
+      "transcript": "em atraso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_418.mp3",
+      "transcript": "Cancelado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_418_slow.mp3",
+      "transcript": "E cancelado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_419.mp3",
+      "transcript": "Auf undige!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_419_slow.mp3",
+      "transcript": "Isso é o fã diga!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_420.mp3",
+      "transcript": "Send you out with the Clara.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_420_slow.mp3",
+      "transcript": "Senho algo a declarar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_421.mp3",
+      "transcript": "Não tenho nada a declarar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_24_421_slow.mp3",
+      "transcript": "Não tenho nada a declarar.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
