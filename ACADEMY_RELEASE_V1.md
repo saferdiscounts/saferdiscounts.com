@@ -126,3 +126,15 @@ This batch shifts from merely *counting audio assets* to **producing actual new 
 - Tests assert exact matching to the 160 authoring targets, no duplicate IDs or old recorded source texts, no unspeakable slash/ellipsis in final takes, and 40 nonduplicate new conversation turns.
 
 **Deliberate boundary:** The 40 new contextual dialogue sentences improve learner pedagogy. They are **not represented as already-recorded speech**, and not silently added to the fixed 160-source voice-production pack. The 164 takes are scripts for production, not a license to call synthetic TTS "human".
+
+## Brazilian bilingual transcripts for all existing audio — 2026-11-07
+
+**User goal:** every existing Brazilian audio pair must have its corresponding written Portuguese and clear Arabic meaning, visible to the learner at playback.
+
+**Delivered:** `audio-text-index-ptbr.json` contains the **511 normal+slow source audio pairs** from R2; all 511 now have a written Portuguese transcription (`pt`) and non-empty Arabic teaching meaning (`gl`). Of those, **277** Arabic meanings were already in the original R2 source manifest, and **234** formerly missing meanings were newly authored as Arabic educational drafts. These 234 come from **215 distinct phrases**; repeated Portuguese forms reuse the same draft gloss. The independent draft meanings are stored in `ptbr-audio-glossary-supplement.json`, with exact source-text keys, record counts, and an explicit **not human-reviewed** label.
+
+Each entry has a provenance marker (`r2-original-manifest` or `saferdiscounts-arabic-editorial-draft`). The **original remote R2 manifest still has 234 unglossed entries**; the enriched site index is not represented as an update to that remote object. Existing sound keys, 511 normal/slow pairs, and original Portuguese text are unchanged. The earlier 94/857 *exact-source correspondence to academy vocabulary* metric remains unchanged because filling meanings does not add recordings.
+
+**Learner experience:** `ptbr-pronunciation.html` loads the full bilingual same-origin index before playing existing remote audio, with R2 bridge fallback if the index is unavailable. All 511 rows show Portuguese and Arabic by default. An **optional listen-before-reveal practice** hides both texts during listening, revealing them only when the student selects “اكشف النص والمعنى”; it is a memory exercise, not an accredited hearing assessment. `ptbr-audio-review.html` labels the 234 new meanings as drafts and allows reviewers to filter them for linguistic QA. `academy-audio-status.html?lang=ptbr` reports bilingual written-text coverage separately from source-audio correspondence.
+
+**Quality gates:** a regression test recomputes all 234 editorial rows and the original 277 source rows, prevents blank Portuguese/Arabic at any of the 511 audio rows, and checks safe relative MP3 paths and listening quiz answer concealment. **The newly authored Arabic explanations are not yet certified by a Brazilian Portuguese specialist, and the MP3 recordings have not all been human-audited for correct speech.** Missing new audio for the rest of the academy still requires separate production.
