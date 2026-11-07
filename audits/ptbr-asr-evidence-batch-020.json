@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 321,
+    "end": 333
+  },
+  "results": [
+    {
+      "path": "advanced/adv_18_321.mp3",
+      "transcript": "Fuller.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_321_slow.mp3",
+      "transcript": "be followed.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_322.mp3",
+      "transcript": "Follady.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_322_slow.mp3",
+      "transcript": "فلا رئيز",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_323.mp3",
+      "transcript": "Follow the day.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_323_slow.mp3",
+      "transcript": "Thank you for letting us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_324.mp3",
+      "transcript": "Falaremos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_324_slow.mp3",
+      "transcript": "e falaremos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_325.mp3",
+      "transcript": "Fala aí, irmão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_325_slow.mp3",
+      "transcript": "Fala adeus!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_326.mp3",
+      "transcript": "Ghostar",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_326_slow.mp3",
+      "transcript": "You can go star.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_327.mp3",
+      "transcript": "Falaria.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_327_slow.mp3",
+      "transcript": "بفغة لارية",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_328.mp3",
+      "transcript": "Gostaria.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_328_slow.mp3",
+      "transcript": "Gostaria!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_329.mp3",
+      "transcript": "Falaríamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_329_slow.mp3",
+      "transcript": "e falaríamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_330.mp3",
+      "transcript": "Gostaríamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_330_slow.mp3",
+      "transcript": "Gostaríamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_331.mp3",
+      "transcript": "e a demonstrão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_331_slow.mp3",
+      "transcript": "Lei à demostão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_332.mp3",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_332_slow.mp3",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_333.mp3",
+      "transcript": "Você poderia me ajudar?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_18_333_slow.mp3",
+      "transcript": "Você poderia me ajudar?",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
