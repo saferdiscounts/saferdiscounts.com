@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo ASR cross-check; not phonetic certification.",
+  "results": [
+    {
+      "item": 374,
+      "speed": "normal",
+      "path": "advanced/adv_22_374.mp3",
+      "transcript": "Mais os",
+      "duration": 1.103375,
+      "expected": "+ os",
+      "exactMatch": false
+    },
+    {
+      "item": 374,
+      "speed": "slow",
+      "path": "advanced/adv_22_374_slow.mp3",
+      "transcript": "E mais os.",
+      "duration": 1.3806875,
+      "expected": "+ os",
+      "exactMatch": false
+    },
+    {
+      "item": 375,
+      "speed": "normal",
+      "path": "advanced/adv_22_375.mp3",
+      "transcript": "Mais asks,",
+      "duration": 1.103375,
+      "expected": "+ as",
+      "exactMatch": false
+    },
+    {
+      "item": 375,
+      "speed": "slow",
+      "path": "advanced/adv_22_375_slow.mp3",
+      "transcript": "My ass.",
+      "duration": 1.4446875,
+      "expected": "+ as",
+      "exactMatch": false
+    },
+    {
+      "item": 376,
+      "speed": "normal",
+      "path": "advanced/adv_22_376.mp3",
+      "transcript": "Сдох.",
+      "duration": 0.618375,
+      "expected": "do",
+      "exactMatch": false
+    },
+    {
+      "item": 376,
+      "speed": "slow",
+      "path": "advanced/adv_22_376_slow.mp3",
+      "transcript": "Adoro.",
+      "duration": 0.762,
+      "expected": "do",
+      "exactMatch": false
+    },
+    {
+      "item": 377,
+      "speed": "normal",
+      "path": "advanced/adv_22_377.mp3",
+      "transcript": "Дальше.",
+      "duration": 0.593375,
+      "expected": "da",
+      "exactMatch": false
+    },
+    {
+      "item": 377,
+      "speed": "slow",
+      "path": "advanced/adv_22_377_slow.mp3",
+      "transcript": "Да.",
+      "duration": 0.783375,
+      "expected": "da",
+      "exactMatch": false
+    },
+    {
+      "item": 378,
+      "speed": "normal",
+      "path": "advanced/adv_22_378.mp3",
+      "transcript": "Dos.",
+      "duration": 0.693375,
+      "expected": "dos",
+      "exactMatch": true
+    },
+    {
+      "item": 378,
+      "speed": "slow",
+      "path": "advanced/adv_22_378_slow.mp3",
+      "transcript": "É 12.",
+      "duration": 0.8686875,
+      "expected": "dos",
+      "exactMatch": false
+    },
+    {
+      "item": 379,
+      "speed": "normal",
+      "path": "advanced/adv_22_379.mp3",
+      "transcript": "das",
+      "duration": 0.693375,
+      "expected": "das",
+      "exactMatch": true
+    },
+    {
+      "item": 379,
+      "speed": "slow",
+      "path": "advanced/adv_22_379_slow.mp3",
+      "transcript": "Удачу.",
+      "duration": 0.911375,
+      "expected": "das",
+      "exactMatch": false
+    },
+    {
+      "item": 380,
+      "speed": "normal",
+      "path": "advanced/adv_22_380.mp3",
+      "transcript": "No",
+      "duration": 0.618375,
+      "expected": "no",
+      "exactMatch": true
+    },
+    {
+      "item": 380,
+      "speed": "slow",
+      "path": "advanced/adv_22_380_slow.mp3",
+      "transcript": "Ähnung.",
+      "duration": 0.7406875,
+      "expected": "no",
+      "exactMatch": false
+    },
+    {
+      "item": 381,
+      "speed": "normal",
+      "path": "advanced/adv_22_381.mp3",
+      "transcript": "Nacht.",
+      "duration": 0.643375,
+      "expected": "na",
+      "exactMatch": false
+    },
+    {
+      "item": 381,
+      "speed": "slow",
+      "path": "advanced/adv_22_381_slow.mp3",
+      "transcript": "Enough",
+      "duration": 0.783375,
+      "expected": "na",
+      "exactMatch": false
+    },
+    {
+      "item": 382,
+      "speed": "normal",
+      "path": "advanced/adv_22_382.mp3",
+      "transcript": "Nassau",
+      "duration": 0.693375,
+      "expected": "nas",
+      "exactMatch": false
+    },
+    {
+      "item": 382,
+      "speed": "slow",
+      "path": "advanced/adv_22_382_slow.mp3",
+      "transcript": "Nina's",
+      "duration": 0.9326875,
+      "expected": "nas",
+      "exactMatch": false
+    },
+    {
+      "item": 383,
+      "speed": "normal",
+      "path": "advanced/adv_22_383.mp3",
+      "transcript": "Now",
+      "duration": 0.593375,
+      "expected": "ao",
+      "exactMatch": false
+    },
+    {
+      "item": 383,
+      "speed": "slow",
+      "path": "advanced/adv_22_383_slow.mp3",
+      "transcript": "you know",
+      "duration": 0.762,
+      "expected": "ao",
+      "exactMatch": false
+    },
+    {
+      "item": 384,
+      "speed": "normal",
+      "path": "advanced/adv_22_384.mp3",
+      "transcript": "Now let's see.",
+      "duration": 0.718375,
+      "expected": "aos",
+      "exactMatch": false
+    },
+    {
+      "item": 384,
+      "speed": "slow",
+      "path": "advanced/adv_22_384_slow.mp3",
+      "transcript": "He knows.",
+      "duration": 0.911375,
+      "expected": "aos",
+      "exactMatch": false
+    },
+    {
+      "item": 385,
+      "speed": "normal",
+      "path": "advanced/adv_22_385.mp3",
+      "transcript": "last",
+      "duration": 0.719375,
+      "expected": "às",
+      "exactMatch": false
+    },
+    {
+      "item": 385,
+      "speed": "slow",
+      "path": "advanced/adv_22_385_slow.mp3",
+      "transcript": "Linus.",
+      "duration": 0.89,
+      "expected": "às",
+      "exactMatch": false
+    },
+    {
+      "item": 386,
+      "speed": "normal",
+      "path": "advanced/adv_22_386.mp3",
+      "transcript": "pelo",
+      "duration": 0.8046875,
+      "expected": "pelo",
+      "exactMatch": true
+    },
+    {
+      "item": 386,
+      "speed": "slow",
+      "path": "advanced/adv_22_386_slow.mp3",
+      "transcript": "PELU",
+      "duration": 1.039375,
+      "expected": "pelo",
+      "exactMatch": false
+    },
+    {
+      "item": 387,
+      "speed": "normal",
+      "path": "advanced/adv_22_387.mp3",
+      "transcript": "Pela",
+      "duration": 0.826,
+      "expected": "pela",
+      "exactMatch": true
+    },
+    {
+      "item": 387,
+      "speed": "slow",
+      "path": "advanced/adv_22_387_slow.mp3",
+      "transcript": "Pela",
+      "duration": 1.039375,
+      "expected": "pela",
+      "exactMatch": true
+    },
+    {
+      "item": 388,
+      "speed": "normal",
+      "path": "advanced/adv_22_388.mp3",
+      "transcript": "Pelos",
+      "duration": 0.911375,
+      "expected": "pelos",
+      "exactMatch": true
+    },
+    {
+      "item": 388,
+      "speed": "slow",
+      "path": "advanced/adv_22_388_slow.mp3",
+      "transcript": "Apelos.",
+      "duration": 1.082,
+      "expected": "pelos",
+      "exactMatch": false
+    },
+    {
+      "item": 389,
+      "speed": "normal",
+      "path": "advanced/adv_22_389.mp3",
+      "transcript": "Bela's",
+      "duration": 0.911375,
+      "expected": "pelas",
+      "exactMatch": false
+    },
+    {
+      "item": 389,
+      "speed": "slow",
+      "path": "advanced/adv_22_389_slow.mp3",
+      "transcript": "in P.L.A.S.",
+      "duration": 1.082,
+      "expected": "pelas",
+      "exactMatch": false
+    },
+    {
+      "item": 390,
+      "speed": "normal",
+      "path": "advanced/adv_22_390.mp3",
+      "transcript": "Vou ao mercado.",
+      "duration": 1.295375,
+      "expected": "Vou ao mercado.",
+      "exactMatch": true
+    },
+    {
+      "item": 390,
+      "speed": "slow",
+      "path": "advanced/adv_22_390_slow.mp3",
+      "transcript": "E vou ao mercado.",
+      "duration": 1.85,
+      "expected": "Vou ao mercado.",
+      "exactMatch": false
+    },
+    {
+      "item": 391,
+      "speed": "normal",
+      "path": "advanced/adv_22_391.mp3",
+      "transcript": "Estou na praia.",
+      "duration": 1.338,
+      "expected": "Estou na praia.",
+      "exactMatch": true
+    },
+    {
+      "item": 391,
+      "speed": "slow",
+      "path": "advanced/adv_22_391_slow.mp3",
+      "transcript": "Estou na praia.",
+      "duration": 1.914,
+      "expected": "Estou na praia.",
+      "exactMatch": true
+    },
+    {
+      "item": 392,
+      "speed": "normal",
+      "path": "advanced/adv_22_392.mp3",
+      "transcript": "O livro é do professor.",
+      "duration": 1.786,
+      "expected": "O livro é do professor.",
+      "exactMatch": true
+    },
+    {
+      "item": 392,
+      "speed": "slow",
+      "path": "advanced/adv_22_392_slow.mp3",
+      "transcript": "O livro é do professor.",
+      "duration": 2.554,
+      "expected": "O livro é do professor.",
+      "exactMatch": true
+    }
+  ]
+}
