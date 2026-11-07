@@ -37,3 +37,9 @@ test('sentence ordering gives feedback and waits for learner before writing',()=
   assert.match(lab,/next\.addEventListener\('click',startWriting/);
   assert.doesNotMatch(lab,/if\(correct\)\{score\+\+;markKnown\(orderIndex\)\}else\{mistakes\.push\(orderIndex\);rememberError\(orderIndex\)\}\s*startWriting\(\)/);
 });
+
+test('learner flashcards offer normal and slow Brazilian speech separately',()=>{
+  assert.match(lab,/data-play="'\+cardIndex\+'" data-slow="no"/);
+  assert.match(lab,/data-play="'\+cardIndex\+'" data-slow="yes"/);
+  assert.match(lab,/x\.rate=slow\?\.62:\.90/);
+});
