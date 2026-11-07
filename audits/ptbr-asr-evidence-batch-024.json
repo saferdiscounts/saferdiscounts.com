@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 372,
+    "end": 392
+  },
+  "results": [
+    {
+      "path": "advanced/adv_22_372.mp3",
+      "transcript": "Maizo",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_372_slow.mp3",
+      "transcript": "My's old.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_373.mp3",
+      "transcript": "Miser",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_373_slow.mp3",
+      "transcript": "My's Earth.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_374.mp3",
+      "transcript": "Miserus",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_374_slow.mp3",
+      "transcript": "היא מי זעוס.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_375.mp3",
+      "transcript": "Mize us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_375_slow.mp3",
+      "transcript": "Emise S.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_376.mp3",
+      "transcript": "Thanks for watching.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_376_slow.mp3",
+      "transcript": "Ador!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_377.mp3",
+      "transcript": "Thank you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_377_slow.mp3",
+      "transcript": "You're there.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_378.mp3",
+      "transcript": "doce.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_378_slow.mp3",
+      "transcript": "Adouce.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_379.mp3",
+      "transcript": "That's it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_379_slow.mp3",
+      "transcript": "Nudaz.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_380.mp3",
+      "transcript": "No.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_380_slow.mp3",
+      "transcript": "Pannur.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_381.mp3",
+      "transcript": "Nah.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_381_slow.mp3",
+      "transcript": "We know.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_382.mp3",
+      "transcript": "NASA",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_382_slow.mp3",
+      "transcript": "Nina's.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_383.mp3",
+      "transcript": "Now it's",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_383_slow.mp3",
+      "transcript": "You know.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_384.mp3",
+      "transcript": "I'll see you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_384_slow.mp3",
+      "transcript": "He knows.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_385.mp3",
+      "transcript": "Nice.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_385_slow.mp3",
+      "transcript": "You know, it's...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_386.mp3",
+      "transcript": "Beirut.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_386_slow.mp3",
+      "transcript": "Apele-lo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_387.mp3",
+      "transcript": "Bella",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_387_slow.mp3",
+      "transcript": "Isabella",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_388.mp3",
+      "transcript": "Pelos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_388_slow.mp3",
+      "transcript": "Appelus.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_389.mp3",
+      "transcript": "Belas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_389_slow.mp3",
+      "transcript": "Impay-lars.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_390.mp3",
+      "transcript": "Vou ao mercado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_390_slow.mp3",
+      "transcript": "e vou ao mercado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_391.mp3",
+      "transcript": "Estou na praia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_391_slow.mp3",
+      "transcript": "Estou na praia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_392.mp3",
+      "transcript": "O livro é do professor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_22_392_slow.mp3",
+      "transcript": "O livro é do professor.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
