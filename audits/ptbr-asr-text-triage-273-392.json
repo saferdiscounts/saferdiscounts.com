@@ -1,0 +1,1935 @@
+{
+  "schemaVersion": 1,
+  "scope": {
+    "start": 273,
+    "end": 392,
+    "audioCount": 240
+  },
+  "method": "ASR-to-text normalized comparison, not independent pronunciation verification.",
+  "counts": {
+    "asr_mismatch_needs_review": 191,
+    "asr_exact_match": 49
+  },
+  "items": [
+    {
+      "item": 273,
+      "speed": "normal",
+      "path": "advanced/adv_16_273.mp3",
+      "expected": "saber",
+      "transcript": "سبير",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 273,
+      "speed": "slow",
+      "path": "advanced/adv_16_273_slow.mp3",
+      "expected": "saber",
+      "transcript": "Não saber.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 274,
+      "speed": "normal",
+      "path": "advanced/adv_16_274.mp3",
+      "expected": "soube",
+      "transcript": "So be.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 274,
+      "speed": "slow",
+      "path": "advanced/adv_16_274_slow.mp3",
+      "expected": "soube",
+      "transcript": "That's all, B.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 275,
+      "speed": "normal",
+      "path": "advanced/adv_16_275.mp3",
+      "expected": "soubemos",
+      "transcript": "Sobemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 275,
+      "speed": "slow",
+      "path": "advanced/adv_16_275_slow.mp3",
+      "expected": "soubemos",
+      "transcript": "É só o bem-os.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 276,
+      "speed": "normal",
+      "path": "advanced/adv_16_276.mp3",
+      "expected": "souberam",
+      "transcript": "Soberum.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 276,
+      "speed": "slow",
+      "path": "advanced/adv_16_276_slow.mp3",
+      "expected": "souberam",
+      "transcript": "This is so bad, eh?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 277,
+      "speed": "normal",
+      "path": "advanced/adv_16_277.mp3",
+      "expected": "dizer",
+      "transcript": "G-Z.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 277,
+      "speed": "slow",
+      "path": "advanced/adv_16_277_slow.mp3",
+      "expected": "dizer",
+      "transcript": "T'as de vous dire.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 278,
+      "speed": "normal",
+      "path": "advanced/adv_16_278.mp3",
+      "expected": "disse",
+      "transcript": "수고하셨습니다.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 278,
+      "speed": "slow",
+      "path": "advanced/adv_16_278_slow.mp3",
+      "expected": "disse",
+      "transcript": "Adjuí-se, se eu...",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 279,
+      "speed": "normal",
+      "path": "advanced/adv_16_279.mp3",
+      "expected": "dissemos",
+      "transcript": "Dicemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 279,
+      "speed": "slow",
+      "path": "advanced/adv_16_279_slow.mp3",
+      "expected": "dissemos",
+      "transcript": "Adicemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 280,
+      "speed": "normal",
+      "path": "advanced/adv_16_280.mp3",
+      "expected": "disseram",
+      "transcript": "disseram",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 280,
+      "speed": "slow",
+      "path": "advanced/adv_16_280_slow.mp3",
+      "expected": "disseram",
+      "transcript": "Deixe-se ser um.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 281,
+      "speed": "normal",
+      "path": "advanced/adv_16_281.mp3",
+      "expected": "ver",
+      "transcript": "Ver.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 281,
+      "speed": "slow",
+      "path": "advanced/adv_16_281_slow.mp3",
+      "expected": "ver",
+      "transcript": "Alweer.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 282,
+      "speed": "normal",
+      "path": "advanced/adv_16_282.mp3",
+      "expected": "vi",
+      "transcript": "Wir.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 282,
+      "speed": "slow",
+      "path": "advanced/adv_16_282_slow.mp3",
+      "expected": "vi",
+      "transcript": "I've read it.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 283,
+      "speed": "normal",
+      "path": "advanced/adv_16_283.mp3",
+      "expected": "viu",
+      "transcript": "View",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 283,
+      "speed": "slow",
+      "path": "advanced/adv_16_283_slow.mp3",
+      "expected": "viu",
+      "transcript": "Au revoir.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 284,
+      "speed": "normal",
+      "path": "advanced/adv_16_284.mp3",
+      "expected": "vimos",
+      "transcript": "Vimos!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 284,
+      "speed": "slow",
+      "path": "advanced/adv_16_284_slow.mp3",
+      "expected": "vimos",
+      "transcript": "Havimos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 285,
+      "speed": "normal",
+      "path": "advanced/adv_16_285.mp3",
+      "expected": "viram",
+      "transcript": "Wiederhund.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 285,
+      "speed": "slow",
+      "path": "advanced/adv_16_285_slow.mp3",
+      "expected": "viram",
+      "transcript": "Viver, ángãos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 286,
+      "speed": "normal",
+      "path": "advanced/adv_16_286.mp3",
+      "expected": "vir",
+      "transcript": "Vira!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 286,
+      "speed": "slow",
+      "path": "advanced/adv_16_286_slow.mp3",
+      "expected": "vir",
+      "transcript": "Aweer de...",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 287,
+      "speed": "normal",
+      "path": "advanced/adv_16_287.mp3",
+      "expected": "vim",
+      "transcript": "VING!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 287,
+      "speed": "slow",
+      "path": "advanced/adv_16_287_slow.mp3",
+      "expected": "vim",
+      "transcript": "A vinga!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 288,
+      "speed": "normal",
+      "path": "advanced/adv_16_288.mp3",
+      "expected": "veio",
+      "transcript": "Veio!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 288,
+      "speed": "slow",
+      "path": "advanced/adv_16_288_slow.mp3",
+      "expected": "veio",
+      "transcript": "Veio!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 289,
+      "speed": "normal",
+      "path": "advanced/adv_16_289.mp3",
+      "expected": "viemos",
+      "transcript": "Viem-os!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 289,
+      "speed": "slow",
+      "path": "advanced/adv_16_289_slow.mp3",
+      "expected": "viemos",
+      "transcript": "Abreiemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 290,
+      "speed": "normal",
+      "path": "advanced/adv_16_290.mp3",
+      "expected": "vieram",
+      "transcript": "Viajão.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 290,
+      "speed": "slow",
+      "path": "advanced/adv_16_290_slow.mp3",
+      "expected": "vieram",
+      "transcript": "Viaira, honra!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 291,
+      "speed": "normal",
+      "path": "advanced/adv_16_291.mp3",
+      "expected": "dar",
+      "transcript": "Dóriga.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 291,
+      "speed": "slow",
+      "path": "advanced/adv_16_291_slow.mp3",
+      "expected": "dar",
+      "transcript": "Dindar.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 292,
+      "speed": "normal",
+      "path": "advanced/adv_16_292.mp3",
+      "expected": "dei",
+      "transcript": "Day.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 292,
+      "speed": "slow",
+      "path": "advanced/adv_16_292_slow.mp3",
+      "expected": "dei",
+      "transcript": "Tadei!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 293,
+      "speed": "normal",
+      "path": "advanced/adv_16_293.mp3",
+      "expected": "deu",
+      "transcript": "Deal.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 293,
+      "speed": "slow",
+      "path": "advanced/adv_16_293_slow.mp3",
+      "expected": "deu",
+      "transcript": "Adeu!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 294,
+      "speed": "normal",
+      "path": "advanced/adv_16_294.mp3",
+      "expected": "demos",
+      "transcript": "Demos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 294,
+      "speed": "slow",
+      "path": "advanced/adv_16_294_slow.mp3",
+      "expected": "demos",
+      "transcript": "Ademos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 295,
+      "speed": "normal",
+      "path": "advanced/adv_16_295.mp3",
+      "expected": "deram",
+      "transcript": "Deraan hond.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 295,
+      "speed": "slow",
+      "path": "advanced/adv_16_295_slow.mp3",
+      "expected": "deram",
+      "transcript": "De erros.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 296,
+      "speed": "normal",
+      "path": "advanced/adv_16_296.mp3",
+      "expected": "pôr",
+      "transcript": "Board.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 296,
+      "speed": "slow",
+      "path": "advanced/adv_16_296_slow.mp3",
+      "expected": "pôr",
+      "transcript": "I'm bored.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 297,
+      "speed": "normal",
+      "path": "advanced/adv_16_297.mp3",
+      "expected": "pus",
+      "transcript": "Bullseye.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 297,
+      "speed": "slow",
+      "path": "advanced/adv_16_297_slow.mp3",
+      "expected": "pus",
+      "transcript": "Após!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 298,
+      "speed": "normal",
+      "path": "advanced/adv_16_298.mp3",
+      "expected": "pôs",
+      "transcript": "Bullets.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 298,
+      "speed": "slow",
+      "path": "advanced/adv_16_298_slow.mp3",
+      "expected": "pôs",
+      "transcript": "Impose.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 299,
+      "speed": "normal",
+      "path": "advanced/adv_16_299.mp3",
+      "expected": "pusemos",
+      "transcript": "Pusemos!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 299,
+      "speed": "slow",
+      "path": "advanced/adv_16_299_slow.mp3",
+      "expected": "pusemos",
+      "transcript": "Aposemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 300,
+      "speed": "normal",
+      "path": "advanced/adv_16_300.mp3",
+      "expected": "puseram",
+      "transcript": "Puseram!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 300,
+      "speed": "slow",
+      "path": "advanced/adv_16_300_slow.mp3",
+      "expected": "puseram",
+      "transcript": "Papuzeram!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 301,
+      "speed": "normal",
+      "path": "advanced/adv_16_301.mp3",
+      "expected": "Fui ao Rio ontem",
+      "transcript": "for your heal-on-ting.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 301,
+      "speed": "slow",
+      "path": "advanced/adv_16_301_slow.mp3",
+      "expected": "Fui ao Rio ontem",
+      "transcript": "Fui ouw hio onteing.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 302,
+      "speed": "normal",
+      "path": "advanced/adv_17_302.mp3",
+      "expected": "partia",
+      "transcript": "Bye, see ya!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 302,
+      "speed": "slow",
+      "path": "advanced/adv_17_302_slow.mp3",
+      "expected": "partia",
+      "transcript": "Hoe gaat het zien?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 303,
+      "speed": "normal",
+      "path": "advanced/adv_17_303.mp3",
+      "expected": "comia",
+      "transcript": "Komm, ihr!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 303,
+      "speed": "slow",
+      "path": "advanced/adv_17_303_slow.mp3",
+      "expected": "comia",
+      "transcript": "Akklamir.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 304,
+      "speed": "normal",
+      "path": "advanced/adv_17_304.mp3",
+      "expected": "falava",
+      "transcript": "FLAVE IT!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 304,
+      "speed": "slow",
+      "path": "advanced/adv_17_304_slow.mp3",
+      "expected": "falava",
+      "transcript": "Diferá Lavas.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 305,
+      "speed": "normal",
+      "path": "advanced/adv_17_305.mp3",
+      "expected": "partíamos",
+      "transcript": "Partíamos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 305,
+      "speed": "slow",
+      "path": "advanced/adv_17_305_slow.mp3",
+      "expected": "partíamos",
+      "transcript": "e barratíamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 306,
+      "speed": "normal",
+      "path": "advanced/adv_17_306.mp3",
+      "expected": "comíamos",
+      "transcript": "Comemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 306,
+      "speed": "slow",
+      "path": "advanced/adv_17_306_slow.mp3",
+      "expected": "comíamos",
+      "transcript": "Acormi-mos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 307,
+      "speed": "normal",
+      "path": "advanced/adv_17_307.mp3",
+      "expected": "falávamos",
+      "transcript": "Falávermos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 307,
+      "speed": "slow",
+      "path": "advanced/adv_17_307_slow.mp3",
+      "expected": "falávamos",
+      "transcript": "e falávamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 308,
+      "speed": "normal",
+      "path": "advanced/adv_17_308.mp3",
+      "expected": "partiam",
+      "transcript": "Batião.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 308,
+      "speed": "slow",
+      "path": "advanced/adv_17_308_slow.mp3",
+      "expected": "partiam",
+      "transcript": "The Baratillo.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 309,
+      "speed": "normal",
+      "path": "advanced/adv_17_309.mp3",
+      "expected": "comiam",
+      "transcript": "¡Comíos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 309,
+      "speed": "slow",
+      "path": "advanced/adv_17_309_slow.mp3",
+      "expected": "comiam",
+      "transcript": "Accombe your own.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 310,
+      "speed": "normal",
+      "path": "advanced/adv_17_310.mp3",
+      "expected": "falavam",
+      "transcript": "Falavon!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 310,
+      "speed": "slow",
+      "path": "advanced/adv_17_310_slow.mp3",
+      "expected": "falavam",
+      "transcript": "It's for a live-room.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 311,
+      "speed": "normal",
+      "path": "advanced/adv_17_311.mp3",
+      "expected": "era",
+      "transcript": "Thank you very much.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 311,
+      "speed": "slow",
+      "path": "advanced/adv_17_311_slow.mp3",
+      "expected": "era",
+      "transcript": "Nailed it us.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 312,
+      "speed": "normal",
+      "path": "advanced/adv_17_312.mp3",
+      "expected": "éramos",
+      "transcript": "Era músculo.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 312,
+      "speed": "slow",
+      "path": "advanced/adv_17_312_slow.mp3",
+      "expected": "éramos",
+      "transcript": "E éramos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 313,
+      "speed": "normal",
+      "path": "advanced/adv_17_313.mp3",
+      "expected": "tinha",
+      "transcript": "Czyń, ja...",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 313,
+      "speed": "slow",
+      "path": "advanced/adv_17_313_slow.mp3",
+      "expected": "tinha",
+      "transcript": "Patrzyj niej.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 314,
+      "speed": "normal",
+      "path": "advanced/adv_17_314.mp3",
+      "expected": "tínhamos",
+      "transcript": "Tchinyamos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 314,
+      "speed": "slow",
+      "path": "advanced/adv_17_314_slow.mp3",
+      "expected": "tínhamos",
+      "transcript": "Tachinha-mos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 315,
+      "speed": "normal",
+      "path": "advanced/adv_17_315.mp3",
+      "expected": "vinha",
+      "transcript": "Vinha!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 315,
+      "speed": "slow",
+      "path": "advanced/adv_17_315_slow.mp3",
+      "expected": "vinha",
+      "transcript": "В Виня!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 316,
+      "speed": "normal",
+      "path": "advanced/adv_17_316.mp3",
+      "expected": "vínhamos",
+      "transcript": "Víneamos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 316,
+      "speed": "slow",
+      "path": "advanced/adv_17_316_slow.mp3",
+      "expected": "vínhamos",
+      "transcript": "A vinhamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 317,
+      "speed": "normal",
+      "path": "advanced/adv_17_317.mp3",
+      "expected": "punha",
+      "transcript": "Poo-n-yat!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 317,
+      "speed": "slow",
+      "path": "advanced/adv_17_317_slow.mp3",
+      "expected": "punha",
+      "transcript": "A pool of jazz.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 318,
+      "speed": "normal",
+      "path": "advanced/adv_17_318.mp3",
+      "expected": "púnhamos",
+      "transcript": "Błynie mózg.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 318,
+      "speed": "slow",
+      "path": "advanced/adv_17_318_slow.mp3",
+      "expected": "púnhamos",
+      "transcript": "Apluñemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 319,
+      "speed": "normal",
+      "path": "advanced/adv_17_319.mp3",
+      "expected": "Quando eu era criança, morava no Cairo.",
+      "transcript": "Quando eu era criança, morava no caíro.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 319,
+      "speed": "slow",
+      "path": "advanced/adv_17_319_slow.mp3",
+      "expected": "Quando eu era criança, morava no Cairo.",
+      "transcript": "de quando eu era criança morava no caíro.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 320,
+      "speed": "normal",
+      "path": "advanced/adv_17_320.mp3",
+      "expected": "Ele trabalhava todos os dias.",
+      "transcript": "Ele trabalhava todos os dias.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 320,
+      "speed": "slow",
+      "path": "advanced/adv_17_320_slow.mp3",
+      "expected": "Ele trabalhava todos os dias.",
+      "transcript": "Ele trabalhava todos os dias.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 321,
+      "speed": "normal",
+      "path": "advanced/adv_18_321.mp3",
+      "expected": "falar",
+      "transcript": "Fuller.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 321,
+      "speed": "slow",
+      "path": "advanced/adv_18_321_slow.mp3",
+      "expected": "falar",
+      "transcript": "be followed.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 322,
+      "speed": "normal",
+      "path": "advanced/adv_18_322.mp3",
+      "expected": "falarei",
+      "transcript": "Follady.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 322,
+      "speed": "slow",
+      "path": "advanced/adv_18_322_slow.mp3",
+      "expected": "falarei",
+      "transcript": "فلا رئيز",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 323,
+      "speed": "normal",
+      "path": "advanced/adv_18_323.mp3",
+      "expected": "falará",
+      "transcript": "Follow the day.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 323,
+      "speed": "slow",
+      "path": "advanced/adv_18_323_slow.mp3",
+      "expected": "falará",
+      "transcript": "Thank you for letting us.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 324,
+      "speed": "normal",
+      "path": "advanced/adv_18_324.mp3",
+      "expected": "falaremos",
+      "transcript": "Falaremos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 324,
+      "speed": "slow",
+      "path": "advanced/adv_18_324_slow.mp3",
+      "expected": "falaremos",
+      "transcript": "e falaremos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 325,
+      "speed": "normal",
+      "path": "advanced/adv_18_325.mp3",
+      "expected": "falarão",
+      "transcript": "Fala aí, irmão.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 325,
+      "speed": "slow",
+      "path": "advanced/adv_18_325_slow.mp3",
+      "expected": "falarão",
+      "transcript": "Fala adeus!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 326,
+      "speed": "normal",
+      "path": "advanced/adv_18_326.mp3",
+      "expected": "gostar",
+      "transcript": "Ghostar",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 326,
+      "speed": "slow",
+      "path": "advanced/adv_18_326_slow.mp3",
+      "expected": "gostar",
+      "transcript": "You can go star.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 327,
+      "speed": "normal",
+      "path": "advanced/adv_18_327.mp3",
+      "expected": "falaria",
+      "transcript": "Falaria.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 327,
+      "speed": "slow",
+      "path": "advanced/adv_18_327_slow.mp3",
+      "expected": "falaria",
+      "transcript": "بفغة لارية",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 328,
+      "speed": "normal",
+      "path": "advanced/adv_18_328.mp3",
+      "expected": "gostaria",
+      "transcript": "Gostaria.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 328,
+      "speed": "slow",
+      "path": "advanced/adv_18_328_slow.mp3",
+      "expected": "gostaria",
+      "transcript": "Gostaria!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 329,
+      "speed": "normal",
+      "path": "advanced/adv_18_329.mp3",
+      "expected": "falaríamos",
+      "transcript": "Falaríamos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 329,
+      "speed": "slow",
+      "path": "advanced/adv_18_329_slow.mp3",
+      "expected": "falaríamos",
+      "transcript": "e falaríamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 330,
+      "speed": "normal",
+      "path": "advanced/adv_18_330.mp3",
+      "expected": "gostaríamos",
+      "transcript": "Gostaríamos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 330,
+      "speed": "slow",
+      "path": "advanced/adv_18_330_slow.mp3",
+      "expected": "gostaríamos",
+      "transcript": "Gostaríamos!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 331,
+      "speed": "normal",
+      "path": "advanced/adv_18_331.mp3",
+      "expected": "ei, á, emos, ão",
+      "transcript": "e a demonstrão.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 331,
+      "speed": "slow",
+      "path": "advanced/adv_18_331_slow.mp3",
+      "expected": "ei, á, emos, ão",
+      "transcript": "Lei à demostão.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 332,
+      "speed": "normal",
+      "path": "advanced/adv_18_332.mp3",
+      "expected": "Eu gostaria de reservar uma mesa.",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 332,
+      "speed": "slow",
+      "path": "advanced/adv_18_332_slow.mp3",
+      "expected": "Eu gostaria de reservar uma mesa.",
+      "transcript": "Eu gostaria de reservar uma mesa.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 333,
+      "speed": "normal",
+      "path": "advanced/adv_18_333.mp3",
+      "expected": "Você poderia me ajudar?",
+      "transcript": "Você poderia me ajudar?",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 333,
+      "speed": "slow",
+      "path": "advanced/adv_18_333_slow.mp3",
+      "expected": "Você poderia me ajudar?",
+      "transcript": "Você poderia me ajudar?",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 334,
+      "speed": "normal",
+      "path": "advanced/adv_19_334.mp3",
+      "expected": "parta",
+      "transcript": "By the take.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 334,
+      "speed": "slow",
+      "path": "advanced/adv_19_334_slow.mp3",
+      "expected": "parta",
+      "transcript": "He barges to it.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 335,
+      "speed": "normal",
+      "path": "advanced/adv_19_335.mp3",
+      "expected": "coma",
+      "transcript": "C'mon mate.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 335,
+      "speed": "slow",
+      "path": "advanced/adv_19_335_slow.mp3",
+      "expected": "coma",
+      "transcript": "You're cool, man.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 336,
+      "speed": "normal",
+      "path": "advanced/adv_19_336.mp3",
+      "expected": "fale",
+      "transcript": "Falei.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 336,
+      "speed": "slow",
+      "path": "advanced/adv_19_336_slow.mp3",
+      "expected": "fale",
+      "transcript": "Bye-bye.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 337,
+      "speed": "normal",
+      "path": "advanced/adv_19_337.mp3",
+      "expected": "partamos",
+      "transcript": "Partemos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 337,
+      "speed": "slow",
+      "path": "advanced/adv_19_337_slow.mp3",
+      "expected": "partamos",
+      "transcript": "e partamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 338,
+      "speed": "normal",
+      "path": "advanced/adv_19_338.mp3",
+      "expected": "comamos",
+      "transcript": "Como émos?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 338,
+      "speed": "slow",
+      "path": "advanced/adv_19_338_slow.mp3",
+      "expected": "comamos",
+      "transcript": "E como émos?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 339,
+      "speed": "normal",
+      "path": "advanced/adv_19_339.mp3",
+      "expected": "falemos",
+      "transcript": "Falemos!",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 339,
+      "speed": "slow",
+      "path": "advanced/adv_19_339_slow.mp3",
+      "expected": "falemos",
+      "transcript": "e falemos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 340,
+      "speed": "normal",
+      "path": "advanced/adv_19_340.mp3",
+      "expected": "partam",
+      "transcript": "Bye for town!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 340,
+      "speed": "slow",
+      "path": "advanced/adv_19_340_slow.mp3",
+      "expected": "partam",
+      "transcript": "Die Partizoon.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 341,
+      "speed": "normal",
+      "path": "advanced/adv_19_341.mp3",
+      "expected": "comam",
+      "transcript": "Comeu!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 341,
+      "speed": "slow",
+      "path": "advanced/adv_19_341_slow.mp3",
+      "expected": "comam",
+      "transcript": "Because man, we won't lose.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 342,
+      "speed": "normal",
+      "path": "advanced/adv_19_342.mp3",
+      "expected": "falem",
+      "transcript": "Falling!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 342,
+      "speed": "slow",
+      "path": "advanced/adv_19_342_slow.mp3",
+      "expected": "falem",
+      "transcript": "to following.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 343,
+      "speed": "normal",
+      "path": "advanced/adv_19_343.mp3",
+      "expected": "espero que",
+      "transcript": "Espero que...",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 343,
+      "speed": "slow",
+      "path": "advanced/adv_19_343_slow.mp3",
+      "expected": "espero que",
+      "transcript": "Alice Beruqui.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 344,
+      "speed": "normal",
+      "path": "advanced/adv_19_344.mp3",
+      "expected": "Espero que você esteja bem.",
+      "transcript": "Espero que você esteja bem.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 344,
+      "speed": "slow",
+      "path": "advanced/adv_19_344_slow.mp3",
+      "expected": "Espero que você esteja bem.",
+      "transcript": "Eu espero que você esteja bem.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 345,
+      "speed": "normal",
+      "path": "advanced/adv_19_345.mp3",
+      "expected": "Talvez ele venha amanhã.",
+      "transcript": "Talvez ele vinha amanhã.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 345,
+      "speed": "slow",
+      "path": "advanced/adv_19_345_slow.mp3",
+      "expected": "Talvez ele venha amanhã.",
+      "transcript": "Talvez ele venha amanhã.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 346,
+      "speed": "normal",
+      "path": "advanced/adv_19_346.mp3",
+      "expected": "quero que",
+      "transcript": "Quero que isso.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 346,
+      "speed": "slow",
+      "path": "advanced/adv_19_346_slow.mp3",
+      "expected": "quero que",
+      "transcript": "Eu quero o que ir.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 347,
+      "speed": "normal",
+      "path": "advanced/adv_19_347.mp3",
+      "expected": "Quero que você me ajude.",
+      "transcript": "Quero que você me ajude.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 347,
+      "speed": "slow",
+      "path": "advanced/adv_19_347_slow.mp3",
+      "expected": "Quero que você me ajude.",
+      "transcript": "Quero que você me ajude.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 348,
+      "speed": "normal",
+      "path": "advanced/adv_19_348.mp3",
+      "expected": "é possível que",
+      "transcript": "É possível que...",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 348,
+      "speed": "slow",
+      "path": "advanced/adv_19_348_slow.mp3",
+      "expected": "é possível que",
+      "transcript": "É possível que...",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 349,
+      "speed": "normal",
+      "path": "advanced/adv_19_349.mp3",
+      "expected": "É possível que chova.",
+      "transcript": "É possível que chova.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 349,
+      "speed": "slow",
+      "path": "advanced/adv_19_349_slow.mp3",
+      "expected": "É possível que chova.",
+      "transcript": "É possível que chova.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 350,
+      "speed": "normal",
+      "path": "advanced/adv_19_350.mp3",
+      "expected": "Embora eu esteja cansado, vou trabalhar.",
+      "transcript": "Embora eu esteja cansado, vou trabalhar.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 350,
+      "speed": "slow",
+      "path": "advanced/adv_19_350_slow.mp3",
+      "expected": "Embora eu esteja cansado, vou trabalhar.",
+      "transcript": "E embora eu esteja cansado, vou trabalhar.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 351,
+      "speed": "normal",
+      "path": "advanced/adv_20_351.mp3",
+      "expected": "me chamo",
+      "transcript": "misciamo",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 351,
+      "speed": "slow",
+      "path": "advanced/adv_20_351_slow.mp3",
+      "expected": "me chamo",
+      "transcript": "Eu me chamo.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 352,
+      "speed": "normal",
+      "path": "advanced/adv_20_352.mp3",
+      "expected": "me levanto",
+      "transcript": "Mi levanto.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 352,
+      "speed": "slow",
+      "path": "advanced/adv_20_352_slow.mp3",
+      "expected": "me levanto",
+      "transcript": "To me, live on to.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 353,
+      "speed": "normal",
+      "path": "advanced/adv_20_353.mp3",
+      "expected": "me visto",
+      "transcript": "Me, V-Store.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 353,
+      "speed": "slow",
+      "path": "advanced/adv_20_353_slow.mp3",
+      "expected": "me visto",
+      "transcript": "Amei visto!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 354,
+      "speed": "normal",
+      "path": "advanced/adv_20_354.mp3",
+      "expected": "se chama",
+      "transcript": "See Shama.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 354,
+      "speed": "slow",
+      "path": "advanced/adv_20_354_slow.mp3",
+      "expected": "se chama",
+      "transcript": "עשי שרמה.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 355,
+      "speed": "normal",
+      "path": "advanced/adv_20_355.mp3",
+      "expected": "se levanta",
+      "transcript": "si levanta",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 355,
+      "speed": "slow",
+      "path": "advanced/adv_20_355_slow.mp3",
+      "expected": "se levanta",
+      "transcript": "e se levanta.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 356,
+      "speed": "normal",
+      "path": "advanced/adv_20_356.mp3",
+      "expected": "se veste",
+      "transcript": "See you next time.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 356,
+      "speed": "slow",
+      "path": "advanced/adv_20_356_slow.mp3",
+      "expected": "se veste",
+      "transcript": "I'll see you next time.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 357,
+      "speed": "normal",
+      "path": "advanced/adv_20_357.mp3",
+      "expected": "nos chamamos",
+      "transcript": "Nos chamamos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 357,
+      "speed": "slow",
+      "path": "advanced/adv_20_357_slow.mp3",
+      "expected": "nos chamamos",
+      "transcript": "E nós se chamamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 358,
+      "speed": "normal",
+      "path": "advanced/adv_20_358.mp3",
+      "expected": "nos levantamos",
+      "transcript": "Nós levantamos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 358,
+      "speed": "slow",
+      "path": "advanced/adv_20_358_slow.mp3",
+      "expected": "nos levantamos",
+      "transcript": "e nos levantamos.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 359,
+      "speed": "normal",
+      "path": "advanced/adv_20_359.mp3",
+      "expected": "nos vestimos",
+      "transcript": "Nos vestimos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 359,
+      "speed": "slow",
+      "path": "advanced/adv_20_359_slow.mp3",
+      "expected": "nos vestimos",
+      "transcript": "Nos vestimos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 360,
+      "speed": "normal",
+      "path": "advanced/adv_20_360.mp3",
+      "expected": "se chamam",
+      "transcript": "S'y charmant.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 360,
+      "speed": "slow",
+      "path": "advanced/adv_20_360_slow.mp3",
+      "expected": "se chamam",
+      "transcript": "Lá se chama um.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 361,
+      "speed": "normal",
+      "path": "advanced/adv_20_361.mp3",
+      "expected": "se levantam",
+      "transcript": "s'il est ventant.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 361,
+      "speed": "slow",
+      "path": "advanced/adv_20_361_slow.mp3",
+      "expected": "se levantam",
+      "transcript": "e se levantam.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 362,
+      "speed": "normal",
+      "path": "advanced/adv_20_362.mp3",
+      "expected": "se vestem",
+      "transcript": "See you next time!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 362,
+      "speed": "slow",
+      "path": "advanced/adv_20_362_slow.mp3",
+      "expected": "se vestem",
+      "transcript": "I'll see vesting!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 363,
+      "speed": "normal",
+      "path": "advanced/adv_20_363.mp3",
+      "expected": "Como você se chama?",
+      "transcript": "Como você se chama?",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 363,
+      "speed": "slow",
+      "path": "advanced/adv_20_363_slow.mp3",
+      "expected": "Como você se chama?",
+      "transcript": "Como você se chama?",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 364,
+      "speed": "normal",
+      "path": "advanced/adv_21_364.mp3",
+      "expected": "me",
+      "transcript": "I'm here.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 364,
+      "speed": "slow",
+      "path": "advanced/adv_21_364_slow.mp3",
+      "expected": "me",
+      "transcript": "I'm a yes.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 365,
+      "speed": "normal",
+      "path": "advanced/adv_21_365.mp3",
+      "expected": "lhe",
+      "transcript": "You",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 365,
+      "speed": "slow",
+      "path": "advanced/adv_21_365_slow.mp3",
+      "expected": "lhe",
+      "transcript": "Are you?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 366,
+      "speed": "normal",
+      "path": "advanced/adv_21_366.mp3",
+      "expected": "nos",
+      "transcript": "No, sir.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 366,
+      "speed": "slow",
+      "path": "advanced/adv_21_366_slow.mp3",
+      "expected": "nos",
+      "transcript": "Anos!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 367,
+      "speed": "normal",
+      "path": "advanced/adv_21_367.mp3",
+      "expected": "os",
+      "transcript": "Lua-se!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 367,
+      "speed": "slow",
+      "path": "advanced/adv_21_367_slow.mp3",
+      "expected": "os",
+      "transcript": "Угу, а здесь?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 368,
+      "speed": "normal",
+      "path": "advanced/adv_21_368.mp3",
+      "expected": "as",
+      "transcript": "Nice.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 368,
+      "speed": "slow",
+      "path": "advanced/adv_21_368_slow.mp3",
+      "expected": "as",
+      "transcript": "Don'tice.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 369,
+      "speed": "normal",
+      "path": "advanced/adv_21_369.mp3",
+      "expected": "lhes",
+      "transcript": "US.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 369,
+      "speed": "slow",
+      "path": "advanced/adv_21_369_slow.mp3",
+      "expected": "lhes",
+      "transcript": "Are you?",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 370,
+      "speed": "normal",
+      "path": "advanced/adv_21_370.mp3",
+      "expected": "Vou ver você amanhã",
+      "transcript": "Volver você amanhã.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 370,
+      "speed": "slow",
+      "path": "advanced/adv_21_370_slow.mp3",
+      "expected": "Vou ver você amanhã",
+      "transcript": "Vou ver você amanhã.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 371,
+      "speed": "normal",
+      "path": "advanced/adv_21_371.mp3",
+      "expected": "Vou lhe contar uma coisa.",
+      "transcript": "Vou de contar uma coisa.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 371,
+      "speed": "slow",
+      "path": "advanced/adv_21_371_slow.mp3",
+      "expected": "Vou lhe contar uma coisa.",
+      "transcript": "e vou de contar uma coisa.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 372,
+      "speed": "normal",
+      "path": "advanced/adv_22_372.mp3",
+      "expected": "+ o",
+      "transcript": "Maizo",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 372,
+      "speed": "slow",
+      "path": "advanced/adv_22_372_slow.mp3",
+      "expected": "+ o",
+      "transcript": "My's old.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 373,
+      "speed": "normal",
+      "path": "advanced/adv_22_373.mp3",
+      "expected": "+ a",
+      "transcript": "Miser",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 373,
+      "speed": "slow",
+      "path": "advanced/adv_22_373_slow.mp3",
+      "expected": "+ a",
+      "transcript": "My's Earth.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 374,
+      "speed": "normal",
+      "path": "advanced/adv_22_374.mp3",
+      "expected": "+ os",
+      "transcript": "Miserus",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 374,
+      "speed": "slow",
+      "path": "advanced/adv_22_374_slow.mp3",
+      "expected": "+ os",
+      "transcript": "היא מי זעוס.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 375,
+      "speed": "normal",
+      "path": "advanced/adv_22_375.mp3",
+      "expected": "+ as",
+      "transcript": "Mize us.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 375,
+      "speed": "slow",
+      "path": "advanced/adv_22_375_slow.mp3",
+      "expected": "+ as",
+      "transcript": "Emise S.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 376,
+      "speed": "normal",
+      "path": "advanced/adv_22_376.mp3",
+      "expected": "do",
+      "transcript": "Thanks for watching.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 376,
+      "speed": "slow",
+      "path": "advanced/adv_22_376_slow.mp3",
+      "expected": "do",
+      "transcript": "Ador!",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 377,
+      "speed": "normal",
+      "path": "advanced/adv_22_377.mp3",
+      "expected": "da",
+      "transcript": "Thank you.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 377,
+      "speed": "slow",
+      "path": "advanced/adv_22_377_slow.mp3",
+      "expected": "da",
+      "transcript": "You're there.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 378,
+      "speed": "normal",
+      "path": "advanced/adv_22_378.mp3",
+      "expected": "dos",
+      "transcript": "doce.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 378,
+      "speed": "slow",
+      "path": "advanced/adv_22_378_slow.mp3",
+      "expected": "dos",
+      "transcript": "Adouce.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 379,
+      "speed": "normal",
+      "path": "advanced/adv_22_379.mp3",
+      "expected": "das",
+      "transcript": "That's it.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 379,
+      "speed": "slow",
+      "path": "advanced/adv_22_379_slow.mp3",
+      "expected": "das",
+      "transcript": "Nudaz.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 380,
+      "speed": "normal",
+      "path": "advanced/adv_22_380.mp3",
+      "expected": "no",
+      "transcript": "No.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 380,
+      "speed": "slow",
+      "path": "advanced/adv_22_380_slow.mp3",
+      "expected": "no",
+      "transcript": "Pannur.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 381,
+      "speed": "normal",
+      "path": "advanced/adv_22_381.mp3",
+      "expected": "na",
+      "transcript": "Nah.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 381,
+      "speed": "slow",
+      "path": "advanced/adv_22_381_slow.mp3",
+      "expected": "na",
+      "transcript": "We know.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 382,
+      "speed": "normal",
+      "path": "advanced/adv_22_382.mp3",
+      "expected": "nas",
+      "transcript": "NASA",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 382,
+      "speed": "slow",
+      "path": "advanced/adv_22_382_slow.mp3",
+      "expected": "nas",
+      "transcript": "Nina's.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 383,
+      "speed": "normal",
+      "path": "advanced/adv_22_383.mp3",
+      "expected": "ao",
+      "transcript": "Now it's",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 383,
+      "speed": "slow",
+      "path": "advanced/adv_22_383_slow.mp3",
+      "expected": "ao",
+      "transcript": "You know.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 384,
+      "speed": "normal",
+      "path": "advanced/adv_22_384.mp3",
+      "expected": "aos",
+      "transcript": "I'll see you next time.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 384,
+      "speed": "slow",
+      "path": "advanced/adv_22_384_slow.mp3",
+      "expected": "aos",
+      "transcript": "He knows.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 385,
+      "speed": "normal",
+      "path": "advanced/adv_22_385.mp3",
+      "expected": "às",
+      "transcript": "Nice.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 385,
+      "speed": "slow",
+      "path": "advanced/adv_22_385_slow.mp3",
+      "expected": "às",
+      "transcript": "You know, it's...",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 386,
+      "speed": "normal",
+      "path": "advanced/adv_22_386.mp3",
+      "expected": "pelo",
+      "transcript": "Beirut.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 386,
+      "speed": "slow",
+      "path": "advanced/adv_22_386_slow.mp3",
+      "expected": "pelo",
+      "transcript": "Apele-lo.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 387,
+      "speed": "normal",
+      "path": "advanced/adv_22_387.mp3",
+      "expected": "pela",
+      "transcript": "Bella",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 387,
+      "speed": "slow",
+      "path": "advanced/adv_22_387_slow.mp3",
+      "expected": "pela",
+      "transcript": "Isabella",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 388,
+      "speed": "normal",
+      "path": "advanced/adv_22_388.mp3",
+      "expected": "pelos",
+      "transcript": "Pelos.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 388,
+      "speed": "slow",
+      "path": "advanced/adv_22_388_slow.mp3",
+      "expected": "pelos",
+      "transcript": "Appelus.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 389,
+      "speed": "normal",
+      "path": "advanced/adv_22_389.mp3",
+      "expected": "pelas",
+      "transcript": "Belas.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 389,
+      "speed": "slow",
+      "path": "advanced/adv_22_389_slow.mp3",
+      "expected": "pelas",
+      "transcript": "Impay-lars.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 390,
+      "speed": "normal",
+      "path": "advanced/adv_22_390.mp3",
+      "expected": "Vou ao mercado.",
+      "transcript": "Vou ao mercado.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 390,
+      "speed": "slow",
+      "path": "advanced/adv_22_390_slow.mp3",
+      "expected": "Vou ao mercado.",
+      "transcript": "e vou ao mercado.",
+      "classification": "asr_mismatch_needs_review"
+    },
+    {
+      "item": 391,
+      "speed": "normal",
+      "path": "advanced/adv_22_391.mp3",
+      "expected": "Estou na praia.",
+      "transcript": "Estou na praia.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 391,
+      "speed": "slow",
+      "path": "advanced/adv_22_391_slow.mp3",
+      "expected": "Estou na praia.",
+      "transcript": "Estou na praia.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 392,
+      "speed": "normal",
+      "path": "advanced/adv_22_392.mp3",
+      "expected": "O livro é do professor.",
+      "transcript": "O livro é do professor.",
+      "classification": "asr_exact_match"
+    },
+    {
+      "item": 392,
+      "speed": "slow",
+      "path": "advanced/adv_22_392_slow.mp3",
+      "expected": "O livro é do professor.",
+      "transcript": "O livro é do professor.",
+      "classification": "asr_exact_match"
+    }
+  ]
+}
