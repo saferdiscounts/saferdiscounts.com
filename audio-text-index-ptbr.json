@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "Cloudflare R2 saferdiscounts-audio / ptbr/manifest.json",
-  "method": "Manifest text and exact R2 object-key cross-check; no transcription or audio content hearing All missing Arabic meanings in source manifest are now supplied as locally authored educational drafts in this GitHub snapshot, not a claim of official R2 edits or speech verification.",
+  "method": "Manifest text and exact R2 object-key cross-check; no transcription or audio content hearing All missing Arabic meanings in source manifest are now supplied as locally authored educational drafts in this GitHub snapshot, and were subsequently synchronized to the official R2 manifest after backing it up; this is not a claim of speech or native-level linguistic verification.",
   "capturedOn": "2026-11-07",
   "locale": "pt-BR",
   "records": [
@@ -4612,6 +4612,11 @@
     "r2OriginalGloss": 277,
     "addedBySaferDiscountsDraft": 234,
     "arabicLinguisticVerified": false,
-    "spokenAudioVerified": false
-  }
+    "spokenAudioVerified": false,
+    "originalR2ArabicMissingAtBaseline": 234,
+    "currentR2ArabicMissing": 0,
+    "r2Synced": true,
+    "remoteVerifiedAfterSync": true
+  },
+  "r2ArabicGlossSyncedOn": "2026-11-07"
 }
