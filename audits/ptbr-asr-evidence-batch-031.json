@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 469,
+    "end": 478
+  },
+  "results": [
+    {
+      "path": "advanced/adv_29_469.mp3",
+      "transcript": "Pode fazer um desconto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_469_slow.mp3",
+      "transcript": "Pode fazer um desconto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_470.mp3",
+      "transcript": "Está muito caro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_470_slow.mp3",
+      "transcript": "Está muito caro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_471.mp3",
+      "transcript": "Promoção.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_471_slow.mp3",
+      "transcript": "e promosação.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_472.mp3",
+      "transcript": "Nota Fiscal.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_472_slow.mp3",
+      "transcript": "Nota a fiscal.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_473.mp3",
+      "transcript": "Sony own.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_473_slow.mp3",
+      "transcript": "¡Es el unizón!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_474.mp3",
+      "transcript": "Negosu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_474_slow.mp3",
+      "transcript": "The next boss you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_475.mp3",
+      "transcript": "Empresa!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_475_slow.mp3",
+      "transcript": "Não tem empresa.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_476.mp3",
+      "transcript": "Clearing to",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_476_slow.mp3",
+      "transcript": "A Glee-Aing-Chu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_477.mp3",
+      "transcript": "コントラーツ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_477_slow.mp3",
+      "transcript": "di contrarso",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_478.mp3",
+      "transcript": "prazo!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_29_478_slow.mp3",
+      "transcript": "e pra azul.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
