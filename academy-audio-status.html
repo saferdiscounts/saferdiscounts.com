@@ -54,7 +54,7 @@ function render(data){
  const info=node('p','small','هذه نسبة تطابق نصوص ملفات R2 فقط؛ لا تثبت جودة نطق التسجيل ولا تشغيله في متصفح الطالب. النصوص المكررة الملتبسة: '+item.sourceAmbiguousTexts+' نصًا.');box.append(info);
  if(code==='ptbr'&&item.dialogueCoverage&&item.practicalCoverage){
   box.append(node('p','','💬 من '+item.dialogueCoverage.lines+' دورًا حواريًا في الدروس، يوجد '+item.dialogueCoverage.exactMatches+' مطابقًا نصيًا فريدًا. ومن '+item.practicalCoverage.phrases+' عبارة في معمل المواقف، يوجد '+item.practicalCoverage.exactMatches+' مطابقًا صوتيًا حرفيًا في التسجيلات القديمة.'));
-  box.append(node('p','small','الفهرس البرازيلي يضم '+item.sourceRecords+' زوجًا، منها '+item.sourceManifestGlossMissing+' سجلًا لا يحتوي على ترجمة عربية داخل الفهرس؛ الترجمة التعليمية في الدرس موجودة منفصلة. المطابقة الملتبسة تُستبعد من التشغيل المباشر.'));
+  box.append(node('p','', '📝 كل تسجيلات البرازيلية الـ'+item.arabicGlossCoverage.audioPairs+' لها الآن نص برتغالي ومعنى عربي مكتوب في فهرس الأكاديمية: '+item.arabicGlossCoverage.originalR2ArabicGloss+' ترجمة كانت موجودة و'+item.arabicGlossCoverage.locallyAuthoredArabicGlossDraft+' ترجمة أكملناها. الترجمات المستكملة مسودات تحتاج تدقيقًا لغويًا متخصصًا.'));box.append(node('p','small','الفهرس الأصلي على R2 ما زال ينقصه '+item.arabicGlossCoverage.originalRemoteManifestStillMissingArabic+' معنى عربي، ولذلك يقرأ الموقع الفهرس المكتمل محليًا أولًا. المطابقة الملتبسة بين التسجيلات والدرس تُستبعد من الربط التلقائي.'));
   box.append(node('p','small','الخطوة التالية: توثيق العبارات ذات الأولوية وتسجيل الجديد اللازم، ثم الاستماع والتحقق من النطق العادي والبطيء.'));
  }
  const bar=node('div','progress'),fill=node('span');fill.style.width=pct(item.exactMatches,item.words);bar.append(fill);box.append(bar);
