@@ -158,12 +158,14 @@
       "engine": "@cf/openai/whisper"
     },
     {
-      "path": "advanced/adv_26_445.mp3",
-      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_26_445.mp3 returned HTTP 404 (Ray ID a56ba6711959bf4c-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+      "path": "advanced/adv_27_445.mp3",
+      "transcript": "Banthur",
+      "engine": "@cf/openai/whisper"
     },
     {
-      "path": "advanced/adv_26_445_slow.mp3",
-      "error": "Error: Cloudflare API error: GET /accounts/da13781fba56e1c97f973e71b4425170/r2/buckets/saferdiscounts-audio/objects/ptbr/advanced/adv_26_445_slow.mp3 returned HTTP 404 (Ray ID a56ba67359b0bf4c-WAW).\n\n{\n  \"success\": false,\n  \"errors\": [\n    {\n      \"code\": 10007,\n      \"message\": \"The specified key does not exist.\"\n    }\n  ],\n  \"messages\": [],\n  \"result\": null\n}"
+      "path": "advanced/adv_27_445_slow.mp3",
+      "transcript": "That bangs cool.",
+      "engine": "@cf/openai/whisper"
     }
   ]
 }
