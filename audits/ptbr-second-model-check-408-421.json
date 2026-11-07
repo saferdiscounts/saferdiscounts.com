@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR cross-check, not independent phonetic certification.",
+  "results": [
+    {
+      "item": 408,
+      "speed": "normal",
+      "path": "advanced/adv_24_408.mp3",
+      "transcript": "Passaporte.",
+      "duration": 1.231375,
+      "expected": "passaporte",
+      "exactMatch": true
+    },
+    {
+      "item": 408,
+      "speed": "slow",
+      "path": "advanced/adv_24_408_slow.mp3",
+      "transcript": "Passaporte",
+      "duration": 1.658,
+      "expected": "passaporte",
+      "exactMatch": true
+    },
+    {
+      "item": 409,
+      "speed": "normal",
+      "path": "advanced/adv_24_409.mp3",
+      "transcript": "Vi står.",
+      "duration": 0.9326875,
+      "expected": "visto",
+      "exactMatch": false
+    },
+    {
+      "item": 409,
+      "speed": "slow",
+      "path": "advanced/adv_24_409_slow.mp3",
+      "transcript": "Avvisto.",
+      "duration": 1.21,
+      "expected": "visto",
+      "exactMatch": false
+    },
+    {
+      "item": 410,
+      "speed": "normal",
+      "path": "advanced/adv_24_410.mp3",
+      "transcript": "Passagem.",
+      "duration": 1.167375,
+      "expected": "passagem",
+      "exactMatch": true
+    },
+    {
+      "item": 410,
+      "speed": "slow",
+      "path": "advanced/adv_24_410_slow.mp3",
+      "transcript": "O PASSAGEM",
+      "duration": 1.5086875,
+      "expected": "passagem",
+      "exactMatch": false
+    },
+    {
+      "item": 411,
+      "speed": "normal",
+      "path": "advanced/adv_24_411.mp3",
+      "transcript": "Desembar aqui.",
+      "duration": 1.1246875,
+      "expected": "embarque",
+      "exactMatch": false
+    },
+    {
+      "item": 411,
+      "speed": "slow",
+      "path": "advanced/adv_24_411_slow.mp3",
+      "transcript": "Замбарки.",
+      "duration": 1.4446875,
+      "expected": "embarque",
+      "exactMatch": false
+    },
+    {
+      "item": 412,
+      "speed": "normal",
+      "path": "advanced/adv_24_412.mp3",
+      "transcript": "Bagagem",
+      "duration": 1.167375,
+      "expected": "bagagem",
+      "exactMatch": true
+    },
+    {
+      "item": 412,
+      "speed": "slow",
+      "path": "advanced/adv_24_412_slow.mp3",
+      "transcript": "O Barragagens",
+      "duration": 1.53,
+      "expected": "bagagem",
+      "exactMatch": false
+    },
+    {
+      "item": 413,
+      "speed": "normal",
+      "path": "advanced/adv_24_413.mp3",
+      "transcript": "Bagagem de mão.",
+      "duration": 1.53,
+      "expected": "bagagem de mão",
+      "exactMatch": true
+    },
+    {
+      "item": 413,
+      "speed": "slow",
+      "path": "advanced/adv_24_413_slow.mp3",
+      "transcript": "Pagar, gente, de mão.",
+      "duration": 2.0846875,
+      "expected": "bagagem de mão",
+      "exactMatch": false
+    },
+    {
+      "item": 414,
+      "speed": "normal",
+      "path": "advanced/adv_24_414.mp3",
+      "transcript": "check-in",
+      "duration": 0.9966875,
+      "expected": "check-in",
+      "exactMatch": true
+    },
+    {
+      "item": 414,
+      "speed": "slow",
+      "path": "advanced/adv_24_414_slow.mp3",
+      "transcript": "A sekín",
+      "duration": 1.231375,
+      "expected": "check-in",
+      "exactMatch": false
+    },
+    {
+      "item": 415,
+      "speed": "normal",
+      "path": "advanced/adv_24_415.mp3",
+      "transcript": "Postão de embarque.",
+      "duration": 1.487375,
+      "expected": "portão de embarque",
+      "exactMatch": false
+    },
+    {
+      "item": 415,
+      "speed": "slow",
+      "path": "advanced/adv_24_415_slow.mp3",
+      "transcript": "O portão de embarque.",
+      "duration": 2.106,
+      "expected": "portão de embarque",
+      "exactMatch": false
+    },
+    {
+      "item": 416,
+      "speed": "normal",
+      "path": "advanced/adv_24_416.mp3",
+      "transcript": "Vote.",
+      "duration": 0.7406875,
+      "expected": "voo",
+      "exactMatch": false
+    },
+    {
+      "item": 416,
+      "speed": "slow",
+      "path": "advanced/adv_24_416_slow.mp3",
+      "transcript": "Devote",
+      "duration": 0.911375,
+      "expected": "voo",
+      "exactMatch": false
+    },
+    {
+      "item": 417,
+      "speed": "normal",
+      "path": "advanced/adv_24_417.mp3",
+      "transcript": "Atraso.",
+      "duration": 1.0606875,
+      "expected": "atraso",
+      "exactMatch": true
+    },
+    {
+      "item": 417,
+      "speed": "slow",
+      "path": "advanced/adv_24_417_slow.mp3",
+      "transcript": "Em atraso.",
+      "duration": 1.402,
+      "expected": "atraso",
+      "exactMatch": false
+    },
+    {
+      "item": 418,
+      "speed": "normal",
+      "path": "advanced/adv_24_418.mp3",
+      "transcript": "Cancelado.",
+      "duration": 1.167375,
+      "expected": "cancelado",
+      "exactMatch": true
+    },
+    {
+      "item": 418,
+      "speed": "slow",
+      "path": "advanced/adv_24_418_slow.mp3",
+      "transcript": "E cancelado",
+      "duration": 1.53,
+      "expected": "cancelado",
+      "exactMatch": false
+    },
+    {
+      "item": 419,
+      "speed": "normal",
+      "path": "advanced/adv_24_419.mp3",
+      "transcript": "Alfândega",
+      "duration": 1.21,
+      "expected": "alfândega",
+      "exactMatch": true
+    },
+    {
+      "item": 419,
+      "speed": "slow",
+      "path": "advanced/adv_24_419_slow.mp3",
+      "transcript": "is alfandegas",
+      "duration": 1.5726875,
+      "expected": "alfândega",
+      "exactMatch": false
+    },
+    {
+      "item": 420,
+      "speed": "normal",
+      "path": "advanced/adv_24_420.mp3",
+      "transcript": "Tenho algo a declarar.",
+      "duration": 1.53,
+      "expected": "Tenho algo a declarar",
+      "exactMatch": true
+    },
+    {
+      "item": 420,
+      "speed": "slow",
+      "path": "advanced/adv_24_420_slow.mp3",
+      "transcript": "Tenho algo a declarar.",
+      "duration": 2.2126875,
+      "expected": "Tenho algo a declarar",
+      "exactMatch": true
+    },
+    {
+      "item": 421,
+      "speed": "normal",
+      "path": "advanced/adv_24_421.mp3",
+      "transcript": "Não tenho nada a declarar.",
+      "duration": 1.8286875,
+      "expected": "Não tenho nada a declarar",
+      "exactMatch": true
+    },
+    {
+      "item": 421,
+      "speed": "slow",
+      "path": "advanced/adv_24_421_slow.mp3",
+      "transcript": "Não tenho nada a declarar.",
+      "duration": 2.575375,
+      "expected": "Não tenho nada a declarar",
+      "exactMatch": true
+    }
+  ]
+}
