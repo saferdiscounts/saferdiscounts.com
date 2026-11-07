@@ -1,0 +1,5247 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    "@cf/openai/whisper",
+    "@cf/openai/whisper-large-v3-turbo"
+  ],
+  "note": "Exact text match only; models are related and are not independent phonetic or native-speaker certification. Neither-exact is review priority, not proven audio defect.",
+  "stats": {
+    "bothExact": 217,
+    "firstOnlyExact": 16,
+    "secondOnlyExact": 208,
+    "neitherExact": 581
+  },
+  "total": 1022,
+  "missingFirst": 0,
+  "reviewCandidates": [
+    {
+      "item": 1,
+      "speed": "slow",
+      "path": "basic/bas_01_001_slow.mp3",
+      "expected": "casa de banho",
+      "firstTranscript": "e causa de banho.",
+      "secondTranscript": "E casa de banho.",
+      "duration": 1.658
+    },
+    {
+      "item": 2,
+      "speed": "slow",
+      "path": "basic/bas_01_002_slow.mp3",
+      "expected": "banheiro",
+      "firstTranscript": "Сбай, Невирус!",
+      "secondTranscript": "Banheiros",
+      "duration": 1.423375
+    },
+    {
+      "item": 3,
+      "speed": "normal",
+      "path": "basic/bas_01_003.mp3",
+      "expected": "comboio",
+      "firstTranscript": "Come, boy, you...",
+      "secondTranscript": "Combo you",
+      "duration": 0.9966875
+    },
+    {
+      "item": 3,
+      "speed": "slow",
+      "path": "basic/bas_01_003_slow.mp3",
+      "expected": "comboio",
+      "firstTranscript": "To come, boy youth.",
+      "secondTranscript": "Comboius",
+      "duration": 1.231375
+    },
+    {
+      "item": 4,
+      "speed": "normal",
+      "path": "basic/bas_01_004.mp3",
+      "expected": "trem",
+      "firstTranscript": "スライン",
+      "secondTranscript": "虽然",
+      "duration": 0.89
+    },
+    {
+      "item": 4,
+      "speed": "slow",
+      "path": "basic/bas_01_004_slow.mp3",
+      "expected": "trem",
+      "firstTranscript": "That's the ratings.",
+      "secondTranscript": "Let's do that, Ings!",
+      "duration": 1.103375
+    },
+    {
+      "item": 7,
+      "speed": "slow",
+      "path": "basic/bas_01_007_slow.mp3",
+      "expected": "ementa",
+      "firstTranscript": "E de mentas.",
+      "secondTranscript": "de mentas.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 8,
+      "speed": "slow",
+      "path": "basic/bas_01_008_slow.mp3",
+      "expected": "cardápio",
+      "firstTranscript": "Encara-te da apio.",
+      "secondTranscript": "Em cardápio.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 9,
+      "speed": "normal",
+      "path": "basic/bas_01_009.mp3",
+      "expected": "autocarro",
+      "firstTranscript": "Elke took zou goed.",
+      "secondTranscript": "É o Toxarro.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 9,
+      "speed": "slow",
+      "path": "basic/bas_01_009_slow.mp3",
+      "expected": "autocarro",
+      "firstTranscript": "Εινάω τρόξα αγχου.",
+      "secondTranscript": "E não trouxe a rua.",
+      "duration": 1.594
+    },
+    {
+      "item": 10,
+      "speed": "slow",
+      "path": "basic/bas_01_010_slow.mp3",
+      "expected": "ônibus",
+      "firstTranscript": "Hang on, eBoos.",
+      "secondTranscript": "I go on e-boos.",
+      "duration": 1.231375
+    },
+    {
+      "item": 11,
+      "speed": "slow",
+      "path": "basic/bas_01_011_slow.mp3",
+      "expected": "telemóvel",
+      "firstTranscript": "אצל למורביו",
+      "secondTranscript": "It's illimóvel.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 12,
+      "speed": "slow",
+      "path": "basic/bas_01_012_slow.mp3",
+      "expected": "celular",
+      "firstTranscript": "em celular.",
+      "secondTranscript": "Em celular",
+      "duration": 1.274
+    },
+    {
+      "item": 13,
+      "speed": "normal",
+      "path": "basic/bas_02_013.mp3",
+      "expected": "Oi",
+      "firstTranscript": "noito.",
+      "secondTranscript": "Bye.",
+      "duration": 0.719375
+    },
+    {
+      "item": 13,
+      "speed": "slow",
+      "path": "basic/bas_02_013_slow.mp3",
+      "expected": "Oi",
+      "firstTranscript": "Good boys!",
+      "secondTranscript": "The noise.",
+      "duration": 0.911375
+    },
+    {
+      "item": 14,
+      "speed": "normal",
+      "path": "basic/bas_02_014.mp3",
+      "expected": "Olá",
+      "firstTranscript": "All last.",
+      "secondTranscript": "or less",
+      "duration": 0.847375
+    },
+    {
+      "item": 14,
+      "speed": "slow",
+      "path": "basic/bas_02_014_slow.mp3",
+      "expected": "Olá",
+      "firstTranscript": "Ooh, what a lasker.",
+      "secondTranscript": "Or less.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 15,
+      "speed": "slow",
+      "path": "basic/bas_02_015_slow.mp3",
+      "expected": "Bom dia",
+      "firstTranscript": "A bom dia.",
+      "secondTranscript": "A bon dia.",
+      "duration": 1.423375
+    },
+    {
+      "item": 18,
+      "speed": "slow",
+      "path": "basic/bas_02_018_slow.mp3",
+      "expected": "Como vai?",
+      "firstTranscript": "E como vai?",
+      "secondTranscript": "E como vai?",
+      "duration": 1.423375
+    },
+    {
+      "item": 19,
+      "speed": "slow",
+      "path": "basic/bas_02_019_slow.mp3",
+      "expected": "Tudo bem?",
+      "firstTranscript": "Tá tudo, bens?",
+      "secondTranscript": "Tá tudo bem.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 20,
+      "speed": "normal",
+      "path": "basic/bas_02_020.mp3",
+      "expected": "Tudo bom?",
+      "firstTranscript": "to the bong.",
+      "secondTranscript": "to the bung.",
+      "duration": 1.039375
+    },
+    {
+      "item": 20,
+      "speed": "slow",
+      "path": "basic/bas_02_020_slow.mp3",
+      "expected": "Tudo bom?",
+      "firstTranscript": "tattooed bones",
+      "secondTranscript": "Let's go do bones.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 24,
+      "speed": "normal",
+      "path": "basic/bas_02_024.mp3",
+      "expected": "Tchau",
+      "firstTranscript": "Ciao!",
+      "secondTranscript": "Chao.",
+      "duration": 0.762
+    },
+    {
+      "item": 24,
+      "speed": "slow",
+      "path": "basic/bas_02_024_slow.mp3",
+      "expected": "Tchau",
+      "firstTranscript": "It's show.",
+      "secondTranscript": "Ciao!",
+      "duration": 0.954
+    },
+    {
+      "item": 26,
+      "speed": "slow",
+      "path": "basic/bas_02_026_slow.mp3",
+      "expected": "Por favor",
+      "firstTranscript": "e por favor.",
+      "secondTranscript": "E por favor.",
+      "duration": 1.338
+    },
+    {
+      "item": 28,
+      "speed": "slow",
+      "path": "basic/bas_02_028_slow.mp3",
+      "expected": "Obrigada",
+      "firstTranscript": "Oso obrigadas.",
+      "secondTranscript": "Obrigadas.",
+      "duration": 1.53
+    },
+    {
+      "item": 31,
+      "speed": "normal",
+      "path": "basic/bas_02_031.mp3",
+      "expected": "Sim",
+      "firstTranscript": "See you next time.",
+      "secondTranscript": "Sing.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 31,
+      "speed": "slow",
+      "path": "basic/bas_02_031_slow.mp3",
+      "expected": "Sim",
+      "firstTranscript": "I'll see you in the next video.",
+      "secondTranscript": "Async.",
+      "duration": 1.039375
+    },
+    {
+      "item": 32,
+      "speed": "normal",
+      "path": "basic/bas_02_032.mp3",
+      "expected": "Não",
+      "firstTranscript": "No!",
+      "secondTranscript": "No.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 32,
+      "speed": "slow",
+      "path": "basic/bas_02_032_slow.mp3",
+      "expected": "Não",
+      "firstTranscript": "Now we're almost...",
+      "secondTranscript": "Now",
+      "duration": 1.2526875
+    },
+    {
+      "item": 33,
+      "speed": "normal",
+      "path": "basic/bas_03_033.mp3",
+      "expected": "eu",
+      "firstTranscript": "Thank you.",
+      "secondTranscript": "Nailed.",
+      "duration": 0.718375
+    },
+    {
+      "item": 33,
+      "speed": "slow",
+      "path": "basic/bas_03_033_slow.mp3",
+      "expected": "eu",
+      "firstTranscript": "Nailed.",
+      "secondTranscript": "Nailed",
+      "duration": 0.911375
+    },
+    {
+      "item": 35,
+      "speed": "normal",
+      "path": "basic/bas_03_035.mp3",
+      "expected": "ele",
+      "firstTranscript": "Dei-lhe.",
+      "secondTranscript": "They leave.",
+      "duration": 0.762
+    },
+    {
+      "item": 35,
+      "speed": "slow",
+      "path": "basic/bas_03_035_slow.mp3",
+      "expected": "ele",
+      "firstTranscript": "Auxê-lo, lixo.",
+      "secondTranscript": "Ozeio, Luís.",
+      "duration": 1.018
+    },
+    {
+      "item": 36,
+      "speed": "normal",
+      "path": "basic/bas_03_036.mp3",
+      "expected": "ela",
+      "firstTranscript": "Zeyla!",
+      "secondTranscript": "Say hello.",
+      "duration": 0.826
+    },
+    {
+      "item": 36,
+      "speed": "slow",
+      "path": "basic/bas_03_036_slow.mp3",
+      "expected": "ela",
+      "firstTranscript": "Nailers.",
+      "secondTranscript": "Nelas.",
+      "duration": 1.039375
+    },
+    {
+      "item": 37,
+      "speed": "slow",
+      "path": "basic/bas_03_037_slow.mp3",
+      "expected": "nós",
+      "firstTranscript": "He knows.",
+      "secondTranscript": "He knows.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 38,
+      "speed": "slow",
+      "path": "basic/bas_03_038_slow.mp3",
+      "expected": "vocês",
+      "firstTranscript": "But what says?",
+      "secondTranscript": "Of all says",
+      "duration": 1.21
+    },
+    {
+      "item": 39,
+      "speed": "slow",
+      "path": "basic/bas_03_039_slow.mp3",
+      "expected": "eles",
+      "firstTranscript": "Ovelis.",
+      "secondTranscript": "Ok, Luiz.",
+      "duration": 1.039375
+    },
+    {
+      "item": 40,
+      "speed": "slow",
+      "path": "basic/bas_03_040_slow.mp3",
+      "expected": "elas",
+      "firstTranscript": "e-mail us.",
+      "secondTranscript": "E melas.",
+      "duration": 1.039375
+    },
+    {
+      "item": 41,
+      "speed": "normal",
+      "path": "basic/bas_03_041.mp3",
+      "expected": "sou",
+      "firstTranscript": "so",
+      "secondTranscript": "So,",
+      "duration": 0.7406875
+    },
+    {
+      "item": 41,
+      "speed": "slow",
+      "path": "basic/bas_03_041_slow.mp3",
+      "expected": "sou",
+      "firstTranscript": "So",
+      "secondTranscript": "So",
+      "duration": 0.911375
+    },
+    {
+      "item": 43,
+      "speed": "normal",
+      "path": "basic/bas_03_043.mp3",
+      "expected": "são",
+      "firstTranscript": "So...",
+      "secondTranscript": "So...",
+      "duration": 0.89
+    },
+    {
+      "item": 43,
+      "speed": "slow",
+      "path": "basic/bas_03_043_slow.mp3",
+      "expected": "são",
+      "firstTranscript": "This is our home.",
+      "secondTranscript": "It's now...",
+      "duration": 1.1246875
+    },
+    {
+      "item": 44,
+      "speed": "slow",
+      "path": "basic/bas_03_044_slow.mp3",
+      "expected": "estou",
+      "firstTranscript": "And it's so.",
+      "secondTranscript": "En esto.",
+      "duration": 1.146
+    },
+    {
+      "item": 45,
+      "speed": "normal",
+      "path": "basic/bas_03_045.mp3",
+      "expected": "está",
+      "firstTranscript": "It's time.",
+      "secondTranscript": "Estaba.",
+      "duration": 0.826
+    },
+    {
+      "item": 45,
+      "speed": "slow",
+      "path": "basic/bas_03_045_slow.mp3",
+      "expected": "está",
+      "firstTranscript": "¡Wyster!",
+      "secondTranscript": "We start.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 46,
+      "speed": "slow",
+      "path": "basic/bas_03_046_slow.mp3",
+      "expected": "estamos",
+      "firstTranscript": "Nós estamos.",
+      "secondTranscript": "Onde estamos?",
+      "duration": 1.3166875
+    },
+    {
+      "item": 47,
+      "speed": "slow",
+      "path": "basic/bas_03_047_slow.mp3",
+      "expected": "estão",
+      "firstTranscript": "O estão.",
+      "secondTranscript": "Questão.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 50,
+      "speed": "normal",
+      "path": "basic/bas_04_050.mp3",
+      "expected": "parto",
+      "firstTranscript": "Bye, Tzu.",
+      "secondTranscript": "Bartitude.",
+      "duration": 0.911375
+    },
+    {
+      "item": 50,
+      "speed": "slow",
+      "path": "basic/bas_04_050_slow.mp3",
+      "expected": "parto",
+      "firstTranscript": "Die Partizu!",
+      "secondTranscript": "It's a part of the tour.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 51,
+      "speed": "normal",
+      "path": "basic/bas_04_051.mp3",
+      "expected": "como",
+      "firstTranscript": "Come with it.",
+      "secondTranscript": "Come wait.",
+      "duration": 0.847375
+    },
+    {
+      "item": 51,
+      "speed": "slow",
+      "path": "basic/bas_04_051_slow.mp3",
+      "expected": "como",
+      "firstTranscript": "Det kommer ut.",
+      "secondTranscript": "Bir kalmeli.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 52,
+      "speed": "normal",
+      "path": "basic/bas_04_052.mp3",
+      "expected": "falo",
+      "firstTranscript": "Follow",
+      "secondTranscript": "Falou!",
+      "duration": 0.868375
+    },
+    {
+      "item": 52,
+      "speed": "slow",
+      "path": "basic/bas_04_052_slow.mp3",
+      "expected": "falo",
+      "firstTranscript": "Desfile-lo.",
+      "secondTranscript": "Desfalou!",
+      "duration": 1.103375
+    },
+    {
+      "item": 53,
+      "speed": "normal",
+      "path": "basic/bas_04_053.mp3",
+      "expected": "parte",
+      "firstTranscript": "Bye to you!",
+      "secondTranscript": "巴的气",
+      "duration": 0.9326875
+    },
+    {
+      "item": 53,
+      "speed": "slow",
+      "path": "basic/bas_04_053_slow.mp3",
+      "expected": "parte",
+      "firstTranscript": "I'll bar the two.",
+      "secondTranscript": "I'll part it shoe.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 54,
+      "speed": "normal",
+      "path": "basic/bas_04_054.mp3",
+      "expected": "come",
+      "firstTranscript": "Call me.",
+      "secondTranscript": "Comis.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 54,
+      "speed": "slow",
+      "path": "basic/bas_04_054_slow.mp3",
+      "expected": "come",
+      "firstTranscript": "You call me you.",
+      "secondTranscript": "Call me.",
+      "duration": 1.082
+    },
+    {
+      "item": 55,
+      "speed": "normal",
+      "path": "basic/bas_04_055.mp3",
+      "expected": "fala",
+      "firstTranscript": "File it.",
+      "secondTranscript": "Falei.",
+      "duration": 0.847375
+    },
+    {
+      "item": 55,
+      "speed": "slow",
+      "path": "basic/bas_04_055_slow.mp3",
+      "expected": "fala",
+      "firstTranscript": "If I'll live.",
+      "secondTranscript": "If I look.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 56,
+      "speed": "slow",
+      "path": "basic/bas_04_056_slow.mp3",
+      "expected": "partimos",
+      "firstTranscript": "A parte de Chimos.",
+      "secondTranscript": "Aparecimos.",
+      "duration": 1.423375
+    },
+    {
+      "item": 57,
+      "speed": "slow",
+      "path": "basic/bas_04_057_slow.mp3",
+      "expected": "comemos",
+      "firstTranscript": "É como vemos.",
+      "secondTranscript": "Recomemos.",
+      "duration": 1.3166875
+    },
+    {
+      "item": 58,
+      "speed": "slow",
+      "path": "basic/bas_04_058_slow.mp3",
+      "expected": "falamos",
+      "firstTranscript": "E falamos.",
+      "secondTranscript": "E falamos.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 59,
+      "speed": "normal",
+      "path": "basic/bas_04_059.mp3",
+      "expected": "partem",
+      "firstTranscript": "part of the team.",
+      "secondTranscript": "By the thing.",
+      "duration": 1.039375
+    },
+    {
+      "item": 59,
+      "speed": "slow",
+      "path": "basic/bas_04_059_slow.mp3",
+      "expected": "partem",
+      "firstTranscript": "to part of things.",
+      "secondTranscript": "The part of the thing.",
+      "duration": 1.274
+    },
+    {
+      "item": 60,
+      "speed": "normal",
+      "path": "basic/bas_04_060.mp3",
+      "expected": "comem",
+      "firstTranscript": "Cummings.",
+      "secondTranscript": "Comments.",
+      "duration": 0.975375
+    },
+    {
+      "item": 60,
+      "speed": "slow",
+      "path": "basic/bas_04_060_slow.mp3",
+      "expected": "comem",
+      "firstTranscript": "Accomings",
+      "secondTranscript": "a call means",
+      "duration": 1.21
+    },
+    {
+      "item": 61,
+      "speed": "normal",
+      "path": "basic/bas_04_061.mp3",
+      "expected": "falam",
+      "firstTranscript": "發了一張",
+      "secondTranscript": "Falando.",
+      "duration": 1.082
+    },
+    {
+      "item": 61,
+      "speed": "slow",
+      "path": "basic/bas_04_061_slow.mp3",
+      "expected": "falam",
+      "firstTranscript": "Esfala, Lânion!",
+      "secondTranscript": "Just follow him.",
+      "duration": 1.338
+    },
+    {
+      "item": 62,
+      "speed": "normal",
+      "path": "basic/bas_04_062.mp3",
+      "expected": "tenho",
+      "firstTranscript": "謝謝觀看",
+      "secondTranscript": "Señor.",
+      "duration": 0.783375
+    },
+    {
+      "item": 62,
+      "speed": "slow",
+      "path": "basic/bas_04_062_slow.mp3",
+      "expected": "tenho",
+      "firstTranscript": "とてあげよう",
+      "secondTranscript": "Atenio.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 63,
+      "speed": "normal",
+      "path": "basic/bas_04_063.mp3",
+      "expected": "tem",
+      "firstTranscript": "saying",
+      "secondTranscript": "Zang",
+      "duration": 0.8046875
+    },
+    {
+      "item": 63,
+      "speed": "slow",
+      "path": "basic/bas_04_063_slow.mp3",
+      "expected": "tem",
+      "firstTranscript": "That's it.",
+      "secondTranscript": "What a thing.",
+      "duration": 1.039375
+    },
+    {
+      "item": 64,
+      "speed": "normal",
+      "path": "basic/bas_04_064.mp3",
+      "expected": "ter",
+      "firstTranscript": "Stay out of it.",
+      "secondTranscript": "there",
+      "duration": 0.718375
+    },
+    {
+      "item": 64,
+      "speed": "slow",
+      "path": "basic/bas_04_064_slow.mp3",
+      "expected": "ter",
+      "firstTranscript": "Tot de heren.",
+      "secondTranscript": "Tot de eerder.",
+      "duration": 0.911375
+    },
+    {
+      "item": 65,
+      "speed": "normal",
+      "path": "basic/bas_04_065.mp3",
+      "expected": "vou",
+      "firstTranscript": "Zol!",
+      "secondTranscript": "Vote.",
+      "duration": 0.783375
+    },
+    {
+      "item": 65,
+      "speed": "slow",
+      "path": "basic/bas_04_065_slow.mp3",
+      "expected": "vou",
+      "firstTranscript": "Evolves.",
+      "secondTranscript": "evolves",
+      "duration": 1.018
+    },
+    {
+      "item": 67,
+      "speed": "normal",
+      "path": "basic/bas_04_067.mp3",
+      "expected": "ir",
+      "firstTranscript": "Meera.",
+      "secondTranscript": "Мир.",
+      "duration": 0.719375
+    },
+    {
+      "item": 67,
+      "speed": "slow",
+      "path": "basic/bas_04_067_slow.mp3",
+      "expected": "ir",
+      "firstTranscript": "Amir.",
+      "secondTranscript": "And here's it.",
+      "duration": 0.911375
+    },
+    {
+      "item": 68,
+      "speed": "normal",
+      "path": "basic/bas_04_068.mp3",
+      "expected": "faço",
+      "firstTranscript": "法宿",
+      "secondTranscript": "Faço o que...",
+      "duration": 0.911375
+    },
+    {
+      "item": 68,
+      "speed": "slow",
+      "path": "basic/bas_04_068_slow.mp3",
+      "expected": "faço",
+      "firstTranscript": "Fala, Suzuki.",
+      "secondTranscript": "E fala, Suzu.",
+      "duration": 1.167375
+    },
+    {
+      "item": 69,
+      "speed": "slow",
+      "path": "basic/bas_04_069_slow.mp3",
+      "expected": "faz",
+      "firstTranscript": "em flas.",
+      "secondTranscript": "Em frase.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 70,
+      "speed": "slow",
+      "path": "basic/bas_04_070_slow.mp3",
+      "expected": "fazer",
+      "firstTranscript": "O fazer.",
+      "secondTranscript": "o fazer.",
+      "duration": 1.103375
+    },
+    {
+      "item": 71,
+      "speed": "normal",
+      "path": "basic/bas_04_071.mp3",
+      "expected": "posso",
+      "firstTranscript": "爆四個",
+      "secondTranscript": "Boss suit",
+      "duration": 0.89
+    },
+    {
+      "item": 71,
+      "speed": "slow",
+      "path": "basic/bas_04_071_slow.mp3",
+      "expected": "posso",
+      "firstTranscript": "e para o nosso zoque.",
+      "secondTranscript": "E pra lá, Suzuki.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 73,
+      "speed": "slow",
+      "path": "basic/bas_04_073_slow.mp3",
+      "expected": "poder",
+      "firstTranscript": "تفضير",
+      "secondTranscript": "O poder.",
+      "duration": 1.082
+    },
+    {
+      "item": 75,
+      "speed": "normal",
+      "path": "basic/bas_04_075.mp3",
+      "expected": "quer",
+      "firstTranscript": "Care.",
+      "secondTranscript": "Quero.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 75,
+      "speed": "slow",
+      "path": "basic/bas_04_075_slow.mp3",
+      "expected": "quer",
+      "firstTranscript": "En kärl.",
+      "secondTranscript": "Kill.",
+      "duration": 0.954
+    },
+    {
+      "item": 76,
+      "speed": "slow",
+      "path": "basic/bas_04_076_slow.mp3",
+      "expected": "querer",
+      "firstTranscript": "You can carry it out.",
+      "secondTranscript": "I don't care if I live.",
+      "duration": 1.103375
+    },
+    {
+      "item": 77,
+      "speed": "normal",
+      "path": "basic/bas_04_077.mp3",
+      "expected": "sei",
+      "firstTranscript": "Save.",
+      "secondTranscript": "Save.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 77,
+      "speed": "slow",
+      "path": "basic/bas_04_077_slow.mp3",
+      "expected": "sei",
+      "firstTranscript": "Eu não sei.",
+      "secondTranscript": "I'll say.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 78,
+      "speed": "normal",
+      "path": "basic/bas_04_078.mp3",
+      "expected": "sabe",
+      "firstTranscript": "Sabi",
+      "secondTranscript": "Sabi.",
+      "duration": 0.826
+    },
+    {
+      "item": 78,
+      "speed": "slow",
+      "path": "basic/bas_04_078_slow.mp3",
+      "expected": "sabe",
+      "firstTranscript": "The Sabi.",
+      "secondTranscript": "Sabi",
+      "duration": 1.0606875
+    },
+    {
+      "item": 79,
+      "speed": "slow",
+      "path": "basic/bas_04_079_slow.mp3",
+      "expected": "saber",
+      "firstTranscript": "Não saber.",
+      "secondTranscript": "Não saber.",
+      "duration": 1.103375
+    },
+    {
+      "item": 81,
+      "speed": "slow",
+      "path": "basic/bas_05_081_slow.mp3",
+      "expected": "onze",
+      "firstTranscript": "Abone olmayı izleyin.",
+      "secondTranscript": "Abonzi",
+      "duration": 1.167375
+    },
+    {
+      "item": 82,
+      "speed": "normal",
+      "path": "basic/bas_05_082.mp3",
+      "expected": "um",
+      "firstTranscript": "Don't worry.",
+      "secondTranscript": "中文字幕志愿者 杨茜茜",
+      "duration": 0.7406875
+    },
+    {
+      "item": 82,
+      "speed": "slow",
+      "path": "basic/bas_05_082_slow.mp3",
+      "expected": "um",
+      "firstTranscript": "Hey, don'ts.",
+      "secondTranscript": "the dongs",
+      "duration": 0.9326875
+    },
+    {
+      "item": 83,
+      "speed": "normal",
+      "path": "basic/bas_05_083.mp3",
+      "expected": "uma",
+      "firstTranscript": "Too much.",
+      "secondTranscript": "Do my",
+      "duration": 0.762
+    },
+    {
+      "item": 83,
+      "speed": "slow",
+      "path": "basic/bas_05_083_slow.mp3",
+      "expected": "uma",
+      "firstTranscript": "He's no man.",
+      "secondTranscript": "It's all mad.",
+      "duration": 0.954
+    },
+    {
+      "item": 84,
+      "speed": "normal",
+      "path": "basic/bas_05_084.mp3",
+      "expected": "doze",
+      "firstTranscript": "Dorsi",
+      "secondTranscript": "Dosi",
+      "duration": 0.911375
+    },
+    {
+      "item": 84,
+      "speed": "slow",
+      "path": "basic/bas_05_084_slow.mp3",
+      "expected": "doze",
+      "firstTranscript": "Adou ao Z.",
+      "secondTranscript": "Adolze.",
+      "duration": 1.146
+    },
+    {
+      "item": 86,
+      "speed": "normal",
+      "path": "basic/bas_05_086.mp3",
+      "expected": "duas",
+      "firstTranscript": "Do us.",
+      "secondTranscript": "Do us",
+      "duration": 0.89
+    },
+    {
+      "item": 86,
+      "speed": "slow",
+      "path": "basic/bas_05_086_slow.mp3",
+      "expected": "duas",
+      "firstTranscript": "I do who is.",
+      "secondTranscript": "I do was",
+      "duration": 1.103375
+    },
+    {
+      "item": 87,
+      "speed": "normal",
+      "path": "basic/bas_05_087.mp3",
+      "expected": "treze",
+      "firstTranscript": "Três ícoles.",
+      "secondTranscript": "13.",
+      "duration": 0.911375
+    },
+    {
+      "item": 87,
+      "speed": "slow",
+      "path": "basic/bas_05_087_slow.mp3",
+      "expected": "treze",
+      "firstTranscript": "Atreze.",
+      "secondTranscript": "A treze.",
+      "duration": 1.21
+    },
+    {
+      "item": 88,
+      "speed": "normal",
+      "path": "basic/bas_05_088.mp3",
+      "expected": "três",
+      "firstTranscript": "Dores.",
+      "secondTranscript": "That is.",
+      "duration": 0.826
+    },
+    {
+      "item": 88,
+      "speed": "slow",
+      "path": "basic/bas_05_088_slow.mp3",
+      "expected": "três",
+      "firstTranscript": "A outra é isso.",
+      "secondTranscript": "Another day.",
+      "duration": 1.082
+    },
+    {
+      "item": 89,
+      "speed": "slow",
+      "path": "basic/bas_05_089_slow.mp3",
+      "expected": "quatorze",
+      "firstTranscript": "em quatorze.",
+      "secondTranscript": "Em quatorze.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 90,
+      "speed": "normal",
+      "path": "basic/bas_05_090.mp3",
+      "expected": "quatro",
+      "firstTranscript": "コアツルー",
+      "secondTranscript": "Cuatro.",
+      "duration": 0.911375
+    },
+    {
+      "item": 90,
+      "speed": "slow",
+      "path": "basic/bas_05_090_slow.mp3",
+      "expected": "quatro",
+      "firstTranscript": "イコアツル",
+      "secondTranscript": "Em quatro.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 91,
+      "speed": "normal",
+      "path": "basic/bas_05_091.mp3",
+      "expected": "quinze",
+      "firstTranscript": "Kings it.",
+      "secondTranscript": "15",
+      "duration": 0.9326875
+    },
+    {
+      "item": 91,
+      "speed": "slow",
+      "path": "basic/bas_05_091_slow.mp3",
+      "expected": "quinze",
+      "firstTranscript": "Aqui em Zé.",
+      "secondTranscript": "A quinze.",
+      "duration": 1.167375
+    },
+    {
+      "item": 92,
+      "speed": "slow",
+      "path": "basic/bas_05_092_slow.mp3",
+      "expected": "cinco",
+      "firstTranscript": "Assim cool!",
+      "secondTranscript": "A cinco.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 93,
+      "speed": "normal",
+      "path": "basic/bas_05_093.mp3",
+      "expected": "dezesseis",
+      "firstTranscript": "DSSA's.",
+      "secondTranscript": "16.",
+      "duration": 1.167375
+    },
+    {
+      "item": 94,
+      "speed": "normal",
+      "path": "basic/bas_05_094.mp3",
+      "expected": "seis",
+      "firstTranscript": "say so.",
+      "secondTranscript": "Says.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 94,
+      "speed": "slow",
+      "path": "basic/bas_05_094_slow.mp3",
+      "expected": "seis",
+      "firstTranscript": "I'll see you.",
+      "secondTranscript": "I'll say he's.",
+      "duration": 1.039375
+    },
+    {
+      "item": 95,
+      "speed": "normal",
+      "path": "basic/bas_05_095.mp3",
+      "expected": "dezessete",
+      "firstTranscript": "This is at you.",
+      "secondTranscript": "17.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 96,
+      "speed": "normal",
+      "path": "basic/bas_05_096.mp3",
+      "expected": "sete",
+      "firstTranscript": "Set you.",
+      "secondTranscript": "Setsu",
+      "duration": 0.8686875
+    },
+    {
+      "item": 96,
+      "speed": "slow",
+      "path": "basic/bas_05_096_slow.mp3",
+      "expected": "sete",
+      "firstTranscript": "I'll say it to you.",
+      "secondTranscript": "I'll set you",
+      "duration": 1.146
+    },
+    {
+      "item": 97,
+      "speed": "normal",
+      "path": "basic/bas_05_097.mp3",
+      "expected": "dezoito",
+      "firstTranscript": "Desoi-to.",
+      "secondTranscript": "18.",
+      "duration": 1.103375
+    },
+    {
+      "item": 98,
+      "speed": "normal",
+      "path": "basic/bas_05_098.mp3",
+      "expected": "oito",
+      "firstTranscript": "ご視聴いただきましてくださって… [ASR repeated Japanese text; truncated in evidence]",
+      "secondTranscript": "おいつう",
+      "duration": 0.8686875
+    },
+    {
+      "item": 98,
+      "speed": "slow",
+      "path": "basic/bas_05_098_slow.mp3",
+      "expected": "oito",
+      "firstTranscript": "E vou ir tudo.",
+      "secondTranscript": "And what are you to do?",
+      "duration": 1.103375
+    },
+    {
+      "item": 99,
+      "speed": "normal",
+      "path": "basic/bas_05_099.mp3",
+      "expected": "dezenove",
+      "firstTranscript": "Dezenovie.",
+      "secondTranscript": "19.",
+      "duration": 1.167375
+    },
+    {
+      "item": 99,
+      "speed": "slow",
+      "path": "basic/bas_05_099_slow.mp3",
+      "expected": "dezenove",
+      "firstTranscript": "Desenove.",
+      "secondTranscript": "19",
+      "duration": 1.4446875
+    },
+    {
+      "item": 100,
+      "speed": "normal",
+      "path": "basic/bas_05_100.mp3",
+      "expected": "nove",
+      "firstTranscript": "Nave.",
+      "secondTranscript": "9.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 100,
+      "speed": "slow",
+      "path": "basic/bas_05_100_slow.mp3",
+      "expected": "nove",
+      "firstTranscript": "Navi.",
+      "secondTranscript": "Na'vi",
+      "duration": 1.082
+    },
+    {
+      "item": 101,
+      "speed": "normal",
+      "path": "basic/bas_05_101.mp3",
+      "expected": "vinte",
+      "firstTranscript": "Vim, tchau!",
+      "secondTranscript": "20 anos.",
+      "duration": 0.911375
+    },
+    {
+      "item": 101,
+      "speed": "slow",
+      "path": "basic/bas_05_101_slow.mp3",
+      "expected": "vinte",
+      "firstTranscript": "I've been to you.",
+      "secondTranscript": "Avincio!",
+      "duration": 1.1886875
+    },
+    {
+      "item": 102,
+      "speed": "normal",
+      "path": "basic/bas_05_102.mp3",
+      "expected": "dez",
+      "firstTranscript": "That's...",
+      "secondTranscript": "10.",
+      "duration": 0.826
+    },
+    {
+      "item": 102,
+      "speed": "slow",
+      "path": "basic/bas_05_102_slow.mp3",
+      "expected": "dez",
+      "firstTranscript": "You're dead.",
+      "secondTranscript": "Eu desço.",
+      "duration": 1.018
+    },
+    {
+      "item": 103,
+      "speed": "normal",
+      "path": "basic/bas_05_103.mp3",
+      "expected": "trinta",
+      "firstTranscript": "Tsirinta.",
+      "secondTranscript": "30.",
+      "duration": 1.018
+    },
+    {
+      "item": 103,
+      "speed": "slow",
+      "path": "basic/bas_05_103_slow.mp3",
+      "expected": "trinta",
+      "firstTranscript": "Let's ring the bell.",
+      "secondTranscript": "Let's drink, hello.",
+      "duration": 1.295375
+    },
+    {
+      "item": 104,
+      "speed": "slow",
+      "path": "basic/bas_05_104_slow.mp3",
+      "expected": "quarenta",
+      "firstTranscript": "e quarenta",
+      "secondTranscript": "E quarentas.",
+      "duration": 1.423375
+    },
+    {
+      "item": 105,
+      "speed": "slow",
+      "path": "basic/bas_05_105_slow.mp3",
+      "expected": "oitenta",
+      "firstTranscript": "Lvojí tějínské.",
+      "secondTranscript": "Ройт деймстер.",
+      "duration": 1.466
+    },
+    {
+      "item": 106,
+      "speed": "slow",
+      "path": "basic/bas_05_106_slow.mp3",
+      "expected": "cinquenta",
+      "firstTranscript": "A cinquenta.",
+      "secondTranscript": "A 50",
+      "duration": 1.615375
+    },
+    {
+      "item": 107,
+      "speed": "slow",
+      "path": "basic/bas_05_107_slow.mp3",
+      "expected": "noventa",
+      "firstTranscript": "de noventas.",
+      "secondTranscript": "De 90.",
+      "duration": 1.466
+    },
+    {
+      "item": 108,
+      "speed": "slow",
+      "path": "basic/bas_05_108_slow.mp3",
+      "expected": "sessenta",
+      "firstTranscript": "Não se senta.",
+      "secondTranscript": "O 60.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 109,
+      "speed": "normal",
+      "path": "basic/bas_05_109.mp3",
+      "expected": "cem",
+      "firstTranscript": "saying",
+      "secondTranscript": "Saying",
+      "duration": 0.8046875
+    },
+    {
+      "item": 109,
+      "speed": "slow",
+      "path": "basic/bas_05_109_slow.mp3",
+      "expected": "cem",
+      "firstTranscript": "I'm saying",
+      "secondTranscript": "by saying,",
+      "duration": 1.018
+    },
+    {
+      "item": 110,
+      "speed": "slow",
+      "path": "basic/bas_05_110_slow.mp3",
+      "expected": "setenta",
+      "firstTranscript": "No setenta.",
+      "secondTranscript": "O setenta.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 113,
+      "speed": "slow",
+      "path": "basic/bas_06_113_slow.mp3",
+      "expected": "quarta-feira",
+      "firstTranscript": "Quarta-feiras.",
+      "secondTranscript": "Quarta-feiras.",
+      "duration": 1.743375
+    },
+    {
+      "item": 116,
+      "speed": "slow",
+      "path": "basic/bas_06_116_slow.mp3",
+      "expected": "sábado",
+      "firstTranscript": "Se sabe, Badu.",
+      "secondTranscript": "This is sábado.",
+      "duration": 1.274
+    },
+    {
+      "item": 117,
+      "speed": "slow",
+      "path": "basic/bas_06_117_slow.mp3",
+      "expected": "domingo",
+      "firstTranscript": "Adormingos!",
+      "secondTranscript": "É domingo.",
+      "duration": 1.338
+    },
+    {
+      "item": 119,
+      "speed": "normal",
+      "path": "basic/bas_06_119.mp3",
+      "expected": "julho",
+      "firstTranscript": "جوليو",
+      "secondTranscript": "Júlio.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 119,
+      "speed": "slow",
+      "path": "basic/bas_06_119_slow.mp3",
+      "expected": "julho",
+      "firstTranscript": "Tá joelho.",
+      "secondTranscript": "a Júlio.",
+      "duration": 1.103375
+    },
+    {
+      "item": 121,
+      "speed": "slow",
+      "path": "basic/bas_06_121_slow.mp3",
+      "expected": "agosto",
+      "firstTranscript": "And that goes to...",
+      "secondTranscript": "And that goes to",
+      "duration": 1.3806875
+    },
+    {
+      "item": 122,
+      "speed": "normal",
+      "path": "basic/bas_06_122.mp3",
+      "expected": "março",
+      "firstTranscript": "मार سوٹ",
+      "secondTranscript": "Mar azul.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 122,
+      "speed": "slow",
+      "path": "basic/bas_06_122_slow.mp3",
+      "expected": "março",
+      "firstTranscript": "e mar de su.",
+      "secondTranscript": "Imaraçu",
+      "duration": 1.2526875
+    },
+    {
+      "item": 123,
+      "speed": "slow",
+      "path": "basic/bas_06_123_slow.mp3",
+      "expected": "setembro",
+      "firstTranscript": "No setembro.",
+      "secondTranscript": "Em setembro.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 124,
+      "speed": "normal",
+      "path": "basic/bas_06_124.mp3",
+      "expected": "abril",
+      "firstTranscript": "Abriu!",
+      "secondTranscript": "Abriu.",
+      "duration": 0.911375
+    },
+    {
+      "item": 125,
+      "speed": "slow",
+      "path": "basic/bas_06_125_slow.mp3",
+      "expected": "outubro",
+      "firstTranscript": "En zo'n broer.",
+      "secondTranscript": "He's all too, bruh.",
+      "duration": 1.402
+    },
+    {
+      "item": 126,
+      "speed": "normal",
+      "path": "basic/bas_06_126.mp3",
+      "expected": "maio",
+      "firstTranscript": "my youth",
+      "secondTranscript": "My youth.",
+      "duration": 0.847
+    },
+    {
+      "item": 126,
+      "speed": "slow",
+      "path": "basic/bas_06_126_slow.mp3",
+      "expected": "maio",
+      "firstTranscript": "Smile!",
+      "secondTranscript": "Smile.",
+      "duration": 1.082
+    },
+    {
+      "item": 127,
+      "speed": "slow",
+      "path": "basic/bas_06_127_slow.mp3",
+      "expected": "novembro",
+      "firstTranscript": "Se novembro.",
+      "secondTranscript": "em novembro.",
+      "duration": 1.402
+    },
+    {
+      "item": 128,
+      "speed": "normal",
+      "path": "basic/bas_06_128.mp3",
+      "expected": "junho",
+      "firstTranscript": "Dzień, Joga.",
+      "secondTranscript": "ジョン・ヨーグ",
+      "duration": 0.9326875
+    },
+    {
+      "item": 128,
+      "speed": "slow",
+      "path": "basic/bas_06_128_slow.mp3",
+      "expected": "junho",
+      "firstTranscript": "I just don't want to hear you all about it.",
+      "secondTranscript": "这时候你又有了",
+      "duration": 1.3166875
+    },
+    {
+      "item": 129,
+      "speed": "slow",
+      "path": "basic/bas_06_129_slow.mp3",
+      "expected": "dezembro",
+      "firstTranscript": "A dezembro.",
+      "secondTranscript": "A dezembro.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 130,
+      "speed": "slow",
+      "path": "basic/bas_07_130_slow.mp3",
+      "expected": "vermelho",
+      "firstTranscript": "De vermerioot.",
+      "secondTranscript": "To wear a mail you.",
+      "duration": 1.359375
+    },
+    {
+      "item": 132,
+      "speed": "normal",
+      "path": "basic/bas_07_132.mp3",
+      "expected": "verde",
+      "firstTranscript": "Where did you?",
+      "secondTranscript": "Where'd you?",
+      "duration": 1.018
+    },
+    {
+      "item": 132,
+      "speed": "slow",
+      "path": "basic/bas_07_132_slow.mp3",
+      "expected": "verde",
+      "firstTranscript": "Averga de você.",
+      "secondTranscript": "Averro de Ju",
+      "duration": 1.274
+    },
+    {
+      "item": 133,
+      "speed": "normal",
+      "path": "basic/bas_07_133.mp3",
+      "expected": "amarelo",
+      "firstTranscript": "Kamar selu.",
+      "secondTranscript": "A Marcelo.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 133,
+      "speed": "slow",
+      "path": "basic/bas_07_133_slow.mp3",
+      "expected": "amarelo",
+      "firstTranscript": "Desammar-se-lo.",
+      "secondTranscript": "Zé Marcelo",
+      "duration": 1.2526875
+    },
+    {
+      "item": 134,
+      "speed": "normal",
+      "path": "basic/bas_07_134.mp3",
+      "expected": "preto",
+      "firstTranscript": "Прецук.",
+      "secondTranscript": "Prezo.",
+      "duration": 0.89
+    },
+    {
+      "item": 134,
+      "speed": "slow",
+      "path": "basic/bas_07_134_slow.mp3",
+      "expected": "preto",
+      "firstTranscript": "Apreia-se do...",
+      "secondTranscript": "o preço.",
+      "duration": 1.146
+    },
+    {
+      "item": 135,
+      "speed": "normal",
+      "path": "basic/bas_07_135.mp3",
+      "expected": "branco",
+      "firstTranscript": "Branko",
+      "secondTranscript": "Bráncút",
+      "duration": 0.9326875
+    },
+    {
+      "item": 135,
+      "speed": "slow",
+      "path": "basic/bas_07_135_slow.mp3",
+      "expected": "branco",
+      "firstTranscript": "Branku.",
+      "secondTranscript": "Brancur",
+      "duration": 1.274
+    },
+    {
+      "item": 136,
+      "speed": "slow",
+      "path": "basic/bas_07_136_slow.mp3",
+      "expected": "laranja",
+      "firstTranscript": "E laranja, Jesus.",
+      "secondTranscript": "E larângeras.",
+      "duration": 1.487375
+    },
+    {
+      "item": 137,
+      "speed": "normal",
+      "path": "basic/bas_07_137.mp3",
+      "expected": "roxo",
+      "firstTranscript": "I'll find shoes.",
+      "secondTranscript": "Oh, shoot.",
+      "duration": 0.89
+    },
+    {
+      "item": 137,
+      "speed": "slow",
+      "path": "basic/bas_07_137_slow.mp3",
+      "expected": "roxo",
+      "firstTranscript": "and I'll fire you.",
+      "secondTranscript": "Uma flor xirub.",
+      "duration": 1.167375
+    },
+    {
+      "item": 138,
+      "speed": "normal",
+      "path": "basic/bas_07_138.mp3",
+      "expected": "rosa",
+      "firstTranscript": "Fosic!",
+      "secondTranscript": "What was it?",
+      "duration": 0.8686875
+    },
+    {
+      "item": 138,
+      "speed": "slow",
+      "path": "basic/bas_07_138_slow.mp3",
+      "expected": "rosa",
+      "firstTranscript": "Inforz-se.",
+      "secondTranscript": "Info Z",
+      "duration": 1.167375
+    },
+    {
+      "item": 139,
+      "speed": "normal",
+      "path": "basic/bas_07_139.mp3",
+      "expected": "cinza",
+      "firstTranscript": "See you next time.",
+      "secondTranscript": "things up",
+      "duration": 0.954
+    },
+    {
+      "item": 139,
+      "speed": "slow",
+      "path": "basic/bas_07_139_slow.mp3",
+      "expected": "cinza",
+      "firstTranscript": "Assinza!",
+      "secondTranscript": "A scene is there.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 140,
+      "speed": "normal",
+      "path": "basic/bas_07_140.mp3",
+      "expected": "marrom",
+      "firstTranscript": "מה חיונג?",
+      "secondTranscript": "Mahong.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 140,
+      "speed": "slow",
+      "path": "basic/bas_07_140_slow.mp3",
+      "expected": "marrom",
+      "firstTranscript": "Die machen uns.",
+      "secondTranscript": "Die Machung.",
+      "duration": 1.21
+    },
+    {
+      "item": 141,
+      "speed": "normal",
+      "path": "basic/bas_08_141.mp3",
+      "expected": "mãe",
+      "firstTranscript": "my",
+      "secondTranscript": "My",
+      "duration": 0.89
+    },
+    {
+      "item": 141,
+      "speed": "slow",
+      "path": "basic/bas_08_141_slow.mp3",
+      "expected": "mãe",
+      "firstTranscript": "It's my age.",
+      "secondTranscript": "This is my age.",
+      "duration": 1.231375
+    },
+    {
+      "item": 142,
+      "speed": "slow",
+      "path": "basic/bas_08_142_slow.mp3",
+      "expected": "pai",
+      "firstTranscript": "Bye.",
+      "secondTranscript": "Goodbye.",
+      "duration": 0.975375
+    },
+    {
+      "item": 143,
+      "speed": "normal",
+      "path": "basic/bas_08_143.mp3",
+      "expected": "irmão",
+      "firstTranscript": "Kirsmaa on.",
+      "secondTranscript": "Here's my home.",
+      "duration": 1.146
+    },
+    {
+      "item": 143,
+      "speed": "slow",
+      "path": "basic/bas_08_143_slow.mp3",
+      "expected": "irmão",
+      "firstTranscript": "İzirte mağol.",
+      "secondTranscript": "She's eating her mouth.",
+      "duration": 1.6366875
+    },
+    {
+      "item": 144,
+      "speed": "normal",
+      "path": "basic/bas_08_144.mp3",
+      "expected": "irmã",
+      "firstTranscript": "إِرَّمًا",
+      "secondTranscript": "Irre-mains.",
+      "duration": 1.018
+    },
+    {
+      "item": 144,
+      "speed": "slow",
+      "path": "basic/bas_08_144_slow.mp3",
+      "expected": "irmã",
+      "firstTranscript": "Eat it up a month.",
+      "secondTranscript": "Eater's mind.",
+      "duration": 1.295375
+    },
+    {
+      "item": 145,
+      "speed": "normal",
+      "path": "basic/bas_08_145.mp3",
+      "expected": "filho",
+      "firstTranscript": "It's failure.",
+      "secondTranscript": "It's failure.",
+      "duration": 0.89
+    },
+    {
+      "item": 145,
+      "speed": "slow",
+      "path": "basic/bas_08_145_slow.mp3",
+      "expected": "filho",
+      "firstTranscript": "Afvilior.",
+      "secondTranscript": "I feel your",
+      "duration": 1.1246875
+    },
+    {
+      "item": 146,
+      "speed": "normal",
+      "path": "basic/bas_08_146.mp3",
+      "expected": "filha",
+      "firstTranscript": "Filia",
+      "secondTranscript": "Filia",
+      "duration": 0.9326875
+    },
+    {
+      "item": 146,
+      "speed": "slow",
+      "path": "basic/bas_08_146_slow.mp3",
+      "expected": "filha",
+      "firstTranscript": "Perfelia.",
+      "secondTranscript": "I feel you.",
+      "duration": 1.167375
+    },
+    {
+      "item": 147,
+      "speed": "normal",
+      "path": "basic/bas_08_147.mp3",
+      "expected": "avô",
+      "firstTranscript": "I will.",
+      "secondTranscript": "A volta.",
+      "duration": 0.762
+    },
+    {
+      "item": 147,
+      "speed": "slow",
+      "path": "basic/bas_08_147_slow.mp3",
+      "expected": "avô",
+      "firstTranscript": "and have rules.",
+      "secondTranscript": "É na voz.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 148,
+      "speed": "normal",
+      "path": "basic/bas_08_148.mp3",
+      "expected": "avó",
+      "firstTranscript": "Have a good day.",
+      "secondTranscript": "Er wurde.",
+      "duration": 0.762
+    },
+    {
+      "item": 148,
+      "speed": "slow",
+      "path": "basic/bas_08_148_slow.mp3",
+      "expected": "avó",
+      "firstTranscript": "and have a good day.",
+      "secondTranscript": "É na voz.",
+      "duration": 0.975375
+    },
+    {
+      "item": 149,
+      "speed": "slow",
+      "path": "basic/bas_08_149_slow.mp3",
+      "expected": "marido",
+      "firstTranscript": "Lemaridos.",
+      "secondTranscript": "É marido.",
+      "duration": 1.274
+    },
+    {
+      "item": 150,
+      "speed": "slow",
+      "path": "basic/bas_08_150_slow.mp3",
+      "expected": "esposa",
+      "firstTranscript": "Весболзо!",
+      "secondTranscript": "E esposa.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 151,
+      "speed": "slow",
+      "path": "basic/bas_08_151_slow.mp3",
+      "expected": "mulher",
+      "firstTranscript": "تمول ديار",
+      "secondTranscript": "Somos líderes.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 152,
+      "speed": "normal",
+      "path": "basic/bas_08_152.mp3",
+      "expected": "tio",
+      "firstTranscript": "チオ",
+      "secondTranscript": "See you.",
+      "duration": 0.783375
+    },
+    {
+      "item": 152,
+      "speed": "slow",
+      "path": "basic/bas_08_152_slow.mp3",
+      "expected": "tio",
+      "firstTranscript": "私よ",
+      "secondTranscript": "Let's see you.",
+      "duration": 1.018
+    },
+    {
+      "item": 153,
+      "speed": "normal",
+      "path": "basic/bas_08_153.mp3",
+      "expected": "tia",
+      "firstTranscript": "See ya!",
+      "secondTranscript": "See ya.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 153,
+      "speed": "slow",
+      "path": "basic/bas_08_153_slow.mp3",
+      "expected": "tia",
+      "firstTranscript": "I'll see you.",
+      "secondTranscript": "Let's see ya.",
+      "duration": 1.039375
+    },
+    {
+      "item": 154,
+      "speed": "normal",
+      "path": "basic/bas_09_154.mp3",
+      "expected": "pão",
+      "firstTranscript": "Thumbs up!",
+      "secondTranscript": "Proud.",
+      "duration": 0.954
+    },
+    {
+      "item": 154,
+      "speed": "slow",
+      "path": "basic/bas_09_154_slow.mp3",
+      "expected": "pão",
+      "firstTranscript": "Keep the albums.",
+      "secondTranscript": "Bones",
+      "duration": 1.2526875
+    },
+    {
+      "item": 155,
+      "speed": "normal",
+      "path": "basic/bas_09_155.mp3",
+      "expected": "água",
+      "firstTranscript": "Sag mal!",
+      "secondTranscript": "Zagły.",
+      "duration": 0.89
+    },
+    {
+      "item": 155,
+      "speed": "slow",
+      "path": "basic/bas_09_155_slow.mp3",
+      "expected": "água",
+      "firstTranscript": "Is I good?",
+      "secondTranscript": "Is I good",
+      "duration": 1.1246875
+    },
+    {
+      "item": 156,
+      "speed": "slow",
+      "path": "basic/bas_09_156_slow.mp3",
+      "expected": "cafezinho",
+      "firstTranscript": "Acafizinho.",
+      "secondTranscript": "a cafezinho",
+      "duration": 1.5726875
+    },
+    {
+      "item": 157,
+      "speed": "normal",
+      "path": "basic/bas_09_157.mp3",
+      "expected": "chá",
+      "firstTranscript": "Shall.",
+      "secondTranscript": "Show.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 157,
+      "speed": "slow",
+      "path": "basic/bas_09_157_slow.mp3",
+      "expected": "chá",
+      "firstTranscript": "You shall.",
+      "secondTranscript": "Israel.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 158,
+      "speed": "normal",
+      "path": "basic/bas_09_158.mp3",
+      "expected": "suco",
+      "firstTranscript": "So good.",
+      "secondTranscript": "So good.",
+      "duration": 0.847375
+    },
+    {
+      "item": 158,
+      "speed": "slow",
+      "path": "basic/bas_09_158_slow.mp3",
+      "expected": "suco",
+      "firstTranscript": "Слогой!",
+      "secondTranscript": "アスローブクは",
+      "duration": 1.146
+    },
+    {
+      "item": 159,
+      "speed": "normal",
+      "path": "basic/bas_09_159.mp3",
+      "expected": "carne",
+      "firstTranscript": "God-a-need.",
+      "secondTranscript": "Cotteny.",
+      "duration": 0.89
+    },
+    {
+      "item": 159,
+      "speed": "slow",
+      "path": "basic/bas_09_159_slow.mp3",
+      "expected": "carne",
+      "firstTranscript": "Look out, Anise.",
+      "secondTranscript": "McCartanys",
+      "duration": 1.167375
+    },
+    {
+      "item": 160,
+      "speed": "normal",
+      "path": "basic/bas_09_160.mp3",
+      "expected": "frango",
+      "firstTranscript": "Frank Good.",
+      "secondTranscript": "Frangot",
+      "duration": 0.911375
+    },
+    {
+      "item": 160,
+      "speed": "slow",
+      "path": "basic/bas_09_160_slow.mp3",
+      "expected": "frango",
+      "firstTranscript": "Eu farango.",
+      "secondTranscript": "E frango.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 161,
+      "speed": "normal",
+      "path": "basic/bas_09_161.mp3",
+      "expected": "peixe",
+      "firstTranscript": "悲劇",
+      "secondTranscript": "背试",
+      "duration": 0.911375
+    },
+    {
+      "item": 161,
+      "speed": "slow",
+      "path": "basic/bas_09_161_slow.mp3",
+      "expected": "peixe",
+      "firstTranscript": "Apesse-se.",
+      "secondTranscript": "Apreche.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 162,
+      "speed": "slow",
+      "path": "basic/bas_09_162_slow.mp3",
+      "expected": "queijo",
+      "firstTranscript": "Okay, here's the rule.",
+      "secondTranscript": "Ok, eu juro.",
+      "duration": 1.21
+    },
+    {
+      "item": 163,
+      "speed": "normal",
+      "path": "basic/bas_09_163.mp3",
+      "expected": "fruta",
+      "firstTranscript": "Frutäk!",
+      "secondTranscript": "Fruté.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 163,
+      "speed": "slow",
+      "path": "basic/bas_09_163_slow.mp3",
+      "expected": "fruta",
+      "firstTranscript": "Förut är!",
+      "secondTranscript": "Du får råta dig.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 164,
+      "speed": "normal",
+      "path": "basic/bas_09_164.mp3",
+      "expected": "legumes",
+      "firstTranscript": "לגומס.",
+      "secondTranscript": "Legumis",
+      "duration": 1.103375
+    },
+    {
+      "item": 165,
+      "speed": "normal",
+      "path": "basic/bas_09_165.mp3",
+      "expected": "doces",
+      "firstTranscript": "Dawseys!",
+      "secondTranscript": "Dosis.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 165,
+      "speed": "slow",
+      "path": "basic/bas_09_165_slow.mp3",
+      "expected": "doces",
+      "firstTranscript": "Adolescees",
+      "secondTranscript": "A DOSIS",
+      "duration": 1.231375
+    },
+    {
+      "item": 166,
+      "speed": "slow",
+      "path": "basic/bas_09_166_slow.mp3",
+      "expected": "almoço",
+      "firstTranscript": "Era um morso.",
+      "secondTranscript": "Era o moço.",
+      "duration": 1.423375
+    },
+    {
+      "item": 169,
+      "speed": "slow",
+      "path": "basic/bas_10_169_slow.mp3",
+      "expected": "Quanto custa isso?",
+      "firstTranscript": "É quanto custa isso?",
+      "secondTranscript": "É quanto custa isso?",
+      "duration": 2.191375
+    },
+    {
+      "item": 171,
+      "speed": "slow",
+      "path": "basic/bas_10_171_slow.mp3",
+      "expected": "A conta, por favor",
+      "firstTranscript": "E aconte, por favor.",
+      "secondTranscript": "Já te conta, por favor.",
+      "duration": 2.127375
+    },
+    {
+      "item": 178,
+      "speed": "slow",
+      "path": "basic/bas_10_178_slow.mp3",
+      "expected": "A que horas sai o trem?",
+      "firstTranscript": "Aqui ordem saiu trem.",
+      "secondTranscript": "Aqui horas saiu trein.",
+      "duration": 2.3406875
+    },
+    {
+      "item": 181,
+      "speed": "normal",
+      "path": "basic/bas_11_181.mp3",
+      "expected": "Legal",
+      "firstTranscript": "Slig out.",
+      "secondTranscript": "Lekal.",
+      "duration": 0.911375
+    },
+    {
+      "item": 182,
+      "speed": "normal",
+      "path": "basic/bas_11_182.mp3",
+      "expected": "Nossa!",
+      "firstTranscript": "I'm not sick.",
+      "secondTranscript": "Nossi",
+      "duration": 0.954
+    },
+    {
+      "item": 182,
+      "speed": "slow",
+      "path": "basic/bas_11_182_slow.mp3",
+      "expected": "Nossa!",
+      "firstTranscript": "being off the side.",
+      "secondTranscript": "Innocent.",
+      "duration": 1.295375
+    },
+    {
+      "item": 183,
+      "speed": "normal",
+      "path": "basic/bas_11_183.mp3",
+      "expected": "Cara",
+      "firstTranscript": "Got it.",
+      "secondTranscript": "Cotted.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 183,
+      "speed": "slow",
+      "path": "basic/bas_11_183_slow.mp3",
+      "expected": "Cara",
+      "firstTranscript": "Igrares!",
+      "secondTranscript": "E caras",
+      "duration": 1.082
+    },
+    {
+      "item": 185,
+      "speed": "slow",
+      "path": "basic/bas_11_185_slow.mp3",
+      "expected": "Poxa",
+      "firstTranscript": "Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-",
+      "secondTranscript": "O Porsche é...",
+      "duration": 1.1246875
+    },
+    {
+      "item": 186,
+      "speed": "normal",
+      "path": "basic/bas_11_186.mp3",
+      "expected": "Bacana",
+      "firstTranscript": "Ba-câne!",
+      "secondTranscript": "Bacana, é?",
+      "duration": 1.0606875
+    },
+    {
+      "item": 186,
+      "speed": "slow",
+      "path": "basic/bas_11_186_slow.mp3",
+      "expected": "Bacana",
+      "firstTranscript": "E bacanas!",
+      "secondTranscript": "BACANAS",
+      "duration": 1.359375
+    },
+    {
+      "item": 187,
+      "speed": "slow",
+      "path": "basic/bas_11_187_slow.mp3",
+      "expected": "Mano",
+      "firstTranscript": "Y manos.",
+      "secondTranscript": "Irmãos.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 188,
+      "speed": "slow",
+      "path": "basic/bas_11_188_slow.mp3",
+      "expected": "Caramba",
+      "firstTranscript": "E caramba-s!",
+      "secondTranscript": "E carambas!",
+      "duration": 1.338
+    },
+    {
+      "item": 190,
+      "speed": "slow",
+      "path": "basic/bas_12_190_slow.mp3",
+      "expected": "Oi! Eu queria um cafezinho, por favor.",
+      "firstTranscript": "Loi, eu queria um cafezinho, por favor.",
+      "secondTranscript": "Loi, eu queria um cafezinho, por favor.",
+      "duration": 3.343375
+    },
+    {
+      "item": 191,
+      "speed": "normal",
+      "path": "basic/bas_12_191.mp3",
+      "expected": "Só isso?",
+      "firstTranscript": "ソーリース スー",
+      "secondTranscript": "Soli issu.",
+      "duration": 1.082
+    },
+    {
+      "item": 191,
+      "speed": "slow",
+      "path": "basic/bas_12_191_slow.mp3",
+      "expected": "Só isso?",
+      "firstTranscript": "I'm sorry, used to soo.",
+      "secondTranscript": "It's all easy to do.",
+      "duration": 1.466
+    },
+    {
+      "item": 194,
+      "speed": "slow",
+      "path": "basic/bas_12_194_slow.mp3",
+      "expected": "Valeu, até mais!",
+      "firstTranscript": "E valeu até mais.",
+      "secondTranscript": "E valeu, até mais.",
+      "duration": 2.127375
+    },
+    {
+      "item": 196,
+      "speed": "slow",
+      "path": "advanced/adv_14_196_slow.mp3",
+      "expected": "Te vejo amanhã.",
+      "firstTranscript": "Eu te vejo amanhã.",
+      "secondTranscript": "Eu te vejo amanhã.",
+      "duration": 2.063375
+    },
+    {
+      "item": 199,
+      "speed": "normal",
+      "path": "advanced/adv_14_199.mp3",
+      "expected": "Chamo-me Ahmed.",
+      "firstTranscript": "שום מומי המד.",
+      "secondTranscript": "Chamo minha MED.",
+      "duration": 1.274
+    },
+    {
+      "item": 199,
+      "speed": "slow",
+      "path": "advanced/adv_14_199_slow.mp3",
+      "expected": "Chamo-me Ahmed.",
+      "firstTranscript": "Chamo-me, amei-te.",
+      "secondTranscript": "Chamo-me a merda.",
+      "duration": 1.743375
+    },
+    {
+      "item": 201,
+      "speed": "slow",
+      "path": "advanced/adv_14_201_slow.mp3",
+      "expected": "Ele levanta-se cedo.",
+      "firstTranscript": "Ele levanta a se cedo.",
+      "secondTranscript": "E ele levanta-se cedo.",
+      "duration": 2.319375
+    },
+    {
+      "item": 202,
+      "speed": "normal",
+      "path": "advanced/adv_14_202.mp3",
+      "expected": "receção",
+      "firstTranscript": "Because it's a song.",
+      "secondTranscript": "Exceção.",
+      "duration": 1.146
+    },
+    {
+      "item": 202,
+      "speed": "slow",
+      "path": "advanced/adv_14_202_slow.mp3",
+      "expected": "receção",
+      "firstTranscript": "What is this sound?",
+      "secondTranscript": "De exceção.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 203,
+      "speed": "slow",
+      "path": "advanced/adv_14_203_slow.mp3",
+      "expected": "recepção",
+      "firstTranscript": "Essa é a prisão.",
+      "secondTranscript": "A recepção.",
+      "duration": 1.487375
+    },
+    {
+      "item": 204,
+      "speed": "slow",
+      "path": "advanced/adv_14_204_slow.mp3",
+      "expected": "contacto",
+      "firstTranscript": "De contato.",
+      "secondTranscript": "E CONTRACTO.",
+      "duration": 1.466
+    },
+    {
+      "item": 205,
+      "speed": "slow",
+      "path": "advanced/adv_14_205_slow.mp3",
+      "expected": "contato",
+      "firstTranscript": "e contato.",
+      "secondTranscript": "E contrato.",
+      "duration": 1.466
+    },
+    {
+      "item": 206,
+      "speed": "normal",
+      "path": "advanced/adv_14_206.mp3",
+      "expected": "ótimo",
+      "firstTranscript": "おちむ",
+      "secondTranscript": "オチム",
+      "duration": 0.954
+    },
+    {
+      "item": 206,
+      "speed": "slow",
+      "path": "advanced/adv_14_206_slow.mp3",
+      "expected": "ótimo",
+      "firstTranscript": "A lot of shimu.",
+      "secondTranscript": "É ótimo.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 207,
+      "speed": "normal",
+      "path": "advanced/adv_15_207.mp3",
+      "expected": "eu",
+      "firstTranscript": "Thank you.",
+      "secondTranscript": "Nailed.",
+      "duration": 0.718375
+    },
+    {
+      "item": 207,
+      "speed": "slow",
+      "path": "advanced/adv_15_207_slow.mp3",
+      "expected": "eu",
+      "firstTranscript": "Nailed.",
+      "secondTranscript": "Nailed",
+      "duration": 0.911375
+    },
+    {
+      "item": 209,
+      "speed": "normal",
+      "path": "advanced/adv_15_209.mp3",
+      "expected": "ele",
+      "firstTranscript": "Dei-lhe.",
+      "secondTranscript": "They leave.",
+      "duration": 0.762
+    },
+    {
+      "item": 209,
+      "speed": "slow",
+      "path": "advanced/adv_15_209_slow.mp3",
+      "expected": "ele",
+      "firstTranscript": "Auxê-lo, lixo.",
+      "secondTranscript": "Ozeio, Luís.",
+      "duration": 1.018
+    },
+    {
+      "item": 210,
+      "speed": "normal",
+      "path": "advanced/adv_15_210.mp3",
+      "expected": "ela",
+      "firstTranscript": "Zeyla!",
+      "secondTranscript": "Say hello.",
+      "duration": 0.826
+    },
+    {
+      "item": 210,
+      "speed": "slow",
+      "path": "advanced/adv_15_210_slow.mp3",
+      "expected": "ela",
+      "firstTranscript": "Nailers.",
+      "secondTranscript": "Nelas.",
+      "duration": 1.039375
+    },
+    {
+      "item": 211,
+      "speed": "slow",
+      "path": "advanced/adv_15_211_slow.mp3",
+      "expected": "nós",
+      "firstTranscript": "He knows.",
+      "secondTranscript": "He knows.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 212,
+      "speed": "slow",
+      "path": "advanced/adv_15_212_slow.mp3",
+      "expected": "vocês",
+      "firstTranscript": "But what says?",
+      "secondTranscript": "Of all says",
+      "duration": 1.21
+    },
+    {
+      "item": 213,
+      "speed": "slow",
+      "path": "advanced/adv_15_213_slow.mp3",
+      "expected": "eles",
+      "firstTranscript": "Ovelis.",
+      "secondTranscript": "Ok, Luiz.",
+      "duration": 1.039375
+    },
+    {
+      "item": 214,
+      "speed": "normal",
+      "path": "advanced/adv_15_214.mp3",
+      "expected": "parto",
+      "firstTranscript": "Bye, Tzu.",
+      "secondTranscript": "Bartitude.",
+      "duration": 0.911375
+    },
+    {
+      "item": 214,
+      "speed": "slow",
+      "path": "advanced/adv_15_214_slow.mp3",
+      "expected": "parto",
+      "firstTranscript": "Die Partizu!",
+      "secondTranscript": "It's a part of the tour.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 215,
+      "speed": "normal",
+      "path": "advanced/adv_15_215.mp3",
+      "expected": "como",
+      "firstTranscript": "Come with it.",
+      "secondTranscript": "Come wait.",
+      "duration": 0.847375
+    },
+    {
+      "item": 215,
+      "speed": "slow",
+      "path": "advanced/adv_15_215_slow.mp3",
+      "expected": "como",
+      "firstTranscript": "Det kommer ut.",
+      "secondTranscript": "Bir kalmeli.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 216,
+      "speed": "normal",
+      "path": "advanced/adv_15_216.mp3",
+      "expected": "falo",
+      "firstTranscript": "Follow",
+      "secondTranscript": "Falou!",
+      "duration": 0.868375
+    },
+    {
+      "item": 216,
+      "speed": "slow",
+      "path": "advanced/adv_15_216_slow.mp3",
+      "expected": "falo",
+      "firstTranscript": "Desfile-lo.",
+      "secondTranscript": "Desfalou!",
+      "duration": 1.103375
+    },
+    {
+      "item": 217,
+      "speed": "normal",
+      "path": "advanced/adv_15_217.mp3",
+      "expected": "parte",
+      "firstTranscript": "Bye to you!",
+      "secondTranscript": "巴的气",
+      "duration": 0.9326875
+    },
+    {
+      "item": 217,
+      "speed": "slow",
+      "path": "advanced/adv_15_217_slow.mp3",
+      "expected": "parte",
+      "firstTranscript": "I'll bar the two.",
+      "secondTranscript": "I'll part it shoe.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 218,
+      "speed": "normal",
+      "path": "advanced/adv_15_218.mp3",
+      "expected": "come",
+      "firstTranscript": "Call me.",
+      "secondTranscript": "Comis.",
+      "duration": 0.8046875
+    },
+    {
+      "item": 218,
+      "speed": "slow",
+      "path": "advanced/adv_15_218_slow.mp3",
+      "expected": "come",
+      "firstTranscript": "You call me you.",
+      "secondTranscript": "Call me.",
+      "duration": 1.082
+    },
+    {
+      "item": 219,
+      "speed": "normal",
+      "path": "advanced/adv_15_219.mp3",
+      "expected": "fala",
+      "firstTranscript": "File it.",
+      "secondTranscript": "Falei.",
+      "duration": 0.847375
+    },
+    {
+      "item": 219,
+      "speed": "slow",
+      "path": "advanced/adv_15_219_slow.mp3",
+      "expected": "fala",
+      "firstTranscript": "If I'll live.",
+      "secondTranscript": "If I look.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 220,
+      "speed": "slow",
+      "path": "advanced/adv_15_220_slow.mp3",
+      "expected": "partimos",
+      "firstTranscript": "A parte de Chimos.",
+      "secondTranscript": "Aparecimos.",
+      "duration": 1.423375
+    },
+    {
+      "item": 221,
+      "speed": "slow",
+      "path": "advanced/adv_15_221_slow.mp3",
+      "expected": "comemos",
+      "firstTranscript": "É como vemos.",
+      "secondTranscript": "Recomemos.",
+      "duration": 1.3166875
+    },
+    {
+      "item": 222,
+      "speed": "slow",
+      "path": "advanced/adv_15_222_slow.mp3",
+      "expected": "falamos",
+      "firstTranscript": "E falamos.",
+      "secondTranscript": "E falamos.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 223,
+      "speed": "slow",
+      "path": "advanced/adv_15_223_slow.mp3",
+      "expected": "elas",
+      "firstTranscript": "e-mail us.",
+      "secondTranscript": "E melas.",
+      "duration": 1.039375
+    },
+    {
+      "item": 224,
+      "speed": "normal",
+      "path": "advanced/adv_15_224.mp3",
+      "expected": "partem",
+      "firstTranscript": "part of the team.",
+      "secondTranscript": "By the thing.",
+      "duration": 1.039375
+    },
+    {
+      "item": 224,
+      "speed": "slow",
+      "path": "advanced/adv_15_224_slow.mp3",
+      "expected": "partem",
+      "firstTranscript": "to part of things.",
+      "secondTranscript": "The part of the thing.",
+      "duration": 1.274
+    },
+    {
+      "item": 225,
+      "speed": "normal",
+      "path": "advanced/adv_15_225.mp3",
+      "expected": "comem",
+      "firstTranscript": "Cummings.",
+      "secondTranscript": "Comments.",
+      "duration": 0.975375
+    },
+    {
+      "item": 225,
+      "speed": "slow",
+      "path": "advanced/adv_15_225_slow.mp3",
+      "expected": "comem",
+      "firstTranscript": "Accomings",
+      "secondTranscript": "a call means",
+      "duration": 1.21
+    },
+    {
+      "item": 226,
+      "speed": "normal",
+      "path": "advanced/adv_15_226.mp3",
+      "expected": "falam",
+      "firstTranscript": "發了一張",
+      "secondTranscript": "Falando.",
+      "duration": 1.082
+    },
+    {
+      "item": 226,
+      "speed": "slow",
+      "path": "advanced/adv_15_226_slow.mp3",
+      "expected": "falam",
+      "firstTranscript": "Esfala, Lânion!",
+      "secondTranscript": "Just follow him.",
+      "duration": 1.338
+    },
+    {
+      "item": 227,
+      "speed": "normal",
+      "path": "advanced/adv_15_227.mp3",
+      "expected": "Estar",
+      "firstTranscript": "estaar",
+      "secondTranscript": "İstar.",
+      "duration": 0.89
+    },
+    {
+      "item": 227,
+      "speed": "slow",
+      "path": "advanced/adv_15_227_slow.mp3",
+      "expected": "Estar",
+      "firstTranscript": "Whistar",
+      "secondTranscript": "We start.",
+      "duration": 1.167375
+    },
+    {
+      "item": 228,
+      "speed": "normal",
+      "path": "advanced/adv_15_228.mp3",
+      "expected": "Ser",
+      "firstTranscript": "See out of it.",
+      "secondTranscript": "Cero.",
+      "duration": 0.718375
+    },
+    {
+      "item": 228,
+      "speed": "slow",
+      "path": "advanced/adv_15_228_slow.mp3",
+      "expected": "Ser",
+      "firstTranscript": "Não se erra.",
+      "secondTranscript": "Ou seja,",
+      "duration": 0.89
+    },
+    {
+      "item": 229,
+      "speed": "slow",
+      "path": "advanced/adv_15_229_slow.mp3",
+      "expected": "estou",
+      "firstTranscript": "And it's so.",
+      "secondTranscript": "En esto.",
+      "duration": 1.146
+    },
+    {
+      "item": 230,
+      "speed": "normal",
+      "path": "advanced/adv_15_230.mp3",
+      "expected": "sou",
+      "firstTranscript": "so",
+      "secondTranscript": "So,",
+      "duration": 0.7406875
+    },
+    {
+      "item": 230,
+      "speed": "slow",
+      "path": "advanced/adv_15_230_slow.mp3",
+      "expected": "sou",
+      "firstTranscript": "So",
+      "secondTranscript": "So",
+      "duration": 0.911375
+    },
+    {
+      "item": 231,
+      "speed": "normal",
+      "path": "advanced/adv_15_231.mp3",
+      "expected": "está",
+      "firstTranscript": "It's time.",
+      "secondTranscript": "Estaba.",
+      "duration": 0.826
+    },
+    {
+      "item": 231,
+      "speed": "slow",
+      "path": "advanced/adv_15_231_slow.mp3",
+      "expected": "está",
+      "firstTranscript": "¡Wyster!",
+      "secondTranscript": "We start.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 232,
+      "speed": "slow",
+      "path": "advanced/adv_15_232_slow.mp3",
+      "expected": "estamos",
+      "firstTranscript": "Nós estamos.",
+      "secondTranscript": "Onde estamos?",
+      "duration": 1.3166875
+    },
+    {
+      "item": 234,
+      "speed": "slow",
+      "path": "advanced/adv_15_234_slow.mp3",
+      "expected": "estão",
+      "firstTranscript": "O estão.",
+      "secondTranscript": "Questão.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 235,
+      "speed": "normal",
+      "path": "advanced/adv_15_235.mp3",
+      "expected": "são",
+      "firstTranscript": "So...",
+      "secondTranscript": "So...",
+      "duration": 0.89
+    },
+    {
+      "item": 235,
+      "speed": "slow",
+      "path": "advanced/adv_15_235_slow.mp3",
+      "expected": "são",
+      "firstTranscript": "This is our home.",
+      "secondTranscript": "It's now...",
+      "duration": 1.1246875
+    },
+    {
+      "item": 236,
+      "speed": "normal",
+      "path": "advanced/adv_16_236.mp3",
+      "expected": "parti",
+      "firstTranscript": "把他吸引",
+      "secondTranscript": "Para chico.",
+      "duration": 0.89
+    },
+    {
+      "item": 236,
+      "speed": "slow",
+      "path": "advanced/adv_16_236_slow.mp3",
+      "expected": "parti",
+      "firstTranscript": "都把他吃贏",
+      "secondTranscript": "About a three.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 237,
+      "speed": "normal",
+      "path": "advanced/adv_16_237.mp3",
+      "expected": "comi",
+      "firstTranscript": "Come with me.",
+      "secondTranscript": "Comer.",
+      "duration": 0.847375
+    },
+    {
+      "item": 237,
+      "speed": "slow",
+      "path": "advanced/adv_16_237_slow.mp3",
+      "expected": "comi",
+      "firstTranscript": "Accombs.",
+      "secondTranscript": "A commise.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 239,
+      "speed": "slow",
+      "path": "advanced/adv_16_239_slow.mp3",
+      "expected": "partiu",
+      "firstTranscript": "I'm about to see you.",
+      "secondTranscript": "Tampara de xiu.",
+      "duration": 1.21
+    },
+    {
+      "item": 240,
+      "speed": "normal",
+      "path": "advanced/adv_16_240.mp3",
+      "expected": "comeu",
+      "firstTranscript": "Komm, euth!",
+      "secondTranscript": "Como eu.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 240,
+      "speed": "slow",
+      "path": "advanced/adv_16_240_slow.mp3",
+      "expected": "comeu",
+      "firstTranscript": "e comeu.",
+      "secondTranscript": "E comeu.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 242,
+      "speed": "normal",
+      "path": "advanced/adv_16_242.mp3",
+      "expected": "partiram",
+      "firstTranscript": "Partirão.",
+      "secondTranscript": "Partirão.",
+      "duration": 1.103375
+    },
+    {
+      "item": 242,
+      "speed": "slow",
+      "path": "advanced/adv_16_242_slow.mp3",
+      "expected": "partiram",
+      "firstTranscript": "Departure to you, don't.",
+      "secondTranscript": "e partiram",
+      "duration": 1.466
+    },
+    {
+      "item": 243,
+      "speed": "normal",
+      "path": "advanced/adv_16_243.mp3",
+      "expected": "comeram",
+      "firstTranscript": "Commitons!",
+      "secondTranscript": "Comerão.",
+      "duration": 1.146
+    },
+    {
+      "item": 243,
+      "speed": "slow",
+      "path": "advanced/adv_16_243_slow.mp3",
+      "expected": "comeram",
+      "firstTranscript": "Det kommer med det här hans.",
+      "secondTranscript": "E comeram.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 244,
+      "speed": "normal",
+      "path": "advanced/adv_16_244.mp3",
+      "expected": "falaram",
+      "firstTranscript": "Falado!",
+      "secondTranscript": "Falarão.",
+      "duration": 1.103375
+    },
+    {
+      "item": 244,
+      "speed": "slow",
+      "path": "advanced/adv_16_244_slow.mp3",
+      "expected": "falaram",
+      "firstTranscript": "He fell out of homes.",
+      "secondTranscript": "E falaram.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 245,
+      "speed": "normal",
+      "path": "advanced/adv_16_245.mp3",
+      "expected": "ir",
+      "firstTranscript": "Meera.",
+      "secondTranscript": "Мир.",
+      "duration": 0.719375
+    },
+    {
+      "item": 245,
+      "speed": "slow",
+      "path": "advanced/adv_16_245_slow.mp3",
+      "expected": "ir",
+      "firstTranscript": "Amir.",
+      "secondTranscript": "And here's it.",
+      "duration": 0.911375
+    },
+    {
+      "item": 246,
+      "speed": "normal",
+      "path": "advanced/adv_16_246.mp3",
+      "expected": "fui",
+      "firstTranscript": "for you.",
+      "secondTranscript": "Foi.",
+      "duration": 0.718375
+    },
+    {
+      "item": 246,
+      "speed": "slow",
+      "path": "advanced/adv_16_246_slow.mp3",
+      "expected": "fui",
+      "firstTranscript": "Eu fui.",
+      "secondTranscript": "Afoi.",
+      "duration": 0.911375
+    },
+    {
+      "item": 247,
+      "speed": "slow",
+      "path": "advanced/adv_16_247_slow.mp3",
+      "expected": "foi",
+      "firstTranscript": "Before you.",
+      "secondTranscript": "Before I eat.",
+      "duration": 0.911375
+    },
+    {
+      "item": 248,
+      "speed": "slow",
+      "path": "advanced/adv_16_248_slow.mp3",
+      "expected": "fomos",
+      "firstTranscript": "E vamos!",
+      "secondTranscript": "E vamos!",
+      "duration": 1.082
+    },
+    {
+      "item": 249,
+      "speed": "normal",
+      "path": "advanced/adv_16_249.mp3",
+      "expected": "foram",
+      "firstTranscript": "Foda-on!",
+      "secondTranscript": "Foraun.",
+      "duration": 0.954
+    },
+    {
+      "item": 249,
+      "speed": "slow",
+      "path": "advanced/adv_16_249_slow.mp3",
+      "expected": "foram",
+      "firstTranscript": "Before the demos.",
+      "secondTranscript": "If we're around.",
+      "duration": 1.274
+    },
+    {
+      "item": 250,
+      "speed": "normal",
+      "path": "advanced/adv_16_250.mp3",
+      "expected": "estive",
+      "firstTranscript": "Estiveu!",
+      "secondTranscript": "Эстиву.",
+      "duration": 1.018
+    },
+    {
+      "item": 250,
+      "speed": "slow",
+      "path": "advanced/adv_16_250_slow.mp3",
+      "expected": "estive",
+      "firstTranscript": "Oeste Chivu.",
+      "secondTranscript": "Oeste Givo",
+      "duration": 1.274
+    },
+    {
+      "item": 251,
+      "speed": "slow",
+      "path": "advanced/adv_16_251_slow.mp3",
+      "expected": "esteve",
+      "firstTranscript": "always stay with you.",
+      "secondTranscript": "Oesteve.",
+      "duration": 1.274
+    },
+    {
+      "item": 253,
+      "speed": "slow",
+      "path": "advanced/adv_16_253_slow.mp3",
+      "expected": "estiveram",
+      "firstTranscript": "Listes tiveram.",
+      "secondTranscript": "Lestiveram.",
+      "duration": 1.53
+    },
+    {
+      "item": 254,
+      "speed": "normal",
+      "path": "advanced/adv_16_254.mp3",
+      "expected": "ter",
+      "firstTranscript": "Stay out of it.",
+      "secondTranscript": "there",
+      "duration": 0.718375
+    },
+    {
+      "item": 254,
+      "speed": "slow",
+      "path": "advanced/adv_16_254_slow.mp3",
+      "expected": "ter",
+      "firstTranscript": "Tot de heren.",
+      "secondTranscript": "Tot de eerder.",
+      "duration": 0.911375
+    },
+    {
+      "item": 255,
+      "speed": "normal",
+      "path": "advanced/adv_16_255.mp3",
+      "expected": "tive",
+      "firstTranscript": "Chewie!",
+      "secondTranscript": "Тивил.",
+      "duration": 0.826
+    },
+    {
+      "item": 255,
+      "speed": "slow",
+      "path": "advanced/adv_16_255_slow.mp3",
+      "expected": "tive",
+      "firstTranscript": "A ci wy!",
+      "secondTranscript": "Отшиваю.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 256,
+      "speed": "normal",
+      "path": "advanced/adv_16_256.mp3",
+      "expected": "teve",
+      "firstTranscript": "See you next time.",
+      "secondTranscript": "Save you.",
+      "duration": 0.826
+    },
+    {
+      "item": 256,
+      "speed": "slow",
+      "path": "advanced/adv_16_256_slow.mp3",
+      "expected": "teve",
+      "firstTranscript": "I'll tell you everything.",
+      "secondTranscript": "I'll take it over for you.",
+      "duration": 1.103375
+    },
+    {
+      "item": 257,
+      "speed": "slow",
+      "path": "advanced/adv_16_257_slow.mp3",
+      "expected": "tivemos",
+      "firstTranscript": "Ativemos.",
+      "secondTranscript": "Ativemos.",
+      "duration": 1.338
+    },
+    {
+      "item": 258,
+      "speed": "slow",
+      "path": "advanced/adv_16_258_slow.mp3",
+      "expected": "tiveram",
+      "firstTranscript": "Tá tiveram!",
+      "secondTranscript": "Já tiveram.",
+      "duration": 1.359375
+    },
+    {
+      "item": 259,
+      "speed": "slow",
+      "path": "advanced/adv_16_259_slow.mp3",
+      "expected": "fazer",
+      "firstTranscript": "O fazer.",
+      "secondTranscript": "o fazer.",
+      "duration": 1.103375
+    },
+    {
+      "item": 260,
+      "speed": "normal",
+      "path": "advanced/adv_16_260.mp3",
+      "expected": "fiz",
+      "firstTranscript": "Feioza!",
+      "secondTranscript": "肥子",
+      "duration": 0.8046875
+    },
+    {
+      "item": 260,
+      "speed": "slow",
+      "path": "advanced/adv_16_260_slow.mp3",
+      "expected": "fiz",
+      "firstTranscript": "Eu fui isso.",
+      "secondTranscript": "Alfre isso.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 261,
+      "speed": "normal",
+      "path": "advanced/adv_16_261.mp3",
+      "expected": "fez",
+      "firstTranscript": "Facebook.",
+      "secondTranscript": "phase",
+      "duration": 0.8046875
+    },
+    {
+      "item": 261,
+      "speed": "slow",
+      "path": "advanced/adv_16_261_slow.mp3",
+      "expected": "fez",
+      "firstTranscript": "on phrase.",
+      "secondTranscript": "Um beijo.",
+      "duration": 1.0606875
+    },
+    {
+      "item": 262,
+      "speed": "slow",
+      "path": "advanced/adv_16_262_slow.mp3",
+      "expected": "fizemos",
+      "firstTranscript": "Afriz demos.",
+      "secondTranscript": "Afrizemos!",
+      "duration": 1.402
+    },
+    {
+      "item": 263,
+      "speed": "slow",
+      "path": "advanced/adv_16_263_slow.mp3",
+      "expected": "fizeram",
+      "firstTranscript": "e frizeram",
+      "secondTranscript": "E fizeram.",
+      "duration": 1.487375
+    },
+    {
+      "item": 264,
+      "speed": "slow",
+      "path": "advanced/adv_16_264_slow.mp3",
+      "expected": "poder",
+      "firstTranscript": "تفضير",
+      "secondTranscript": "O poder.",
+      "duration": 1.082
+    },
+    {
+      "item": 265,
+      "speed": "normal",
+      "path": "advanced/adv_16_265.mp3",
+      "expected": "pude",
+      "firstTranscript": "Poo-jee!",
+      "secondTranscript": "Puji",
+      "duration": 0.89
+    },
+    {
+      "item": 265,
+      "speed": "slow",
+      "path": "advanced/adv_16_265_slow.mp3",
+      "expected": "pude",
+      "firstTranscript": "Apude-se!",
+      "secondTranscript": "A PUDGE",
+      "duration": 1.1886875
+    },
+    {
+      "item": 266,
+      "speed": "normal",
+      "path": "advanced/adv_16_266.mp3",
+      "expected": "pôde",
+      "firstTranscript": "Pojdzie!",
+      "secondTranscript": "PODGE",
+      "duration": 0.9326875
+    },
+    {
+      "item": 266,
+      "speed": "slow",
+      "path": "advanced/adv_16_266_slow.mp3",
+      "expected": "pôde",
+      "firstTranscript": "Apoche-se.",
+      "secondTranscript": "Aplode.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 267,
+      "speed": "slow",
+      "path": "advanced/adv_16_267_slow.mp3",
+      "expected": "pudemos",
+      "firstTranscript": "Apudemos.",
+      "secondTranscript": "Já pudemos.",
+      "duration": 1.274
+    },
+    {
+      "item": 268,
+      "speed": "normal",
+      "path": "advanced/adv_16_268.mp3",
+      "expected": "puderam",
+      "firstTranscript": "puder uns.",
+      "secondTranscript": "Puderão.",
+      "duration": 1.039375
+    },
+    {
+      "item": 268,
+      "speed": "slow",
+      "path": "advanced/adv_16_268_slow.mp3",
+      "expected": "puderam",
+      "firstTranscript": "e puder uns.",
+      "secondTranscript": "E puderão.",
+      "duration": 1.423375
+    },
+    {
+      "item": 269,
+      "speed": "slow",
+      "path": "advanced/adv_16_269_slow.mp3",
+      "expected": "querer",
+      "firstTranscript": "You can carry it out.",
+      "secondTranscript": "I don't care if I live.",
+      "duration": 1.103375
+    },
+    {
+      "item": 270,
+      "speed": "normal",
+      "path": "advanced/adv_16_270.mp3",
+      "expected": "quis",
+      "firstTranscript": "Keys.",
+      "secondTranscript": "He is.",
+      "duration": 0.762
+    },
+    {
+      "item": 270,
+      "speed": "slow",
+      "path": "advanced/adv_16_270_slow.mp3",
+      "expected": "quis",
+      "firstTranscript": "Unkeys.",
+      "secondTranscript": "Então, que isso?",
+      "duration": 1.039375
+    },
+    {
+      "item": 271,
+      "speed": "slow",
+      "path": "advanced/adv_16_271_slow.mp3",
+      "expected": "quisemos",
+      "firstTranscript": "É casemos.",
+      "secondTranscript": "É o que fizemos.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 272,
+      "speed": "slow",
+      "path": "advanced/adv_16_272_slow.mp3",
+      "expected": "quiseram",
+      "firstTranscript": "E que sera um?",
+      "secondTranscript": "E quiseram.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 273,
+      "speed": "slow",
+      "path": "advanced/adv_16_273_slow.mp3",
+      "expected": "saber",
+      "firstTranscript": "Não saber.",
+      "secondTranscript": "Não saber.",
+      "duration": 1.103375
+    },
+    {
+      "item": 274,
+      "speed": "normal",
+      "path": "advanced/adv_16_274.mp3",
+      "expected": "soube",
+      "firstTranscript": "So be.",
+      "secondTranscript": "So be.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 274,
+      "speed": "slow",
+      "path": "advanced/adv_16_274_slow.mp3",
+      "expected": "soube",
+      "firstTranscript": "That's all, B.",
+      "secondTranscript": "So be it.",
+      "duration": 1.103375
+    },
+    {
+      "item": 275,
+      "speed": "slow",
+      "path": "advanced/adv_16_275_slow.mp3",
+      "expected": "soubemos",
+      "firstTranscript": "É só o bem-os.",
+      "secondTranscript": "É só o BEMOS.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 276,
+      "speed": "slow",
+      "path": "advanced/adv_16_276_slow.mp3",
+      "expected": "souberam",
+      "firstTranscript": "This is so bad, eh?",
+      "secondTranscript": "Se souberam.",
+      "duration": 1.423375
+    },
+    {
+      "item": 277,
+      "speed": "normal",
+      "path": "advanced/adv_16_277.mp3",
+      "expected": "dizer",
+      "firstTranscript": "G-Z.",
+      "secondTranscript": "G's air.",
+      "duration": 0.975375
+    },
+    {
+      "item": 277,
+      "speed": "slow",
+      "path": "advanced/adv_16_277_slow.mp3",
+      "expected": "dizer",
+      "firstTranscript": "T'as de vous dire.",
+      "secondTranscript": "Todd is there.",
+      "duration": 1.2526875
+    },
+    {
+      "item": 278,
+      "speed": "normal",
+      "path": "advanced/adv_16_278.mp3",
+      "expected": "disse",
+      "firstTranscript": "수고하셨습니다.",
+      "secondTranscript": "Diz isso.",
+      "duration": 0.954
+    },
+    {
+      "item": 278,
+      "speed": "slow",
+      "path": "advanced/adv_16_278_slow.mp3",
+      "expected": "disse",
+      "firstTranscript": "Adjuí-se, se eu...",
+      "secondTranscript": "Adivista, senhor.",
+      "duration": 1.231375
+    },
+    {
+      "item": 279,
+      "speed": "slow",
+      "path": "advanced/adv_16_279_slow.mp3",
+      "expected": "dissemos",
+      "firstTranscript": "Adicemos.",
+      "secondTranscript": "Adissemos.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 281,
+      "speed": "slow",
+      "path": "advanced/adv_16_281_slow.mp3",
+      "expected": "ver",
+      "firstTranscript": "Alweer.",
+      "secondTranscript": "a ver",
+      "duration": 0.954
+    },
+    {
+      "item": 282,
+      "speed": "normal",
+      "path": "advanced/adv_16_282.mp3",
+      "expected": "vi",
+      "firstTranscript": "Wir.",
+      "secondTranscript": "Wert.",
+      "duration": 0.722
+    },
+    {
+      "item": 282,
+      "speed": "slow",
+      "path": "advanced/adv_16_282_slow.mp3",
+      "expected": "vi",
+      "firstTranscript": "I've read it.",
+      "secondTranscript": "I've read it.",
+      "duration": 0.911375
+    },
+    {
+      "item": 283,
+      "speed": "normal",
+      "path": "advanced/adv_16_283.mp3",
+      "expected": "viu",
+      "firstTranscript": "View",
+      "secondTranscript": "View.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 283,
+      "speed": "slow",
+      "path": "advanced/adv_16_283_slow.mp3",
+      "expected": "viu",
+      "firstTranscript": "Au revoir.",
+      "secondTranscript": "Avvio.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 284,
+      "speed": "slow",
+      "path": "advanced/adv_16_284_slow.mp3",
+      "expected": "vimos",
+      "firstTranscript": "Havimos.",
+      "secondTranscript": "Abrimos.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 285,
+      "speed": "normal",
+      "path": "advanced/adv_16_285.mp3",
+      "expected": "viram",
+      "firstTranscript": "Wiederhund.",
+      "secondTranscript": "Wiederum,",
+      "duration": 1.039375
+    },
+    {
+      "item": 285,
+      "speed": "slow",
+      "path": "advanced/adv_16_285_slow.mp3",
+      "expected": "viram",
+      "firstTranscript": "Viver, ángãos!",
+      "secondTranscript": "Wiederheraus.",
+      "duration": 1.274
+    },
+    {
+      "item": 286,
+      "speed": "normal",
+      "path": "advanced/adv_16_286.mp3",
+      "expected": "vir",
+      "firstTranscript": "Vira!",
+      "secondTranscript": "Vi är där.",
+      "duration": 0.762
+    },
+    {
+      "item": 286,
+      "speed": "slow",
+      "path": "advanced/adv_16_286_slow.mp3",
+      "expected": "vir",
+      "firstTranscript": "Aweer de...",
+      "secondTranscript": "Auf Wiedersehen.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 287,
+      "speed": "normal",
+      "path": "advanced/adv_16_287.mp3",
+      "expected": "vim",
+      "firstTranscript": "VING!",
+      "secondTranscript": "Venha!",
+      "duration": 0.783375
+    },
+    {
+      "item": 287,
+      "speed": "slow",
+      "path": "advanced/adv_16_287_slow.mp3",
+      "expected": "vim",
+      "firstTranscript": "A vinga!",
+      "secondTranscript": "A vinha.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 289,
+      "speed": "slow",
+      "path": "advanced/adv_16_289_slow.mp3",
+      "expected": "viemos",
+      "firstTranscript": "Abreiemos.",
+      "secondTranscript": "Abriemos.",
+      "duration": 1.295375
+    },
+    {
+      "item": 291,
+      "speed": "normal",
+      "path": "advanced/adv_16_291.mp3",
+      "expected": "dar",
+      "firstTranscript": "Dóriga.",
+      "secondTranscript": "Dari.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 291,
+      "speed": "slow",
+      "path": "advanced/adv_16_291_slow.mp3",
+      "expected": "dar",
+      "firstTranscript": "Dindar.",
+      "secondTranscript": "Zidars.",
+      "duration": 0.975375
+    },
+    {
+      "item": 292,
+      "speed": "slow",
+      "path": "advanced/adv_16_292_slow.mp3",
+      "expected": "dei",
+      "firstTranscript": "Tadei!",
+      "secondTranscript": "Tadej!",
+      "duration": 0.9966875
+    },
+    {
+      "item": 293,
+      "speed": "slow",
+      "path": "advanced/adv_16_293_slow.mp3",
+      "expected": "deu",
+      "firstTranscript": "Adeu!",
+      "secondTranscript": "Adéu.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 294,
+      "speed": "slow",
+      "path": "advanced/adv_16_294_slow.mp3",
+      "expected": "demos",
+      "firstTranscript": "Ademos.",
+      "secondTranscript": "Tademos.",
+      "duration": 1.146
+    },
+    {
+      "item": 295,
+      "speed": "normal",
+      "path": "advanced/adv_16_295.mp3",
+      "expected": "deram",
+      "firstTranscript": "Deraan hond.",
+      "secondTranscript": "that owns",
+      "duration": 1.039375
+    },
+    {
+      "item": 295,
+      "speed": "slow",
+      "path": "advanced/adv_16_295_slow.mp3",
+      "expected": "deram",
+      "firstTranscript": "De erros.",
+      "secondTranscript": "That it owns",
+      "duration": 1.359375
+    },
+    {
+      "item": 296,
+      "speed": "normal",
+      "path": "advanced/adv_16_296.mp3",
+      "expected": "pôr",
+      "firstTranscript": "Board.",
+      "secondTranscript": "¡Suscríbete!",
+      "duration": 0.7406875
+    },
+    {
+      "item": 296,
+      "speed": "slow",
+      "path": "advanced/adv_16_296_slow.mp3",
+      "expected": "pôr",
+      "firstTranscript": "I'm bored.",
+      "secondTranscript": "Report it.",
+      "duration": 0.954
+    },
+    {
+      "item": 297,
+      "speed": "normal",
+      "path": "advanced/adv_16_297.mp3",
+      "expected": "pus",
+      "firstTranscript": "Bullseye.",
+      "secondTranscript": "Boozer.",
+      "duration": 0.783375
+    },
+    {
+      "item": 297,
+      "speed": "slow",
+      "path": "advanced/adv_16_297_slow.mp3",
+      "expected": "pus",
+      "firstTranscript": "Após!",
+      "secondTranscript": "A booze.",
+      "duration": 1.039375
+    },
+    {
+      "item": 298,
+      "speed": "normal",
+      "path": "advanced/adv_16_298.mp3",
+      "expected": "pôs",
+      "firstTranscript": "Bullets.",
+      "secondTranscript": "policy",
+      "duration": 0.783375
+    },
+    {
+      "item": 298,
+      "speed": "slow",
+      "path": "advanced/adv_16_298_slow.mp3",
+      "expected": "pôs",
+      "firstTranscript": "Impose.",
+      "secondTranscript": "And pause.",
+      "duration": 1.018
+    },
+    {
+      "item": 299,
+      "speed": "slow",
+      "path": "advanced/adv_16_299_slow.mp3",
+      "expected": "pusemos",
+      "firstTranscript": "Aposemos.",
+      "secondTranscript": "Apusemos!",
+      "duration": 1.3166875
+    },
+    {
+      "item": 301,
+      "speed": "normal",
+      "path": "advanced/adv_16_301.mp3",
+      "expected": "Fui ao Rio ontem",
+      "firstTranscript": "for your heal-on-ting.",
+      "secondTranscript": "Voor jouw gielronding.",
+      "duration": 1.423375
+    },
+    {
+      "item": 301,
+      "speed": "slow",
+      "path": "advanced/adv_16_301_slow.mp3",
+      "expected": "Fui ao Rio ontem",
+      "firstTranscript": "Fui ouw hio onteing.",
+      "secondTranscript": "Three out here one thing",
+      "duration": 1.978
+    },
+    {
+      "item": 302,
+      "speed": "slow",
+      "path": "advanced/adv_17_302_slow.mp3",
+      "expected": "partia",
+      "firstTranscript": "Hoe gaat het zien?",
+      "secondTranscript": "A part of this year.",
+      "duration": 1.359375
+    },
+    {
+      "item": 303,
+      "speed": "normal",
+      "path": "advanced/adv_17_303.mp3",
+      "expected": "comia",
+      "firstTranscript": "Komm, ihr!",
+      "secondTranscript": "Komm hier!",
+      "duration": 0.9326875
+    },
+    {
+      "item": 303,
+      "speed": "slow",
+      "path": "advanced/adv_17_303_slow.mp3",
+      "expected": "comia",
+      "firstTranscript": "Akklamir.",
+      "secondTranscript": "Come here",
+      "duration": 1.21
+    },
+    {
+      "item": 304,
+      "speed": "slow",
+      "path": "advanced/adv_17_304_slow.mp3",
+      "expected": "falava",
+      "firstTranscript": "Diferá Lavas.",
+      "secondTranscript": "The falavas.",
+      "duration": 1.3166875
+    },
+    {
+      "item": 305,
+      "speed": "slow",
+      "path": "advanced/adv_17_305_slow.mp3",
+      "expected": "partíamos",
+      "firstTranscript": "e barratíamos.",
+      "secondTranscript": "E para ti, amos.",
+      "duration": 1.594
+    },
+    {
+      "item": 306,
+      "speed": "slow",
+      "path": "advanced/adv_17_306_slow.mp3",
+      "expected": "comíamos",
+      "firstTranscript": "Acormi-mos.",
+      "secondTranscript": "A comíamos.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 307,
+      "speed": "slow",
+      "path": "advanced/adv_17_307_slow.mp3",
+      "expected": "falávamos",
+      "firstTranscript": "e falávamos.",
+      "secondTranscript": "e falávamos",
+      "duration": 1.487375
+    },
+    {
+      "item": 308,
+      "speed": "normal",
+      "path": "advanced/adv_17_308.mp3",
+      "expected": "partiam",
+      "firstTranscript": "Batião.",
+      "secondTranscript": "Partião.",
+      "duration": 1.103375
+    },
+    {
+      "item": 308,
+      "speed": "slow",
+      "path": "advanced/adv_17_308_slow.mp3",
+      "expected": "partiam",
+      "firstTranscript": "The Baratillo.",
+      "secondTranscript": "Aparatilhão.",
+      "duration": 1.466
+    },
+    {
+      "item": 309,
+      "speed": "slow",
+      "path": "advanced/adv_17_309_slow.mp3",
+      "expected": "comiam",
+      "firstTranscript": "Accombe your own.",
+      "secondTranscript": "A-C-O-M-E-O-O",
+      "duration": 1.487375
+    },
+    {
+      "item": 310,
+      "speed": "slow",
+      "path": "advanced/adv_17_310_slow.mp3",
+      "expected": "falavam",
+      "firstTranscript": "It's for a live-room.",
+      "secondTranscript": "Eles falavam.",
+      "duration": 1.402
+    },
+    {
+      "item": 311,
+      "speed": "normal",
+      "path": "advanced/adv_17_311.mp3",
+      "expected": "era",
+      "firstTranscript": "Thank you very much.",
+      "secondTranscript": "Better.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 311,
+      "speed": "slow",
+      "path": "advanced/adv_17_311_slow.mp3",
+      "expected": "era",
+      "firstTranscript": "Nailed it us.",
+      "secondTranscript": "Netherlands",
+      "duration": 1.018
+    },
+    {
+      "item": 312,
+      "speed": "slow",
+      "path": "advanced/adv_17_312_slow.mp3",
+      "expected": "éramos",
+      "firstTranscript": "E éramos.",
+      "secondTranscript": "E éramos.",
+      "duration": 1.167375
+    },
+    {
+      "item": 313,
+      "speed": "slow",
+      "path": "advanced/adv_17_313_slow.mp3",
+      "expected": "tinha",
+      "firstTranscript": "Patrzyj niej.",
+      "secondTranscript": "Atchínia.",
+      "duration": 1.167375
+    },
+    {
+      "item": 314,
+      "speed": "slow",
+      "path": "advanced/adv_17_314_slow.mp3",
+      "expected": "tínhamos",
+      "firstTranscript": "Tachinha-mos.",
+      "secondTranscript": "Atinhamos.",
+      "duration": 1.274
+    },
+    {
+      "item": 315,
+      "speed": "slow",
+      "path": "advanced/adv_17_315_slow.mp3",
+      "expected": "vinha",
+      "firstTranscript": "В Виня!",
+      "secondTranscript": "Винья.",
+      "duration": 1.082
+    },
+    {
+      "item": 316,
+      "speed": "slow",
+      "path": "advanced/adv_17_316_slow.mp3",
+      "expected": "vínhamos",
+      "firstTranscript": "A vinhamos.",
+      "secondTranscript": "Vinhemos.",
+      "duration": 1.295375
+    },
+    {
+      "item": 317,
+      "speed": "normal",
+      "path": "advanced/adv_17_317.mp3",
+      "expected": "punha",
+      "firstTranscript": "Poo-n-yat!",
+      "secondTranscript": "Porn yet?",
+      "duration": 0.911375
+    },
+    {
+      "item": 317,
+      "speed": "slow",
+      "path": "advanced/adv_17_317_slow.mp3",
+      "expected": "punha",
+      "firstTranscript": "A pool of jazz.",
+      "secondTranscript": "A-poo-n-yes.",
+      "duration": 1.231375
+    },
+    {
+      "item": 318,
+      "speed": "slow",
+      "path": "advanced/adv_17_318_slow.mp3",
+      "expected": "púnhamos",
+      "firstTranscript": "Apluñemos.",
+      "secondTranscript": "Apulhemos.",
+      "duration": 1.423375
+    },
+    {
+      "item": 319,
+      "speed": "slow",
+      "path": "advanced/adv_17_319_slow.mp3",
+      "expected": "Quando eu era criança, morava no Cairo.",
+      "firstTranscript": "de quando eu era criança morava no caíro.",
+      "secondTranscript": "De quando eu era criança, morava no Cairo.",
+      "duration": 3.471375
+    },
+    {
+      "item": 321,
+      "speed": "normal",
+      "path": "advanced/adv_18_321.mp3",
+      "expected": "falar",
+      "firstTranscript": "Fuller.",
+      "secondTranscript": "FALER",
+      "duration": 0.9326875
+    },
+    {
+      "item": 321,
+      "speed": "slow",
+      "path": "advanced/adv_18_321_slow.mp3",
+      "expected": "falar",
+      "firstTranscript": "be followed.",
+      "secondTranscript": "E falar.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 323,
+      "speed": "normal",
+      "path": "advanced/adv_18_323.mp3",
+      "expected": "falará",
+      "firstTranscript": "Follow the day.",
+      "secondTranscript": "Falarei.",
+      "duration": 0.975375
+    },
+    {
+      "item": 323,
+      "speed": "slow",
+      "path": "advanced/adv_18_323_slow.mp3",
+      "expected": "falará",
+      "firstTranscript": "Thank you for letting us.",
+      "secondTranscript": "F-A-L-E-D-A-S",
+      "duration": 1.2526875
+    },
+    {
+      "item": 324,
+      "speed": "slow",
+      "path": "advanced/adv_18_324_slow.mp3",
+      "expected": "falaremos",
+      "firstTranscript": "e falaremos.",
+      "secondTranscript": "E falaremos.",
+      "duration": 1.487375
+    },
+    {
+      "item": 329,
+      "speed": "slow",
+      "path": "advanced/adv_18_329_slow.mp3",
+      "expected": "falaríamos",
+      "firstTranscript": "e falaríamos.",
+      "secondTranscript": "O que falaríamos?",
+      "duration": 1.5726875
+    },
+    {
+      "item": 331,
+      "speed": "normal",
+      "path": "advanced/adv_18_331.mp3",
+      "expected": "ei, á, emos, ão",
+      "firstTranscript": "e a demonstrão.",
+      "secondTranscript": "E a demosão.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 331,
+      "speed": "slow",
+      "path": "advanced/adv_18_331_slow.mp3",
+      "expected": "ei, á, emos, ão",
+      "firstTranscript": "Lei à demostão.",
+      "secondTranscript": "Lei-a-demos-dão",
+      "duration": 1.9566875
+    },
+    {
+      "item": 334,
+      "speed": "normal",
+      "path": "advanced/adv_19_334.mp3",
+      "expected": "parta",
+      "firstTranscript": "By the take.",
+      "secondTranscript": "Spider-takes.",
+      "duration": 0.911375
+    },
+    {
+      "item": 334,
+      "speed": "slow",
+      "path": "advanced/adv_19_334_slow.mp3",
+      "expected": "parta",
+      "firstTranscript": "He barges to it.",
+      "secondTranscript": "一般是",
+      "duration": 1.1886875
+    },
+    {
+      "item": 335,
+      "speed": "normal",
+      "path": "advanced/adv_19_335.mp3",
+      "expected": "coma",
+      "firstTranscript": "C'mon mate.",
+      "secondTranscript": "Call my head.",
+      "duration": 0.826
+    },
+    {
+      "item": 335,
+      "speed": "slow",
+      "path": "advanced/adv_19_335_slow.mp3",
+      "expected": "coma",
+      "firstTranscript": "You're cool, man.",
+      "secondTranscript": "I kommer.",
+      "duration": 1.103375
+    },
+    {
+      "item": 336,
+      "speed": "normal",
+      "path": "advanced/adv_19_336.mp3",
+      "expected": "fale",
+      "firstTranscript": "Falei.",
+      "secondTranscript": "Falei.",
+      "duration": 0.868375
+    },
+    {
+      "item": 336,
+      "speed": "slow",
+      "path": "advanced/adv_19_336_slow.mp3",
+      "expected": "fale",
+      "firstTranscript": "Bye-bye.",
+      "secondTranscript": "If I leave",
+      "duration": 1.082
+    },
+    {
+      "item": 337,
+      "speed": "slow",
+      "path": "advanced/adv_19_337_slow.mp3",
+      "expected": "partamos",
+      "firstTranscript": "e partamos.",
+      "secondTranscript": "E partamos!",
+      "duration": 1.487375
+    },
+    {
+      "item": 338,
+      "speed": "slow",
+      "path": "advanced/adv_19_338_slow.mp3",
+      "expected": "comamos",
+      "firstTranscript": "E como émos?",
+      "secondTranscript": "E comamos!",
+      "duration": 1.402
+    },
+    {
+      "item": 339,
+      "speed": "slow",
+      "path": "advanced/adv_19_339_slow.mp3",
+      "expected": "falemos",
+      "firstTranscript": "e falemos.",
+      "secondTranscript": "E falemos!",
+      "duration": 1.3166875
+    },
+    {
+      "item": 340,
+      "speed": "normal",
+      "path": "advanced/adv_19_340.mp3",
+      "expected": "partam",
+      "firstTranscript": "Bye for town!",
+      "secondTranscript": "Bye. It's a long time. Bye.",
+      "duration": 1.018
+    },
+    {
+      "item": 340,
+      "speed": "slow",
+      "path": "advanced/adv_19_340_slow.mp3",
+      "expected": "partam",
+      "firstTranscript": "Die Partizoon.",
+      "secondTranscript": "Deparação.",
+      "duration": 1.231375
+    },
+    {
+      "item": 341,
+      "speed": "normal",
+      "path": "advanced/adv_19_341.mp3",
+      "expected": "comam",
+      "firstTranscript": "Comeu!",
+      "secondTranscript": "Comment ?",
+      "duration": 0.9966875
+    },
+    {
+      "item": 341,
+      "speed": "slow",
+      "path": "advanced/adv_19_341_slow.mp3",
+      "expected": "comam",
+      "firstTranscript": "Because man, we won't lose.",
+      "secondTranscript": "Come on",
+      "duration": 1.3806875
+    },
+    {
+      "item": 342,
+      "speed": "slow",
+      "path": "advanced/adv_19_342_slow.mp3",
+      "expected": "falem",
+      "firstTranscript": "to following.",
+      "secondTranscript": "The following.",
+      "duration": 1.167375
+    },
+    {
+      "item": 343,
+      "speed": "slow",
+      "path": "advanced/adv_19_343_slow.mp3",
+      "expected": "espero que",
+      "firstTranscript": "Alice Beruqui.",
+      "secondTranscript": "Eu espero que",
+      "duration": 1.466
+    },
+    {
+      "item": 344,
+      "speed": "slow",
+      "path": "advanced/adv_19_344_slow.mp3",
+      "expected": "Espero que você esteja bem.",
+      "firstTranscript": "Eu espero que você esteja bem.",
+      "secondTranscript": "Eu espero que você esteja bem.",
+      "duration": 2.938
+    },
+    {
+      "item": 346,
+      "speed": "slow",
+      "path": "advanced/adv_19_346_slow.mp3",
+      "expected": "quero que",
+      "firstTranscript": "Eu quero o que ir.",
+      "secondTranscript": "Eu quero que...",
+      "duration": 1.1886875
+    },
+    {
+      "item": 350,
+      "speed": "slow",
+      "path": "advanced/adv_19_350_slow.mp3",
+      "expected": "Embora eu esteja cansado, vou trabalhar.",
+      "firstTranscript": "E embora eu esteja cansado, vou trabalhar.",
+      "secondTranscript": "E embora eu esteja cansado, vou trabalhar.",
+      "duration": 3.8766875
+    },
+    {
+      "item": 353,
+      "speed": "slow",
+      "path": "advanced/adv_20_353_slow.mp3",
+      "expected": "me visto",
+      "firstTranscript": "Amei visto!",
+      "secondTranscript": "Ami visto.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 354,
+      "speed": "slow",
+      "path": "advanced/adv_20_354_slow.mp3",
+      "expected": "se chama",
+      "firstTranscript": "עשי שרמה.",
+      "secondTranscript": "Ela se chama",
+      "duration": 1.3166875
+    },
+    {
+      "item": 355,
+      "speed": "slow",
+      "path": "advanced/adv_20_355_slow.mp3",
+      "expected": "se levanta",
+      "firstTranscript": "e se levanta.",
+      "secondTranscript": "E se levanta.",
+      "duration": 1.5726875
+    },
+    {
+      "item": 356,
+      "speed": "normal",
+      "path": "advanced/adv_20_356.mp3",
+      "expected": "se veste",
+      "firstTranscript": "See you next time.",
+      "secondTranscript": "Se vestiu.",
+      "duration": 1.082
+    },
+    {
+      "item": 356,
+      "speed": "slow",
+      "path": "advanced/adv_20_356_slow.mp3",
+      "expected": "se veste",
+      "firstTranscript": "I'll see you next time.",
+      "secondTranscript": "I'll see Vest you",
+      "duration": 1.402
+    },
+    {
+      "item": 357,
+      "speed": "slow",
+      "path": "advanced/adv_20_357_slow.mp3",
+      "expected": "nos chamamos",
+      "firstTranscript": "E nós se chamamos.",
+      "secondTranscript": "Inúcia, te amamos.",
+      "duration": 1.6366875
+    },
+    {
+      "item": 358,
+      "speed": "slow",
+      "path": "advanced/adv_20_358_slow.mp3",
+      "expected": "nos levantamos",
+      "firstTranscript": "e nos levantamos.",
+      "secondTranscript": "E nos levantamos.",
+      "duration": 1.978
+    },
+    {
+      "item": 361,
+      "speed": "slow",
+      "path": "advanced/adv_20_361_slow.mp3",
+      "expected": "se levantam",
+      "firstTranscript": "e se levantam.",
+      "secondTranscript": "E se levantam.",
+      "duration": 1.615375
+    },
+    {
+      "item": 362,
+      "speed": "normal",
+      "path": "advanced/adv_20_362.mp3",
+      "expected": "se vestem",
+      "firstTranscript": "See you next time!",
+      "secondTranscript": "See vesting",
+      "duration": 1.1246875
+    },
+    {
+      "item": 362,
+      "speed": "slow",
+      "path": "advanced/adv_20_362_slow.mp3",
+      "expected": "se vestem",
+      "firstTranscript": "I'll see vesting!",
+      "secondTranscript": "I'll see vesting",
+      "duration": 1.4446875
+    },
+    {
+      "item": 364,
+      "speed": "normal",
+      "path": "advanced/adv_21_364.mp3",
+      "expected": "me",
+      "firstTranscript": "I'm here.",
+      "secondTranscript": "Мет.",
+      "duration": 0.593375
+    },
+    {
+      "item": 364,
+      "speed": "slow",
+      "path": "advanced/adv_21_364_slow.mp3",
+      "expected": "me",
+      "firstTranscript": "I'm a yes.",
+      "secondTranscript": "Estamos aí.",
+      "duration": 0.762
+    },
+    {
+      "item": 365,
+      "speed": "normal",
+      "path": "advanced/adv_21_365.mp3",
+      "expected": "lhe",
+      "firstTranscript": "You",
+      "secondTranscript": "Dieu.",
+      "duration": 0.643375
+    },
+    {
+      "item": 365,
+      "speed": "slow",
+      "path": "advanced/adv_21_365_slow.mp3",
+      "expected": "lhe",
+      "firstTranscript": "Are you?",
+      "secondTranscript": "Айу.",
+      "duration": 0.762
+    },
+    {
+      "item": 366,
+      "speed": "normal",
+      "path": "advanced/adv_21_366.mp3",
+      "expected": "nos",
+      "firstTranscript": "No, sir.",
+      "secondTranscript": "No sé.",
+      "duration": 0.719375
+    },
+    {
+      "item": 366,
+      "speed": "slow",
+      "path": "advanced/adv_21_366_slow.mp3",
+      "expected": "nos",
+      "firstTranscript": "Anos!",
+      "secondTranscript": "Enos.",
+      "duration": 0.89
+    },
+    {
+      "item": 367,
+      "speed": "normal",
+      "path": "advanced/adv_21_367.mp3",
+      "expected": "os",
+      "firstTranscript": "Lua-se!",
+      "secondTranscript": "ご視聴ありがとうございました",
+      "duration": 0.693375
+    },
+    {
+      "item": 367,
+      "speed": "slow",
+      "path": "advanced/adv_21_367_slow.mp3",
+      "expected": "os",
+      "firstTranscript": "Угу, а здесь?",
+      "secondTranscript": "Google, let's just...",
+      "duration": 0.89
+    },
+    {
+      "item": 368,
+      "speed": "normal",
+      "path": "advanced/adv_21_368.mp3",
+      "expected": "as",
+      "firstTranscript": "Nice.",
+      "secondTranscript": "Nice.",
+      "duration": 0.719375
+    },
+    {
+      "item": 368,
+      "speed": "slow",
+      "path": "advanced/adv_21_368_slow.mp3",
+      "expected": "as",
+      "firstTranscript": "Don'tice.",
+      "secondTranscript": "Lnaz",
+      "duration": 0.954
+    },
+    {
+      "item": 369,
+      "speed": "normal",
+      "path": "advanced/adv_21_369.mp3",
+      "expected": "lhes",
+      "firstTranscript": "US.",
+      "secondTranscript": "US",
+      "duration": 0.7406875
+    },
+    {
+      "item": 369,
+      "speed": "slow",
+      "path": "advanced/adv_21_369_slow.mp3",
+      "expected": "lhes",
+      "firstTranscript": "Are you?",
+      "secondTranscript": "I'll use",
+      "duration": 0.9326875
+    },
+    {
+      "item": 371,
+      "speed": "normal",
+      "path": "advanced/adv_21_371.mp3",
+      "expected": "Vou lhe contar uma coisa.",
+      "firstTranscript": "Vou de contar uma coisa.",
+      "secondTranscript": "Vou te contar uma coisa.",
+      "duration": 1.8286875
+    },
+    {
+      "item": 371,
+      "speed": "slow",
+      "path": "advanced/adv_21_371_slow.mp3",
+      "expected": "Vou lhe contar uma coisa.",
+      "firstTranscript": "e vou de contar uma coisa.",
+      "secondTranscript": "E vou de contar uma coisa.",
+      "duration": 2.5966875
+    },
+    {
+      "item": 372,
+      "speed": "normal",
+      "path": "advanced/adv_22_372.mp3",
+      "expected": "+ o",
+      "firstTranscript": "Maizo",
+      "secondTranscript": "Maisel",
+      "duration": 1.018
+    },
+    {
+      "item": 372,
+      "speed": "slow",
+      "path": "advanced/adv_22_372_slow.mp3",
+      "expected": "+ o",
+      "firstTranscript": "My's old.",
+      "secondTranscript": "Mais oh",
+      "duration": 1.3166875
+    },
+    {
+      "item": 373,
+      "speed": "normal",
+      "path": "advanced/adv_22_373.mp3",
+      "expected": "+ a",
+      "firstTranscript": "Miser",
+      "secondTranscript": "Miser.",
+      "duration": 1.039375
+    },
+    {
+      "item": 373,
+      "speed": "slow",
+      "path": "advanced/adv_22_373_slow.mp3",
+      "expected": "+ a",
+      "firstTranscript": "My's Earth.",
+      "secondTranscript": "Mize Earth",
+      "duration": 1.359375
+    },
+    {
+      "item": 374,
+      "speed": "normal",
+      "path": "advanced/adv_22_374.mp3",
+      "expected": "+ os",
+      "firstTranscript": "Miserus",
+      "secondTranscript": "Mais os",
+      "duration": 1.103375
+    },
+    {
+      "item": 374,
+      "speed": "slow",
+      "path": "advanced/adv_22_374_slow.mp3",
+      "expected": "+ os",
+      "firstTranscript": "היא מי זעוס.",
+      "secondTranscript": "E mais os.",
+      "duration": 1.3806875
+    },
+    {
+      "item": 375,
+      "speed": "normal",
+      "path": "advanced/adv_22_375.mp3",
+      "expected": "+ as",
+      "firstTranscript": "Mize us.",
+      "secondTranscript": "Mais asks,",
+      "duration": 1.103375
+    },
+    {
+      "item": 375,
+      "speed": "slow",
+      "path": "advanced/adv_22_375_slow.mp3",
+      "expected": "+ as",
+      "firstTranscript": "Emise S.",
+      "secondTranscript": "My ass.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 376,
+      "speed": "normal",
+      "path": "advanced/adv_22_376.mp3",
+      "expected": "do",
+      "firstTranscript": "Thanks for watching.",
+      "secondTranscript": "Сдох.",
+      "duration": 0.618375
+    },
+    {
+      "item": 376,
+      "speed": "slow",
+      "path": "advanced/adv_22_376_slow.mp3",
+      "expected": "do",
+      "firstTranscript": "Ador!",
+      "secondTranscript": "Adoro.",
+      "duration": 0.762
+    },
+    {
+      "item": 377,
+      "speed": "normal",
+      "path": "advanced/adv_22_377.mp3",
+      "expected": "da",
+      "firstTranscript": "Thank you.",
+      "secondTranscript": "Дальше.",
+      "duration": 0.593375
+    },
+    {
+      "item": 377,
+      "speed": "slow",
+      "path": "advanced/adv_22_377_slow.mp3",
+      "expected": "da",
+      "firstTranscript": "You're there.",
+      "secondTranscript": "Да.",
+      "duration": 0.783375
+    },
+    {
+      "item": 378,
+      "speed": "slow",
+      "path": "advanced/adv_22_378_slow.mp3",
+      "expected": "dos",
+      "firstTranscript": "Adouce.",
+      "secondTranscript": "É 12.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 379,
+      "speed": "slow",
+      "path": "advanced/adv_22_379_slow.mp3",
+      "expected": "das",
+      "firstTranscript": "Nudaz.",
+      "secondTranscript": "Удачу.",
+      "duration": 0.911375
+    },
+    {
+      "item": 380,
+      "speed": "slow",
+      "path": "advanced/adv_22_380_slow.mp3",
+      "expected": "no",
+      "firstTranscript": "Pannur.",
+      "secondTranscript": "Ähnung.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 381,
+      "speed": "normal",
+      "path": "advanced/adv_22_381.mp3",
+      "expected": "na",
+      "firstTranscript": "Nah.",
+      "secondTranscript": "Nacht.",
+      "duration": 0.643375
+    },
+    {
+      "item": 381,
+      "speed": "slow",
+      "path": "advanced/adv_22_381_slow.mp3",
+      "expected": "na",
+      "firstTranscript": "We know.",
+      "secondTranscript": "Enough",
+      "duration": 0.783375
+    },
+    {
+      "item": 382,
+      "speed": "normal",
+      "path": "advanced/adv_22_382.mp3",
+      "expected": "nas",
+      "firstTranscript": "NASA",
+      "secondTranscript": "Nassau",
+      "duration": 0.693375
+    },
+    {
+      "item": 382,
+      "speed": "slow",
+      "path": "advanced/adv_22_382_slow.mp3",
+      "expected": "nas",
+      "firstTranscript": "Nina's.",
+      "secondTranscript": "Nina's",
+      "duration": 0.9326875
+    },
+    {
+      "item": 383,
+      "speed": "normal",
+      "path": "advanced/adv_22_383.mp3",
+      "expected": "ao",
+      "firstTranscript": "Now it's",
+      "secondTranscript": "Now",
+      "duration": 0.593375
+    },
+    {
+      "item": 383,
+      "speed": "slow",
+      "path": "advanced/adv_22_383_slow.mp3",
+      "expected": "ao",
+      "firstTranscript": "You know.",
+      "secondTranscript": "you know",
+      "duration": 0.762
+    },
+    {
+      "item": 384,
+      "speed": "normal",
+      "path": "advanced/adv_22_384.mp3",
+      "expected": "aos",
+      "firstTranscript": "I'll see you next time.",
+      "secondTranscript": "Now let's see.",
+      "duration": 0.718375
+    },
+    {
+      "item": 384,
+      "speed": "slow",
+      "path": "advanced/adv_22_384_slow.mp3",
+      "expected": "aos",
+      "firstTranscript": "He knows.",
+      "secondTranscript": "He knows.",
+      "duration": 0.911375
+    },
+    {
+      "item": 385,
+      "speed": "normal",
+      "path": "advanced/adv_22_385.mp3",
+      "expected": "às",
+      "firstTranscript": "Nice.",
+      "secondTranscript": "last",
+      "duration": 0.719375
+    },
+    {
+      "item": 385,
+      "speed": "slow",
+      "path": "advanced/adv_22_385_slow.mp3",
+      "expected": "às",
+      "firstTranscript": "You know, it's...",
+      "secondTranscript": "Linus.",
+      "duration": 0.89
+    },
+    {
+      "item": 386,
+      "speed": "slow",
+      "path": "advanced/adv_22_386_slow.mp3",
+      "expected": "pelo",
+      "firstTranscript": "Apele-lo.",
+      "secondTranscript": "PELU",
+      "duration": 1.039375
+    },
+    {
+      "item": 388,
+      "speed": "slow",
+      "path": "advanced/adv_22_388_slow.mp3",
+      "expected": "pelos",
+      "firstTranscript": "Appelus.",
+      "secondTranscript": "Apelos.",
+      "duration": 1.082
+    },
+    {
+      "item": 389,
+      "speed": "normal",
+      "path": "advanced/adv_22_389.mp3",
+      "expected": "pelas",
+      "firstTranscript": "Belas.",
+      "secondTranscript": "Bela's",
+      "duration": 0.911375
+    },
+    {
+      "item": 389,
+      "speed": "slow",
+      "path": "advanced/adv_22_389_slow.mp3",
+      "expected": "pelas",
+      "firstTranscript": "Impay-lars.",
+      "secondTranscript": "in P.L.A.S.",
+      "duration": 1.082
+    },
+    {
+      "item": 390,
+      "speed": "slow",
+      "path": "advanced/adv_22_390_slow.mp3",
+      "expected": "Vou ao mercado.",
+      "firstTranscript": "e vou ao mercado.",
+      "secondTranscript": "E vou ao mercado.",
+      "duration": 1.85
+    },
+    {
+      "item": 393,
+      "speed": "normal",
+      "path": "advanced/adv_23_393.mp3",
+      "expected": "mais... que",
+      "firstTranscript": "Mais aqui.",
+      "secondTranscript": "Mais aqui",
+      "duration": 1.103375
+    },
+    {
+      "item": 393,
+      "speed": "slow",
+      "path": "advanced/adv_23_393_slow.mp3",
+      "expected": "mais... que",
+      "firstTranscript": "Mais aqui.",
+      "secondTranscript": "Mais aqui.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 394,
+      "speed": "normal",
+      "path": "advanced/adv_23_394.mp3",
+      "expected": "menos... que",
+      "firstTranscript": "Menos like you",
+      "secondTranscript": "Menos like you",
+      "duration": 1.167375
+    },
+    {
+      "item": 394,
+      "speed": "slow",
+      "path": "advanced/adv_23_394_slow.mp3",
+      "expected": "menos... que",
+      "firstTranscript": "My men know this is like it.",
+      "secondTranscript": "Menos, Zaiqie.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 395,
+      "speed": "normal",
+      "path": "advanced/adv_23_395.mp3",
+      "expected": "tão... quanto",
+      "firstTranscript": "Sounds quantum.",
+      "secondTranscript": "Tens quanto.",
+      "duration": 1.21
+    },
+    {
+      "item": 395,
+      "speed": "slow",
+      "path": "advanced/adv_23_395_slow.mp3",
+      "expected": "tão... quanto",
+      "firstTranscript": "J'étends en ce qu'on touche.",
+      "secondTranscript": "Dita 11. Quanto?",
+      "duration": 1.551375
+    },
+    {
+      "item": 396,
+      "speed": "slow",
+      "path": "advanced/adv_23_396_slow.mp3",
+      "expected": "o mais",
+      "firstTranscript": "Ooh, mice.",
+      "secondTranscript": "Ooh, mice.",
+      "duration": 1.167375
+    },
+    {
+      "item": 397,
+      "speed": "slow",
+      "path": "advanced/adv_23_397_slow.mp3",
+      "expected": "a mais",
+      "firstTranscript": "He got mice.",
+      "secondTranscript": "Jamais.",
+      "duration": 1.21
+    },
+    {
+      "item": 398,
+      "speed": "slow",
+      "path": "advanced/adv_23_398_slow.mp3",
+      "expected": "mas",
+      "firstTranscript": "います",
+      "secondTranscript": "Y más.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 399,
+      "speed": "normal",
+      "path": "advanced/adv_23_399.mp3",
+      "expected": "porém",
+      "firstTranscript": "Puttings",
+      "secondTranscript": "Puddings.",
+      "duration": 0.954
+    },
+    {
+      "item": 399,
+      "speed": "slow",
+      "path": "advanced/adv_23_399_slow.mp3",
+      "expected": "porém",
+      "firstTranscript": "Report Aings.",
+      "secondTranscript": "A poor dayings.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 400,
+      "speed": "slow",
+      "path": "advanced/adv_23_400_slow.mp3",
+      "expected": "contudo",
+      "firstTranscript": "I can't do it.",
+      "secondTranscript": "Jeg kommer til at do det.",
+      "duration": 1.423375
+    },
+    {
+      "item": 401,
+      "speed": "slow",
+      "path": "advanced/adv_23_401_slow.mp3",
+      "expected": "portanto",
+      "firstTranscript": "He poor has done too.",
+      "secondTranscript": "E por restante...",
+      "duration": 1.4446875
+    },
+    {
+      "item": 402,
+      "speed": "normal",
+      "path": "advanced/adv_23_402.mp3",
+      "expected": "porque",
+      "firstTranscript": "Part A Keith",
+      "secondTranscript": "Portakeet",
+      "duration": 0.911375
+    },
+    {
+      "item": 402,
+      "speed": "slow",
+      "path": "advanced/adv_23_402_slow.mp3",
+      "expected": "porque",
+      "firstTranscript": "I'm part of the key.",
+      "secondTranscript": "A port a key",
+      "duration": 1.21
+    },
+    {
+      "item": 403,
+      "speed": "normal",
+      "path": "advanced/adv_23_403.mp3",
+      "expected": "já que",
+      "firstTranscript": "Já aqui.",
+      "secondTranscript": "Já aqui.",
+      "duration": 0.8686875
+    },
+    {
+      "item": 403,
+      "speed": "slow",
+      "path": "advanced/adv_23_403_slow.mp3",
+      "expected": "já que",
+      "firstTranscript": "Ajudá aqui.",
+      "secondTranscript": "Eu vou girar aqui.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 404,
+      "speed": "normal",
+      "path": "advanced/adv_23_404.mp3",
+      "expected": "embora",
+      "firstTranscript": "Sim, bota!",
+      "secondTranscript": "Simbora!",
+      "duration": 1.039375
+    },
+    {
+      "item": 404,
+      "speed": "slow",
+      "path": "advanced/adv_23_404_slow.mp3",
+      "expected": "embora",
+      "firstTranscript": "E se embora.",
+      "secondTranscript": "E se embora",
+      "duration": 1.338
+    },
+    {
+      "item": 406,
+      "speed": "normal",
+      "path": "advanced/adv_23_406.mp3",
+      "expected": "caso",
+      "firstTranscript": "Kazut.",
+      "secondTranscript": "KASU",
+      "duration": 0.911375
+    },
+    {
+      "item": 406,
+      "speed": "slow",
+      "path": "advanced/adv_23_406_slow.mp3",
+      "expected": "caso",
+      "firstTranscript": "e grazo.",
+      "secondTranscript": "E caso...",
+      "duration": 1.146
+    },
+    {
+      "item": 407,
+      "speed": "normal",
+      "path": "advanced/adv_23_407.mp3",
+      "expected": "tão... como",
+      "firstTranscript": "Tchau, uns comuns!",
+      "secondTranscript": "Sounds common.",
+      "duration": 1.103375
+    },
+    {
+      "item": 407,
+      "speed": "slow",
+      "path": "advanced/adv_23_407_slow.mp3",
+      "expected": "tão... como",
+      "firstTranscript": "esternos como ele.",
+      "secondTranscript": "Estão se comuns.",
+      "duration": 1.5086875
+    },
+    {
+      "item": 409,
+      "speed": "normal",
+      "path": "advanced/adv_24_409.mp3",
+      "expected": "visto",
+      "firstTranscript": "V-Store.",
+      "secondTranscript": "Vi står.",
+      "duration": 0.9326875
+    },
+    {
+      "item": 409,
+      "speed": "slow",
+      "path": "advanced/adv_24_409_slow.mp3",
+      "expected": "visto",
+      "firstTranscript": "A vristo.",
+      "secondTranscript": "Avvisto.",
+      "duration": 1.21
+    },
+    {
+      "item": 410,
+      "speed": "slow",
+      "path": "advanced/adv_24_410_slow.mp3",
+      "expected": "passagem",
+      "firstTranscript": "O passagem.",
+      "secondTranscript": "O PASSAGEM",
+      "duration": 1.5086875
+    },
+    {
+      "item": 411,
+      "speed": "normal",
+      "path": "advanced/adv_24_411.mp3",
+      "expected": "embarque",
+      "firstTranscript": "Zimbara aqui.",
+      "secondTranscript": "Desembar aqui.",
+      "duration": 1.1246875
+    },
+    {
+      "item": 411,
+      "speed": "slow",
+      "path": "advanced/adv_24_411_slow.mp3",
+      "expected": "embarque",
+      "firstTranscript": "Zimbara aqui.",
+      "secondTranscript": "Замбарки.",
+      "duration": 1.4446875
+    },
+    {
+      "item": 412,
+      "speed": "slow",
+      "path": "advanced/adv_24_412_slow.mp3",
+      "expected": "bagagem",
+      "firstTranscript": "do barragem.",
+      "secondTranscript": "O Barragagens",
+      "duration": 1.53
+    },
+    {
+      "item": 413,
+      "speed": "slow",
+      "path": "advanced/adv_24_413_slow.mp3",
+      "expected": "bagagem de mão",
+      "firstTranscript": "do bagagente de mão.",
+      "secondTranscript": "Pagar, gente, de mão.",
+      "duration": 2.0846875
+    },
+    {
+      "item": 414,
+      "speed": "slow",
+      "path": "advanced/adv_24_414_slow.mp3",
+      "expected": "check-in",
+      "firstTranscript": "Eu sei que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é que é",
+      "secondTranscript": "A sekín",
+      "duration": 1.231375
+    },
+    {
+      "item": 415,
+      "speed": "slow",
+      "path": "advanced/adv_24_415_slow.mp3",
+      "expected": "portão de embarque",
+      "firstTranscript": "do portão de embarque.",
+      "secondTranscript": "O portão de embarque.",
+      "duration": 2.106
+    },
+    {
+      "item": 416,
+      "speed": "normal",
+      "path": "advanced/adv_24_416.mp3",
+      "expected": "voo",
+      "firstTranscript": "Wygląda.",
+      "secondTranscript": "Vote.",
+      "duration": 0.7406875
+    },
+    {
+      "item": 416,
+      "speed": "slow",
+      "path": "advanced/adv_24_416_slow.mp3",
+      "expected": "voo",
+      "firstTranscript": "You vote.",
+      "secondTranscript": "Devote",
+      "duration": 0.911375
+    },
+    {
+      "item": 417,
+      "speed": "slow",
+      "path": "advanced/adv_24_417_slow.mp3",
+      "expected": "atraso",
+      "firstTranscript": "em atraso.",
+      "secondTranscript": "Em atraso.",
+      "duration": 1.402
+    },
+    {
+      "item": 418,
+      "speed": "slow",
+      "path": "advanced/adv_24_418_slow.mp3",
+      "expected": "cancelado",
+      "firstTranscript": "E cancelado.",
+      "secondTranscript": "E cancelado",
+      "duration": 1.53
+    },
+    {
+      "item": 419,
+      "speed": "slow",
+      "path": "advanced/adv_24_419_slow.mp3",
+      "expected": "alfândega",
+      "firstTranscript": "Isso é o fã diga!",
+      "secondTranscript": "is alfandegas",
+      "duration": 1.5726875
+    },
+    {
+      "item": 422,
+      "speed": "slow",
+      "path": "advanced/adv_25_422_slow.mp3",
+      "expected": "O ar condicionado não funciona",
+      "firstTranscript": "e o ar condicionado não funciona.",
+      "secondTranscript": "E o ar condicionado não funciona.",
+      "duration": 3.151375
+    },
+    {
+      "item": 426,
+      "speed": "slow",
+      "path": "advanced/adv_25_426_slow.mp3",
+      "expected": "Podem limpar o quarto?",
+      "firstTranscript": "Podem limpar o cuartos.",
+      "secondTranscript": "Podem limpar o quartos.",
+      "duration": 2.511375
+    },
+    {
+      "item": 427,
+      "speed": "slow",
+      "path": "advanced/adv_25_427_slow.mp3",
+      "expected": "A que horas é o check-out?",
+      "firstTranscript": "Aqui o oras é o checocho.",
+      "secondTranscript": "Há que horas é o She Coach?",
+      "duration": 2.618
+    },
+    {
+      "item": 428,
+      "speed": "slow",
+      "path": "advanced/adv_25_428_slow.mp3",
+      "expected": "reclamação",
+      "firstTranscript": "Deteclamação.",
+      "secondTranscript": "DECLAMAÇÃO",
+      "duration": 1.786
+    },
+    {
+      "item": 429,
+      "speed": "normal",
+      "path": "advanced/adv_25_429.mp3",
+      "expected": "reserva",
+      "firstTranscript": "Deserva!",
+      "secondTranscript": "It's a Zerva.",
+      "duration": 1.167375
+    },
+    {
+      "item": 429,
+      "speed": "slow",
+      "path": "advanced/adv_25_429_slow.mp3",
+      "expected": "reserva",
+      "firstTranscript": "Muito exerro, vô!",
+      "secondTranscript": "Muito reserva.",
+      "duration": 1.402
+    },
+    {
+      "item": 430,
+      "speed": "slow",
+      "path": "advanced/adv_26_430_slow.mp3",
+      "expected": "médico",
+      "firstTranscript": "A meds de escurros.",
+      "secondTranscript": "Magic school",
+      "duration": 1.338
+    },
+    {
+      "item": 431,
+      "speed": "normal",
+      "path": "advanced/adv_26_431.mp3",
+      "expected": "hospital",
+      "firstTranscript": "Ospitał.",
+      "secondTranscript": "Ospitau.",
+      "duration": 1.082
+    },
+    {
+      "item": 431,
+      "speed": "slow",
+      "path": "advanced/adv_26_431_slow.mp3",
+      "expected": "hospital",
+      "firstTranscript": "Ingospital.",
+      "secondTranscript": "em hospital.",
+      "duration": 1.359375
+    },
+    {
+      "item": 432,
+      "speed": "slow",
+      "path": "advanced/adv_26_432_slow.mp3",
+      "expected": "farmácia",
+      "firstTranscript": "e farmácia.",
+      "secondTranscript": "em farmácia",
+      "duration": 1.551375
+    },
+    {
+      "item": 433,
+      "speed": "normal",
+      "path": "advanced/adv_26_433.mp3",
+      "expected": "dor",
+      "firstTranscript": "Door.",
+      "secondTranscript": "Door.",
+      "duration": 0.762
+    },
+    {
+      "item": 433,
+      "speed": "slow",
+      "path": "advanced/adv_26_433_slow.mp3",
+      "expected": "dor",
+      "firstTranscript": "DORED!",
+      "secondTranscript": "Door.",
+      "duration": 1.018
+    },
+    {
+      "item": 434,
+      "speed": "slow",
+      "path": "advanced/adv_26_434_slow.mp3",
+      "expected": "Preciso de um médico",
+      "firstTranscript": "Apreciso de um médico.",
+      "secondTranscript": "É preciso de um médico.",
+      "duration": 2.49
+    },
+    {
+      "item": 435,
+      "speed": "slow",
+      "path": "advanced/adv_26_435_slow.mp3",
+      "expected": "Não estou bem",
+      "firstTranscript": "Now we're still being.",
+      "secondTranscript": "Não estou obeying.",
+      "duration": 1.743375
+    },
+    {
+      "item": 436,
+      "speed": "slow",
+      "path": "advanced/adv_26_436_slow.mp3",
+      "expected": "febre",
+      "firstTranscript": "Fébrio!",
+      "secondTranscript": "Febri",
+      "duration": 1.146
+    },
+    {
+      "item": 440,
+      "speed": "slow",
+      "path": "advanced/adv_26_440_slow.mp3",
+      "expected": "ambulância",
+      "firstTranscript": "i gambuolansia.",
+      "secondTranscript": "Digambulância.",
+      "duration": 1.594
+    },
+    {
+      "item": 441,
+      "speed": "slow",
+      "path": "advanced/adv_26_441_slow.mp3",
+      "expected": "emergência",
+      "firstTranscript": "O demergência.",
+      "secondTranscript": "ou de emergência.",
+      "duration": 1.615375
+    },
+    {
+      "item": 443,
+      "speed": "slow",
+      "path": "advanced/adv_26_443_slow.mp3",
+      "expected": "alergia",
+      "firstTranscript": "Um valor de energia.",
+      "secondTranscript": "Uma alergia.",
+      "duration": 1.423375
+    },
+    {
+      "item": 444,
+      "speed": "normal",
+      "path": "advanced/adv_26_444.mp3",
+      "expected": "remédio",
+      "firstTranscript": "I'll see you next time.",
+      "secondTranscript": "Você é médio.",
+      "duration": 1.082
+    },
+    {
+      "item": 444,
+      "speed": "slow",
+      "path": "advanced/adv_26_444_slow.mp3",
+      "expected": "remédio",
+      "firstTranscript": "I'll see you next time.",
+      "secondTranscript": "A classe é médio.",
+      "duration": 1.338
+    },
+    {
+      "item": 445,
+      "speed": "normal",
+      "path": "advanced/adv_27_445.mp3",
+      "expected": "banco",
+      "firstTranscript": "Banthur",
+      "secondTranscript": "Bang to it.",
+      "duration": 0.9966875
+    },
+    {
+      "item": 445,
+      "speed": "slow",
+      "path": "advanced/adv_27_445_slow.mp3",
+      "expected": "banco",
+      "firstTranscript": "That bangs cool.",
+      "secondTranscript": "Bang School",
+      "duration": 1.3166875
+    },
+    {
+      "item": 446,
+      "speed": "slow",
+      "path": "advanced/adv_27_446_slow.mp3",
+      "expected": "câmbio",
+      "firstTranscript": "I calm you.",
+      "secondTranscript": "I can't view.",
+      "duration": 1.21
+    },
+    {
+      "item": 448,
+      "speed": "slow",
+      "path": "advanced/adv_27_448_slow.mp3",
+      "expected": "cartão de crédito",
+      "firstTranscript": "o cartão de crédito.",
+      "secondTranscript": "Um cartão de crédito.",
+      "duration": 2.2766875
+    },
+    {
+      "item": 449,
+      "speed": "normal",
+      "path": "advanced/adv_27_449.mp3",
+      "expected": "caixa eletrônico",
+      "firstTranscript": "Kai še elektroniku.",
+      "secondTranscript": "Caixa eletronicu",
+      "duration": 1.53
+    },
+    {
+      "item": 449,
+      "speed": "slow",
+      "path": "advanced/adv_27_449_slow.mp3",
+      "expected": "caixa eletrônico",
+      "firstTranscript": "Кайша електронику.",
+      "secondTranscript": "קיישה אלטרוניקו.",
+      "duration": 2.042
+    },
+    {
+      "item": 455,
+      "speed": "slow",
+      "path": "advanced/adv_28_455_slow.mp3",
+      "expected": "alugar um carro",
+      "firstTranscript": "Se alugar um carro.",
+      "secondTranscript": "Desalugar um carro",
+      "duration": 1.8926875
+    },
+    {
+      "item": 457,
+      "speed": "slow",
+      "path": "advanced/adv_28_457_slow.mp3",
+      "expected": "seguro",
+      "firstTranscript": "Passegure.",
+      "secondTranscript": "Aseguro.",
+      "duration": 1.295375
+    },
+    {
+      "item": 460,
+      "speed": "slow",
+      "path": "advanced/adv_28_460_slow.mp3",
+      "expected": "Vire à direita",
+      "firstTranscript": "Virei a direita.",
+      "secondTranscript": "Não virem à direita.",
+      "duration": 1.9566875
+    },
+    {
+      "item": 461,
+      "speed": "slow",
+      "path": "advanced/adv_28_461_slow.mp3",
+      "expected": "esquerda",
+      "firstTranscript": "ويسكير دى",
+      "secondTranscript": "Ou esquerda.",
+      "duration": 1.338
+    },
+    {
+      "item": 463,
+      "speed": "slow",
+      "path": "advanced/adv_28_463_slow.mp3",
+      "expected": "semáforo",
+      "firstTranscript": "This is my photo.",
+      "secondTranscript": "E semáforo.",
+      "duration": 1.423375
+    },
+    {
+      "item": 464,
+      "speed": "normal",
+      "path": "advanced/adv_28_464.mp3",
+      "expected": "rotatória",
+      "firstTranscript": "ご視聴ありがとうございました",
+      "secondTranscript": "Quotatoria",
+      "duration": 1.21
+    },
+    {
+      "item": 464,
+      "speed": "slow",
+      "path": "advanced/adv_28_464_slow.mp3",
+      "expected": "rotatória",
+      "firstTranscript": "¡Rotas, Dorias!",
+      "secondTranscript": "¡Hotas teorías!",
+      "duration": 1.551375
+    },
+    {
+      "item": 466,
+      "speed": "slow",
+      "path": "advanced/adv_28_466_slow.mp3",
+      "expected": "pedágio",
+      "firstTranscript": "e pedaço.",
+      "secondTranscript": "Empedágio",
+      "duration": 1.338
+    },
+    {
+      "item": 467,
+      "speed": "slow",
+      "path": "advanced/adv_28_467_slow.mp3",
+      "expected": "metrô",
+      "firstTranscript": "You met the role.",
+      "secondTranscript": "Demetro",
+      "duration": 1.21
+    },
+    {
+      "item": 468,
+      "speed": "slow",
+      "path": "advanced/adv_28_468_slow.mp3",
+      "expected": "estação",
+      "firstTranscript": "e restação.",
+      "secondTranscript": "E esta ação",
+      "duration": 1.359375
+    },
+    {
+      "item": 471,
+      "speed": "slow",
+      "path": "advanced/adv_29_471_slow.mp3",
+      "expected": "promoção",
+      "firstTranscript": "e promosação.",
+      "secondTranscript": "E promosição.",
+      "duration": 1.551375
+    },
+    {
+      "item": 473,
+      "speed": "normal",
+      "path": "advanced/adv_29_473.mp3",
+      "expected": "reunião",
+      "firstTranscript": "Sony own.",
+      "secondTranscript": "Essa é a união.",
+      "duration": 1.1886875
+    },
+    {
+      "item": 473,
+      "speed": "slow",
+      "path": "advanced/adv_29_473_slow.mp3",
+      "expected": "reunião",
+      "firstTranscript": "¡Es el unizón!",
+      "secondTranscript": "Terceira unidão.",
+      "duration": 1.487375
+    },
+    {
+      "item": 475,
+      "speed": "slow",
+      "path": "advanced/adv_29_475_slow.mp3",
+      "expected": "empresa",
+      "firstTranscript": "Não tem empresa.",
+      "secondTranscript": "Não tem empresa.",
+      "duration": 1.53
+    },
+    {
+      "item": 476,
+      "speed": "normal",
+      "path": "advanced/adv_29_476.mp3",
+      "expected": "cliente",
+      "firstTranscript": "Clearing to",
+      "secondTranscript": "Client 2",
+      "duration": 1.0606875
+    },
+    {
+      "item": 476,
+      "speed": "slow",
+      "path": "advanced/adv_29_476_slow.mp3",
+      "expected": "cliente",
+      "firstTranscript": "A Glee-Aing-Chu.",
+      "secondTranscript": "a client too",
+      "duration": 1.402
+    },
+    {
+      "item": 477,
+      "speed": "slow",
+      "path": "advanced/adv_29_477_slow.mp3",
+      "expected": "contrato",
+      "firstTranscript": "di contrarso",
+      "secondTranscript": "I won't try to.",
+      "duration": 1.402
+    },
+    {
+      "item": 478,
+      "speed": "slow",
+      "path": "advanced/adv_29_478_slow.mp3",
+      "expected": "prazo",
+      "firstTranscript": "e pra azul.",
+      "secondTranscript": "E prazo.",
+      "duration": 1.21
+    },
+    {
+      "item": 480,
+      "speed": "normal",
+      "path": "advanced/adv_30_480.mp3",
+      "expected": "Pagar o pato",
+      "firstTranscript": "Pagar o passo.",
+      "secondTranscript": "Pagar o patso.",
+      "duration": 1.338
+    },
+    {
+      "item": 480,
+      "speed": "slow",
+      "path": "advanced/adv_30_480_slow.mp3",
+      "expected": "Pagar o pato",
+      "firstTranscript": "de pagar o parço.",
+      "secondTranscript": "De pagar o pato.",
+      "duration": 1.743375
+    },
+    {
+      "item": 481,
+      "speed": "slow",
+      "path": "advanced/adv_30_481_slow.mp3",
+      "expected": "Encher linguiça",
+      "firstTranscript": "Aê, enxerva, linguiça!",
+      "secondTranscript": "A encher linguiça.",
+      "duration": 2.063375
+    },
+    {
+      "item": 485,
+      "speed": "normal",
+      "path": "advanced/adv_30_485.mp3",
+      "expected": "Cair a ficha",
+      "firstTranscript": "Calir a ficha.",
+      "secondTranscript": "Cadir a ficha.",
+      "duration": 1.295375
+    },
+    {
+      "item": 485,
+      "speed": "slow",
+      "path": "advanced/adv_30_485_slow.mp3",
+      "expected": "Cair a ficha",
+      "firstTranscript": "E cá, ir à fície.",
+      "secondTranscript": "Vem cair a ficha.",
+      "duration": 1.7006875
+    },
+    {
+      "item": 497,
+      "speed": "normal",
+      "path": "advanced/adv_31_497.mp3",
+      "expected": "Toma esse remédio de oito em oito horas.",
+      "firstTranscript": "Toma esse remédio de 8 em 8 horas.",
+      "secondTranscript": "Toma esse remédio de 8 em 8 horas.",
+      "duration": 2.8526875
+    },
+    {
+      "item": 497,
+      "speed": "slow",
+      "path": "advanced/adv_31_497_slow.mp3",
+      "expected": "Toma esse remédio de oito em oito horas.",
+      "firstTranscript": "Toma esse remédio de 8 em 8 horas.",
+      "secondTranscript": "Toma esse remédio de 8 em 8 horas.",
+      "duration": 3.9406875
+    },
+    {
+      "item": 504,
+      "speed": "slow",
+      "path": "advanced/adv_31_504_slow.mp3",
+      "expected": "É muito longe daqui?",
+      "firstTranscript": "É muito longe dar aqui.",
+      "secondTranscript": "Ela é muito longe da Akis.",
+      "duration": 2.362
+    },
+    {
+      "item": 505,
+      "speed": "normal",
+      "path": "advanced/adv_31_505.mp3",
+      "expected": "Não, fica uns dez minutos a pé.",
+      "firstTranscript": "Não ficam uns 10 minutos a pé.",
+      "secondTranscript": "Não fica uns 10 minutos a pé.",
+      "duration": 2.191375
+    },
+    {
+      "item": 505,
+      "speed": "slow",
+      "path": "advanced/adv_31_505_slow.mp3",
+      "expected": "Não, fica uns dez minutos a pé.",
+      "firstTranscript": "Não fica uns 10 minutos a pé.",
+      "secondTranscript": "Não fica uns 10 minutos a pé.",
+      "duration": 3.3006875
+    },
+    {
+      "item": 506,
+      "speed": "normal",
+      "path": "advanced/adv_32_506.mp3",
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "firstTranscript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um taxi até o hotel. Depois do chequinho, fomos ao pão de açúcar para ver a vista. A tarde caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "secondTranscript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar pra ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "duration": 19.258
+    },
+    {
+      "item": 507,
+      "speed": "slow",
+      "path": "advanced/adv_32_507_slow.mp3",
+      "expected": "pegar",
+      "firstTranscript": "to pay guards.",
+      "secondTranscript": "Tu pegar",
+      "duration": 1.103375
+    },
+    {
+      "item": 508,
+      "speed": "slow",
+      "path": "advanced/adv_32_508_slow.mp3",
+      "expected": "Pão de Açúcar",
+      "firstTranscript": "e pão de açúcar.",
+      "secondTranscript": "E pão de açúcar.",
+      "duration": 1.7006875
+    },
+    {
+      "item": 510,
+      "speed": "slow",
+      "path": "advanced/adv_32_510_slow.mp3",
+      "expected": "inesquecível",
+      "firstTranscript": "I mean, let's get C-Vill.",
+      "secondTranscript": "É inesquecível.",
+      "duration": 1.722
+    }
+  ]
+}
