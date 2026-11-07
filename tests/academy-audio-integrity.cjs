@@ -254,3 +254,17 @@ test('Every unglossed Brazilian R2 item received a traceable Arabic teaching dra
  const embedded=[...page.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(x=>x[1]).filter(Boolean);
  for(const js of embedded)assert.doesNotThrow(()=>new vm.Script(js));
 });
+
+test('Brazilian 511-pair learning lab offers optional listen-before-reveal without exposing the written answer in its audio player',()=>{
+ const html=read('ptbr-pronunciation.html');
+ assert.match(html,/id="listenChallenge"/);
+ assert.match(html,/listenChallenge\.checked\?'🕵️ استمع أولًا ثم اكشف النص'/);
+ assert.match(html,/listenChallenge\.checked\?'المعنى العربي مخفي حتى الكشف'/);
+ assert.match(html,/reveal\.textContent='👁 اكشف النص والمعنى'/);
+ assert.match(html,/pt\.textContent=item\.pt;gl\.textContent=item\.gl/);
+ assert.match(html,/now\.textContent=listenChallenge\.checked\?/);
+ assert.match(html,/listenChallenge\.addEventListener\('change'/);
+ assert.match(html,/استرجاع النص بعد الاستماع، وليس امتحانًا معتمدًا/);
+ const code=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];
+ assert.ok(code);assert.doesNotThrow(()=>new vm.Script(code));
+});
