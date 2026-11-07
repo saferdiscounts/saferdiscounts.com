@@ -1,7 +1,7 @@
 (function(){
 'use strict';
-const catalog=window.SD_PTBR_PRACTICE,mastery=window.SDAcademyMastery,writingCheck=window.SDPTBRWritingCheck;
-if(!catalog||!mastery||!writingCheck||!Array.isArray(catalog.themes))throw Error('Practical lab dependencies are missing');
+const catalog=window.SD_PTBR_PRACTICE,mastery=window.SDAcademyMastery,writingCheck=window.SDPTBRWritingCheck,conversations=window.SD_PTBR_DIALOGUES;
+if(!catalog||!mastery||!writingCheck||!Array.isArray(catalog.themes)||!conversations||!Array.isArray(conversations.dialogues)||conversations.dialogues.length!==catalog.themes.length)throw Error('Practical lab dependencies are missing');
 const $=id=>document.getElementById(id);
 const topicList=$('topicList'),panel=$('lessonPanel'),progress=$('progress'),voiceStatus=$('voiceStatus');
 const storeKey='sd_ptbr_practical_mastery_v2',errKey='sd_ptbr_practical_errors_v1';
@@ -51,7 +51,14 @@ function navbar(){
  topicList.innerHTML=catalog.themes.map((t,i)=>'<button type="button" data-topic="'+i+'" aria-pressed="'+(i===active)+'"><b>'+(i+1)+'. '+esc(t.title)+'</b><small>'+esc(t.level)+' · 8 عبارات · '+esc(statuses[i].label)+'</small></button>').join('');
  topicList.querySelectorAll('[data-topic]').forEach(b=>b.onclick=()=>chooseTheme(+b.dataset.topic));
 }
-function panelHeader(t){return '<span class="level">'+t.level+'</span><h2>'+esc(t.title)+'</h2><p>'+esc(t.goal)+'</p><p class="hint">'+esc(t.note)+'</p>'}
+function contextDialogue(t){
+ const scene=conversations.dialogues.find(d=>d.id===t.id);
+ if(!scene||scene.turns.length!==4)return '';
+ return '<details class="contextDialogue"><summary>🗣️ اتعلم من موقف حقيقي: '+esc(scene.scene)+'</summary><ol>'+
+ scene.turns.map(turn=>'<li><strong>المتحدث '+esc(turn[0])+':</strong> <span dir="ltr" lang="pt-BR" class="ptphrase">'+esc(turn[1])+'</span><span class="translationArabic" dir="rtl">'+esc(turn[2])+'</span></li>').join('')+
+ '</ol><p class="small">الحوار بيساعدك تفهم استخدام العبارة؛ بيختفي بالكامل أثناء الاختبار عشان ما تتكشفش الإجابات.</p></details>';
+}
+function panelHeader(t){return '<span class="level">'+esc(t.level)+'</span><h2>'+esc(t.title)+'</h2><p>'+esc(t.goal)+'</p><p class="hint">'+esc(t.note)+'</p>'+contextDialogue(t)}
 function draw(){
  navbar();const t=unit();
  if(stage==='cards')return cards();
