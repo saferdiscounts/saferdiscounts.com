@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Automated ASR evidence only, not validated spoken-language accuracy. All paths from indexed course files.",
+  "results": [
+    {
+      "path": "basic/bas_04_065.mp3",
+      "transcript": "Zol!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_065_slow.mp3",
+      "transcript": "Evolves.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_066.mp3",
+      "transcript": "Vai!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_066_slow.mp3",
+      "transcript": "Vai!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_067.mp3",
+      "transcript": "Meera.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_067_slow.mp3",
+      "transcript": "Amir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_068.mp3",
+      "transcript": "法宿",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_068_slow.mp3",
+      "transcript": "Fala, Suzuki.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_069.mp3",
+      "transcript": "Faz.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_069_slow.mp3",
+      "transcript": "em flas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_070.mp3",
+      "transcript": "فزير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_070_slow.mp3",
+      "transcript": "O fazer.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_071.mp3",
+      "transcript": "爆四個",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_071_slow.mp3",
+      "transcript": "e para o nosso zoque.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_072.mp3",
+      "transcript": "Pode!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_072_slow.mp3",
+      "transcript": "Apodge!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_073.mp3",
+      "transcript": "Podier!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_073_slow.mp3",
+      "transcript": "تفضير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_074.mp3",
+      "transcript": "Carol",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_074_slow.mp3",
+      "transcript": "Take care, Rool.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_075.mp3",
+      "transcript": "Care.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_075_slow.mp3",
+      "transcript": "En kärl.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_076.mp3",
+      "transcript": "Ketter.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_076_slow.mp3",
+      "transcript": "You can carry it out.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_077.mp3",
+      "transcript": "Save.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_077_slow.mp3",
+      "transcript": "Eu não sei.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_078.mp3",
+      "transcript": "Sabi",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_078_slow.mp3",
+      "transcript": "The Sabi.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_079.mp3",
+      "transcript": "سبير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_04_079_slow.mp3",
+      "transcript": "Não saber.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_080.mp3",
+      "transcript": "Zeru.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_080_slow.mp3",
+      "transcript": "Desvero!",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
