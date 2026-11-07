@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "source": "Cloudflare R2 saferdiscounts-audio / ptbr/manifest.json",
-  "method": "Manifest text and exact R2 object-key cross-check; no transcription or audio content hearing",
+  "method": "Manifest text and exact R2 object-key cross-check; no transcription or audio content hearing All missing Arabic meanings in source manifest are now supplied as locally authored educational drafts in this GitHub snapshot, not a claim of official R2 edits or speech verification.",
   "capturedOn": "2026-11-07",
   "locale": "pt-BR",
   "records": [
@@ -11,7 +11,8 @@
       "pt": "casa de banho",
       "gl": "الحمام",
       "normal": "basic/bas_01_001.mp3",
-      "slow": "basic/bas_01_001_slow.mp3"
+      "slow": "basic/bas_01_001_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -19,7 +20,8 @@
       "pt": "banheiro",
       "gl": "الحمام",
       "normal": "basic/bas_01_002.mp3",
-      "slow": "basic/bas_01_002_slow.mp3"
+      "slow": "basic/bas_01_002_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -27,7 +29,8 @@
       "pt": "comboio",
       "gl": "القطر",
       "normal": "basic/bas_01_003.mp3",
-      "slow": "basic/bas_01_003_slow.mp3"
+      "slow": "basic/bas_01_003_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -35,7 +38,8 @@
       "pt": "trem",
       "gl": "القطر",
       "normal": "basic/bas_01_004.mp3",
-      "slow": "basic/bas_01_004_slow.mp3"
+      "slow": "basic/bas_01_004_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -43,7 +47,8 @@
       "pt": "pequeno-almoço",
       "gl": "الفطار",
       "normal": "basic/bas_01_005.mp3",
-      "slow": "basic/bas_01_005_slow.mp3"
+      "slow": "basic/bas_01_005_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -51,7 +56,8 @@
       "pt": "café da manhã",
       "gl": "الفطار",
       "normal": "basic/bas_01_006.mp3",
-      "slow": "basic/bas_01_006_slow.mp3"
+      "slow": "basic/bas_01_006_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -59,7 +65,8 @@
       "pt": "ementa",
       "gl": "منيو",
       "normal": "basic/bas_01_007.mp3",
-      "slow": "basic/bas_01_007_slow.mp3"
+      "slow": "basic/bas_01_007_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -67,7 +74,8 @@
       "pt": "cardápio",
       "gl": "منيو",
       "normal": "basic/bas_01_008.mp3",
-      "slow": "basic/bas_01_008_slow.mp3"
+      "slow": "basic/bas_01_008_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -75,7 +83,8 @@
       "pt": "autocarro",
       "gl": "أتوبيس",
       "normal": "basic/bas_01_009.mp3",
-      "slow": "basic/bas_01_009_slow.mp3"
+      "slow": "basic/bas_01_009_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -83,7 +92,8 @@
       "pt": "ônibus",
       "gl": "أتوبيس",
       "normal": "basic/bas_01_010.mp3",
-      "slow": "basic/bas_01_010_slow.mp3"
+      "slow": "basic/bas_01_010_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -91,7 +101,8 @@
       "pt": "telemóvel",
       "gl": "موبايل",
       "normal": "basic/bas_01_011.mp3",
-      "slow": "basic/bas_01_011_slow.mp3"
+      "slow": "basic/bas_01_011_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -99,7 +110,8 @@
       "pt": "celular",
       "gl": "موبايل",
       "normal": "basic/bas_01_012.mp3",
-      "slow": "basic/bas_01_012_slow.mp3"
+      "slow": "basic/bas_01_012_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -107,7 +119,8 @@
       "pt": "Oi",
       "gl": "أهلًا (الأكتر استخدامًا) · أوي",
       "normal": "basic/bas_02_013.mp3",
-      "slow": "basic/bas_02_013_slow.mp3"
+      "slow": "basic/bas_02_013_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -115,7 +128,8 @@
       "pt": "Olá",
       "gl": "أهلًا (رسمي شوية) · أولا",
       "normal": "basic/bas_02_014.mp3",
-      "slow": "basic/bas_02_014_slow.mp3"
+      "slow": "basic/bas_02_014_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -123,7 +137,8 @@
       "pt": "Bom dia",
       "gl": "صباح الخير · بوم ديّا",
       "normal": "basic/bas_02_015.mp3",
-      "slow": "basic/bas_02_015_slow.mp3"
+      "slow": "basic/bas_02_015_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -131,7 +146,8 @@
       "pt": "Boa tarde",
       "gl": "مساء الخير (العصر) · بوا تارجي",
       "normal": "basic/bas_02_016.mp3",
-      "slow": "basic/bas_02_016_slow.mp3"
+      "slow": "basic/bas_02_016_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -139,7 +155,8 @@
       "pt": "Boa noite",
       "gl": "مساء الخير / تصبح على خير · بوا نويتشي",
       "normal": "basic/bas_02_017.mp3",
-      "slow": "basic/bas_02_017_slow.mp3"
+      "slow": "basic/bas_02_017_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -147,7 +164,8 @@
       "pt": "Como vai?",
       "gl": "إزيك؟ · كومو فاي؟",
       "normal": "basic/bas_02_018.mp3",
-      "slow": "basic/bas_02_018_slow.mp3"
+      "slow": "basic/bas_02_018_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -155,7 +173,8 @@
       "pt": "Tudo bem?",
       "gl": "كله تمام؟ (كاجوال جدًا) · تودو بيم؟ / تودو بوم؟",
       "normal": "basic/bas_02_019.mp3",
-      "slow": "basic/bas_02_019_slow.mp3"
+      "slow": "basic/bas_02_019_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -163,7 +182,8 @@
       "pt": "Tudo bom?",
       "gl": "كله تمام؟ (كاجوال جدًا) · تودو بيم؟ / تودو بوم؟",
       "normal": "basic/bas_02_020.mp3",
-      "slow": "basic/bas_02_020_slow.mp3"
+      "slow": "basic/bas_02_020_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -171,7 +191,8 @@
       "pt": "Muito prazer",
       "gl": "تشرفنا · مويتو برازير",
       "normal": "basic/bas_02_021.mp3",
-      "slow": "basic/bas_02_021_slow.mp3"
+      "slow": "basic/bas_02_021_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -179,7 +200,8 @@
       "pt": "Até mais",
       "gl": "أشوفك بعدين (كاجوال) · أتشي مايس",
       "normal": "basic/bas_02_022.mp3",
-      "slow": "basic/bas_02_022_slow.mp3"
+      "slow": "basic/bas_02_022_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -187,7 +209,8 @@
       "pt": "Até amanhã",
       "gl": "أشوفك بكرة · أتشي أمانيا",
       "normal": "basic/bas_02_023.mp3",
-      "slow": "basic/bas_02_023_slow.mp3"
+      "slow": "basic/bas_02_023_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -195,7 +218,8 @@
       "pt": "Tchau",
       "gl": "باي · تشاو",
       "normal": "basic/bas_02_024.mp3",
-      "slow": "basic/bas_02_024_slow.mp3"
+      "slow": "basic/bas_02_024_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -203,7 +227,8 @@
       "pt": "Valeu",
       "gl": "شكرًا كاجوال جدًا/تمام · فاليو",
       "normal": "basic/bas_02_025.mp3",
-      "slow": "basic/bas_02_025_slow.mp3"
+      "slow": "basic/bas_02_025_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -211,7 +236,8 @@
       "pt": "Por favor",
       "gl": "لو سمحت · پور فافور",
       "normal": "basic/bas_02_026.mp3",
-      "slow": "basic/bas_02_026_slow.mp3"
+      "slow": "basic/bas_02_026_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -219,7 +245,8 @@
       "pt": "Obrigado",
       "gl": "شكرًا (المتكلم راجل) · أوبريجادو",
       "normal": "basic/bas_02_027.mp3",
-      "slow": "basic/bas_02_027_slow.mp3"
+      "slow": "basic/bas_02_027_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -227,7 +254,8 @@
       "pt": "Obrigada",
       "gl": "شكرًا (المتكلمة ست) · أوبريجادا",
       "normal": "basic/bas_02_028.mp3",
-      "slow": "basic/bas_02_028_slow.mp3"
+      "slow": "basic/bas_02_028_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -235,7 +263,8 @@
       "pt": "De nada",
       "gl": "العفو · دي نادا",
       "normal": "basic/bas_02_029.mp3",
-      "slow": "basic/bas_02_029_slow.mp3"
+      "slow": "basic/bas_02_029_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -243,7 +272,8 @@
       "pt": "Desculpa",
       "gl": "آسف · دشكولپا",
       "normal": "basic/bas_02_030.mp3",
-      "slow": "basic/bas_02_030_slow.mp3"
+      "slow": "basic/bas_02_030_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -251,7 +281,8 @@
       "pt": "Sim",
       "gl": "أيوه / لأ · سيم / ناوْن",
       "normal": "basic/bas_02_031.mp3",
-      "slow": "basic/bas_02_031_slow.mp3"
+      "slow": "basic/bas_02_031_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -259,7 +290,8 @@
       "pt": "Não",
       "gl": "أيوه / لأ · سيم / ناوْن",
       "normal": "basic/bas_02_032.mp3",
-      "slow": "basic/bas_02_032_slow.mp3"
+      "slow": "basic/bas_02_032_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -267,7 +299,8 @@
       "pt": "eu",
       "gl": "أنا",
       "normal": "basic/bas_03_033.mp3",
-      "slow": "basic/bas_03_033_slow.mp3"
+      "slow": "basic/bas_03_033_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -275,7 +308,8 @@
       "pt": "você",
       "gl": "إنتَ / إنتِ (الأساس في البرازيل)",
       "normal": "basic/bas_03_034.mp3",
-      "slow": "basic/bas_03_034_slow.mp3"
+      "slow": "basic/bas_03_034_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -283,7 +317,8 @@
       "pt": "ele",
       "gl": "هو / هي",
       "normal": "basic/bas_03_035.mp3",
-      "slow": "basic/bas_03_035_slow.mp3"
+      "slow": "basic/bas_03_035_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -291,7 +326,8 @@
       "pt": "ela",
       "gl": "هو / هي",
       "normal": "basic/bas_03_036.mp3",
-      "slow": "basic/bas_03_036_slow.mp3"
+      "slow": "basic/bas_03_036_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -299,7 +335,8 @@
       "pt": "nós",
       "gl": "إحنا",
       "normal": "basic/bas_03_037.mp3",
-      "slow": "basic/bas_03_037_slow.mp3"
+      "slow": "basic/bas_03_037_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -307,7 +344,8 @@
       "pt": "vocês",
       "gl": "إنتوا",
       "normal": "basic/bas_03_038.mp3",
-      "slow": "basic/bas_03_038_slow.mp3"
+      "slow": "basic/bas_03_038_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -315,7 +353,8 @@
       "pt": "eles",
       "gl": "هما (رجالة/مختلط) / هما (ستات)",
       "normal": "basic/bas_03_039.mp3",
-      "slow": "basic/bas_03_039_slow.mp3"
+      "slow": "basic/bas_03_039_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -323,175 +362,197 @@
       "pt": "elas",
       "gl": "هما (رجالة/مختلط) / هما (ستات)",
       "normal": "basic/bas_03_040.mp3",
-      "slow": "basic/bas_03_040_slow.mp3"
+      "slow": "basic/bas_03_040_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "sou",
-      "gl": "",
+      "gl": "أنا أكون / أنا (تصريف ser للحالة أو الهوية الثابتة)",
       "normal": "basic/bas_03_041.mp3",
-      "slow": "basic/bas_03_041_slow.mp3"
+      "slow": "basic/bas_03_041_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "somos",
-      "gl": "",
+      "gl": "نحن نكون / نحن (تصريف ser)",
       "normal": "basic/bas_03_042.mp3",
-      "slow": "basic/bas_03_042_slow.mp3"
+      "slow": "basic/bas_03_042_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "são",
-      "gl": "",
+      "gl": "هم أو هنّ أو أنتم يكونون / هم (تصريف ser)",
       "normal": "basic/bas_03_043.mp3",
-      "slow": "basic/bas_03_043_slow.mp3"
+      "slow": "basic/bas_03_043_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estou",
-      "gl": "",
+      "gl": "أنا موجود / أنا في حالة مؤقتة (تصريف estar)",
       "normal": "basic/bas_03_044.mp3",
-      "slow": "basic/bas_03_044_slow.mp3"
+      "slow": "basic/bas_03_044_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "está",
-      "gl": "",
+      "gl": "هو أو هي أو أنت موجود / في حالة مؤقتة (تصريف estar)",
       "normal": "basic/bas_03_045.mp3",
-      "slow": "basic/bas_03_045_slow.mp3"
+      "slow": "basic/bas_03_045_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estamos",
-      "gl": "",
+      "gl": "نحن موجودون / نحن في حالة مؤقتة (تصريف estar)",
       "normal": "basic/bas_03_046.mp3",
-      "slow": "basic/bas_03_046_slow.mp3"
+      "slow": "basic/bas_03_046_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estão",
-      "gl": "",
+      "gl": "هم أو هنّ أو أنتم موجودون (تصريف estar)",
       "normal": "basic/bas_03_047.mp3",
-      "slow": "basic/bas_03_047_slow.mp3"
+      "slow": "basic/bas_03_047_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "Eu sou egípcio",
-      "gl": "",
+      "gl": "أنا مصري (المتحدث رجل)",
       "normal": "basic/bas_03_048.mp3",
-      "slow": "basic/bas_03_048_slow.mp3"
+      "slow": "basic/bas_03_048_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "Estou no Rio de Janeiro",
-      "gl": "",
+      "gl": "أنا في ريو دي جانيرو",
       "normal": "basic/bas_03_049.mp3",
-      "slow": "basic/bas_03_049_slow.mp3"
+      "slow": "basic/bas_03_049_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "parto",
-      "gl": "",
+      "gl": "أنا أغادر (من الفعل partir)",
       "normal": "basic/bas_04_050.mp3",
-      "slow": "basic/bas_04_050_slow.mp3"
+      "slow": "basic/bas_04_050_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "como",
-      "gl": "",
+      "gl": "أنا آكل (من الفعل comer)",
       "normal": "basic/bas_04_051.mp3",
-      "slow": "basic/bas_04_051_slow.mp3"
+      "slow": "basic/bas_04_051_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "falo",
-      "gl": "",
+      "gl": "أنا أتحدث (من الفعل falar)",
       "normal": "basic/bas_04_052.mp3",
-      "slow": "basic/bas_04_052_slow.mp3"
+      "slow": "basic/bas_04_052_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "parte",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يغادر",
       "normal": "basic/bas_04_053.mp3",
-      "slow": "basic/bas_04_053_slow.mp3"
+      "slow": "basic/bas_04_053_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "come",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يأكل",
       "normal": "basic/bas_04_054.mp3",
-      "slow": "basic/bas_04_054_slow.mp3"
+      "slow": "basic/bas_04_054_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "fala",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يتحدث",
       "normal": "basic/bas_04_055.mp3",
-      "slow": "basic/bas_04_055_slow.mp3"
+      "slow": "basic/bas_04_055_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "partimos",
-      "gl": "",
+      "gl": "نحن نغادر",
       "normal": "basic/bas_04_056.mp3",
-      "slow": "basic/bas_04_056_slow.mp3"
+      "slow": "basic/bas_04_056_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "comemos",
-      "gl": "",
+      "gl": "نحن نأكل",
       "normal": "basic/bas_04_057.mp3",
-      "slow": "basic/bas_04_057_slow.mp3"
+      "slow": "basic/bas_04_057_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "falamos",
-      "gl": "",
+      "gl": "نحن نتحدث",
       "normal": "basic/bas_04_058.mp3",
-      "slow": "basic/bas_04_058_slow.mp3"
+      "slow": "basic/bas_04_058_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "partem",
-      "gl": "",
+      "gl": "هم أو أنتم يغادرون",
       "normal": "basic/bas_04_059.mp3",
-      "slow": "basic/bas_04_059_slow.mp3"
+      "slow": "basic/bas_04_059_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "comem",
-      "gl": "",
+      "gl": "هم أو أنتم يأكلون",
       "normal": "basic/bas_04_060.mp3",
-      "slow": "basic/bas_04_060_slow.mp3"
+      "slow": "basic/bas_04_060_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "falam",
-      "gl": "",
+      "gl": "هم أو أنتم يتحدثون",
       "normal": "basic/bas_04_061.mp3",
-      "slow": "basic/bas_04_061_slow.mp3"
+      "slow": "basic/bas_04_061_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -499,7 +560,8 @@
       "pt": "tenho",
       "gl": "يملك",
       "normal": "basic/bas_04_062.mp3",
-      "slow": "basic/bas_04_062_slow.mp3"
+      "slow": "basic/bas_04_062_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -507,7 +569,8 @@
       "pt": "tem",
       "gl": "يملك",
       "normal": "basic/bas_04_063.mp3",
-      "slow": "basic/bas_04_063_slow.mp3"
+      "slow": "basic/bas_04_063_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -515,7 +578,8 @@
       "pt": "ter",
       "gl": "يملك",
       "normal": "basic/bas_04_064.mp3",
-      "slow": "basic/bas_04_064_slow.mp3"
+      "slow": "basic/bas_04_064_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -523,7 +587,8 @@
       "pt": "vou",
       "gl": "يروح",
       "normal": "basic/bas_04_065.mp3",
-      "slow": "basic/bas_04_065_slow.mp3"
+      "slow": "basic/bas_04_065_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -531,7 +596,8 @@
       "pt": "vai",
       "gl": "يروح",
       "normal": "basic/bas_04_066.mp3",
-      "slow": "basic/bas_04_066_slow.mp3"
+      "slow": "basic/bas_04_066_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -539,7 +605,8 @@
       "pt": "ir",
       "gl": "يروح",
       "normal": "basic/bas_04_067.mp3",
-      "slow": "basic/bas_04_067_slow.mp3"
+      "slow": "basic/bas_04_067_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -547,7 +614,8 @@
       "pt": "faço",
       "gl": "يعمل",
       "normal": "basic/bas_04_068.mp3",
-      "slow": "basic/bas_04_068_slow.mp3"
+      "slow": "basic/bas_04_068_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -555,7 +623,8 @@
       "pt": "faz",
       "gl": "يعمل",
       "normal": "basic/bas_04_069.mp3",
-      "slow": "basic/bas_04_069_slow.mp3"
+      "slow": "basic/bas_04_069_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -563,7 +632,8 @@
       "pt": "fazer",
       "gl": "يعمل",
       "normal": "basic/bas_04_070.mp3",
-      "slow": "basic/bas_04_070_slow.mp3"
+      "slow": "basic/bas_04_070_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -571,7 +641,8 @@
       "pt": "posso",
       "gl": "يقدر",
       "normal": "basic/bas_04_071.mp3",
-      "slow": "basic/bas_04_071_slow.mp3"
+      "slow": "basic/bas_04_071_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -579,7 +650,8 @@
       "pt": "pode",
       "gl": "يقدر",
       "normal": "basic/bas_04_072.mp3",
-      "slow": "basic/bas_04_072_slow.mp3"
+      "slow": "basic/bas_04_072_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -587,7 +659,8 @@
       "pt": "poder",
       "gl": "يقدر",
       "normal": "basic/bas_04_073.mp3",
-      "slow": "basic/bas_04_073_slow.mp3"
+      "slow": "basic/bas_04_073_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -595,7 +668,8 @@
       "pt": "quero",
       "gl": "عايز",
       "normal": "basic/bas_04_074.mp3",
-      "slow": "basic/bas_04_074_slow.mp3"
+      "slow": "basic/bas_04_074_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -603,7 +677,8 @@
       "pt": "quer",
       "gl": "عايز",
       "normal": "basic/bas_04_075.mp3",
-      "slow": "basic/bas_04_075_slow.mp3"
+      "slow": "basic/bas_04_075_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -611,7 +686,8 @@
       "pt": "querer",
       "gl": "عايز",
       "normal": "basic/bas_04_076.mp3",
-      "slow": "basic/bas_04_076_slow.mp3"
+      "slow": "basic/bas_04_076_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -619,7 +695,8 @@
       "pt": "sei",
       "gl": "يعرف",
       "normal": "basic/bas_04_077.mp3",
-      "slow": "basic/bas_04_077_slow.mp3"
+      "slow": "basic/bas_04_077_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -627,7 +704,8 @@
       "pt": "sabe",
       "gl": "يعرف",
       "normal": "basic/bas_04_078.mp3",
-      "slow": "basic/bas_04_078_slow.mp3"
+      "slow": "basic/bas_04_078_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -635,255 +713,287 @@
       "pt": "saber",
       "gl": "يعرف",
       "normal": "basic/bas_04_079.mp3",
-      "slow": "basic/bas_04_079_slow.mp3"
+      "slow": "basic/bas_04_079_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "zero",
-      "gl": "",
+      "gl": "صفر (0)",
       "normal": "basic/bas_05_080.mp3",
-      "slow": "basic/bas_05_080_slow.mp3"
+      "slow": "basic/bas_05_080_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "onze",
-      "gl": "",
+      "gl": "أحد عشر (11)",
       "normal": "basic/bas_05_081.mp3",
-      "slow": "basic/bas_05_081_slow.mp3"
+      "slow": "basic/bas_05_081_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "um",
-      "gl": "",
+      "gl": "واحد، للمذكر (1)",
       "normal": "basic/bas_05_082.mp3",
-      "slow": "basic/bas_05_082_slow.mp3"
+      "slow": "basic/bas_05_082_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "uma",
-      "gl": "",
+      "gl": "واحدة، للمؤنث (1)",
       "normal": "basic/bas_05_083.mp3",
-      "slow": "basic/bas_05_083_slow.mp3"
+      "slow": "basic/bas_05_083_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "doze",
-      "gl": "",
+      "gl": "اثنا عشر (12)",
       "normal": "basic/bas_05_084.mp3",
-      "slow": "basic/bas_05_084_slow.mp3"
+      "slow": "basic/bas_05_084_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dois",
-      "gl": "",
+      "gl": "اثنان، للمذكر (2)",
       "normal": "basic/bas_05_085.mp3",
-      "slow": "basic/bas_05_085_slow.mp3"
+      "slow": "basic/bas_05_085_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "duas",
-      "gl": "",
+      "gl": "اثنتان، للمؤنث (2)",
       "normal": "basic/bas_05_086.mp3",
-      "slow": "basic/bas_05_086_slow.mp3"
+      "slow": "basic/bas_05_086_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "treze",
-      "gl": "",
+      "gl": "ثلاثة عشر (13)",
       "normal": "basic/bas_05_087.mp3",
-      "slow": "basic/bas_05_087_slow.mp3"
+      "slow": "basic/bas_05_087_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "três",
-      "gl": "",
+      "gl": "ثلاثة (3)",
       "normal": "basic/bas_05_088.mp3",
-      "slow": "basic/bas_05_088_slow.mp3"
+      "slow": "basic/bas_05_088_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "quatorze",
-      "gl": "",
+      "gl": "أربعة عشر (14)",
       "normal": "basic/bas_05_089.mp3",
-      "slow": "basic/bas_05_089_slow.mp3"
+      "slow": "basic/bas_05_089_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "quatro",
-      "gl": "",
+      "gl": "أربعة (4)",
       "normal": "basic/bas_05_090.mp3",
-      "slow": "basic/bas_05_090_slow.mp3"
+      "slow": "basic/bas_05_090_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "quinze",
-      "gl": "",
+      "gl": "خمسة عشر (15)",
       "normal": "basic/bas_05_091.mp3",
-      "slow": "basic/bas_05_091_slow.mp3"
+      "slow": "basic/bas_05_091_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "cinco",
-      "gl": "",
+      "gl": "خمسة (5)",
       "normal": "basic/bas_05_092.mp3",
-      "slow": "basic/bas_05_092_slow.mp3"
+      "slow": "basic/bas_05_092_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dezesseis",
-      "gl": "",
+      "gl": "ستة عشر (16)",
       "normal": "basic/bas_05_093.mp3",
-      "slow": "basic/bas_05_093_slow.mp3"
+      "slow": "basic/bas_05_093_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "seis",
-      "gl": "",
+      "gl": "ستة (6)",
       "normal": "basic/bas_05_094.mp3",
-      "slow": "basic/bas_05_094_slow.mp3"
+      "slow": "basic/bas_05_094_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dezessete",
-      "gl": "",
+      "gl": "سبعة عشر (17)",
       "normal": "basic/bas_05_095.mp3",
-      "slow": "basic/bas_05_095_slow.mp3"
+      "slow": "basic/bas_05_095_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "sete",
-      "gl": "",
+      "gl": "سبعة (7)",
       "normal": "basic/bas_05_096.mp3",
-      "slow": "basic/bas_05_096_slow.mp3"
+      "slow": "basic/bas_05_096_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dezoito",
-      "gl": "",
+      "gl": "ثمانية عشر (18)",
       "normal": "basic/bas_05_097.mp3",
-      "slow": "basic/bas_05_097_slow.mp3"
+      "slow": "basic/bas_05_097_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "oito",
-      "gl": "",
+      "gl": "ثمانية (8)",
       "normal": "basic/bas_05_098.mp3",
-      "slow": "basic/bas_05_098_slow.mp3"
+      "slow": "basic/bas_05_098_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dezenove",
-      "gl": "",
+      "gl": "تسعة عشر (19)",
       "normal": "basic/bas_05_099.mp3",
-      "slow": "basic/bas_05_099_slow.mp3"
+      "slow": "basic/bas_05_099_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "nove",
-      "gl": "",
+      "gl": "تسعة (9)",
       "normal": "basic/bas_05_100.mp3",
-      "slow": "basic/bas_05_100_slow.mp3"
+      "slow": "basic/bas_05_100_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "vinte",
-      "gl": "",
+      "gl": "عشرون (20)",
       "normal": "basic/bas_05_101.mp3",
-      "slow": "basic/bas_05_101_slow.mp3"
+      "slow": "basic/bas_05_101_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "dez",
-      "gl": "",
+      "gl": "عشرة (10)",
       "normal": "basic/bas_05_102.mp3",
-      "slow": "basic/bas_05_102_slow.mp3"
+      "slow": "basic/bas_05_102_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "trinta",
-      "gl": "",
+      "gl": "ثلاثون (30)",
       "normal": "basic/bas_05_103.mp3",
-      "slow": "basic/bas_05_103_slow.mp3"
+      "slow": "basic/bas_05_103_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "quarenta",
-      "gl": "",
+      "gl": "أربعون (40)",
       "normal": "basic/bas_05_104.mp3",
-      "slow": "basic/bas_05_104_slow.mp3"
+      "slow": "basic/bas_05_104_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "oitenta",
-      "gl": "",
+      "gl": "ثمانون (80)",
       "normal": "basic/bas_05_105.mp3",
-      "slow": "basic/bas_05_105_slow.mp3"
+      "slow": "basic/bas_05_105_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "cinquenta",
-      "gl": "",
+      "gl": "خمسون (50)",
       "normal": "basic/bas_05_106.mp3",
-      "slow": "basic/bas_05_106_slow.mp3"
+      "slow": "basic/bas_05_106_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "noventa",
-      "gl": "",
+      "gl": "تسعون (90)",
       "normal": "basic/bas_05_107.mp3",
-      "slow": "basic/bas_05_107_slow.mp3"
+      "slow": "basic/bas_05_107_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "sessenta",
-      "gl": "",
+      "gl": "ستون (60)",
       "normal": "basic/bas_05_108.mp3",
-      "slow": "basic/bas_05_108_slow.mp3"
+      "slow": "basic/bas_05_108_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "cem",
-      "gl": "",
+      "gl": "مئة (100)",
       "normal": "basic/bas_05_109.mp3",
-      "slow": "basic/bas_05_109_slow.mp3"
+      "slow": "basic/bas_05_109_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٨. الأرقام من صفر لمية",
       "pt": "setenta",
-      "gl": "",
+      "gl": "سبعون (70)",
       "normal": "basic/bas_05_110.mp3",
-      "slow": "basic/bas_05_110_slow.mp3"
+      "slow": "basic/bas_05_110_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -891,7 +1001,8 @@
       "pt": "segunda-feira",
       "gl": "الاتنين",
       "normal": "basic/bas_06_111.mp3",
-      "slow": "basic/bas_06_111_slow.mp3"
+      "slow": "basic/bas_06_111_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -899,7 +1010,8 @@
       "pt": "terça-feira",
       "gl": "التلات",
       "normal": "basic/bas_06_112.mp3",
-      "slow": "basic/bas_06_112_slow.mp3"
+      "slow": "basic/bas_06_112_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -907,7 +1019,8 @@
       "pt": "quarta-feira",
       "gl": "الأربع",
       "normal": "basic/bas_06_113.mp3",
-      "slow": "basic/bas_06_113_slow.mp3"
+      "slow": "basic/bas_06_113_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -915,7 +1028,8 @@
       "pt": "quinta-feira",
       "gl": "الخميس",
       "normal": "basic/bas_06_114.mp3",
-      "slow": "basic/bas_06_114_slow.mp3"
+      "slow": "basic/bas_06_114_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -923,7 +1037,8 @@
       "pt": "sexta-feira",
       "gl": "الجمعة",
       "normal": "basic/bas_06_115.mp3",
-      "slow": "basic/bas_06_115_slow.mp3"
+      "slow": "basic/bas_06_115_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -931,7 +1046,8 @@
       "pt": "sábado",
       "gl": "السبت",
       "normal": "basic/bas_06_116.mp3",
-      "slow": "basic/bas_06_116_slow.mp3"
+      "slow": "basic/bas_06_116_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -939,7 +1055,8 @@
       "pt": "domingo",
       "gl": "الحد",
       "normal": "basic/bas_06_117.mp3",
-      "slow": "basic/bas_06_117_slow.mp3"
+      "slow": "basic/bas_06_117_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -947,7 +1064,8 @@
       "pt": "janeiro",
       "gl": "يناير · يوليو",
       "normal": "basic/bas_06_118.mp3",
-      "slow": "basic/bas_06_118_slow.mp3"
+      "slow": "basic/bas_06_118_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -955,7 +1073,8 @@
       "pt": "julho",
       "gl": "يناير · يوليو",
       "normal": "basic/bas_06_119.mp3",
-      "slow": "basic/bas_06_119_slow.mp3"
+      "slow": "basic/bas_06_119_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -963,7 +1082,8 @@
       "pt": "fevereiro",
       "gl": "فبراير · أغسطس",
       "normal": "basic/bas_06_120.mp3",
-      "slow": "basic/bas_06_120_slow.mp3"
+      "slow": "basic/bas_06_120_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -971,7 +1091,8 @@
       "pt": "agosto",
       "gl": "فبراير · أغسطس",
       "normal": "basic/bas_06_121.mp3",
-      "slow": "basic/bas_06_121_slow.mp3"
+      "slow": "basic/bas_06_121_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -979,7 +1100,8 @@
       "pt": "março",
       "gl": "مارس · سبتمبر",
       "normal": "basic/bas_06_122.mp3",
-      "slow": "basic/bas_06_122_slow.mp3"
+      "slow": "basic/bas_06_122_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -987,7 +1109,8 @@
       "pt": "setembro",
       "gl": "مارس · سبتمبر",
       "normal": "basic/bas_06_123.mp3",
-      "slow": "basic/bas_06_123_slow.mp3"
+      "slow": "basic/bas_06_123_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -995,7 +1118,8 @@
       "pt": "abril",
       "gl": "إبريل · أكتوبر",
       "normal": "basic/bas_06_124.mp3",
-      "slow": "basic/bas_06_124_slow.mp3"
+      "slow": "basic/bas_06_124_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1003,7 +1127,8 @@
       "pt": "outubro",
       "gl": "إبريل · أكتوبر",
       "normal": "basic/bas_06_125.mp3",
-      "slow": "basic/bas_06_125_slow.mp3"
+      "slow": "basic/bas_06_125_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1011,7 +1136,8 @@
       "pt": "maio",
       "gl": "مايو · نوفمبر",
       "normal": "basic/bas_06_126.mp3",
-      "slow": "basic/bas_06_126_slow.mp3"
+      "slow": "basic/bas_06_126_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1019,7 +1145,8 @@
       "pt": "novembro",
       "gl": "مايو · نوفمبر",
       "normal": "basic/bas_06_127.mp3",
-      "slow": "basic/bas_06_127_slow.mp3"
+      "slow": "basic/bas_06_127_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1027,7 +1154,8 @@
       "pt": "junho",
       "gl": "يونيو · ديسمبر",
       "normal": "basic/bas_06_128.mp3",
-      "slow": "basic/bas_06_128_slow.mp3"
+      "slow": "basic/bas_06_128_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1035,7 +1163,8 @@
       "pt": "dezembro",
       "gl": "يونيو · ديسمبر",
       "normal": "basic/bas_06_129.mp3",
-      "slow": "basic/bas_06_129_slow.mp3"
+      "slow": "basic/bas_06_129_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1043,7 +1172,8 @@
       "pt": "vermelho",
       "gl": "أحمر · فيرمِيْليو",
       "normal": "basic/bas_07_130.mp3",
-      "slow": "basic/bas_07_130_slow.mp3"
+      "slow": "basic/bas_07_130_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1051,7 +1181,8 @@
       "pt": "azul",
       "gl": "أزرق · أزول",
       "normal": "basic/bas_07_131.mp3",
-      "slow": "basic/bas_07_131_slow.mp3"
+      "slow": "basic/bas_07_131_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1059,7 +1190,8 @@
       "pt": "verde",
       "gl": "أخضر · فيردجي",
       "normal": "basic/bas_07_132.mp3",
-      "slow": "basic/bas_07_132_slow.mp3"
+      "slow": "basic/bas_07_132_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1067,7 +1199,8 @@
       "pt": "amarelo",
       "gl": "أصفر · أماريلو",
       "normal": "basic/bas_07_133.mp3",
-      "slow": "basic/bas_07_133_slow.mp3"
+      "slow": "basic/bas_07_133_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1075,7 +1208,8 @@
       "pt": "preto",
       "gl": "أسود · پريتو",
       "normal": "basic/bas_07_134.mp3",
-      "slow": "basic/bas_07_134_slow.mp3"
+      "slow": "basic/bas_07_134_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1083,7 +1217,8 @@
       "pt": "branco",
       "gl": "أبيض · برانكو",
       "normal": "basic/bas_07_135.mp3",
-      "slow": "basic/bas_07_135_slow.mp3"
+      "slow": "basic/bas_07_135_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1091,7 +1226,8 @@
       "pt": "laranja",
       "gl": "برتقالي · لارانجا",
       "normal": "basic/bas_07_136.mp3",
-      "slow": "basic/bas_07_136_slow.mp3"
+      "slow": "basic/bas_07_136_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1099,7 +1235,8 @@
       "pt": "roxo",
       "gl": "بنفسجي · روشو",
       "normal": "basic/bas_07_137.mp3",
-      "slow": "basic/bas_07_137_slow.mp3"
+      "slow": "basic/bas_07_137_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1107,7 +1244,8 @@
       "pt": "rosa",
       "gl": "وردي · روزا",
       "normal": "basic/bas_07_138.mp3",
-      "slow": "basic/bas_07_138_slow.mp3"
+      "slow": "basic/bas_07_138_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1115,7 +1253,8 @@
       "pt": "cinza",
       "gl": "رمادي · سينزا",
       "normal": "basic/bas_07_139.mp3",
-      "slow": "basic/bas_07_139_slow.mp3"
+      "slow": "basic/bas_07_139_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1123,7 +1262,8 @@
       "pt": "marrom",
       "gl": "بُنّي · ماهوْن",
       "normal": "basic/bas_07_140.mp3",
-      "slow": "basic/bas_07_140_slow.mp3"
+      "slow": "basic/bas_07_140_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1131,7 +1271,8 @@
       "pt": "mãe",
       "gl": "أم · ماي",
       "normal": "basic/bas_08_141.mp3",
-      "slow": "basic/bas_08_141_slow.mp3"
+      "slow": "basic/bas_08_141_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1139,7 +1280,8 @@
       "pt": "pai",
       "gl": "أب · پاي",
       "normal": "basic/bas_08_142.mp3",
-      "slow": "basic/bas_08_142_slow.mp3"
+      "slow": "basic/bas_08_142_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1147,7 +1289,8 @@
       "pt": "irmão",
       "gl": "أخ · إرماوْن",
       "normal": "basic/bas_08_143.mp3",
-      "slow": "basic/bas_08_143_slow.mp3"
+      "slow": "basic/bas_08_143_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1155,7 +1298,8 @@
       "pt": "irmã",
       "gl": "أخت · إرما",
       "normal": "basic/bas_08_144.mp3",
-      "slow": "basic/bas_08_144_slow.mp3"
+      "slow": "basic/bas_08_144_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1163,7 +1307,8 @@
       "pt": "filho",
       "gl": "ابن · فيليو",
       "normal": "basic/bas_08_145.mp3",
-      "slow": "basic/bas_08_145_slow.mp3"
+      "slow": "basic/bas_08_145_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1171,7 +1316,8 @@
       "pt": "filha",
       "gl": "بنت · فيليا",
       "normal": "basic/bas_08_146.mp3",
-      "slow": "basic/bas_08_146_slow.mp3"
+      "slow": "basic/bas_08_146_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1179,7 +1325,8 @@
       "pt": "avô",
       "gl": "جد · أفو",
       "normal": "basic/bas_08_147.mp3",
-      "slow": "basic/bas_08_147_slow.mp3"
+      "slow": "basic/bas_08_147_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1187,7 +1334,8 @@
       "pt": "avó",
       "gl": "جدة · أفو (بضمة خفيفة)",
       "normal": "basic/bas_08_148.mp3",
-      "slow": "basic/bas_08_148_slow.mp3"
+      "slow": "basic/bas_08_148_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1195,7 +1343,8 @@
       "pt": "marido",
       "gl": "زوج · ماهيدو",
       "normal": "basic/bas_08_149.mp3",
-      "slow": "basic/bas_08_149_slow.mp3"
+      "slow": "basic/bas_08_149_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1203,7 +1352,8 @@
       "pt": "esposa",
       "gl": "زوجة · إسپوزا / مولْير",
       "normal": "basic/bas_08_150.mp3",
-      "slow": "basic/bas_08_150_slow.mp3"
+      "slow": "basic/bas_08_150_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1211,7 +1361,8 @@
       "pt": "mulher",
       "gl": "زوجة · إسپوزا / مولْير",
       "normal": "basic/bas_08_151.mp3",
-      "slow": "basic/bas_08_151_slow.mp3"
+      "slow": "basic/bas_08_151_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1219,7 +1370,8 @@
       "pt": "tio",
       "gl": "عم / خال · تشيو",
       "normal": "basic/bas_08_152.mp3",
-      "slow": "basic/bas_08_152_slow.mp3"
+      "slow": "basic/bas_08_152_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1227,7 +1379,8 @@
       "pt": "tia",
       "gl": "عمة / خالة · تشيا",
       "normal": "basic/bas_08_153.mp3",
-      "slow": "basic/bas_08_153_slow.mp3"
+      "slow": "basic/bas_08_153_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1235,7 +1388,8 @@
       "pt": "pão",
       "gl": "خبز · پاوْن",
       "normal": "basic/bas_09_154.mp3",
-      "slow": "basic/bas_09_154_slow.mp3"
+      "slow": "basic/bas_09_154_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1243,7 +1397,8 @@
       "pt": "água",
       "gl": "مية · أجوا",
       "normal": "basic/bas_09_155.mp3",
-      "slow": "basic/bas_09_155_slow.mp3"
+      "slow": "basic/bas_09_155_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1251,7 +1406,8 @@
       "pt": "cafezinho",
       "gl": "قهوة كاجوال · كافيزينيو",
       "normal": "basic/bas_09_156.mp3",
-      "slow": "basic/bas_09_156_slow.mp3"
+      "slow": "basic/bas_09_156_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1259,7 +1415,8 @@
       "pt": "chá",
       "gl": "شاي · شا",
       "normal": "basic/bas_09_157.mp3",
-      "slow": "basic/bas_09_157_slow.mp3"
+      "slow": "basic/bas_09_157_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1267,7 +1424,8 @@
       "pt": "suco",
       "gl": "عصير · سوكو",
       "normal": "basic/bas_09_158.mp3",
-      "slow": "basic/bas_09_158_slow.mp3"
+      "slow": "basic/bas_09_158_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1275,7 +1433,8 @@
       "pt": "carne",
       "gl": "لحمة · كارنيه",
       "normal": "basic/bas_09_159.mp3",
-      "slow": "basic/bas_09_159_slow.mp3"
+      "slow": "basic/bas_09_159_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1283,7 +1442,8 @@
       "pt": "frango",
       "gl": "فراخ · فرانگو",
       "normal": "basic/bas_09_160.mp3",
-      "slow": "basic/bas_09_160_slow.mp3"
+      "slow": "basic/bas_09_160_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1291,7 +1451,8 @@
       "pt": "peixe",
       "gl": "سمك · پيشي",
       "normal": "basic/bas_09_161.mp3",
-      "slow": "basic/bas_09_161_slow.mp3"
+      "slow": "basic/bas_09_161_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1299,7 +1460,8 @@
       "pt": "queijo",
       "gl": "جبنة · كيجو",
       "normal": "basic/bas_09_162.mp3",
-      "slow": "basic/bas_09_162_slow.mp3"
+      "slow": "basic/bas_09_162_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1307,7 +1469,8 @@
       "pt": "fruta",
       "gl": "فاكهة · فروتا",
       "normal": "basic/bas_09_163.mp3",
-      "slow": "basic/bas_09_163_slow.mp3"
+      "slow": "basic/bas_09_163_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1315,7 +1478,8 @@
       "pt": "legumes",
       "gl": "خضار · لِگومِس",
       "normal": "basic/bas_09_164.mp3",
-      "slow": "basic/bas_09_164_slow.mp3"
+      "slow": "basic/bas_09_164_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1323,7 +1487,8 @@
       "pt": "doces",
       "gl": "حلويات · دوسِس",
       "normal": "basic/bas_09_165.mp3",
-      "slow": "basic/bas_09_165_slow.mp3"
+      "slow": "basic/bas_09_165_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1331,7 +1496,8 @@
       "pt": "almoço",
       "gl": "الغدا · ألمُوسو",
       "normal": "basic/bas_09_166.mp3",
-      "slow": "basic/bas_09_166_slow.mp3"
+      "slow": "basic/bas_09_166_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1339,7 +1505,8 @@
       "pt": "jantar",
       "gl": "العشا · جانتار",
       "normal": "basic/bas_09_167.mp3",
-      "slow": "basic/bas_09_167_slow.mp3"
+      "slow": "basic/bas_09_167_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1347,7 +1514,8 @@
       "pt": "Onde fica...?",
       "gl": "فين...؟ · أوندجي فيكا...؟",
       "normal": "basic/bas_10_168.mp3",
-      "slow": "basic/bas_10_168_slow.mp3"
+      "slow": "basic/bas_10_168_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1355,7 +1523,8 @@
       "pt": "Quanto custa isso?",
       "gl": "بكام ده؟ · كوانتو كوستا إيسو؟",
       "normal": "basic/bas_10_169.mp3",
-      "slow": "basic/bas_10_169_slow.mp3"
+      "slow": "basic/bas_10_169_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1363,7 +1532,8 @@
       "pt": "Posso ver o cardápio?",
       "gl": "ممكن أشوف المنيو؟ · پوسو فير أو كارداپيو؟",
       "normal": "basic/bas_10_170.mp3",
-      "slow": "basic/bas_10_170_slow.mp3"
+      "slow": "basic/bas_10_170_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1371,7 +1541,8 @@
       "pt": "A conta, por favor",
       "gl": "الحساب لو سمحت · أ كونتا، پور فافور",
       "normal": "basic/bas_10_171.mp3",
-      "slow": "basic/bas_10_171_slow.mp3"
+      "slow": "basic/bas_10_171_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1379,7 +1550,8 @@
       "pt": "Onde é o banheiro?",
       "gl": "الحمام فين؟ · أوندجي إيه أو بانييرو؟",
       "normal": "basic/bas_10_172.mp3",
-      "slow": "basic/bas_10_172_slow.mp3"
+      "slow": "basic/bas_10_172_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1387,7 +1559,8 @@
       "pt": "Preciso de ajuda",
       "gl": "محتاج مساعدة · پريسيزو دي أجودا",
       "normal": "basic/bas_10_173.mp3",
-      "slow": "basic/bas_10_173_slow.mp3"
+      "slow": "basic/bas_10_173_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1395,7 +1568,8 @@
       "pt": "Não entendo",
       "gl": "مش فاهم · ناوْن إينتيندو",
       "normal": "basic/bas_10_174.mp3",
-      "slow": "basic/bas_10_174_slow.mp3"
+      "slow": "basic/bas_10_174_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1403,7 +1577,8 @@
       "pt": "Pode repetir, por favor?",
       "gl": "ممكن تعيد لو سمحت؟ · پودي ريپيتير، پور فافور؟",
       "normal": "basic/bas_10_175.mp3",
-      "slow": "basic/bas_10_175_slow.mp3"
+      "slow": "basic/bas_10_175_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1411,7 +1586,8 @@
       "pt": "Você fala inglês?",
       "gl": "بتتكلم إنجليزي؟ · فوسيه فالا إينگليس؟",
       "normal": "basic/bas_10_176.mp3",
-      "slow": "basic/bas_10_176_slow.mp3"
+      "slow": "basic/bas_10_176_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1419,7 +1595,8 @@
       "pt": "Quero reservar um quarto",
       "gl": "عايز أحجز أوضة · كيرو ريزيرفار أوم كوارتو",
       "normal": "basic/bas_10_177.mp3",
-      "slow": "basic/bas_10_177_slow.mp3"
+      "slow": "basic/bas_10_177_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1427,7 +1604,8 @@
       "pt": "A que horas sai o trem?",
       "gl": "القطر/الطيارة تتحرك الساعة كام؟ · أ كي أوراس سايي أو تريم؟",
       "normal": "basic/bas_10_178.mp3",
-      "slow": "basic/bas_10_178_slow.mp3"
+      "slow": "basic/bas_10_178_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1435,7 +1613,8 @@
       "pt": "Onde posso pegar um táxi?",
       "gl": "أقدر ألاقي تاكسي فين؟ · أوندجي پوسو پيگار أوم تاكسي؟",
       "normal": "basic/bas_10_179.mp3",
-      "slow": "basic/bas_10_179_slow.mp3"
+      "slow": "basic/bas_10_179_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1443,7 +1622,8 @@
       "pt": "Beleza!",
       "gl": "تمام! / حلو! (موافقة/إعجاب) · بيليزا",
       "normal": "basic/bas_11_180.mp3",
-      "slow": "basic/bas_11_180_slow.mp3"
+      "slow": "basic/bas_11_180_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1451,7 +1631,8 @@
       "pt": "Legal",
       "gl": "جامد / حلو (شائعة جدًا) · ليگال",
       "normal": "basic/bas_11_181.mp3",
-      "slow": "basic/bas_11_181_slow.mp3"
+      "slow": "basic/bas_11_181_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1459,7 +1640,8 @@
       "pt": "Nossa!",
       "gl": "يا سلام! (تعجب) · نوسا!",
       "normal": "basic/bas_11_182.mp3",
-      "slow": "basic/bas_11_182_slow.mp3"
+      "slow": "basic/bas_11_182_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1467,7 +1649,8 @@
       "pt": "Cara",
       "gl": "يا صاحبي / يا عم (نداء بين شباب) · كارا",
       "normal": "basic/bas_11_183.mp3",
-      "slow": "basic/bas_11_183_slow.mp3"
+      "slow": "basic/bas_11_183_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1475,7 +1658,8 @@
       "pt": "Tipo assim",
       "gl": "يعني كده... (كلمة حشو) · تيپو أسّيم",
       "normal": "basic/bas_11_184.mp3",
-      "slow": "basic/bas_11_184_slow.mp3"
+      "slow": "basic/bas_11_184_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1483,7 +1667,8 @@
       "pt": "Poxa",
       "gl": "يا خبر / معلش بجد (تعجب خفيف) · پوشا",
       "normal": "basic/bas_11_185.mp3",
-      "slow": "basic/bas_11_185_slow.mp3"
+      "slow": "basic/bas_11_185_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1491,7 +1676,8 @@
       "pt": "Bacana",
       "gl": "حلو/جميل · باكانا",
       "normal": "basic/bas_11_186.mp3",
-      "slow": "basic/bas_11_186_slow.mp3"
+      "slow": "basic/bas_11_186_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1499,7 +1685,8 @@
       "pt": "Mano",
       "gl": "مانو",
       "normal": "basic/bas_11_187.mp3",
-      "slow": "basic/bas_11_187_slow.mp3"
+      "slow": "basic/bas_11_187_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1507,7 +1694,8 @@
       "pt": "Caramba",
       "gl": "يا خبر إسود! (تعجب أقوى) · كارامبا",
       "normal": "basic/bas_11_188.mp3",
-      "slow": "basic/bas_11_188_slow.mp3"
+      "slow": "basic/bas_11_188_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1515,7 +1703,8 @@
       "pt": "Oi! Bem-vindo. O que você vai querer?",
       "gl": "حوار — الجرسون",
       "normal": "basic/bas_12_189.mp3",
-      "slow": "basic/bas_12_189_slow.mp3"
+      "slow": "basic/bas_12_189_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1523,7 +1712,8 @@
       "pt": "Oi! Eu queria um cafezinho, por favor.",
       "gl": "حوار — الزبون",
       "normal": "basic/bas_12_190.mp3",
-      "slow": "basic/bas_12_190_slow.mp3"
+      "slow": "basic/bas_12_190_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1531,7 +1721,8 @@
       "pt": "Só isso?",
       "gl": "حوار — الجرسون",
       "normal": "basic/bas_12_191.mp3",
-      "slow": "basic/bas_12_191_slow.mp3"
+      "slow": "basic/bas_12_191_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1539,7 +1730,8 @@
       "pt": "Sim, e a conta, por favor.",
       "gl": "حوار — الزبون",
       "normal": "basic/bas_12_192.mp3",
-      "slow": "basic/bas_12_192_slow.mp3"
+      "slow": "basic/bas_12_192_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1547,7 +1739,8 @@
       "pt": "São dois reais. Valeu!",
       "gl": "حوار — الجرسون",
       "normal": "basic/bas_12_193.mp3",
-      "slow": "basic/bas_12_193_slow.mp3"
+      "slow": "basic/bas_12_193_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
@@ -1555,15 +1748,17 @@
       "pt": "Valeu, até mais!",
       "gl": "حوار — الزبون",
       "normal": "basic/bas_12_194.mp3",
-      "slow": "basic/bas_12_194_slow.mp3"
+      "slow": "basic/bas_12_194_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "basic",
       "section": "١٦. خطة عملية: إزاي تتعلم بسرعة",
       "pt": "Boa sorte!",
-      "gl": "",
+      "gl": "بالتوفيق!",
       "normal": "basic/bas_13_195.mp3",
-      "slow": "basic/bas_13_195_slow.mp3"
+      "slow": "basic/bas_13_195_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -1571,7 +1766,8 @@
       "pt": "Te vejo amanhã.",
       "gl": "هشوفك بكرة",
       "normal": "advanced/adv_14_196.mp3",
-      "slow": "advanced/adv_14_196_slow.mp3"
+      "slow": "advanced/adv_14_196_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1579,7 +1775,8 @@
       "pt": "Vejo-te amanhã.",
       "gl": "هشوفك بكرة",
       "normal": "advanced/adv_14_197.mp3",
-      "slow": "advanced/adv_14_197_slow.mp3"
+      "slow": "advanced/adv_14_197_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1587,7 +1784,8 @@
       "pt": "Eu me chamo Ahmed.",
       "gl": "اسمي أحمد",
       "normal": "advanced/adv_14_198.mp3",
-      "slow": "advanced/adv_14_198_slow.mp3"
+      "slow": "advanced/adv_14_198_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1595,7 +1793,8 @@
       "pt": "Chamo-me Ahmed.",
       "gl": "اسمي أحمد",
       "normal": "advanced/adv_14_199.mp3",
-      "slow": "advanced/adv_14_199_slow.mp3"
+      "slow": "advanced/adv_14_199_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1603,7 +1802,8 @@
       "pt": "Ele se levanta cedo.",
       "gl": "بيصحى بدري",
       "normal": "advanced/adv_14_200.mp3",
-      "slow": "advanced/adv_14_200_slow.mp3"
+      "slow": "advanced/adv_14_200_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1611,7 +1811,8 @@
       "pt": "Ele levanta-se cedo.",
       "gl": "بيصحى بدري",
       "normal": "advanced/adv_14_201.mp3",
-      "slow": "advanced/adv_14_201_slow.mp3"
+      "slow": "advanced/adv_14_201_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1619,7 +1820,8 @@
       "pt": "receção",
       "gl": "استقبال",
       "normal": "advanced/adv_14_202.mp3",
-      "slow": "advanced/adv_14_202_slow.mp3"
+      "slow": "advanced/adv_14_202_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1627,7 +1829,8 @@
       "pt": "recepção",
       "gl": "استقبال",
       "normal": "advanced/adv_14_203.mp3",
-      "slow": "advanced/adv_14_203_slow.mp3"
+      "slow": "advanced/adv_14_203_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1635,7 +1838,8 @@
       "pt": "contacto",
       "gl": "اتصال/تواصل",
       "normal": "advanced/adv_14_204.mp3",
-      "slow": "advanced/adv_14_204_slow.mp3"
+      "slow": "advanced/adv_14_204_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1643,7 +1847,8 @@
       "pt": "contato",
       "gl": "اتصال/تواصل",
       "normal": "advanced/adv_14_205.mp3",
-      "slow": "advanced/adv_14_205_slow.mp3"
+      "slow": "advanced/adv_14_205_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1651,167 +1856,188 @@
       "pt": "ótimo",
       "gl": "ممتاز (نفس الكلمة)",
       "normal": "advanced/adv_14_206.mp3",
-      "slow": "advanced/adv_14_206_slow.mp3"
+      "slow": "advanced/adv_14_206_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "eu",
-      "gl": "",
+      "gl": "أنا",
       "normal": "advanced/adv_15_207.mp3",
-      "slow": "advanced/adv_15_207_slow.mp3"
+      "slow": "advanced/adv_15_207_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "você",
-      "gl": "",
+      "gl": "أنت / حضرتك (مفرد)",
       "normal": "advanced/adv_15_208.mp3",
-      "slow": "advanced/adv_15_208_slow.mp3"
+      "slow": "advanced/adv_15_208_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "ele",
-      "gl": "",
+      "gl": "هو",
       "normal": "advanced/adv_15_209.mp3",
-      "slow": "advanced/adv_15_209_slow.mp3"
+      "slow": "advanced/adv_15_209_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "ela",
-      "gl": "",
+      "gl": "هي",
       "normal": "advanced/adv_15_210.mp3",
-      "slow": "advanced/adv_15_210_slow.mp3"
+      "slow": "advanced/adv_15_210_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "nós",
-      "gl": "",
+      "gl": "نحن",
       "normal": "advanced/adv_15_211.mp3",
-      "slow": "advanced/adv_15_211_slow.mp3"
+      "slow": "advanced/adv_15_211_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "vocês",
-      "gl": "",
+      "gl": "أنتم / حضراتكم",
       "normal": "advanced/adv_15_212.mp3",
-      "slow": "advanced/adv_15_212_slow.mp3"
+      "slow": "advanced/adv_15_212_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "eles",
-      "gl": "",
+      "gl": "هم (جمع مذكر أو مختلط)",
       "normal": "advanced/adv_15_213.mp3",
-      "slow": "advanced/adv_15_213_slow.mp3"
+      "slow": "advanced/adv_15_213_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "parto",
-      "gl": "",
+      "gl": "أنا أغادر (من الفعل partir)",
       "normal": "advanced/adv_15_214.mp3",
-      "slow": "advanced/adv_15_214_slow.mp3"
+      "slow": "advanced/adv_15_214_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "como",
-      "gl": "",
+      "gl": "أنا آكل (من الفعل comer)",
       "normal": "advanced/adv_15_215.mp3",
-      "slow": "advanced/adv_15_215_slow.mp3"
+      "slow": "advanced/adv_15_215_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "falo",
-      "gl": "",
+      "gl": "أنا أتحدث (من الفعل falar)",
       "normal": "advanced/adv_15_216.mp3",
-      "slow": "advanced/adv_15_216_slow.mp3"
+      "slow": "advanced/adv_15_216_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "parte",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يغادر",
       "normal": "advanced/adv_15_217.mp3",
-      "slow": "advanced/adv_15_217_slow.mp3"
+      "slow": "advanced/adv_15_217_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "come",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يأكل",
       "normal": "advanced/adv_15_218.mp3",
-      "slow": "advanced/adv_15_218_slow.mp3"
+      "slow": "advanced/adv_15_218_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "fala",
-      "gl": "",
+      "gl": "هو أو هي أو أنت يتحدث",
       "normal": "advanced/adv_15_219.mp3",
-      "slow": "advanced/adv_15_219_slow.mp3"
+      "slow": "advanced/adv_15_219_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "partimos",
-      "gl": "",
+      "gl": "نحن نغادر",
       "normal": "advanced/adv_15_220.mp3",
-      "slow": "advanced/adv_15_220_slow.mp3"
+      "slow": "advanced/adv_15_220_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "comemos",
-      "gl": "",
+      "gl": "نحن نأكل",
       "normal": "advanced/adv_15_221.mp3",
-      "slow": "advanced/adv_15_221_slow.mp3"
+      "slow": "advanced/adv_15_221_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "falamos",
-      "gl": "",
+      "gl": "نحن نتحدث",
       "normal": "advanced/adv_15_222.mp3",
-      "slow": "advanced/adv_15_222_slow.mp3"
+      "slow": "advanced/adv_15_222_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "elas",
-      "gl": "",
+      "gl": "هنّ (جمع مؤنث)",
       "normal": "advanced/adv_15_223.mp3",
-      "slow": "advanced/adv_15_223_slow.mp3"
+      "slow": "advanced/adv_15_223_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "partem",
-      "gl": "",
+      "gl": "هم أو أنتم يغادرون",
       "normal": "advanced/adv_15_224.mp3",
-      "slow": "advanced/adv_15_224_slow.mp3"
+      "slow": "advanced/adv_15_224_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "comem",
-      "gl": "",
+      "gl": "هم أو أنتم يأكلون",
       "normal": "advanced/adv_15_225.mp3",
-      "slow": "advanced/adv_15_225_slow.mp3"
+      "slow": "advanced/adv_15_225_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "falam",
-      "gl": "",
+      "gl": "هم أو أنتم يتحدثون",
       "normal": "advanced/adv_15_226.mp3",
-      "slow": "advanced/adv_15_226_slow.mp3"
+      "slow": "advanced/adv_15_226_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -1819,7 +2045,8 @@
       "pt": "Estar",
       "gl": "الضمير",
       "normal": "advanced/adv_15_227.mp3",
-      "slow": "advanced/adv_15_227_slow.mp3"
+      "slow": "advanced/adv_15_227_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -1827,743 +2054,836 @@
       "pt": "Ser",
       "gl": "الضمير",
       "normal": "advanced/adv_15_228.mp3",
-      "slow": "advanced/adv_15_228_slow.mp3"
+      "slow": "advanced/adv_15_228_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estou",
-      "gl": "",
+      "gl": "أنا موجود / أنا في حالة مؤقتة (تصريف estar)",
       "normal": "advanced/adv_15_229.mp3",
-      "slow": "advanced/adv_15_229_slow.mp3"
+      "slow": "advanced/adv_15_229_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "sou",
-      "gl": "",
+      "gl": "أنا أكون / أنا (تصريف ser للحالة أو الهوية الثابتة)",
       "normal": "advanced/adv_15_230.mp3",
-      "slow": "advanced/adv_15_230_slow.mp3"
+      "slow": "advanced/adv_15_230_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "está",
-      "gl": "",
+      "gl": "هو أو هي أو أنت موجود / في حالة مؤقتة (تصريف estar)",
       "normal": "advanced/adv_15_231.mp3",
-      "slow": "advanced/adv_15_231_slow.mp3"
+      "slow": "advanced/adv_15_231_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estamos",
-      "gl": "",
+      "gl": "نحن موجودون / نحن في حالة مؤقتة (تصريف estar)",
       "normal": "advanced/adv_15_232.mp3",
-      "slow": "advanced/adv_15_232_slow.mp3"
+      "slow": "advanced/adv_15_232_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "somos",
-      "gl": "",
+      "gl": "نحن نكون / نحن (تصريف ser)",
       "normal": "advanced/adv_15_233.mp3",
-      "slow": "advanced/adv_15_233_slow.mp3"
+      "slow": "advanced/adv_15_233_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estão",
-      "gl": "",
+      "gl": "هم أو هنّ أو أنتم موجودون (تصريف estar)",
       "normal": "advanced/adv_15_234.mp3",
-      "slow": "advanced/adv_15_234_slow.mp3"
+      "slow": "advanced/adv_15_234_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "são",
-      "gl": "",
+      "gl": "هم أو هنّ أو أنتم يكونون / هم (تصريف ser)",
       "normal": "advanced/adv_15_235.mp3",
-      "slow": "advanced/adv_15_235_slow.mp3"
+      "slow": "advanced/adv_15_235_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "parti",
-      "gl": "",
+      "gl": "غادرتُ / رحلتُ (الماضي البسيط، أنا)",
       "normal": "advanced/adv_16_236.mp3",
-      "slow": "advanced/adv_16_236_slow.mp3"
+      "slow": "advanced/adv_16_236_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "comi",
-      "gl": "",
+      "gl": "أكلتُ (الماضي البسيط، أنا)",
       "normal": "advanced/adv_16_237.mp3",
-      "slow": "advanced/adv_16_237_slow.mp3"
+      "slow": "advanced/adv_16_237_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "falei",
-      "gl": "",
+      "gl": "تحدثتُ (الماضي البسيط، أنا)",
       "normal": "advanced/adv_16_238.mp3",
-      "slow": "advanced/adv_16_238_slow.mp3"
+      "slow": "advanced/adv_16_238_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "partiu",
-      "gl": "",
+      "gl": "غادرَ أو غادرتْ (الماضي، هو أو هي)",
       "normal": "advanced/adv_16_239.mp3",
-      "slow": "advanced/adv_16_239_slow.mp3"
+      "slow": "advanced/adv_16_239_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "comeu",
-      "gl": "",
+      "gl": "أكلَ أو أكلتْ (الماضي، هو أو هي)",
       "normal": "advanced/adv_16_240.mp3",
-      "slow": "advanced/adv_16_240_slow.mp3"
+      "slow": "advanced/adv_16_240_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "falou",
-      "gl": "",
+      "gl": "تحدثَ أو تحدثتْ (الماضي، هو أو هي)",
       "normal": "advanced/adv_16_241.mp3",
-      "slow": "advanced/adv_16_241_slow.mp3"
+      "slow": "advanced/adv_16_241_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "partiram",
-      "gl": "",
+      "gl": "غادروا (الماضي، هم أو أنتم)",
       "normal": "advanced/adv_16_242.mp3",
-      "slow": "advanced/adv_16_242_slow.mp3"
+      "slow": "advanced/adv_16_242_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "comeram",
-      "gl": "",
+      "gl": "أكلوا (الماضي، هم أو أنتم)",
       "normal": "advanced/adv_16_243.mp3",
-      "slow": "advanced/adv_16_243_slow.mp3"
+      "slow": "advanced/adv_16_243_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "falaram",
-      "gl": "",
+      "gl": "تحدثوا (الماضي، هم أو أنتم)",
       "normal": "advanced/adv_16_244.mp3",
-      "slow": "advanced/adv_16_244_slow.mp3"
+      "slow": "advanced/adv_16_244_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "ir",
-      "gl": "",
+      "gl": "الذهاب (مصدر الفعل)",
       "normal": "advanced/adv_16_245.mp3",
-      "slow": "advanced/adv_16_245_slow.mp3"
+      "slow": "advanced/adv_16_245_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fui",
-      "gl": "",
+      "gl": "ذهبتُ / كنتُ (ماضي ir أو ser، أنا)",
       "normal": "advanced/adv_16_246.mp3",
-      "slow": "advanced/adv_16_246_slow.mp3"
+      "slow": "advanced/adv_16_246_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "foi",
-      "gl": "",
+      "gl": "ذهب أو ذهبت / كان أو كانت (ماضي ir أو ser، هو أو هي)",
       "normal": "advanced/adv_16_247.mp3",
-      "slow": "advanced/adv_16_247_slow.mp3"
+      "slow": "advanced/adv_16_247_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fomos",
-      "gl": "",
+      "gl": "ذهبنا / كنا (ماضي ir أو ser، نحن)",
       "normal": "advanced/adv_16_248.mp3",
-      "slow": "advanced/adv_16_248_slow.mp3"
+      "slow": "advanced/adv_16_248_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "foram",
-      "gl": "",
+      "gl": "ذهبوا / كانوا (ماضي ir أو ser، هم أو أنتم)",
       "normal": "advanced/adv_16_249.mp3",
-      "slow": "advanced/adv_16_249_slow.mp3"
+      "slow": "advanced/adv_16_249_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "estive",
-      "gl": "",
+      "gl": "كنتُ موجودًا أو في حالة معينة (ماضي estar، أنا)",
       "normal": "advanced/adv_16_250.mp3",
-      "slow": "advanced/adv_16_250_slow.mp3"
+      "slow": "advanced/adv_16_250_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "esteve",
-      "gl": "",
+      "gl": "كان موجودًا أو في حالة معينة (ماضي estar، هو أو هي)",
       "normal": "advanced/adv_16_251.mp3",
-      "slow": "advanced/adv_16_251_slow.mp3"
+      "slow": "advanced/adv_16_251_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "estivemos",
-      "gl": "",
+      "gl": "كنا موجودين أو في حالة معينة (ماضي estar، نحن)",
       "normal": "advanced/adv_16_252.mp3",
-      "slow": "advanced/adv_16_252_slow.mp3"
+      "slow": "advanced/adv_16_252_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "estiveram",
-      "gl": "",
+      "gl": "كانوا موجودين أو في حالة معينة (ماضي estar، هم)",
       "normal": "advanced/adv_16_253.mp3",
-      "slow": "advanced/adv_16_253_slow.mp3"
+      "slow": "advanced/adv_16_253_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "ter",
-      "gl": "",
+      "gl": "أن يكون لديه / يملك (مصدر ter)",
       "normal": "advanced/adv_16_254.mp3",
-      "slow": "advanced/adv_16_254_slow.mp3"
+      "slow": "advanced/adv_16_254_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "tive",
-      "gl": "",
+      "gl": "كان عندي / امتلكتُ (ماضي ter، أنا)",
       "normal": "advanced/adv_16_255.mp3",
-      "slow": "advanced/adv_16_255_slow.mp3"
+      "slow": "advanced/adv_16_255_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "teve",
-      "gl": "",
+      "gl": "كان عنده أو عندها (ماضي ter، هو أو هي)",
       "normal": "advanced/adv_16_256.mp3",
-      "slow": "advanced/adv_16_256_slow.mp3"
+      "slow": "advanced/adv_16_256_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "tivemos",
-      "gl": "",
+      "gl": "كان عندنا (ماضي ter، نحن)",
       "normal": "advanced/adv_16_257.mp3",
-      "slow": "advanced/adv_16_257_slow.mp3"
+      "slow": "advanced/adv_16_257_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "tiveram",
-      "gl": "",
+      "gl": "كان عندهم (ماضي ter، هم)",
       "normal": "advanced/adv_16_258.mp3",
-      "slow": "advanced/adv_16_258_slow.mp3"
+      "slow": "advanced/adv_16_258_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fazer",
-      "gl": "",
+      "gl": "أن يفعل / يصنع (مصدر fazer)",
       "normal": "advanced/adv_16_259.mp3",
-      "slow": "advanced/adv_16_259_slow.mp3"
+      "slow": "advanced/adv_16_259_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fiz",
-      "gl": "",
+      "gl": "فعلتُ / صنعتُ (ماضي fazer، أنا)",
       "normal": "advanced/adv_16_260.mp3",
-      "slow": "advanced/adv_16_260_slow.mp3"
+      "slow": "advanced/adv_16_260_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fez",
-      "gl": "",
+      "gl": "فعل أو فعلت / صنع أو صنعت (ماضي fazer، هو أو هي)",
       "normal": "advanced/adv_16_261.mp3",
-      "slow": "advanced/adv_16_261_slow.mp3"
+      "slow": "advanced/adv_16_261_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fizemos",
-      "gl": "",
+      "gl": "فعلنا / صنعنا (ماضي fazer، نحن)",
       "normal": "advanced/adv_16_262.mp3",
-      "slow": "advanced/adv_16_262_slow.mp3"
+      "slow": "advanced/adv_16_262_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fizeram",
-      "gl": "",
+      "gl": "فعلوا / صنعوا (ماضي fazer، هم)",
       "normal": "advanced/adv_16_263.mp3",
-      "slow": "advanced/adv_16_263_slow.mp3"
+      "slow": "advanced/adv_16_263_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "poder",
-      "gl": "",
+      "gl": "أن يستطيع (مصدر poder)",
       "normal": "advanced/adv_16_264.mp3",
-      "slow": "advanced/adv_16_264_slow.mp3"
+      "slow": "advanced/adv_16_264_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pude",
-      "gl": "",
+      "gl": "استطعتُ (ماضي poder، أنا)",
       "normal": "advanced/adv_16_265.mp3",
-      "slow": "advanced/adv_16_265_slow.mp3"
+      "slow": "advanced/adv_16_265_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pôde",
-      "gl": "",
+      "gl": "استطاع أو استطاعت (ماضي poder، هو أو هي)",
       "normal": "advanced/adv_16_266.mp3",
-      "slow": "advanced/adv_16_266_slow.mp3"
+      "slow": "advanced/adv_16_266_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pudemos",
-      "gl": "",
+      "gl": "استطعنا (ماضي poder، نحن)",
       "normal": "advanced/adv_16_267.mp3",
-      "slow": "advanced/adv_16_267_slow.mp3"
+      "slow": "advanced/adv_16_267_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "puderam",
-      "gl": "",
+      "gl": "استطاعوا (ماضي poder، هم)",
       "normal": "advanced/adv_16_268.mp3",
-      "slow": "advanced/adv_16_268_slow.mp3"
+      "slow": "advanced/adv_16_268_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "querer",
-      "gl": "",
+      "gl": "أن يريد (مصدر querer)",
       "normal": "advanced/adv_16_269.mp3",
-      "slow": "advanced/adv_16_269_slow.mp3"
+      "slow": "advanced/adv_16_269_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "quis",
-      "gl": "",
+      "gl": "أردتُ (ماضي querer، أنا أو هو أو هي بحسب السياق)",
       "normal": "advanced/adv_16_270.mp3",
-      "slow": "advanced/adv_16_270_slow.mp3"
+      "slow": "advanced/adv_16_270_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "quisemos",
-      "gl": "",
+      "gl": "أردنا (ماضي querer، نحن)",
       "normal": "advanced/adv_16_271.mp3",
-      "slow": "advanced/adv_16_271_slow.mp3"
+      "slow": "advanced/adv_16_271_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "quiseram",
-      "gl": "",
+      "gl": "أرادوا (ماضي querer، هم)",
       "normal": "advanced/adv_16_272.mp3",
-      "slow": "advanced/adv_16_272_slow.mp3"
+      "slow": "advanced/adv_16_272_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "saber",
-      "gl": "",
+      "gl": "أن يعرف / يعلم (مصدر saber)",
       "normal": "advanced/adv_16_273.mp3",
-      "slow": "advanced/adv_16_273_slow.mp3"
+      "slow": "advanced/adv_16_273_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "soube",
-      "gl": "",
+      "gl": "عرفتُ / علمتُ (ماضي saber، أنا)",
       "normal": "advanced/adv_16_274.mp3",
-      "slow": "advanced/adv_16_274_slow.mp3"
+      "slow": "advanced/adv_16_274_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "soubemos",
-      "gl": "",
+      "gl": "عرفنا / علمنا (ماضي saber، نحن)",
       "normal": "advanced/adv_16_275.mp3",
-      "slow": "advanced/adv_16_275_slow.mp3"
+      "slow": "advanced/adv_16_275_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "souberam",
-      "gl": "",
+      "gl": "عرفوا / علموا (ماضي saber، هم)",
       "normal": "advanced/adv_16_276.mp3",
-      "slow": "advanced/adv_16_276_slow.mp3"
+      "slow": "advanced/adv_16_276_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "dizer",
-      "gl": "",
+      "gl": "أن يقول (مصدر dizer)",
       "normal": "advanced/adv_16_277.mp3",
-      "slow": "advanced/adv_16_277_slow.mp3"
+      "slow": "advanced/adv_16_277_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "disse",
-      "gl": "",
+      "gl": "قلتُ / قال أو قالت (ماضي dizer بحسب السياق)",
       "normal": "advanced/adv_16_278.mp3",
-      "slow": "advanced/adv_16_278_slow.mp3"
+      "slow": "advanced/adv_16_278_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "dissemos",
-      "gl": "",
+      "gl": "قلنا (ماضي dizer، نحن)",
       "normal": "advanced/adv_16_279.mp3",
-      "slow": "advanced/adv_16_279_slow.mp3"
+      "slow": "advanced/adv_16_279_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "disseram",
-      "gl": "",
+      "gl": "قالوا (ماضي dizer، هم)",
       "normal": "advanced/adv_16_280.mp3",
-      "slow": "advanced/adv_16_280_slow.mp3"
+      "slow": "advanced/adv_16_280_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "ver",
-      "gl": "",
+      "gl": "أن يرى (مصدر ver)",
       "normal": "advanced/adv_16_281.mp3",
-      "slow": "advanced/adv_16_281_slow.mp3"
+      "slow": "advanced/adv_16_281_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vi",
-      "gl": "",
+      "gl": "رأيتُ (ماضي ver، أنا)",
       "normal": "advanced/adv_16_282.mp3",
-      "slow": "advanced/adv_16_282_slow.mp3"
+      "slow": "advanced/adv_16_282_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "viu",
-      "gl": "",
+      "gl": "رأى أو رأت (ماضي ver، هو أو هي)",
       "normal": "advanced/adv_16_283.mp3",
-      "slow": "advanced/adv_16_283_slow.mp3"
+      "slow": "advanced/adv_16_283_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vimos",
-      "gl": "",
+      "gl": "رأينا (ماضي ver، نحن)",
       "normal": "advanced/adv_16_284.mp3",
-      "slow": "advanced/adv_16_284_slow.mp3"
+      "slow": "advanced/adv_16_284_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "viram",
-      "gl": "",
+      "gl": "رأوا (ماضي ver، هم)",
       "normal": "advanced/adv_16_285.mp3",
-      "slow": "advanced/adv_16_285_slow.mp3"
+      "slow": "advanced/adv_16_285_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vir",
-      "gl": "",
+      "gl": "أن يأتي (مصدر vir)",
       "normal": "advanced/adv_16_286.mp3",
-      "slow": "advanced/adv_16_286_slow.mp3"
+      "slow": "advanced/adv_16_286_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vim",
-      "gl": "",
+      "gl": "أتيتُ / جئتُ (ماضي vir، أنا)",
       "normal": "advanced/adv_16_287.mp3",
-      "slow": "advanced/adv_16_287_slow.mp3"
+      "slow": "advanced/adv_16_287_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "veio",
-      "gl": "",
+      "gl": "جاء أو جاءت (ماضي vir، هو أو هي)",
       "normal": "advanced/adv_16_288.mp3",
-      "slow": "advanced/adv_16_288_slow.mp3"
+      "slow": "advanced/adv_16_288_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "viemos",
-      "gl": "",
+      "gl": "جئنا (ماضي vir، نحن)",
       "normal": "advanced/adv_16_289.mp3",
-      "slow": "advanced/adv_16_289_slow.mp3"
+      "slow": "advanced/adv_16_289_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vieram",
-      "gl": "",
+      "gl": "جاءوا (ماضي vir، هم)",
       "normal": "advanced/adv_16_290.mp3",
-      "slow": "advanced/adv_16_290_slow.mp3"
+      "slow": "advanced/adv_16_290_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "dar",
-      "gl": "",
+      "gl": "أن يعطي (مصدر dar)",
       "normal": "advanced/adv_16_291.mp3",
-      "slow": "advanced/adv_16_291_slow.mp3"
+      "slow": "advanced/adv_16_291_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "dei",
-      "gl": "",
+      "gl": "أعطيتُ (ماضي dar، أنا)",
       "normal": "advanced/adv_16_292.mp3",
-      "slow": "advanced/adv_16_292_slow.mp3"
+      "slow": "advanced/adv_16_292_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "deu",
-      "gl": "",
+      "gl": "أعطى أو أعطت (ماضي dar، هو أو هي)",
       "normal": "advanced/adv_16_293.mp3",
-      "slow": "advanced/adv_16_293_slow.mp3"
+      "slow": "advanced/adv_16_293_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "demos",
-      "gl": "",
+      "gl": "أعطينا (ماضي dar، نحن)",
       "normal": "advanced/adv_16_294.mp3",
-      "slow": "advanced/adv_16_294_slow.mp3"
+      "slow": "advanced/adv_16_294_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "deram",
-      "gl": "",
+      "gl": "أعطوا (ماضي dar، هم)",
       "normal": "advanced/adv_16_295.mp3",
-      "slow": "advanced/adv_16_295_slow.mp3"
+      "slow": "advanced/adv_16_295_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pôr",
-      "gl": "",
+      "gl": "أن يضع (مصدر pôr)",
       "normal": "advanced/adv_16_296.mp3",
-      "slow": "advanced/adv_16_296_slow.mp3"
+      "slow": "advanced/adv_16_296_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pus",
-      "gl": "",
+      "gl": "وضعتُ (ماضي pôr، أنا)",
       "normal": "advanced/adv_16_297.mp3",
-      "slow": "advanced/adv_16_297_slow.mp3"
+      "slow": "advanced/adv_16_297_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pôs",
-      "gl": "",
+      "gl": "وضع أو وضعت (ماضي pôr، هو أو هي)",
       "normal": "advanced/adv_16_298.mp3",
-      "slow": "advanced/adv_16_298_slow.mp3"
+      "slow": "advanced/adv_16_298_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pusemos",
-      "gl": "",
+      "gl": "وضعنا (ماضي pôr، نحن)",
       "normal": "advanced/adv_16_299.mp3",
-      "slow": "advanced/adv_16_299_slow.mp3"
+      "slow": "advanced/adv_16_299_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "puseram",
-      "gl": "",
+      "gl": "وضعوا (ماضي pôr، هم)",
       "normal": "advanced/adv_16_300.mp3",
-      "slow": "advanced/adv_16_300_slow.mp3"
+      "slow": "advanced/adv_16_300_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "Fui ao Rio ontem",
-      "gl": "",
+      "gl": "ذهبتُ إلى ريو أمس",
       "normal": "advanced/adv_16_301.mp3",
-      "slow": "advanced/adv_16_301_slow.mp3"
+      "slow": "advanced/adv_16_301_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "partia",
-      "gl": "",
+      "gl": "كنتُ أغادر / كان يغادر عادة (الماضي الناقص، بحسب الفاعل)",
       "normal": "advanced/adv_17_302.mp3",
-      "slow": "advanced/adv_17_302_slow.mp3"
+      "slow": "advanced/adv_17_302_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "comia",
-      "gl": "",
+      "gl": "كنتُ آكل / كان يأكل عادة (الماضي الناقص)",
       "normal": "advanced/adv_17_303.mp3",
-      "slow": "advanced/adv_17_303_slow.mp3"
+      "slow": "advanced/adv_17_303_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "falava",
-      "gl": "",
+      "gl": "كنتُ أتحدث / كان يتحدث عادة (الماضي الناقص)",
       "normal": "advanced/adv_17_304.mp3",
-      "slow": "advanced/adv_17_304_slow.mp3"
+      "slow": "advanced/adv_17_304_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "partíamos",
-      "gl": "",
+      "gl": "كنا نغادر (الماضي الناقص، نحن)",
       "normal": "advanced/adv_17_305.mp3",
-      "slow": "advanced/adv_17_305_slow.mp3"
+      "slow": "advanced/adv_17_305_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "comíamos",
-      "gl": "",
+      "gl": "كنا نأكل (الماضي الناقص، نحن)",
       "normal": "advanced/adv_17_306.mp3",
-      "slow": "advanced/adv_17_306_slow.mp3"
+      "slow": "advanced/adv_17_306_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "falávamos",
-      "gl": "",
+      "gl": "كنا نتحدث (الماضي الناقص، نحن)",
       "normal": "advanced/adv_17_307.mp3",
-      "slow": "advanced/adv_17_307_slow.mp3"
+      "slow": "advanced/adv_17_307_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "partiam",
-      "gl": "",
+      "gl": "كانوا يغادرون / كنتم تغادرون (الماضي الناقص)",
       "normal": "advanced/adv_17_308.mp3",
-      "slow": "advanced/adv_17_308_slow.mp3"
+      "slow": "advanced/adv_17_308_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "comiam",
-      "gl": "",
+      "gl": "كانوا يأكلون / كنتم تأكلون (الماضي الناقص)",
       "normal": "advanced/adv_17_309.mp3",
-      "slow": "advanced/adv_17_309_slow.mp3"
+      "slow": "advanced/adv_17_309_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "falavam",
-      "gl": "",
+      "gl": "كانوا يتحدثون / كنتم تتحدثون (الماضي الناقص)",
       "normal": "advanced/adv_17_310.mp3",
-      "slow": "advanced/adv_17_310_slow.mp3"
+      "slow": "advanced/adv_17_310_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "era",
-      "gl": "",
+      "gl": "كنتُ أو كان أو كانت (الماضي الناقص من ser)",
       "normal": "advanced/adv_17_311.mp3",
-      "slow": "advanced/adv_17_311_slow.mp3"
+      "slow": "advanced/adv_17_311_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "éramos",
-      "gl": "",
+      "gl": "كنا (الماضي الناقص من ser)",
       "normal": "advanced/adv_17_312.mp3",
-      "slow": "advanced/adv_17_312_slow.mp3"
+      "slow": "advanced/adv_17_312_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "tinha",
-      "gl": "",
+      "gl": "كان عندي / كان عنده أو عندها (الماضي الناقص من ter)",
       "normal": "advanced/adv_17_313.mp3",
-      "slow": "advanced/adv_17_313_slow.mp3"
+      "slow": "advanced/adv_17_313_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "tínhamos",
-      "gl": "",
+      "gl": "كان عندنا (الماضي الناقص من ter)",
       "normal": "advanced/adv_17_314.mp3",
-      "slow": "advanced/adv_17_314_slow.mp3"
+      "slow": "advanced/adv_17_314_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "vinha",
-      "gl": "",
+      "gl": "كنتُ آتي / كان يأتي (الماضي الناقص من vir)",
       "normal": "advanced/adv_17_315.mp3",
-      "slow": "advanced/adv_17_315_slow.mp3"
+      "slow": "advanced/adv_17_315_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "vínhamos",
-      "gl": "",
+      "gl": "كنا نأتي (الماضي الناقص من vir)",
       "normal": "advanced/adv_17_316.mp3",
-      "slow": "advanced/adv_17_316_slow.mp3"
+      "slow": "advanced/adv_17_316_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "punha",
-      "gl": "",
+      "gl": "كنتُ أضع / كان يضع (الماضي الناقص من pôr)",
       "normal": "advanced/adv_17_317.mp3",
-      "slow": "advanced/adv_17_317_slow.mp3"
+      "slow": "advanced/adv_17_317_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "púnhamos",
-      "gl": "",
+      "gl": "كنا نضع (الماضي الناقص من pôr)",
       "normal": "advanced/adv_17_318.mp3",
-      "slow": "advanced/adv_17_318_slow.mp3"
+      "slow": "advanced/adv_17_318_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "Quando eu era criança, morava no Cairo.",
-      "gl": "",
+      "gl": "عندما كنت طفلًا، كنت أعيش في القاهرة.",
       "normal": "advanced/adv_17_319.mp3",
-      "slow": "advanced/adv_17_319_slow.mp3"
+      "slow": "advanced/adv_17_319_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "Ele trabalhava todos os dias.",
-      "gl": "",
+      "gl": "كان يعمل كل يوم.",
       "normal": "advanced/adv_17_320.mp3",
-      "slow": "advanced/adv_17_320_slow.mp3"
+      "slow": "advanced/adv_17_320_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -2571,39 +2891,44 @@
       "pt": "falar",
       "gl": "الضمير",
       "normal": "advanced/adv_18_321.mp3",
-      "slow": "advanced/adv_18_321_slow.mp3"
+      "slow": "advanced/adv_18_321_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falarei",
-      "gl": "",
+      "gl": "سأتحدث (مستقبل falar، أنا)",
       "normal": "advanced/adv_18_322.mp3",
-      "slow": "advanced/adv_18_322_slow.mp3"
+      "slow": "advanced/adv_18_322_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falará",
-      "gl": "",
+      "gl": "سيتحدث أو ستتحدث (مستقبل falar، هو أو هي)",
       "normal": "advanced/adv_18_323.mp3",
-      "slow": "advanced/adv_18_323_slow.mp3"
+      "slow": "advanced/adv_18_323_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falaremos",
-      "gl": "",
+      "gl": "سنتحدث (مستقبل falar، نحن)",
       "normal": "advanced/adv_18_324.mp3",
-      "slow": "advanced/adv_18_324_slow.mp3"
+      "slow": "advanced/adv_18_324_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falarão",
-      "gl": "",
+      "gl": "سيتحدثون أو ستتحدثون (مستقبل falar، هم أو أنتم)",
       "normal": "advanced/adv_18_325.mp3",
-      "slow": "advanced/adv_18_325_slow.mp3"
+      "slow": "advanced/adv_18_325_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -2611,367 +2936,413 @@
       "pt": "gostar",
       "gl": "الضمير",
       "normal": "advanced/adv_18_326.mp3",
-      "slow": "advanced/adv_18_326_slow.mp3"
+      "slow": "advanced/adv_18_326_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falaria",
-      "gl": "",
+      "gl": "كنتُ سأتحدث / كنتُ لأتحدث (الصيغة الشرطية، أنا)",
       "normal": "advanced/adv_18_327.mp3",
-      "slow": "advanced/adv_18_327_slow.mp3"
+      "slow": "advanced/adv_18_327_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "gostaria",
-      "gl": "",
+      "gl": "أودّ / كنت أودّ (صيغة مهذبة من gostar)",
       "normal": "advanced/adv_18_328.mp3",
-      "slow": "advanced/adv_18_328_slow.mp3"
+      "slow": "advanced/adv_18_328_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falaríamos",
-      "gl": "",
+      "gl": "كنا سنتحدث / كنا لنتحدث (الصيغة الشرطية، نحن)",
       "normal": "advanced/adv_18_329.mp3",
-      "slow": "advanced/adv_18_329_slow.mp3"
+      "slow": "advanced/adv_18_329_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "gostaríamos",
-      "gl": "",
+      "gl": "كنا سنودّ / كنا نودّ (الصيغة الشرطية، نحن)",
       "normal": "advanced/adv_18_330.mp3",
-      "slow": "advanced/adv_18_330_slow.mp3"
+      "slow": "advanced/adv_18_330_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "ei, á, emos, ão",
-      "gl": "",
+      "gl": "نهايات أمثلة لتصريف المستقبل في البرتغالية: -ei و-á و-emos و-ão",
       "normal": "advanced/adv_18_331.mp3",
-      "slow": "advanced/adv_18_331_slow.mp3"
+      "slow": "advanced/adv_18_331_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "Eu gostaria de reservar uma mesa.",
-      "gl": "",
+      "gl": "أودّ حجز طاولة.",
       "normal": "advanced/adv_18_332.mp3",
-      "slow": "advanced/adv_18_332_slow.mp3"
+      "slow": "advanced/adv_18_332_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "Você poderia me ajudar?",
-      "gl": "",
+      "gl": "هل يمكنك مساعدتي؟ (صيغة طلب مهذبة)",
       "normal": "advanced/adv_18_333.mp3",
-      "slow": "advanced/adv_18_333_slow.mp3"
+      "slow": "advanced/adv_18_333_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "parta",
-      "gl": "",
+      "gl": "أن أغادر / ليغادر (صيغة المضارع التابع من partir بحسب الفاعل)",
       "normal": "advanced/adv_19_334.mp3",
-      "slow": "advanced/adv_19_334_slow.mp3"
+      "slow": "advanced/adv_19_334_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "coma",
-      "gl": "",
+      "gl": "أن آكل / ليأكل (صيغة المضارع التابع من comer بحسب الفاعل)",
       "normal": "advanced/adv_19_335.mp3",
-      "slow": "advanced/adv_19_335_slow.mp3"
+      "slow": "advanced/adv_19_335_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "fale",
-      "gl": "",
+      "gl": "أن أتحدث / ليتحدث (صيغة المضارع التابع من falar بحسب الفاعل)",
       "normal": "advanced/adv_19_336.mp3",
-      "slow": "advanced/adv_19_336_slow.mp3"
+      "slow": "advanced/adv_19_336_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "partamos",
-      "gl": "",
+      "gl": "أن نغادر (صيغة المضارع التابع، نحن)",
       "normal": "advanced/adv_19_337.mp3",
-      "slow": "advanced/adv_19_337_slow.mp3"
+      "slow": "advanced/adv_19_337_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "comamos",
-      "gl": "",
+      "gl": "أن نأكل (صيغة المضارع التابع، نحن)",
       "normal": "advanced/adv_19_338.mp3",
-      "slow": "advanced/adv_19_338_slow.mp3"
+      "slow": "advanced/adv_19_338_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "falemos",
-      "gl": "",
+      "gl": "أن نتحدث (صيغة المضارع التابع، نحن)",
       "normal": "advanced/adv_19_339.mp3",
-      "slow": "advanced/adv_19_339_slow.mp3"
+      "slow": "advanced/adv_19_339_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "partam",
-      "gl": "",
+      "gl": "أن يغادروا (صيغة المضارع التابع، هم أو أنتم)",
       "normal": "advanced/adv_19_340.mp3",
-      "slow": "advanced/adv_19_340_slow.mp3"
+      "slow": "advanced/adv_19_340_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "comam",
-      "gl": "",
+      "gl": "أن يأكلوا (صيغة المضارع التابع، هم أو أنتم)",
       "normal": "advanced/adv_19_341.mp3",
-      "slow": "advanced/adv_19_341_slow.mp3"
+      "slow": "advanced/adv_19_341_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "falem",
-      "gl": "",
+      "gl": "أن يتحدثوا (صيغة المضارع التابع، هم أو أنتم)",
       "normal": "advanced/adv_19_342.mp3",
-      "slow": "advanced/adv_19_342_slow.mp3"
+      "slow": "advanced/adv_19_342_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "espero que",
-      "gl": "",
+      "gl": "آمل أن...",
       "normal": "advanced/adv_19_343.mp3",
-      "slow": "advanced/adv_19_343_slow.mp3"
+      "slow": "advanced/adv_19_343_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "Espero que você esteja bem.",
-      "gl": "",
+      "gl": "أتمنى أن تكون بخير.",
       "normal": "advanced/adv_19_344.mp3",
-      "slow": "advanced/adv_19_344_slow.mp3"
+      "slow": "advanced/adv_19_344_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "Talvez ele venha amanhã.",
-      "gl": "",
+      "gl": "ربما يأتي غدًا.",
       "normal": "advanced/adv_19_345.mp3",
-      "slow": "advanced/adv_19_345_slow.mp3"
+      "slow": "advanced/adv_19_345_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "quero que",
-      "gl": "",
+      "gl": "أريد أن...",
       "normal": "advanced/adv_19_346.mp3",
-      "slow": "advanced/adv_19_346_slow.mp3"
+      "slow": "advanced/adv_19_346_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "Quero que você me ajude.",
-      "gl": "",
+      "gl": "أريد منك أن تساعدني.",
       "normal": "advanced/adv_19_347.mp3",
-      "slow": "advanced/adv_19_347_slow.mp3"
+      "slow": "advanced/adv_19_347_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "é possível que",
-      "gl": "",
+      "gl": "من الممكن أن...",
       "normal": "advanced/adv_19_348.mp3",
-      "slow": "advanced/adv_19_348_slow.mp3"
+      "slow": "advanced/adv_19_348_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "É possível que chova.",
-      "gl": "",
+      "gl": "من الممكن أن تمطر.",
       "normal": "advanced/adv_19_349.mp3",
-      "slow": "advanced/adv_19_349_slow.mp3"
+      "slow": "advanced/adv_19_349_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "Embora eu esteja cansado, vou trabalhar.",
-      "gl": "",
+      "gl": "رغم أنني متعب، سأذهب إلى العمل.",
       "normal": "advanced/adv_19_350.mp3",
-      "slow": "advanced/adv_19_350_slow.mp3"
+      "slow": "advanced/adv_19_350_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "me chamo",
-      "gl": "",
+      "gl": "اسمي... / أُدعى... (عن نفسي)",
       "normal": "advanced/adv_20_351.mp3",
-      "slow": "advanced/adv_20_351_slow.mp3"
+      "slow": "advanced/adv_20_351_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "me levanto",
-      "gl": "",
+      "gl": "أنهض / أستيقظ من الفراش (عن نفسي)",
       "normal": "advanced/adv_20_352.mp3",
-      "slow": "advanced/adv_20_352_slow.mp3"
+      "slow": "advanced/adv_20_352_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "me visto",
-      "gl": "",
+      "gl": "أرتدي ملابسي (عن نفسي)",
       "normal": "advanced/adv_20_353.mp3",
-      "slow": "advanced/adv_20_353_slow.mp3"
+      "slow": "advanced/adv_20_353_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se chama",
-      "gl": "",
+      "gl": "اسمه أو اسمها... / يُدعى أو تُدعى...",
       "normal": "advanced/adv_20_354.mp3",
-      "slow": "advanced/adv_20_354_slow.mp3"
+      "slow": "advanced/adv_20_354_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se levanta",
-      "gl": "",
+      "gl": "ينهض أو تنهض من الفراش",
       "normal": "advanced/adv_20_355.mp3",
-      "slow": "advanced/adv_20_355_slow.mp3"
+      "slow": "advanced/adv_20_355_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se veste",
-      "gl": "",
+      "gl": "يرتدي أو ترتدي ملابسه أو ملابسها",
       "normal": "advanced/adv_20_356.mp3",
-      "slow": "advanced/adv_20_356_slow.mp3"
+      "slow": "advanced/adv_20_356_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "nos chamamos",
-      "gl": "",
+      "gl": "أسماؤنا... / نُدعى...",
       "normal": "advanced/adv_20_357.mp3",
-      "slow": "advanced/adv_20_357_slow.mp3"
+      "slow": "advanced/adv_20_357_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "nos levantamos",
-      "gl": "",
+      "gl": "ننهض من الفراش",
       "normal": "advanced/adv_20_358.mp3",
-      "slow": "advanced/adv_20_358_slow.mp3"
+      "slow": "advanced/adv_20_358_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "nos vestimos",
-      "gl": "",
+      "gl": "نرتدي ملابسنا",
       "normal": "advanced/adv_20_359.mp3",
-      "slow": "advanced/adv_20_359_slow.mp3"
+      "slow": "advanced/adv_20_359_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se chamam",
-      "gl": "",
+      "gl": "أسماؤهم... / يُدعون أو يُدعين",
       "normal": "advanced/adv_20_360.mp3",
-      "slow": "advanced/adv_20_360_slow.mp3"
+      "slow": "advanced/adv_20_360_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se levantam",
-      "gl": "",
+      "gl": "ينهضون من الفراش",
       "normal": "advanced/adv_20_361.mp3",
-      "slow": "advanced/adv_20_361_slow.mp3"
+      "slow": "advanced/adv_20_361_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se vestem",
-      "gl": "",
+      "gl": "يرتدون ملابسهم",
       "normal": "advanced/adv_20_362.mp3",
-      "slow": "advanced/adv_20_362_slow.mp3"
+      "slow": "advanced/adv_20_362_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "Como você se chama?",
-      "gl": "",
+      "gl": "ما اسمك؟",
       "normal": "advanced/adv_20_363.mp3",
-      "slow": "advanced/adv_20_363_slow.mp3"
+      "slow": "advanced/adv_20_363_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "me",
-      "gl": "",
+      "gl": "ني / لي (ضمير مفعول بحسب السياق)",
       "normal": "advanced/adv_21_364.mp3",
-      "slow": "advanced/adv_21_364_slow.mp3"
+      "slow": "advanced/adv_21_364_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "lhe",
-      "gl": "",
+      "gl": "له أو لها / لحضرتك (ضمير مفعول غير مباشر)",
       "normal": "advanced/adv_21_365.mp3",
-      "slow": "advanced/adv_21_365_slow.mp3"
+      "slow": "advanced/adv_21_365_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "nos",
-      "gl": "",
+      "gl": "نا / لنا (ضمير مفعول)",
       "normal": "advanced/adv_21_366.mp3",
-      "slow": "advanced/adv_21_366_slow.mp3"
+      "slow": "advanced/adv_21_366_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "os",
-      "gl": "",
+      "gl": "هم (ضمير مفعول به لجمع المذكر)",
       "normal": "advanced/adv_21_367.mp3",
-      "slow": "advanced/adv_21_367_slow.mp3"
+      "slow": "advanced/adv_21_367_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "as",
-      "gl": "",
+      "gl": "هنّ (ضمير مفعول به لجمع المؤنث)",
       "normal": "advanced/adv_21_368.mp3",
-      "slow": "advanced/adv_21_368_slow.mp3"
+      "slow": "advanced/adv_21_368_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "lhes",
-      "gl": "",
+      "gl": "لهم أو لهنّ / لكم (ضمير مفعول غير مباشر)",
       "normal": "advanced/adv_21_369.mp3",
-      "slow": "advanced/adv_21_369_slow.mp3"
+      "slow": "advanced/adv_21_369_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "Vou ver você amanhã",
-      "gl": "",
+      "gl": "سأراك غدًا.",
       "normal": "advanced/adv_21_370.mp3",
-      "slow": "advanced/adv_21_370_slow.mp3"
+      "slow": "advanced/adv_21_370_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "Vou lhe contar uma coisa.",
-      "gl": "",
+      "gl": "سأخبرك بشيء. (بصيغة محترمة في البرتغالية)",
       "normal": "advanced/adv_21_371.mp3",
-      "slow": "advanced/adv_21_371_slow.mp3"
+      "slow": "advanced/adv_21_371_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -2979,7 +3350,8 @@
       "pt": "+ o",
       "gl": "حرف الجر",
       "normal": "advanced/adv_22_372.mp3",
-      "slow": "advanced/adv_22_372_slow.mp3"
+      "slow": "advanced/adv_22_372_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -2987,7 +3359,8 @@
       "pt": "+ a",
       "gl": "حرف الجر",
       "normal": "advanced/adv_22_373.mp3",
-      "slow": "advanced/adv_22_373_slow.mp3"
+      "slow": "advanced/adv_22_373_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -2995,7 +3368,8 @@
       "pt": "+ os",
       "gl": "حرف الجر",
       "normal": "advanced/adv_22_374.mp3",
-      "slow": "advanced/adv_22_374_slow.mp3"
+      "slow": "advanced/adv_22_374_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3003,143 +3377,161 @@
       "pt": "+ as",
       "gl": "حرف الجر",
       "normal": "advanced/adv_22_375.mp3",
-      "slow": "advanced/adv_22_375_slow.mp3"
+      "slow": "advanced/adv_22_375_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "do",
-      "gl": "",
+      "gl": "من الـ (de + o، مذكر مفرد)",
       "normal": "advanced/adv_22_376.mp3",
-      "slow": "advanced/adv_22_376_slow.mp3"
+      "slow": "advanced/adv_22_376_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "da",
-      "gl": "",
+      "gl": "من الـ (de + a، مؤنث مفرد)",
       "normal": "advanced/adv_22_377.mp3",
-      "slow": "advanced/adv_22_377_slow.mp3"
+      "slow": "advanced/adv_22_377_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "dos",
-      "gl": "",
+      "gl": "من الـ (de + os، جمع مذكر)",
       "normal": "advanced/adv_22_378.mp3",
-      "slow": "advanced/adv_22_378_slow.mp3"
+      "slow": "advanced/adv_22_378_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "das",
-      "gl": "",
+      "gl": "من الـ (de + as، جمع مؤنث)",
       "normal": "advanced/adv_22_379.mp3",
-      "slow": "advanced/adv_22_379_slow.mp3"
+      "slow": "advanced/adv_22_379_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "no",
-      "gl": "",
+      "gl": "في الـ (em + o، مذكر مفرد)",
       "normal": "advanced/adv_22_380.mp3",
-      "slow": "advanced/adv_22_380_slow.mp3"
+      "slow": "advanced/adv_22_380_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "na",
-      "gl": "",
+      "gl": "في الـ (em + a، مؤنث مفرد)",
       "normal": "advanced/adv_22_381.mp3",
-      "slow": "advanced/adv_22_381_slow.mp3"
+      "slow": "advanced/adv_22_381_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "nas",
-      "gl": "",
+      "gl": "في الـ (em + as، جمع مؤنث)",
       "normal": "advanced/adv_22_382.mp3",
-      "slow": "advanced/adv_22_382_slow.mp3"
+      "slow": "advanced/adv_22_382_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "ao",
-      "gl": "",
+      "gl": "إلى الـ (a + o، مذكر مفرد)",
       "normal": "advanced/adv_22_383.mp3",
-      "slow": "advanced/adv_22_383_slow.mp3"
+      "slow": "advanced/adv_22_383_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "aos",
-      "gl": "",
+      "gl": "إلى الـ (a + os، جمع مذكر)",
       "normal": "advanced/adv_22_384.mp3",
-      "slow": "advanced/adv_22_384_slow.mp3"
+      "slow": "advanced/adv_22_384_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "às",
-      "gl": "",
+      "gl": "إلى الـ (a + as، جمع مؤنث؛ وتستخدم مع الوقت أيضًا)",
       "normal": "advanced/adv_22_385.mp3",
-      "slow": "advanced/adv_22_385_slow.mp3"
+      "slow": "advanced/adv_22_385_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelo",
-      "gl": "",
+      "gl": "عبر الـ / بواسطة الـ (por + o، مذكر مفرد)",
       "normal": "advanced/adv_22_386.mp3",
-      "slow": "advanced/adv_22_386_slow.mp3"
+      "slow": "advanced/adv_22_386_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pela",
-      "gl": "",
+      "gl": "عبر الـ / بواسطة الـ (por + a، مؤنث مفرد)",
       "normal": "advanced/adv_22_387.mp3",
-      "slow": "advanced/adv_22_387_slow.mp3"
+      "slow": "advanced/adv_22_387_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelos",
-      "gl": "",
+      "gl": "عبر الـ / بواسطة الـ (por + os، جمع مذكر)",
       "normal": "advanced/adv_22_388.mp3",
-      "slow": "advanced/adv_22_388_slow.mp3"
+      "slow": "advanced/adv_22_388_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelas",
-      "gl": "",
+      "gl": "عبر الـ / بواسطة الـ (por + as، جمع مؤنث)",
       "normal": "advanced/adv_22_389.mp3",
-      "slow": "advanced/adv_22_389_slow.mp3"
+      "slow": "advanced/adv_22_389_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "Vou ao mercado.",
-      "gl": "",
+      "gl": "سأذهب إلى السوق.",
       "normal": "advanced/adv_22_390.mp3",
-      "slow": "advanced/adv_22_390_slow.mp3"
+      "slow": "advanced/adv_22_390_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "Estou na praia.",
-      "gl": "",
+      "gl": "أنا على الشاطئ.",
       "normal": "advanced/adv_22_391.mp3",
-      "slow": "advanced/adv_22_391_slow.mp3"
+      "slow": "advanced/adv_22_391_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "O livro é do professor.",
-      "gl": "",
+      "gl": "الكتاب ملك الأستاذ / كتاب الأستاذ.",
       "normal": "advanced/adv_22_392.mp3",
-      "slow": "advanced/adv_22_392_slow.mp3"
+      "slow": "advanced/adv_22_392_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -3147,7 +3539,8 @@
       "pt": "mais... que",
       "gl": "أكتر من",
       "normal": "advanced/adv_23_393.mp3",
-      "slow": "advanced/adv_23_393_slow.mp3"
+      "slow": "advanced/adv_23_393_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3155,7 +3548,8 @@
       "pt": "menos... que",
       "gl": "أقل من",
       "normal": "advanced/adv_23_394.mp3",
-      "slow": "advanced/adv_23_394_slow.mp3"
+      "slow": "advanced/adv_23_394_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3163,7 +3557,8 @@
       "pt": "tão... quanto",
       "gl": "زي / بقد",
       "normal": "advanced/adv_23_395.mp3",
-      "slow": "advanced/adv_23_395_slow.mp3"
+      "slow": "advanced/adv_23_395_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3171,7 +3566,8 @@
       "pt": "o mais",
       "gl": "الأكتر",
       "normal": "advanced/adv_23_396.mp3",
-      "slow": "advanced/adv_23_396_slow.mp3"
+      "slow": "advanced/adv_23_396_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3179,7 +3575,8 @@
       "pt": "a mais",
       "gl": "الأكتر",
       "normal": "advanced/adv_23_397.mp3",
-      "slow": "advanced/adv_23_397_slow.mp3"
+      "slow": "advanced/adv_23_397_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3187,7 +3584,8 @@
       "pt": "mas",
       "gl": "لكن",
       "normal": "advanced/adv_23_398.mp3",
-      "slow": "advanced/adv_23_398_slow.mp3"
+      "slow": "advanced/adv_23_398_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3195,7 +3593,8 @@
       "pt": "porém",
       "gl": "لكن (أرسمي)",
       "normal": "advanced/adv_23_399.mp3",
-      "slow": "advanced/adv_23_399_slow.mp3"
+      "slow": "advanced/adv_23_399_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3203,7 +3602,8 @@
       "pt": "contudo",
       "gl": "لكن (أرسمي)",
       "normal": "advanced/adv_23_400.mp3",
-      "slow": "advanced/adv_23_400_slow.mp3"
+      "slow": "advanced/adv_23_400_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3211,7 +3611,8 @@
       "pt": "portanto",
       "gl": "عشان كده",
       "normal": "advanced/adv_23_401.mp3",
-      "slow": "advanced/adv_23_401_slow.mp3"
+      "slow": "advanced/adv_23_401_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3219,7 +3620,8 @@
       "pt": "porque",
       "gl": "لأن",
       "normal": "advanced/adv_23_402.mp3",
-      "slow": "advanced/adv_23_402_slow.mp3"
+      "slow": "advanced/adv_23_402_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3227,7 +3629,8 @@
       "pt": "já que",
       "gl": "بما إن",
       "normal": "advanced/adv_23_403.mp3",
-      "slow": "advanced/adv_23_403_slow.mp3"
+      "slow": "advanced/adv_23_403_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3235,7 +3638,8 @@
       "pt": "embora",
       "gl": "رغم إن",
       "normal": "advanced/adv_23_404.mp3",
-      "slow": "advanced/adv_23_404_slow.mp3"
+      "slow": "advanced/adv_23_404_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3243,7 +3647,8 @@
       "pt": "apesar de",
       "gl": "بالرغم من",
       "normal": "advanced/adv_23_405.mp3",
-      "slow": "advanced/adv_23_405_slow.mp3"
+      "slow": "advanced/adv_23_405_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3251,15 +3656,17 @@
       "pt": "caso",
       "gl": "في حالة",
       "normal": "advanced/adv_23_406.mp3",
-      "slow": "advanced/adv_23_406_slow.mp3"
+      "slow": "advanced/adv_23_406_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "١١. المقارنة والتفضيل وأدوات الربط المتقدمة",
       "pt": "tão... como",
-      "gl": "",
+      "gl": "بنفس درجة... مثل... (للمقارنة المتساوية)",
       "normal": "advanced/adv_23_407.mp3",
-      "slow": "advanced/adv_23_407_slow.mp3"
+      "slow": "advanced/adv_23_407_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -3267,7 +3674,8 @@
       "pt": "passaporte",
       "gl": "جواز سفر · پاسّاپورتشي",
       "normal": "advanced/adv_24_408.mp3",
-      "slow": "advanced/adv_24_408_slow.mp3"
+      "slow": "advanced/adv_24_408_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3275,7 +3683,8 @@
       "pt": "visto",
       "gl": "تأشيرة · فيستو",
       "normal": "advanced/adv_24_409.mp3",
-      "slow": "advanced/adv_24_409_slow.mp3"
+      "slow": "advanced/adv_24_409_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3283,7 +3692,8 @@
       "pt": "passagem",
       "gl": "تذكرة · پاساجيم",
       "normal": "advanced/adv_24_410.mp3",
-      "slow": "advanced/adv_24_410_slow.mp3"
+      "slow": "advanced/adv_24_410_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3291,7 +3701,8 @@
       "pt": "embarque",
       "gl": "صعود الطائرة · إيمبارکي",
       "normal": "advanced/adv_24_411.mp3",
-      "slow": "advanced/adv_24_411_slow.mp3"
+      "slow": "advanced/adv_24_411_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3299,7 +3710,8 @@
       "pt": "bagagem",
       "gl": "شنط · باگاجيم",
       "normal": "advanced/adv_24_412.mp3",
-      "slow": "advanced/adv_24_412_slow.mp3"
+      "slow": "advanced/adv_24_412_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3307,7 +3719,8 @@
       "pt": "bagagem de mão",
       "gl": "شنطة اليد · باگاجيم دي ماوْن",
       "normal": "advanced/adv_24_413.mp3",
-      "slow": "advanced/adv_24_413_slow.mp3"
+      "slow": "advanced/adv_24_413_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3315,7 +3728,8 @@
       "pt": "check-in",
       "gl": "كاونتر تسجيل الوصول · تشيك-إن",
       "normal": "advanced/adv_24_414.mp3",
-      "slow": "advanced/adv_24_414_slow.mp3"
+      "slow": "advanced/adv_24_414_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3323,7 +3737,8 @@
       "pt": "portão de embarque",
       "gl": "بوابة الصعود · پورتاوْن دي إيمبارکي",
       "normal": "advanced/adv_24_415.mp3",
-      "slow": "advanced/adv_24_415_slow.mp3"
+      "slow": "advanced/adv_24_415_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3331,7 +3746,8 @@
       "pt": "voo",
       "gl": "رحلة طيران · فوو",
       "normal": "advanced/adv_24_416.mp3",
-      "slow": "advanced/adv_24_416_slow.mp3"
+      "slow": "advanced/adv_24_416_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3339,7 +3755,8 @@
       "pt": "atraso",
       "gl": "تأخير · أتراسو",
       "normal": "advanced/adv_24_417.mp3",
-      "slow": "advanced/adv_24_417_slow.mp3"
+      "slow": "advanced/adv_24_417_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3347,7 +3764,8 @@
       "pt": "cancelado",
       "gl": "ملغي · کانسيلادو",
       "normal": "advanced/adv_24_418.mp3",
-      "slow": "advanced/adv_24_418_slow.mp3"
+      "slow": "advanced/adv_24_418_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3355,7 +3773,8 @@
       "pt": "alfândega",
       "gl": "جمارك · ألفاندگا",
       "normal": "advanced/adv_24_419.mp3",
-      "slow": "advanced/adv_24_419_slow.mp3"
+      "slow": "advanced/adv_24_419_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3363,7 +3782,8 @@
       "pt": "Tenho algo a declarar",
       "gl": "عندي حاجة أعلن عنها · تينيو ألگو أ ديکلارار",
       "normal": "advanced/adv_24_420.mp3",
-      "slow": "advanced/adv_24_420_slow.mp3"
+      "slow": "advanced/adv_24_420_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3371,7 +3791,8 @@
       "pt": "Não tenho nada a declarar",
       "gl": "معنديش حاجة أعلن عنها · ناوْن تينيو نادا أ ديکلارار",
       "normal": "advanced/adv_24_421.mp3",
-      "slow": "advanced/adv_24_421_slow.mp3"
+      "slow": "advanced/adv_24_421_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3379,7 +3800,8 @@
       "pt": "O ar condicionado não funciona",
       "gl": "التكييف مش شغال · أو أر کوندیسيونادو ناوْن فونسيونا",
       "normal": "advanced/adv_25_422.mp3",
-      "slow": "advanced/adv_25_422_slow.mp3"
+      "slow": "advanced/adv_25_422_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3387,7 +3809,8 @@
       "pt": "Não tem água quente",
       "gl": "مفيش مية سخنة · ناوْن تیم آگوا کینتي",
       "normal": "advanced/adv_25_423.mp3",
-      "slow": "advanced/adv_25_423_slow.mp3"
+      "slow": "advanced/adv_25_423_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3395,7 +3818,8 @@
       "pt": "Quero mudar de quarto",
       "gl": "عايز أغيّر أوضة · کیرو مودار دي کوارتو",
       "normal": "advanced/adv_25_424.mp3",
-      "slow": "advanced/adv_25_424_slow.mp3"
+      "slow": "advanced/adv_25_424_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3403,7 +3827,8 @@
       "pt": "A chave não funciona",
       "gl": "المفتاح مش شغال · أ شاوي ناوْن فونسيونا",
       "normal": "advanced/adv_25_425.mp3",
-      "slow": "advanced/adv_25_425_slow.mp3"
+      "slow": "advanced/adv_25_425_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3411,7 +3836,8 @@
       "pt": "Podem limpar o quarto?",
       "gl": "ممكن ينضفوا الأوضة؟ · پودم لیمپار أو کوارتو؟",
       "normal": "advanced/adv_25_426.mp3",
-      "slow": "advanced/adv_25_426_slow.mp3"
+      "slow": "advanced/adv_25_426_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3419,7 +3845,8 @@
       "pt": "A que horas é o check-out?",
       "gl": "تسليم الأوضة الساعة كام؟ · أ کي أوراس إيه أو تشیك-أوت؟",
       "normal": "advanced/adv_25_427.mp3",
-      "slow": "advanced/adv_25_427_slow.mp3"
+      "slow": "advanced/adv_25_427_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3427,7 +3854,8 @@
       "pt": "reclamação",
       "gl": "شكوى · ریکلاماساوْن",
       "normal": "advanced/adv_25_428.mp3",
-      "slow": "advanced/adv_25_428_slow.mp3"
+      "slow": "advanced/adv_25_428_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3435,7 +3863,8 @@
       "pt": "reserva",
       "gl": "حجز · ریزیرفا",
       "normal": "advanced/adv_25_429.mp3",
-      "slow": "advanced/adv_25_429_slow.mp3"
+      "slow": "advanced/adv_25_429_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3443,7 +3872,8 @@
       "pt": "médico",
       "gl": "دكتور · میدجيکو",
       "normal": "advanced/adv_26_430.mp3",
-      "slow": "advanced/adv_26_430_slow.mp3"
+      "slow": "advanced/adv_26_430_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3451,7 +3881,8 @@
       "pt": "hospital",
       "gl": "مستشفى · أوسپيتال",
       "normal": "advanced/adv_26_431.mp3",
-      "slow": "advanced/adv_26_431_slow.mp3"
+      "slow": "advanced/adv_26_431_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3459,7 +3890,8 @@
       "pt": "farmácia",
       "gl": "صيدلية · فارماسيا",
       "normal": "advanced/adv_26_432.mp3",
-      "slow": "advanced/adv_26_432_slow.mp3"
+      "slow": "advanced/adv_26_432_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3467,7 +3899,8 @@
       "pt": "dor",
       "gl": "ألم · دور",
       "normal": "advanced/adv_26_433.mp3",
-      "slow": "advanced/adv_26_433_slow.mp3"
+      "slow": "advanced/adv_26_433_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3475,7 +3908,8 @@
       "pt": "Preciso de um médico",
       "gl": "محتاج دكتور · پریسیزو دي أوم میدجيکو",
       "normal": "advanced/adv_26_434.mp3",
-      "slow": "advanced/adv_26_434_slow.mp3"
+      "slow": "advanced/adv_26_434_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3483,7 +3917,8 @@
       "pt": "Não estou bem",
       "gl": "مش حاسس إني كويس · ناوْن إستو بیم",
       "normal": "advanced/adv_26_435.mp3",
-      "slow": "advanced/adv_26_435_slow.mp3"
+      "slow": "advanced/adv_26_435_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3491,7 +3926,8 @@
       "pt": "febre",
       "gl": "سخونية · فیبري",
       "normal": "advanced/adv_26_436.mp3",
-      "slow": "advanced/adv_26_436_slow.mp3"
+      "slow": "advanced/adv_26_436_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3499,7 +3935,8 @@
       "pt": "dor de cabeça",
       "gl": "صداع · دور دي کابیسا",
       "normal": "advanced/adv_26_437.mp3",
-      "slow": "advanced/adv_26_437_slow.mp3"
+      "slow": "advanced/adv_26_437_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3507,7 +3944,8 @@
       "pt": "dor de estômago",
       "gl": "وجع معدة · دور دي إستوماگو",
       "normal": "advanced/adv_26_438.mp3",
-      "slow": "advanced/adv_26_438_slow.mp3"
+      "slow": "advanced/adv_26_438_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3515,7 +3953,8 @@
       "pt": "receita médica",
       "gl": "روشتة · ریسیتا میدجيکا",
       "normal": "advanced/adv_26_439.mp3",
-      "slow": "advanced/adv_26_439_slow.mp3"
+      "slow": "advanced/adv_26_439_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3523,7 +3962,8 @@
       "pt": "ambulância",
       "gl": "إسعاف · أمبولانسیا",
       "normal": "advanced/adv_26_440.mp3",
-      "slow": "advanced/adv_26_440_slow.mp3"
+      "slow": "advanced/adv_26_440_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3531,7 +3971,8 @@
       "pt": "emergência",
       "gl": "طوارئ · إمرجینسیا",
       "normal": "advanced/adv_26_441.mp3",
-      "slow": "advanced/adv_26_441_slow.mp3"
+      "slow": "advanced/adv_26_441_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3539,7 +3980,8 @@
       "pt": "Chame uma ambulância!",
       "gl": "اطلب إسعاف! · شامي أوما أمبولانسیا!",
       "normal": "advanced/adv_26_442.mp3",
-      "slow": "advanced/adv_26_442_slow.mp3"
+      "slow": "advanced/adv_26_442_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3547,7 +3989,8 @@
       "pt": "alergia",
       "gl": "حساسية · ألیرجیا",
       "normal": "advanced/adv_26_443.mp3",
-      "slow": "advanced/adv_26_443_slow.mp3"
+      "slow": "advanced/adv_26_443_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3555,7 +3998,8 @@
       "pt": "remédio",
       "gl": "دوا · ریمیدیو",
       "normal": "advanced/adv_26_444.mp3",
-      "slow": "advanced/adv_26_444_slow.mp3"
+      "slow": "advanced/adv_26_444_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3563,7 +4007,8 @@
       "pt": "banco",
       "gl": "بنك · بانکو",
       "normal": "advanced/adv_27_445.mp3",
-      "slow": "advanced/adv_27_445_slow.mp3"
+      "slow": "advanced/adv_27_445_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3571,7 +4016,8 @@
       "pt": "câmbio",
       "gl": "تغيير عملة · کامبیو",
       "normal": "advanced/adv_27_446.mp3",
-      "slow": "advanced/adv_27_446_slow.mp3"
+      "slow": "advanced/adv_27_446_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3579,7 +4025,8 @@
       "pt": "sacar dinheiro",
       "gl": "سحب فلوس · ساکار دینیيرو",
       "normal": "advanced/adv_27_447.mp3",
-      "slow": "advanced/adv_27_447_slow.mp3"
+      "slow": "advanced/adv_27_447_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3587,7 +4034,8 @@
       "pt": "cartão de crédito",
       "gl": "كارت ائتمان · کارتاوْن دي کریدیتو",
       "normal": "advanced/adv_27_448.mp3",
-      "slow": "advanced/adv_27_448_slow.mp3"
+      "slow": "advanced/adv_27_448_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3595,7 +4043,8 @@
       "pt": "caixa eletrônico",
       "gl": "ماكينة صراف آلي · کايشا إليترونيكو",
       "normal": "advanced/adv_27_449.mp3",
-      "slow": "advanced/adv_27_449_slow.mp3"
+      "slow": "advanced/adv_27_449_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3603,7 +4052,8 @@
       "pt": "delegacia de polícia",
       "gl": "قسم شرطة · دیليگاسيا دي پولیسیا",
       "normal": "advanced/adv_27_450.mp3",
-      "slow": "advanced/adv_27_450_slow.mp3"
+      "slow": "advanced/adv_27_450_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3611,7 +4061,8 @@
       "pt": "Fui roubado",
       "gl": "اتسرقت · فوي روبادو",
       "normal": "advanced/adv_27_451.mp3",
-      "slow": "advanced/adv_27_451_slow.mp3"
+      "slow": "advanced/adv_27_451_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3619,7 +4070,8 @@
       "pt": "Perdi o meu passaporte",
       "gl": "ضيّعت جواز سفري · پیردي أو میو پاسّاپورتشي",
       "normal": "advanced/adv_27_452.mp3",
-      "slow": "advanced/adv_27_452_slow.mp3"
+      "slow": "advanced/adv_27_452_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3627,7 +4079,8 @@
       "pt": "documento de identidade",
       "gl": "إثبات هوية · دوکومینتو دي إیدنتیدادي",
       "normal": "advanced/adv_27_453.mp3",
-      "slow": "advanced/adv_27_453_slow.mp3"
+      "slow": "advanced/adv_27_453_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3635,7 +4088,8 @@
       "pt": "embaixada",
       "gl": "سفارة · إمباشادا",
       "normal": "advanced/adv_27_454.mp3",
-      "slow": "advanced/adv_27_454_slow.mp3"
+      "slow": "advanced/adv_27_454_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3643,7 +4097,8 @@
       "pt": "alugar um carro",
       "gl": "يأجّر عربية · ألوگار أوم کارّو",
       "normal": "advanced/adv_28_455.mp3",
-      "slow": "advanced/adv_28_455_slow.mp3"
+      "slow": "advanced/adv_28_455_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3651,7 +4106,8 @@
       "pt": "carteira de motorista",
       "gl": "رخصة قيادة · کارتیرا دي موتوریستا",
       "normal": "advanced/adv_28_456.mp3",
-      "slow": "advanced/adv_28_456_slow.mp3"
+      "slow": "advanced/adv_28_456_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3659,7 +4115,8 @@
       "pt": "seguro",
       "gl": "تأمين · سیگورو",
       "normal": "advanced/adv_28_457.mp3",
-      "slow": "advanced/adv_28_457_slow.mp3"
+      "slow": "advanced/adv_28_457_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3667,7 +4124,8 @@
       "pt": "gasolina",
       "gl": "بنزين · گازولینا",
       "normal": "advanced/adv_28_458.mp3",
-      "slow": "advanced/adv_28_458_slow.mp3"
+      "slow": "advanced/adv_28_458_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3675,7 +4133,8 @@
       "pt": "estacionamento",
       "gl": "موقف عربيات · إستاسیونامنتو",
       "normal": "advanced/adv_28_459.mp3",
-      "slow": "advanced/adv_28_459_slow.mp3"
+      "slow": "advanced/adv_28_459_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3683,7 +4142,8 @@
       "pt": "Vire à direita",
       "gl": "لف يمين/شمال · فیري أ دیریتا/إسکیردا",
       "normal": "advanced/adv_28_460.mp3",
-      "slow": "advanced/adv_28_460_slow.mp3"
+      "slow": "advanced/adv_28_460_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3691,7 +4151,8 @@
       "pt": "esquerda",
       "gl": "لف يمين/شمال · فیري أ دیریتا/إسکیردا",
       "normal": "advanced/adv_28_461.mp3",
-      "slow": "advanced/adv_28_461_slow.mp3"
+      "slow": "advanced/adv_28_461_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3699,7 +4160,8 @@
       "pt": "Siga em frente",
       "gl": "كمّل دُغري · سیگا إم فرنتشي",
       "normal": "advanced/adv_28_462.mp3",
-      "slow": "advanced/adv_28_462_slow.mp3"
+      "slow": "advanced/adv_28_462_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3707,7 +4169,8 @@
       "pt": "semáforo",
       "gl": "إشارة مرور · سیمافورو",
       "normal": "advanced/adv_28_463.mp3",
-      "slow": "advanced/adv_28_463_slow.mp3"
+      "slow": "advanced/adv_28_463_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3715,7 +4178,8 @@
       "pt": "rotatória",
       "gl": "دوّار · روتاتوریا",
       "normal": "advanced/adv_28_464.mp3",
-      "slow": "advanced/adv_28_464_slow.mp3"
+      "slow": "advanced/adv_28_464_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3723,7 +4187,8 @@
       "pt": "rodovia",
       "gl": "طريق سريع · رودوفیا",
       "normal": "advanced/adv_28_465.mp3",
-      "slow": "advanced/adv_28_465_slow.mp3"
+      "slow": "advanced/adv_28_465_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3731,7 +4196,8 @@
       "pt": "pedágio",
       "gl": "رسوم طريق · پیداجيو",
       "normal": "advanced/adv_28_466.mp3",
-      "slow": "advanced/adv_28_466_slow.mp3"
+      "slow": "advanced/adv_28_466_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3739,7 +4205,8 @@
       "pt": "metrô",
       "gl": "مترو · میترو",
       "normal": "advanced/adv_28_467.mp3",
-      "slow": "advanced/adv_28_467_slow.mp3"
+      "slow": "advanced/adv_28_467_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3747,7 +4214,8 @@
       "pt": "estação",
       "gl": "محطة · إستاساوْن",
       "normal": "advanced/adv_28_468.mp3",
-      "slow": "advanced/adv_28_468_slow.mp3"
+      "slow": "advanced/adv_28_468_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3755,7 +4223,8 @@
       "pt": "Pode fazer um desconto?",
       "gl": "ممكن تعمل خصم؟ · پودي فازیر أوم دیسکونتو؟",
       "normal": "advanced/adv_29_469.mp3",
-      "slow": "advanced/adv_29_469_slow.mp3"
+      "slow": "advanced/adv_29_469_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3763,7 +4232,8 @@
       "pt": "Está muito caro",
       "gl": "غالي أوي · إستا مویتو کارو",
       "normal": "advanced/adv_29_470.mp3",
-      "slow": "advanced/adv_29_470_slow.mp3"
+      "slow": "advanced/adv_29_470_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3771,7 +4241,8 @@
       "pt": "promoção",
       "gl": "عرض · پروموساوْن",
       "normal": "advanced/adv_29_471.mp3",
-      "slow": "advanced/adv_29_471_slow.mp3"
+      "slow": "advanced/adv_29_471_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3779,7 +4250,8 @@
       "pt": "nota fiscal",
       "gl": "فاتورة · نوتا فیسکال",
       "normal": "advanced/adv_29_472.mp3",
-      "slow": "advanced/adv_29_472_slow.mp3"
+      "slow": "advanced/adv_29_472_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3787,7 +4259,8 @@
       "pt": "reunião",
       "gl": "اجتماع · ریونیاوْن",
       "normal": "advanced/adv_29_473.mp3",
-      "slow": "advanced/adv_29_473_slow.mp3"
+      "slow": "advanced/adv_29_473_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3795,7 +4268,8 @@
       "pt": "negócio",
       "gl": "صفقة/بيزنس · نیگوسیو",
       "normal": "advanced/adv_29_474.mp3",
-      "slow": "advanced/adv_29_474_slow.mp3"
+      "slow": "advanced/adv_29_474_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3803,7 +4277,8 @@
       "pt": "empresa",
       "gl": "شركة · إمپرزا",
       "normal": "advanced/adv_29_475.mp3",
-      "slow": "advanced/adv_29_475_slow.mp3"
+      "slow": "advanced/adv_29_475_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3811,7 +4286,8 @@
       "pt": "cliente",
       "gl": "عميل · کلیینتشي",
       "normal": "advanced/adv_29_476.mp3",
-      "slow": "advanced/adv_29_476_slow.mp3"
+      "slow": "advanced/adv_29_476_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3819,7 +4295,8 @@
       "pt": "contrato",
       "gl": "عقد · کونتراتو",
       "normal": "advanced/adv_29_477.mp3",
-      "slow": "advanced/adv_29_477_slow.mp3"
+      "slow": "advanced/adv_29_477_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3827,7 +4304,8 @@
       "pt": "prazo",
       "gl": "ميعاد نهائي · پرازو",
       "normal": "advanced/adv_29_478.mp3",
-      "slow": "advanced/adv_29_478_slow.mp3"
+      "slow": "advanced/adv_29_478_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3835,7 +4313,8 @@
       "pt": "Quem não chora, não mama",
       "gl": "لازم تطلب/تتحرك عشان تاخد اللي عايزه",
       "normal": "advanced/adv_30_479.mp3",
-      "slow": "advanced/adv_30_479_slow.mp3"
+      "slow": "advanced/adv_30_479_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3843,7 +4322,8 @@
       "pt": "Pagar o pato",
       "gl": "يتحمّل ذنب حاجة مش غلطته",
       "normal": "advanced/adv_30_480.mp3",
-      "slow": "advanced/adv_30_480_slow.mp3"
+      "slow": "advanced/adv_30_480_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3851,7 +4331,8 @@
       "pt": "Encher linguiça",
       "gl": "يضيّع وقت في كلام فاضي / يطوّل الموضوع من غير داعي",
       "normal": "advanced/adv_30_481.mp3",
-      "slow": "advanced/adv_30_481_slow.mp3"
+      "slow": "advanced/adv_30_481_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3859,7 +4340,8 @@
       "pt": "Dar um jeito",
       "gl": "يلاقي حل بديل بسرعة (مفهوم «الجيتو» البرازيلي الشهير)",
       "normal": "advanced/adv_30_482.mp3",
-      "slow": "advanced/adv_30_482_slow.mp3"
+      "slow": "advanced/adv_30_482_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3867,7 +4349,8 @@
       "pt": "Ficar de olho",
       "gl": "يخلي باله من حاجة / يراقبها",
       "normal": "advanced/adv_30_483.mp3",
-      "slow": "advanced/adv_30_483_slow.mp3"
+      "slow": "advanced/adv_30_483_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3875,7 +4358,8 @@
       "pt": "Quebrar o galho",
       "gl": "يساعد حد يحل مشكلة بشكل غير رسمي",
       "normal": "advanced/adv_30_484.mp3",
-      "slow": "advanced/adv_30_484_slow.mp3"
+      "slow": "advanced/adv_30_484_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3883,7 +4367,8 @@
       "pt": "Cair a ficha",
       "gl": "يفهم/يستوعب حاجة فجأة",
       "normal": "advanced/adv_30_485.mp3",
-      "slow": "advanced/adv_30_485_slow.mp3"
+      "slow": "advanced/adv_30_485_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3891,7 +4376,8 @@
       "pt": "Boa tarde, o meu voo para o Rio está atrasado?",
       "gl": "حوار — Passageiro",
       "normal": "advanced/adv_31_486.mp3",
-      "slow": "advanced/adv_31_486_slow.mp3"
+      "slow": "advanced/adv_31_486_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3899,7 +4385,8 @@
       "pt": "Sim, infelizmente está atrasado uma hora.",
       "gl": "حوار — Funcionário",
       "normal": "advanced/adv_31_487.mp3",
-      "slow": "advanced/adv_31_487_slow.mp3"
+      "slow": "advanced/adv_31_487_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3907,7 +4394,8 @@
       "pt": "Nossa! Vou perder a conexão para São Paulo?",
       "gl": "حوار — Passageiro",
       "normal": "advanced/adv_31_488.mp3",
-      "slow": "advanced/adv_31_488_slow.mp3"
+      "slow": "advanced/adv_31_488_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3915,7 +4403,8 @@
       "pt": "Fica tranquilo, já reorganizamos a sua viagem.",
       "gl": "حوار — Funcionário",
       "normal": "advanced/adv_31_489.mp3",
-      "slow": "advanced/adv_31_489_slow.mp3"
+      "slow": "advanced/adv_31_489_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3923,7 +4412,8 @@
       "pt": "Desculpa, o ar condicionado do meu quarto não funciona.",
       "gl": "حوار — Hóspede",
       "normal": "advanced/adv_31_490.mp3",
-      "slow": "advanced/adv_31_490_slow.mp3"
+      "slow": "advanced/adv_31_490_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3931,7 +4421,8 @@
       "pt": "Sinto muito. Vou mandar alguém já.",
       "gl": "حوار — Recepção",
       "normal": "advanced/adv_31_491.mp3",
-      "slow": "advanced/adv_31_491_slow.mp3"
+      "slow": "advanced/adv_31_491_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3939,7 +4430,8 @@
       "pt": "Valeu. Eu também queria trocar de quarto, se der.",
       "gl": "حوار — Hóspede",
       "normal": "advanced/adv_31_492.mp3",
-      "slow": "advanced/adv_31_492_slow.mp3"
+      "slow": "advanced/adv_31_492_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3947,7 +4439,8 @@
       "pt": "Claro, vou verificar a disponibilidade.",
       "gl": "حوار — Recepção",
       "normal": "advanced/adv_31_493.mp3",
-      "slow": "advanced/adv_31_493_slow.mp3"
+      "slow": "advanced/adv_31_493_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3955,7 +4448,8 @@
       "pt": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
       "gl": "حوار — Cliente",
       "normal": "advanced/adv_31_494.mp3",
-      "slow": "advanced/adv_31_494_slow.mp3"
+      "slow": "advanced/adv_31_494_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3963,7 +4457,8 @@
       "pt": "Há quanto tempo você está com esses sintomas?",
       "gl": "حوار — Farmacêutico",
       "normal": "advanced/adv_31_495.mp3",
-      "slow": "advanced/adv_31_495_slow.mp3"
+      "slow": "advanced/adv_31_495_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3971,7 +4466,8 @@
       "pt": "Desde ontem à noite.",
       "gl": "حوار — Cliente",
       "normal": "advanced/adv_31_496.mp3",
-      "slow": "advanced/adv_31_496_slow.mp3"
+      "slow": "advanced/adv_31_496_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3979,7 +4475,8 @@
       "pt": "Toma esse remédio de oito em oito horas.",
       "gl": "حوار — Farmacêutico",
       "normal": "advanced/adv_31_497.mp3",
-      "slow": "advanced/adv_31_497_slow.mp3"
+      "slow": "advanced/adv_31_497_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3987,7 +4484,8 @@
       "pt": "Eu queria alugar um carro por três dias.",
       "gl": "حوار — Cliente",
       "normal": "advanced/adv_31_498.mp3",
-      "slow": "advanced/adv_31_498_slow.mp3"
+      "slow": "advanced/adv_31_498_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -3995,7 +4493,8 @@
       "pt": "Claro. Posso ver a sua carteira de motorista, por favor?",
       "gl": "حوار — Funcionário",
       "normal": "advanced/adv_31_499.mp3",
-      "slow": "advanced/adv_31_499_slow.mp3"
+      "slow": "advanced/adv_31_499_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4003,7 +4502,8 @@
       "pt": "Aqui está. O seguro está incluído?",
       "gl": "حوار — Cliente",
       "normal": "advanced/adv_31_500.mp3",
-      "slow": "advanced/adv_31_500_slow.mp3"
+      "slow": "advanced/adv_31_500_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4011,7 +4511,8 @@
       "pt": "Está sim, o seguro básico já vem incluído.",
       "gl": "حوار — Funcionário",
       "normal": "advanced/adv_31_501.mp3",
-      "slow": "advanced/adv_31_501_slow.mp3"
+      "slow": "advanced/adv_31_501_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4019,7 +4520,8 @@
       "pt": "Desculpa, como eu chego no Pão de Açúcar?",
       "gl": "حوار — Turista",
       "normal": "advanced/adv_31_502.mp3",
-      "slow": "advanced/adv_31_502_slow.mp3"
+      "slow": "advanced/adv_31_502_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4027,7 +4529,8 @@
       "pt": "Siga em frente e depois vire à direita na segunda rua.",
       "gl": "حوار — Local",
       "normal": "advanced/adv_31_503.mp3",
-      "slow": "advanced/adv_31_503_slow.mp3"
+      "slow": "advanced/adv_31_503_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4035,7 +4538,8 @@
       "pt": "É muito longe daqui?",
       "gl": "حوار — Turista",
       "normal": "advanced/adv_31_504.mp3",
-      "slow": "advanced/adv_31_504_slow.mp3"
+      "slow": "advanced/adv_31_504_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4043,15 +4547,17 @@
       "pt": "Não, fica uns dez minutos a pé.",
       "gl": "حوار — Local",
       "normal": "advanced/adv_31_505.mp3",
-      "slow": "advanced/adv_31_505_slow.mp3"
+      "slow": "advanced/adv_31_505_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٢١. نص قرائي للتدريب",
       "pt": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
-      "gl": "",
+      "gl": "أمس ذهبتُ إلى ريو دي جانيرو مع عائلتي. وصلنا إلى المطار في الصباح الباكر وأخذنا سيارة أجرة إلى الفندق. بعد تسجيل الدخول، ذهبنا إلى جبل باو دي أسوكار لنستمتع بالمنظر. وفي فترة بعد الظهر تمشّينا على شاطئ كوباكابانا وشربنا ماء جوز الهند. وفي المساء تناولنا العشاء في مطعم قريب من الشاطئ واستمعنا إلى موسيقى حية. كان يومًا لا يُنسى!",
       "normal": "advanced/adv_32_506.mp3",
-      "slow": "advanced/adv_32_506_slow.mp3"
+      "slow": "advanced/adv_32_506_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
@@ -4059,7 +4565,8 @@
       "pt": "pegar",
       "gl": "يمسك/ياخد (مواصلات)",
       "normal": "advanced/adv_32_507.mp3",
-      "slow": "advanced/adv_32_507_slow.mp3"
+      "slow": "advanced/adv_32_507_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4067,7 +4574,8 @@
       "pt": "Pão de Açúcar",
       "gl": "جبل بان دي أسوكار في ريو",
       "normal": "advanced/adv_32_508.mp3",
-      "slow": "advanced/adv_32_508_slow.mp3"
+      "slow": "advanced/adv_32_508_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4075,7 +4583,8 @@
       "pt": "suco de coco",
       "gl": "عصير جوز الهند",
       "normal": "advanced/adv_32_509.mp3",
-      "slow": "advanced/adv_32_509_slow.mp3"
+      "slow": "advanced/adv_32_509_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
@@ -4083,15 +4592,26 @@
       "pt": "inesquecível",
       "gl": "ما يُنسى",
       "normal": "advanced/adv_32_510.mp3",
-      "slow": "advanced/adv_32_510_slow.mp3"
+      "slow": "advanced/adv_32_510_slow.mp3",
+      "glProvenance": "r2-original-manifest"
     },
     {
       "level": "advanced",
       "section": "٢٢. خاتمة وخطوات نحو الطلاقة الكاملة",
       "pt": "Boa sorte e força!",
-      "gl": "",
+      "gl": "بالتوفيق والقوة!",
       "normal": "advanced/adv_33_511.mp3",
-      "slow": "advanced/adv_33_511_slow.mp3"
+      "slow": "advanced/adv_33_511_slow.mp3",
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     }
-  ]
+  ],
+  "sourceOriginalBlankArabicGlosses": 234,
+  "arabicGlossCoverage": {
+    "total": 511,
+    "withArabic": 511,
+    "r2OriginalGloss": 277,
+    "addedBySaferDiscountsDraft": 234,
+    "arabicLinguisticVerified": false,
+    "spokenAudioVerified": false
+  }
 }
