@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only; not pronunciation verification.",
+  "range": {
+    "start": 257,
+    "end": 272
+  },
+  "results": [
+    {
+      "path": "advanced/adv_16_257.mp3",
+      "transcript": "Tivemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_257_slow.mp3",
+      "transcript": "Ativemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_258.mp3",
+      "transcript": "Tiverão!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_258_slow.mp3",
+      "transcript": "Tá tiveram!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_259.mp3",
+      "transcript": "فزير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_259_slow.mp3",
+      "transcript": "O fazer.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_260.mp3",
+      "transcript": "Feioza!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_260_slow.mp3",
+      "transcript": "Eu fui isso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_261.mp3",
+      "transcript": "Facebook.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_261_slow.mp3",
+      "transcript": "on phrase.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_262.mp3",
+      "transcript": "Fizemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_262_slow.mp3",
+      "transcript": "Afriz demos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_263.mp3",
+      "transcript": "Fizera um.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_263_slow.mp3",
+      "transcript": "e frizeram",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_264.mp3",
+      "transcript": "Podier!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_264_slow.mp3",
+      "transcript": "تفضير",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_265.mp3",
+      "transcript": "Poo-jee!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_265_slow.mp3",
+      "transcript": "Apude-se!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_266.mp3",
+      "transcript": "Pojdzie!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_266_slow.mp3",
+      "transcript": "Apoche-se.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_267.mp3",
+      "transcript": "Podemos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_267_slow.mp3",
+      "transcript": "Apudemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_268.mp3",
+      "transcript": "puder uns.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_268_slow.mp3",
+      "transcript": "e puder uns.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_269.mp3",
+      "transcript": "Ketter.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_269_slow.mp3",
+      "transcript": "You can carry it out.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_270.mp3",
+      "transcript": "Keys.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_270_slow.mp3",
+      "transcript": "Unkeys.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_271.mp3",
+      "transcript": "Quisemos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_271_slow.mp3",
+      "transcript": "É casemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_272.mp3",
+      "transcript": "Que zeram!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_16_272_slow.mp3",
+      "transcript": "E que sera um?",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
