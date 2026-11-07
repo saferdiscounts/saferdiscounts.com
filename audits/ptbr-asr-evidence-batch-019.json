@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 305,
+    "end": 320
+  },
+  "results": [
+    {
+      "path": "advanced/adv_17_305.mp3",
+      "transcript": "Partíamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_305_slow.mp3",
+      "transcript": "e barratíamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_306.mp3",
+      "transcript": "Comemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_306_slow.mp3",
+      "transcript": "Acormi-mos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_307.mp3",
+      "transcript": "Falávermos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_307_slow.mp3",
+      "transcript": "e falávamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_308.mp3",
+      "transcript": "Batião.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_308_slow.mp3",
+      "transcript": "The Baratillo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_309.mp3",
+      "transcript": "¡Comíos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_309_slow.mp3",
+      "transcript": "Accombe your own.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_310.mp3",
+      "transcript": "Falavon!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_310_slow.mp3",
+      "transcript": "It's for a live-room.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_311.mp3",
+      "transcript": "Thank you very much.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_311_slow.mp3",
+      "transcript": "Nailed it us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_312.mp3",
+      "transcript": "Era músculo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_312_slow.mp3",
+      "transcript": "E éramos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_313.mp3",
+      "transcript": "Czyń, ja...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_313_slow.mp3",
+      "transcript": "Patrzyj niej.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_314.mp3",
+      "transcript": "Tchinyamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_314_slow.mp3",
+      "transcript": "Tachinha-mos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_315.mp3",
+      "transcript": "Vinha!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_315_slow.mp3",
+      "transcript": "В Виня!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_316.mp3",
+      "transcript": "Víneamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_316_slow.mp3",
+      "transcript": "A vinhamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_317.mp3",
+      "transcript": "Poo-n-yat!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_317_slow.mp3",
+      "transcript": "A pool of jazz.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_318.mp3",
+      "transcript": "Błynie mózg.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_318_slow.mp3",
+      "transcript": "Apluñemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_319.mp3",
+      "transcript": "Quando eu era criança, morava no caíro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_319_slow.mp3",
+      "transcript": "de quando eu era criança morava no caíro.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_320.mp3",
+      "transcript": "Ele trabalhava todos os dias.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_17_320_slow.mp3",
+      "transcript": "Ele trabalhava todos os dias.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
