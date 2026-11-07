@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 351,
+    "end": 363
+  },
+  "results": [
+    {
+      "path": "advanced/adv_20_351.mp3",
+      "transcript": "misciamo",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_351_slow.mp3",
+      "transcript": "Eu me chamo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_352.mp3",
+      "transcript": "Mi levanto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_352_slow.mp3",
+      "transcript": "To me, live on to.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_353.mp3",
+      "transcript": "Me, V-Store.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_353_slow.mp3",
+      "transcript": "Amei visto!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_354.mp3",
+      "transcript": "See Shama.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_354_slow.mp3",
+      "transcript": "עשי שרמה.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_355.mp3",
+      "transcript": "si levanta",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_355_slow.mp3",
+      "transcript": "e se levanta.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_356.mp3",
+      "transcript": "See you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_356_slow.mp3",
+      "transcript": "I'll see you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_357.mp3",
+      "transcript": "Nos chamamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_357_slow.mp3",
+      "transcript": "E nós se chamamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_358.mp3",
+      "transcript": "Nós levantamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_358_slow.mp3",
+      "transcript": "e nos levantamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_359.mp3",
+      "transcript": "Nos vestimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_359_slow.mp3",
+      "transcript": "Nos vestimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_360.mp3",
+      "transcript": "S'y charmant.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_360_slow.mp3",
+      "transcript": "Lá se chama um.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_361.mp3",
+      "transcript": "s'il est ventant.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_361_slow.mp3",
+      "transcript": "e se levantam.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_362.mp3",
+      "transcript": "See you next time!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_362_slow.mp3",
+      "transcript": "I'll see vesting!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_363.mp3",
+      "transcript": "Como você se chama?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_20_363_slow.mp3",
+      "transcript": "Como você se chama?",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
