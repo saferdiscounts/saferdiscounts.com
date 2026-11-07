@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "method": "Whisper Large V3 Turbo second ASR; not phonetic certification.",
+  "results": [
+    {
+      "item": 273,
+      "speed": "normal",
+      "path": "advanced/adv_16_273.mp3",
+      "transcript": "Saber.",
+      "duration": 0.89,
+      "expected": "saber",
+      "exactMatch": true
+    },
+    {
+      "item": 273,
+      "speed": "slow",
+      "path": "advanced/adv_16_273_slow.mp3",
+      "transcript": "Não saber.",
+      "duration": 1.103375,
+      "expected": "saber",
+      "exactMatch": false
+    },
+    {
+      "item": 274,
+      "speed": "normal",
+      "path": "advanced/adv_16_274.mp3",
+      "transcript": "So be.",
+      "duration": 0.8686875,
+      "expected": "soube",
+      "exactMatch": false
+    },
+    {
+      "item": 274,
+      "speed": "slow",
+      "path": "advanced/adv_16_274_slow.mp3",
+      "transcript": "So be it.",
+      "duration": 1.103375,
+      "expected": "soube",
+      "exactMatch": false
+    },
+    {
+      "item": 275,
+      "speed": "normal",
+      "path": "advanced/adv_16_275.mp3",
+      "transcript": "Soubemos.",
+      "duration": 1.082,
+      "expected": "soubemos",
+      "exactMatch": true
+    },
+    {
+      "item": 275,
+      "speed": "slow",
+      "path": "advanced/adv_16_275_slow.mp3",
+      "transcript": "É só o BEMOS.",
+      "duration": 1.3806875,
+      "expected": "soubemos",
+      "exactMatch": false
+    },
+    {
+      "item": 276,
+      "speed": "normal",
+      "path": "advanced/adv_16_276.mp3",
+      "transcript": "Souberam.",
+      "duration": 1.167375,
+      "expected": "souberam",
+      "exactMatch": true
+    },
+    {
+      "item": 276,
+      "speed": "slow",
+      "path": "advanced/adv_16_276_slow.mp3",
+      "transcript": "Se souberam.",
+      "duration": 1.423375,
+      "expected": "souberam",
+      "exactMatch": false
+    },
+    {
+      "item": 277,
+      "speed": "normal",
+      "path": "advanced/adv_16_277.mp3",
+      "transcript": "G's air.",
+      "duration": 0.975375,
+      "expected": "dizer",
+      "exactMatch": false
+    },
+    {
+      "item": 277,
+      "speed": "slow",
+      "path": "advanced/adv_16_277_slow.mp3",
+      "transcript": "Todd is there.",
+      "duration": 1.2526875,
+      "expected": "dizer",
+      "exactMatch": false
+    },
+    {
+      "item": 278,
+      "speed": "normal",
+      "path": "advanced/adv_16_278.mp3",
+      "transcript": "Diz isso.",
+      "duration": 0.954,
+      "expected": "disse",
+      "exactMatch": false
+    },
+    {
+      "item": 278,
+      "speed": "slow",
+      "path": "advanced/adv_16_278_slow.mp3",
+      "transcript": "Adivista, senhor.",
+      "duration": 1.231375,
+      "expected": "disse",
+      "exactMatch": false
+    },
+    {
+      "item": 279,
+      "speed": "normal",
+      "path": "advanced/adv_16_279.mp3",
+      "transcript": "Dissemos.",
+      "duration": 1.167375,
+      "expected": "dissemos",
+      "exactMatch": true
+    },
+    {
+      "item": 279,
+      "speed": "slow",
+      "path": "advanced/adv_16_279_slow.mp3",
+      "transcript": "Adissemos.",
+      "duration": 1.4446875,
+      "expected": "dissemos",
+      "exactMatch": false
+    },
+    {
+      "item": 280,
+      "speed": "normal",
+      "path": "advanced/adv_16_280.mp3",
+      "transcript": "Disseram.",
+      "duration": 1.167375,
+      "expected": "disseram",
+      "exactMatch": true
+    },
+    {
+      "item": 280,
+      "speed": "slow",
+      "path": "advanced/adv_16_280_slow.mp3",
+      "transcript": "Disseram",
+      "duration": 1.466,
+      "expected": "disseram",
+      "exactMatch": true
+    },
+    {
+      "item": 281,
+      "speed": "normal",
+      "path": "advanced/adv_16_281.mp3",
+      "transcript": "Ver.",
+      "duration": 0.7406875,
+      "expected": "ver",
+      "exactMatch": true
+    },
+    {
+      "item": 281,
+      "speed": "slow",
+      "path": "advanced/adv_16_281_slow.mp3",
+      "transcript": "a ver",
+      "duration": 0.954,
+      "expected": "ver",
+      "exactMatch": false
+    },
+    {
+      "item": 282,
+      "speed": "normal",
+      "path": "advanced/adv_16_282.mp3",
+      "transcript": "Wert.",
+      "duration": 0.722,
+      "expected": "vi",
+      "exactMatch": false
+    },
+    {
+      "item": 282,
+      "speed": "slow",
+      "path": "advanced/adv_16_282_slow.mp3",
+      "transcript": "I've read it.",
+      "duration": 0.911375,
+      "expected": "vi",
+      "exactMatch": false
+    },
+    {
+      "item": 283,
+      "speed": "normal",
+      "path": "advanced/adv_16_283.mp3",
+      "transcript": "View.",
+      "duration": 0.7406875,
+      "expected": "viu",
+      "exactMatch": false
+    },
+    {
+      "item": 283,
+      "speed": "slow",
+      "path": "advanced/adv_16_283_slow.mp3",
+      "transcript": "Avvio.",
+      "duration": 0.9326875,
+      "expected": "viu",
+      "exactMatch": false
+    },
+    {
+      "item": 284,
+      "speed": "normal",
+      "path": "advanced/adv_16_284.mp3",
+      "transcript": "Vimos",
+      "duration": 0.911375,
+      "expected": "vimos",
+      "exactMatch": true
+    },
+    {
+      "item": 284,
+      "speed": "slow",
+      "path": "advanced/adv_16_284_slow.mp3",
+      "transcript": "Abrimos.",
+      "duration": 1.1246875,
+      "expected": "vimos",
+      "exactMatch": false
+    },
+    {
+      "item": 285,
+      "speed": "normal",
+      "path": "advanced/adv_16_285.mp3",
+      "transcript": "Wiederum,",
+      "duration": 1.039375,
+      "expected": "viram",
+      "exactMatch": false
+    },
+    {
+      "item": 285,
+      "speed": "slow",
+      "path": "advanced/adv_16_285_slow.mp3",
+      "transcript": "Wiederheraus.",
+      "duration": 1.274,
+      "expected": "viram",
+      "exactMatch": false
+    },
+    {
+      "item": 286,
+      "speed": "normal",
+      "path": "advanced/adv_16_286.mp3",
+      "transcript": "Vi är där.",
+      "duration": 0.762,
+      "expected": "vir",
+      "exactMatch": false
+    },
+    {
+      "item": 286,
+      "speed": "slow",
+      "path": "advanced/adv_16_286_slow.mp3",
+      "transcript": "Auf Wiedersehen.",
+      "duration": 0.9966875,
+      "expected": "vir",
+      "exactMatch": false
+    },
+    {
+      "item": 287,
+      "speed": "normal",
+      "path": "advanced/adv_16_287.mp3",
+      "transcript": "Venha!",
+      "duration": 0.783375,
+      "expected": "vim",
+      "exactMatch": false
+    },
+    {
+      "item": 287,
+      "speed": "slow",
+      "path": "advanced/adv_16_287_slow.mp3",
+      "transcript": "A vinha.",
+      "duration": 0.9966875,
+      "expected": "vim",
+      "exactMatch": false
+    },
+    {
+      "item": 288,
+      "speed": "normal",
+      "path": "advanced/adv_16_288.mp3",
+      "transcript": "Véjó.",
+      "duration": 0.8046875,
+      "expected": "veio",
+      "exactMatch": false
+    },
+    {
+      "item": 288,
+      "speed": "slow",
+      "path": "advanced/adv_16_288_slow.mp3",
+      "transcript": "Veio",
+      "duration": 1.039375,
+      "expected": "veio",
+      "exactMatch": true
+    },
+    {
+      "item": 289,
+      "speed": "normal",
+      "path": "advanced/adv_16_289.mp3",
+      "transcript": "Viemos.",
+      "duration": 1.0606875,
+      "expected": "viemos",
+      "exactMatch": true
+    },
+    {
+      "item": 289,
+      "speed": "slow",
+      "path": "advanced/adv_16_289_slow.mp3",
+      "transcript": "Abriemos.",
+      "duration": 1.295375,
+      "expected": "viemos",
+      "exactMatch": false
+    },
+    {
+      "item": 290,
+      "speed": "normal",
+      "path": "advanced/adv_16_290.mp3",
+      "transcript": "Vieram.",
+      "duration": 1.082,
+      "expected": "vieram",
+      "exactMatch": true
+    },
+    {
+      "item": 290,
+      "speed": "slow",
+      "path": "advanced/adv_16_290_slow.mp3",
+      "transcript": "Vieram",
+      "duration": 1.53,
+      "expected": "vieram",
+      "exactMatch": true
+    },
+    {
+      "item": 291,
+      "speed": "normal",
+      "path": "advanced/adv_16_291.mp3",
+      "transcript": "Dari.",
+      "duration": 0.7406875,
+      "expected": "dar",
+      "exactMatch": false
+    },
+    {
+      "item": 291,
+      "speed": "slow",
+      "path": "advanced/adv_16_291_slow.mp3",
+      "transcript": "Zidars.",
+      "duration": 0.975375,
+      "expected": "dar",
+      "exactMatch": false
+    },
+    {
+      "item": 292,
+      "speed": "normal",
+      "path": "advanced/adv_16_292.mp3",
+      "transcript": "Dei.",
+      "duration": 0.762,
+      "expected": "dei",
+      "exactMatch": true
+    },
+    {
+      "item": 292,
+      "speed": "slow",
+      "path": "advanced/adv_16_292_slow.mp3",
+      "transcript": "Tadej!",
+      "duration": 0.9966875,
+      "expected": "dei",
+      "exactMatch": false
+    },
+    {
+      "item": 293,
+      "speed": "normal",
+      "path": "advanced/adv_16_293.mp3",
+      "transcript": "Deu.",
+      "duration": 0.762,
+      "expected": "deu",
+      "exactMatch": true
+    },
+    {
+      "item": 293,
+      "speed": "slow",
+      "path": "advanced/adv_16_293_slow.mp3",
+      "transcript": "Adéu.",
+      "duration": 0.9966875,
+      "expected": "deu",
+      "exactMatch": false
+    },
+    {
+      "item": 294,
+      "speed": "normal",
+      "path": "advanced/adv_16_294.mp3",
+      "transcript": "Demos.",
+      "duration": 0.911375,
+      "expected": "demos",
+      "exactMatch": true
+    },
+    {
+      "item": 294,
+      "speed": "slow",
+      "path": "advanced/adv_16_294_slow.mp3",
+      "transcript": "Tademos.",
+      "duration": 1.146,
+      "expected": "demos",
+      "exactMatch": false
+    },
+    {
+      "item": 295,
+      "speed": "normal",
+      "path": "advanced/adv_16_295.mp3",
+      "transcript": "that owns",
+      "duration": 1.039375,
+      "expected": "deram",
+      "exactMatch": false
+    },
+    {
+      "item": 295,
+      "speed": "slow",
+      "path": "advanced/adv_16_295_slow.mp3",
+      "transcript": "That it owns",
+      "duration": 1.359375,
+      "expected": "deram",
+      "exactMatch": false
+    },
+    {
+      "item": 296,
+      "speed": "normal",
+      "path": "advanced/adv_16_296.mp3",
+      "transcript": "¡Suscríbete!",
+      "duration": 0.7406875,
+      "expected": "pôr",
+      "exactMatch": false
+    },
+    {
+      "item": 296,
+      "speed": "slow",
+      "path": "advanced/adv_16_296_slow.mp3",
+      "transcript": "Report it.",
+      "duration": 0.954,
+      "expected": "pôr",
+      "exactMatch": false
+    },
+    {
+      "item": 297,
+      "speed": "normal",
+      "path": "advanced/adv_16_297.mp3",
+      "transcript": "Boozer.",
+      "duration": 0.783375,
+      "expected": "pus",
+      "exactMatch": false
+    },
+    {
+      "item": 297,
+      "speed": "slow",
+      "path": "advanced/adv_16_297_slow.mp3",
+      "transcript": "A booze.",
+      "duration": 1.039375,
+      "expected": "pus",
+      "exactMatch": false
+    },
+    {
+      "item": 298,
+      "speed": "normal",
+      "path": "advanced/adv_16_298.mp3",
+      "transcript": "policy",
+      "duration": 0.783375,
+      "expected": "pôs",
+      "exactMatch": false
+    },
+    {
+      "item": 298,
+      "speed": "slow",
+      "path": "advanced/adv_16_298_slow.mp3",
+      "transcript": "And pause.",
+      "duration": 1.018,
+      "expected": "pôs",
+      "exactMatch": false
+    }
+  ]
+}
