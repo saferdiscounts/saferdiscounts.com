@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Direct Cloudflare R2 object fetch + Workers AI Whisper",
+  "note": "Raw ASR evidence, not verified audio accuracy. Very short number utterances often misrecognized.",
+  "results": [
+    {
+      "path": "basic/bas_05_081.mp3",
+      "transcript": "Onze!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_081_slow.mp3",
+      "transcript": "Abone olmayı izleyin.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_082.mp3",
+      "transcript": "Don't worry.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_082_slow.mp3",
+      "transcript": "Hey, don'ts.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_083.mp3",
+      "transcript": "Too much.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_083_slow.mp3",
+      "transcript": "He's no man.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_084.mp3",
+      "transcript": "Dorsi",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_084_slow.mp3",
+      "transcript": "Adou ao Z.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_085.mp3",
+      "transcript": "Dois.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_085_slow.mp3",
+      "transcript": "Adóis.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_086.mp3",
+      "transcript": "Do us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_086_slow.mp3",
+      "transcript": "I do who is.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_087.mp3",
+      "transcript": "Três ícoles.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_087_slow.mp3",
+      "transcript": "Atreze.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_088.mp3",
+      "transcript": "Dores.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_088_slow.mp3",
+      "transcript": "A outra é isso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_089.mp3",
+      "transcript": "Quatorze.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_089_slow.mp3",
+      "transcript": "em quatorze.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_090.mp3",
+      "transcript": "コアツルー",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_090_slow.mp3",
+      "transcript": "イコアツル",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_091.mp3",
+      "transcript": "Kings it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_091_slow.mp3",
+      "transcript": "Aqui em Zé.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_092.mp3",
+      "transcript": "Cinco.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_092_slow.mp3",
+      "transcript": "Assim cool!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_093.mp3",
+      "transcript": "DSSA's.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_093_slow.mp3",
+      "transcript": "Um deserceis.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_094.mp3",
+      "transcript": "say so.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_094_slow.mp3",
+      "transcript": "I'll see you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_095.mp3",
+      "transcript": "This is at you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_095_slow.mp3",
+      "transcript": "Um descer sete-o.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_096.mp3",
+      "transcript": "Set you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_05_096_slow.mp3",
+      "transcript": "I'll say it to you.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
