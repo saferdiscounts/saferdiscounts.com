@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 objects + Workers AI Whisper",
+  "note": "Raw ASR results; short utterances can be misrecognized in other languages. No audio has been certified.",
+  "results": [
+    {
+      "path": "basic/bas_08_145.mp3",
+      "transcript": "It's failure.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_145_slow.mp3",
+      "transcript": "Afvilior.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_146.mp3",
+      "transcript": "Filia",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_146_slow.mp3",
+      "transcript": "Perfelia.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_147.mp3",
+      "transcript": "I will.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_147_slow.mp3",
+      "transcript": "and have rules.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_148.mp3",
+      "transcript": "Have a good day.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_148_slow.mp3",
+      "transcript": "and have a good day.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_149.mp3",
+      "transcript": "Marido.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_149_slow.mp3",
+      "transcript": "Lemaridos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_150.mp3",
+      "transcript": "Esposa.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_150_slow.mp3",
+      "transcript": "Весболзо!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_151.mp3",
+      "transcript": "muller",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_151_slow.mp3",
+      "transcript": "تمول ديار",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_152.mp3",
+      "transcript": "チオ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_152_slow.mp3",
+      "transcript": "私よ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_153.mp3",
+      "transcript": "See ya!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_08_153_slow.mp3",
+      "transcript": "I'll see you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_154.mp3",
+      "transcript": "Thumbs up!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_154_slow.mp3",
+      "transcript": "Keep the albums.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_155.mp3",
+      "transcript": "Sag mal!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_155_slow.mp3",
+      "transcript": "Is I good?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_156.mp3",
+      "transcript": "Cafézinho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_156_slow.mp3",
+      "transcript": "Acafizinho.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_157.mp3",
+      "transcript": "Shall.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_157_slow.mp3",
+      "transcript": "You shall.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_158.mp3",
+      "transcript": "So good.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_158_slow.mp3",
+      "transcript": "Слогой!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_159.mp3",
+      "transcript": "God-a-need.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_159_slow.mp3",
+      "transcript": "Look out, Anise.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_160.mp3",
+      "transcript": "Frank Good.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_09_160_slow.mp3",
+      "transcript": "Eu farango.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
