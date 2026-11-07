@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 direct object fetch + Workers AI Whisper",
+  "note": "ASR-only preliminary evidence; no final verification. Includes first advanced lesson files.",
+  "results": [
+    {
+      "path": "basic/bas_12_193.mp3",
+      "transcript": "São dois reais valeu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_12_193_slow.mp3",
+      "transcript": "São dois reais valeu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_12_194.mp3",
+      "transcript": "Valeu até mais.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_12_194_slow.mp3",
+      "transcript": "E valeu até mais.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_13_195.mp3",
+      "transcript": "Boa sorte!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_13_195_slow.mp3",
+      "transcript": "The Bulless are Hitchie.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_196.mp3",
+      "transcript": "Te vejo amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_196_slow.mp3",
+      "transcript": "Eu te vejo amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_197.mp3",
+      "transcript": "Vejo-te a manhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_197_slow.mp3",
+      "transcript": "Vejo-te amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_198.mp3",
+      "transcript": "אומי שם ועמד.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_198_slow.mp3",
+      "transcript": "Deus me chamo a medra.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_199.mp3",
+      "transcript": "שום מומי המד.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_199_slow.mp3",
+      "transcript": "Chamo-me, amei-te.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_200.mp3",
+      "transcript": "Ele se levanta sendo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_200_slow.mp3",
+      "transcript": "Ele se levanta cedo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_201.mp3",
+      "transcript": "Ele levanta a se cedo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_201_slow.mp3",
+      "transcript": "Ele levanta a se cedo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_202.mp3",
+      "transcript": "Because it's a song.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_202_slow.mp3",
+      "transcript": "What is this sound?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_203.mp3",
+      "transcript": "Exception.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_203_slow.mp3",
+      "transcript": "Essa é a prisão.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_204.mp3",
+      "transcript": "kontaktu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_204_slow.mp3",
+      "transcript": "De contato.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_205.mp3",
+      "transcript": "コンターツ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_205_slow.mp3",
+      "transcript": "e contato.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_206.mp3",
+      "transcript": "おちむ",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_14_206_slow.mp3",
+      "transcript": "A lot of shimu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_207.mp3",
+      "transcript": "Thank you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_207_slow.mp3",
+      "transcript": "Nailed.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_208.mp3",
+      "transcript": "Você!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_208_slow.mp3",
+      "transcript": "Eu vou ser.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
