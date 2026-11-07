@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Automatic transcription only; short isolated Portuguese words often misdetected as other languages. No recording certified or corrected.",
+  "results": [
+    {
+      "path": "advanced/adv_15_209.mp3",
+      "transcript": "Dei-lhe.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_209_slow.mp3",
+      "transcript": "Auxê-lo, lixo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_210.mp3",
+      "transcript": "Zeyla!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_210_slow.mp3",
+      "transcript": "Nailers.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_211.mp3",
+      "transcript": "Nos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_211_slow.mp3",
+      "transcript": "He knows.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_212.mp3",
+      "transcript": "Vocês!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_212_slow.mp3",
+      "transcript": "But what says?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_213.mp3",
+      "transcript": "Elyse.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_213_slow.mp3",
+      "transcript": "Ovelis.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_214.mp3",
+      "transcript": "Bye, Tzu.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_214_slow.mp3",
+      "transcript": "Die Partizu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_215.mp3",
+      "transcript": "Come with it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_215_slow.mp3",
+      "transcript": "Det kommer ut.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_216.mp3",
+      "transcript": "Follow",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_216_slow.mp3",
+      "transcript": "Desfile-lo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_217.mp3",
+      "transcript": "Bye to you!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_217_slow.mp3",
+      "transcript": "I'll bar the two.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_218.mp3",
+      "transcript": "Call me.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_218_slow.mp3",
+      "transcript": "You call me you.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_219.mp3",
+      "transcript": "File it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_219_slow.mp3",
+      "transcript": "If I'll live.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_220.mp3",
+      "transcript": "Partimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_220_slow.mp3",
+      "transcript": "A parte de Chimos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_221.mp3",
+      "transcript": "Comemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_221_slow.mp3",
+      "transcript": "É como vemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_222.mp3",
+      "transcript": "Falamos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_222_slow.mp3",
+      "transcript": "E falamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_223.mp3",
+      "transcript": "Nellus.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_223_slow.mp3",
+      "transcript": "e-mail us.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_224.mp3",
+      "transcript": "part of the team.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_15_224_slow.mp3",
+      "transcript": "to part of things.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
