@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "method": "Second-model ASR cross-check; does not certify pronunciation.",
+  "results": [
+    {
+      "item": 455,
+      "speed": "normal",
+      "path": "advanced/adv_28_455.mp3",
+      "transcript": "Alugar um carro.",
+      "duration": 1.4446875,
+      "expected": "alugar um carro",
+      "exactMatch": true
+    },
+    {
+      "item": 455,
+      "speed": "slow",
+      "path": "advanced/adv_28_455_slow.mp3",
+      "transcript": "Desalugar um carro",
+      "duration": 1.8926875,
+      "expected": "alugar um carro",
+      "exactMatch": false
+    },
+    {
+      "item": 456,
+      "speed": "normal",
+      "path": "advanced/adv_28_456.mp3",
+      "transcript": "Carteira de motorista.",
+      "duration": 1.807375,
+      "expected": "carteira de motorista",
+      "exactMatch": true
+    },
+    {
+      "item": 456,
+      "speed": "slow",
+      "path": "advanced/adv_28_456_slow.mp3",
+      "transcript": "Carteira de motorista.",
+      "duration": 2.5326875,
+      "expected": "carteira de motorista",
+      "exactMatch": true
+    },
+    {
+      "item": 457,
+      "speed": "normal",
+      "path": "advanced/adv_28_457.mp3",
+      "transcript": "Seguro.",
+      "duration": 1.039375,
+      "expected": "seguro",
+      "exactMatch": true
+    },
+    {
+      "item": 457,
+      "speed": "slow",
+      "path": "advanced/adv_28_457_slow.mp3",
+      "transcript": "Aseguro.",
+      "duration": 1.295375,
+      "expected": "seguro",
+      "exactMatch": false
+    },
+    {
+      "item": 458,
+      "speed": "normal",
+      "path": "advanced/adv_28_458.mp3",
+      "transcript": "Gasolina",
+      "duration": 1.146,
+      "expected": "gasolina",
+      "exactMatch": true
+    },
+    {
+      "item": 458,
+      "speed": "slow",
+      "path": "advanced/adv_28_458_slow.mp3",
+      "transcript": "Gasolinas",
+      "duration": 1.466,
+      "expected": "gasolina",
+      "exactMatch": false
+    },
+    {
+      "item": 459,
+      "speed": "normal",
+      "path": "advanced/adv_28_459.mp3",
+      "transcript": "Estacionamento.",
+      "duration": 1.487375,
+      "expected": "estacionamento",
+      "exactMatch": true
+    },
+    {
+      "item": 459,
+      "speed": "slow",
+      "path": "advanced/adv_28_459_slow.mp3",
+      "transcript": "Estacionamento",
+      "duration": 2.0846875,
+      "expected": "estacionamento",
+      "exactMatch": true
+    },
+    {
+      "item": 460,
+      "speed": "normal",
+      "path": "advanced/adv_28_460.mp3",
+      "transcript": "Viryadzireta.",
+      "duration": 1.359375,
+      "expected": "Vire à direita",
+      "exactMatch": false
+    },
+    {
+      "item": 460,
+      "speed": "slow",
+      "path": "advanced/adv_28_460_slow.mp3",
+      "transcript": "Não virem à direita.",
+      "duration": 1.9566875,
+      "expected": "Vire à direita",
+      "exactMatch": false
+    },
+    {
+      "item": 461,
+      "speed": "normal",
+      "path": "advanced/adv_28_461.mp3",
+      "transcript": "Эскерда.",
+      "duration": 1.039375,
+      "expected": "esquerda",
+      "exactMatch": false
+    },
+    {
+      "item": 461,
+      "speed": "slow",
+      "path": "advanced/adv_28_461_slow.mp3",
+      "transcript": "Ou esquerda.",
+      "duration": 1.338,
+      "expected": "esquerda",
+      "exactMatch": false
+    },
+    {
+      "item": 462,
+      "speed": "normal",
+      "path": "advanced/adv_28_462.mp3",
+      "transcript": "Siga em frente.",
+      "duration": 1.4446875,
+      "expected": "Siga em frente",
+      "exactMatch": true
+    },
+    {
+      "item": 462,
+      "speed": "slow",
+      "path": "advanced/adv_28_462_slow.mp3",
+      "transcript": "Siga em frente.",
+      "duration": 1.999375,
+      "expected": "Siga em frente",
+      "exactMatch": true
+    },
+    {
+      "item": 463,
+      "speed": "normal",
+      "path": "advanced/adv_28_463.mp3",
+      "transcript": "Semáforo",
+      "duration": 1.082,
+      "expected": "semáforo",
+      "exactMatch": true
+    },
+    {
+      "item": 463,
+      "speed": "slow",
+      "path": "advanced/adv_28_463_slow.mp3",
+      "transcript": "E semáforo.",
+      "duration": 1.423375,
+      "expected": "semáforo",
+      "exactMatch": false
+    },
+    {
+      "item": 464,
+      "speed": "normal",
+      "path": "advanced/adv_28_464.mp3",
+      "transcript": "Quotatoria",
+      "duration": 1.21,
+      "expected": "rotatória",
+      "exactMatch": false
+    },
+    {
+      "item": 464,
+      "speed": "slow",
+      "path": "advanced/adv_28_464_slow.mp3",
+      "transcript": "¡Hotas teorías!",
+      "duration": 1.551375,
+      "expected": "rotatória",
+      "exactMatch": false
+    },
+    {
+      "item": 465,
+      "speed": "normal",
+      "path": "advanced/adv_28_465.mp3",
+      "transcript": "Rodovia",
+      "duration": 1.103375,
+      "expected": "rodovia",
+      "exactMatch": true
+    },
+    {
+      "item": 465,
+      "speed": "slow",
+      "path": "advanced/adv_28_465_slow.mp3",
+      "transcript": "Rodovia.",
+      "duration": 1.4446875,
+      "expected": "rodovia",
+      "exactMatch": true
+    },
+    {
+      "item": 466,
+      "speed": "normal",
+      "path": "advanced/adv_28_466.mp3",
+      "transcript": "Pedágio",
+      "duration": 1.082,
+      "expected": "pedágio",
+      "exactMatch": true
+    },
+    {
+      "item": 466,
+      "speed": "slow",
+      "path": "advanced/adv_28_466_slow.mp3",
+      "transcript": "Empedágio",
+      "duration": 1.338,
+      "expected": "pedágio",
+      "exactMatch": false
+    },
+    {
+      "item": 467,
+      "speed": "normal",
+      "path": "advanced/adv_28_467.mp3",
+      "transcript": "Metro.",
+      "duration": 0.954,
+      "expected": "metrô",
+      "exactMatch": true
+    },
+    {
+      "item": 467,
+      "speed": "slow",
+      "path": "advanced/adv_28_467_slow.mp3",
+      "transcript": "Demetro",
+      "duration": 1.21,
+      "expected": "metrô",
+      "exactMatch": false
+    },
+    {
+      "item": 468,
+      "speed": "normal",
+      "path": "advanced/adv_28_468.mp3",
+      "transcript": "Estação.",
+      "duration": 1.039375,
+      "expected": "estação",
+      "exactMatch": true
+    },
+    {
+      "item": 468,
+      "speed": "slow",
+      "path": "advanced/adv_28_468_slow.mp3",
+      "transcript": "E esta ação",
+      "duration": 1.359375,
+      "expected": "estação",
+      "exactMatch": false
+    },
+    {
+      "item": 469,
+      "speed": "normal",
+      "path": "advanced/adv_29_469.mp3",
+      "transcript": "Pode fazer um desconto.",
+      "duration": 1.871375,
+      "expected": "Pode fazer um desconto?",
+      "exactMatch": true
+    },
+    {
+      "item": 469,
+      "speed": "slow",
+      "path": "advanced/adv_29_469_slow.mp3",
+      "transcript": "Pode fazer um desconto.",
+      "duration": 2.639375,
+      "expected": "Pode fazer um desconto?",
+      "exactMatch": true
+    },
+    {
+      "item": 470,
+      "speed": "normal",
+      "path": "advanced/adv_29_470.mp3",
+      "transcript": "Está muito caro.",
+      "duration": 1.359375,
+      "expected": "Está muito caro",
+      "exactMatch": true
+    },
+    {
+      "item": 470,
+      "speed": "slow",
+      "path": "advanced/adv_29_470_slow.mp3",
+      "transcript": "Está muito caro.",
+      "duration": 1.8926875,
+      "expected": "Está muito caro",
+      "exactMatch": true
+    },
+    {
+      "item": 471,
+      "speed": "normal",
+      "path": "advanced/adv_29_471.mp3",
+      "transcript": "Promoção.",
+      "duration": 1.167375,
+      "expected": "promoção",
+      "exactMatch": true
+    },
+    {
+      "item": 471,
+      "speed": "slow",
+      "path": "advanced/adv_29_471_slow.mp3",
+      "transcript": "E promosição.",
+      "duration": 1.551375,
+      "expected": "promoção",
+      "exactMatch": false
+    },
+    {
+      "item": 472,
+      "speed": "normal",
+      "path": "advanced/adv_29_472.mp3",
+      "transcript": "Nota Fiscal",
+      "duration": 1.2526875,
+      "expected": "nota fiscal",
+      "exactMatch": true
+    },
+    {
+      "item": 472,
+      "speed": "slow",
+      "path": "advanced/adv_29_472_slow.mp3",
+      "transcript": "Nota Fiscal",
+      "duration": 1.722,
+      "expected": "nota fiscal",
+      "exactMatch": true
+    },
+    {
+      "item": 473,
+      "speed": "normal",
+      "path": "advanced/adv_29_473.mp3",
+      "transcript": "Essa é a união.",
+      "duration": 1.1886875,
+      "expected": "reunião",
+      "exactMatch": false
+    },
+    {
+      "item": 473,
+      "speed": "slow",
+      "path": "advanced/adv_29_473_slow.mp3",
+      "transcript": "Terceira unidão.",
+      "duration": 1.487375,
+      "expected": "reunião",
+      "exactMatch": false
+    },
+    {
+      "item": 474,
+      "speed": "normal",
+      "path": "advanced/adv_29_474.mp3",
+      "transcript": "Negócio",
+      "duration": 1.167375,
+      "expected": "negócio",
+      "exactMatch": true
+    },
+    {
+      "item": 474,
+      "speed": "slow",
+      "path": "advanced/adv_29_474_slow.mp3",
+      "transcript": "Negócio",
+      "duration": 1.466,
+      "expected": "negócio",
+      "exactMatch": true
+    },
+    {
+      "item": 475,
+      "speed": "normal",
+      "path": "advanced/adv_29_475.mp3",
+      "transcript": "Empresa.",
+      "duration": 1.146,
+      "expected": "empresa",
+      "exactMatch": true
+    },
+    {
+      "item": 475,
+      "speed": "slow",
+      "path": "advanced/adv_29_475_slow.mp3",
+      "transcript": "Não tem empresa.",
+      "duration": 1.53,
+      "expected": "empresa",
+      "exactMatch": false
+    },
+    {
+      "item": 476,
+      "speed": "normal",
+      "path": "advanced/adv_29_476.mp3",
+      "transcript": "Client 2",
+      "duration": 1.0606875,
+      "expected": "cliente",
+      "exactMatch": false
+    },
+    {
+      "item": 476,
+      "speed": "slow",
+      "path": "advanced/adv_29_476_slow.mp3",
+      "transcript": "a client too",
+      "duration": 1.402,
+      "expected": "cliente",
+      "exactMatch": false
+    },
+    {
+      "item": 477,
+      "speed": "normal",
+      "path": "advanced/adv_29_477.mp3",
+      "transcript": "Contrato.",
+      "duration": 1.103375,
+      "expected": "contrato",
+      "exactMatch": true
+    },
+    {
+      "item": 477,
+      "speed": "slow",
+      "path": "advanced/adv_29_477_slow.mp3",
+      "transcript": "I won't try to.",
+      "duration": 1.402,
+      "expected": "contrato",
+      "exactMatch": false
+    },
+    {
+      "item": 478,
+      "speed": "normal",
+      "path": "advanced/adv_29_478.mp3",
+      "transcript": "Prazo.",
+      "duration": 0.9326875,
+      "expected": "prazo",
+      "exactMatch": true
+    },
+    {
+      "item": 478,
+      "speed": "slow",
+      "path": "advanced/adv_29_478_slow.mp3",
+      "transcript": "E prazo.",
+      "duration": 1.21,
+      "expected": "prazo",
+      "exactMatch": false
+    }
+  ]
+}
