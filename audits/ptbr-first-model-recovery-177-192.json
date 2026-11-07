@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "model": "@cf/openai/whisper",
+  "note": "Recovered missing original ASR observations; not pronunciation certification.",
+  "results": [
+    {
+      "item": 177,
+      "speed": "normal",
+      "path": "basic/bas_10_177.mp3",
+      "transcript": "Quero reservar um quarto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 177,
+      "speed": "slow",
+      "path": "basic/bas_10_177_slow.mp3",
+      "transcript": "Quero reservar um quarto.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 178,
+      "speed": "normal",
+      "path": "basic/bas_10_178.mp3",
+      "transcript": "Aqui hora sai o trem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 178,
+      "speed": "slow",
+      "path": "basic/bas_10_178_slow.mp3",
+      "transcript": "Aqui ordem saiu trem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 179,
+      "speed": "normal",
+      "path": "basic/bas_10_179.mp3",
+      "transcript": "Onde posso pegar um taxi?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 179,
+      "speed": "slow",
+      "path": "basic/bas_10_179_slow.mp3",
+      "transcript": "Londe posso pegar um taxi.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 180,
+      "speed": "normal",
+      "path": "basic/bas_11_180.mp3",
+      "transcript": "Beleza!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 180,
+      "speed": "slow",
+      "path": "basic/bas_11_180_slow.mp3",
+      "transcript": "É beleza!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 181,
+      "speed": "normal",
+      "path": "basic/bas_11_181.mp3",
+      "transcript": "Slig out.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 181,
+      "speed": "slow",
+      "path": "basic/bas_11_181_slow.mp3",
+      "transcript": "Liligow.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 182,
+      "speed": "normal",
+      "path": "basic/bas_11_182.mp3",
+      "transcript": "I'm not sick.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 182,
+      "speed": "slow",
+      "path": "basic/bas_11_182_slow.mp3",
+      "transcript": "being off the side.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 183,
+      "speed": "normal",
+      "path": "basic/bas_11_183.mp3",
+      "transcript": "Got it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 183,
+      "speed": "slow",
+      "path": "basic/bas_11_183_slow.mp3",
+      "transcript": "Igrares!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 184,
+      "speed": "normal",
+      "path": "basic/bas_11_184.mp3",
+      "transcript": "Cheap assing.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 184,
+      "speed": "slow",
+      "path": "basic/bas_11_184_slow.mp3",
+      "transcript": "A cheapo assing.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 185,
+      "speed": "normal",
+      "path": "basic/bas_11_185.mp3",
+      "transcript": "Pośred!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 185,
+      "speed": "slow",
+      "path": "basic/bas_11_185_slow.mp3",
+      "transcript": "Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-Buh-",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 186,
+      "speed": "normal",
+      "path": "basic/bas_11_186.mp3",
+      "transcript": "Ba-câne!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 186,
+      "speed": "slow",
+      "path": "basic/bas_11_186_slow.mp3",
+      "transcript": "E bacanas!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 187,
+      "speed": "normal",
+      "path": "basic/bas_11_187.mp3",
+      "transcript": "Mano!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 187,
+      "speed": "slow",
+      "path": "basic/bas_11_187_slow.mp3",
+      "transcript": "Y manos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 188,
+      "speed": "normal",
+      "path": "basic/bas_11_188.mp3",
+      "transcript": "Karimba.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 188,
+      "speed": "slow",
+      "path": "basic/bas_11_188_slow.mp3",
+      "transcript": "E caramba-s!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 189,
+      "speed": "normal",
+      "path": "basic/bas_12_189.mp3",
+      "transcript": "Oi bem-vindo o que você vai querer!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 189,
+      "speed": "slow",
+      "path": "basic/bas_12_189_slow.mp3",
+      "transcript": "Play bem-vindo o que você vai querer.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 190,
+      "speed": "normal",
+      "path": "basic/bas_12_190.mp3",
+      "transcript": "Oi, eu queria um cafezinho, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 190,
+      "speed": "slow",
+      "path": "basic/bas_12_190_slow.mp3",
+      "transcript": "Loi, eu queria um cafezinho, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 191,
+      "speed": "normal",
+      "path": "basic/bas_12_191.mp3",
+      "transcript": "ソーリース スー",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 191,
+      "speed": "slow",
+      "path": "basic/bas_12_191_slow.mp3",
+      "transcript": "I'm sorry, used to soo.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 192,
+      "speed": "normal",
+      "path": "basic/bas_12_192.mp3",
+      "transcript": "Sim, e a conta, por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "item": 192,
+      "speed": "slow",
+      "path": "basic/bas_12_192_slow.mp3",
+      "transcript": "Sim e a conta, por favor.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
