@@ -72,7 +72,7 @@ function cards(){
  panel.innerHTML=panelHeader(t)+'<div class="mini"><span>الخطوة 1 من 4 · البطاقات</span><span>بطاقة '+(cardIndex+1)+' / 8</span></div>'+
  '<div class="flipcard"><p>اقرأ المعنى وحاول تذكر العبارة قبل كشفها.</p><div class="arabic">'+esc(p[1])+'</div>'+
  (flipped?'<div class="translation" lang="pt-BR" dir="ltr">'+esc(p[0])+'</div>':'<button type="button" class="primary" id="reveal">اكشف العبارة بعد المحاولة</button>')+
- '</div><div class="row">'+(flipped?'<button type="button" class="outline" id="hard">مش فاكرها — أضفها للمراجعة</button><button type="button" class="primary" id="known">عرفتها — البطاقة التالية</button><button type="button" class="audio" data-play="'+cardIndex+'" data-slow="yes">🐢 اسمع ببطء</button>':'')+'</div>'+
+ '</div><div class="row">'+(flipped?'<button type="button" class="outline" id="hard">مش فاكرها — أضفها للمراجعة</button><button type="button" class="primary" id="known">عرفتها — البطاقة التالية</button><button type="button" class="audio" data-play="'+cardIndex+'" data-slow="no">▶ استمع طبيعيًا</button><button type="button" class="audio" data-play="'+cardIndex+'" data-slow="yes">🐢 استمع ببطء</button>':'')+'</div>'+
  '<p class="small">المفردات التي تختار مراجعتها تظهر مجددًا بعد الاختبار. النطق الصوتي، إن توفر، آلي من المتصفح.</p>';
  if(!flipped)panel.querySelector('#reveal').onclick=()=>{flipped=true;cards()};
  else{
