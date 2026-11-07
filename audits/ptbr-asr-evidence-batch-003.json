@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Unprompted ASR; errors may be ASR hallucinations, particularly very short words. No certification.",
+  "results": [
+    {
+      "path": "basic/bas_02_021.mp3",
+      "transcript": "Muito prazer!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_021_slow.mp3",
+      "transcript": "Muito prazer!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_022.mp3",
+      "transcript": "A te mais.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_022_slow.mp3",
+      "transcript": "Até mais!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_023.mp3",
+      "transcript": "Até a milhares!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_023_slow.mp3",
+      "transcript": "Tua até amanhãs.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_024.mp3",
+      "transcript": "Ciao!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_024_slow.mp3",
+      "transcript": "It's show.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_025.mp3",
+      "transcript": "Valeu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_025_slow.mp3",
+      "transcript": "Valeu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_026.mp3",
+      "transcript": "Por favor!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_026_slow.mp3",
+      "transcript": "e por favor.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_027.mp3",
+      "transcript": "Sobregado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_027_slow.mp3",
+      "transcript": "O sobrigado.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_028.mp3",
+      "transcript": "Obrigada!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_028_slow.mp3",
+      "transcript": "Oso obrigadas.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_029.mp3",
+      "transcript": "Chinada.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_029_slow.mp3",
+      "transcript": "Aginada.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_030.mp3",
+      "transcript": "Diskoopa!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_030_slow.mp3",
+      "transcript": "Дискупа!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_031.mp3",
+      "transcript": "See you next time.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_031_slow.mp3",
+      "transcript": "I'll see you in the next video.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_032.mp3",
+      "transcript": "No!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "basic/bas_02_032_slow.mp3",
+      "transcript": "Now we're almost...",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
