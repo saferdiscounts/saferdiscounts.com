@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "source": "Cloudflare R2 + Workers AI Whisper",
+  "note": "Preliminary ASR evidence only, not proof of correct pronunciation.",
+  "range": {
+    "start": 334,
+    "end": 350
+  },
+  "results": [
+    {
+      "path": "advanced/adv_19_334.mp3",
+      "transcript": "By the take.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_334_slow.mp3",
+      "transcript": "He barges to it.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_335.mp3",
+      "transcript": "C'mon mate.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_335_slow.mp3",
+      "transcript": "You're cool, man.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_336.mp3",
+      "transcript": "Falei.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_336_slow.mp3",
+      "transcript": "Bye-bye.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_337.mp3",
+      "transcript": "Partemos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_337_slow.mp3",
+      "transcript": "e partamos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_338.mp3",
+      "transcript": "Como émos?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_338_slow.mp3",
+      "transcript": "E como émos?",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_339.mp3",
+      "transcript": "Falemos!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_339_slow.mp3",
+      "transcript": "e falemos.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_340.mp3",
+      "transcript": "Bye for town!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_340_slow.mp3",
+      "transcript": "Die Partizoon.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_341.mp3",
+      "transcript": "Comeu!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_341_slow.mp3",
+      "transcript": "Because man, we won't lose.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_342.mp3",
+      "transcript": "Falling!",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_342_slow.mp3",
+      "transcript": "to following.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_343.mp3",
+      "transcript": "Espero que...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_343_slow.mp3",
+      "transcript": "Alice Beruqui.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_344.mp3",
+      "transcript": "Espero que você esteja bem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_344_slow.mp3",
+      "transcript": "Eu espero que você esteja bem.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_345.mp3",
+      "transcript": "Talvez ele vinha amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_345_slow.mp3",
+      "transcript": "Talvez ele venha amanhã.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_346.mp3",
+      "transcript": "Quero que isso.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_346_slow.mp3",
+      "transcript": "Eu quero o que ir.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_347.mp3",
+      "transcript": "Quero que você me ajude.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_347_slow.mp3",
+      "transcript": "Quero que você me ajude.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_348.mp3",
+      "transcript": "É possível que...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_348_slow.mp3",
+      "transcript": "É possível que...",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_349.mp3",
+      "transcript": "É possível que chova.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_349_slow.mp3",
+      "transcript": "É possível que chova.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_350.mp3",
+      "transcript": "Embora eu esteja cansado, vou trabalhar.",
+      "engine": "@cf/openai/whisper"
+    },
+    {
+      "path": "advanced/adv_19_350_slow.mp3",
+      "transcript": "E embora eu esteja cansado, vou trabalhar.",
+      "engine": "@cf/openai/whisper"
+    }
+  ]
+}
