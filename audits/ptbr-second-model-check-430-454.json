@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "method": "Second-model ASR cross-check; does not certify pronunciation.",
+  "results": [
+    {
+      "item": 430,
+      "speed": "normal",
+      "path": "advanced/adv_26_430.mp3",
+      "transcript": "MÉDICO",
+      "duration": 1.039375,
+      "expected": "médico",
+      "exactMatch": true
+    },
+    {
+      "item": 430,
+      "speed": "slow",
+      "path": "advanced/adv_26_430_slow.mp3",
+      "transcript": "Magic school",
+      "duration": 1.338,
+      "expected": "médico",
+      "exactMatch": false
+    },
+    {
+      "item": 431,
+      "speed": "normal",
+      "path": "advanced/adv_26_431.mp3",
+      "transcript": "Ospitau.",
+      "duration": 1.082,
+      "expected": "hospital",
+      "exactMatch": false
+    },
+    {
+      "item": 431,
+      "speed": "slow",
+      "path": "advanced/adv_26_431_slow.mp3",
+      "transcript": "em hospital.",
+      "duration": 1.359375,
+      "expected": "hospital",
+      "exactMatch": false
+    },
+    {
+      "item": 432,
+      "speed": "normal",
+      "path": "advanced/adv_26_432.mp3",
+      "transcript": "Farmácia.",
+      "duration": 1.1886875,
+      "expected": "farmácia",
+      "exactMatch": true
+    },
+    {
+      "item": 432,
+      "speed": "slow",
+      "path": "advanced/adv_26_432_slow.mp3",
+      "transcript": "em farmácia",
+      "duration": 1.551375,
+      "expected": "farmácia",
+      "exactMatch": false
+    },
+    {
+      "item": 433,
+      "speed": "normal",
+      "path": "advanced/adv_26_433.mp3",
+      "transcript": "Door.",
+      "duration": 0.762,
+      "expected": "dor",
+      "exactMatch": false
+    },
+    {
+      "item": 433,
+      "speed": "slow",
+      "path": "advanced/adv_26_433_slow.mp3",
+      "transcript": "Door.",
+      "duration": 1.018,
+      "expected": "dor",
+      "exactMatch": false
+    },
+    {
+      "item": 434,
+      "speed": "normal",
+      "path": "advanced/adv_26_434.mp3",
+      "transcript": "Preciso de um médico.",
+      "duration": 1.8286875,
+      "expected": "Preciso de um médico",
+      "exactMatch": true
+    },
+    {
+      "item": 434,
+      "speed": "slow",
+      "path": "advanced/adv_26_434_slow.mp3",
+      "transcript": "É preciso de um médico.",
+      "duration": 2.49,
+      "expected": "Preciso de um médico",
+      "exactMatch": false
+    },
+    {
+      "item": 435,
+      "speed": "normal",
+      "path": "advanced/adv_26_435.mp3",
+      "transcript": "Não estou bem.",
+      "duration": 1.359375,
+      "expected": "Não estou bem",
+      "exactMatch": true
+    },
+    {
+      "item": 435,
+      "speed": "slow",
+      "path": "advanced/adv_26_435_slow.mp3",
+      "transcript": "Não estou obeying.",
+      "duration": 1.743375,
+      "expected": "Não estou bem",
+      "exactMatch": false
+    },
+    {
+      "item": 436,
+      "speed": "normal",
+      "path": "advanced/adv_26_436.mp3",
+      "transcript": "Fabric.",
+      "duration": 0.89,
+      "expected": "febre",
+      "exactMatch": false
+    },
+    {
+      "item": 436,
+      "speed": "slow",
+      "path": "advanced/adv_26_436_slow.mp3",
+      "transcript": "Febri",
+      "duration": 1.146,
+      "expected": "febre",
+      "exactMatch": false
+    },
+    {
+      "item": 437,
+      "speed": "normal",
+      "path": "advanced/adv_26_437.mp3",
+      "transcript": "Dor de cabeça.",
+      "duration": 1.4446875,
+      "expected": "dor de cabeça",
+      "exactMatch": true
+    },
+    {
+      "item": 437,
+      "speed": "slow",
+      "path": "advanced/adv_26_437_slow.mp3",
+      "transcript": "Dor de cabeça",
+      "duration": 2.042,
+      "expected": "dor de cabeça",
+      "exactMatch": true
+    },
+    {
+      "item": 438,
+      "speed": "normal",
+      "path": "advanced/adv_26_438.mp3",
+      "transcript": "Dor de estômago.",
+      "duration": 1.466,
+      "expected": "dor de estômago",
+      "exactMatch": true
+    },
+    {
+      "item": 438,
+      "speed": "slow",
+      "path": "advanced/adv_26_438_slow.mp3",
+      "transcript": "Dor de estômago",
+      "duration": 1.935375,
+      "expected": "dor de estômago",
+      "exactMatch": true
+    },
+    {
+      "item": 439,
+      "speed": "normal",
+      "path": "advanced/adv_26_439.mp3",
+      "transcript": "Receita Médica",
+      "duration": 1.53,
+      "expected": "receita médica",
+      "exactMatch": true
+    },
+    {
+      "item": 439,
+      "speed": "slow",
+      "path": "advanced/adv_26_439_slow.mp3",
+      "transcript": "Receita Médica",
+      "duration": 2.1486875,
+      "expected": "receita médica",
+      "exactMatch": true
+    },
+    {
+      "item": 440,
+      "speed": "normal",
+      "path": "advanced/adv_26_440.mp3",
+      "transcript": "Ambulância.",
+      "duration": 1.167375,
+      "expected": "ambulância",
+      "exactMatch": true
+    },
+    {
+      "item": 440,
+      "speed": "slow",
+      "path": "advanced/adv_26_440_slow.mp3",
+      "transcript": "Digambulância.",
+      "duration": 1.594,
+      "expected": "ambulância",
+      "exactMatch": false
+    },
+    {
+      "item": 441,
+      "speed": "normal",
+      "path": "advanced/adv_26_441.mp3",
+      "transcript": "Emergência.",
+      "duration": 1.231375,
+      "expected": "emergência",
+      "exactMatch": true
+    },
+    {
+      "item": 441,
+      "speed": "slow",
+      "path": "advanced/adv_26_441_slow.mp3",
+      "transcript": "ou de emergência.",
+      "duration": 1.615375,
+      "expected": "emergência",
+      "exactMatch": false
+    },
+    {
+      "item": 442,
+      "speed": "normal",
+      "path": "advanced/adv_26_442.mp3",
+      "transcript": "Chame uma ambulância.",
+      "duration": 1.5726875,
+      "expected": "Chame uma ambulância!",
+      "exactMatch": true
+    },
+    {
+      "item": 442,
+      "speed": "slow",
+      "path": "advanced/adv_26_442_slow.mp3",
+      "transcript": "Chame uma ambulância.",
+      "duration": 2.063375,
+      "expected": "Chame uma ambulância!",
+      "exactMatch": true
+    },
+    {
+      "item": 443,
+      "speed": "normal",
+      "path": "advanced/adv_26_443.mp3",
+      "transcript": "Alergia.",
+      "duration": 1.082,
+      "expected": "alergia",
+      "exactMatch": true
+    },
+    {
+      "item": 443,
+      "speed": "slow",
+      "path": "advanced/adv_26_443_slow.mp3",
+      "transcript": "Uma alergia.",
+      "duration": 1.423375,
+      "expected": "alergia",
+      "exactMatch": false
+    },
+    {
+      "item": 444,
+      "speed": "normal",
+      "path": "advanced/adv_26_444.mp3",
+      "transcript": "Você é médio.",
+      "duration": 1.082,
+      "expected": "remédio",
+      "exactMatch": false
+    },
+    {
+      "item": 444,
+      "speed": "slow",
+      "path": "advanced/adv_26_444_slow.mp3",
+      "transcript": "A classe é médio.",
+      "duration": 1.338,
+      "expected": "remédio",
+      "exactMatch": false
+    },
+    {
+      "item": 445,
+      "speed": "normal",
+      "path": "advanced/adv_27_445.mp3",
+      "transcript": "Bang to it.",
+      "duration": 0.9966875,
+      "expected": "banco",
+      "exactMatch": false
+    },
+    {
+      "item": 445,
+      "speed": "slow",
+      "path": "advanced/adv_27_445_slow.mp3",
+      "transcript": "Bang School",
+      "duration": 1.3166875,
+      "expected": "banco",
+      "exactMatch": false
+    },
+    {
+      "item": 446,
+      "speed": "normal",
+      "path": "advanced/adv_27_446.mp3",
+      "transcript": "Cambio.",
+      "duration": 0.89,
+      "expected": "câmbio",
+      "exactMatch": true
+    },
+    {
+      "item": 446,
+      "speed": "slow",
+      "path": "advanced/adv_27_446_slow.mp3",
+      "transcript": "I can't view.",
+      "duration": 1.21,
+      "expected": "câmbio",
+      "exactMatch": false
+    },
+    {
+      "item": 447,
+      "speed": "normal",
+      "path": "advanced/adv_27_447.mp3",
+      "transcript": "Sacar dinheiro.",
+      "duration": 1.3806875,
+      "expected": "sacar dinheiro",
+      "exactMatch": true
+    },
+    {
+      "item": 447,
+      "speed": "slow",
+      "path": "advanced/adv_27_447_slow.mp3",
+      "transcript": "Sacar dinheiro.",
+      "duration": 1.914,
+      "expected": "sacar dinheiro",
+      "exactMatch": true
+    },
+    {
+      "item": 448,
+      "speed": "normal",
+      "path": "advanced/adv_27_448.mp3",
+      "transcript": "Cartão de crédito.",
+      "duration": 1.615375,
+      "expected": "cartão de crédito",
+      "exactMatch": true
+    },
+    {
+      "item": 448,
+      "speed": "slow",
+      "path": "advanced/adv_27_448_slow.mp3",
+      "transcript": "Um cartão de crédito.",
+      "duration": 2.2766875,
+      "expected": "cartão de crédito",
+      "exactMatch": false
+    },
+    {
+      "item": 449,
+      "speed": "normal",
+      "path": "advanced/adv_27_449.mp3",
+      "transcript": "Caixa eletronicu",
+      "duration": 1.53,
+      "expected": "caixa eletrônico",
+      "exactMatch": false
+    },
+    {
+      "item": 449,
+      "speed": "slow",
+      "path": "advanced/adv_27_449_slow.mp3",
+      "transcript": "קיישה אלטרוניקו.",
+      "duration": 2.042,
+      "expected": "caixa eletrônico",
+      "exactMatch": false
+    },
+    {
+      "item": 450,
+      "speed": "normal",
+      "path": "advanced/adv_27_450.mp3",
+      "transcript": "Delegacia de Polícia",
+      "duration": 1.679375,
+      "expected": "delegacia de polícia",
+      "exactMatch": true
+    },
+    {
+      "item": 450,
+      "speed": "slow",
+      "path": "advanced/adv_27_450_slow.mp3",
+      "transcript": "Delegacia de Polícia",
+      "duration": 2.4046875,
+      "expected": "delegacia de polícia",
+      "exactMatch": true
+    },
+    {
+      "item": 451,
+      "speed": "normal",
+      "path": "advanced/adv_27_451.mp3",
+      "transcript": "Fui roubado.",
+      "duration": 1.2526875,
+      "expected": "Fui roubado",
+      "exactMatch": true
+    },
+    {
+      "item": 451,
+      "speed": "slow",
+      "path": "advanced/adv_27_451_slow.mp3",
+      "transcript": "Fui roubado.",
+      "duration": 1.615375,
+      "expected": "Fui roubado",
+      "exactMatch": true
+    },
+    {
+      "item": 452,
+      "speed": "normal",
+      "path": "advanced/adv_27_452.mp3",
+      "transcript": "Perdi o meu passaporte.",
+      "duration": 1.8286875,
+      "expected": "Perdi o meu passaporte",
+      "exactMatch": true
+    },
+    {
+      "item": 452,
+      "speed": "slow",
+      "path": "advanced/adv_27_452_slow.mp3",
+      "transcript": "Perdi o meu passaporte.",
+      "duration": 2.682,
+      "expected": "Perdi o meu passaporte",
+      "exactMatch": true
+    },
+    {
+      "item": 453,
+      "speed": "normal",
+      "path": "advanced/adv_27_453.mp3",
+      "transcript": "Documento de identidade.",
+      "duration": 2.063375,
+      "expected": "documento de identidade",
+      "exactMatch": true
+    },
+    {
+      "item": 453,
+      "speed": "slow",
+      "path": "advanced/adv_27_453_slow.mp3",
+      "transcript": "Documento de identidade",
+      "duration": 2.938,
+      "expected": "documento de identidade",
+      "exactMatch": true
+    },
+    {
+      "item": 454,
+      "speed": "normal",
+      "path": "advanced/adv_27_454.mp3",
+      "transcript": "Embaixada",
+      "duration": 1.231375,
+      "expected": "embaixada",
+      "exactMatch": true
+    },
+    {
+      "item": 454,
+      "speed": "slow",
+      "path": "advanced/adv_27_454_slow.mp3",
+      "transcript": "Embaixada",
+      "duration": 1.6366875,
+      "expected": "embaixada",
+      "exactMatch": true
+    }
+  ]
+}
