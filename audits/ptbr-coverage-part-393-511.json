@@ -1,0 +1,2146 @@
+{
+  "rows": [
+    {
+      "item": 393,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.103375,
+      "transcript": "Mais aqui",
+      "expected": "mais... que",
+      "path": "advanced/adv_23_393.mp3"
+    },
+    {
+      "item": 393,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.4446875,
+      "transcript": "Mais aqui.",
+      "expected": "mais... que",
+      "path": "advanced/adv_23_393_slow.mp3"
+    },
+    {
+      "item": 394,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.167375,
+      "transcript": "Menos like you",
+      "expected": "menos... que",
+      "path": "advanced/adv_23_394.mp3"
+    },
+    {
+      "item": 394,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.5086875,
+      "transcript": "Menos, Zaiqie.",
+      "expected": "menos... que",
+      "path": "advanced/adv_23_394_slow.mp3"
+    },
+    {
+      "item": 395,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "Tens quanto.",
+      "expected": "tão... quanto",
+      "path": "advanced/adv_23_395.mp3"
+    },
+    {
+      "item": 395,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.551375,
+      "transcript": "Dita 11. Quanto?",
+      "expected": "tão... quanto",
+      "path": "advanced/adv_23_395_slow.mp3"
+    },
+    {
+      "item": 396,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.9326875,
+      "transcript": "O mais.",
+      "expected": "o mais",
+      "path": "advanced/adv_23_396.mp3"
+    },
+    {
+      "item": 396,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.167375,
+      "transcript": "Ooh, mice.",
+      "expected": "o mais",
+      "path": "advanced/adv_23_396_slow.mp3"
+    },
+    {
+      "item": 397,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.954,
+      "transcript": "A mais.",
+      "expected": "a mais",
+      "path": "advanced/adv_23_397.mp3"
+    },
+    {
+      "item": 397,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "Jamais.",
+      "expected": "a mais",
+      "path": "advanced/adv_23_397_slow.mp3"
+    },
+    {
+      "item": 398,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.718375,
+      "transcript": "Más.",
+      "expected": "mas",
+      "path": "advanced/adv_23_398.mp3"
+    },
+    {
+      "item": 398,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 0.9326875,
+      "transcript": "Y más.",
+      "expected": "mas",
+      "path": "advanced/adv_23_398_slow.mp3"
+    },
+    {
+      "item": 399,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.954,
+      "transcript": "Puddings.",
+      "expected": "porém",
+      "path": "advanced/adv_23_399.mp3"
+    },
+    {
+      "item": 399,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.1886875,
+      "transcript": "A poor dayings.",
+      "expected": "porém",
+      "path": "advanced/adv_23_399_slow.mp3"
+    },
+    {
+      "item": 400,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.039375,
+      "transcript": "Contudo.",
+      "expected": "contudo",
+      "path": "advanced/adv_23_400.mp3"
+    },
+    {
+      "item": 400,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.423375,
+      "transcript": "Jeg kommer til at do det.",
+      "expected": "contudo",
+      "path": "advanced/adv_23_400_slow.mp3"
+    },
+    {
+      "item": 401,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.082,
+      "transcript": "Portanto,",
+      "expected": "portanto",
+      "path": "advanced/adv_23_401.mp3"
+    },
+    {
+      "item": 401,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.4446875,
+      "transcript": "E por restante...",
+      "expected": "portanto",
+      "path": "advanced/adv_23_401_slow.mp3"
+    },
+    {
+      "item": 402,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.911375,
+      "transcript": "Portakeet",
+      "expected": "porque",
+      "path": "advanced/adv_23_402.mp3"
+    },
+    {
+      "item": 402,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "A port a key",
+      "expected": "porque",
+      "path": "advanced/adv_23_402_slow.mp3"
+    },
+    {
+      "item": 403,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.8686875,
+      "transcript": "Já aqui.",
+      "expected": "já que",
+      "path": "advanced/adv_23_403.mp3"
+    },
+    {
+      "item": 403,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.1246875,
+      "transcript": "Eu vou girar aqui.",
+      "expected": "já que",
+      "path": "advanced/adv_23_403_slow.mp3"
+    },
+    {
+      "item": 404,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.039375,
+      "transcript": "Simbora!",
+      "expected": "embora",
+      "path": "advanced/adv_23_404.mp3"
+    },
+    {
+      "item": 404,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "E se embora",
+      "expected": "embora",
+      "path": "advanced/adv_23_404_slow.mp3"
+    },
+    {
+      "item": 405,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.21,
+      "transcript": "Apesar de...",
+      "expected": "apesar de",
+      "path": "advanced/adv_23_405.mp3"
+    },
+    {
+      "item": 405,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.594,
+      "transcript": "Apesar de...",
+      "expected": "apesar de",
+      "path": "advanced/adv_23_405_slow.mp3"
+    },
+    {
+      "item": 406,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.911375,
+      "transcript": "KASU",
+      "expected": "caso",
+      "path": "advanced/adv_23_406.mp3"
+    },
+    {
+      "item": 406,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.146,
+      "transcript": "E caso...",
+      "expected": "caso",
+      "path": "advanced/adv_23_406_slow.mp3"
+    },
+    {
+      "item": 407,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.103375,
+      "transcript": "Sounds common.",
+      "expected": "tão... como",
+      "path": "advanced/adv_23_407.mp3"
+    },
+    {
+      "item": 407,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.5086875,
+      "transcript": "Estão se comuns.",
+      "expected": "tão... como",
+      "path": "advanced/adv_23_407_slow.mp3"
+    },
+    {
+      "item": 408,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.231375,
+      "transcript": "Passaporte.",
+      "expected": "passaporte",
+      "path": "advanced/adv_24_408.mp3"
+    },
+    {
+      "item": 408,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.658,
+      "transcript": "Passaporte",
+      "expected": "passaporte",
+      "path": "advanced/adv_24_408_slow.mp3"
+    },
+    {
+      "item": 409,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.9326875,
+      "transcript": "Vi står.",
+      "expected": "visto",
+      "path": "advanced/adv_24_409.mp3"
+    },
+    {
+      "item": 409,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "Avvisto.",
+      "expected": "visto",
+      "path": "advanced/adv_24_409_slow.mp3"
+    },
+    {
+      "item": 410,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Passagem.",
+      "expected": "passagem",
+      "path": "advanced/adv_24_410.mp3"
+    },
+    {
+      "item": 410,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.5086875,
+      "transcript": "O PASSAGEM",
+      "expected": "passagem",
+      "path": "advanced/adv_24_410_slow.mp3"
+    },
+    {
+      "item": 411,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.1246875,
+      "transcript": "Desembar aqui.",
+      "expected": "embarque",
+      "path": "advanced/adv_24_411.mp3"
+    },
+    {
+      "item": 411,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.4446875,
+      "transcript": "Замбарки.",
+      "expected": "embarque",
+      "path": "advanced/adv_24_411_slow.mp3"
+    },
+    {
+      "item": 412,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Bagagem",
+      "expected": "bagagem",
+      "path": "advanced/adv_24_412.mp3"
+    },
+    {
+      "item": 412,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.53,
+      "transcript": "O Barragagens",
+      "expected": "bagagem",
+      "path": "advanced/adv_24_412_slow.mp3"
+    },
+    {
+      "item": 413,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.53,
+      "transcript": "Bagagem de mão.",
+      "expected": "bagagem de mão",
+      "path": "advanced/adv_24_413.mp3"
+    },
+    {
+      "item": 413,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.0846875,
+      "transcript": "Pagar, gente, de mão.",
+      "expected": "bagagem de mão",
+      "path": "advanced/adv_24_413_slow.mp3"
+    },
+    {
+      "item": 414,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.9966875,
+      "transcript": "check-in",
+      "expected": "check-in",
+      "path": "advanced/adv_24_414.mp3"
+    },
+    {
+      "item": 414,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.231375,
+      "transcript": "A sekín",
+      "expected": "check-in",
+      "path": "advanced/adv_24_414_slow.mp3"
+    },
+    {
+      "item": 415,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.487375,
+      "transcript": "Postão de embarque.",
+      "expected": "portão de embarque",
+      "path": "advanced/adv_24_415.mp3"
+    },
+    {
+      "item": 415,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.106,
+      "transcript": "O portão de embarque.",
+      "expected": "portão de embarque",
+      "path": "advanced/adv_24_415_slow.mp3"
+    },
+    {
+      "item": 416,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.7406875,
+      "transcript": "Vote.",
+      "expected": "voo",
+      "path": "advanced/adv_24_416.mp3"
+    },
+    {
+      "item": 416,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 0.911375,
+      "transcript": "Devote",
+      "expected": "voo",
+      "path": "advanced/adv_24_416_slow.mp3"
+    },
+    {
+      "item": 417,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.0606875,
+      "transcript": "Atraso.",
+      "expected": "atraso",
+      "path": "advanced/adv_24_417.mp3"
+    },
+    {
+      "item": 417,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.402,
+      "transcript": "Em atraso.",
+      "expected": "atraso",
+      "path": "advanced/adv_24_417_slow.mp3"
+    },
+    {
+      "item": 418,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Cancelado.",
+      "expected": "cancelado",
+      "path": "advanced/adv_24_418.mp3"
+    },
+    {
+      "item": 418,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.53,
+      "transcript": "E cancelado",
+      "expected": "cancelado",
+      "path": "advanced/adv_24_418_slow.mp3"
+    },
+    {
+      "item": 419,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.21,
+      "transcript": "Alfândega",
+      "expected": "alfândega",
+      "path": "advanced/adv_24_419.mp3"
+    },
+    {
+      "item": 419,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.5726875,
+      "transcript": "is alfandegas",
+      "expected": "alfândega",
+      "path": "advanced/adv_24_419_slow.mp3"
+    },
+    {
+      "item": 420,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.53,
+      "transcript": "Tenho algo a declarar.",
+      "expected": "Tenho algo a declarar",
+      "path": "advanced/adv_24_420.mp3"
+    },
+    {
+      "item": 420,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.2126875,
+      "transcript": "Tenho algo a declarar.",
+      "expected": "Tenho algo a declarar",
+      "path": "advanced/adv_24_420_slow.mp3"
+    },
+    {
+      "item": 421,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.8286875,
+      "transcript": "Não tenho nada a declarar.",
+      "expected": "Não tenho nada a declarar",
+      "path": "advanced/adv_24_421.mp3"
+    },
+    {
+      "item": 421,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.575375,
+      "transcript": "Não tenho nada a declarar.",
+      "expected": "Não tenho nada a declarar",
+      "path": "advanced/adv_24_421_slow.mp3"
+    },
+    {
+      "item": 422,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.2766875,
+      "transcript": "O ar-condicionado não funciona.",
+      "expected": "O ar condicionado não funciona",
+      "path": "advanced/adv_25_422.mp3"
+    },
+    {
+      "item": 422,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 3.151375,
+      "transcript": "E o ar condicionado não funciona.",
+      "expected": "O ar condicionado não funciona",
+      "path": "advanced/adv_25_422_slow.mp3"
+    },
+    {
+      "item": 423,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.722,
+      "transcript": "Não tem água quente.",
+      "expected": "Não tem água quente",
+      "path": "advanced/adv_25_423.mp3"
+    },
+    {
+      "item": 423,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.4046875,
+      "transcript": "Não tem água quente.",
+      "expected": "Não tem água quente",
+      "path": "advanced/adv_25_423_slow.mp3"
+    },
+    {
+      "item": 424,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.7006875,
+      "transcript": "Quero mudar de quarto.",
+      "expected": "Quero mudar de quarto",
+      "path": "advanced/adv_25_424.mp3"
+    },
+    {
+      "item": 424,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.383375,
+      "transcript": "Quero mudar de quarto.",
+      "expected": "Quero mudar de quarto",
+      "path": "advanced/adv_25_424_slow.mp3"
+    },
+    {
+      "item": 425,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.6366875,
+      "transcript": "A chave não funciona.",
+      "expected": "A chave não funciona",
+      "path": "advanced/adv_25_425.mp3"
+    },
+    {
+      "item": 425,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.191375,
+      "transcript": "A chave não funciona.",
+      "expected": "A chave não funciona",
+      "path": "advanced/adv_25_425_slow.mp3"
+    },
+    {
+      "item": 426,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.807375,
+      "transcript": "Podem limpar o quarto.",
+      "expected": "Podem limpar o quarto?",
+      "path": "advanced/adv_25_426.mp3"
+    },
+    {
+      "item": 426,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.511375,
+      "transcript": "Podem limpar o quartos.",
+      "expected": "Podem limpar o quarto?",
+      "path": "advanced/adv_25_426_slow.mp3"
+    },
+    {
+      "item": 427,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.871375,
+      "transcript": "A que horas é o check-out?",
+      "expected": "A que horas é o check-out?",
+      "path": "advanced/adv_25_427.mp3"
+    },
+    {
+      "item": 427,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.618,
+      "transcript": "Há que horas é o She Coach?",
+      "expected": "A que horas é o check-out?",
+      "path": "advanced/adv_25_427_slow.mp3"
+    },
+    {
+      "item": 428,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.274,
+      "transcript": "Reclamação.",
+      "expected": "reclamação",
+      "path": "advanced/adv_25_428.mp3"
+    },
+    {
+      "item": 428,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.786,
+      "transcript": "DECLAMAÇÃO",
+      "expected": "reclamação",
+      "path": "advanced/adv_25_428_slow.mp3"
+    },
+    {
+      "item": 429,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.167375,
+      "transcript": "It's a Zerva.",
+      "expected": "reserva",
+      "path": "advanced/adv_25_429.mp3"
+    },
+    {
+      "item": 429,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.402,
+      "transcript": "Muito reserva.",
+      "expected": "reserva",
+      "path": "advanced/adv_25_429_slow.mp3"
+    },
+    {
+      "item": 430,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.039375,
+      "transcript": "MÉDICO",
+      "expected": "médico",
+      "path": "advanced/adv_26_430.mp3"
+    },
+    {
+      "item": 430,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "Magic school",
+      "expected": "médico",
+      "path": "advanced/adv_26_430_slow.mp3"
+    },
+    {
+      "item": 431,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.082,
+      "transcript": "Ospitau.",
+      "expected": "hospital",
+      "path": "advanced/adv_26_431.mp3"
+    },
+    {
+      "item": 431,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.359375,
+      "transcript": "em hospital.",
+      "expected": "hospital",
+      "path": "advanced/adv_26_431_slow.mp3"
+    },
+    {
+      "item": 432,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.1886875,
+      "transcript": "Farmácia.",
+      "expected": "farmácia",
+      "path": "advanced/adv_26_432.mp3"
+    },
+    {
+      "item": 432,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.551375,
+      "transcript": "em farmácia",
+      "expected": "farmácia",
+      "path": "advanced/adv_26_432_slow.mp3"
+    },
+    {
+      "item": 433,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.762,
+      "transcript": "Door.",
+      "expected": "dor",
+      "path": "advanced/adv_26_433.mp3"
+    },
+    {
+      "item": 433,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.018,
+      "transcript": "Door.",
+      "expected": "dor",
+      "path": "advanced/adv_26_433_slow.mp3"
+    },
+    {
+      "item": 434,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.8286875,
+      "transcript": "Preciso de um médico.",
+      "expected": "Preciso de um médico",
+      "path": "advanced/adv_26_434.mp3"
+    },
+    {
+      "item": 434,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.49,
+      "transcript": "É preciso de um médico.",
+      "expected": "Preciso de um médico",
+      "path": "advanced/adv_26_434_slow.mp3"
+    },
+    {
+      "item": 435,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.359375,
+      "transcript": "Não estou bem.",
+      "expected": "Não estou bem",
+      "path": "advanced/adv_26_435.mp3"
+    },
+    {
+      "item": 435,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.743375,
+      "transcript": "Não estou obeying.",
+      "expected": "Não estou bem",
+      "path": "advanced/adv_26_435_slow.mp3"
+    },
+    {
+      "item": 436,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.89,
+      "transcript": "Fabric.",
+      "expected": "febre",
+      "path": "advanced/adv_26_436.mp3"
+    },
+    {
+      "item": 436,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.146,
+      "transcript": "Febri",
+      "expected": "febre",
+      "path": "advanced/adv_26_436_slow.mp3"
+    },
+    {
+      "item": 437,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.4446875,
+      "transcript": "Dor de cabeça.",
+      "expected": "dor de cabeça",
+      "path": "advanced/adv_26_437.mp3"
+    },
+    {
+      "item": 437,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.042,
+      "transcript": "Dor de cabeça",
+      "expected": "dor de cabeça",
+      "path": "advanced/adv_26_437_slow.mp3"
+    },
+    {
+      "item": 438,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.466,
+      "transcript": "Dor de estômago.",
+      "expected": "dor de estômago",
+      "path": "advanced/adv_26_438.mp3"
+    },
+    {
+      "item": 438,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.935375,
+      "transcript": "Dor de estômago",
+      "expected": "dor de estômago",
+      "path": "advanced/adv_26_438_slow.mp3"
+    },
+    {
+      "item": 439,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.53,
+      "transcript": "Receita Médica",
+      "expected": "receita médica",
+      "path": "advanced/adv_26_439.mp3"
+    },
+    {
+      "item": 439,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.1486875,
+      "transcript": "Receita Médica",
+      "expected": "receita médica",
+      "path": "advanced/adv_26_439_slow.mp3"
+    },
+    {
+      "item": 440,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Ambulância.",
+      "expected": "ambulância",
+      "path": "advanced/adv_26_440.mp3"
+    },
+    {
+      "item": 440,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.594,
+      "transcript": "Digambulância.",
+      "expected": "ambulância",
+      "path": "advanced/adv_26_440_slow.mp3"
+    },
+    {
+      "item": 441,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.231375,
+      "transcript": "Emergência.",
+      "expected": "emergência",
+      "path": "advanced/adv_26_441.mp3"
+    },
+    {
+      "item": 441,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.615375,
+      "transcript": "ou de emergência.",
+      "expected": "emergência",
+      "path": "advanced/adv_26_441_slow.mp3"
+    },
+    {
+      "item": 442,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.5726875,
+      "transcript": "Chame uma ambulância.",
+      "expected": "Chame uma ambulância!",
+      "path": "advanced/adv_26_442.mp3"
+    },
+    {
+      "item": 442,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.063375,
+      "transcript": "Chame uma ambulância.",
+      "expected": "Chame uma ambulância!",
+      "path": "advanced/adv_26_442_slow.mp3"
+    },
+    {
+      "item": 443,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.082,
+      "transcript": "Alergia.",
+      "expected": "alergia",
+      "path": "advanced/adv_26_443.mp3"
+    },
+    {
+      "item": 443,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.423375,
+      "transcript": "Uma alergia.",
+      "expected": "alergia",
+      "path": "advanced/adv_26_443_slow.mp3"
+    },
+    {
+      "item": 444,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.082,
+      "transcript": "Você é médio.",
+      "expected": "remédio",
+      "path": "advanced/adv_26_444.mp3"
+    },
+    {
+      "item": 444,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "A classe é médio.",
+      "expected": "remédio",
+      "path": "advanced/adv_26_444_slow.mp3"
+    },
+    {
+      "item": 445,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 0.9966875,
+      "transcript": "Bang to it.",
+      "expected": "banco",
+      "path": "advanced/adv_27_445.mp3"
+    },
+    {
+      "item": 445,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.3166875,
+      "transcript": "Bang School",
+      "expected": "banco",
+      "path": "advanced/adv_27_445_slow.mp3"
+    },
+    {
+      "item": 446,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.89,
+      "transcript": "Cambio.",
+      "expected": "câmbio",
+      "path": "advanced/adv_27_446.mp3"
+    },
+    {
+      "item": 446,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "I can't view.",
+      "expected": "câmbio",
+      "path": "advanced/adv_27_446_slow.mp3"
+    },
+    {
+      "item": 447,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.3806875,
+      "transcript": "Sacar dinheiro.",
+      "expected": "sacar dinheiro",
+      "path": "advanced/adv_27_447.mp3"
+    },
+    {
+      "item": 447,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.914,
+      "transcript": "Sacar dinheiro.",
+      "expected": "sacar dinheiro",
+      "path": "advanced/adv_27_447_slow.mp3"
+    },
+    {
+      "item": 448,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.615375,
+      "transcript": "Cartão de crédito.",
+      "expected": "cartão de crédito",
+      "path": "advanced/adv_27_448.mp3"
+    },
+    {
+      "item": 448,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.2766875,
+      "transcript": "Um cartão de crédito.",
+      "expected": "cartão de crédito",
+      "path": "advanced/adv_27_448_slow.mp3"
+    },
+    {
+      "item": 449,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.53,
+      "transcript": "Caixa eletronicu",
+      "expected": "caixa eletrônico",
+      "path": "advanced/adv_27_449.mp3"
+    },
+    {
+      "item": 449,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.042,
+      "transcript": "קיישה אלטרוניקו.",
+      "expected": "caixa eletrônico",
+      "path": "advanced/adv_27_449_slow.mp3"
+    },
+    {
+      "item": 450,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.679375,
+      "transcript": "Delegacia de Polícia",
+      "expected": "delegacia de polícia",
+      "path": "advanced/adv_27_450.mp3"
+    },
+    {
+      "item": 450,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.4046875,
+      "transcript": "Delegacia de Polícia",
+      "expected": "delegacia de polícia",
+      "path": "advanced/adv_27_450_slow.mp3"
+    },
+    {
+      "item": 451,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.2526875,
+      "transcript": "Fui roubado.",
+      "expected": "Fui roubado",
+      "path": "advanced/adv_27_451.mp3"
+    },
+    {
+      "item": 451,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.615375,
+      "transcript": "Fui roubado.",
+      "expected": "Fui roubado",
+      "path": "advanced/adv_27_451_slow.mp3"
+    },
+    {
+      "item": 452,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.8286875,
+      "transcript": "Perdi o meu passaporte.",
+      "expected": "Perdi o meu passaporte",
+      "path": "advanced/adv_27_452.mp3"
+    },
+    {
+      "item": 452,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.682,
+      "transcript": "Perdi o meu passaporte.",
+      "expected": "Perdi o meu passaporte",
+      "path": "advanced/adv_27_452_slow.mp3"
+    },
+    {
+      "item": 453,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.063375,
+      "transcript": "Documento de identidade.",
+      "expected": "documento de identidade",
+      "path": "advanced/adv_27_453.mp3"
+    },
+    {
+      "item": 453,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.938,
+      "transcript": "Documento de identidade",
+      "expected": "documento de identidade",
+      "path": "advanced/adv_27_453_slow.mp3"
+    },
+    {
+      "item": 454,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.231375,
+      "transcript": "Embaixada",
+      "expected": "embaixada",
+      "path": "advanced/adv_27_454.mp3"
+    },
+    {
+      "item": 454,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.6366875,
+      "transcript": "Embaixada",
+      "expected": "embaixada",
+      "path": "advanced/adv_27_454_slow.mp3"
+    },
+    {
+      "item": 455,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.4446875,
+      "transcript": "Alugar um carro.",
+      "expected": "alugar um carro",
+      "path": "advanced/adv_28_455.mp3"
+    },
+    {
+      "item": 455,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.8926875,
+      "transcript": "Desalugar um carro",
+      "expected": "alugar um carro",
+      "path": "advanced/adv_28_455_slow.mp3"
+    },
+    {
+      "item": 456,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.807375,
+      "transcript": "Carteira de motorista.",
+      "expected": "carteira de motorista",
+      "path": "advanced/adv_28_456.mp3"
+    },
+    {
+      "item": 456,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.5326875,
+      "transcript": "Carteira de motorista.",
+      "expected": "carteira de motorista",
+      "path": "advanced/adv_28_456_slow.mp3"
+    },
+    {
+      "item": 457,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.039375,
+      "transcript": "Seguro.",
+      "expected": "seguro",
+      "path": "advanced/adv_28_457.mp3"
+    },
+    {
+      "item": 457,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.295375,
+      "transcript": "Aseguro.",
+      "expected": "seguro",
+      "path": "advanced/adv_28_457_slow.mp3"
+    },
+    {
+      "item": 458,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.146,
+      "transcript": "Gasolina",
+      "expected": "gasolina",
+      "path": "advanced/adv_28_458.mp3"
+    },
+    {
+      "item": 458,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.466,
+      "transcript": "Gasolinas",
+      "expected": "gasolina",
+      "path": "advanced/adv_28_458_slow.mp3"
+    },
+    {
+      "item": 459,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.487375,
+      "transcript": "Estacionamento.",
+      "expected": "estacionamento",
+      "path": "advanced/adv_28_459.mp3"
+    },
+    {
+      "item": 459,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.0846875,
+      "transcript": "Estacionamento",
+      "expected": "estacionamento",
+      "path": "advanced/adv_28_459_slow.mp3"
+    },
+    {
+      "item": 460,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.359375,
+      "transcript": "Viryadzireta.",
+      "expected": "Vire à direita",
+      "path": "advanced/adv_28_460.mp3"
+    },
+    {
+      "item": 460,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.9566875,
+      "transcript": "Não virem à direita.",
+      "expected": "Vire à direita",
+      "path": "advanced/adv_28_460_slow.mp3"
+    },
+    {
+      "item": 461,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.039375,
+      "transcript": "Эскерда.",
+      "expected": "esquerda",
+      "path": "advanced/adv_28_461.mp3"
+    },
+    {
+      "item": 461,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "Ou esquerda.",
+      "expected": "esquerda",
+      "path": "advanced/adv_28_461_slow.mp3"
+    },
+    {
+      "item": 462,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.4446875,
+      "transcript": "Siga em frente.",
+      "expected": "Siga em frente",
+      "path": "advanced/adv_28_462.mp3"
+    },
+    {
+      "item": 462,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.999375,
+      "transcript": "Siga em frente.",
+      "expected": "Siga em frente",
+      "path": "advanced/adv_28_462_slow.mp3"
+    },
+    {
+      "item": 463,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.082,
+      "transcript": "Semáforo",
+      "expected": "semáforo",
+      "path": "advanced/adv_28_463.mp3"
+    },
+    {
+      "item": 463,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.423375,
+      "transcript": "E semáforo.",
+      "expected": "semáforo",
+      "path": "advanced/adv_28_463_slow.mp3"
+    },
+    {
+      "item": 464,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "Quotatoria",
+      "expected": "rotatória",
+      "path": "advanced/adv_28_464.mp3"
+    },
+    {
+      "item": 464,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.551375,
+      "transcript": "¡Hotas teorías!",
+      "expected": "rotatória",
+      "path": "advanced/adv_28_464_slow.mp3"
+    },
+    {
+      "item": 465,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.103375,
+      "transcript": "Rodovia",
+      "expected": "rodovia",
+      "path": "advanced/adv_28_465.mp3"
+    },
+    {
+      "item": 465,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.4446875,
+      "transcript": "Rodovia.",
+      "expected": "rodovia",
+      "path": "advanced/adv_28_465_slow.mp3"
+    },
+    {
+      "item": 466,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.082,
+      "transcript": "Pedágio",
+      "expected": "pedágio",
+      "path": "advanced/adv_28_466.mp3"
+    },
+    {
+      "item": 466,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "Empedágio",
+      "expected": "pedágio",
+      "path": "advanced/adv_28_466_slow.mp3"
+    },
+    {
+      "item": 467,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.954,
+      "transcript": "Metro.",
+      "expected": "metrô",
+      "path": "advanced/adv_28_467.mp3"
+    },
+    {
+      "item": 467,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "Demetro",
+      "expected": "metrô",
+      "path": "advanced/adv_28_467_slow.mp3"
+    },
+    {
+      "item": 468,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.039375,
+      "transcript": "Estação.",
+      "expected": "estação",
+      "path": "advanced/adv_28_468.mp3"
+    },
+    {
+      "item": 468,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.359375,
+      "transcript": "E esta ação",
+      "expected": "estação",
+      "path": "advanced/adv_28_468_slow.mp3"
+    },
+    {
+      "item": 469,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.871375,
+      "transcript": "Pode fazer um desconto.",
+      "expected": "Pode fazer um desconto?",
+      "path": "advanced/adv_29_469.mp3"
+    },
+    {
+      "item": 469,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.639375,
+      "transcript": "Pode fazer um desconto.",
+      "expected": "Pode fazer um desconto?",
+      "path": "advanced/adv_29_469_slow.mp3"
+    },
+    {
+      "item": 470,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.359375,
+      "transcript": "Está muito caro.",
+      "expected": "Está muito caro",
+      "path": "advanced/adv_29_470.mp3"
+    },
+    {
+      "item": 470,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.8926875,
+      "transcript": "Está muito caro.",
+      "expected": "Está muito caro",
+      "path": "advanced/adv_29_470_slow.mp3"
+    },
+    {
+      "item": 471,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Promoção.",
+      "expected": "promoção",
+      "path": "advanced/adv_29_471.mp3"
+    },
+    {
+      "item": 471,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.551375,
+      "transcript": "E promosição.",
+      "expected": "promoção",
+      "path": "advanced/adv_29_471_slow.mp3"
+    },
+    {
+      "item": 472,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.2526875,
+      "transcript": "Nota Fiscal",
+      "expected": "nota fiscal",
+      "path": "advanced/adv_29_472.mp3"
+    },
+    {
+      "item": 472,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.722,
+      "transcript": "Nota Fiscal",
+      "expected": "nota fiscal",
+      "path": "advanced/adv_29_472_slow.mp3"
+    },
+    {
+      "item": 473,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.1886875,
+      "transcript": "Essa é a união.",
+      "expected": "reunião",
+      "path": "advanced/adv_29_473.mp3"
+    },
+    {
+      "item": 473,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.487375,
+      "transcript": "Terceira unidão.",
+      "expected": "reunião",
+      "path": "advanced/adv_29_473_slow.mp3"
+    },
+    {
+      "item": 474,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.167375,
+      "transcript": "Negócio",
+      "expected": "negócio",
+      "path": "advanced/adv_29_474.mp3"
+    },
+    {
+      "item": 474,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.466,
+      "transcript": "Negócio",
+      "expected": "negócio",
+      "path": "advanced/adv_29_474_slow.mp3"
+    },
+    {
+      "item": 475,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.146,
+      "transcript": "Empresa.",
+      "expected": "empresa",
+      "path": "advanced/adv_29_475.mp3"
+    },
+    {
+      "item": 475,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.53,
+      "transcript": "Não tem empresa.",
+      "expected": "empresa",
+      "path": "advanced/adv_29_475_slow.mp3"
+    },
+    {
+      "item": 476,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.0606875,
+      "transcript": "Client 2",
+      "expected": "cliente",
+      "path": "advanced/adv_29_476.mp3"
+    },
+    {
+      "item": 476,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.402,
+      "transcript": "a client too",
+      "expected": "cliente",
+      "path": "advanced/adv_29_476_slow.mp3"
+    },
+    {
+      "item": 477,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.103375,
+      "transcript": "Contrato.",
+      "expected": "contrato",
+      "path": "advanced/adv_29_477.mp3"
+    },
+    {
+      "item": 477,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.402,
+      "transcript": "I won't try to.",
+      "expected": "contrato",
+      "path": "advanced/adv_29_477_slow.mp3"
+    },
+    {
+      "item": 478,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.9326875,
+      "transcript": "Prazo.",
+      "expected": "prazo",
+      "path": "advanced/adv_29_478.mp3"
+    },
+    {
+      "item": 478,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.21,
+      "transcript": "E prazo.",
+      "expected": "prazo",
+      "path": "advanced/adv_29_478_slow.mp3"
+    },
+    {
+      "item": 479,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.85,
+      "transcript": "Quem não chora não mama.",
+      "expected": "Quem não chora, não mama",
+      "path": "advanced/adv_30_479.mp3"
+    },
+    {
+      "item": 479,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.5326875,
+      "transcript": "Quem não chora, não mama.",
+      "expected": "Quem não chora, não mama",
+      "path": "advanced/adv_30_479_slow.mp3"
+    },
+    {
+      "item": 480,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.338,
+      "transcript": "Pagar o patso.",
+      "expected": "Pagar o pato",
+      "path": "advanced/adv_30_480.mp3"
+    },
+    {
+      "item": 480,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.743375,
+      "transcript": "De pagar o pato.",
+      "expected": "Pagar o pato",
+      "path": "advanced/adv_30_480_slow.mp3"
+    },
+    {
+      "item": 481,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.551375,
+      "transcript": "Encher linguiça.",
+      "expected": "Encher linguiça",
+      "path": "advanced/adv_30_481.mp3"
+    },
+    {
+      "item": 481,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.063375,
+      "transcript": "A encher linguiça.",
+      "expected": "Encher linguiça",
+      "path": "advanced/adv_30_481_slow.mp3"
+    },
+    {
+      "item": 482,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.231375,
+      "transcript": "Dar um jeito.",
+      "expected": "Dar um jeito",
+      "path": "advanced/adv_30_482.mp3"
+    },
+    {
+      "item": 482,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.679375,
+      "transcript": "Dar um jeito.",
+      "expected": "Dar um jeito",
+      "path": "advanced/adv_30_482_slow.mp3"
+    },
+    {
+      "item": 483,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.359375,
+      "transcript": "Ficar de olho.",
+      "expected": "Ficar de olho",
+      "path": "advanced/adv_30_483.mp3"
+    },
+    {
+      "item": 483,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.85,
+      "transcript": "Ficar de olho.",
+      "expected": "Ficar de olho",
+      "path": "advanced/adv_30_483_slow.mp3"
+    },
+    {
+      "item": 484,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.3806875,
+      "transcript": "Quebrar o galho.",
+      "expected": "Quebrar o galho",
+      "path": "advanced/adv_30_484.mp3"
+    },
+    {
+      "item": 484,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.807375,
+      "transcript": "quebrar o galho",
+      "expected": "Quebrar o galho",
+      "path": "advanced/adv_30_484_slow.mp3"
+    },
+    {
+      "item": 485,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 1.295375,
+      "transcript": "Cadir a ficha.",
+      "expected": "Cair a ficha",
+      "path": "advanced/adv_30_485.mp3"
+    },
+    {
+      "item": 485,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.7006875,
+      "transcript": "Vem cair a ficha.",
+      "expected": "Cair a ficha",
+      "path": "advanced/adv_30_485_slow.mp3"
+    },
+    {
+      "item": 486,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.895375,
+      "transcript": "Boa tarde, o meu voo para o rio está atrasado.",
+      "expected": "Boa tarde, o meu voo para o Rio está atrasado?",
+      "path": "advanced/adv_31_486.mp3"
+    },
+    {
+      "item": 486,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.026,
+      "transcript": "Boa tarde. O meu voo para o rio está atrasado.",
+      "expected": "Boa tarde, o meu voo para o Rio está atrasado?",
+      "path": "advanced/adv_31_486_slow.mp3"
+    },
+    {
+      "item": 487,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.767375,
+      "transcript": "Sim, infelizmente está atrasado uma hora.",
+      "expected": "Sim, infelizmente está atrasado uma hora.",
+      "path": "advanced/adv_31_487.mp3"
+    },
+    {
+      "item": 487,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.8766875,
+      "transcript": "Sim, infelizmente está atrasado uma hora.",
+      "expected": "Sim, infelizmente está atrasado uma hora.",
+      "path": "advanced/adv_31_487_slow.mp3"
+    },
+    {
+      "item": 488,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.746,
+      "transcript": "Nossa, vou perder a conexão para São Paulo.",
+      "expected": "Nossa! Vou perder a conexão para São Paulo?",
+      "path": "advanced/adv_31_488.mp3"
+    },
+    {
+      "item": 488,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.898,
+      "transcript": "Nossa, vou perder a conexão para São Paulo.",
+      "expected": "Nossa! Vou perder a conexão para São Paulo?",
+      "path": "advanced/adv_31_488_slow.mp3"
+    },
+    {
+      "item": 489,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.2366875,
+      "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "expected": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "path": "advanced/adv_31_489.mp3"
+    },
+    {
+      "item": 489,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.623375,
+      "transcript": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "expected": "Fica tranquilo, já reorganizamos a sua viagem.",
+      "path": "advanced/adv_31_489_slow.mp3"
+    },
+    {
+      "item": 490,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.4926875,
+      "transcript": "Desculpa, o ar condicionado do meu quarto não funciona.",
+      "expected": "Desculpa, o ar condicionado do meu quarto não funciona.",
+      "path": "advanced/adv_31_490.mp3"
+    },
+    {
+      "item": 490,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.9006875,
+      "transcript": "Desculpa, o ar condicionado do meu quarto não funciona.",
+      "expected": "Desculpa, o ar condicionado do meu quarto não funciona.",
+      "path": "advanced/adv_31_490_slow.mp3"
+    },
+    {
+      "item": 491,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.362,
+      "transcript": "Sinto muito, vou mandar alguém já.",
+      "expected": "Sinto muito. Vou mandar alguém já.",
+      "path": "advanced/adv_31_491.mp3"
+    },
+    {
+      "item": 491,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.407375,
+      "transcript": "Sinto muito, vou mandar alguém já.",
+      "expected": "Sinto muito. Vou mandar alguém já.",
+      "path": "advanced/adv_31_491_slow.mp3"
+    },
+    {
+      "item": 492,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.1726875,
+      "transcript": "Valeu, eu também queria trocar de quarto se der.",
+      "expected": "Valeu. Eu também queria trocar de quarto, se der.",
+      "path": "advanced/adv_31_492.mp3"
+    },
+    {
+      "item": 492,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.4526875,
+      "transcript": "Valeu, eu também queria trocar de quarto, se der.",
+      "expected": "Valeu. Eu também queria trocar de quarto, se der.",
+      "path": "advanced/adv_31_492_slow.mp3"
+    },
+    {
+      "item": 493,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.767375,
+      "transcript": "Claro, vou verificar a disponibilidade.",
+      "expected": "Claro, vou verificar a disponibilidade.",
+      "path": "advanced/adv_31_493.mp3"
+    },
+    {
+      "item": 493,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.983375,
+      "transcript": "Claro, vou verificar a disponibilidade.",
+      "expected": "Claro, vou verificar a disponibilidade.",
+      "path": "advanced/adv_31_493_slow.mp3"
+    },
+    {
+      "item": 494,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.791375,
+      "transcript": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
+      "expected": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
+      "path": "advanced/adv_31_494.mp3"
+    },
+    {
+      "item": 494,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 5.4126875,
+      "transcript": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
+      "expected": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
+      "path": "advanced/adv_31_494_slow.mp3"
+    },
+    {
+      "item": 495,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.9806875,
+      "transcript": "Há quanto tempo você está com esses sintomas?",
+      "expected": "Há quanto tempo você está com esses sintomas?",
+      "path": "advanced/adv_31_495.mp3"
+    },
+    {
+      "item": 495,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.111375,
+      "transcript": "Há quanto tempo você está com esses sintomas?",
+      "expected": "Há quanto tempo você está com esses sintomas?",
+      "path": "advanced/adv_31_495_slow.mp3"
+    },
+    {
+      "item": 496,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.85,
+      "transcript": "desde ontem à noite.",
+      "expected": "Desde ontem à noite.",
+      "path": "advanced/adv_31_496.mp3"
+    },
+    {
+      "item": 496,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.682,
+      "transcript": "Desde ontem à noite.",
+      "expected": "Desde ontem à noite.",
+      "path": "advanced/adv_31_496_slow.mp3"
+    },
+    {
+      "item": 497,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 2.8526875,
+      "transcript": "Toma esse remédio de 8 em 8 horas.",
+      "expected": "Toma esse remédio de oito em oito horas.",
+      "path": "advanced/adv_31_497.mp3"
+    },
+    {
+      "item": 497,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 3.9406875,
+      "transcript": "Toma esse remédio de 8 em 8 horas.",
+      "expected": "Toma esse remédio de oito em oito horas.",
+      "path": "advanced/adv_31_497_slow.mp3"
+    },
+    {
+      "item": 498,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.7246875,
+      "transcript": "Eu queria alugar um carro por três dias.",
+      "expected": "Eu queria alugar um carro por três dias.",
+      "path": "advanced/adv_31_498.mp3"
+    },
+    {
+      "item": 498,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.898,
+      "transcript": "Eu queria alugar um carro por três dias.",
+      "expected": "Eu queria alugar um carro por três dias.",
+      "path": "advanced/adv_31_498_slow.mp3"
+    },
+    {
+      "item": 499,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.3646875,
+      "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+      "expected": "Claro. Posso ver a sua carteira de motorista, por favor?",
+      "path": "advanced/adv_31_499.mp3"
+    },
+    {
+      "item": 499,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.986,
+      "transcript": "Claro, posso ver a sua carteira de motorista, por favor.",
+      "expected": "Claro. Posso ver a sua carteira de motorista, por favor?",
+      "path": "advanced/adv_31_499_slow.mp3"
+    },
+    {
+      "item": 500,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.234,
+      "transcript": "Aqui está, o seguro está incluído.",
+      "expected": "Aqui está. O seguro está incluído?",
+      "path": "advanced/adv_31_500.mp3"
+    },
+    {
+      "item": 500,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.215375,
+      "transcript": "Aqui está, o seguro está incluído.",
+      "expected": "Aqui está. O seguro está incluído?",
+      "path": "advanced/adv_31_500_slow.mp3"
+    },
+    {
+      "item": 501,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.9806875,
+      "transcript": "Está sim, o seguro básico já vem incluído.",
+      "expected": "Está sim, o seguro básico já vem incluído.",
+      "path": "advanced/adv_31_501.mp3"
+    },
+    {
+      "item": 501,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 4.2606875,
+      "transcript": "Está sim, o seguro básico já vem incluído.",
+      "expected": "Está sim, o seguro básico já vem incluído.",
+      "path": "advanced/adv_31_501_slow.mp3"
+    },
+    {
+      "item": 502,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 2.639375,
+      "transcript": "Desculpa como eu chego no pão de açúcar.",
+      "expected": "Desculpa, como eu chego no Pão de Açúcar?",
+      "path": "advanced/adv_31_502.mp3"
+    },
+    {
+      "item": 502,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 3.706,
+      "transcript": "Desculpa, como eu chego no pão de açúcar?",
+      "expected": "Desculpa, como eu chego no Pão de Açúcar?",
+      "path": "advanced/adv_31_502_slow.mp3"
+    },
+    {
+      "item": 503,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 3.8126875,
+      "transcript": "Siga em frente e depois vire à direita na segunda rua.",
+      "expected": "Siga em frente e depois vire à direita na segunda rua.",
+      "path": "advanced/adv_31_503.mp3"
+    },
+    {
+      "item": 503,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 5.498,
+      "transcript": "Siga em frente e depois vire à direita na segunda rua.",
+      "expected": "Siga em frente e depois vire à direita na segunda rua.",
+      "path": "advanced/adv_31_503_slow.mp3"
+    },
+    {
+      "item": 504,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.658,
+      "transcript": "É muito longe daqui.",
+      "expected": "É muito longe daqui?",
+      "path": "advanced/adv_31_504.mp3"
+    },
+    {
+      "item": 504,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 2.362,
+      "transcript": "Ela é muito longe da Akis.",
+      "expected": "É muito longe daqui?",
+      "path": "advanced/adv_31_504_slow.mp3"
+    },
+    {
+      "item": 505,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 2.191375,
+      "transcript": "Não fica uns 10 minutos a pé.",
+      "expected": "Não, fica uns dez minutos a pé.",
+      "path": "advanced/adv_31_505.mp3"
+    },
+    {
+      "item": 505,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 3.3006875,
+      "transcript": "Não fica uns 10 minutos a pé.",
+      "expected": "Não, fica uns dez minutos a pé.",
+      "path": "advanced/adv_31_505_slow.mp3"
+    },
+    {
+      "item": 506,
+      "speed": "normal",
+      "exactMatch": false,
+      "duration": 19.258,
+      "transcript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar pra ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "path": "advanced/adv_32_506.mp3"
+    },
+    {
+      "item": 506,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 27.3646875,
+      "transcript": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível.",
+      "expected": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
+      "path": "advanced/adv_32_506_slow.mp3"
+    },
+    {
+      "item": 507,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 0.911375,
+      "transcript": "Pegar.",
+      "expected": "pegar",
+      "path": "advanced/adv_32_507.mp3"
+    },
+    {
+      "item": 507,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.103375,
+      "transcript": "Tu pegar",
+      "expected": "pegar",
+      "path": "advanced/adv_32_507_slow.mp3"
+    },
+    {
+      "item": 508,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.3806875,
+      "transcript": "Pão de açúcar.",
+      "expected": "Pão de Açúcar",
+      "path": "advanced/adv_32_508.mp3"
+    },
+    {
+      "item": 508,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.7006875,
+      "transcript": "E pão de açúcar.",
+      "expected": "Pão de Açúcar",
+      "path": "advanced/adv_32_508_slow.mp3"
+    },
+    {
+      "item": 509,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.3806875,
+      "transcript": "Suco de coco.",
+      "expected": "suco de coco",
+      "path": "advanced/adv_32_509.mp3"
+    },
+    {
+      "item": 509,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 1.807375,
+      "transcript": "Suco de coco.",
+      "expected": "suco de coco",
+      "path": "advanced/adv_32_509_slow.mp3"
+    },
+    {
+      "item": 510,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.274,
+      "transcript": "Inesquecível.",
+      "expected": "inesquecível",
+      "path": "advanced/adv_32_510.mp3"
+    },
+    {
+      "item": 510,
+      "speed": "slow",
+      "exactMatch": false,
+      "duration": 1.722,
+      "transcript": "É inesquecível.",
+      "expected": "inesquecível",
+      "path": "advanced/adv_32_510_slow.mp3"
+    },
+    {
+      "item": 511,
+      "speed": "normal",
+      "exactMatch": true,
+      "duration": 1.658,
+      "transcript": "Boa sorte e força.",
+      "expected": "Boa sorte e força!",
+      "path": "advanced/adv_33_511.mp3"
+    },
+    {
+      "item": 511,
+      "speed": "slow",
+      "exactMatch": true,
+      "duration": 2.383375,
+      "transcript": "Boa sorte e força.",
+      "expected": "Boa sorte e força!",
+      "path": "advanced/adv_33_511_slow.mp3"
+    }
+  ]
+}
