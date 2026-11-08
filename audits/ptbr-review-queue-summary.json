@@ -1,0 +1,17 @@
+{
+  "source": "audits/ptbr-two-model-triage-all-1022.json",
+  "total_recordings": 1022,
+  "both_models_exact": 217,
+  "one_model_exact": 224,
+  "neither_exact_review_queue": 581,
+  "unique_items_in_queue": 385,
+  "paired_candidates_with_both_speeds_in_queue": 196,
+  "flag_counts": {
+    "asr_disagreement": 494,
+    "non_latin_asr_output": 54,
+    "pt_pt_locale_check": 7,
+    "short_audio": 197
+  },
+  "pronunciation_verified_by_this_script": 0,
+  "note": "ASR disagreement is not proof of a wrong recording. Manual listening required."
+}
