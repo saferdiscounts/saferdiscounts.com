@@ -1,0 +1,1351 @@
+{
+  "schemaVersion": 1,
+  "source": "audits/ptbr-two-model-triage-all-1022.json",
+  "status": "ASR triage only; no direct listening performed",
+  "totalCandidates": 581,
+  "scoring": "heuristic priority only; not a pronunciation accuracy metric",
+  "topPriority": [
+    {
+      "item": 4,
+      "speed": "normal",
+      "path": "basic/bas_01_004.mp3",
+      "expected": "trem",
+      "firstTranscript": "スライン",
+      "secondTranscript": "虽然",
+      "duration": 0.89,
+      "priorityScore": 16,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 161,
+      "speed": "normal",
+      "path": "basic/bas_09_161.mp3",
+      "expected": "peixe",
+      "firstTranscript": "悲劇",
+      "secondTranscript": "背试",
+      "duration": 0.911375,
+      "priorityScore": 16,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 206,
+      "speed": "normal",
+      "path": "advanced/adv_14_206.mp3",
+      "expected": "ótimo",
+      "firstTranscript": "おちむ",
+      "secondTranscript": "オチム",
+      "duration": 0.954,
+      "priorityScore": 16,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 158,
+      "speed": "slow",
+      "path": "basic/bas_09_158_slow.mp3",
+      "expected": "suco",
+      "firstTranscript": "Слогой!",
+      "secondTranscript": "アスローブクは",
+      "duration": 1.146,
+      "priorityScore": 14,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 315,
+      "speed": "slow",
+      "path": "advanced/adv_17_315_slow.mp3",
+      "expected": "vinha",
+      "firstTranscript": "В Виня!",
+      "secondTranscript": "Винья.",
+      "duration": 1.082,
+      "priorityScore": 14,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 449,
+      "speed": "slow",
+      "path": "advanced/adv_27_449_slow.mp3",
+      "expected": "caixa eletrônico",
+      "firstTranscript": "Кайша електронику.",
+      "secondTranscript": "קיישה אלטרוניקו.",
+      "duration": 2.042,
+      "priorityScore": 14,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 9,
+      "speed": "slow",
+      "path": "basic/bas_01_009_slow.mp3",
+      "expected": "autocarro",
+      "firstTranscript": "Εινάω τρόξα αγχου.",
+      "secondTranscript": "E não trouxe a rua.",
+      "duration": 1.594,
+      "priorityScore": 12,
+      "flags": [
+        "locale-review",
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 11,
+      "speed": "slow",
+      "path": "basic/bas_01_011_slow.mp3",
+      "expected": "telemóvel",
+      "firstTranscript": "אצל למורביו",
+      "secondTranscript": "It's illimóvel.",
+      "duration": 1.5086875,
+      "priorityScore": 12,
+      "flags": [
+        "locale-review",
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 53,
+      "speed": "normal",
+      "path": "basic/bas_04_053.mp3",
+      "expected": "parte",
+      "firstTranscript": "Bye to you!",
+      "secondTranscript": "巴的气",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 62,
+      "speed": "normal",
+      "path": "basic/bas_04_062.mp3",
+      "expected": "tenho",
+      "firstTranscript": "謝謝觀看",
+      "secondTranscript": "Señor.",
+      "duration": 0.783375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 67,
+      "speed": "normal",
+      "path": "basic/bas_04_067.mp3",
+      "expected": "ir",
+      "firstTranscript": "Meera.",
+      "secondTranscript": "Мир.",
+      "duration": 0.719375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 68,
+      "speed": "normal",
+      "path": "basic/bas_04_068.mp3",
+      "expected": "faço",
+      "firstTranscript": "法宿",
+      "secondTranscript": "Faço o que...",
+      "duration": 0.911375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 71,
+      "speed": "normal",
+      "path": "basic/bas_04_071.mp3",
+      "expected": "posso",
+      "firstTranscript": "爆四個",
+      "secondTranscript": "Boss suit",
+      "duration": 0.89,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 82,
+      "speed": "normal",
+      "path": "basic/bas_05_082.mp3",
+      "expected": "um",
+      "firstTranscript": "Don't worry.",
+      "secondTranscript": "中文字幕志愿者 杨茜茜",
+      "duration": 0.7406875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 87,
+      "speed": "normal",
+      "path": "basic/bas_05_087.mp3",
+      "expected": "treze",
+      "firstTranscript": "Três ícoles.",
+      "secondTranscript": "13.",
+      "duration": 0.911375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 90,
+      "speed": "normal",
+      "path": "basic/bas_05_090.mp3",
+      "expected": "quatro",
+      "firstTranscript": "コアツルー",
+      "secondTranscript": "Cuatro.",
+      "duration": 0.911375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 91,
+      "speed": "normal",
+      "path": "basic/bas_05_091.mp3",
+      "expected": "quinze",
+      "firstTranscript": "Kings it.",
+      "secondTranscript": "15",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 98,
+      "speed": "normal",
+      "path": "basic/bas_05_098.mp3",
+      "expected": "oito",
+      "firstTranscript": "ご視聴いただきましてくださって… [ASR repeated Japanese text; truncated in evidence]",
+      "secondTranscript": "おいつう",
+      "duration": 0.8686875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 100,
+      "speed": "normal",
+      "path": "basic/bas_05_100.mp3",
+      "expected": "nove",
+      "firstTranscript": "Nave.",
+      "secondTranscript": "9.",
+      "duration": 0.8686875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 102,
+      "speed": "normal",
+      "path": "basic/bas_05_102.mp3",
+      "expected": "dez",
+      "firstTranscript": "That's...",
+      "secondTranscript": "10.",
+      "duration": 0.826,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 119,
+      "speed": "normal",
+      "path": "basic/bas_06_119.mp3",
+      "expected": "julho",
+      "firstTranscript": "جوليو",
+      "secondTranscript": "Júlio.",
+      "duration": 0.8686875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 122,
+      "speed": "normal",
+      "path": "basic/bas_06_122.mp3",
+      "expected": "março",
+      "firstTranscript": "मार سوٹ",
+      "secondTranscript": "Mar azul.",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 128,
+      "speed": "normal",
+      "path": "basic/bas_06_128.mp3",
+      "expected": "junho",
+      "firstTranscript": "Dzień, Joga.",
+      "secondTranscript": "ジョン・ヨーグ",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 134,
+      "speed": "normal",
+      "path": "basic/bas_07_134.mp3",
+      "expected": "preto",
+      "firstTranscript": "Прецук.",
+      "secondTranscript": "Prezo.",
+      "duration": 0.89,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 140,
+      "speed": "normal",
+      "path": "basic/bas_07_140.mp3",
+      "expected": "marrom",
+      "firstTranscript": "מה חיונג?",
+      "secondTranscript": "Mahong.",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 152,
+      "speed": "normal",
+      "path": "basic/bas_08_152.mp3",
+      "expected": "tio",
+      "firstTranscript": "チオ",
+      "secondTranscript": "See you.",
+      "duration": 0.783375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 217,
+      "speed": "normal",
+      "path": "advanced/adv_15_217.mp3",
+      "expected": "parte",
+      "firstTranscript": "Bye to you!",
+      "secondTranscript": "巴的气",
+      "duration": 0.9326875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 236,
+      "speed": "normal",
+      "path": "advanced/adv_16_236.mp3",
+      "expected": "parti",
+      "firstTranscript": "把他吸引",
+      "secondTranscript": "Para chico.",
+      "duration": 0.89,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 245,
+      "speed": "normal",
+      "path": "advanced/adv_16_245.mp3",
+      "expected": "ir",
+      "firstTranscript": "Meera.",
+      "secondTranscript": "Мир.",
+      "duration": 0.719375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 255,
+      "speed": "normal",
+      "path": "advanced/adv_16_255.mp3",
+      "expected": "tive",
+      "firstTranscript": "Chewie!",
+      "secondTranscript": "Тивил.",
+      "duration": 0.826,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 260,
+      "speed": "normal",
+      "path": "advanced/adv_16_260.mp3",
+      "expected": "fiz",
+      "firstTranscript": "Feioza!",
+      "secondTranscript": "肥子",
+      "duration": 0.8046875,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 278,
+      "speed": "normal",
+      "path": "advanced/adv_16_278.mp3",
+      "expected": "disse",
+      "firstTranscript": "수고하셨습니다.",
+      "secondTranscript": "Diz isso.",
+      "duration": 0.954,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 364,
+      "speed": "normal",
+      "path": "advanced/adv_21_364.mp3",
+      "expected": "me",
+      "firstTranscript": "I'm here.",
+      "secondTranscript": "Мет.",
+      "duration": 0.593375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 367,
+      "speed": "normal",
+      "path": "advanced/adv_21_367.mp3",
+      "expected": "os",
+      "firstTranscript": "Lua-se!",
+      "secondTranscript": "ご視聴ありがとうございました",
+      "duration": 0.693375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 376,
+      "speed": "normal",
+      "path": "advanced/adv_22_376.mp3",
+      "expected": "do",
+      "firstTranscript": "Thanks for watching.",
+      "secondTranscript": "Сдох.",
+      "duration": 0.618375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 377,
+      "speed": "normal",
+      "path": "advanced/adv_22_377.mp3",
+      "expected": "da",
+      "firstTranscript": "Thank you.",
+      "secondTranscript": "Дальше.",
+      "duration": 0.593375,
+      "priorityScore": 11,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 61,
+      "speed": "normal",
+      "path": "basic/bas_04_061.mp3",
+      "expected": "falam",
+      "firstTranscript": "發了一張",
+      "secondTranscript": "Falando.",
+      "duration": 1.082,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 62,
+      "speed": "slow",
+      "path": "basic/bas_04_062_slow.mp3",
+      "expected": "tenho",
+      "firstTranscript": "とてあげよう",
+      "secondTranscript": "Atenio.",
+      "duration": 0.9966875,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 93,
+      "speed": "normal",
+      "path": "basic/bas_05_093.mp3",
+      "expected": "dezesseis",
+      "firstTranscript": "DSSA's.",
+      "secondTranscript": "16.",
+      "duration": 1.167375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 95,
+      "speed": "normal",
+      "path": "basic/bas_05_095.mp3",
+      "expected": "dezessete",
+      "firstTranscript": "This is at you.",
+      "secondTranscript": "17.",
+      "duration": 1.2526875,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 97,
+      "speed": "normal",
+      "path": "basic/bas_05_097.mp3",
+      "expected": "dezoito",
+      "firstTranscript": "Desoi-to.",
+      "secondTranscript": "18.",
+      "duration": 1.103375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 99,
+      "speed": "normal",
+      "path": "basic/bas_05_099.mp3",
+      "expected": "dezenove",
+      "firstTranscript": "Dezenovie.",
+      "secondTranscript": "19.",
+      "duration": 1.167375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 103,
+      "speed": "normal",
+      "path": "basic/bas_05_103.mp3",
+      "expected": "trinta",
+      "firstTranscript": "Tsirinta.",
+      "secondTranscript": "30.",
+      "duration": 1.018,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 144,
+      "speed": "normal",
+      "path": "basic/bas_08_144.mp3",
+      "expected": "irmã",
+      "firstTranscript": "إِرَّمًا",
+      "secondTranscript": "Irre-mains.",
+      "duration": 1.018,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 164,
+      "speed": "normal",
+      "path": "basic/bas_09_164.mp3",
+      "expected": "legumes",
+      "firstTranscript": "לגומס.",
+      "secondTranscript": "Legumis",
+      "duration": 1.103375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 191,
+      "speed": "normal",
+      "path": "basic/bas_12_191.mp3",
+      "expected": "Só isso?",
+      "firstTranscript": "ソーリース スー",
+      "secondTranscript": "Soli issu.",
+      "duration": 1.082,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 199,
+      "speed": "normal",
+      "path": "advanced/adv_14_199.mp3",
+      "expected": "Chamo-me Ahmed.",
+      "firstTranscript": "שום מומי המד.",
+      "secondTranscript": "Chamo minha MED.",
+      "duration": 1.274,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 226,
+      "speed": "normal",
+      "path": "advanced/adv_15_226.mp3",
+      "expected": "falam",
+      "firstTranscript": "發了一張",
+      "secondTranscript": "Falando.",
+      "duration": 1.082,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 250,
+      "speed": "normal",
+      "path": "advanced/adv_16_250.mp3",
+      "expected": "estive",
+      "firstTranscript": "Estiveu!",
+      "secondTranscript": "Эстиву.",
+      "duration": 1.018,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 365,
+      "speed": "slow",
+      "path": "advanced/adv_21_365_slow.mp3",
+      "expected": "lhe",
+      "firstTranscript": "Are you?",
+      "secondTranscript": "Айу.",
+      "duration": 0.762,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 367,
+      "speed": "slow",
+      "path": "advanced/adv_21_367_slow.mp3",
+      "expected": "os",
+      "firstTranscript": "Угу, а здесь?",
+      "secondTranscript": "Google, let's just...",
+      "duration": 0.89,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 377,
+      "speed": "slow",
+      "path": "advanced/adv_22_377_slow.mp3",
+      "expected": "da",
+      "firstTranscript": "You're there.",
+      "secondTranscript": "Да.",
+      "duration": 0.783375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 378,
+      "speed": "slow",
+      "path": "advanced/adv_22_378_slow.mp3",
+      "expected": "dos",
+      "firstTranscript": "Adouce.",
+      "secondTranscript": "É 12.",
+      "duration": 0.8686875,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 379,
+      "speed": "slow",
+      "path": "advanced/adv_22_379_slow.mp3",
+      "expected": "das",
+      "firstTranscript": "Nudaz.",
+      "secondTranscript": "Удачу.",
+      "duration": 0.911375,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 398,
+      "speed": "slow",
+      "path": "advanced/adv_23_398_slow.mp3",
+      "expected": "mas",
+      "firstTranscript": "います",
+      "secondTranscript": "Y más.",
+      "duration": 0.9326875,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 464,
+      "speed": "normal",
+      "path": "advanced/adv_28_464.mp3",
+      "expected": "rotatória",
+      "firstTranscript": "ご視聴ありがとうございました",
+      "secondTranscript": "Quotatoria",
+      "duration": 1.21,
+      "priorityScore": 10,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 2,
+      "speed": "slow",
+      "path": "basic/bas_01_002_slow.mp3",
+      "expected": "banheiro",
+      "firstTranscript": "Сбай, Невирус!",
+      "secondTranscript": "Banheiros",
+      "duration": 1.423375,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 3,
+      "speed": "normal",
+      "path": "basic/bas_01_003.mp3",
+      "expected": "comboio",
+      "firstTranscript": "Come, boy, you...",
+      "secondTranscript": "Combo you",
+      "duration": 0.9966875,
+      "priorityScore": 9,
+      "flags": [
+        "locale-review",
+        "short-duration"
+      ]
+    },
+    {
+      "item": 73,
+      "speed": "slow",
+      "path": "basic/bas_04_073_slow.mp3",
+      "expected": "poder",
+      "firstTranscript": "تفضير",
+      "secondTranscript": "O poder.",
+      "duration": 1.082,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 90,
+      "speed": "slow",
+      "path": "basic/bas_05_090_slow.mp3",
+      "expected": "quatro",
+      "firstTranscript": "イコアツル",
+      "secondTranscript": "Em quatro.",
+      "duration": 1.1886875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 99,
+      "speed": "slow",
+      "path": "basic/bas_05_099_slow.mp3",
+      "expected": "dezenove",
+      "firstTranscript": "Desenove.",
+      "secondTranscript": "19",
+      "duration": 1.4446875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 105,
+      "speed": "slow",
+      "path": "basic/bas_05_105_slow.mp3",
+      "expected": "oitenta",
+      "firstTranscript": "Lvojí tějínské.",
+      "secondTranscript": "Ройт деймстер.",
+      "duration": 1.466,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 128,
+      "speed": "slow",
+      "path": "basic/bas_06_128_slow.mp3",
+      "expected": "junho",
+      "firstTranscript": "I just don't want to hear you all about it.",
+      "secondTranscript": "这时候你又有了",
+      "duration": 1.3166875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 150,
+      "speed": "slow",
+      "path": "basic/bas_08_150_slow.mp3",
+      "expected": "esposa",
+      "firstTranscript": "Весболзо!",
+      "secondTranscript": "E esposa.",
+      "duration": 1.4446875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 151,
+      "speed": "slow",
+      "path": "basic/bas_08_151_slow.mp3",
+      "expected": "mulher",
+      "firstTranscript": "تمول ديار",
+      "secondTranscript": "Somos líderes.",
+      "duration": 1.1246875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 152,
+      "speed": "slow",
+      "path": "basic/bas_08_152_slow.mp3",
+      "expected": "tio",
+      "firstTranscript": "私よ",
+      "secondTranscript": "Let's see you.",
+      "duration": 1.018,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 236,
+      "speed": "slow",
+      "path": "advanced/adv_16_236_slow.mp3",
+      "expected": "parti",
+      "firstTranscript": "都把他吃贏",
+      "secondTranscript": "About a three.",
+      "duration": 1.1886875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 255,
+      "speed": "slow",
+      "path": "advanced/adv_16_255_slow.mp3",
+      "expected": "tive",
+      "firstTranscript": "A ci wy!",
+      "secondTranscript": "Отшиваю.",
+      "duration": 1.1246875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 264,
+      "speed": "slow",
+      "path": "advanced/adv_16_264_slow.mp3",
+      "expected": "poder",
+      "firstTranscript": "تفضير",
+      "secondTranscript": "O poder.",
+      "duration": 1.082,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 334,
+      "speed": "slow",
+      "path": "advanced/adv_19_334_slow.mp3",
+      "expected": "parta",
+      "firstTranscript": "He barges to it.",
+      "secondTranscript": "一般是",
+      "duration": 1.1886875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 354,
+      "speed": "slow",
+      "path": "advanced/adv_20_354_slow.mp3",
+      "expected": "se chama",
+      "firstTranscript": "עשי שרמה.",
+      "secondTranscript": "Ela se chama",
+      "duration": 1.3166875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 374,
+      "speed": "slow",
+      "path": "advanced/adv_22_374_slow.mp3",
+      "expected": "+ os",
+      "firstTranscript": "היא מי זעוס.",
+      "secondTranscript": "E mais os.",
+      "duration": 1.3806875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 411,
+      "speed": "slow",
+      "path": "advanced/adv_24_411_slow.mp3",
+      "expected": "embarque",
+      "firstTranscript": "Zimbara aqui.",
+      "secondTranscript": "Замбарки.",
+      "duration": 1.4446875,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 461,
+      "speed": "slow",
+      "path": "advanced/adv_28_461_slow.mp3",
+      "expected": "esquerda",
+      "firstTranscript": "ويسكير دى",
+      "secondTranscript": "Ou esquerda.",
+      "duration": 1.338,
+      "priorityScore": 9,
+      "flags": [
+        "asr-language-drift"
+      ]
+    },
+    {
+      "item": 9,
+      "speed": "normal",
+      "path": "basic/bas_01_009.mp3",
+      "expected": "autocarro",
+      "firstTranscript": "Elke took zou goed.",
+      "secondTranscript": "É o Toxarro.",
+      "duration": 1.1886875,
+      "priorityScore": 8,
+      "flags": [
+        "locale-review"
+      ]
+    },
+    {
+      "item": 1,
+      "speed": "slow",
+      "path": "basic/bas_01_001_slow.mp3",
+      "expected": "casa de banho",
+      "firstTranscript": "e causa de banho.",
+      "secondTranscript": "E casa de banho.",
+      "duration": 1.658,
+      "priorityScore": 7,
+      "flags": [
+        "locale-review"
+      ]
+    },
+    {
+      "item": 3,
+      "speed": "slow",
+      "path": "basic/bas_01_003_slow.mp3",
+      "expected": "comboio",
+      "firstTranscript": "To come, boy youth.",
+      "secondTranscript": "Comboius",
+      "duration": 1.231375,
+      "priorityScore": 7,
+      "flags": [
+        "locale-review"
+      ]
+    },
+    {
+      "item": 7,
+      "speed": "slow",
+      "path": "basic/bas_01_007_slow.mp3",
+      "expected": "ementa",
+      "firstTranscript": "E de mentas.",
+      "secondTranscript": "de mentas.",
+      "duration": 1.4446875,
+      "priorityScore": 7,
+      "flags": [
+        "locale-review"
+      ]
+    },
+    {
+      "item": 13,
+      "speed": "normal",
+      "path": "basic/bas_02_013.mp3",
+      "expected": "Oi",
+      "firstTranscript": "noito.",
+      "secondTranscript": "Bye.",
+      "duration": 0.719375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 14,
+      "speed": "normal",
+      "path": "basic/bas_02_014.mp3",
+      "expected": "Olá",
+      "firstTranscript": "All last.",
+      "secondTranscript": "or less",
+      "duration": 0.847375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 24,
+      "speed": "normal",
+      "path": "basic/bas_02_024.mp3",
+      "expected": "Tchau",
+      "firstTranscript": "Ciao!",
+      "secondTranscript": "Chao.",
+      "duration": 0.762,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 31,
+      "speed": "normal",
+      "path": "basic/bas_02_031.mp3",
+      "expected": "Sim",
+      "firstTranscript": "See you next time.",
+      "secondTranscript": "Sing.",
+      "duration": 0.8046875,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 33,
+      "speed": "normal",
+      "path": "basic/bas_03_033.mp3",
+      "expected": "eu",
+      "firstTranscript": "Thank you.",
+      "secondTranscript": "Nailed.",
+      "duration": 0.718375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 35,
+      "speed": "normal",
+      "path": "basic/bas_03_035.mp3",
+      "expected": "ele",
+      "firstTranscript": "Dei-lhe.",
+      "secondTranscript": "They leave.",
+      "duration": 0.762,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 36,
+      "speed": "normal",
+      "path": "basic/bas_03_036.mp3",
+      "expected": "ela",
+      "firstTranscript": "Zeyla!",
+      "secondTranscript": "Say hello.",
+      "duration": 0.826,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 45,
+      "speed": "normal",
+      "path": "basic/bas_03_045.mp3",
+      "expected": "está",
+      "firstTranscript": "It's time.",
+      "secondTranscript": "Estaba.",
+      "duration": 0.826,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 50,
+      "speed": "normal",
+      "path": "basic/bas_04_050.mp3",
+      "expected": "parto",
+      "firstTranscript": "Bye, Tzu.",
+      "secondTranscript": "Bartitude.",
+      "duration": 0.911375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 51,
+      "speed": "normal",
+      "path": "basic/bas_04_051.mp3",
+      "expected": "como",
+      "firstTranscript": "Come with it.",
+      "secondTranscript": "Come wait.",
+      "duration": 0.847375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 52,
+      "speed": "normal",
+      "path": "basic/bas_04_052.mp3",
+      "expected": "falo",
+      "firstTranscript": "Follow",
+      "secondTranscript": "Falou!",
+      "duration": 0.868375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 54,
+      "speed": "normal",
+      "path": "basic/bas_04_054.mp3",
+      "expected": "come",
+      "firstTranscript": "Call me.",
+      "secondTranscript": "Comis.",
+      "duration": 0.8046875,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 55,
+      "speed": "normal",
+      "path": "basic/bas_04_055.mp3",
+      "expected": "fala",
+      "firstTranscript": "File it.",
+      "secondTranscript": "Falei.",
+      "duration": 0.847375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 60,
+      "speed": "normal",
+      "path": "basic/bas_04_060.mp3",
+      "expected": "comem",
+      "firstTranscript": "Cummings.",
+      "secondTranscript": "Comments.",
+      "duration": 0.975375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 63,
+      "speed": "normal",
+      "path": "basic/bas_04_063.mp3",
+      "expected": "tem",
+      "firstTranscript": "saying",
+      "secondTranscript": "Zang",
+      "duration": 0.8046875,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 64,
+      "speed": "normal",
+      "path": "basic/bas_04_064.mp3",
+      "expected": "ter",
+      "firstTranscript": "Stay out of it.",
+      "secondTranscript": "there",
+      "duration": 0.718375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 65,
+      "speed": "normal",
+      "path": "basic/bas_04_065.mp3",
+      "expected": "vou",
+      "firstTranscript": "Zol!",
+      "secondTranscript": "Vote.",
+      "duration": 0.783375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 75,
+      "speed": "normal",
+      "path": "basic/bas_04_075.mp3",
+      "expected": "quer",
+      "firstTranscript": "Care.",
+      "secondTranscript": "Quero.",
+      "duration": 0.7406875,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 83,
+      "speed": "normal",
+      "path": "basic/bas_05_083.mp3",
+      "expected": "uma",
+      "firstTranscript": "Too much.",
+      "secondTranscript": "Do my",
+      "duration": 0.762,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 84,
+      "speed": "normal",
+      "path": "basic/bas_05_084.mp3",
+      "expected": "doze",
+      "firstTranscript": "Dorsi",
+      "secondTranscript": "Dosi",
+      "duration": 0.911375,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 88,
+      "speed": "normal",
+      "path": "basic/bas_05_088.mp3",
+      "expected": "três",
+      "firstTranscript": "Dores.",
+      "secondTranscript": "That is.",
+      "duration": 0.826,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    },
+    {
+      "item": 94,
+      "speed": "normal",
+      "path": "basic/bas_05_094.mp3",
+      "expected": "seis",
+      "firstTranscript": "say so.",
+      "secondTranscript": "Says.",
+      "duration": 0.8046875,
+      "priorityScore": 6,
+      "flags": [
+        "short-duration"
+      ]
+    }
+  ],
+  "remainingCandidates": 481
+}
