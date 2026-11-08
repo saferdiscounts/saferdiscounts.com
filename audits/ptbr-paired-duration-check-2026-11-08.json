@@ -1,0 +1,13 @@
+{
+  "source": "audits/ptbr-two-model-triage-all-1022.json",
+  "coverage": "Only items for which both normal and slow occur in the 581 ASR-review candidates; not all 511 pairs",
+  "pairsAnalyzed": 196,
+  "slowNotLonger": 0,
+  "slowLessThan10PercentLonger": 0,
+  "minimumRatio": 1.173,
+  "medianRatio": 1.287,
+  "maximumRatio": 1.506,
+  "slowNotLongerCases": [],
+  "nearCases": [],
+  "note": "Duration ratio is a technical signal, not a native-speaker pronunciation assessment."
+}
