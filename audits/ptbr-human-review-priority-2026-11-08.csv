@@ -1,0 +1,9 @@
+priority,level,expected,normal_path,slow_path,reason,status,required_action
+1,basic,Como vai?,ptbr/basic/bas_02_018.mp3,ptbr/basic/bas_02_018_slow.mp3,"Both ASR models hear initial E in slow version",awaiting_native_listening,"Listen to both; identify initial word; check pronunciation and pacing"
+2,basic,Tudo bem?,ptbr/basic/bas_02_019.mp3,ptbr/basic/bas_02_019_slow.mp3,"Both ASR models hear initial Tá in slow version",awaiting_native_listening,"Listen to both; check whether Tá is actually spoken"
+3,basic,Tudo bom?,ptbr/basic/bas_02_020.mp3,ptbr/basic/bas_02_020_slow.mp3,"Both models produce unrelated transcripts",awaiting_native_listening,"Check intelligibility and spoken words; compare normal/slow"
+4,basic,Oi,ptbr/basic/bas_02_013.mp3,ptbr/basic/bas_02_013_slow.mp3,"Short-word ASR language confusion",awaiting_native_listening,"Confirm audible Oi and Brazilian pronunciation"
+5,basic,Olá,ptbr/basic/bas_02_014.mp3,ptbr/basic/bas_02_014_slow.mp3,"Short-word ASR language confusion",awaiting_native_listening,"Confirm audible Olá and Brazilian pronunciation"
+6,basic,trem,ptbr/basic/bas_01_004.mp3,ptbr/basic/bas_01_004_slow.mp3,"Short-word ASR returns non-Portuguese text",awaiting_native_listening,"Confirm trem; inspect consonants and pacing"
+7,basic,banheiro,ptbr/basic/bas_01_002.mp3,ptbr/basic/bas_01_002_slow.mp3,"Slow ASR suggests plural banheiros",awaiting_native_listening,"Check singular vs plural and regional pronunciation"
+8,basic,Bom dia,ptbr/basic/bas_02_015.mp3,ptbr/basic/bas_02_015_slow.mp3,"Large model reports initial A in slow version",awaiting_native_listening,"Check any extra initial sound"
