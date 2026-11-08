@@ -1091,14 +1091,14 @@
       [/^(?:money|cash|banknotes?|coins?)$/i,'money'],[/^(?:phone|mobile phone|telephone|smartphone)$/i,'phone'],
       [/\b(?:bread|loaf|toast)\b/i,'bread'],[/\beggs?\b/i,'egg'],[/\b(?:shoe|shoes|sneaker|sneakers)\b/i,'shoes'],[/^(?:pen|notebook|paper)$/i,'writing'],
       [/\bapples?\b/i,'apple'],[/^(?:house|home)$/i,'house'],
-      [/^(?:airplane|aircraft|plane)$/i,'airplane'],[/\b(?:taxi|cab|uber|driver)\b/i,'taxi'],[/\b(?:luggage|suitcase|baggage)\b/i,'luggage'],
+      [/^(?:airplane|aircraft|plane)$/i,'airplane'],[/^(?:taxi|cab)$/i,'taxi'],[/\b(?:luggage|suitcase|baggage)\b/i,'luggage'],
       [/\b(?:train|metro|subway)\b/i,'train'],[/\b(?:bus|coach)\b/i,'bus'],[/\b(?:beach|sea|ocean|island|coast)\b/i,'beach'],
       [/^(?:food|meal)$/i,'meal'],[/\bcity\b/i,'city'],
       [/^(?:doctor|physician)$/i,'doctor'],[/\bcats?\b/i,'cat'],[/\b(?:dogs?|puppies)\b/i,'dog'],
       [/\b(?:peanuts?|nuts)\b/i,'peanuts'],[/\b(?:milk)\b/i,'milk'],[/\b(?:lemon|lemons|lemonade)\b/i,'lemon'],[/\bheart\b/i,'heart'],
       [/\b(?:family|mother|father|parents|sister|brother)\b/i,'family'],[/^(?:clock|wall clock)$/i,'clock'],
       [/^(?:directions|road map|street map)$/i,'directions'],[/^ambulance$/i,'ambulance'],
-      [/^(?:clothes|clothing)$/i,'clothing'],[/\b(?:book|books|reading|library|study)\b/i,'books']
+      [/^(?:clothes|clothing)$/i,'clothing'],[/^(?:book|books|library)$/i,'books']
     ];
     // Weekdays are abstract calendar concepts; do not substitute a clock photograph.
     if(lang==='en'&&/^where is\.\.\.$/i.test(target.trim()))return photos.directions;
@@ -1106,14 +1106,14 @@
     if(lang==='en'&&/^(?:the room isn't ready|i would like to change rooms)$/i.test(target.trim()))return photos.hotelRoom;
     if(lang==='en'&&/^(?:it hurts here|symptoms)$/i.test(target.trim()))return photos.doctor;
     if(lang==='en'&&/^current account$/i.test(target.trim()))return photos.bank;
-    if(lang==='en'&&/^residence permit$/i.test(target.trim()))return photos.passportControl;
+    // A residence permit is a legal status/document, not a photograph of passport control.
     if(lang==='en'&&/^(?:go straight ahead)$/i.test(target.trim()))return photos.directions;
     if(lang==='en'&&/^roundabout$/i.test(target.trim()))return photos.roundabout;
     if(lang==='en'&&/^platform$/i.test(target.trim()))return photos.trainStation;
-    if(lang==='en'&&/^job application$/i.test(target.trim()))return photos.writing;
+    // A job application is a process/document, not a generic stationery photo.
     if(lang==='en'&&/^job interview$/i.test(target.trim()))return photos.office;
     if(lang==='en'&&/^public transport$/i.test(target.trim()))return photos.bus;
-    if(lang==='en'&&/^leak$/i.test(target.trim()))return photos.water;
+    // A leak has no reliable standalone object photo; avoid substituting a glass of water.
     if(lang==='en'&&/^arrange a repair$/i.test(target.trim()))return photos.tools;
     if(lang==='en'&&/^(?:zero|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|one hundred)$/i.test(target.trim()))return photos.numbers;
     for(var j=0;j<englishRules.length;j++)if(wholeForeignWord(englishRules[j][0],target))return photos[englishRules[j][1]];
