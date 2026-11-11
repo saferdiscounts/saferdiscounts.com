@@ -369,7 +369,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "sou",
-      "gl": "أنا أكون / أنا (تصريف ser للحالة أو الهوية الثابتة)",
+      "gl": "أنا أكون / أنا (تصريف ser للهوية أو الصفات أو التصنيف حسب السياق)",
       "normal": "basic/bas_03_041.mp3",
       "slow": "basic/bas_03_041_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2070,7 +2070,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "sou",
-      "gl": "أنا أكون / أنا (تصريف ser للحالة أو الهوية الثابتة)",
+      "gl": "أنا أكون / أنا (تصريف ser للهوية أو الصفات أو التصنيف حسب السياق)",
       "normal": "advanced/adv_15_230.mp3",
       "slow": "advanced/adv_15_230_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2430,7 +2430,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "quis",
-      "gl": "أردتُ (ماضي querer، أنا أو هو أو هي بحسب السياق)",
+      "gl": "أردتُ / أراد / أرادت (الماضي البسيط من querer؛ يتحدد الفاعل من السياق)",
       "normal": "advanced/adv_16_270.mp3",
       "slow": "advanced/adv_16_270_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3168,7 +3168,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "me levanto",
-      "gl": "أنهض / أستيقظ من الفراش (عن نفسي)",
+      "gl": "أنهض من الفراش (عن نفسي؛ أما أستيقظ فهي acordo)",
       "normal": "advanced/adv_20_352.mp3",
       "slow": "advanced/adv_20_352_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -4554,7 +4554,7 @@
       "level": "advanced",
       "section": "٢١. نص قرائي للتدريب",
       "pt": "Ontem fui ao Rio de Janeiro com a minha família. Chegamos ao aeroporto de manhã cedo e pegamos um táxi até o hotel. Depois do check-in, fomos ao Pão de Açúcar para ver a vista. À tarde, caminhamos na praia de Copacabana e tomamos um suco de coco. À noite, jantamos em um restaurante perto da praia e ouvimos música ao vivo. Foi um dia inesquecível!",
-      "gl": "أمس ذهبتُ إلى ريو دي جانيرو مع عائلتي. وصلنا إلى المطار في الصباح الباكر وأخذنا سيارة أجرة إلى الفندق. بعد تسجيل الدخول، ذهبنا إلى جبل باو دي أسوكار لنستمتع بالمنظر. وفي فترة بعد الظهر تمشّينا على شاطئ كوباكابانا وشربنا ماء جوز الهند. وفي المساء تناولنا العشاء في مطعم قريب من الشاطئ واستمعنا إلى موسيقى حية. كان يومًا لا يُنسى!",
+      "gl": "أمس ذهبتُ إلى ريو دي جانيرو مع عائلتي. وصلنا إلى المطار في الصباح الباكر وأخذنا سيارة أجرة إلى الفندق. بعد تسجيل الدخول، ذهبنا إلى جبل باو دي أسوكار لنستمتع بالمنظر. وفي فترة بعد الظهر تمشّينا على شاطئ كوباكابانا وشربنا عصير جوز الهند. وفي المساء تناولنا العشاء في مطعم قريب من الشاطئ واستمعنا إلى موسيقى حية. كان يومًا لا يُنسى!",
       "normal": "advanced/adv_32_506.mp3",
       "slow": "advanced/adv_32_506_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
