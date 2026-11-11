@@ -378,7 +378,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "somos",
-      "gl": "نحن نكون / نحن (تصريف ser)",
+      "gl": "نحن نكون (تصريف ser للهوية أو الصفات أو التصنيف حسب السياق)",
       "normal": "basic/bas_03_042.mp3",
       "slow": "basic/bas_03_042_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -387,7 +387,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "são",
-      "gl": "هم أو هنّ أو أنتم يكونون / هم (تصريف ser)",
+      "gl": "يكونون / يكنّ / تكونون (تصريف ser للهوية أو الصفات أو التصنيف حسب الفاعل والسياق)",
       "normal": "basic/bas_03_043.mp3",
       "slow": "basic/bas_03_043_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -396,7 +396,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estou",
-      "gl": "أنا موجود / أنا في حالة مؤقتة (تصريف estar)",
+      "gl": "أنا أكون / أتواجد (تصريف estar للحالة أو الموقع حسب السياق)",
       "normal": "basic/bas_03_044.mp3",
       "slow": "basic/bas_03_044_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -405,7 +405,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "está",
-      "gl": "هو أو هي أو أنت موجود / في حالة مؤقتة (تصريف estar)",
+      "gl": "يكون / تكون / تكون حضرتك (تصريف estar للحالة أو الموقع حسب الفاعل والسياق)",
       "normal": "basic/bas_03_045.mp3",
       "slow": "basic/bas_03_045_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -414,7 +414,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estamos",
-      "gl": "نحن موجودون / نحن في حالة مؤقتة (تصريف estar)",
+      "gl": "نحن نكون / نتواجد (تصريف estar للحالة أو الموقع حسب السياق)",
       "normal": "basic/bas_03_046.mp3",
       "slow": "basic/bas_03_046_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -423,7 +423,7 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "estão",
-      "gl": "هم أو هنّ أو أنتم موجودون (تصريف estar)",
+      "gl": "يكونون / يكنّ / تكونون (تصريف estar للحالة أو الموقع حسب الفاعل والسياق)",
       "normal": "basic/bas_03_047.mp3",
       "slow": "basic/bas_03_047_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2061,7 +2061,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estou",
-      "gl": "أنا موجود / أنا في حالة مؤقتة (تصريف estar)",
+      "gl": "أنا أكون / أتواجد (تصريف estar للحالة أو الموقع حسب السياق)",
       "normal": "advanced/adv_15_229.mp3",
       "slow": "advanced/adv_15_229_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2079,7 +2079,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "está",
-      "gl": "هو أو هي أو أنت موجود / في حالة مؤقتة (تصريف estar)",
+      "gl": "يكون / تكون / تكون حضرتك (تصريف estar للحالة أو الموقع حسب الفاعل والسياق)",
       "normal": "advanced/adv_15_231.mp3",
       "slow": "advanced/adv_15_231_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2088,7 +2088,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estamos",
-      "gl": "نحن موجودون / نحن في حالة مؤقتة (تصريف estar)",
+      "gl": "نحن نكون / نتواجد (تصريف estar للحالة أو الموقع حسب السياق)",
       "normal": "advanced/adv_15_232.mp3",
       "slow": "advanced/adv_15_232_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2097,7 +2097,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "somos",
-      "gl": "نحن نكون / نحن (تصريف ser)",
+      "gl": "نحن نكون (تصريف ser للهوية أو الصفات أو التصنيف حسب السياق)",
       "normal": "advanced/adv_15_233.mp3",
       "slow": "advanced/adv_15_233_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2106,7 +2106,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "estão",
-      "gl": "هم أو هنّ أو أنتم موجودون (تصريف estar)",
+      "gl": "يكونون / يكنّ / تكونون (تصريف estar للحالة أو الموقع حسب الفاعل والسياق)",
       "normal": "advanced/adv_15_234.mp3",
       "slow": "advanced/adv_15_234_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2115,7 +2115,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "são",
-      "gl": "هم أو هنّ أو أنتم يكونون / هم (تصريف ser)",
+      "gl": "يكونون / يكنّ / تكونون (تصريف ser للهوية أو الصفات أو التصنيف حسب الفاعل والسياق)",
       "normal": "advanced/adv_15_235.mp3",
       "slow": "advanced/adv_15_235_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
