@@ -2718,7 +2718,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "partia",
-      "gl": "كنتُ أغادر / كان يغادر عادة (الماضي الناقص، بحسب الفاعل)",
+      "gl": "كنتُ أغادر / كان أو كانت يغادر أو تغادر (ماضٍ ناقص؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_17_302.mp3",
       "slow": "advanced/adv_17_302_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2727,7 +2727,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "comia",
-      "gl": "كنتُ آكل / كان يأكل عادة (الماضي الناقص)",
+      "gl": "كنتُ آكل / كان أو كانت يأكل أو تأكل (ماضٍ ناقص؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_17_303.mp3",
       "slow": "advanced/adv_17_303_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2736,7 +2736,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "falava",
-      "gl": "كنتُ أتحدث / كان يتحدث عادة (الماضي الناقص)",
+      "gl": "كنتُ أتحدث / كان أو كانت يتحدث أو تتحدث (ماضٍ ناقص؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_17_304.mp3",
       "slow": "advanced/adv_17_304_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2772,7 +2772,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "partiam",
-      "gl": "كانوا يغادرون / كنتم تغادرون (الماضي الناقص)",
+      "gl": "كانوا يغادرون / كنتم تغادرون (ماضٍ ناقص؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_17_308.mp3",
       "slow": "advanced/adv_17_308_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2781,7 +2781,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "comiam",
-      "gl": "كانوا يأكلون / كنتم تأكلون (الماضي الناقص)",
+      "gl": "كانوا يأكلون / كنتم تأكلون (ماضٍ ناقص؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_17_309.mp3",
       "slow": "advanced/adv_17_309_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2790,7 +2790,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "falavam",
-      "gl": "كانوا يتحدثون / كنتم تتحدثون (الماضي الناقص)",
+      "gl": "كانوا يتحدثون / كنتم تتحدثون (ماضٍ ناقص؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_17_310.mp3",
       "slow": "advanced/adv_17_310_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2799,7 +2799,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "era",
-      "gl": "كنتُ أو كان أو كانت (الماضي الناقص من ser)",
+      "gl": "كنتُ / كان / كانت / كنتَ / كنتِ (ماضٍ ناقص من ser؛ حسب الفاعل)",
       "normal": "advanced/adv_17_311.mp3",
       "slow": "advanced/adv_17_311_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2817,7 +2817,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "tinha",
-      "gl": "كان عندي / كان عنده أو عندها (الماضي الناقص من ter)",
+      "gl": "كان لديّ / لديه / لديها / لديك (ماضٍ ناقص من ter؛ حسب الفاعل)",
       "normal": "advanced/adv_17_313.mp3",
       "slow": "advanced/adv_17_313_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2835,7 +2835,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "vinha",
-      "gl": "كنتُ آتي / كان يأتي (الماضي الناقص من vir)",
+      "gl": "كنتُ آتي / كان يأتي / كانت تأتي / كنتَ أو كنتِ تأتي (ماضٍ ناقص من vir)",
       "normal": "advanced/adv_17_315.mp3",
       "slow": "advanced/adv_17_315_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2853,7 +2853,7 @@
       "level": "advanced",
       "section": "٥. الماضي الناقص (Pretérito Imperfeito)",
       "pt": "punha",
-      "gl": "كنتُ أضع / كان يضع (الماضي الناقص من pôr)",
+      "gl": "كنتُ أضع / كان يضع / كانت تضع / كنتَ أو كنتِ تضع (ماضٍ ناقص من pôr)",
       "normal": "advanced/adv_17_317.mp3",
       "slow": "advanced/adv_17_317_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2907,7 +2907,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falará",
-      "gl": "سيتحدث أو ستتحدث (مستقبل falar، هو أو هي)",
+      "gl": "سيتحدث / ستتحدث (مستقبل falar؛ هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_18_323.mp3",
       "slow": "advanced/adv_18_323_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2925,7 +2925,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falarão",
-      "gl": "سيتحدثون أو ستتحدثون (مستقبل falar، هم أو أنتم)",
+      "gl": "سيتحدثون / ستتحدثون (مستقبل falar؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_18_325.mp3",
       "slow": "advanced/adv_18_325_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2943,7 +2943,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "falaria",
-      "gl": "كنتُ سأتحدث / كنتُ لأتحدث (الصيغة الشرطية، أنا)",
+      "gl": "كنتُ سأتحدث / كان سيتحدث / كانت ستتحدث (صيغة شرطية؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_18_327.mp3",
       "slow": "advanced/adv_18_327_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2952,7 +2952,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "gostaria",
-      "gl": "أودّ / كنت أودّ (صيغة مهذبة من gostar)",
+      "gl": "أودّ / يودّ / تودّ (صيغة شرطية من gostar تُستخدم كثيرًا في الطلب المهذب؛ حسب الفاعل)",
       "normal": "advanced/adv_18_328.mp3",
       "slow": "advanced/adv_18_328_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2970,7 +2970,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "gostaríamos",
-      "gl": "كنا سنودّ / كنا نودّ (الصيغة الشرطية، نحن)",
+      "gl": "كنا نودّ / نرغب (صيغة شرطية من gostar؛ نحن)",
       "normal": "advanced/adv_18_330.mp3",
       "slow": "advanced/adv_18_330_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2979,7 +2979,7 @@
       "level": "advanced",
       "section": "٦. المستقبل والمستقبل القريب والشرطي",
       "pt": "ei, á, emos, ão",
-      "gl": "نهايات أمثلة لتصريف المستقبل في البرتغالية: -ei و-á و-emos و-ão",
+      "gl": "لواحق المستقبل البسيط مع الفعل falar: falarei (سأتحدث)، falará (سيتحدث)، falaremos (سنتحدث)، falarão (سيتحدثون)",
       "normal": "advanced/adv_18_331.mp3",
       "slow": "advanced/adv_18_331_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3006,7 +3006,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "parta",
-      "gl": "أن أغادر / ليغادر (صيغة المضارع التابع من partir بحسب الفاعل)",
+      "gl": "أن أغادر / أن يغادر أو تغادر (مضارع الصيغة التابعة من partir؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_19_334.mp3",
       "slow": "advanced/adv_19_334_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3015,7 +3015,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "coma",
-      "gl": "أن آكل / ليأكل (صيغة المضارع التابع من comer بحسب الفاعل)",
+      "gl": "أن آكل / أن يأكل أو تأكل (مضارع الصيغة التابعة من comer؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_19_335.mp3",
       "slow": "advanced/adv_19_335_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3024,7 +3024,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "fale",
-      "gl": "أن أتحدث / ليتحدث (صيغة المضارع التابع من falar بحسب الفاعل)",
+      "gl": "أن أتحدث / أن يتحدث أو تتحدث (مضارع الصيغة التابعة من falar؛ أنا / هو / هي / أنت حسب الفاعل)",
       "normal": "advanced/adv_19_336.mp3",
       "slow": "advanced/adv_19_336_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3060,7 +3060,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "partam",
-      "gl": "أن يغادروا (صيغة المضارع التابع، هم أو أنتم)",
+      "gl": "أن يغادروا / أن تغادروا (مضارع الصيغة التابعة؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_19_340.mp3",
       "slow": "advanced/adv_19_340_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3069,7 +3069,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "comam",
-      "gl": "أن يأكلوا (صيغة المضارع التابع، هم أو أنتم)",
+      "gl": "أن يأكلوا / أن تأكلوا (مضارع الصيغة التابعة؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_19_341.mp3",
       "slow": "advanced/adv_19_341_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3078,7 +3078,7 @@
       "level": "advanced",
       "section": "٧. صيغة الشرط — Subjuntivo (أساسيات)",
       "pt": "falem",
-      "gl": "أن يتحدثوا (صيغة المضارع التابع، هم أو أنتم)",
+      "gl": "أن يتحدثوا / أن تتحدثوا (مضارع الصيغة التابعة؛ هم / أنتم حسب الفاعل)",
       "normal": "advanced/adv_19_342.mp3",
       "slow": "advanced/adv_19_342_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3159,7 +3159,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "me chamo",
-      "gl": "اسمي... / أُدعى... (عن نفسي)",
+      "gl": "أُدعى / اسمي (حرفيًا: أسمّي نفسي؛ من chamar-se)",
       "normal": "advanced/adv_20_351.mp3",
       "slow": "advanced/adv_20_351_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3186,7 +3186,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se chama",
-      "gl": "اسمه أو اسمها... / يُدعى أو تُدعى...",
+      "gl": "يُدعى / تُدعى / تُدعى حضرتك (من chamar-se؛ حسب الفاعل)",
       "normal": "advanced/adv_20_354.mp3",
       "slow": "advanced/adv_20_354_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3195,7 +3195,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se levanta",
-      "gl": "ينهض أو تنهض من الفراش",
+      "gl": "ينهض / تنهض / تنهض حضرتك من الفراش (حسب الفاعل)",
       "normal": "advanced/adv_20_355.mp3",
       "slow": "advanced/adv_20_355_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3204,7 +3204,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se veste",
-      "gl": "يرتدي أو ترتدي ملابسه أو ملابسها",
+      "gl": "يرتدي / ترتدي / ترتدي حضرتك ملابسه أو ملابسها (حسب الفاعل)",
       "normal": "advanced/adv_20_356.mp3",
       "slow": "advanced/adv_20_356_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3213,7 +3213,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "nos chamamos",
-      "gl": "أسماؤنا... / نُدعى...",
+      "gl": "نُدعى / أسماؤنا (من chamar-se؛ نحن)",
       "normal": "advanced/adv_20_357.mp3",
       "slow": "advanced/adv_20_357_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3240,7 +3240,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se chamam",
-      "gl": "أسماؤهم... / يُدعون أو يُدعين",
+      "gl": "يُدعون / يُدعين / تُدعون (من chamar-se؛ هم / هن / أنتم حسب الفاعل)",
       "normal": "advanced/adv_20_360.mp3",
       "slow": "advanced/adv_20_360_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3249,7 +3249,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se levantam",
-      "gl": "ينهضون من الفراش",
+      "gl": "ينهضون / ينهضن / تنهضون من الفراش (حسب الفاعل)",
       "normal": "advanced/adv_20_361.mp3",
       "slow": "advanced/adv_20_361_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3258,7 +3258,7 @@
       "level": "advanced",
       "section": "٨. الأفعال الانعكاسية",
       "pt": "se vestem",
-      "gl": "يرتدون ملابسهم",
+      "gl": "يرتدون / يرتدين / ترتدون ملابسهم (حسب الفاعل)",
       "normal": "advanced/adv_20_362.mp3",
       "slow": "advanced/adv_20_362_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3276,7 +3276,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "me",
-      "gl": "ني / لي (ضمير مفعول بحسب السياق)",
+      "gl": "ـني / لي / نفسي (ضمير متصل بحسب الفعل والسياق)",
       "normal": "advanced/adv_21_364.mp3",
       "slow": "advanced/adv_21_364_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3285,7 +3285,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "lhe",
-      "gl": "له أو لها / لحضرتك (ضمير مفعول غير مباشر)",
+      "gl": "له / لها / لك (ضمير مفعول غير مباشر؛ يتحدد المرجع بالسياق)",
       "normal": "advanced/adv_21_365.mp3",
       "slow": "advanced/adv_21_365_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3294,7 +3294,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "nos",
-      "gl": "نا / لنا (ضمير مفعول)",
+      "gl": "ـنا / لنا / أنفسنا (ضمير بحسب الفعل والسياق)",
       "normal": "advanced/adv_21_366.mp3",
       "slow": "advanced/adv_21_366_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3303,7 +3303,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "os",
-      "gl": "هم (ضمير مفعول به لجمع المذكر)",
+      "gl": "إياهم / ـهم (ضمير مفعول به مباشر لجمع المذكر أو المختلط)",
       "normal": "advanced/adv_21_367.mp3",
       "slow": "advanced/adv_21_367_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3312,7 +3312,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "as",
-      "gl": "هنّ (ضمير مفعول به لجمع المؤنث)",
+      "gl": "إياهنّ / ـهنّ (ضمير مفعول به مباشر لجمع المؤنث)",
       "normal": "advanced/adv_21_368.mp3",
       "slow": "advanced/adv_21_368_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3321,7 +3321,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "lhes",
-      "gl": "لهم أو لهنّ / لكم (ضمير مفعول غير مباشر)",
+      "gl": "لهم / لهن / لكم (ضمير مفعول غير مباشر؛ حسب المرجع)",
       "normal": "advanced/adv_21_369.mp3",
       "slow": "advanced/adv_21_369_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3339,7 +3339,7 @@
       "level": "advanced",
       "section": "٩. ضمائر المفعول به ومكانها في الجملة",
       "pt": "Vou lhe contar uma coisa.",
-      "gl": "سأخبرك بشيء. (بصيغة محترمة في البرتغالية)",
+      "gl": "سأخبرك بشيء (lhe ضمير مفعول غير مباشر، وقد يشير إلى المخاطب أو شخص آخر حسب السياق)",
       "normal": "advanced/adv_21_371.mp3",
       "slow": "advanced/adv_21_371_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3384,7 +3384,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "do",
-      "gl": "من الـ (de + o، مذكر مفرد)",
+      "gl": "من / الخاص بـ (دمج de + o؛ يتغير المعنى حسب السياق)",
       "normal": "advanced/adv_22_376.mp3",
       "slow": "advanced/adv_22_376_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3393,7 +3393,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "da",
-      "gl": "من الـ (de + a، مؤنث مفرد)",
+      "gl": "من / الخاص بـ (دمج de + a؛ يتغير المعنى حسب السياق)",
       "normal": "advanced/adv_22_377.mp3",
       "slow": "advanced/adv_22_377_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3402,7 +3402,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "dos",
-      "gl": "من الـ (de + os، جمع مذكر)",
+      "gl": "من / الخاص بـ (دمج de + os؛ جمع مذكر)",
       "normal": "advanced/adv_22_378.mp3",
       "slow": "advanced/adv_22_378_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3411,7 +3411,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "das",
-      "gl": "من الـ (de + as، جمع مؤنث)",
+      "gl": "من / الخاص بـ (دمج de + as؛ جمع مؤنث)",
       "normal": "advanced/adv_22_379.mp3",
       "slow": "advanced/adv_22_379_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3420,7 +3420,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "no",
-      "gl": "في الـ (em + o، مذكر مفرد)",
+      "gl": "في / على (دمج em + o؛ بحسب السياق)",
       "normal": "advanced/adv_22_380.mp3",
       "slow": "advanced/adv_22_380_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3429,7 +3429,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "na",
-      "gl": "في الـ (em + a، مؤنث مفرد)",
+      "gl": "في / على (دمج em + a؛ بحسب السياق)",
       "normal": "advanced/adv_22_381.mp3",
       "slow": "advanced/adv_22_381_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3438,7 +3438,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "nas",
-      "gl": "في الـ (em + as، جمع مؤنث)",
+      "gl": "في / على (دمج em + as؛ جمع مؤنث)",
       "normal": "advanced/adv_22_382.mp3",
       "slow": "advanced/adv_22_382_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3447,7 +3447,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "ao",
-      "gl": "إلى الـ (a + o، مذكر مفرد)",
+      "gl": "إلى / لـ (دمج a + o؛ مذكر مفرد)",
       "normal": "advanced/adv_22_383.mp3",
       "slow": "advanced/adv_22_383_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3456,7 +3456,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "aos",
-      "gl": "إلى الـ (a + os، جمع مذكر)",
+      "gl": "إلى / لـ (دمج a + os؛ جمع مذكر)",
       "normal": "advanced/adv_22_384.mp3",
       "slow": "advanced/adv_22_384_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3465,7 +3465,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "às",
-      "gl": "إلى الـ (a + as، جمع مؤنث؛ وتستخدم مع الوقت أيضًا)",
+      "gl": "إلى / عند (دمج a + as؛ جمع مؤنث؛ مثال الوقت: às oito = الساعة الثامنة)",
       "normal": "advanced/adv_22_385.mp3",
       "slow": "advanced/adv_22_385_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3474,7 +3474,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelo",
-      "gl": "عبر الـ / بواسطة الـ (por + o، مذكر مفرد)",
+      "gl": "عبر / بواسطة / من أجل (دمج por + o؛ مذكر مفرد؛ بحسب السياق)",
       "normal": "advanced/adv_22_386.mp3",
       "slow": "advanced/adv_22_386_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3483,7 +3483,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pela",
-      "gl": "عبر الـ / بواسطة الـ (por + a، مؤنث مفرد)",
+      "gl": "عبر / بواسطة / من أجل (دمج por + a؛ مؤنث مفرد؛ بحسب السياق)",
       "normal": "advanced/adv_22_387.mp3",
       "slow": "advanced/adv_22_387_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3492,7 +3492,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelos",
-      "gl": "عبر الـ / بواسطة الـ (por + os، جمع مذكر)",
+      "gl": "عبر / بواسطة / من أجل (دمج por + os؛ جمع مذكر؛ بحسب السياق)",
       "normal": "advanced/adv_22_388.mp3",
       "slow": "advanced/adv_22_388_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3501,7 +3501,7 @@
       "level": "advanced",
       "section": "١٠. حروف الجر ودمجها مع أدوات التعريف",
       "pt": "pelas",
-      "gl": "عبر الـ / بواسطة الـ (por + as، جمع مؤنث)",
+      "gl": "عبر / بواسطة / من أجل (دمج por + as؛ جمع مؤنث؛ بحسب السياق)",
       "normal": "advanced/adv_22_389.mp3",
       "slow": "advanced/adv_22_389_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -3663,7 +3663,7 @@
       "level": "advanced",
       "section": "١١. المقارنة والتفضيل وأدوات الربط المتقدمة",
       "pt": "tão... como",
-      "gl": "بنفس درجة... مثل... (للمقارنة المتساوية)",
+      "gl": "بقدر ... مثل (مقارنة التساوي؛ مثال: tão alto como = بنفس الطول)",
       "normal": "advanced/adv_23_407.mp3",
       "slow": "advanced/adv_23_407_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -4599,7 +4599,7 @@
       "level": "advanced",
       "section": "٢٢. خاتمة وخطوات نحو الطلاقة الكاملة",
       "pt": "Boa sorte e força!",
-      "gl": "بالتوفيق والقوة!",
+      "gl": "بالتوفيق، وخليك قويًّا! (عبارة تشجيع)",
       "normal": "advanced/adv_33_511.mp3",
       "slow": "advanced/adv_33_511_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
