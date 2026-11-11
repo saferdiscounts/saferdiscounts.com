@@ -477,7 +477,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "parte",
-      "gl": "هو أو هي أو أنت يغادر",
+      "gl": "يغادر / تغادر (هو / هي / أنت بحسب الفاعل؛ مضارع partir)",
       "normal": "basic/bas_04_053.mp3",
       "slow": "basic/bas_04_053_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -486,7 +486,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "come",
-      "gl": "هو أو هي أو أنت يأكل",
+      "gl": "يأكل / تأكل (هو / هي / أنت بحسب الفاعل؛ مضارع comer)",
       "normal": "basic/bas_04_054.mp3",
       "slow": "basic/bas_04_054_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -495,7 +495,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "fala",
-      "gl": "هو أو هي أو أنت يتحدث",
+      "gl": "يتحدث / تتحدث (هو / هي / أنت بحسب الفاعل؛ مضارع falar)",
       "normal": "basic/bas_04_055.mp3",
       "slow": "basic/bas_04_055_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -531,7 +531,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "partem",
-      "gl": "هم أو أنتم يغادرون",
+      "gl": "يغادرون / تغادرون (هم / أنتم بحسب الفاعل؛ مضارع partir)",
       "normal": "basic/bas_04_059.mp3",
       "slow": "basic/bas_04_059_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -540,7 +540,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "comem",
-      "gl": "هم أو أنتم يأكلون",
+      "gl": "يأكلون / تأكلون (هم / أنتم بحسب الفاعل؛ مضارع comer)",
       "normal": "basic/bas_04_060.mp3",
       "slow": "basic/bas_04_060_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -549,7 +549,7 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "falam",
-      "gl": "هم أو أنتم يتحدثون",
+      "gl": "يتحدثون / تتحدثون (هم / أنتم بحسب الفاعل؛ مضارع falar)",
       "normal": "basic/bas_04_061.mp3",
       "slow": "basic/bas_04_061_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -1953,7 +1953,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "parte",
-      "gl": "هو أو هي أو أنت يغادر",
+      "gl": "يغادر / تغادر (هو / هي / أنت بحسب الفاعل؛ مضارع partir)",
       "normal": "advanced/adv_15_217.mp3",
       "slow": "advanced/adv_15_217_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -1962,7 +1962,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "come",
-      "gl": "هو أو هي أو أنت يأكل",
+      "gl": "يأكل / تأكل (هو / هي / أنت بحسب الفاعل؛ مضارع comer)",
       "normal": "advanced/adv_15_218.mp3",
       "slow": "advanced/adv_15_218_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -1971,7 +1971,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "fala",
-      "gl": "هو أو هي أو أنت يتحدث",
+      "gl": "يتحدث / تتحدث (هو / هي / أنت بحسب الفاعل؛ مضارع falar)",
       "normal": "advanced/adv_15_219.mp3",
       "slow": "advanced/adv_15_219_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2016,7 +2016,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "partem",
-      "gl": "هم أو أنتم يغادرون",
+      "gl": "يغادرون / تغادرون (هم / أنتم بحسب الفاعل؛ مضارع partir)",
       "normal": "advanced/adv_15_224.mp3",
       "slow": "advanced/adv_15_224_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2025,7 +2025,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "comem",
-      "gl": "هم أو أنتم يأكلون",
+      "gl": "يأكلون / تأكلون (هم / أنتم بحسب الفاعل؛ مضارع comer)",
       "normal": "advanced/adv_15_225.mp3",
       "slow": "advanced/adv_15_225_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2034,7 +2034,7 @@
       "level": "advanced",
       "section": "٣. مراجعة سريعة للمستوى الأساسي",
       "pt": "falam",
-      "gl": "هم أو أنتم يتحدثون",
+      "gl": "يتحدثون / تتحدثون (هم / أنتم بحسب الفاعل؛ مضارع falar)",
       "normal": "advanced/adv_15_226.mp3",
       "slow": "advanced/adv_15_226_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2151,7 +2151,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "partiu",
-      "gl": "غادرَ أو غادرتْ (الماضي، هو أو هي)",
+      "gl": "غادر / غادرت (هو / هي / أنت بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_239.mp3",
       "slow": "advanced/adv_16_239_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2160,7 +2160,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "comeu",
-      "gl": "أكلَ أو أكلتْ (الماضي، هو أو هي)",
+      "gl": "أكل / أكلت (هو / هي / أنت بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_240.mp3",
       "slow": "advanced/adv_16_240_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2169,7 +2169,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "falou",
-      "gl": "تحدثَ أو تحدثتْ (الماضي، هو أو هي)",
+      "gl": "تحدث / تحدثت (هو / هي / أنت بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_241.mp3",
       "slow": "advanced/adv_16_241_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2178,7 +2178,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "partiram",
-      "gl": "غادروا (الماضي، هم أو أنتم)",
+      "gl": "غادروا / غادرتُم (هم / أنتم بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_242.mp3",
       "slow": "advanced/adv_16_242_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2187,7 +2187,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "comeram",
-      "gl": "أكلوا (الماضي، هم أو أنتم)",
+      "gl": "أكلوا / أكلتُم (هم / أنتم بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_243.mp3",
       "slow": "advanced/adv_16_243_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2196,7 +2196,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "falaram",
-      "gl": "تحدثوا (الماضي، هم أو أنتم)",
+      "gl": "تحدثوا / تحدثتُم (هم / أنتم بحسب الفاعل؛ الماضي البسيط)",
       "normal": "advanced/adv_16_244.mp3",
       "slow": "advanced/adv_16_244_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2223,7 +2223,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "foi",
-      "gl": "ذهب أو ذهبت / كان أو كانت (ماضي ir أو ser، هو أو هي)",
+      "gl": "ذهب / ذهبت أو كان / كانت (ماضي ir أو ser؛ هو / هي / أنت بحسب الفاعل)",
       "normal": "advanced/adv_16_247.mp3",
       "slow": "advanced/adv_16_247_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2241,7 +2241,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "foram",
-      "gl": "ذهبوا / كانوا (ماضي ir أو ser، هم أو أنتم)",
+      "gl": "ذهبوا / ذهبتم أو كانوا / كنتم (ماضي ir أو ser؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_249.mp3",
       "slow": "advanced/adv_16_249_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2304,7 +2304,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "teve",
-      "gl": "كان عنده أو عندها (ماضي ter، هو أو هي)",
+      "gl": "كان لديه / لديها / لديك (ماضي ter؛ هو / هي / أنت بحسب الفاعل)",
       "normal": "advanced/adv_16_256.mp3",
       "slow": "advanced/adv_16_256_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2322,7 +2322,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "tiveram",
-      "gl": "كان عندهم (ماضي ter، هم)",
+      "gl": "كان لديهم / لديكم (ماضي ter؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_258.mp3",
       "slow": "advanced/adv_16_258_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2349,7 +2349,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fez",
-      "gl": "فعل أو فعلت / صنع أو صنعت (ماضي fazer، هو أو هي)",
+      "gl": "فعل / فعلت أو صنع / صنعت (ماضي fazer؛ هو / هي / أنت بحسب الفاعل)",
       "normal": "advanced/adv_16_261.mp3",
       "slow": "advanced/adv_16_261_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2367,7 +2367,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "fizeram",
-      "gl": "فعلوا / صنعوا (ماضي fazer، هم)",
+      "gl": "فعلوا / فعلتم أو صنعوا / صنعتم (ماضي fazer؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_263.mp3",
       "slow": "advanced/adv_16_263_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2394,7 +2394,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pôde",
-      "gl": "استطاع أو استطاعت (ماضي poder، هو أو هي)",
+      "gl": "استطاع / استطاعت / استطعتَ أو استطعتِ (ماضي poder؛ هو / هي / أنت بحسب الفاعل)",
       "normal": "advanced/adv_16_266.mp3",
       "slow": "advanced/adv_16_266_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2412,7 +2412,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "puderam",
-      "gl": "استطاعوا (ماضي poder، هم)",
+      "gl": "استطاعوا / استطعتم (ماضي poder؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_268.mp3",
       "slow": "advanced/adv_16_268_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2448,7 +2448,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "quiseram",
-      "gl": "أرادوا (ماضي querer، هم)",
+      "gl": "أرادوا / أردتم (ماضي querer؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_272.mp3",
       "slow": "advanced/adv_16_272_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2466,7 +2466,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "soube",
-      "gl": "عرفتُ / علمتُ (ماضي saber، أنا)",
+      "gl": "عرفتُ / عرف / عرفتْ (ماضي saber؛ أنا / هو / هي / أنت بحسب الفاعل)",
       "normal": "advanced/adv_16_274.mp3",
       "slow": "advanced/adv_16_274_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2484,7 +2484,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "souberam",
-      "gl": "عرفوا / علموا (ماضي saber، هم)",
+      "gl": "عرفوا / عرفتم (ماضي saber؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_276.mp3",
       "slow": "advanced/adv_16_276_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2502,7 +2502,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "disse",
-      "gl": "قلتُ / قال أو قالت (ماضي dizer بحسب السياق)",
+      "gl": "قلتُ / قال / قالت / قلتَ / قلتِ (ماضي dizer؛ بحسب الفاعل)",
       "normal": "advanced/adv_16_278.mp3",
       "slow": "advanced/adv_16_278_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2520,7 +2520,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "disseram",
-      "gl": "قالوا (ماضي dizer، هم)",
+      "gl": "قالوا / قلتم (ماضي dizer؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_280.mp3",
       "slow": "advanced/adv_16_280_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2547,7 +2547,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "viu",
-      "gl": "رأى أو رأت (ماضي ver، هو أو هي)",
+      "gl": "رأى / رأت / رأيتَ أو رأيتِ (ماضي ver؛ بحسب الفاعل)",
       "normal": "advanced/adv_16_283.mp3",
       "slow": "advanced/adv_16_283_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2565,7 +2565,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "viram",
-      "gl": "رأوا (ماضي ver، هم)",
+      "gl": "رأوا / رأيتم (ماضي ver؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_285.mp3",
       "slow": "advanced/adv_16_285_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2592,7 +2592,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "veio",
-      "gl": "جاء أو جاءت (ماضي vir، هو أو هي)",
+      "gl": "جاء / جاءت / جئتَ أو جئتِ (ماضي vir؛ بحسب الفاعل)",
       "normal": "advanced/adv_16_288.mp3",
       "slow": "advanced/adv_16_288_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2610,7 +2610,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "vieram",
-      "gl": "جاءوا (ماضي vir، هم)",
+      "gl": "جاءوا / جئتم (ماضي vir؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_290.mp3",
       "slow": "advanced/adv_16_290_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2637,7 +2637,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "deu",
-      "gl": "أعطى أو أعطت (ماضي dar، هو أو هي)",
+      "gl": "أعطى / أعطت / أعطيتَ أو أعطيتِ (ماضي dar؛ بحسب الفاعل)",
       "normal": "advanced/adv_16_293.mp3",
       "slow": "advanced/adv_16_293_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2655,7 +2655,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "deram",
-      "gl": "أعطوا (ماضي dar، هم)",
+      "gl": "أعطوا / أعطيتم (ماضي dar؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_295.mp3",
       "slow": "advanced/adv_16_295_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2682,7 +2682,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "pôs",
-      "gl": "وضع أو وضعت (ماضي pôr، هو أو هي)",
+      "gl": "وضع / وضعت / وضعتَ أو وضعتِ (ماضي pôr؛ بحسب الفاعل)",
       "normal": "advanced/adv_16_298.mp3",
       "slow": "advanced/adv_16_298_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
@@ -2700,7 +2700,7 @@
       "level": "advanced",
       "section": "٤. الماضي البسيط (Pretérito Perfeito)",
       "pt": "puseram",
-      "gl": "وضعوا (ماضي pôr، هم)",
+      "gl": "وضعوا / وضعتم (ماضي pôr؛ هم / أنتم بحسب الفاعل)",
       "normal": "advanced/adv_16_300.mp3",
       "slow": "advanced/adv_16_300_slow.mp3",
       "glProvenance": "saferdiscounts-arabic-editorial-draft"
