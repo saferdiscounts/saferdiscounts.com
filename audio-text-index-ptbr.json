@@ -27,19 +27,19 @@
       "level": "basic",
       "section": "٢. الفرق بين البرتغالية البرازيلية والأوروبية",
       "pt": "comboio",
-      "gl": "القطر",
+      "gl": "القطار (شائع في البرتغال؛ في البرازيل: trem)",
       "normal": "basic/bas_01_003.mp3",
       "slow": "basic/bas_01_003_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٢. الفرق بين البرتغالية البرازيلية والأوروبية",
       "pt": "trem",
-      "gl": "القطر",
+      "gl": "القطار (المستخدم في البرازيل)",
       "normal": "basic/bas_01_004.mp3",
       "slow": "basic/bas_01_004_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -63,19 +63,19 @@
       "level": "basic",
       "section": "٢. الفرق بين البرتغالية البرازيلية والأوروبية",
       "pt": "ementa",
-      "gl": "منيو",
+      "gl": "قائمة الطعام (شائع في البرتغال؛ في البرازيل: cardápio)",
       "normal": "basic/bas_01_007.mp3",
       "slow": "basic/bas_01_007_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٢. الفرق بين البرتغالية البرازيلية والأوروبية",
       "pt": "cardápio",
-      "gl": "منيو",
+      "gl": "قائمة الطعام (المستخدم في البرازيل)",
       "normal": "basic/bas_01_008.mp3",
       "slow": "basic/bas_01_008_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -279,19 +279,19 @@
       "level": "basic",
       "section": "٥. التحيات والعبارات الأساسية",
       "pt": "Sim",
-      "gl": "أيوه / لأ · سيم / ناوْن",
+      "gl": "نعم / أيوه",
       "normal": "basic/bas_02_031.mp3",
       "slow": "basic/bas_02_031_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٥. التحيات والعبارات الأساسية",
       "pt": "Não",
-      "gl": "أيوه / لأ · سيم / ناوْن",
+      "gl": "لا / لأ",
       "normal": "basic/bas_02_032.mp3",
       "slow": "basic/bas_02_032_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -315,19 +315,19 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "ele",
-      "gl": "هو / هي",
+      "gl": "هو",
       "normal": "basic/bas_03_035.mp3",
       "slow": "basic/bas_03_035_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "ela",
-      "gl": "هو / هي",
+      "gl": "هي",
       "normal": "basic/bas_03_036.mp3",
       "slow": "basic/bas_03_036_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -351,19 +351,19 @@
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "eles",
-      "gl": "هما (رجالة/مختلط) / هما (ستات)",
+      "gl": "هم (جمع مذكر أو مختلط)",
       "normal": "basic/bas_03_039.mp3",
       "slow": "basic/bas_03_039_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٦. الضمائر وفعل «تكون» (Ser / Estar)",
       "pt": "elas",
-      "gl": "هما (رجالة/مختلط) / هما (ستات)",
+      "gl": "هنّ (جمع مؤنث)",
       "normal": "basic/bas_03_040.mp3",
       "slow": "basic/bas_03_040_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -558,163 +558,163 @@
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "tenho",
-      "gl": "يملك",
+      "gl": "عندي / أملك (أنا؛ مضارع ter)",
       "normal": "basic/bas_04_062.mp3",
       "slow": "basic/bas_04_062_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "tem",
-      "gl": "يملك",
+      "gl": "عنده / عندها / عندك (هو / هي / أنت؛ مضارع ter)",
       "normal": "basic/bas_04_063.mp3",
       "slow": "basic/bas_04_063_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "ter",
-      "gl": "يملك",
+      "gl": "أن يملك / أن يكون لديه (مصدر ter)",
       "normal": "basic/bas_04_064.mp3",
       "slow": "basic/bas_04_064_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "vou",
-      "gl": "يروح",
+      "gl": "أنا ذاهب / سأذهب (أنا؛ مضارع ir)",
       "normal": "basic/bas_04_065.mp3",
       "slow": "basic/bas_04_065_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "vai",
-      "gl": "يروح",
+      "gl": "يذهب / تذهب (هو / هي / أنت؛ مضارع ir)",
       "normal": "basic/bas_04_066.mp3",
       "slow": "basic/bas_04_066_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "ir",
-      "gl": "يروح",
+      "gl": "الذهاب (مصدر ir)",
       "normal": "basic/bas_04_067.mp3",
       "slow": "basic/bas_04_067_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "faço",
-      "gl": "يعمل",
+      "gl": "أفعل / أصنع (أنا؛ مضارع fazer)",
       "normal": "basic/bas_04_068.mp3",
       "slow": "basic/bas_04_068_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "faz",
-      "gl": "يعمل",
+      "gl": "يفعل / تفعل أو يصنع / تصنع (هو / هي / أنت؛ مضارع fazer)",
       "normal": "basic/bas_04_069.mp3",
       "slow": "basic/bas_04_069_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "fazer",
-      "gl": "يعمل",
+      "gl": "أن يفعل / يصنع (مصدر fazer)",
       "normal": "basic/bas_04_070.mp3",
       "slow": "basic/bas_04_070_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "posso",
-      "gl": "يقدر",
+      "gl": "أستطيع (أنا؛ مضارع poder)",
       "normal": "basic/bas_04_071.mp3",
       "slow": "basic/bas_04_071_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "pode",
-      "gl": "يقدر",
+      "gl": "يستطيع / تستطيع (هو / هي / أنت؛ مضارع poder)",
       "normal": "basic/bas_04_072.mp3",
       "slow": "basic/bas_04_072_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "poder",
-      "gl": "يقدر",
+      "gl": "أن يستطيع (مصدر poder)",
       "normal": "basic/bas_04_073.mp3",
       "slow": "basic/bas_04_073_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "quero",
-      "gl": "عايز",
+      "gl": "أريد / عايز (أنا؛ مضارع querer)",
       "normal": "basic/bas_04_074.mp3",
       "slow": "basic/bas_04_074_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "quer",
-      "gl": "عايز",
+      "gl": "يريد / تريد (هو / هي / أنت؛ مضارع querer)",
       "normal": "basic/bas_04_075.mp3",
       "slow": "basic/bas_04_075_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "querer",
-      "gl": "عايز",
+      "gl": "أن يريد (مصدر querer)",
       "normal": "basic/bas_04_076.mp3",
       "slow": "basic/bas_04_076_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "sei",
-      "gl": "يعرف",
+      "gl": "أعرف / أعلم (أنا؛ مضارع saber)",
       "normal": "basic/bas_04_077.mp3",
       "slow": "basic/bas_04_077_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "sabe",
-      "gl": "يعرف",
+      "gl": "يعرف / تعرف (هو / هي / أنت؛ مضارع saber)",
       "normal": "basic/bas_04_078.mp3",
       "slow": "basic/bas_04_078_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٧. الأفعال الشائعة وتصريفها",
       "pt": "saber",
-      "gl": "يعرف",
+      "gl": "أن يعرف / يعلم (مصدر saber)",
       "normal": "basic/bas_04_079.mp3",
       "slow": "basic/bas_04_079_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1062,109 +1062,109 @@
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "janeiro",
-      "gl": "يناير · يوليو",
+      "gl": "يناير",
       "normal": "basic/bas_06_118.mp3",
       "slow": "basic/bas_06_118_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "julho",
-      "gl": "يناير · يوليو",
+      "gl": "يوليو",
       "normal": "basic/bas_06_119.mp3",
       "slow": "basic/bas_06_119_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "fevereiro",
-      "gl": "فبراير · أغسطس",
+      "gl": "فبراير",
       "normal": "basic/bas_06_120.mp3",
       "slow": "basic/bas_06_120_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "agosto",
-      "gl": "فبراير · أغسطس",
+      "gl": "أغسطس",
       "normal": "basic/bas_06_121.mp3",
       "slow": "basic/bas_06_121_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "março",
-      "gl": "مارس · سبتمبر",
+      "gl": "مارس",
       "normal": "basic/bas_06_122.mp3",
       "slow": "basic/bas_06_122_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "setembro",
-      "gl": "مارس · سبتمبر",
+      "gl": "سبتمبر",
       "normal": "basic/bas_06_123.mp3",
       "slow": "basic/bas_06_123_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "abril",
-      "gl": "إبريل · أكتوبر",
+      "gl": "أبريل",
       "normal": "basic/bas_06_124.mp3",
       "slow": "basic/bas_06_124_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "outubro",
-      "gl": "إبريل · أكتوبر",
+      "gl": "أكتوبر",
       "normal": "basic/bas_06_125.mp3",
       "slow": "basic/bas_06_125_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "maio",
-      "gl": "مايو · نوفمبر",
+      "gl": "مايو",
       "normal": "basic/bas_06_126.mp3",
       "slow": "basic/bas_06_126_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "novembro",
-      "gl": "مايو · نوفمبر",
+      "gl": "نوفمبر",
       "normal": "basic/bas_06_127.mp3",
       "slow": "basic/bas_06_127_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "junho",
-      "gl": "يونيو · ديسمبر",
+      "gl": "يونيو",
       "normal": "basic/bas_06_128.mp3",
       "slow": "basic/bas_06_128_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
       "section": "٩. أيام الأسبوع والشهور",
       "pt": "dezembro",
-      "gl": "يونيو · ديسمبر",
+      "gl": "ديسمبر",
       "normal": "basic/bas_06_129.mp3",
       "slow": "basic/bas_06_129_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1359,10 +1359,10 @@
       "level": "basic",
       "section": "١١. أفراد العائلة",
       "pt": "mulher",
-      "gl": "زوجة · إسپوزا / مولْير",
+      "gl": "امرأة / زوجة (بحسب السياق)",
       "normal": "basic/bas_08_151.mp3",
       "slow": "basic/bas_08_151_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1404,10 +1404,10 @@
       "level": "basic",
       "section": "١٢. الأكل والشرب",
       "pt": "cafezinho",
-      "gl": "قهوة كاجوال · كافيزينيو",
+      "gl": "قهوة صغيرة / فنجان قهوة (صيغة تصغير ودّية)",
       "normal": "basic/bas_09_156.mp3",
       "slow": "basic/bas_09_156_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1602,10 +1602,10 @@
       "level": "basic",
       "section": "١٣. عبارات لا غنى عنها للسفر والفنادق",
       "pt": "A que horas sai o trem?",
-      "gl": "القطر/الطيارة تتحرك الساعة كام؟ · أ كي أوراس سايي أو تريم؟",
+      "gl": "القطار يغادر الساعة كام؟",
       "normal": "basic/bas_10_178.mp3",
       "slow": "basic/bas_10_178_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1683,10 +1683,10 @@
       "level": "basic",
       "section": "١٤. تعبيرات وعامية برازيلية أصيلة",
       "pt": "Mano",
-      "gl": "مانو",
+      "gl": "يا صاحبي / يا أخويا (نداء عامي شائع)",
       "normal": "basic/bas_11_187.mp3",
       "slow": "basic/bas_11_187_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "basic",
@@ -1806,19 +1806,19 @@
       "level": "advanced",
       "section": "٢. الفروق النحوية المتقدمة بين البرازيلي والأوروبي",
       "pt": "Ele se levanta cedo.",
-      "gl": "بيصحى بدري",
+      "gl": "هو ينهض من الفراش مبكرًا (قد لا يعني أنه استيقظ للتو)",
       "normal": "advanced/adv_14_200.mp3",
       "slow": "advanced/adv_14_200_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
       "section": "٢. الفروق النحوية المتقدمة بين البرازيلي والأوروبي",
       "pt": "Ele levanta-se cedo.",
-      "gl": "بيصحى بدري",
+      "gl": "هو ينهض من الفراش مبكرًا (ترتيب الضمير شائع أكثر في البرتغال)",
       "normal": "advanced/adv_14_201.mp3",
       "slow": "advanced/adv_14_201_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft"
     },
     {
       "level": "advanced",
