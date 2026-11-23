@@ -1701,55 +1701,61 @@
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "Oi! Bem-vindo. O que você vai querer?",
-      "gl": "حوار — الجرسون",
+      "gl": "أهلًا! نورتنا. تحب تطلب إيه؟",
       "normal": "basic/bas_12_189.mp3",
       "slow": "basic/bas_12_189_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الجرسون"
     },
     {
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "Oi! Eu queria um cafezinho, por favor.",
-      "gl": "حوار — الزبون",
+      "gl": "أهلًا! كنت عايز قهوة صغيرة، من فضلك.",
       "normal": "basic/bas_12_190.mp3",
       "slow": "basic/bas_12_190_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الزبون"
     },
     {
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "Só isso?",
-      "gl": "حوار — الجرسون",
+      "gl": "بس كده؟",
       "normal": "basic/bas_12_191.mp3",
       "slow": "basic/bas_12_191_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الجرسون"
     },
     {
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "Sim, e a conta, por favor.",
-      "gl": "حوار — الزبون",
+      "gl": "أيوه، والحساب من فضلك.",
       "normal": "basic/bas_12_192.mp3",
       "slow": "basic/bas_12_192_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الزبون"
     },
     {
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "São dois reais. Valeu!",
-      "gl": "حوار — الجرسون",
+      "gl": "الحساب ريالين. شكرًا!",
       "normal": "basic/bas_12_193.mp3",
       "slow": "basic/bas_12_193_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الجرسون"
     },
     {
       "level": "basic",
       "section": "١٥. حوار تدريبي كامل",
       "pt": "Valeu, até mais!",
-      "gl": "حوار — الزبون",
+      "gl": "تسلم، أشوفك بعدين!",
       "normal": "basic/bas_12_194.mp3",
       "slow": "basic/bas_12_194_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "الزبون"
     },
     {
       "level": "basic",
@@ -4374,181 +4380,201 @@
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Boa tarde, o meu voo para o Rio está atrasado?",
-      "gl": "حوار — Passageiro",
+      "gl": "مساء الخير، هل رحلتي إلى ريو متأخرة؟",
       "normal": "advanced/adv_31_486.mp3",
       "slow": "advanced/adv_31_486_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Passageiro"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Sim, infelizmente está atrasado uma hora.",
-      "gl": "حوار — Funcionário",
+      "gl": "نعم، للأسف متأخرة ساعة.",
       "normal": "advanced/adv_31_487.mp3",
       "slow": "advanced/adv_31_487_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Funcionário"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Nossa! Vou perder a conexão para São Paulo?",
-      "gl": "حوار — Passageiro",
+      "gl": "يا نهار! هل هفوّت رحلة الترانزيت إلى ساو باولو؟",
       "normal": "advanced/adv_31_488.mp3",
       "slow": "advanced/adv_31_488_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Passageiro"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Fica tranquilo, já reorganizamos a sua viagem.",
-      "gl": "حوار — Funcionário",
+      "gl": "اطمئن، لقد أعدنا بالفعل ترتيب رحلتك.",
       "normal": "advanced/adv_31_489.mp3",
       "slow": "advanced/adv_31_489_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Funcionário"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Desculpa, o ar condicionado do meu quarto não funciona.",
-      "gl": "حوار — Hóspede",
+      "gl": "عذرًا، تكييف غرفتي لا يعمل.",
       "normal": "advanced/adv_31_490.mp3",
       "slow": "advanced/adv_31_490_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Hóspede"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Sinto muito. Vou mandar alguém já.",
-      "gl": "حوار — Recepção",
+      "gl": "أنا آسف جدًا. سأرسل أحدًا حالًا.",
       "normal": "advanced/adv_31_491.mp3",
       "slow": "advanced/adv_31_491_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Recepção"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Valeu. Eu também queria trocar de quarto, se der.",
-      "gl": "حوار — Hóspede",
+      "gl": "شكرًا. وكنت أود أيضًا تغيير الغرفة إن أمكن.",
       "normal": "advanced/adv_31_492.mp3",
       "slow": "advanced/adv_31_492_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Hóspede"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Claro, vou verificar a disponibilidade.",
-      "gl": "حوار — Recepção",
+      "gl": "بالتأكيد، سأتحقق من الغرف المتاحة.",
       "normal": "advanced/adv_31_493.mp3",
       "slow": "advanced/adv_31_493_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Recepção"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Boa tarde, não estou bem. Estou com dor de cabeça e febre.",
-      "gl": "حوار — Cliente",
+      "gl": "مساء الخير، أنا لست بخير. أعاني من صداع وحمى.",
       "normal": "advanced/adv_31_494.mp3",
       "slow": "advanced/adv_31_494_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Cliente"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Há quanto tempo você está com esses sintomas?",
-      "gl": "حوار — Farmacêutico",
+      "gl": "منذ متى وأنت تعاني من هذه الأعراض؟",
       "normal": "advanced/adv_31_495.mp3",
       "slow": "advanced/adv_31_495_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Farmacêutico"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Desde ontem à noite.",
-      "gl": "حوار — Cliente",
+      "gl": "منذ مساء أمس.",
       "normal": "advanced/adv_31_496.mp3",
       "slow": "advanced/adv_31_496_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Cliente"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Toma esse remédio de oito em oito horas.",
-      "gl": "حوار — Farmacêutico",
+      "gl": "تناول هذا الدواء كل ثماني ساعات.",
       "normal": "advanced/adv_31_497.mp3",
       "slow": "advanced/adv_31_497_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Farmacêutico"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Eu queria alugar um carro por três dias.",
-      "gl": "حوار — Cliente",
+      "gl": "أود استئجار سيارة لمدة ثلاثة أيام.",
       "normal": "advanced/adv_31_498.mp3",
       "slow": "advanced/adv_31_498_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Cliente"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Claro. Posso ver a sua carteira de motorista, por favor?",
-      "gl": "حوار — Funcionário",
+      "gl": "بالتأكيد. هل يمكنني رؤية رخصة قيادتك من فضلك؟",
       "normal": "advanced/adv_31_499.mp3",
       "slow": "advanced/adv_31_499_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Funcionário"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Aqui está. O seguro está incluído?",
-      "gl": "حوار — Cliente",
+      "gl": "تفضل. هل التأمين مشمول؟",
       "normal": "advanced/adv_31_500.mp3",
       "slow": "advanced/adv_31_500_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Cliente"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Está sim, o seguro básico já vem incluído.",
-      "gl": "حوار — Funcionário",
+      "gl": "نعم، التأمين الأساسي مشمول بالفعل.",
       "normal": "advanced/adv_31_501.mp3",
       "slow": "advanced/adv_31_501_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Funcionário"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Desculpa, como eu chego no Pão de Açúcar?",
-      "gl": "حوار — Turista",
+      "gl": "عذرًا، كيف أصل إلى جبل باو دي أسوكار (جبل السكر)؟",
       "normal": "advanced/adv_31_502.mp3",
       "slow": "advanced/adv_31_502_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Turista"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Siga em frente e depois vire à direita na segunda rua.",
-      "gl": "حوار — Local",
+      "gl": "امشِ إلى الأمام، ثم انعطف يمينًا عند الشارع الثاني.",
       "normal": "advanced/adv_31_503.mp3",
       "slow": "advanced/adv_31_503_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Local"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "É muito longe daqui?",
-      "gl": "حوار — Turista",
+      "gl": "هل هو بعيد جدًا من هنا؟",
       "normal": "advanced/adv_31_504.mp3",
       "slow": "advanced/adv_31_504_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Turista"
     },
     {
       "level": "advanced",
       "section": "٢٠. حوارات تدريبية متقدمة (٥ مواقف واقعية)",
       "pt": "Não, fica uns dez minutos a pé.",
-      "gl": "حوار — Local",
+      "gl": "لا، يبعد نحو عشر دقائق سيرًا على الأقدام.",
       "normal": "advanced/adv_31_505.mp3",
       "slow": "advanced/adv_31_505_slow.mp3",
-      "glProvenance": "r2-original-manifest"
+      "glProvenance": "saferdiscounts-arabic-editorial-draft",
+      "dialogueRole": "Local"
     },
     {
       "level": "advanced",
